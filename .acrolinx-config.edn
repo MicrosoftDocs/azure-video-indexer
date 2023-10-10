@@ -1,5 +1,5 @@
 {:allowed-branchname-matches ["main" "release-.*"]
- :allowed-filename-matches ["(azure-video-indexer"]
+ :allowed-filename-matches ["azure-video-indexer"]
  
   :targets 
    {
