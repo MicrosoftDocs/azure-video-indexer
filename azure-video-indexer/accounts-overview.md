@@ -5,6 +5,7 @@ ms.topic: conceptual
 ms.date: 08/29/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Azure AI Video Indexer account types
@@ -25,7 +26,7 @@ The trial account option is not available on the Azure Government cloud. For oth
 
 When you have used up the free trial minutes or are ready to start using Video Indexer for production workloads, you can create a regular paid account which doesn't have minute, support, or SLA limitations. Account creation can be performed through the Azure portal (see [Create an account with the Azure portal](create-account-portal.md)) or API (see [Create accounts with API](/rest/api/videoindexer/stable/accounts)).
 
-Azure AI Video Indexer unlimited accounts are Azure Resource Manager (ARM) based and unlike trial accounts, are created in your Azure subscription. Moving to an unlimited ARM based account unlocks many security and management capabilities, such as [RBAC user management](../role-based-access-control/overview.md), [Azure Monitor integration](../azure-monitor/overview.md), deployment through ARM templates, and much more.
+Azure AI Video Indexer unlimited accounts are Azure Resource Manager (ARM) based and unlike trial accounts, are created in your Azure subscription. Moving to an unlimited ARM based account unlocks many security and management capabilities, such as [RBAC user management](/role-based-access-control/overview), [Azure Monitor integration](/azure-monitor/overview), deployment through ARM templates, and much more.
 
 Billing is per indexed minute, with the per minute cost determined by the selected preset.  For more information regarding pricing, see [Azure AI Video Indexer pricing](https://azure.microsoft.com/pricing/details/video-indexer/).
 
