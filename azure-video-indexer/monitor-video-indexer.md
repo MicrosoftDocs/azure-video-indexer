@@ -55,7 +55,7 @@ Currently Azure AI Video Indexer does not support monitoring of metrics.
 
 Data in Azure Monitor Logs is stored in tables where each table has its own set of unique properties.  
 
-All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](/azure-monitor/essentials/resource-logs-schema) The schema for Azure AI Video Indexer resource logs is found in the [Azure AI Video Indexer Data Reference](monitor-video-indexer-data-reference#schemas) 
+All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](/azure-monitor/essentials/resource-logs-schema) The schema for Azure AI Video Indexer resource logs is found in the [Azure AI Video Indexer Data Reference](monitor-video-indexer-data-reference.md#schemas) 
 
 The [Activity log](/azure-monitor/essentials/activity-log) is a type of platform sign-in Azure that provides insight into subscription-level events. You can view it independently or route it to Azure Monitor Logs, where you can do much more complex queries using Log Analytics.  
 
