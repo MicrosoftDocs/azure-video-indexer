@@ -5,6 +5,7 @@ ms.topic: tutorial
 ms.date: 09/21/2020
 ms.author: alzam
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Use Azure AI Video Indexer with Logic App and Power Automate
@@ -27,7 +28,7 @@ This tutorial is using Logic App to show how to:
 > * Set up the file upload flow
 > * Set up the JSON extraction flow
 
-[!INCLUDE [quickstarts-free-trial-note](../../includes/quickstarts-free-trial-note.md)]
+[!INCLUDE [quickstarts-free-trial-note](./includes/quickstarts-free-trial-note.md)]
 
 ## Prerequisites
 
