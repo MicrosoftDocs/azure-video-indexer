@@ -1,7 +1,6 @@
 ---
 title: Azure AI Video Indexer object detection overview
 description: An introduction to Azure AI Video Indexer object detection overview.
-ms.service: azure-video-indexer
 ms.date: 09/26/2023
 ms.topic: article
 ms.author: inhenkel

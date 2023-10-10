@@ -1,7 +1,6 @@
 ---
 title: Azure AI Video Indexer observed people tracking & matched faces overview
 description: An introduction to Azure AI Video Indexer observed people tracking & matched faces component responsibly.
-ms.service: azure-video-indexer
 ms.date: 04/06/2023
 ms.topic: article
 ms.author: inhenkel

@@ -1,7 +1,6 @@
 ---
 title: Azure AI Video Indexer named entities extraction overview 
 description: An introduction to Azure AI Video Indexer named entities extraction component responsibly.
-ms.service: azure-video-indexer
 ms.date: 06/15/2022
 ms.topic: article
 ms.author: inhenkel

@@ -2,7 +2,6 @@
 title: Monitoring Azure AI Video Indexer data reference
 description: Important reference material needed when you monitor Azure AI Video Indexer 
 ms.topic: reference
-ms.service: azure-video-indexer
 ms.custom: subject-monitoring
 ms.date: 04/17/2023
 ms.author: inhenkel

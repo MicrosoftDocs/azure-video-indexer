@@ -1,7 +1,6 @@
 ---
 title: Azure AI Video Indexer labels identification overview
 description: This article gives an overview of an Azure AI Video Indexer labels identification.
-ms.service: azure-video-indexer
 ms.date: 06/15/2022
 ms.topic: article
 author: IngridAtMicrosoft
