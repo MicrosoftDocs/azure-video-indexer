@@ -20,7 +20,7 @@ This tutorial walks you through the steps of creating the Azure AI Video Indexer
 
 ## Prerequisites
 
-* You should be a member of your Azure subscription with either an **Owner** role, or both **Contributor** and **User Access Administrator** roles. You can be added twice, with two roles, once with **Contributor** and once with **User Access Administrator**. For more information, see [View the access a user has to Azure resources](../role-based-access-control/check-access.md).
+* You should be a member of your Azure subscription with either an **Owner** role, or both **Contributor** and **User Access Administrator** roles. You can be added twice, with two roles, once with **Contributor** and once with **User Access Administrator**. For more information, see [View the access a user has to Azure resources](/role-based-access-control/check-access).
 * Register the **EventGrid** resource provider using the Azure portal.
     
     In the [Azure portal](https://portal.azure.com), go to **Subscriptions**->[<*subscription*>]->**ResourceProviders**.

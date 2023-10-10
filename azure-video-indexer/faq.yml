@@ -142,7 +142,7 @@ sections:
         answer: |
           Yes, the content and its insights are kept within the Azure region (except for Singapore and Brazil South regions) unless you have a manual configuration in your Azure subscription that uses multiple Azure regions.
 
-          Customer data in a region is replicated for BCDR reasons to the [paired region](../availability-zones/cross-region-replication-azure.md#azure-paired-regions).
+          Customer data in a region is replicated for BCDR reasons to the [paired region](/availability-zones/cross-region-replication-azure#azure-paired-regions).
 
       - question: What is the privacy policy for Azure AI Video Indexer?
         answer: |
@@ -181,10 +181,6 @@ sections:
       - question: How do I get started with Azure AI Video Indexer's API?
         answer: |
           Follow [Tutorial: get started with the Azure AI Video Indexer API](video-indexer-use-apis.md).
-
-      - question: What is the difference between the Azure AI Video Indexer API and the Azure Media Service v3 API?
-        answer: |
-          Currently there are some overlaps in features offered by the Azure AI Video Indexer API and the Azure Media Service v3 API. You can find more information on how to compare both services [here](compare-video-indexer-with-media-services-presets.md).
 
       - question: What is an API access token and why do I need it?
         answer: |
