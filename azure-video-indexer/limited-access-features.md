@@ -2,16 +2,18 @@
 title: Limited Access features of Azure AI Video Indexer 
 description: This article talks about the limited access features of Azure AI Video Indexer.
 ms.topic: conceptual
-ms.date: 06/17/2022
+ms.date: 10/10/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Limited Access features of Azure AI Video Indexer
 
 [!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-[!INCLUDE [Gate notice](../ai-services/computer-vision/includes/identity-gate-notice.md)]
+<!-- cross repo dependency -->
+[!INCLUDE [Gate notice](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/ai-services/computer-vision/includes/identity-gate-notice.md)]
 
 Our vision is to empower developers and organizations to leverage AI to transform society in positive ways. We encourage responsible AI practices to protect the rights and safety of individuals. Microsoft facial recognition services are Limited Access in order to help prevent the misuse of the services in accordance with our [AI Principles](https://www.microsoft.com/ai/responsible-ai?SilentAuth=1&wa=wsignin1.0&activetab=pivot1%3aprimaryr6) and [facial recognition](https://blogs.microsoft.com/on-the-issues/2018/12/17/six-principles-to-guide-microsofts-facial-recognition-work/) principles. The Face Identify and Celebrity Recognition operations in Azure AI Video Indexer are Limited Access features that require registration.  
 
@@ -33,7 +35,8 @@ The Azure AI Video Indexer service is made available to customers and partners u
 
 FAQ about Limited Access can be found [here](https://aka.ms/limitedaccesscogservices).
 
-If you need help with Azure AI Video Indexer, find support [here](../ai-services/cognitive-services-support-options.md). 
+<!-- relative URL link -->
+If you need help with Azure AI Video Indexer, find support [here](/ai-services/cognitive-services-support-options). 
 
 [Report Abuse](https://msrc.microsoft.com/report/abuse) of Azure AI Video Indexer. 
 
