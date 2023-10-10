@@ -250,7 +250,7 @@ Azure AI Video Indexer topic inferencing model was updated and now we extract mo
 
 ### Topic inferencing model is now available on Azure Government
 
-You can now leverage topic inferencing model in your Azure AI Video Indexer paid account on [Azure Government](../azure-government/documentation-government-welcome.md) in Virginia and Arizona regions. With this release we completed the AI parity between Azure global and Azure Government.
+You can now leverage topic inferencing model in your Azure AI Video Indexer paid account on [Azure Government](/azure-government/documentation-government-welcome) in Virginia and Arizona regions. With this release we completed the AI parity between Azure global and Azure Government.
 To benefit from the model updates you need to re-index your video files.
 
 ### Session length is now 30 days in the Azure AI Video Indexer website

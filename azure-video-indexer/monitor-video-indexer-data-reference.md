@@ -230,7 +230,7 @@ The following table lists the operations related to Azure AI Video Indexer that 
 
 <!-- NOTE: This information may be hard to find or not listed anywhere.  Please ask your PM for at least an incomplete list of what type of messages could be written here. If you can't locate this, contact azmondocs@microsoft.com for help -->
 
-For more information on the schema of Activity Log entries, see [Activity  Log schema](../azure-monitor/essentials/activity-log-schema.md). 
+For more information on the schema of Activity Log entries, see [Activity  Log schema](/azure-monitor/essentials/activity-log-schema). 
 
 ## Schemas
 <!-- REQUIRED. Please keep heading in this order -->
@@ -316,4 +316,4 @@ The following schemas are in use by Azure AI Video Indexer
 
 <!-- replace below with the proper link to your main monitoring service article -->
 - See [Monitoring Azure AI Video Indexer](monitor-video-indexer.md) for a description of monitoring Azure AI Video Indexer.
-- See [Monitoring Azure resources with Azure Monitor](../azure-monitor/essentials/monitor-azure-resource.md) for details on monitoring Azure resources.
+- See [Monitoring Azure resources with Azure Monitor](/azure-monitor/essentials/monitor-azure-resource) for details on monitoring Azure resources.

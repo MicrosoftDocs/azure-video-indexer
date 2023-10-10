@@ -46,7 +46,7 @@ Search for **Microsoft.Media** and **Microsoft.EventGrid**. If not in the regist
     | Name | Description|
     |---|---|
     |**Subscription**|Choose the subscription to use. If you're a member of only one subscription, you'll see that name. If there are multiple choices, choose a subscription in which your user has the required role.
-    |**Resource group**|Select an existing resource group or create a new one. A resource group is a collection of resources that share lifecycle, permissions, and policies. Learn more [here](../azure-resource-manager/management/overview.md#resource-groups).|
+    |**Resource group**|Select an existing resource group or create a new one. A resource group is a collection of resources that share lifecycle, permissions, and policies. Learn more [here](/azure-resource-manager/management/overview#resource-groups).|
     |**Resource name**|This will be the name of the new Azure AI Video Indexer account. The name can contain letters, numbers and dashes with no spaces.|
     |**Region**|Select the Azure region that will be used to deploy the Azure AI Video Indexer account. The region matches the resource group region you chose.  If you'd like to change the selected region, change the selected resource group or create a new one in the preferred region. [Azure region in which Azure AI Video Indexer is available](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services&regions=all)|
     |**Existing content**|If you have existing classic Video Indexer accounts, you can choose to have the videos, files, and data associated with an existing classic account connected to the new account. See the following article to learn more [Connect the classic account to ARM](connect-classic-account-to-arm.md)
