@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 11/16/2022
 ms.author: Itnorman
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Logic Apps connector with ARM-based AVI accounts
@@ -36,7 +37,7 @@ The logic apps that you create in this article, contain one flow per app. The se
 
 ## Prerequisites
 
-- [!INCLUDE [quickstarts-free-trial-note](../../includes/quickstarts-free-trial-note.md)]
+- [!INCLUDE [quickstarts-free-trial-note](./includes/quickstarts-free-trial-note.md)]
 - Create an ARM-based [Azure AI Video Indexer account](create-account-portal.md).
 - Create an Azure Storage account. Keep note of the access key for your Storage account.
 
