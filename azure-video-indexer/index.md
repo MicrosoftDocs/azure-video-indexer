@@ -1,1 +1,0 @@
-# Welcome to azure-video-indexer!
