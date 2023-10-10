@@ -21,11 +21,11 @@ To see your accounts, select **User Accounts** at the top-right of the [Azure AI
 
 ## User management of ARM accounts
 
-[Azure role-based access control (Azure RBAC)](../role-based-access-control/overview.md) is used to manage access to Azure resources, such as the ability to create new resources or use existing ones. Using Azure RBAC, you can segregate duties within your team and users by granting only the amount of access that is appropriate. Users in your Azure Active Directory (Azure AD) are assigned specific roles, which grant access to resources. 
+[Azure role-based access control (Azure RBAC)](/role-based-access-control/overview) is used to manage access to Azure resources, such as the ability to create new resources or use existing ones. Using Azure RBAC, you can segregate duties within your team and users by granting only the amount of access that is appropriate. Users in your Azure Active Directory (Azure AD) are assigned specific roles, which grant access to resources. 
 
-Users with owner or administrator Azure Active Directory (Azure AD) permissions can assign roles to Azure AD users or security groups for an account. For information on how to assign roles, see [Assign Azure roles using the Azure portal](../role-based-access-control/role-assignments-portal.md). 
+Users with owner or administrator Azure Active Directory (Azure AD) permissions can assign roles to Azure AD users or security groups for an account. For information on how to assign roles, see [Assign Azure roles using the Azure portal](/role-based-access-control/role-assignments-portal). 
 
-Azure AI Video Indexer provides three built-in roles. You can learn more about [Azure built-in roles](../role-based-access-control/built-in-roles.md). Azure AI Video Indexer doesn't support the creation of custom roles. 
+Azure AI Video Indexer provides three built-in roles. You can learn more about [Azure built-in roles](/role-based-access-control/built-in-roles). Azure AI Video Indexer doesn't support the creation of custom roles. 
 
 **Owner** - This role grants full access to manage all resources, including the ability to assign roles to determine who has access to resources.  
 **Contributor** - This role has permissions to everything an owner does except it can't control who has access to resources.  
@@ -56,11 +56,11 @@ Disabled features will appear to users with the **Restricted Viewer** access as 
 
 If you're an account owner, you can add and remove roles for the account. You can also assign roles to users. Use the following links to discover how to manage access: 
 
-- [Azure portal UI](../role-based-access-control/role-assignments-portal.md)
-- [PowerShell](../role-based-access-control/role-assignments-powershell.md) 
-- [Azure CLI](../role-based-access-control/role-assignments-cli.md) 
-- [REST API](../role-based-access-control/role-assignments-rest.md) 
-- [Azure Resource Manager templates](../role-based-access-control/role-assignments-template.md) 
+- [Azure portal UI](/role-based-access-control/role-assignments-portal)
+- [PowerShell](/role-based-access-control/role-assignments-powershell) 
+- [Azure CLI](/role-based-access-control/role-assignments-cli) 
+- [REST API](/role-based-access-control/role-assignments-rest) 
+- [Azure Resource Manager templates](/role-based-access-control/role-assignments-template) 
 
 ## User management of classic and trial accounts  
 

@@ -104,7 +104,7 @@ It's important to note the limitations of Mapped person, to avoid or mitigate th
 **Obstructions**: There is no match between faces and observed people where there are obstruction (people or faces overlapping each other).  
 **Spatial allocation per frame**: There is no match where different people appear in the same spatial position relatively to the frame in a short time.
 
-See the limitations of Observed people: [Trace observed people in a video](observed-people-tracing.md)
+See the limitations of Observed people: [Trace observed people in a video](observed-people-tracking.md)
 
 ## Next steps
 

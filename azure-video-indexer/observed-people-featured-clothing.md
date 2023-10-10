@@ -82,9 +82,9 @@ It's important to note the limitations of featured clothing to avoid or mitigate
 - Wrong detections may occur when people are overlapping.  
 - Frames containing blurred people are more prone to low quality results.   
 
-For more information, see the [limitations of observed people](observed-people-tracing.md#limitations-and-assumptions). 
+For more information, see the [limitations of observed people](observed-people-tracking.md#limitations-and-assumptions). 
 
 ## Next steps 
 
-- [Trace observed people in a video](observed-people-tracing.md)
+- [Trace observed people in a video](observed-people-tracking.md)
 - [People's detected clothing](detected-clothing.md)

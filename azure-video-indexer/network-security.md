@@ -18,7 +18,7 @@ Azure AI Video Indexer is a service hosted on Azure. In some cases the service n
 > [!NOTE]
 > If you are already using "AzureVideoAnalyzerForMedia" Network Service Tag you may experience issues with your networking security group starting 9 January 2023. This is because we are moving to a new Security Tag label "VideoIndexer". The mitigatation is to remove the old "AzureVideoAnalyzerForMedia" tag from your configuration and deployment scripts and start using the "VideoIndexer" tag going forward.
 
-Use [Network Security Groups with Service Tags](../virtual-network/service-tags-overview.md) to limit access to your resources on a network level. A service tag represents a group of IP address prefixes from a given Azure service, in this case Azure AI Video Indexer. Microsoft manages the address prefixes grouped by the service tag and automatically updates the service tag as addresses change in our backend, minimizing the complexity of frequent updates to network security rules by the customer.
+Use [Network Security Groups with Service Tags](/virtual-network/service-tags-overview) to limit access to your resources on a network level. A service tag represents a group of IP address prefixes from a given Azure service, in this case Azure AI Video Indexer. Microsoft manages the address prefixes grouped by the service tag and automatically updates the service tag as addresses change in our backend, minimizing the complexity of frequent updates to network security rules by the customer.
 
 > [!NOTE]
 > The NSG service tags feature is not available for trial and classic accounts. To update to an ARM account, see [Connect a classic account to ARM](connect-classic-account-to-arm.md) or [Import content from a trial account](import-content-from-trial.md).

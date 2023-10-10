@@ -64,7 +64,7 @@ We now support all five levels of IPTC ontology.
 
 ### Resource Health support
 
-Azure AI Video Indexer is now integrated with Azure Resource Health enabling you to see the health and availability of each of your Azure AI Video Indexer resources. Azure Resource Health also helps with diagnosing and solving problems and you can set alerts to be notified whenever your resources are affected. For more information, see [Azure Resource Health overview](../service-health/resource-health-overview.md).
+Azure AI Video Indexer is now integrated with Azure Resource Health enabling you to see the health and availability of each of your Azure AI Video Indexer resources. Azure Resource Health also helps with diagnosing and solving problems and you can set alerts to be notified whenever your resources are affected. For more information, see [Azure Resource Health overview](/service-health/resource-health-overview).
 
 ### The animation character recognition model has been retired
 
@@ -235,7 +235,7 @@ You can search or filter the account list using the account name or region. Sele
 
 With an Azure Resource Management (ARM) based [paid (unlimited)](accounts-overview.md) accounts, you are able to use:
 
-- [Azure role-based access control (RBAC)](../role-based-access-control/overview.md).
+- [Azure role-based access control (RBAC)](/role-based-access-control/overview).
 - Managed Identity to better secure the communication between your Azure Media Services and Azure AI Video Indexer account, Network Service Tags, and native integration with Azure Monitor to monitor your account (audit and indexing logs).
 - Scale and automate your [deployment with ARM-template](deploy-with-arm-template.md), [bicep](deploy-with-bicep.md) or terraform.
 - [Create logic apps connector for ARM-based accounts](logic-apps-connector-arm-accounts.md).
