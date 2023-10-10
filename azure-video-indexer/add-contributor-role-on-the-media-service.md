@@ -6,6 +6,7 @@ ms.date: 10/13/2021
 ms.custom: ignite-fall-2021
 ms.author: itnorman
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Add contributor role to Media Services
@@ -50,5 +51,5 @@ This article describes how to assign contributor role on the Media Services acco
 [Create a new Azure Resource Manager based account](create-account-portal.md)
 
 <!-- links -->
-[docs-role-contributor]: ../role-based-access-control/built-in-roles.md#contributor
-[docs-role-administrator]: ../role-based-access-control/built-in-roles.md#user-access-administrator
+[docs-role-contributor]: /role-based-access-control/built-in-roles#contributor
+[docs-role-administrator]: /role-based-access-control/built-in-roles#user-access-administrator
