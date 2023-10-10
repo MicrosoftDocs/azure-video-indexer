@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 01/24/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Switch between multiple tenants

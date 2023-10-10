@@ -2,9 +2,10 @@
 title: Enable and view a clapper board with extracted metadata
 description: Learn about how to enable and view a clapper board with extracted metadata.
 ms.topic: article
-ms.date: 09/20/2022
+ms.date: 10/10/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Enable and view a clapper board with extracted metadata (preview)

@@ -5,6 +5,7 @@ ms.topic: article
 ms.date: 09/20/2022
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Enable and view a textless slate with matching scene

@@ -6,6 +6,7 @@ ms.date: 08/24/2022
 ms.custom: mode-other
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Quickstart: How to sign up and upload your first video

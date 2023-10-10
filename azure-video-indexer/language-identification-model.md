@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 08/28/2023
 ms.author: ellbe
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Automatically identify the spoken language with language identification model

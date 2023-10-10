@@ -6,6 +6,7 @@ ms.date: 09/26/2023
 ms.topic: article
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Azure Video Indexer object detection

@@ -5,6 +5,7 @@ ms.topic: article
 ms.date: 09/14/2020
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Azure regions in which Azure AI Video Indexer exists

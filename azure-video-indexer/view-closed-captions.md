@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 10/24/2022
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # View closed captions in the Azure AI Video Indexer website

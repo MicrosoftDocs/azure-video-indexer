@@ -5,6 +5,7 @@ ms.topic: tutorial
 ms.date: 06/10/2022
 ms.author: itnorman
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
  
 # Tutorial: create an ARM-based account with Azure portal

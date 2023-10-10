@@ -5,6 +5,7 @@ ms.topic: article
 ms.date: 03/21/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Configure Video Indexer to work with storage accounts behind firewall

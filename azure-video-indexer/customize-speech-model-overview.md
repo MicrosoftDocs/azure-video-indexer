@@ -5,6 +5,7 @@ ms.topic: conceptual
 ms.date: 03/06/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Customize a speech model

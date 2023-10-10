@@ -5,6 +5,7 @@ ms.topic: article
 ms.date: 07/29/2019
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Azure AI Video Indexer failover and disaster recovery

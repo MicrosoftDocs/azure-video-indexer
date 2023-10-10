@@ -6,6 +6,7 @@ ms.custom: devx-track-azurecli
 ms.date: 12/19/2022
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # NSG service tags for Azure AI Video Indexer

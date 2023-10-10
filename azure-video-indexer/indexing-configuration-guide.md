@@ -5,6 +5,7 @@ ms.topic: conceptual
 ms.date: 04/27/2023
 ms.author: inhenkel
 author: DavidDyckman
+ms.service: azure-video-indexer
 ---
 
 # The indexing configuration guide

@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 08/11/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Redact faces by using Azure AI Video Indexer API

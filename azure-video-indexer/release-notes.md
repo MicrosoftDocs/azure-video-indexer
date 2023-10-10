@@ -6,6 +6,7 @@ ms.custom: references_regions
 ms.date: 09/27/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Azure AI Video Indexer release notes

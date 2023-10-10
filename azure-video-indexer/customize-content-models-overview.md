@@ -5,6 +5,7 @@ ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: kumud
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Customizing content models in Azure AI Video Indexer

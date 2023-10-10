@@ -5,6 +5,7 @@ ms.topic: conceptual
 ms.date: 05/15/2019
 ms.author: ikbarmen
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Manage multiple tenants

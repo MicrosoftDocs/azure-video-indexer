@@ -6,6 +6,7 @@ ms.topic: tutorial
 ms.custom: devx-track-csharp
 author: IngridAtMicrosoft
 ms.author: inhenkel
+ms.service: azure-video-indexer
 ---
 
 # Tutorial: Use the Azure AI Video Indexer API

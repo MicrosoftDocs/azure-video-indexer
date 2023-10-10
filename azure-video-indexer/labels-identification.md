@@ -6,6 +6,7 @@ ms.date: 06/15/2022
 ms.topic: article
 author: IngridAtMicrosoft
 ms.author: inhenkel
+ms.service: azure-video-indexer
 ---
 
 # Labels identification

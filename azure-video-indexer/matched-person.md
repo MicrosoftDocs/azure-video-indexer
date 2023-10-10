@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 12/10/2021
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Enable the matched person insight

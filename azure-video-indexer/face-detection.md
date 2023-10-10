@@ -6,6 +6,7 @@ ms.date: 04/17/2023
 ms.topic: article
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Face detection

@@ -5,6 +5,7 @@ ms.topic: article
 ms.date: 12/17/2021
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Index your videos stored on OneDrive

@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 06/07/2022
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Scenes, shots, and keyframes

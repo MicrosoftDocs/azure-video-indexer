@@ -5,6 +5,7 @@ ms.topic: article
 ms.date: 11/28/2020
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Add video clips to your projects

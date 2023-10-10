@@ -5,6 +5,7 @@ ms.topic: conceptual
 ms.date: 11/23/2022
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Customize a Language model with Azure AI Video Indexer

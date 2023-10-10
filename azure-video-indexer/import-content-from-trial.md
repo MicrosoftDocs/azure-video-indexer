@@ -6,6 +6,7 @@ ms.date: 12/19/2022
 ms.custom: ignite-fall-2021
 ms.author: itnorman
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Import content from your trial account to a regular account

@@ -5,6 +5,7 @@ ms.topic: article
 ms.date: 09/01/2019
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Automatically identify and transcribe multi-language content

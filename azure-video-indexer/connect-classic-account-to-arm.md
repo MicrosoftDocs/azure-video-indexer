@@ -6,6 +6,7 @@ ms.date: 03/20/2023
 ms.custom: ignite-fall-2021
 ms.author: itnorman
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Connect an existing classic paid Azure AI Video Indexer account to ARM-based account

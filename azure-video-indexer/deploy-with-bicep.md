@@ -6,6 +6,7 @@ ms.custom: devx-track-bicep
 ms.date: 06/06/2022
 ms.author: jgao
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Tutorial: deploy Azure AI Video Indexer by using Bicep

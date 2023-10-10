@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 12/14/2022
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Manage access to an Azure AI Video Indexer account

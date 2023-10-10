@@ -6,6 +6,7 @@ ms.date: 12/15/2019
 ms.custom: prevauth-anikaz
 ms.author: kumud
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Customize a Brands model with the Azure AI Video Indexer website

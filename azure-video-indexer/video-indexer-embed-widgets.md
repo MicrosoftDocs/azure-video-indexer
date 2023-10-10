@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 01/10/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Embed Azure AI Video Indexer widgets in your apps

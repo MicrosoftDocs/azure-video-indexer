@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 11/01/2022
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Edit speakers with the Azure AI Video Indexer website

@@ -4,7 +4,8 @@ description: This article gives an overview of Azure AI Video Indexer textual lo
 ms.topic: how-to
 ms.date: 01/22/2023
 ms.author: inhenkel
-author: IngridAtMicrosoft 
+author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # How to detect textual logo

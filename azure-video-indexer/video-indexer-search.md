@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 11/23/2019
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Search for exact moments in videos with Azure AI Video Indexer

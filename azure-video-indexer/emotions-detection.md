@@ -6,6 +6,7 @@ ms.date: 08/02/2023
 ms.topic: article
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Text-based emotion detection

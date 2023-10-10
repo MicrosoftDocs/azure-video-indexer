@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 05/03/2022
 ms.author: itnorman
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # View and update transcriptions

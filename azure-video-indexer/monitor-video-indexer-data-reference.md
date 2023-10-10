@@ -7,6 +7,7 @@ ms.custom: subject-monitoring
 ms.date: 04/17/2023
 ms.author: inhenkel
 author: itnorman
+ms.service: azure-video-indexer
 ---
 
 # Monitor Azure AI Video Indexer data reference

@@ -6,6 +6,7 @@ ms.date: 08/24/2022
 ms.custom: ignite-fall-2021
 author: IngridAtMicrosoft
 ms.author: itnorman
+ms.service: azure-video-indexer
 ---
 
 # Create a classic Azure AI Video Indexer account

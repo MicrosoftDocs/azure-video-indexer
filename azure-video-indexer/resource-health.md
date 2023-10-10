@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 05/12/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Diagnose Video Indexer resource issues with Azure Resource Health

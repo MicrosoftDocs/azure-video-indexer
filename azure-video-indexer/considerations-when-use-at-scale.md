@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 07/03/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Things to consider when using Azure AI Video Indexer at scale

@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 08/14/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Enable featured clothing of an observed person

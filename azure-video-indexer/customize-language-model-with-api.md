@@ -6,6 +6,7 @@ ms.date: 02/04/2020
 ms.custom: prevauth-anikaz
 ms.author: kumud
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Customize a Language model with the Azure AI Video Indexer API

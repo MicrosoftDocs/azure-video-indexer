@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 01/14/2021
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Repair the connection to Azure, examine errors/warnings

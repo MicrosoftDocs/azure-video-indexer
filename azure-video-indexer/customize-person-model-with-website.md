@@ -5,6 +5,7 @@ ms.topic: article
 ms.date: 05/31/2022
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Customize a Person model with the Azure AI Video Indexer website

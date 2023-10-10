@@ -5,6 +5,7 @@ ms.topic: article
 ms.date: 08/02/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Examine the Azure AI Video Indexer output

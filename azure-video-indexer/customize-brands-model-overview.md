@@ -5,6 +5,7 @@ ms.topic: conceptual
 ms.date: 12/15/2019
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Customize a Brands model in Azure AI Video Indexer

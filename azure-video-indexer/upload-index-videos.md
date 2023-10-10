@@ -5,6 +5,7 @@ ms.topic: article
 ms.date: 05/10/2023
 author: IngridAtMicrosoft
 ms.author: inhenkel
+ms.service: azure-video-indexer
 ---
 
 # Upload media files using the Video Indexer website

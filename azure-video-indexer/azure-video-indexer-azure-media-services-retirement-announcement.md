@@ -2,9 +2,10 @@
 title: Azure AI Video Indexer (AVI) changes related to Azure Media Service (AMS) retirement  
 description: This article explains the upcoming changes to Azure AI Video Indexer (AVI) related to the retirement of Azure Media Services (AMS).
 ms.topic: conceptual
-ms.date: 09/05/2023
+ms.date: 10/10/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Changes related to Azure Media Service (AMS) retirement

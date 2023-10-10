@@ -6,6 +6,7 @@ ms.date: 03/10/2023
 ms.custom: ignite-2022
 ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
 # Language support in Azure AI Video Indexer
