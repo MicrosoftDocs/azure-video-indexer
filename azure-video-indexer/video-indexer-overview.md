@@ -23,7 +23,7 @@ To start extracting insights with Azure AI Video Indexer, see the [how can I get
 
 ## What can I do with Azure AI Video Indexer?
 
-Azure AI Video Indexer's insights can be applied to many scenarios, among them are:
+Azure AI Video Indexer's insights can be applied to many scenarios:
 
 * Deep search: Use the insights extracted from the video to enhance the search experience across a video library. For example, indexing spoken words and faces can enable the search experience of finding moments in a video where a person spoke certain words or when two people were seen together. Search based on such insights from videos is applicable to news agencies, educational institutes, broadcasters, entertainment content owners, enterprise LOB apps, and in general to any industry that has a video library that users need to search against.
 * Content creation: Create trailers, highlight reels, social media content, or news clips based on the insights Azure AI Video Indexer extracts from your content. Keyframes, scenes markers, and timestamps of the people and label appearances make the creation process smoother and easier, enabling you to easily get to the parts of the video you need when creating content.
