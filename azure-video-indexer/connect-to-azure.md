@@ -30,7 +30,7 @@ For the pricing details, see [pricing](https://azure.microsoft.com/pricing/detai
     If you don't have an Azure subscription yet, sign up for [Azure Free Trial](https://azure.microsoft.com/free/).
 * An Azure Active Directory (Azure AD) domain.
 
-    If you don't have an Azure AD domain, create this domain with your Azure subscription. For more information, see [Managing custom domain names in your Azure AD](/active-directory/enterprise-users/domains-manage)
+    If you don't have an Azure AD domain, create this domain with your Azure subscription. For more information, see [Managing custom domain names in your Azure AD](/azure/active-directory/enterprise-users/domains-manage)
 * A user in your Azure AD domain with an **Application administrator** role. You'll use this member when connecting your Azure AI Video Indexer account to Azure.
 
     This user should be an Azure AD user with a work or school account. Don't use a personal account, such as outlook.com, live.com, or hotmail.com.

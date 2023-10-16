@@ -2,7 +2,7 @@
 title: Add Contributor role on the Media Services account
 description: This topic explains how to add contributor role on the Media Services account.
 ms.topic: how-to
-ms.date: 10/13/2021
+ms.date: 10/16/2021
 ms.custom: ignite-fall-2021
 ms.author: itnorman
 author: IngridAtMicrosoft
@@ -24,7 +24,7 @@ This article describes how to assign contributor role on the Media Services acco
 2. User-assigned managed identity
 
 > [!NOTE]
-> You need an Azure subscription with access to both the [Contributor][docs-role-contributor] role and the [User Access Administrator][docs-role-administrator] role to the Azure Media Services and the User-assigned managed identity. If you don't have the right permissions, ask your account administrator to grant you those permissions. The associated Azure Media Services must be in the same region as the Azure AI Video Indexer account.
+> You need an Azure subscription with access to both the [Contributor][/azure/role-based-access-control/built-in-roles#contributor] role and the [User Access Administrator][/azure/role-based-access-control/built-in-roles#user-access-administrator] role to the Azure Media Services and the User-assigned managed identity. If you don't have the right permissions, ask your account administrator to grant you those permissions. The associated Azure Media Services must be in the same region as the Azure AI Video Indexer account.
 
 ## Add Contributor role on the Media Services
 ### [Azure portal](#tab/portal/)
@@ -36,7 +36,7 @@ This article describes how to assign contributor role on the Media Services acco
     * Find and select your Media Service resource.
 1. In the pane to the left, click **Access control (IAM)**.
     * Click **Add** > **Add role assignment**. If you don't have permissions to assign roles, the **Add role assignment** option will be disabled.
-1. In the Role list, select [Contributor][docs-role-contributor] role and click **Next**.
+1. In the Role list, select **Contributor** role and click **Next**.
 1. In the **Assign access to**, select *Managed identity* radio button.
     * Click **+Select members** button and **Select managed identities** pane should be pop up.
 1. **Select** the following:
@@ -51,5 +51,5 @@ This article describes how to assign contributor role on the Media Services acco
 [Create a new Azure Resource Manager based account](create-account-portal.md)
 
 <!-- links -->
-[docs-role-contributor]: /role-based-access-control/built-in-roles#contributor
-[docs-role-administrator]: /role-based-access-control/built-in-roles#user-access-administrator
+[docs-role-contributor]: /azure/role-based-access-control/built-in-roles#contributor
+[docs-role-administrator]: /azure/role-based-access-control/built-in-roles#user-access-administrator
