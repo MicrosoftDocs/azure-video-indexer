@@ -2,7 +2,7 @@
 title:  Azure AI Video Indexer accounts  
 description: This article gives an overview of Azure AI Video Indexer accounts and provides links to other articles for more details.
 ms.topic: conceptual
-ms.date: 08/29/2023
+ms.date: 10/16/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -21,6 +21,9 @@ When starting out with [Azure AI Video Indexer](https://www.videoindexer.ai/), c
 With a trial account, Azure AI Video Indexer provides up to 2,400 minutes of free indexing when using the [Azure AI Video Indexer](https://www.videoindexer.ai/) website or the Azure AI Video Indexer API (see [developer portal](https://api-portal.videoindexer.ai/)).
 
 The trial account option is not available on the Azure Government cloud. For other Azure Government limitations, see [Limitations of Azure AI Video Indexer on Azure Government](connect-to-azure.md#limitations-of-azure-ai-video-indexer-on-azure-government).
+
+> [!NOTE] 
+> Any trial account that has not been logged into for 12 months might be deleted. To prevent its deletion, simply log into the trial account.
 
 ## Paid (unlimited) account
 
