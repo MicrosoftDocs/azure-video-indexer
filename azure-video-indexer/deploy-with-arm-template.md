@@ -106,7 +106,7 @@ After you complete this tutorial, head to other Azure AI Video Indexer samples d
 
 If you're new to template deployment, see:
 
-* [Azure Resource Manager documentation](/azure/azure-resource-manager/index.yml)
+* [Azure Resource Manager documentation](/azure/azure-resource-manager/)
 * [Deploy resources with ARM templates](/azure/azure-resource-manager/templates/deploy-powershell)
 * [Deploy resources with Bicep and the Azure CLI](/azure/azure-resource-manager/bicep/deploy-cli)
 

@@ -98,7 +98,7 @@ If you're new to Azure AI Video Indexer, see:
 
 If you're new to Bicep deployment, see:
 
-* [Azure Resource Manager documentation](/azure/azure-resource-manager/index.yml)
+* [Azure Resource Manager documentation](/azure/azure-resource-manager/)
 * [Deploy Resources with Bicep and Azure PowerShell](/azure/azure-resource-manager/bicep/deploy-powershell)
 * [Deploy Resources with Bicep and Azure CLI](/azure/azure-resource-manager/bicep/deploy-cli)
 
