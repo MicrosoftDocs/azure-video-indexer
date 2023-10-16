@@ -1,37 +1,37 @@
 {
     "redirections": [
         {
-            "source_path_from_root": "./azure-video-indexer/create-video-analyzer-for-media-account.md",
+            "source_path_from_root": "/azure-video-indexer/create-video-analyzer-for-media-account.md",
             "redirect_url": "/azure/azure-video-indexer/create-account-portal",
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "./azure-video-indexer/compliance-privacy-security.md",
+            "source_path_from_root": "/azure-video-indexer/compliance-privacy-security.md",
             "redirect_url": "/azure/azure-video-indexer/video-indexer-overview",
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "./azure-video-indexer/invite-users.md",
+            "source_path_from_root": "/azure-video-indexer/invite-users.md",
             "redirect_url": "/azure/azure-video-indexer/restricted-viewer-role",
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "./azure-video-indexer/live-stream-analysis.md",
+            "source_path_from_root": "/azure-video-indexer/live-stream-analysis.md",
             "redirect_url": "/azure/azure-video-indexer/video-indexer-overview",
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "./azure-video-indexer/animated-characters-recognition-how-to.md",
+            "source_path_from_root": "/azure-video-indexer/animated-characters-recognition-how-to.md",
             "redirect_url": "/azure/azure-video-indexer/customize-content-models-overview",
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "./azure-video-indexer/animated-characters-recognition.md",
+            "source_path_from_root": "/azure-video-indexer/animated-characters-recognition.md",
             "redirect_url": "/azure/azure-video-indexer/customize-content-models-overview",
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "./azure-video-indexer/compare-video-indexer-with-media-services-presets.md",
+            "source_path_from_root": "/azure-video-indexer/compare-video-indexer-with-media-services-presets.md",
             "redirect_url": "/azure/azure-video-indexer/video-indexer-overview",
             "redirect_document_id": false
         }
