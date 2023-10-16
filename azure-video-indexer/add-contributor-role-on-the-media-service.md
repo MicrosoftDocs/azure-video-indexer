@@ -49,7 +49,3 @@ This article describes how to assign contributor role on the Media Services acco
 ## Next steps
 
 [Create a new Azure Resource Manager based account](create-account-portal.md)
-
-<!-- links -->
-[docs-role-contributor]: /azure/role-based-access-control/built-in-roles#contributor
-[docs-role-administrator]: /azure/role-based-access-control/built-in-roles#user-access-administrator

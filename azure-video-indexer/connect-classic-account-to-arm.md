@@ -106,8 +106,3 @@ For code sample generating an access token through ARM see [C# code sample](http
 
 Learn how to [Upload a video using C#](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/API-Samples/C%23/ArmBased/).
   
-<!-- links -->
-[docs-arm-overview]: /azure-resource-manager/management/overview.md
-[docs-rbac-overview]: /role-based-access-control/overview.md
-[docs-rbac-assignment]: /role-based-access-control/role-assignments-portal.md
-[docs-governance-policy]: /governance/policy/overview.md
