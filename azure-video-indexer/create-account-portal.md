@@ -20,7 +20,7 @@ This tutorial walks you through the steps of creating the Azure AI Video Indexer
 
 ## Prerequisites
 
-* You should be a member of your Azure subscription with either an **Owner** role, or both **Contributor** and **User Access Administrator** roles. You can be added twice, with two roles, once with **Contributor** and once with **User Access Administrator**. For more information, see [View the access a user has to Azure resources](/role-based-access-control/check-access).
+* You should be a member of your Azure subscription with either an **Owner** role, or both **Contributor** and **User Access Administrator** roles. You can be added twice, with two roles, once with **Contributor** and once with **User Access Administrator**. For more information, see [View the access a user has to Azure resources](/azure/role-based-access-control/check-access).
 * Register the **EventGrid** resource provider using the Azure portal.
     
     In the [Azure portal](https://portal.azure.com), go to **Subscriptions**->[<*subscription*>]->**ResourceProviders**.
@@ -46,7 +46,7 @@ Search for **Microsoft.Media** and **Microsoft.EventGrid**. If not in the regist
     | Name | Description|
     |---|---|
     |**Subscription**|Choose the subscription to use. If you're a member of only one subscription, you'll see that name. If there are multiple choices, choose a subscription in which your user has the required role.
-    |**Resource group**|Select an existing resource group or create a new one. A resource group is a collection of resources that share lifecycle, permissions, and policies. Learn more [here](/azure-resource-manager/management/overview#resource-groups).|
+    |**Resource group**|Select an existing resource group or create a new one. A resource group is a collection of resources that share lifecycle, permissions, and policies. Learn more [here](/azure/azure-resource-manager/management/overview#resource-groups).|
     |**Resource name**|This will be the name of the new Azure AI Video Indexer account. The name can contain letters, numbers and dashes with no spaces.|
     |**Region**|Select the Azure region that will be used to deploy the Azure AI Video Indexer account. The region matches the resource group region you chose.  If you'd like to change the selected region, change the selected resource group or create a new one in the preferred region. [Azure region in which Azure AI Video Indexer is available](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services&regions=all)|
     |**Existing content**|If you have existing classic Video Indexer accounts, you can choose to have the videos, files, and data associated with an existing classic account connected to the new account. See the following article to learn more [Connect the classic account to ARM](connect-classic-account-to-arm.md)
@@ -107,10 +107,3 @@ Add new managed identities, switch the default managed identity between user-ass
 ## Next steps
 
 Learn how to [Upload a video using C#](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/API-Samples/C%23/ArmBased/).
-
-
-<!-- links -->
-[docs-uami]: ../active-directory/managed-identities-azure-resources/overview.md
-[docs-ms]: /azure/media-services/latest/media-services-overview
-[docs-role-contributor]: ../../role-based-access-control/built-in-roles.md#contibutor
-[docs-contributor-on-ms]: ./add-contributor-role-on-the-media-service.md
