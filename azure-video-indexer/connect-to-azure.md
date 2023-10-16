@@ -40,7 +40,7 @@ For the pricing details, see [pricing](https://azure.microsoft.com/pricing/detai
 
     You'll use this member when connecting your Azure AI Video Indexer account to Azure.
 
-    This user should be a member in your Azure subscription with either an **Owner** role, or both **Contributor** and **User Access Administrator** roles. A user can be added twice, with two roles. Once with Contributor and once with user Access Administrator. For more information, see [View the access a user has to Azure resources](/role-based-access-control/check-access).
+    This user should be a member in your Azure subscription with either an **Owner** role, or both **Contributor** and **User Access Administrator** roles. A user can be added twice, with two roles. Once with Contributor and once with user Access Administrator. For more information, see [View the access a user has to Azure resources](/azure/role-based-access-control/check-access).
 
     :::image type="content" alt-text="Screenshot that shows the access control settings." source="./media/create-account/access-control-iam.png":::
 * Register the Event Grid resource provider using the Azure portal.
@@ -135,7 +135,7 @@ To automate the creation of the account is a two steps process:
 
 ### Prerequisites for connecting to Azure Government
 
-- An Azure subscription in [Azure Government](/azure-government/index.yml).
+- An Azure subscription in [Azure Government](/azure/azure-government/).
 - An Azure AD account in Azure Government.
 - All pre-requirements of permissions and resources as described above in [Prerequisites for connecting to Azure](#prerequisites-for-connecting-to-azure). 
 

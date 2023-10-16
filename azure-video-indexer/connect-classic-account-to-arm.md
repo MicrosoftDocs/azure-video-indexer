@@ -36,7 +36,7 @@ Connecting a classic account to be ARM-based triggers a 30 days of a transition 
 * Access token [generated through API Management](https://aka.ms/avam-dev-portal)(classic way) 
 * Access token [generated through ARM](/rest/api/videoindexer/preview/generate/access-token) 
 
-The transition state moves all account management functionality to be managed by ARM and will be handled by [Azure RBAC][docs-rbac-overview]. 
+The transition state moves all account management functionality to be managed by ARM and will be handled by [Azure RBAC][/azure/role-based-access-control/overview]. 
 
 The [invite users](restricted-viewer-role.md#share-the-account) feature in the [Azure AI Video Indexer website](https://www.videoindexer.ai/) gets disabled. The invited users on this account lose their access to the Azure AI Video Indexer account Media in the portal. However, this can be resolved by assigning the right role-assignment to these users through Azure RBAC, see [How to assign RBAC][/azure/role-based-access-control/role-assignments-steps]. 
 
