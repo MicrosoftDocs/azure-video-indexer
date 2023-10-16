@@ -16,8 +16,7 @@
     }
   ],
   "notification_subscribers": [
-    "inhenkel@microsoft.com",
-    " johndeu@microsoft.com"
+    "inhenkel@microsoft.com"
   ],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
