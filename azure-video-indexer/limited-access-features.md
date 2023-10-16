@@ -36,7 +36,7 @@ The Azure AI Video Indexer service is made available to customers and partners u
 FAQ about Limited Access can be found [here](https://aka.ms/limitedaccesscogservices).
 
 <!-- relative URL link -->
-If you need help with Azure AI Video Indexer, find support [here](/ai-services/cognitive-services-support-options). 
+If you need help with Azure AI Video Indexer, find support [here](/azure/ai-services/cognitive-services-support-options). 
 
 [Report Abuse](https://msrc.microsoft.com/report/abuse) of Azure AI Video Indexer. 
 

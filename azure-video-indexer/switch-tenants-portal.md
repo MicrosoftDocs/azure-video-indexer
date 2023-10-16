@@ -53,7 +53,7 @@ This section shows how to get the domain name from the Azure portal. You can the
     > ![Hover over your account name.](./media/switch-directory/account-attributes.png)
 1. Get the domain name of the current Azure subscription, you'll need it for the last step of the following section. 
 
-If you want to see domains for all of your directories and switch between them, see [Switch and manage directories with the Azure portal](/azure-portal/set-preferences#switch-and-manage-directories).
+If you want to see domains for all of your directories and switch between them, see [Switch and manage directories with the Azure portal](/azure/azure-portal/set-preferences#switch-and-manage-directories).
 
 ### Sign in with the correct domain name on the AVI website
 

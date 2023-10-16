@@ -64,7 +64,7 @@ We now support all five levels of IPTC ontology.
 
 ### Resource Health support
 
-Azure AI Video Indexer is now integrated with Azure Resource Health enabling you to see the health and availability of each of your Azure AI Video Indexer resources. Azure Resource Health also helps with diagnosing and solving problems and you can set alerts to be notified whenever your resources are affected. For more information, see [Azure Resource Health overview](/service-health/resource-health-overview).
+Azure AI Video Indexer is now integrated with Azure Resource Health enabling you to see the health and availability of each of your Azure AI Video Indexer resources. Azure Resource Health also helps with diagnosing and solving problems and you can set alerts to be notified whenever your resources are affected. For more information, see [Azure Resource Health overview](/azure/service-health/resource-health-overview).
 
 ### The animation character recognition model has been retired
 
@@ -235,7 +235,7 @@ You can search or filter the account list using the account name or region. Sele
 
 With an Azure Resource Management (ARM) based [paid (unlimited)](accounts-overview.md) accounts, you are able to use:
 
-- [Azure role-based access control (RBAC)](/role-based-access-control/overview).
+- [Azure role-based access control (RBAC)](/azure/role-based-access-control/overview).
 - Managed Identity to better secure the communication between your Azure Media Services and Azure AI Video Indexer account, Network Service Tags, and native integration with Azure Monitor to monitor your account (audit and indexing logs).
 - Scale and automate your [deployment with ARM-template](deploy-with-arm-template.md), [bicep](deploy-with-bicep.md) or terraform.
 - [Create logic apps connector for ARM-based accounts](logic-apps-connector-arm-accounts.md).
@@ -250,8 +250,7 @@ Azure AI Video Indexer topic inferencing model was updated and now we extract mo
 
 ### Topic inferencing model is now available on Azure Government
 
-You can now leverage topic inferencing model in your Azure AI Video Indexer paid account on [Azure Government](/azure-government/documentation-government-welcome) in Virginia and Arizona regions. With this release we completed the AI parity between Azure global and Azure Government.
-To benefit from the model updates you need to re-index your video files.
+You can now leverage topic inferencing model in your Azure AI Video Indexer paid account on [Azure Government](/azure/azure-government/documentation-government-welcome) in Virginia and Arizona regions. With this release we completed the AI parity between Azure global and Azure Government. To benefit from the model updates you need to re-index your video files.
 
 ### Session length is now 30 days in the Azure AI Video Indexer website
 

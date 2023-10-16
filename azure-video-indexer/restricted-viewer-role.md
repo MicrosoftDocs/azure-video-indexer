@@ -56,11 +56,11 @@ Disabled features will appear to users with the **Restricted Viewer** access as 
 
 If you're an account owner, you can add and remove roles for the account. You can also assign roles to users. Use the following links to discover how to manage access: 
 
-- [Azure portal UI](/role-based-access-control/role-assignments-portal)
-- [PowerShell](/role-based-access-control/role-assignments-powershell) 
-- [Azure CLI](/role-based-access-control/role-assignments-cli) 
-- [REST API](/role-based-access-control/role-assignments-rest) 
-- [Azure Resource Manager templates](/role-based-access-control/role-assignments-template) 
+- [Azure portal UI](/azure/role-based-access-control/role-assignments-portal)
+- [PowerShell](/azure/role-based-access-control/role-assignments-powershell) 
+- [Azure CLI](/azure/role-based-access-control/role-assignments-cli) 
+- [REST API](/azure/role-based-access-control/role-assignments-rest) 
+- [Azure Resource Manager templates](/azure/role-based-access-control/role-assignments-template) 
 
 ## User management of classic and trial accounts  
 
