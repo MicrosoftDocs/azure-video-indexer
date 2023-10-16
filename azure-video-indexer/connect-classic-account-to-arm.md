@@ -15,7 +15,7 @@ ms.service: azure-video-indexer
 
 This article shows how to connect an existing classic paid Azure AI Video Indexer account to an Azure Resource Manager (ARM)-based (recommended) account. To create a new ARM-based account, see [create a new account](create-account-portal.md). To understand the Azure AI Video Indexer account types, review [account types](accounts-overview.md).
 
-In this article, we demonstrate options of connecting your **existing** Azure AI Video Indexer account to an [ARM][docs-arm-overview]-based account. You can also view the following video.
+In this article, we demonstrate options of connecting your **existing** Azure AI Video Indexer account to an [ARM][create-account-portal.md]-based account. You can also view the following video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10iby]
 
@@ -36,12 +36,11 @@ Connecting a classic account to be ARM-based triggers a 30 days of a transition 
 * Access token [generated through API Management](https://aka.ms/avam-dev-portal)(classic way) 
 * Access token [generated through ARM](/rest/api/videoindexer/preview/generate/access-token) 
 
-The transition state moves all account management functionality to be managed by ARM and will be handled by [Azure RBAC][docs-rbac-overview]. 
+The transition state moves all account management functionality to be managed by ARM and will be handled by [Azure RBAC][/azure/role-based-access-control/overview]. 
 
-The [invite users](restricted-viewer-role.md#share-the-account) feature in the [Azure AI Video Indexer website](https://www.videoindexer.ai/) gets disabled. The invited users on this account lose their access to the Azure AI Video Indexer account Media in the portal.  
-However, this can be resolved by assigning the right role-assignment to these users through Azure RBAC, see [How to assign RBAC][docs-rbac-assignment]. 
+The [invite users](restricted-viewer-role.md#share-the-account) feature in the [Azure AI Video Indexer website](https://www.videoindexer.ai/) gets disabled. The invited users on this account lose their access to the Azure AI Video Indexer account Media in the portal. However, this can be resolved by assigning the right role-assignment to these users through Azure RBAC, see [How to assign RBAC][/azure/role-based-access-control/role-assignments-steps]. 
 
-Only the account owner, who performed the connect action, is automatically assigned as the owner on the connected account. When [Azure policies][docs-governance-policy] are enforced, they override the settings on the account.
+Only the account owner, who performed the connect action, is automatically assigned as the owner on the connected account. When [Azure policies][/azure/governance/policy/overview] are enforced, they override the settings on the account.
 
 If users are not added through Azure RBAC to the account after 30 days, they will lose access through API as well as the [Azure AI Video Indexer website](https://www.videoindexer.ai/).  
 After the transition state ends, users will only be able to generate a valid access token through ARM, making Azure RBAC the exclusive way to manage role-based access control on the account.
@@ -107,8 +106,3 @@ For code sample generating an access token through ARM see [C# code sample](http
 
 Learn how to [Upload a video using C#](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/API-Samples/C%23/ArmBased/).
   
-<!-- links -->
-[docs-arm-overview]: /azure-resource-manager/management/overview.md
-[docs-rbac-overview]: /role-based-access-control/overview.md
-[docs-rbac-assignment]: /role-based-access-control/role-assignments-portal.md
-[docs-governance-policy]: /governance/policy/overview.md

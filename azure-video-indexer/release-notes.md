@@ -64,7 +64,7 @@ We now support all five levels of IPTC ontology.
 
 ### Resource Health support
 
-Azure AI Video Indexer is now integrated with Azure Resource Health enabling you to see the health and availability of each of your Azure AI Video Indexer resources. Azure Resource Health also helps with diagnosing and solving problems and you can set alerts to be notified whenever your resources are affected. For more information, see [Azure Resource Health overview](/service-health/resource-health-overview).
+Azure AI Video Indexer is now integrated with Azure Resource Health enabling you to see the health and availability of each of your Azure AI Video Indexer resources. Azure Resource Health also helps with diagnosing and solving problems and you can set alerts to be notified whenever your resources are affected. For more information, see [Azure Resource Health overview](/azure/service-health/resource-health-overview).
 
 ### The animation character recognition model has been retired
 
@@ -235,7 +235,7 @@ You can search or filter the account list using the account name or region. Sele
 
 With an Azure Resource Management (ARM) based [paid (unlimited)](accounts-overview.md) accounts, you are able to use:
 
-- [Azure role-based access control (RBAC)](/role-based-access-control/overview).
+- [Azure role-based access control (RBAC)](/azure/role-based-access-control/overview).
 - Managed Identity to better secure the communication between your Azure Media Services and Azure AI Video Indexer account, Network Service Tags, and native integration with Azure Monitor to monitor your account (audit and indexing logs).
 - Scale and automate your [deployment with ARM-template](deploy-with-arm-template.md), [bicep](deploy-with-bicep.md) or terraform.
 - [Create logic apps connector for ARM-based accounts](logic-apps-connector-arm-accounts.md).
@@ -250,8 +250,7 @@ Azure AI Video Indexer topic inferencing model was updated and now we extract mo
 
 ### Topic inferencing model is now available on Azure Government
 
-You can now leverage topic inferencing model in your Azure AI Video Indexer paid account on [Azure Government](/azure-government/documentation-government-welcome) in Virginia and Arizona regions. With this release we completed the AI parity between Azure global and Azure Government.
-To benefit from the model updates you need to re-index your video files.
+You can now leverage topic inferencing model in your Azure AI Video Indexer paid account on [Azure Government](/azure/azure-government/documentation-government-welcome) in Virginia and Arizona regions. With this release we completed the AI parity between Azure global and Azure Government. To benefit from the model updates you need to re-index your video files.
 
 ### Session length is now 30 days in the Azure AI Video Indexer website
 
@@ -298,7 +297,7 @@ The additions enable easier access to analyze the data, monitor resource operati
 
 ### Video Insights improvements
 
-Object Character Reader (OCR) is improved by 60%. Face Detection is improved by 20%. Label accuracy is improved by 30% over a wide variety of videos. These improvements are available immediately in all regions and do not require any changes by the customer.
+Object Character Reader (OCR) is improved by 60%. Face Detection is improved by 20%. Label accuracy is improved by 30% over a wide variety of videos. These improvements are available immediately in all regions and don't require any changes by the customer.
 
 ### Service tag
 
@@ -306,7 +305,7 @@ Azure AI Video Indexer is now part of [Network Service Tags](network-security.md
 
 ### Celebrity recognition toggle
 
-You can now enable or disable the celebrity recognition model on the account level (on classic account only). To turn on or off the model, go to the **Model customization** > toggle on/off the model. Once you disable the model, Video Indexer insights will not include the output of celebrity model and will not run the celebrity model pipeline.
+You can now enable or disable the celebrity recognition model on the account level (on classic account only). To turn on or off the model, go to the **Model customization** > toggle on/off the model. Once you disable the model, Video Indexer insights won't include the output of celebrity model and won't run the celebrity model pipeline.
 
 :::image type="content" source="./media/release-notes/celebrity-recognition.png" alt-text="Screenshot showing the celebrity recognition toggle.":::
 
@@ -426,7 +425,7 @@ Fixed bugs related to CSS, theming and accessibility:
 
 ### Automatic Scaling of Media Reserved Units
 
-Starting August 1st 2021, Azure AI Video Indexer enabled [Media Reserved Units (MRUs)](/azure/media-services/latest/concept-media-reserved-units) auto scaling by [Azure Media Services](/azure/media-services/latest/media-services-overview), as a result you do not need to manage them through Azure AI Video Indexer. That will allow price optimization, for example price reduction in many cases, based on your business needs as it is being auto scaled.
+Starting August 1st 2021, Azure AI Video Indexer enabled [Media Reserved Units (MRUs)](/azure/media-services/latest/concept-media-reserved-units) auto scaling by [Azure Media Services](/azure/media-services/latest/media-services-overview), as a result you don't need to manage them through Azure AI Video Indexer. That will allow price optimization, for example price reduction in many cases, based on your business needs as it is being auto scaled.
 
 ## June 2021
 
@@ -477,7 +476,7 @@ Azure AI Video Indexer now detects observed people in videos and provides inform
 
 For example, if a video contains a person, the detect operation will list the person appearances together with their coordinates in the video frames. You can use this functionality to determine the person path in a video. It also lets you determine whether there are multiple instances of the same person in a video.
 
-The newly added observed people tracing feature is available when indexing your file by choosing the **Advanced option** -> **Advanced video** or **Advanced video + audio** preset (under Video + audio indexing). Standard  and basic indexing presets will not include this new advanced model.
+The newly added observed people tracing feature is available when indexing your file by choosing the **Advanced option** -> **Advanced video** or **Advanced video + audio** preset (under Video + audio indexing). Standard  and basic indexing presets won't include this new advanced model.
 
 When you choose to see Insights of your video on the Azure AI Video Indexer website, the Observed People Tracing will show up on the page with all detected people thumbnails. You can choose a thumbnail of a person and see where the person appears in the video player.
 
@@ -542,7 +541,7 @@ When you choose to see **Insights** of your video on the [Azure AI Video Indexer
 
 The extracted list of people and location was extended and updated in general.
 
-In addition, the model now includes people and locations in-context which are not famous, like a ‘Sam’ or ‘Home’ in the video.
+In addition, the model now includes people and locations in-context which aren't famous, like a ‘Sam’ or ‘Home’ in the video.
 
 ## January 2021
 
@@ -577,7 +576,7 @@ Starting March 1st 2021, you no longer will be able to sign up and sign in to th
 You will be able to sign up and sign in using one of these providers: Azure AD, Microsoft, and Google.
 
 > [!NOTE]
-> The Azure AI Video Indexer accounts connected to LinkedIn and Facebook will not be accessible after March 1st 2021.
+> The Azure AI Video Indexer accounts connected to LinkedIn and Facebook won't be accessible after March 1st 2021.
 >
 > You should [invite](restricted-viewer-role.md#share-the-account) an Azure AD, Microsoft, or Google email you own to the Azure AI Video Indexer account so you will still have access. You can add an additional owner of supported providers, as described in [invite](restricted-viewer-role.md#share-the-account). <br/>
 > Alternatively, you can create a paid account and migrate the data.
@@ -667,8 +666,8 @@ A new player skin launched with updated design.
 For paid accounts the `Url` field is currently pointing to an internal URL instead of the public website.
 In the coming weeks we will change it and return the [Azure AI Video Indexer website](https://www.videoindexer.ai/) URL for all accounts (trial and paid).
 
-    Do not use the internal URLs, you should be using the [Azure AI Video Indexer public APIs](https://api-portal.videoindexer.ai/).
-* If you are embedding Azure AI Video Indexer URLs in your applications and the URLs are not pointing to the [Azure AI Video Indexer website](https://www.videoindexer.ai/) or the Azure AI Video Indexer API endpoint (`https://api.videoindexer.ai`) but rather to a regional endpoint (for example, `https://wus2.videoindexer.ai`), regenerate the URLs.
+    don't use the internal URLs, you should be using the [Azure AI Video Indexer public APIs](https://api-portal.videoindexer.ai/).
+* If you are embedding Azure AI Video Indexer URLs in your applications and the URLs aren't pointing to the [Azure AI Video Indexer website](https://www.videoindexer.ai/) or the Azure AI Video Indexer API endpoint (`https://api.videoindexer.ai`) but rather to a regional endpoint (for example, `https://wus2.videoindexer.ai`), regenerate the URLs.
 
    You can do it by either:
 
@@ -677,7 +676,7 @@ In the coming weeks we will change it and return the [Azure AI Video Indexer web
 
          Press **Play** to get to your video's page -> click the **&lt;/&gt; Embed** button -> copy the URL into your application:
 
-    The regional URLs are not supported and will be blocked in the coming weeks.
+    The regional URLs aren't supported and will be blocked in the coming weeks.
 
 ## January 2020
 
