@@ -30,8 +30,8 @@ The following table shows which categories are supported depending on **Preset N
 |---|---|---|
 | Crowd Reactions || :heavy_check_mark:|
 | Silence| :heavy_check_mark:| :heavy_check_mark:|
-| Gunshot or explosion ||:heavy_check_mark: |
-| Breaking glass ||:heavy_check_mark:|
+| Gunshot or explosion || :heavy_check_mark: |
+| Breaking glass || :heavy_check_mark: |
 | Alarm or siren|| :heavy_check_mark: |
 | Laughter|| :heavy_check_mark: |
 | Dog || :heavy_check_mark:|
