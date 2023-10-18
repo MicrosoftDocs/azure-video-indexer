@@ -28,21 +28,21 @@ The following table shows which categories are supported depending on **Preset N
 
 |Class |Standard indexing| Advanced indexing|
 |---|---|---|
-| Crowd Reactions || V|
-| Silence| V| V|
-| Gunshot or explosion ||V |
-| Breaking glass ||V|
-| Alarm or siren|| V |
-| Laughter|| V |
-| Dog || V|
-| Bell ringing|| V|
-| Bird|| V|
-| Car|| V|
-| Engine|| V|
-| Crying|| V|
-| Music playing|| V|
-| Screaming|| V|
-| Thunderstorm || V|
+| Crowd Reactions || :heavy_check_mark:|
+| Silence| :heavy_check_mark:| :heavy_check_mark:|
+| Gunshot or explosion ||:heavy_check_mark: |
+| Breaking glass ||:heavy_check_mark:|
+| Alarm or siren|| :heavy_check_mark: |
+| Laughter|| :heavy_check_mark: |
+| Dog || :heavy_check_mark:|
+| Bell ringing|| :heavy_check_mark:|
+| Bird|| :heavy_check_mark:|
+| Car|| :heavy_check_mark:|
+| Engine|| :heavy_check_mark:|
+| Crying|| :heavy_check_mark:|
+| Music playing|| :heavy_check_mark:|
+| Screaming|| :heavy_check_mark:|
+| Thunderstorm || :heavy_check_mark:|
 
 ## Result formats
 
