@@ -19,17 +19,17 @@ This tutorial walks you through the steps required to enable Video Indexer as an
 > [!IMPORTANT]
 > To successfully deploy the Azure Video Indexer extension, it is **mandatory** that your Azure subscription id is approved in advance. You must first sign up using [this form](https://aka.ms/vi-register).
 
-The following thing should be set up before you attempt the rest of this tutorial:
-
 - Review the [Azure Video Indexer enabled by Arc overview](azure-video-indexer-enabled-by-arc-overview.md).
-- Create an Azure subscription with permissions to create Azure resources.
-- Create an Azure Video Indexer Account. Use the [Create Video Indexer account](create-account-portal.md) tutorial.
-- Install the latest version of the [Azure CLI](/cli/azure/install-azure-cli). (You can skip this step if you're using Cloud Shell.)
-- **If not using Cloud Shell**, install the latest version of connectedk8s Azure CLI extension. Use the following command.
-
-    ```bash
-    az extension add --name connectedk8s
-    ```
+- Set up the following things before you attempt the rest of this tutorial:
+    - Review the [Azure Video Indexer enabled by Arc overview](azure-video-indexer-enabled-by-arc-overview.md).
+    - Create an Azure subscription with permissions to create Azure resources.
+    - Create an Azure Video Indexer Account. Use the [Create Video Indexer account](create-account-portal.md) tutorial.
+    - Install the latest version of the [Azure CLI](/cli/azure/install-azure-cli). (You can skip this step if you're using Cloud Shell.)
+    - **If not using Cloud Shell**, install the latest version of connectedk8s Azure CLI extension. Use the following command.
+    
+        ```bash
+        az extension add --name connectedk8s
+        ```
 
 > [!NOTE]
 > The AKS cluster that will contain the Video Indexer extension must be in the East US region.
