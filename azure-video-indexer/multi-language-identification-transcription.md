@@ -2,7 +2,7 @@
 title: Automatically identify and transcribe multi-language content with Azure AI Video Indexer
 description: This topic demonstrates how to automatically identify and transcribe multi-language content with Azure AI Video Indexer.
 ms.topic: article
-ms.date: 09/01/2019
+ms.date: 10/30/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -68,9 +68,7 @@ Additionally, each instance in the transcription section will include the langua
 
 ## Guidelines and limitations
 
-* Set of supported languages: English, French, German, Spanish.
-* Support for multi-language content with up to three supported languages.
-* If the audio contains languages other than the supported list above, the result is unexpected.
+* If the audio contains languages other than the ones you have selected, the results will be unexpected.
 * Minimal segment length to detect for each language – 15 seconds.
 * Language detection offset is 3 seconds on average.
 * Speech is expected to be continuous. Frequent alternations between languages may affect the models performance.
