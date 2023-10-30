@@ -3,14 +3,14 @@ title: Azure AI Video Indexer enabled by Arc
 description: This tutorial shows you how to deploy Azure Video Indexer with Arc.
 ms.topic: tutorial
 ms.service: azure-video-indexer
-ms.date: 10/04/2023
+ms.date: 10/30/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
 # Tutorial: Try Azure Video Indexer enabled by Arc
 
-Video Indexer Arc Enabled Solution is an Azure Arc Extension Enabled Service that runs video and audio analysis on edge devices. The solution is designed to run on Azure Stack Edge Profile, a heavy edge device, and supports three video formats, including MP4 and other common formats. The solution supports three Azure languages, English, German, and Spanish in all basic audio-related models. It assumes that one Video Indexer resource is mapped to one extension.
+Azure Video Indexer enabled by Arc ([!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)]) is an Azure Arc Extension Enabled Service that runs video and audio analysis on edge devices. The solution is designed to run on Azure Stack Edge Profile, a heavy edge device, and supports many video formats, including MP4 and other common formats. The solution supports several languages in all basic audio-related models. It assumes that one Video Indexer resource is mapped to one extension.
 
 This tutorial walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 
@@ -19,69 +19,19 @@ This tutorial walks you through the steps required to enable Video Indexer as an
 > [!IMPORTANT]
 > To successfully deploy the Azure Video Indexer extension, it is **mandatory** that your Azure subscription id is approved in advance. You must first sign up using [this form](https://aka.ms/vi-register).
 
-- Review the [Azure Video Indexer enabled by Arc overview](azure-video-indexer-enabled-by-arc-overview.md).
+- Review the [!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)][overview](azure-video-indexer-enabled-by-arc-overview.md).
 - Set up the following things before you attempt the rest of this tutorial:
-    - Review the [Azure Video Indexer enabled by Arc overview](azure-video-indexer-enabled-by-arc-overview.md).
     - Create an Azure subscription with permissions to create Azure resources.
     - Create an Azure Video Indexer Account. Use the [Create Video Indexer account](create-account-portal.md) tutorial.
     - Install the latest version of the [Azure CLI](/cli/azure/install-azure-cli). (You can skip this step if you're using Cloud Shell.)
-    - **If not using Cloud Shell**, install the latest version of connectedk8s Azure CLI extension. Use the following command.
+    - **If not using Cloud Shell**, install the latest version of *connectedk8s* Azure CLI extension. Use the following command.
     
         ```bash
         az extension add --name connectedk8s
         ```
 
-> [!NOTE]
-> The AKS cluster that will contain the Video Indexer extension must be in the East US region.
-
-## Prepare for deployment
-
-During the deployment, the script asks for environment specific values. Have these values ready so you can copy and paste them when the script asks for them. 
-
-| Question | value | Details
-| --- | --- | --- |
-| What is the Video Indexer account ID during deployment? | GUID | Your Video Indexer Account ID |
-| What is the Azure subscription ID during deployment? | GUID | Your Azure Subscription ID |
-| What is the name of the Video Indexer resource group during deployment? | string | The Resource Group Name of your Video Indexer Account |
-| What is the name of the Video Indexer account during deployment? | string | Your Video Indexer Account name |
-
-## [One-click deployment](#tab/oneclick)
-
-## One-Click Deploy Sample to Azure
-
-If you would like to test the extension on a sample edge device, this deployment script can be used to quickly set up a K8S cluster and all pods to run Azure Video Indexer. This script does the following things:
-
-- Creates a small two node AKS Cluster (costs are ~$0.80/hour)
-- Enables ARC Extension on top of the cluster
-- Adds Video Indexer Arc Extension
-- Adds Video Indexer and Cognitive Services Speech + Translation containers
-- Exposes the Video Indexer Swagger API for data plane operations
-
-You can read more on how to set up your Cloud Shell environment [here](/azure/cloud-shell/quickstart?tabs=azurecli).
-
 > [!IMPORTANT]
-> This is **not** meant as a path to production and only provided to quickly test Video Indexer on Edge functionality.
-
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://shell.azure.com/bash?url=)
-
-In Cloud Shell execute these two commands:
-
-```bash
-curl -sSL https://gist.github.com/fvneerden/64c2642c3a707ab518e379c7c1435551/raw/f3915aa501823957c1cb3992ae7add093bab456c/vi-edge-deployment-script.sh -o install_vi_arc.sh
-```
-
-```bash
-sh install_vi_arc.sh
-```
-
-When finished, you can use the URL of the new Video Indexer extension running on the AKS cluster to perform test Video Indexer on Edge.
-
-
-## [Manual deployment](#tab/manual)
-
-## Manual deployment
-
-Follow these steps to deploy the Video Indexer Arc Extension to your Arc K8S Enabled cluster. 
+> The AKS cluster contains the Video Indexer extension must be in the East US region.
 
 ## Minimum hardware requirements
 
@@ -107,6 +57,54 @@ The following list is the minimum and recommended requirements if the extension 
 | Operating System | Ubuntu 20.04 LTS or any Linux Compatible OS |
 | Kubernetes | 1.24 |
 | Azure CLI | 2.4.0 |
+
+## Prepare for deployment
+
+During the deployment, the script asks for environment specific values. Have these values ready so you can copy and paste them when the script asks for them. 
+
+| Question | Value | Details
+| --- | --- | --- |
+| What is the Video Indexer account ID during deployment? | GUID | Your Video Indexer Account ID |
+| What is the Azure subscription ID during deployment? | GUID | Your Azure Subscription ID |
+| What is the name of the Video Indexer resource group during deployment? | string | The Resource Group Name of your Video Indexer Account |
+| What is the name of the Video Indexer account during deployment? | string | Your Video Indexer Account name |
+
+> [!WARNING]
+> This sample environment is **NOT** meant to be used in production and only provided to quickly test functionality. Be certain to restrict access to the IP addresses in the environment to prevent security issues.
+
+## [One-click deployment](#tab/oneclick)
+
+## One-Click Deploy Sample to Azure
+
+If you would like to test the extension on a sample edge device, this deployment script can be used to quickly set up a K8S cluster and all pods to run Azure Video Indexer. This script does the following things:
+
+- Creates a small two node AKS Cluster (costs are ~$0.80/hour)
+- Enables ARC Extension on top of the cluster
+- Adds Video Indexer Arc Extension
+- Adds Video Indexer and Cognitive Services Speech + Translation containers
+- Exposes the Video Indexer Swagger API for data plane operations
+
+You can read more on how to set up your Cloud Shell environment [here](/azure/cloud-shell/quickstart?tabs=azurecli).
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://shell.azure.com/bash?url=)
+
+In Cloud Shell execute these two commands:
+
+```bash
+curl -sSL https://github.com/shemers/media-services-video-indexer/blob/master/AVIenabledbyArc/vi-edge-deployment-script.sh -o install_vi_arc.sh
+```
+
+```bash
+sh install_vi_arc.sh
+```
+
+When finished, you can use the URL of the new Video Indexer extension running on the AKS cluster to perform test Video Indexer on Edge.
+
+## [Manual deployment](#tab/manual)
+
+## Manual deployment
+
+Follow these steps to deploy the Video Indexer Arc Extension to your Arc K8S Enabled cluster. 
 
 ### Step 1 - Create Azure Arc Kubernetes Cluster and connect it to your cluster
 
@@ -173,7 +171,7 @@ The following parameters are used as input to the extension creation command:
 | release-namespace | yes | The Kubernetes namespace that the extension is installed into | 
 | cluster-name | | The Kubernetes Azure Arc instance name |
 | resource-group | | The Kubernetes Azure Arc resource group name |
-| version | 1.0.20-preview | Video Indexer Extension version |
+| version | latest | Video Indexer Extension version |
 | speech.endpointUri |  | Speech Service Url Endpoint |
 | speech.secret |  | Speech Instance secret |
 | translate.endpointUri |  | Translation Service Url Endpoint  |

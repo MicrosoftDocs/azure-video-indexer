@@ -10,9 +10,9 @@ author: IngridAtMicrosoft
 
 # Azure Video Indexer enabled by Arc overview
 
-Azure AI Video Indexer enabled by Arc ([!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)]) an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
+[!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)] ([!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)]) an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 
-Before you start working with VI enabled by Arc, review the [transparency note](/legal/azure-video-indexer/transparency-note) to understand usage restrictions.
+Before you start working with [!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)], review the [transparency note](/legal/azure-video-indexer/transparency-note) to understand usage restrictions.
 
 ## Azure Arc
 
@@ -25,23 +25,23 @@ Azure Arc allows you to manage the resource types hosted outside of Azure, such 
 - Azure Stack HCI
 - virtual machines based on VMware VSphere
 
-VI enabled by Arc works on both heavy edge and light edge devices, giving you design flexibility. An example of a heavy edge device is Azure Stack HCI. Examples of light edge devices include cell phones, vehicles, and sensors.
+[!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)] works on both heavy edge and light edge devices, giving you design flexibility. An example of a heavy edge device is Azure Stack HCI. Examples of light edge devices include cell phones, vehicles, and sensors.
 
 ## Use cases
 
 All VI enabled by Arc accounts are Azure Resource Manager (ARM) accounts. ARM operations are decoupled from video insight operations. This design allows you to perform analysis on your edge devices without the need to upload your media assets to Azure.
 
-- **Data governance** – You can bring the AI to the content instead of vice versa. Use AVIEA when you can’t move indexed content from on-premises to the cloud due to:
+- **Data governance** – You can bring the AI to the content instead of vice versa. Use [!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)] when you can’t move indexed content from on-premises to the cloud due to:
     - regulation.
     - architecture decisions.
     - data store being too large, making lift and shift a significant effort.
 
 - **On-premises workflow** – Your indexing process is part of an on-premises workflow, and you want to lower the indexing duration latency affecting the flow.
-- **Pre-indexing** – You want to index before uploading the content to the cloud. To create clarity, you can presort your on-premises video\audio archive, and then only upload it for Standard\Advanced indexing in the Cloud.
+- **Pre-indexing** – You want to index before uploading the content to the cloud. To create clarity, you can presort your on-premises video and/or audio archive, and then only upload it for Standard and/or Advanced indexing in the Cloud.
 
 ## Sample architecture
 
-You can use AVIeA on any of the compute resources offered by Azure Arc. The following example architecture diagram shows how AVIeA is used with a few Kubernetes clusters.
+You can use [!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)] on any of the compute resources offered by Azure Arc. The following example architecture diagram shows how AVIeA is used with a few Kubernetes clusters.
 
 **TO-DO: DIAGRAM**
 <!--
@@ -51,13 +51,13 @@ DIAGRAM EXPLANATION
 
 ## Supported AI presets
 
-AVIeA supports the following indexing presets:
+[!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)] supports the following indexing presets:
 
 | Model | Basic Video | Basic Audio | Basic Video & Audio |
 |--|--|--|--|
 | Transcription |  | :heavy_check_mark: | :heavy_check_mark: |
 | Translation |  | :heavy_check_mark: | :heavy_check_mark: |
-| Captioning | :heavy_check_mark: |  | :heavy_check_mark: |
+| Captioning |  | :heavy_check_mark: | :heavy_check_mark: |
 | Object detection | :heavy_check_mark: |  | :heavy_check_mark: |
 | Key frame detection | :heavy_check_mark: |  | :heavy_check_mark: |
 | Scene detection | :heavy_check_mark: |  | :heavy_check_mark: |

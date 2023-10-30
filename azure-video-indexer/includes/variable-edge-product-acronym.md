@@ -6,4 +6,4 @@ ms.author: inhenkel
 title: Edge product name
 ---
 
-Azure Video Indexer enabled by Arc
+VI enabled by Arc
