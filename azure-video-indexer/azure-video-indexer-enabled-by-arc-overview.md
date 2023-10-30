@@ -1,6 +1,6 @@
 ---
 title: Azure AI Video Indexer enabled by Arc overview  
-description: Azure AI Video Indexer enabled by Arc (AVIEA) an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
+description: Azure AI Video Indexer enabled by Arc an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 ms.topic: tutorial
 ms.service: azure-video-indexer
 ms.date: 10/30/2023
@@ -16,7 +16,7 @@ Before you start working with [!INCLUDE [variable-edge-product-name](includes/va
 
 ## Azure Arc
 
-Azure Arc allows you to manage the resource types hosted outside of Azure, such as:
+[Azure Arc](/azure/azure-arc/overview) allows you to manage the resource types hosted outside of Azure, such as:
 
 - Windows and Linux physical servers
 - Kubernetes clusters
@@ -24,6 +24,9 @@ Azure Arc allows you to manage the resource types hosted outside of Azure, such 
 - SQL server
 - Azure Stack HCI
 - virtual machines based on VMware VSphere
+
+### What is an Azure Arc extension?
+An Azure Arc extension is a way to of deliver agents, scripts, and configurations to your on-premises machines orchestrated using the Azure Portal or API. For more information about Azure Arc extensions, see [](/azure/azure-arc/servers/manage-vm-extensions)
 
 [!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)] works on both heavy edge and light edge devices, giving you design flexibility. An example of a heavy edge device is Azure Stack HCI. Examples of light edge devices include cell phones, vehicles, and sensors.
 
@@ -124,4 +127,4 @@ Here is your alphabetized list:
 ## Next steps
 
 - [Try Azure Video Indexer enabled by Arc](azure-video-indexer-enabled-by-arc-tutorial.md)
-- **TO DO** **Link to API goes here.**
+- [View the API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Account-Access-Token)
