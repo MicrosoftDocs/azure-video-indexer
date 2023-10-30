@@ -69,16 +69,16 @@ Additionally, each instance in the transcription section includes the language i
 ## Guidelines and limitations
 
 * Audio that contains languages other than the ones you selected produces unexpected results.
-* Minimal segment length to detect for each language – 15 seconds.
-* Language detection offset is 3 seconds on average.
-* Speech is expected to be continuous. Frequent alternations between languages might affect the models performance.
-* Speech of non-native speakers might affect the model performance (for example, when speakers use their native tongue and they switch to another language).
-* The model is designed to recognize a spontaneous conversational speech with reasonable audio acoustics (not voice commands, singing, etc.).
-* Project creation and editing are currently not available for multi-language videos.
+* The minimal segment length for detecting each language is 15 seconds.
+* The language detection offset is 3 seconds on average.
+* Speech is expected to be continuous. Frequent alternations between languages might affect the model's performance.
+* The speech of non-native speakers might affect the model's performance (for example, when speakers use their first language and they switch to another language).
+* The model is designed to recognize spontaneous conversational speech with reasonable audio acoustics (not voice commands, singing, etc.).
+* Project creation and editing are not available for multi-language videos.
 * Custom language models aren't available when using multi-language detection.
 * Adding keywords isn't supported.
 * The language indication isn't included in the exported closed caption file.
-* The update transcript API doesn't support multiple languages files.
+* The update transcript in the API doesn't support multiple languages files.
 
 ## Next steps
 
