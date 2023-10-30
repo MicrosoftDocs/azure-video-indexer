@@ -1,6 +1,6 @@
 ---
 title: Automatically identify and transcribe multi-language content with Azure AI Video Indexer
-description: This topic demonstrates how to automatically identify and transcribe multi-language content with Azure AI Video Indexer.
+description: This article demonstrates how to automatically identify and transcribe multi-language content with Azure AI Video Indexer.
 ms.topic: article
 ms.date: 10/30/2023
 ms.author: inhenkel
@@ -16,16 +16,16 @@ Azure AI Video Indexer supports automatic language identification and transcript
 
 ## Choosing multilingual identification on indexing with portal
 
-You can choose **multi-language detection** when uploading and indexing your video. Alternatively, you can choose **multi-language detection**  when re-indexing your video. The following steps describe how to reindex:
+You can choose **multi-language detection** when uploading and indexing your video. Alternatively, you can choose **multi-language detection**  when reindexing your video. The following steps describe how to reindex:
 
 1. Browse to the [Azure AI Video Indexer](https://vi.microsoft.com/) website and sign in.
 1. Go to the **Library** page and hover over the name of the video that you want to reindex. 
-1. On the right-bottom corner, click the **Re-index video** button. 
+1. On the right-bottom corner, select the **Re-index video** button. 
 1. In the **Re-index video** dialog, choose **multi-language detection** from the **Video source language** drop-down box.
 
-    * When a video is indexed as multi-language, the insight page will include that option, and an additional insight type will appear, enabling the user to view which segment is transcribed in which language "Spoken language".
+    * When a video is indexed as multi-language the user to view which segment is transcribed in which language.
     * Translation to all languages is fully available from the multi-language transcript.
-    * All other insights will appear in the master language detected – that is the language that appeared most in the audio.
+    * All other insights appear in the language that detected the most in the audio.
     * Closed captioning on the player is available in multi-language as well.
 
 ![Portal experience](./media/multi-language-identification-transcription/portal-experience.png)
@@ -36,7 +36,7 @@ When indexing or [reindexing](https://api-portal.videoindexer.ai/api-details#api
 
 ### Model output
 
-The model will retrieve all of the languages detected in the video in one list
+The model retrieves all of the languages detected in the video in one list
 
 ```json
 "sourceLanguage": null,
@@ -46,7 +46,7 @@ The model will retrieve all of the languages detected in the video in one list
 ],
 ```
 
-Additionally, each instance in the transcription section will include the language in which it was transcribed
+Additionally, each instance in the transcription section includes the language in which it was transcribed
 
 ```json
 {
@@ -68,17 +68,17 @@ Additionally, each instance in the transcription section will include the langua
 
 ## Guidelines and limitations
 
-* If the audio contains languages other than the ones you have selected, the results will be unexpected.
+* Audio that contains languages other than the ones you selected produces unexpected results.
 * Minimal segment length to detect for each language – 15 seconds.
 * Language detection offset is 3 seconds on average.
-* Speech is expected to be continuous. Frequent alternations between languages may affect the models performance.
-* Speech of non-native speakers may affect the model performance (for example, when speakers use their native tongue and they switch to another language).
+* Speech is expected to be continuous. Frequent alternations between languages might affect the models performance.
+* Speech of non-native speakers might affect the model performance (for example, when speakers use their native tongue and they switch to another language).
 * The model is designed to recognize a spontaneous conversational speech with reasonable audio acoustics (not voice commands, singing, etc.).
-* Project creation and editing is currently not available for multi-language videos.
-* Custom language models are not available when using multi-language detection.
-* Adding keywords is not supported.
-* When exporting closed caption files the language indication will not appear.
-* The update transcript API does not support multiple languages files.
+* Project creation and editing are currently not available for multi-language videos.
+* Custom language models aren't available when using multi-language detection.
+* Adding keywords isn't supported.
+* The language indication isn't included in the exported closed caption file.
+* The update transcript API doesn't support multiple languages files.
 
 ## Next steps
 
