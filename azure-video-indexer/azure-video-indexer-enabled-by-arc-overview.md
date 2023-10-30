@@ -67,25 +67,25 @@ DIAGRAM EXPLANATION
 
 ### Video formats
 
-- AVI (.avi)
-- FLV (with H.264 and AAC codecs) (.flv)
+**P0:**
+- ISMV (.isma, .ismv)
 - Matroska/WebM (.mkv)
-- MPEG2-TS
-- MP4 (.mp4, .m4a, .m4v)/ISMV (.isma, .ismv)
+- MP4 (.mp4, .m4a, .m4v)
 - MXF (.mxf)
+- MPEG2-TS
 - QuickTime (.mov)
 - WAVE/WAV (.wav)
+
+**P1:**
+- AVI  (.avi)
+- FLV (with H.264 and AAC codecs) (.flv)
 - Webm
 - Windows Media Video (WMV)/ASF (.wmv, .asf)
 
 ### Video codecs
 
-- Apple ProRes 422
-- Apple ProRes 422 HQ
-- Apple ProRes 422 LT
-- Apple ProRes 4444
-- Apple ProRes 4444 XQ
-- Apple ProRes Proxy
+Here is your alphabetized list:
+
 - AVC 8-bit/10-bit, up to 4:2:2, including AVCIntra
 - Digital video (DV) (in AVI files)
 - DVCPro/DVCProHD (in MXF container)
@@ -93,19 +93,17 @@ DIAGRAM EXPLANATION
 - MPEG-1
 - MPEG-2 (up to 422 Profile and High Level; including variants such as Sony XDCAM, Sony XDCAM HD, Sony XDCAM IMX, CableLabs®, and D10)
 - MPEG-4 Part 2
-- Sony XAVC / XAVC S (in MXF container)
 - VC-1/WMV9
-- VP8/9
 
-### Audio codecs
-
-- AAC (AAC-LC, AAC-HE, and AAC-HEv2)
-- FLAC
-- MP3 (MPEG-1 Audio Layer 3)
-- MPEG Layer 2
+### Audio codecs up to 2 tracks
+ 
+- AAC (AAC-LC, AAC-HE, and AAC-HEv2) 
+- FLAC	
+- MPEG Layer 2 
+- MP3 (MPEG-1 Audio Layer 3)  
 - VORBIS
-- WAV/PCM
-- Windows Media Audio
+- WAV/PCM   
+- Windows Media Audio  
 
 ## Supported languages
 
