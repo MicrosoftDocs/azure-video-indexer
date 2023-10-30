@@ -3,16 +3,16 @@ title: Azure AI Video Indexer enabled by Arc overview
 description: Azure AI Video Indexer enabled by Arc (AVIEA) an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 ms.topic: tutorial
 ms.service: azure-video-indexer
-ms.date: 10/04/2023
+ms.date: 10/30/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
 # Azure Video Indexer enabled by Arc overview
 
-Azure AI Video Indexer enabled by Arc (AVIeA) an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
+Azure AI Video Indexer enabled by Arc (VI enbaled by Arc[!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)]) an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 
-Before you start working with Azure Video Indexer enabled by Arc, review the [transparency note](/legal/azure-video-indexer/transparency-note) to understand usage restrictions.
+Before you start working with VI enabled by Arc, review the [transparency note](/legal/azure-video-indexer/transparency-note) to understand usage restrictions.
 
 ## Azure Arc
 
@@ -25,11 +25,11 @@ Azure Arc allows you to manage the resource types hosted outside of Azure, such 
 - Azure Stack HCI
 - virtual machines based on VMware VSphere
 
-AVIeA works on both heavy edge and light edge devices, giving you design flexibility. An example of a heavy edge device is Azure Stack HCI. Examples of light edge devices include cell phones, vehicles, and sensors.
+VI enabled by Arc works on both heavy edge and light edge devices, giving you design flexibility. An example of a heavy edge device is Azure Stack HCI. Examples of light edge devices include cell phones, vehicles, and sensors.
 
 ## Use cases
 
-All AVIeA accounts are Azure Resource Manager (ARM) accounts. ARM operations are decoupled from video insight operations. This design allows you to perform analysis on your edge devices without the need to upload your media assets to Azure.
+All VI enabled by Arc accounts are Azure Resource Manager (ARM) accounts. ARM operations are decoupled from video insight operations. This design allows you to perform analysis on your edge devices without the need to upload your media assets to Azure.
 
 - **Data governance** – You can bring the AI to the content instead of vice versa. Use AVIEA when you can’t move indexed content from on-premises to the cloud due to:
     - regulation.
