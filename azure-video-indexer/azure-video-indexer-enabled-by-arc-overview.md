@@ -55,13 +55,13 @@ DIAGRAM EXPLANATION
 
 | Model | Basic Video | Basic Audio | Basic Video & Audio |
 |--|--|--|--|
-| Transcription |  | :heavy_check_mark: | :heavy_check_mark: |
-| Translation |  | :heavy_check_mark: | :heavy_check_mark: |
-| Captioning |  | :heavy_check_mark: | :heavy_check_mark: |
-| Object detection | :heavy_check_mark: |  | :heavy_check_mark: |
-| Key frame detection | :heavy_check_mark: |  | :heavy_check_mark: |
-| Scene detection | :heavy_check_mark: |  | :heavy_check_mark: |
-| Shot detection | :heavy_check_mark: |  | :heavy_check_mark: |
+| [Transcription](transcription-translation-lid.md) |  | :heavy_check_mark: | :heavy_check_mark: |
+| [Translation](transcription-translation-lid.md) |  | :heavy_check_mark: | :heavy_check_mark: |
+| [Captioning](view-closed-captions.md) |  | :heavy_check_mark: | :heavy_check_mark: |
+| [Key frame detection](scenes-shots-keyframes.md) | :heavy_check_mark: |  | :heavy_check_mark: |
+| [OCR](ocr.md) | | :heavy_check_mark: | :heavy_check_mark: |
+| [Scene detection](scenes-shots-keyframes.md) | :heavy_check_mark: |  | :heavy_check_mark: |
+| [Shot detection](scenes-shots-keyframes.md) | :heavy_check_mark: |  | :heavy_check_mark: |
 
 ## Supported input formats and codecs
 
