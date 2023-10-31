@@ -20,6 +20,11 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Bug fixes
 * Deprecated functionality
 
+## October 2023
+
+### New insight - Object detection
+Video Indexer added a new insight, object detection, to both the standard and advanced video preset. It can be used to identify and track a wide range of objects that appear in your videos. To learn more, see [Azure AI Video Indexer object detection overview](object-detection.md).
+
 ## September 2023
 
 ### Changes related to AMS retirement

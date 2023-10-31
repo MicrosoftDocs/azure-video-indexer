@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Azure Video Indexer object detection
 
-Azure Video Indexer can detect objects in videos. The insight is part of all standard and advanced presets.
+Azure Video Indexer can detect objects in videos. The insight is part of standard and advanced video presets.
 
 ## Prerequisites
 
