@@ -19,7 +19,7 @@ This tutorial walks you through the steps required to enable Video Indexer as an
 > [!IMPORTANT]
 > To successfully deploy the Azure Video Indexer extension, it is **mandatory** that your Azure subscription id is approved in advance. You must first sign up using [this form](https://aka.ms/vi-register).
 
-- Review the [!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)][overview](azure-video-indexer-enabled-by-arc-overview.md).
+- Review the [!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)][ overview](azure-video-indexer-enabled-by-arc-overview.md).
 - Set up the following things before you attempt the rest of this tutorial:
     - Create an Azure subscription with permissions to create Azure resources.
     - Create an Azure Video Indexer Account. Use the [Create Video Indexer account](create-account-portal.md) tutorial.
@@ -118,7 +118,7 @@ az connectedk8s connect --name myAKSCluster --resource-group myResourceGroup
 ```
 
 > [!TIP] 
-> Follow the article [how to connect your cluster to Azure Arc][/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli] on Azure Docs for a complete walkthrough of this process.
+> Follow the article [how to connect your cluster to Azure Arc](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli) on Azure Docs for a complete walkthrough of this process.
 
 ### Step 2 - Create Cognitive Services Resources for the extension
 
@@ -195,7 +195,8 @@ az k8s-extension create --name videoindexer \
     --config-protected-settings "translate.endpointUri=${translateUri}" \
     --config-protected-settings "translate.secret=${translateSecret}" \
     --config "videoIndexer.accountId=${viAccountId}" \
-    --config "frontend.endpointUri=${dnsName}" 
+    --config "frontend.endpointUri=${dnsName}" \
+    --config "storage.storageClass=azurefile-csi"
 ```
 
 There are other parameters that can be used to have a more fine grained control on the extension creation:
@@ -232,8 +233,7 @@ az k8s-extension create --name videoindexer \
     --config "speech.resource.limits.mem=4Gi" \
     --config "videoIndexer.webapi.resources.requests.mem=4Gi"\
     --config "videoIndexer.webapi.resources.limits.mem=8Gi"\
-    --config "videoIndexer.webapi.resources.limits.cpu=1"\
-    --config "storage.storageClass=azurefile-csi" 
+    --config "videoIndexer.webapi.resources.limits.cpu=1"\ 
 ```
 
 ### Step 4 - Verify Deployment

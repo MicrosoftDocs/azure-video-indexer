@@ -110,6 +110,24 @@ sections:
       - question: Can’t find my new ARM account in the account list on the Azure AI Video Indexer website.
         answer: |
           For detailed description on how to switch to the correct domain, see [Switch between tenants](switch-tenants-portal.md).
+  - name: Azure Video Indexer enabled by Arc questions
+    questions:
+    - question: What is Azure Video Indexer Arc Enabled Extension? 
+      answer: An application running in Arc-enabled Kubernetes containers that can be deployed outside of Azure to extract and consume audio insights from your media files. Future versions will provide video insights as well. 
+    - question: What is Azure Arc?    
+      answer:  Azure Arc is a bridge that extends the Azure platform to help you build applications and services with the flexibility to run across datacenters, at the edge, and in multi-cloud environments. Develop cloud-native applications with consistent development, operations, and security models.
+    - question: What is needed to participate in the preview?
+      answer: To participate in the preview, you need an active Azure subscription, a connection to Azure, an environment that is capable of running the extension (see [requirements]()), and permission to join the preview. You can submit a request to join the preview [here](https://aka.ms/vi-register). 
+    - question: How can I get started with Azure Video Indexer enabled by Arc?
+      answer: You can either follow the [tutorial](azure-video-indexer-enabled-by-arc-tutorial.md) and experience Azure Arc-enabled Kubernetes automated scenarios with Azure Arc [Jumpstart](https://azurearcjumpstart.io/azure_arc_jumpstart/azure_arc_k8s/).
+    - question: Why is the download so large? 
+      answer: During the installation of the extension, machine learning containers are downloaded to the edge compute. Some of these containers can be several gigabytes in size, and the download time will depend on network conditions. In some cases, the download may take longer than 15 minutes.
+    - question: Do I need to configure storage to my Kubernetes cluster?
+      answer: Video Indexer enabled by Arc requires a storage class configured with *readwritemany*. If a storage class is already set as the cluster’s default during installation, then it will be used. Otherwise, if you need to configure different storage, you can pass it as a property during the extension installation. 
+    - question: Do I need to configure a frontend endpoint for Video Indexer extension? 
+      answer: Yes. The Video Indexer extension’s API is available via the frontend extension. You can restrict access to either an IP address or a FQDN. Also, as all communication is done over secure traffic protocols, using a valid CA certificate, and setting a security layer such as NSG or firewall to limit the access to this endpoint is recommended.  
+    - question: How can I troubleshoot my Azure Video Indexer enabled by Arc installation?
+      answer: Consult the [troubleshooting guide]().
   - name: Privacy Questions
     questions:
       - question: How is network traffic encrypted by Azure AI Video Indexer?
