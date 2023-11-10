@@ -1,5 +1,5 @@
 ---
-title: Azure AI Video Indexer enabled by Arc  
+title: Tutorial - Azure AI Video Indexer enabled by Arc
 description: This tutorial shows you how to deploy Azure Video Indexer with Arc.
 ms.topic: tutorial
 ms.service: azure-video-indexer
