@@ -11,7 +11,7 @@ items:
   - name: Azure Video Indexer enabled by Arc overview
     href: azure-video-indexer-enabled-by-arc-overview.md
   - name: Bring your own model
-    href: azure-video-indexer-bring-your-own-model-overview.md 
+    href: azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md
   - name: Account types
     href: accounts-overview.md
     displayName: existing classic account, limited access features, account types, accounts description, accounts types, unlimited accounts, trial account, pricing, API, unlimited ARM based account, Azure Government limitations, Azure Government cloud, regular unlimited accounts, classic account type, classic account type, classic (paid) account, Azure Resource Manager, up to 600 minutes, up to 2400 minutes, regular paid account, Azure Monitor integration, ARM based accounts, ARM-based (paid) account, trial account option, accounts management plane, free trial minutes, unlimited) account, Classic accounts, Azure subscription, Azure portal, ARM-based account, trial accounts, indexing minutes, Account creation, other articles, free indexing, management capabilities, ARM templates, easy process, great way, developer portal, production workloads, many security, correct domain, Switch tenants, Next steps, API Management, minute cost, SLA limitations, website users, minute, support, title, overview, links, details, videoindexer, quick, No, content, mind, number, api-portal, azure-video-indexer, azure-government, based-access-control, deployment, Billing, preset, information, microsoft, account-portal, TIP, classic-account, difference, azure-resource, access-account-types

@@ -26,7 +26,7 @@ Before you start working with [!INCLUDE [variable-edge-product-name](includes/va
 - virtual machines based on VMware vSphere
 
 ### What is an Azure Arc extension?
-An Azure Arc extension is a way to of deliver agents, scripts, and configurations to your on-premises machines orchestrated using the Azure Portal or API. For more information about Azure Arc extensions, see [](/azure/azure-arc/servers/manage-vm-extensions)
+An Azure Arc extension is a way to of deliver agents, scripts, and configurations to your on-premises machines orchestrated using the Azure Portal or API. For more information about Azure Arc extensions, see [Manage VM extensions](/azure/azure-arc/servers/manage-vm-extensions)
 
 [!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)] works on both heavy edge and light edge devices, giving you design flexibility. An example of a heavy edge device is Azure Stack HCI. Examples of light edge devices include cell phones, vehicles, and sensors.
 

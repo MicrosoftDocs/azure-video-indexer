@@ -3,7 +3,7 @@ title: Azure AI Video Indexer Bring Your Own AI model overview
 description: This article is an overview of Azure AI Video Indexer enabled by Arc bring your own model.
 ms.topic: tutorial
 ms.service: azure-video-indexer
-ms.date: 11/08/2023
+ms.date: 11/10/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -16,7 +16,7 @@ This article is an overview of Azure Video Indexer bring your own AI model.
 
 Azure Video Indexer offers a set of AIs optimized for video and audio content that can be applied to many content types. You can combine more insights from Microsoft sources, custom sources, or third party sources with the built-in Azure Video Indexer insights all in a seamless experience.
 
-This feature is flexible enough to accommodate all forms and types of insights, including detection-oriented and classification-oriented AIs. You have the freedom to select the data that your external model operates on, such as the video's key frames, the entire video, or just the audio track. You can also use other insights already produced for the video, such as detected objects, faces, and labels. This allows you to run the external analysis on only the related section of the video, improving performance and reducing costs.
+This feature is flexible enough to accommodate all forms and types of insights, including detection-oriented and classification-oriented AIs. You have the freedom to select the data that your external model operates upon, such as the video's key frames, the entire video, or just the audio track. You can also use other insights already produced for the video, such as detected objects, faces, and labels. This allows you to run the external analysis on only the related section of the video, improving performance and reducing costs.
 
 The feature is available for both the cloud and edge use cases.
 
@@ -27,18 +27,26 @@ There's no extra cost to use this feature with Azure Video Indexer.
 
 **Workflow diagram from Shemer's PPT goes here**
 
+### General workflow
 1. Use the Azure Video Indexer workflow as usual, but add a callback URL to your own custom programming expecting the request.
 1. The request returns a JSON file with custom insights.
 1. The custom programming calls the Patch method in the Azure Video Indexer API.
-1. The Patch method adds the JSON data under the `customInsights` section of the Azure Video Indexer insights JSON. 
+1. The Patch method adds the JSON data under the `customInsights` section of the Azure Video Indexer insights JSON.  
 
 ## Prerequisites
 
 Before you can start using the BYO model feature with Azure Video Indexer, you must:
 
-1. Create the programming that returns information in the required JSON format.
+1. Create the programming that returns information in the required JSON format, and calls the Patch method.
 1. Provide the callback URL for requesting the JSON.
 1. Plan to pass a media ID so that the GUIDs map appropriately.
+
+### Test a workflow using Azure services
+1. Set up monitoring on your Azure Video Indexer account using Azure Event Hub and a diagnostic setting.
+1. Set up the Azure Event so that it triggers an Azure Function that:
+    1. Receives the indexing information including the media ID.
+    1. Sends a GET request to the Update Video Index with test information formatted with the schema.
+1. See the results in the Azure Video Indexer portal.
 
 ## Schema
 
@@ -107,12 +115,6 @@ FrameUriData
 | **EndTime**     | End time of the frame in the video    |
 | **SasUri**      | Sas uri of the frame                  |
 
-
-**----------Is this section needed for Ignite---------**
-## Thumbnail cropping
-You're responsible for creating the thumbnail cropping. You should create a GUID for the thumbnail file as it is required. Provide the GUID in the object thumbnail property. See the [sample code](#).
-**---------end this section----------**
-
 ### Sample schema
 ```json
 "customInsights": [
@@ -140,3 +142,13 @@ You're responsible for creating the thumbnail cropping. You should create a GUID
         ]
     }... 
 ```
+
+**----------Is this section needed for Ignite?---------**
+## Thumbnail cropping
+I can't tell from the spec doc what is supposed to go in here.
+**---------end this section----------**
+
+**----------Is this section needed for Ignite?---------**
+## Search
+I can't tell from the spec doc what is supposed to go in here.
+**---------end this section----------**
