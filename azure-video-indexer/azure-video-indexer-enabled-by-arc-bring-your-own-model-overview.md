@@ -115,7 +115,7 @@ FrameUriData
 | **EndTime**     | End time of the frame in the video    |
 | **SasUri**      | Sas uri of the frame                  |
 
-### Sample schema
+### Sample data sent from custom application in schema format
 ```json
 "customInsights": [
     {
