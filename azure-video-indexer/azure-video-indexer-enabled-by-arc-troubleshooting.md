@@ -1,7 +1,7 @@
 ---
 title: Azure AI Video Indexer enabled by Arc troubleshooting guide  
 description: Use this guide to troubleshoot issues with Azure AI Video Indexer enabled by Arc.
-ms.topic: tutorial
+ms.topic: conceptual
 ms.service: azure-video-indexer
 ms.date: 11/08/2023
 ms.author: inhenkel
