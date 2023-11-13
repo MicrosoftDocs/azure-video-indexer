@@ -164,5 +164,4 @@ FrameUriData
 ## Related content
 [Use the Azure AI Video Indexer API](video-indexer-use-apis.md)
 
-## 
 [!INCLUDE [footer](includes/footer.md)]
