@@ -3,7 +3,7 @@ title: Azure AI Video Indexer enabled by Arc overview
 description: Azure AI Video Indexer enabled by Arc an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 11/08/2023
+ms.date: 11/13/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -30,6 +30,8 @@ An Azure Arc extension is a way to of deliver agents, scripts, and configuration
 
 [!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)] works on both heavy edge and light edge devices, giving you design flexibility. An example of a heavy edge device is Azure Stack HCI. Examples of light edge devices include cell phones, vehicles, and sensors.
 
+You can use [!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)] on any of the compute resources offered by Azure Arc.
+
 ## Use cases
 
 All VI enabled by Arc accounts are Azure Resource Manager (ARM) accounts. ARM operations are decoupled from video insight operations. This design allows you to perform analysis on your edge devices without the need to upload your media assets to Azure.
@@ -44,16 +46,6 @@ All VI enabled by Arc accounts are Azure Resource Manager (ARM) accounts. ARM op
 
 > [!NOTE]
 > To successfully deploy the VI Extension it is mandatory that we approve your Azure subscription id in advance. Therefore you must first sign up using [this form](https://aka.ms/vi-register).
-
-## Sample architecture
-
-You can use [!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)] on any of the compute resources offered by Azure Arc. The following example architecture diagram shows how AVIeA is used with a few Kubernetes clusters.
-
-**TO-DO: DIAGRAM**
-<!--
-DIAGRAM ::image type="content" source="media/file-name/image-name.png" lightbox=” media/file-name/image-name.png” alt-text="screenshot of the interface of the timeline tab":::--> 
-DIAGRAM
-DIAGRAM EXPLANATION
 
 ## Supported AI presets
 

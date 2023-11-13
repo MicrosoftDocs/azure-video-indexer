@@ -91,7 +91,7 @@ You can read more on how to set up your Cloud Shell environment [here](/azure/cl
 In Cloud Shell execute these two commands:
 
 ```bash
-curl -sSL https://github.com/shemers/media-services-video-indexer/blob/master/AVIenabledbyArc/vi-edge-deployment-script.sh -o install_vi_arc.sh
+curl -sSL https://github.com/Azure-Samples/media-services-video-indexer/blob/master/AVIenabledbyArc/vi-edge-deployment-script.sh -o install_vi_arc.sh
 ```
 
 ```bash
@@ -109,7 +109,7 @@ Follow these steps to deploy the Video Indexer Arc Extension to your Arc K8S Ena
 ### Step 1 - Create Azure Arc Kubernetes Cluster and connect it to your cluster
 
 > [!Note] 
-> The following command assumes you have a kubernetes cluster and that the current context on your ./kube/config file points to it.
+> The following command assumes you have a Kubernetes cluster and that the current context on your ./kube/config file points to it.
 
 Run the following command to connect your cluster. This command deploys the Azure Arc agents to the cluster and installs Helm v. 3.6.3 to the *.azure* folder of the deployment machine. This Helm 3 installation is only used for Azure Arc, and it doesn't remove or change any previously installed versions of Helm on the machine.
 
