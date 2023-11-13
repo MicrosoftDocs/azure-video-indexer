@@ -67,7 +67,7 @@ The values for populating the custom data are as follows:
 |--|--|--|
 | **name** | External AI model name | true |
 | **displayName** | Insight group name to be displayed in Video Indexer | true |
-| **displayType** | Defines the type of UI representation for this specific insight group. Default value: Capsules<br/><br/> Possible types:<br/><br/>**Capsule** – One level text only <br/><br/>**CapsuleAndTags** -Two levels text only more will be added in the future.  | false |
+| **displayType** | Defines the type of UI representation for this specific insight group. Default value: Capsules<br/>Possible types:<br/>&nbsp**Capsule** – One level text only <br/>&nbsp**CapsuleAndTags** -Two levels text only more will be added in the future.  | false |
 | **results** | Array of objects that represent the insights detected by the external AI model | true |
 | **results.id** | User provided ID of the result object, should be unique within the results scope | false |
 | **results.type** | This field represents the type of insight that was categorized by the external AI model.  It is used to represent a general insight category, which means that there could be multiple insights of this type identified in a specific frame. Examples of insight types include: "basketball", "crowd clapping", "white shirt". | true |
