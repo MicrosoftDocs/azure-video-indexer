@@ -57,6 +57,8 @@ Before you can start using the BYO model feature with Azure Video Indexer, you m
     1. Sends a GET request to the Update Video Index with test information formatted with the schema.
 1. See the results in the Azure Video Indexer portal.
 
+For step by step guidance, see the [Bring your own model quickstart]().
+
 ## Schema
 
 The values for populating the custom data are as follows:
@@ -150,7 +152,16 @@ FrameUriData
     }... 
 ```
 
+## Tutorial, How-tos, and Quickstarts
+[Bring your own model quickstart](azure-video-indexer-enabled-by-arc-bring-your-own-model-quickstart.md)
+
+<!--
+## Bring Your Own model samples
+[BYO samples](https://github.com/Azure-Samples/media-services-video-indexer/tree/master/BYO_Samples)
+-->
+
 ## Related content
 [Use the Azure AI Video Indexer API](video-indexer-use-apis.md)
 
+## 
 [!INCLUDE [footer](includes/footer.md)]
