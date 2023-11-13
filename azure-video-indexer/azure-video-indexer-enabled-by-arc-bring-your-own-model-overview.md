@@ -25,10 +25,6 @@ DISCLAIMER: Microsoft’s [Code of conduct for Azure OpenAI Service](/legal/cogn
 ## Pricing
 There's no extra cost to use this feature with Azure Video Indexer.
 
-## Workflow
-
-**Workflow diagram from Shemer's PPT goes here**
-
 ### General workflow
 
 1. Video is uploaded and indexed with Azure Video Indexer.  
@@ -37,7 +33,9 @@ There's no extra cost to use this feature with Azure Video Indexer.
     1. Get insights extracted by Video Indexer.
     1. Get keyframe for a video section.
     1. Send the keyframe to the custom AI model. 
-    1. Patch the custom insights back to Video Indexer. 
+    1. Patch the custom insights back to Video Indexer.
+
+:::image type="content" source="media/common/byo-diagram.png" lightbox="media/common/byo-diagram.png" alt-text="diagram of the workflow described above"::: 
 
 ## Prerequisites
 
