@@ -256,3 +256,5 @@ az k8s-extension update --name videoindexer \
     --config "speech.resource.requests.cpu=500m"                        
 ```
 ---
+
+[!INCLUDE [footer](includes/footer.md)]

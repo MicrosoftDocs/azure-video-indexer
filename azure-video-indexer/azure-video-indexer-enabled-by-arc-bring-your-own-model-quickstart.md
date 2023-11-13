@@ -22,3 +22,5 @@ asdlfasd
 
 ## Do that thing
 sadfasd
+
+[!INCLUDE [footer](includes/footer.md)]

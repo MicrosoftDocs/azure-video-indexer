@@ -3,7 +3,7 @@ title: Azure AI Video Indexer Bring Your Own AI model overview
 description: This article is an overview of Azure AI Video Indexer enabled by Arc bring your own model.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 11/10/2023
+ms.date: 11/13/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -16,12 +16,16 @@ This article is an overview of Azure Video Indexer bring your own AI model.
 
 Azure Video Indexer offers a set of AIs optimized for video and audio content that can be applied to many content types. You can combine more insights from Microsoft sources, custom sources, or third party sources with the built-in Azure Video Indexer insights all in a seamless experience.
 
-This feature is flexible enough to accommodate all forms and types of insights, including detection-oriented and classification-oriented AIs. You have the freedom to select the data that your external model operates upon, such as the video's key frames, the entire video, or just the audio track. You can also use other insights already produced for the video, such as detected objects, faces, and labels. This allows you to run the external analysis on only the related section of the video, improving performance and reducing costs.
+This capability is flexible enough to accommodate all forms and types of insights, including detection-oriented and classification-oriented AIs. You have the freedom to select the data that your external model operates upon, such as the video's key frames, the entire video, or just the audio track. You can also use other insights already produced for the video, such as detected objects, faces, and labels. This allows you to run the external analysis on only the related section of the video, improving performance and reducing costs.
 
 The feature is available for both the cloud and edge use cases.
 
 ## Pricing
 There's no extra cost to use this feature with Azure Video Indexer.
+
+## CELA disclaimer
+
+**TO DO** Waiting on Ange Wu's email.
 
 ## Workflow
 
@@ -56,7 +60,7 @@ The values for populating the custom data are as follows:
 |--|--|--|
 | **name** | External AI model name | true |
 | **displayName** | Insight group name to be displayed in Video Indexer | true |
-| **displayType** | Defines the type of UI representation for this specific insight group. Possible types:  Capsule – One level text only CapsuleAndTags -Two levels text only more will be added in the future. Default value: Capsules | false |
+| **displayType** | Defines the type of UI representation for this specific insight group. Default value: Capsules<br/> Possible types:<br/>**Capsule** – One level text only **CapsuleAndTags** -Two levels text only more will be added in the future.  | false |
 | **results** | Array of objects that represent the insights detected by the external AI model | true |
 | **results.id** | User provided ID of the result object, should be unique within the results scope | false |
 | **results.wikiDataId** | Should be given as parameter in URL query string or in Authorization header as Bearer token. Access token scope should be Account and permission should be Reader. | false |
@@ -143,12 +147,7 @@ FrameUriData
     }... 
 ```
 
-**----------Is this section needed for Ignite?---------**
-## Thumbnail cropping
-I can't tell from the spec doc what is supposed to go in here.
-**---------end this section----------**
+## Related content
+[Use the Azure AI Video Indexer API](video-indexer-use-apis.md)
 
-**----------Is this section needed for Ignite?---------**
-## Search
-I can't tell from the spec doc what is supposed to go in here.
-**---------end this section----------**
+[!INCLUDE [footer](includes/footer.md)]

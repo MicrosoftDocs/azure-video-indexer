@@ -19,3 +19,5 @@ There are multiple reasons that might cause interactions between the Video Index
 ## The playback speed is slower when streaming from Video Indexer extension than from the cloud.
 
 **Waiting for remaining content. Need clarification of meaning in Word doc** 
+
+[!INCLUDE [footer](includes/footer.md)]
