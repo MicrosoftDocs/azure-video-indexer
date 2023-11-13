@@ -257,4 +257,7 @@ az k8s-extension update --name videoindexer \
 ```
 ---
 
+## Sample
+[AVIenabledbyArc on GitHub](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/AVIenabledbyArc/vi-edge-deployment-script.sh)
+
 [!INCLUDE [footer](includes/footer.md)]
