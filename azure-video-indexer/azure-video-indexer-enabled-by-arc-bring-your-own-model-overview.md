@@ -20,30 +20,37 @@ This capability is flexible enough to accommodate all forms and types of insight
 
 The feature is available for both the cloud and edge use cases.
 
+DISCLAIMER: Microsoft’s [Code of conduct for Azure OpenAI Service](/legal/cognitive-services/openai/code-of-conduct?context=%2Fazure%2Fai-services%2Fopenai%2Fcontext%2Fcontext) applies to your use of the Bring Your Own Model feature, which includes Microsoft’s right to discontinue your access and use of this feature for non-compliance.
+
 ## Pricing
 There's no extra cost to use this feature with Azure Video Indexer.
-
-## CELA disclaimer
-
-**TO DO** Waiting on Ange Wu's email.
 
 ## Workflow
 
 **Workflow diagram from Shemer's PPT goes here**
 
 ### General workflow
-1. Use the Azure Video Indexer workflow as usual, but add a callback URL to your own custom programming expecting the request.
-1. The request returns a JSON file with custom insights.
-1. The custom programming calls the Patch method in the Azure Video Indexer API.
-1. The Patch method adds the JSON data under the `customInsights` section of the Azure Video Indexer insights JSON.  
+
+1. Video is uploaded and indexed with Azure Video Indexer.  
+1. When the indexing process is completed, an event is created.  
+1. Your custom code listens to the event and starts the video post-processing process.
+    1. Get insights extracted by Video Indexer.
+    1. Get keyframe for a video section.
+    1. Send the keyframe to the custom AI model. 
+    1. Patch the custom insights back to Video Indexer. 
 
 ## Prerequisites
 
-Before you can start using the BYO model feature with Azure Video Indexer, you must:
+Before you can start using the BYO model feature with Azure Video Indexer, you must: 
 
-1. Create the programming that returns information in the required JSON format, and calls the Patch method.
-1. Provide the callback URL for requesting the JSON.
-1. Plan to pass a media ID so that the GUIDs map appropriately.
+1. Train or bring an external AI model that receives video assets and return an insight.   
+1. Create custom code that:
+    1. Listens for Event Hub events. 
+    1. Extracts the `video id` from the events. 
+    1. Retrieves the relevant assets by calling AVI Apis. In this scenario, request *Get Video Index* and *Get frames SAS URLs*.
+    1. Sends the assets to the external AI model. 
+    1. Creates a JSON object based on the insights retrieved from the custom AI model.  
+    1. Requests *Patch Update Video Index*. 
 
 ### Test a workflow using Azure services
 1. Set up monitoring on your Azure Video Indexer account using Azure Event Hub and a diagnostic setting.
@@ -60,16 +67,14 @@ The values for populating the custom data are as follows:
 |--|--|--|
 | **name** | External AI model name | true |
 | **displayName** | Insight group name to be displayed in Video Indexer | true |
-| **displayType** | Defines the type of UI representation for this specific insight group. Default value: Capsules<br/> Possible types:<br/>**Capsule** – One level text only **CapsuleAndTags** -Two levels text only more will be added in the future.  | false |
+| **displayType** | Defines the type of UI representation for this specific insight group. Default value: Capsules<br/><br/> Possible types:<br/><br/>**Capsule** – One level text only <br/><br/>**CapsuleAndTags** -Two levels text only more will be added in the future.  | false |
 | **results** | Array of objects that represent the insights detected by the external AI model | true |
 | **results.id** | User provided ID of the result object, should be unique within the results scope | false |
-| **results.wikiDataId** | Should be given as parameter in URL query string or in Authorization header as Bearer token. Access token scope should be Account and permission should be Reader. | false |
 | **results.type** | This field represents the type of insight that was categorized by the external AI model.  It is used to represent a general insight category, which means that there could be multiple insights of this type identified in a specific frame. Examples of insight types include: "basketball", "crowd clapping", "white shirt". | true |
 | **results.subType** | This field represents the type of insight that was categorized by the external AI model. It is used to represent a specific insight category, which means that there could be only a single insight of this type identified in a specific frame. Examples of insight types include: "basketball \#23", "John clapping", "Dana’s white shirt". | false |
 | **results.metaData** | More data on the insight | false |
 | **results.thumbnailId** | User provided GUID that refers to the name of the thumbnail image file the image file provided by the user using the upload thumbprints API (P1) | false |
 | **results.instances** | Array that represents the time windows the insight was detected in. | true |
-|  |  |  |
 | **results.instances.confidence** | Confidence of the | false |
 | **results.instances.adjustedStart** | Frames to skip | false |
 | **results.instances.adjustedEnd** | Frames to skip | false |
