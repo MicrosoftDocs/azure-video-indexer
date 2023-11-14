@@ -22,7 +22,11 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 ## November 2023
 
-Video indexer has added the following features in November:
+Video indexer has released the following things in November:
+
+**Azure Video Indexer enabled by Arc**: You can use Video Indexer for your hybrid scenarios by hosting it on-premises in a Kubernetes cluster. For more information, see the [Azure Video Indexer enabled by Arc overview](azure-video-indexer-enabled-by-arc-overview.md). You can also try out the extension by following the [tutorial](azure-video-indexer-enabled-by-arc-tutorial.md).
+
+**Bring Your Own Model**: You can use your own customized AI model and integrate the data with Video Indexer models. For more information, see [Bring Your Own AI model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md).
 
 **Custom tags and free text per video**: You can add custom tags and free text as video metadata to any video in your Video Indexer account. This enables you to categorize and annotate your videos with any information that's relevant to you and your business. For example, you can add tags such as “product demo”, “customer testimonial”, or “internal training” or free text such as “This video shows how to use our new feature X” or “This video was recorded at our annual conference in Y”. They can be added to the area below the video once the video has been indexed.
 
