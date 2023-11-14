@@ -3,7 +3,7 @@ title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
 ms.topic: article
 ms.custom: references_regions
-ms.date: 09/27/2023
+ms.date: 11/14/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -24,11 +24,11 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 Video indexer has released the following things in November:
 
-**Azure Video Indexer enabled by Arc**: You can use Video Indexer for your hybrid scenarios by hosting it on-premises in a Kubernetes cluster. For more information, see the [Azure Video Indexer enabled by Arc overview](azure-video-indexer-enabled-by-arc-overview.md). You can also try out the extension by following the [tutorial](azure-video-indexer-enabled-by-arc-tutorial.md).
+**Azure Video Indexer enabled by Arc (Preview)**: You can use Video Indexer for your hybrid scenarios by hosting it on-premises in a Kubernetes cluster. For more information, see the [Azure Video Indexer enabled by Arc overview](azure-video-indexer-enabled-by-arc-overview.md). You can also try out the extension by following the [tutorial](azure-video-indexer-enabled-by-arc-tutorial.md).
 
-**Bring Your Own Model**: You can use your own customized AI model and integrate the data with Video Indexer models. For more information, see [Bring Your Own AI model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md).
+**Bring Your Own Model (Preview)**: You can use your own customized AI model and integrate the data with Video Indexer models. For more information, see [Bring Your Own AI model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md).
 
-**Custom tags and free text per video**: You can add custom tags and free text as video metadata to any video in your Video Indexer account. This enables you to categorize and annotate your videos with any information that's relevant to you and your business. For example, you can add tags such as “product demo”, “customer testimonial”, or “internal training” or free text such as “This video shows how to use our new feature X” or “This video was recorded at our annual conference in Y”. They can be added to the area below the video once the video has been indexed.
+**Custom tags and free text per video (Preview)**: You can add custom tags and free text as video metadata to any video in your Video Indexer account. This enables you to categorize and annotate your videos with any information that's relevant to you and your business. For example, you can add tags such as “product demo”, “customer testimonial”, or “internal training” or free text such as “This video shows how to use our new feature X” or “This video was recorded at our annual conference in Y”. They can be added to the area below the video once the video has been indexed.
 
 **Search based on custom tags and free text**: You can search for videos based on their custom tags and free text. This will enable you to find the videos that match your criteria more easily and quickly. You can search based on custom tags and free text in all supported languages, and you can combine them with other search filters such as keywords, faces, labels, emotions, etc. You can also use the advanced search syntax to perform more complex queries. For example, you can search for videos that have the tag “product demo” and the free text “feature X”.
 
@@ -38,7 +38,7 @@ We've added a number of improvements to the customized people model which improv
 
 **Choose a custom people model as default**: You can now choose a customized People model as default on the VI account user level, so you don't have to keep selecting the model name for every video upload. This will save you time and effort when you upload videos that need to be analyzed by your customized People model.
 
-**Grouping of unknown people in the video**: You can see the unknown people in your videos grouped by their appearance similarity. This will help you label the unknown people more easily and quickly, and to improve the accuracy of your customized People model. You can see the grouping of unknown people in your customization page > choose **people** and then navigate to the **unknown people** tab. This could, for example, help you to label a local celebrity or a local politician.
+**Grouping of unknown people in the video (Preview)**: You can see the unknown people in your videos grouped by their appearance similarity. This will help you label the unknown people more easily and quickly, and to improve the accuracy of your customized People model. You can see the grouping of unknown people in your customization page > choose **people** and then navigate to the **unknown people** tab. This could, for example, help you to label a local celebrity or a local politician.
 
 **Search results with max confidence score for identified person name**: You can search for the name of an identified person and get when the person appears in the video, with the maximum confidence score. This helps you decide what are the most relevant videos to explore. For example, you can search for “John Smith” and get the videos where John Smith is recognized by your customized People model, along with the confidence score for each video.
 
