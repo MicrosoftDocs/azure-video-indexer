@@ -2,7 +2,7 @@
 title: Azure AI Video Indexer (AVI) changes related to Azure Media Service (AMS) retirement  
 description: This article explains the upcoming changes to Azure AI Video Indexer (AVI) related to the retirement of Azure Media Services (AMS).
 ms.topic: conceptual
-ms.date: 10/10/2023
+ms.date: 11/14/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -12,7 +12,7 @@ ms.service: azure-video-indexer
 
 This article explains the upcoming changes to Azure AI Video Indexer (AVI) resulting from the [retirement of Azure Media Services (AMS)](/azure/media-services/latest/azure-media-services-retirement).
 
-Currently, AVI requires the creation of an AMS account. Additionally, AVI uses AMS for video encoding and streaming operations. The required changes will affect all AVI customers.
+Currently, AVI requires the creation of an AMS account. Additionally, AVI uses AMS for video encoding and streaming operations. The required changes will affect all AVI customers. See the official AI AVI announcement [here](https://azure.microsoft.com/en-us/updates/videoindexer-2/).
 
 To continue using AVI beyond June 30, 2024, all customers **must** make changes to their AVI accounts to remove the AMS dependency. Detailed guidance for converting AVI accounts will be provided in January 2024 when the new account type is released.
 
