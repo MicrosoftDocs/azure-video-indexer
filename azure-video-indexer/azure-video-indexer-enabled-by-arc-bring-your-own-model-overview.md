@@ -48,16 +48,7 @@ Before you can start using the BYO model feature with Azure Video Indexer, you m
     1. Retrieves the relevant assets by calling AVI Apis. In this scenario, request *Get Video Index* and *Get frames SAS URLs*.
     1. Sends the assets to the external AI model. 
     1. Creates a JSON object based on the insights retrieved from the custom AI model.  
-    1. Requests *Patch Update Video Index*. 
-
-### Test a workflow using Azure services
-1. Set up monitoring on your Azure Video Indexer account using Azure Event Hub and a diagnostic setting.
-1. Set up the Azure Event so that it triggers an Azure Function that:
-    1. Receives the indexing information including the media ID.
-    1. Sends a GET request to the Update Video Index with test information formatted with the schema.
-1. See the results in the Azure Video Indexer portal.
-
-For step by step guidance, see the [Bring your own model quickstart]().
+    1. Requests *Patch Update Video Index*.
 
 ## Schema
 

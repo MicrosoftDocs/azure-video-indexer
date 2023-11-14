@@ -127,7 +127,7 @@ sections:
     - question: Do I need to configure a frontend endpoint for Video Indexer extension? 
       answer: Yes. The Video Indexer extension’s API is available via the frontend extension. You can restrict access to either an IP address or a FQDN. Also, as all communication is done over secure traffic protocols, using a valid CA certificate, and setting a security layer such as NSG or firewall to limit the access to this endpoint is recommended.  
     - question: How can I troubleshoot my Azure Video Indexer enabled by Arc installation?
-      answer: Consult the [troubleshooting guide]().
+      answer: Consult the [troubleshooting guide](azure-video-indexer-enabled-by-arc-troubleshooting.md).
   - name: Privacy Questions
     questions:
       - question: How is network traffic encrypted by Azure AI Video Indexer?
