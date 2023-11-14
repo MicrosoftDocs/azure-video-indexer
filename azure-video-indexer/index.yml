@@ -26,6 +26,8 @@ landingContent:
         links:
           - text: "What is Azure AI Video Indexer?"
             url: video-indexer-overview.md
+          - text: "Azure Video Indexer enabled by Arc"
+            url: azure-video-indexer-enabled-by-arc-overview.md
           - text: Frequently asked questions
             url: faq.yml
           - text: User voice
