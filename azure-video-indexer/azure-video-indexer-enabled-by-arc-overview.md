@@ -3,12 +3,12 @@ title: Azure AI Video Indexer enabled by Arc overview
 description: Azure AI Video Indexer enabled by Arc an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 11/13/2023
+ms.date: 11/16/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
-# Azure Video Indexer enabled by Arc overview
+# Azure Video Indexer enabled by Arc (Preview) overview
 
 [!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)] ([!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)]) is an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 
