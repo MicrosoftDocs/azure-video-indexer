@@ -3,7 +3,7 @@ title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
 ms.topic: article
 ms.custom: references_regions
-ms.date: 11/14/2023
+ms.date: 11/16/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -41,6 +41,13 @@ We've added a number of improvements to the customized people model which improv
 **Grouping of unknown people in the video (Preview)**: You can see the unknown people in your videos grouped by their appearance similarity. This will help you label the unknown people more easily and quickly, and to improve the accuracy of your customized People model. You can see the grouping of unknown people in your customization page > choose **people** and then navigate to the **unknown people** tab. This could, for example, help you to label a local celebrity or a local politician.
 
 **Search results with max confidence score for identified person name**: You can search for the name of an identified person and get when the person appears in the video, with the maximum confidence score. This helps you decide what are the most relevant videos to explore. For example, you can search for “John Smith” and get the videos where John Smith is recognized by your customized People model, along with the confidence score for each video.
+
+**Avoid duplicate indexing uploads** 
+Occasionally you unintentionally submit the same indexing job multiple times. To avoid this, a new optional query parameter has been added, `preventDuplicates`. When set to `true`, the service will reject a file upload and return a conflict if it was already indexed.
+
+The Upload URL MD5 duplicate checks rely on the server response [Content-md5 header if exist RFC 1864: The Content-MD5 Header Field](https://www.rfc-editor.org/info/rfc1864) as it is commonly used by storage providers.
+
+If you want to upload the same video repeatedly, you can set the parameter to `false`.
 
 ## October 2023
 
