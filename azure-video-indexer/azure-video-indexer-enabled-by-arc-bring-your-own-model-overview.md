@@ -16,7 +16,7 @@ This article is an overview of Azure Video Indexer bring your own AI model.
 
 Azure Video Indexer offers a set of AIs optimized for video and audio content that can be applied to many content types. You can combine more insights from Microsoft sources, custom sources, or third party sources with the built-in Azure Video Indexer insights all in a seamless experience.
 
-This capability is flexible enough to accommodate all forms and types of insights, including detection-oriented and classification-oriented AIs. You have the freedom to select the data that your external model operates upon, such as the video's key frames, the entire video, or just the audio track. You can also use other insights already produced for the video, such as detected objects, faces, and labels. This allows you to run the external analysis on only the related section of the video, improving performance and reducing costs.
+This capability is flexible enough to accommodate all forms and types of insights, including detection-oriented and classification-oriented AIs. You have the freedom to select the data that your external model operates upon, such as the video's frames, the entire video, or just the audio track. You can also use other insights already produced for the video, such as detected objects, faces, and labels. This allows you to run the external analysis on only the related section of the video, improving performance and reducing costs.
 
 The feature is available for both the cloud and edge use cases.
 
@@ -60,20 +60,16 @@ The values for populating the custom data are as follows:
 | **displayName** | Insight group name to be displayed in Video Indexer | true |
 | **displayType** | Defines the type of UI representation for this specific insight group. **Default value**: Capsules<br/>**Possible types**:<br/>*Capsule* – One level text only <br/>*CapsuleAndTags* -Two levels text only more will be added in the future.  | false |
 | **results** | Array of objects that represent the insights detected by the external AI model | true |
-| **results.id** | User provided ID of the result object, should be unique within the results scope | false |
+| **results.id** | User provided ID of the result object, should be unique within the results scope | true |
 | **results.type** | This field represents the type of insight that was categorized by the external AI model.  It is used to represent a general insight category, which means that there could be multiple insights of this type identified in a specific frame. Examples of insight types include: "basketball", "crowd clapping", "white shirt". | true |
 | **results.subType** | This field represents the type of insight that was categorized by the external AI model. It is used to represent a specific insight category, which means that there could be only a single insight of this type identified in a specific frame. Examples of insight types include: "basketball \#23", "John clapping", "Dana’s white shirt". | false |
 | **results.metaData** | More data on the insight | false |
-| **results.thumbnailId** | User provided GUID that refers to the name of the thumbnail image file the image file provided by the user using the upload thumbprints API (P1) | false |
 | **results.instances** | Array that represents the time windows the insight was detected in. | true |
-| **results.instances.confidence** | Confidence of the | false |
-| **results.instances.adjustedStart** | Frames to skip | false |
-| **results.instances.adjustedEnd** | Frames to skip | false |
-| **results.instances.start** | Frames to skip | false |
-| **results.instances.end** | Frames to skip | false |
-
-## GUIDs
-You're responsible for making certain that the GUIDs for the media segments map to the Azure Video Indexer insights for the same media.
+| **results.instances.confidence** | Set with the confidence score returned from the external model | false |
+| **results.instances.start** | Start time of the instance in the video. Format: `hh.mm.ss.ff` | false |
+| **results.instances.end** | End time of the instance in the video. Format: `hh.mm.ss.ff`  | false |
+| **results.instances.adjustedStart** | Used when displayed in the UI, set with the value from Start | false |
+| **results.instances.adjustedEnd** | Used when displayed in the UI, set with the value from End | false |
  
 ## Framerate
 
@@ -98,14 +94,14 @@ You can use the skip frames and page size parameters for time selection. The for
 | **skip** | Frames to skip | false |
 | **accessToken** | Should be given as parameter in URL query string or in Authorization header as Bearer token. Access token scope should be Account and permission should be Reader. | true |
 
-**Response:** `FrameUrisResult`
+**Response:** `FrameFilePathsResult`
 
 | Name          | **Description**                       | **Required**  |
 |---------------|---------------------------------------|---------------|
 | **results**   | List of FrameUriData                  | False         |
 | **NextPage**  | Paging data (skip, pageSize, isDone)  | False         |
 
-FrameUriData
+**FrameFilePathData**
 
 | Name            | **Description**                       |
 |-----------------|---------------------------------------|
@@ -113,7 +109,7 @@ FrameUriData
 | **frameIndex**  | Index of the frame                    |
 | **StartTime**   | Start time of the frame in the video  |
 | **EndTime**     | End time of the frame in the video    |
-| **SasUri**      | Sas uri of the frame                  |
+| **filePath**    | Sas URI of the frame in the cloud environment or file path in edge environments |
 
 ### Sample data sent from custom application in schema format
 ```json
