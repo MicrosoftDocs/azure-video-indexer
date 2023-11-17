@@ -2,7 +2,7 @@
 title: Customize a Person model with Azure AI Video Indexer website
 description: Learn how to customize a Person model with the Azure AI Video Indexer website.
 ms.topic: article
-ms.date: 05/31/2022
+ms.date: 11/17/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -185,6 +185,22 @@ The person, if they had been named, will also continue to exist in the Person mo
 
 To optimize your model ability to recognize the person, upload as many different images as possible and from different angles. To get optimal results, use high resolution images.
 
-## Next steps
+## Get an indication of the quality of your people model
 
-[Customize Person model using APIs](customize-person-model-with-api.md)
+You can get an indication on the quality of your customized People model (poor, fair, good). The quality is determined by the number of images used for labeling with the more images you use to label a person, the higher the probability to identify the person correctly. For example, the probability of identifying a person with 24 labeled images is higher than the probability of identifying a person with 2 labeled images. You can see the number of images used for labeling each person in your customized People model page.
+
+:::image type="content" source="media/common/people-model-quality.jpg" lightbox="media/common/people-model-quality.jpg" alt-text="Screenshot of the video indexer interface showing the quality of people model results":::
+
+## Choose the custom people model as default
+
+You can now choose a customized People model as default on the VI account user level, so you don't have to keep selecting the model name for every video upload. This will save you time and effort when you upload videos that need to be analyzed by your customized People model.
+
+## Group unknown people in the video (Preview)
+You can see the unknown people in your videos grouped by their appearance similarity. This will help you label the unknown people more easily and quickly, and to improve the accuracy of your customized People model. This could, for example, help you to label a local celebrity or a local politician. You can see the grouping of unknown people in your customization page.  Choose **people** and then navigate to the **unknown people** tab. 
+
+:::image type="content" source="media/common/grouping-unknown.jpg" lightbox="media/common/grouping-unknown.jpg" alt-text="Screen shot of video indexer interface for grouping people identified in video":::
+
+## Search results with max confidence score for identified person name: 
+You can search for the name of an identified person and get the timestamp for when the person appears in the video along with the maximum confidence score. This helps you decide what are the most relevant videos to explore. For example, you can search for “John Smith” and get the videos where John Smith is recognized by your customized People model and the confidence score for each video.
+
+:::image type="content" source="media/common/person-max-confidence.jpg" alt-text="screenshot of the video indexer infterface showing the max confidence of a result":::
