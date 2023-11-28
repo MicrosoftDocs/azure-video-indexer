@@ -3,7 +3,7 @@ title: Azure AI Video Indexer Bring Your Own AI model (Preview) overview
 description: This article is an overview of Azure AI Video Indexer enabled by Arc bring your own model.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 11/16/2023
+ms.date: 11/27/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -23,7 +23,7 @@ The feature is available for both the cloud and edge use cases.
 DISCLAIMER: Microsoft’s [Code of conduct for Azure OpenAI Service](/legal/cognitive-services/openai/code-of-conduct?context=%2Fazure%2Fai-services%2Fopenai%2Fcontext%2Fcontext) applies to your use of the Bring Your Own Model feature, which includes Microsoft’s right to discontinue your access and use of this feature for non-compliance.
 
 ## Pricing
-There's no extra cost to use this feature with Azure Video Indexer.
+With the Video Indexer BYO model, users can add custom insights to video insight objects without incurring any additional costs beyond the listed cost of the indexing process. However, any costs related to the external environment and model should not be considered part of Video Indexer's billing price. We strongly recommend reviewing our best practices section to optimize the external logic and reduce costs.
 
 ### General workflow
 
@@ -150,5 +150,3 @@ You can use the skip frames and page size parameters for time selection. The for
 
 ## Related content
 [Use the Azure AI Video Indexer API](video-indexer-use-apis.md)
-
-[!INCLUDE [footer](includes/footer.md)]
