@@ -2,7 +2,7 @@
 title: Switch between tenants on the Azure AI Video Indexer website
 description: This article shows how to switch between tenants in the Azure AI Video Indexer website. 
 ms.topic: how-to
-ms.date: 01/24/2023
+ms.date: 11/27/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -19,7 +19,7 @@ When logging in the Azure AI Video Indexer website, a default directory will loa
 > [!Note]
 > Trial accounts and Classic accounts are global and not tenant-specific. Hence, the tenant switching described in this article only applies to your ARM accounts.
 >
-> The option to switch directories is available only for users using Azure Active Directory (Azure AD) to log in. 
+> The option to switch directories is available only for users using Entra ID to log in. 
 
 This article shows two options to solve the same problem - how to switch tenants:
 
@@ -59,7 +59,7 @@ If you want to see domains for all of your directories and switch between them, 
 
 1. Go to the [Azure AI Video Indexer](https://www.videoindexer.ai/) website.
 1. Press **Sign out** after pressing the button in the top-right corner.
-1. On the AVI website, press **Sign in** and choose the Azure AD account.
+1. On the AVI website, press **Sign in** and choose the Entra ID account.
 
     > [!div class="mx-imgBorder"]
     > ![Sign in with the AAD account.](./media/switch-directory/choose-account.png)
