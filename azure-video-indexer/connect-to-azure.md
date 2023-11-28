@@ -15,9 +15,9 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [Gate notice](./includes/face-limited-access.md)]
 
-This topic shows how to create a new classic account connected to Azure using the [Azure AI Video Indexer website](https://aka.ms/vi-portal-link). You can also create an Azure AI Video Indexer classic account through our [API](https://aka.ms/avam-dev-portal).
+This article shows how to create a new classic account connected to Azure using the [Azure AI Video Indexer website](https://aka.ms/vi-portal-link). You can also create an Azure AI Video Indexer classic account through our [API](https://aka.ms/avam-dev-portal).
 
-The topic discusses prerequisites that you need to connect to your Azure subscription and how to configure an Azure Media Services account.
+The article discusses prerequisites that you need to connect to your Azure subscription and how to configure an Azure Media Services account.
 
 A few Azure AI Video Indexer account types are available to you. For detailed explanation, review [Account types](accounts-overview.md).
 
@@ -31,14 +31,14 @@ For the pricing details, see [pricing](https://azure.microsoft.com/pricing/detai
 * An Entra ID domain.
 
     If you don't have an Entra ID domain, create this domain with your Azure subscription. For more information, see [Managing custom domain names in Entra ID](/azure/active-directory/enterprise-users/domains-manage)
-* A user in your Entra ID domain with an **Application administrator** role. You'll use this member when connecting your Azure AI Video Indexer account to Azure.
+* A user in your Entra ID domain with an **Application administrator** role. Use this member when connecting your Azure AI Video Indexer account to Azure.
 
     This user should be an Entra ID user with a work or school account. Don't use a personal account, such as outlook.com, live.com, or hotmail.com.
 
     :::image type="content" alt-text="Screenshot that shows how to choose a user in your Azure A D domain." source="./media/create-account/all-aad-users.png":::
 * A user and member in your Entra ID domain.
 
-    You'll use this member when connecting your Azure AI Video Indexer account to Azure.
+    Use this member when connecting your Azure AI Video Indexer account to Azure.
 
     This user should be a member in your Azure subscription with either an **Owner** role, or both **Contributor** and **User Access Administrator** roles. A user can be added twice, with two roles. Once with Contributor and once with user Access Administrator. For more information, see [View the access a user has to Azure resources](/azure/role-based-access-control/check-access).
 
@@ -56,7 +56,7 @@ For the pricing details, see [pricing](https://azure.microsoft.com/pricing/detai
 > [!NOTE]
 > Use the same Entra ID user you used when connecting to Azure.
 
-It's strongly recommended to have the following three accounts located in the same region: 
+It's recommended to have the following three accounts located in the same region: 
 
 * The Azure AI Video Indexer account that you're creating.
 * The Azure AI Video Indexer account that you're connecting with the Media Services account.
@@ -85,7 +85,7 @@ If your storage account is behind a firewall, see [storage account that is behin
 
         After you select **Settings**->**Keys**, add **Description**, press **Save**, and the key value gets populated.
 
-        If the key expires, the account owner will have to contact Azure AI Video Indexer support to renew the key.
+        If the key expires, the account owner has to contact Azure AI Video Indexer support to renew the key.
 
         > [!NOTE]
         > Make sure to write down the key value and the Application ID. You'll need it for the steps in the next section.
@@ -137,7 +137,7 @@ To automate the creation of the account is a two steps process:
 
 - An Azure subscription in [Azure Government](/azure/azure-government/).
 - An Entra ID account in Azure Government.
-- All pre-requirements of permissions and resources as described above in [Prerequisites for connecting to Azure](#prerequisites-for-connecting-to-azure). 
+- All prerequirements of permissions and resources as described above in [Prerequisites for connecting to Azure](#prerequisites-for-connecting-to-azure). 
 
 ### Create new account via the Azure Government portal
 
@@ -150,9 +150,9 @@ To create a paid account via the Azure AI Video Indexer website:
 1. Sign-in with your Azure Government Entra ID account.
 1.If you don't have any Azure AI Video Indexer accounts in Azure Government that you're an owner or a contributor to, you'll get an empty experience from which you can start creating your account.
 
-    The rest of the flow is as described in above, only the regions to select from will be Government regions in which Azure AI Video Indexer is available
+    The rest of the flow is as already described, only the regions to select from will be Government regions in which Azure AI Video Indexer is available
 
-    If you already are a contributor or an admin of an existing one or more Azure AI Video Indexer accounts in Azure Government, you'll be taken to that account and from there you can start a following steps for creating an additional account if needed, as described above.
+    If you already are a contributor or an admin of an existing one or more Azure AI Video Indexer accounts in Azure Government, you're taken to that account and from there you can start following the steps for creating an another account if needed, as already described.
 
 ### Create new account via the API on Azure Government
 
@@ -176,7 +176,7 @@ If you want to delete an Azure AI Video Indexer account, you can delete the acco
 
 Select the account -> **Settings** -> **Delete this account**.
 
-The account will be permanently deleted in 90 days.
+The account is permanently deleted in 90 days.
 
 ## Next steps
 

@@ -1,6 +1,6 @@
 ---
 title: Connect a classic Azure AI Video Indexer account to ARM
-description: This topic explains how to connect an existing classic paid Azure AI Video Indexer account to an ARM-based account
+description: This article explains how to connect an existing classic paid Azure AI Video Indexer account to an ARM-based account
 ms.topic: how-to
 ms.date: 11/27/2023
 ms.custom: ignite-fall-2021
@@ -42,7 +42,7 @@ The [invite users](restricted-viewer-role.md#share-the-account) feature in the [
 
 Only the account owner, who performed the connect action, is automatically assigned as the owner on the connected account. When [Azure policies][/azure/governance/policy/overview] are enforced, they override the settings on the account.
 
-If users are not added through Azure RBAC to the account after 30 days, they will lose access through API as well as the [Azure AI Video Indexer website](https://www.videoindexer.ai/).  
+If users aren't added through Azure RBAC to the account after 30 days, they'll lose access through API as well as the [Azure AI Video Indexer website](https://www.videoindexer.ai/).  
 After the transition state ends, users will only be able to generate a valid access token through ARM, making Azure RBAC the exclusive way to manage role-based access control on the account.
 
 > [!NOTE]
@@ -57,14 +57,14 @@ Before the end of the 30 days of transition state, you can remove access from us
 1. Sign in using your Entra ID account.
 1. On the top right bar press *User account* to open the side pane account list.
 1. Select the Azure AI Video Indexer classic account you wish to connect to ARM (classic accounts will be tagged with a *classic tag*).
-1. Click **Settings**.
+1. Select **Settings**.
 
     :::image type="content" alt-text="Screenshot that shows the Azure AI Video Indexer website settings." source="./media/connect-classic-account-to-arm/classic-account-settings.png":::
-1. Click **Connect to an ARM-based account**.
+1. Select **Connect to an ARM-based account**.
 
     :::image type="content" alt-text="Screenshot that shows the connect to an ARM-based account dialog." source="./media/connect-classic-account-to-arm/connect-classic-to-arm.png":::
 1. Sign to Azure portal.
-1. The Azure AI Video Indexer create blade will open.
+1. The Azure AI Video Indexer create blade opens.
 1. In the **Create Azure AI Video Indexer account** section enter required values.
 
     If you followed the steps the fields should be auto-populated, make sure to validate the eligible values.
@@ -82,12 +82,12 @@ Before the end of the 30 days of transition state, you can remove access from us
     |**Resource name**|Enter the name of the new Azure AI Video Indexer account. Default value would be the same name the account had as classic.|
     |**Location**|The geographic region can't be changed in the connect process, the connected account must stay in the same region. |
     |**Media Services account name**|The original Media Services account name that was associated with classic account.|
-    |**User-assigned managed identity**|Select a user-assigned managed identity, or create a new one. Azure AI Video Indexer account will use it to access the Media services. The user-assignment managed identity will be assigned the roles of Contributor for the Media Service account.|
-1. Click **Review + create** at the bottom of the form.
+    |**User-assigned managed identity**|Select a user-assigned managed identity, or create a new one. Azure AI Video Indexer account uses it to access the Media services. The user-assignment managed identity is assigned the roles of Contributor for the Media Service account.|
+1. Select **Review + create** at the bottom of the form.
 
 ## After connecting to ARM is complete 
 
-After successfully connecting your account to ARM, it is recommended to make sure your account management APIs are replaced with [Azure AI Video Indexer REST API](/rest/api/videoindexer/preview/accounts).
+After successfully connecting your account to ARM, it's recommended to make sure your account management APIs are replaced with [Azure AI Video Indexer REST API](/rest/api/videoindexer/preview/accounts).
 As mentioned in the beginning of this article, during the 30 days of the transition state, “[Get-access-token](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Account-Access-Token)” will be supported side by side the ARM-based “[Generate-Access token](/rest/api/videoindexer/preview/generate/access-token)”.
 Make sure to change to the new "Generate-Access token" by updating all your solutions that use the API.
  
