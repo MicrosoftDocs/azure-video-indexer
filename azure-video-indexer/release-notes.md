@@ -3,7 +3,7 @@ title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
 ms.topic: article
 ms.custom: references_regions
-ms.date: 11/16/2023
+ms.date: 11/27/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -179,7 +179,7 @@ The [Azure AI Video Indexer website](https://www.videoindexer.ai/) now has a not
 
 ### Switching directories
 
-You can now switch Azure AD directories and manage Azure AI Video Indexer accounts across tenants using the [Azure AI Video Indexer website](https://www.videoindexer.ai/).
+You can now switch Entra ID directories and manage Azure AI Video Indexer accounts across tenants using the [Azure AI Video Indexer website](https://www.videoindexer.ai/).
 
 ### Language support
 
@@ -624,12 +624,12 @@ You can now create an Azure AI Video Indexer paid account in the Switzerland Wes
 
 Starting March 1st 2021, you no longer will be able to sign up and sign in to the [Azure AI Video Indexer website](https://www.videoindexer.ai/) [developer portal](video-indexer-use-apis.md) using Facebook or LinkedIn.
 
-You will be able to sign up and sign in using one of these providers: Azure AD, Microsoft, and Google.
+You will be able to sign up and sign in using one of these providers: Entra ID, Microsoft, and Google.
 
 > [!NOTE]
 > The Azure AI Video Indexer accounts connected to LinkedIn and Facebook won't be accessible after March 1st 2021.
 >
-> You should [invite](restricted-viewer-role.md#share-the-account) an Azure AD, Microsoft, or Google email you own to the Azure AI Video Indexer account so you will still have access. You can add an additional owner of supported providers, as described in [invite](restricted-viewer-role.md#share-the-account). <br/>
+> You should [invite](restricted-viewer-role.md#share-the-account) an Entra ID, Microsoft, or Google email you own to the Azure AI Video Indexer account so you will still have access. You can add an additional owner of supported providers, as described in [invite](restricted-viewer-role.md#share-the-account). <br/>
 > Alternatively, you can create a paid account and migrate the data.
 
 ## August 2020

@@ -2,7 +2,7 @@
 title: Manage access to an Azure AI Video Indexer account
 description: This article talks about Video Indexer restricted viewer built-in role. This role is an account level permission, which allows users to grant restricted access to a specific user or security group. 
 ms.topic: how-to
-ms.date: 12/14/2022
+ms.date: 11/27/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -21,9 +21,9 @@ To see your accounts, select **User Accounts** at the top-right of the [Azure AI
 
 ## User management of ARM accounts
 
-[Azure role-based access control (Azure RBAC)](/azure/role-based-access-control/overview) is used to manage access to Azure resources, such as the ability to create new resources or use existing ones. Using Azure RBAC, you can segregate duties within your team and users by granting only the amount of access that is appropriate. Users in your Azure Active Directory (Azure AD) are assigned specific roles, which grant access to resources. 
+[Azure role-based access control (Azure RBAC)](/azure/role-based-access-control/overview) is used to manage access to Azure resources, such as the ability to create new resources or use existing ones. Using Azure RBAC, you can segregate duties within your team and users by granting only the amount of access that is appropriate. Users in Entra ID are assigned specific roles, which grant access to resources. 
 
-Users with owner or administrator Azure Active Directory (Azure AD) permissions can assign roles to Azure AD users or security groups for an account. For information on how to assign roles, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal). 
+Users with owner or administrator Entra ID permissions can assign roles to users or security groups for an account. For information on how to assign roles, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal). 
 
 Azure AI Video Indexer provides three built-in roles. You can learn more about [Azure built-in roles](/azure/role-based-access-control/built-in-roles). Azure AI Video Indexer doesn't support the creation of custom roles. 
 
