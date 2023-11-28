@@ -2,7 +2,7 @@
 title: Azure AI Video Indexer optical character recognition (OCR) overview 
 titleSuffix: Azure AI Video Indexer 
 description: An introduction to Azure AI Video Indexer optical character recognition (OCR) component responsibly.
-ms.date: 06/15/2022
+ms.date: 11/27/2023
 ms.topic: article
 ms.author: inhenkel
 author: IngridAtMicrosoft
@@ -117,6 +117,7 @@ For more information, see [OCR technology](/azure/ai-services/computer-vision/
 
 ## Considerations and limitations when choosing a use case 
 
+- Video Indexer has an OCR limit of 50,000 words per indexed video. Once the limit has been reached, no additional OCR results are generated.
 - Carefully consider the accuracy of the results, to promote more accurate detections, check the quality of the image, low quality images might impact the detected insights.  
 - Carefully consider when using for law enforcement that OCR can potentially misread or not detect parts of the text. To ensure fair and high-quality decisions, combine OCR-based automation with human oversight. 
 - When extracting handwritten text, avoid using the OCR results of signatures that are hard to read for both humans and machines. A better way to use OCR is to use it for detecting the presence of a signature for further analysis. 
