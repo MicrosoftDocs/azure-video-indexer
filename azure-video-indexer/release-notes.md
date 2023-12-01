@@ -3,7 +3,7 @@ title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
 ms.topic: article
 ms.custom: references_regions
-ms.date: 11/27/2023
+ms.date: 12/1/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -36,17 +36,17 @@ You can use your own customized AI model and integrate the data with Video Index
 
 You can add custom tags and free text as video metadata to any video in your Video Indexer account. This enables you to categorize and annotate your videos with any information that's relevant to you and your business. For example, you can add tags such as “product demo”, “customer testimonial”, or “internal training” or free text such as “This video shows how to use our new feature X” or “This video was recorded at our annual conference in Y”. They can be added to the area below the video once the video has been indexed.
 
-### Search based on custom tags and free text
+### Search based on custom tags and free text (Preview)
 
 You can search for videos based on their custom tags and free text. This will enable you to find the videos that match your criteria more easily and quickly. You can search based on custom tags and free text in all supported languages, and you can combine them with other search filters such as keywords, faces, labels, emotions, etc. You can also use the advanced search syntax to perform more complex queries. For example, you can search for videos that have the tag “product demo” and the free text “feature X”.
 
 We've added a number of improvements to the customized people model which improves the overall experience as well as the accuracy. People models are gated AI models that allow you to train your own model to recognize specific people in your videos. The new additions are:
 
-### Indication on the quality of people model 
+### Indication on the quality of people model (Preview) 
 
 You can get an indication on the quality of your customized People model (poor, fair, good). The quality is determined by the the number of images used for labeling with the more images you use to label a person, the higher the probability to identify the person correctly. For example, the probability of identifying a person with 24 labeled images is higher than the probability of identifying a person with 2 labeled images. You can see the number of images used for labeling each person in your customized People model page.
 
-### Choose a custom people model as default
+### Choose a custom people model as default (Preview)
 
 You can now choose a customized People model as default on the VI account user level, so you don't have to keep selecting the model name for every video upload. This will save you time and effort when you upload videos that need to be analyzed by your customized People model.
 
@@ -54,7 +54,7 @@ You can now choose a customized People model as default on the VI account user l
 
 You can see the unknown people in your videos grouped by their appearance similarity. This will help you label the unknown people more easily and quickly, and to improve the accuracy of your customized People model. You can see the grouping of unknown people in your customization page > choose **people** and then navigate to the **unknown people** tab. This could, for example, help you to label a local celebrity or a local politician.
 
-### Search results with max confidence score for identified person name
+### Search results with max confidence score for identified person name (Preview)
 
 You can search for the name of an identified person and get when the person appears in the video, with the maximum confidence score. This helps you decide what are the most relevant videos to explore. For example, you can search for “John Smith” and get the videos where John Smith is recognized by your customized People model, along with the confidence score for each video.
 
