@@ -3,7 +3,7 @@ title: Tutorial - Azure AI Video Indexer enabled by Arc
 description: This tutorial shows you how to deploy Azure Video Indexer with Arc.
 ms.topic: tutorial
 ms.service: azure-video-indexer
-ms.date: 10/30/2023
+ms.date: 12/04/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -99,6 +99,23 @@ sh install_vi_arc.sh
 ```
 
 When finished, you can use the URL of the new Video Indexer extension running on the AKS cluster to perform test Video Indexer on Edge.
+<!------------------------------------------------------>
+
+## [Deploy in Azure Portal](#tab/portal)
+
+1. In the Azure portal, navigate to your Azure Arc-connected cluster.
+1. From the menu, select **Extensions** > **+ Add** > **Azure Video Indexer Arc Extension**.
+1. Select **Create**. The *Create an AI Video Indexer extension* screen will appear.
+1. Configure the extension in *Instance details*:
+    1. Select the **subscription** and **resource group** for your extension.
+    1. Select the **region and connected** k8 cluster.
+    1. Enter a **name** for your extension.
+    1. Select the **Azure Video Indexer Account** that the extension will be connected to.
+    1. Enter the **cluster endpoint**, either an IP or DNS Name to be used as the API endpoint.
+    1. Provide the **storage class** you want to use for the extension that's supported by your Kubernetes distribution. For example, if you're using AKS, you could use `azurefile-cli`. For more information on predefined storage classes supported by AKS, see [Storage Classes in AKS](/azure/aks/concepts-storage#storage-classes). If you're using other Kubernetes distributions, see your Kubernetes distribution documentation for predefined storage classes supported or the way you can provide your own.
+1. Select **Review + create** and then **Create**.
+
+<!------------------------------------------------------>
 
 ## [Manual deployment](#tab/manual)
 
@@ -157,7 +174,10 @@ The response comes in the following format:
     "translatorCognitiveServicesPrimaryKey": "<key>",
     "translatorCognitiveServicesSecondaryKey": "<key>",
     "speechCognitiveServicesEndpoint": "<uri>",
-    "translatorCognitiveServicesEndpoint": "<uri>"
+    "translatorCognitiveServicesEndpoint": "<uri>",
+    "ocrCognitiveServicesPrimaryKey": "<key>",
+    "ocrCognitiveServicesSecondaryKey": "<key>",
+    "ocrCognitiveServicesEndpoint": "<uri>"
 }
 ```
 Use this data in the next step. 
@@ -194,6 +214,8 @@ az k8s-extension create --name videoindexer \
     --config-protected-settings "speech.secret=${speechSecret}" \
     --config-protected-settings "translate.endpointUri=${translateUri}" \
     --config-protected-settings "translate.secret=${translateSecret}" \
+    --config-protected-settings "ocr.endpointUri=$($csResourcesData.ocrCognitiveServicesEndpoint)" `
+    --config-protected-settings "ocr.secret=$($csResourcesData.ocrCognitiveServicesPrimaryKey)" `
     --config "videoIndexer.accountId=${viAccountId}" \
     --config "frontend.endpointUri=${dnsName}" \
     --config "storage.storageClass=azurefile-csi"
