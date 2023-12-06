@@ -26,7 +26,7 @@ You can use this feature by selecting the **group faces** button located in the 
 
 1.  In the Azure AI Video Indexer web interface, select the **model customizations** icon from the menu.
 2.  Select **People**.
-3.  Select the **Unknown people** tab, then select the **Group Faces** button. If there are unknown people in your already indexed video archive, they'll appear grouped by facial similarity.
+3.  Select the **Unknown people** tab, then select the **Group Faces** button. If there are unknown people in your already indexed video archive, they appear grouped by facial similarity.
 4.  Label the person.
 
 >   IMPORTANT
@@ -34,10 +34,6 @@ You can use this feature by selecting the **group faces** button located in the 
 >   It is crucial to ensure accuracy in naming and to eliminate any erroneous face examples to prevent future duplication. You can delete irrelevant groups or false detections within groups before finalizing the naming process.
 
 Once a person is labeled, the videos in which this person appears get sampled and assigned to the designated person catalog. There's no need to reindex the videos.
-
-### 
-
-### 
 
 ### Find all the videos where the person is detected
 
