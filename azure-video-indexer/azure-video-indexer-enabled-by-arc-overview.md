@@ -120,5 +120,3 @@ Here is your alphabetized list:
 
 - [Try Azure Video Indexer enabled by Arc](azure-video-indexer-enabled-by-arc-tutorial.md)
 - [View the API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Account-Access-Token)
-
-[!INCLUDE [footer](includes/footer.md)]

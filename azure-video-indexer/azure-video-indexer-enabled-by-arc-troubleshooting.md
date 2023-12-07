@@ -23,5 +23,3 @@ This behavior is to be expected. Media is streamed from the VM using network str
 1. Implement your own streaming server endpoint that does the encoding beforehand or use just-in-time (JIT) encoding.
 
 For example, you could use [ffmpeg](https://ffmpeg.org/) and [Shaka Packager](https://github.com/shaka-project/shaka-packager) to do the encoding preprocessing and the packaging of the encoded file that will allow streaming of HLS/DASH protocols. Using this method the streamable files can be placed in the storage and the streaming endpoint will just serve the files. 
-
-[!INCLUDE [footer](includes/footer.md)]
