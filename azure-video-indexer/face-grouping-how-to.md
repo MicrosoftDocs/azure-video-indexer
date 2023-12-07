@@ -2,7 +2,7 @@
 title: How to use global face grouping (preview)
 description: With AVI, scaling facial recognition of thousands of faces is easy if a labeled and tagged dataset already exists. However, what if the dataset doesn't exist yet or isn't available for detecting faces in your video collection? Global face grouping can help you find faces that are frequently detected in videos but aren’t yet labeled or tagged. By using global face grouping, you can enhance your account’s custom face identification database.
 ms.topic: how-to
-ms.date: 12/06/2023
+ms.date: 12/07/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -16,10 +16,10 @@ With AVI, scaling the facial recognition of thousands of faces is easy if a labe
 
 You can use this feature by selecting the **group faces** button located in the **people customization** tab of the **model customization** screen in the Azure Video Indexer web interface. Then, you can review the grouped faces and tag them. You can group faces iteratively to find more face groupings.
 
-**Limitations and Requirements**
+## Limitations and requirements
 
 -   **Minimum Requirements**: For effective processing, accounts must have a minimum of 50 high-quality, indexed, unknown face detections.
--   **Maximum Threshold**: Accounts are allowed 500,000 unknown faces. After the 500,000 unknown faces threshold is reached, **WHAT HAPPENS?**.
+-   **Maximum Threshold**: Accounts are allowed 500,000 unknown faces. After the 500,000 unknown faces threshold is reached, the oldest videos' unidentified faces won’t be used or presented for grouping.
 -   **Quality Control**: Duplicate detections, and detections that are smaller than 50 pixels in width or height, or having significant occlusions or blurriness, are excluded from the process.
 
 ## Use global face grouping
