@@ -114,6 +114,7 @@ items:
       href: customize-person-model-overview.md
       displayName: multiple Person model support, multiple custom Person models, Azure AI Video Indexer website, top LinkedIn influencers, to 1 million people, multiple Person models, specific custom model, celebrity recognition feature, separate Person model, specific Person model, one million faces, Person model ID, default Person model, 50 Person models, Azure  description, Gate notice, data source, image files, different use-cases, different channels, new face, title, article, overview, conceptual, videos, IMDB, Wikipedia, Customers, name, account, example, content, NOTE, limit, API
   - name: How to guides
+    items:
     - name: Manage accounts
       items:
       - name: Manage access to your account
@@ -232,13 +233,13 @@ items:
           displayName: advanced Machine Learning algorithms, Azure AI Video Indexer brand detection, Azure AI Video Indexer account, custom Brands model feature, social media analysis, retail compete analysis, brand detection feature, box detection example, Bing brands database, Azure  description, visual text, other terms, wide variety, business scenarios, contextual advertising, Day 2" presentation, high precision, unapproved brands, 90k brands, audio content, Microsoft Build, brand mentions, Windows logo, Brands overview, speech, indexing
         - name: Speech
           displayName: customizing
-        items:
-        - name: Customize speech model with the website
-          href: customize-speech-model-with-website.md
-          displayName: Azure AI Video Indexer website, speech recognition
-        - name: Customize speech model with the API
-          href: customize-speech-model-with-api.md
-          displayName: Azure AI Video Indexer API, speech recognition
+          items:
+          - name: Customize speech model with the website
+            href: customize-speech-model-with-website.md
+            displayName: Azure AI Video Indexer website, speech recognition
+          - name: Customize speech model with the API
+            href: customize-speech-model-with-api.md
+            displayName: Azure AI Video Indexer API, speech recognition
       - name: Language
         displayName: customizing
         items:
