@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # How to use global face grouping (preview)
 
-With AVI, scaling facial recognition of thousands of faces is easy if a labeled and tagged dataset already exists. However, what if the dataset doesn't exist yet or isn't available for detecting faces in your video collection? Global face grouping can help you find faces that are frequently detected in videos but aren’t yet labeled or tagged. By using global face grouping, you can enhance your account’s custom face identification database.
+With AVI, scaling the facial recognition of thousands of faces is easy if a labeled and tagged dataset already exists. However, what if the dataset doesn't exist yet or isn't available for detecting faces in your video collection? Global face grouping can help you find faces that are frequently detected in videos but aren’t yet labeled or tagged. By using global face grouping, you can enhance your account’s custom face identification database.
 
 ## Overview
 
@@ -29,9 +29,8 @@ You can use this feature by selecting the **group faces** button located in the 
 3.  Select the **Unknown people** tab, then select the **Group Faces** button. If there are unknown people in your already indexed video archive, they appear grouped by facial similarity.
 4.  Label the person.
 
->   IMPORTANT
-
->   It is crucial to ensure accuracy in naming and to eliminate any erroneous face examples to prevent future duplication. You can delete irrelevant groups or false detections within groups before finalizing the naming process.
+> [!IMPORTANT]
+> It is crucial to ensure accuracy in naming and to eliminate any erroneous face examples to prevent future duplication. You can delete irrelevant groups or false detections within groups before finalizing the naming process.
 
 Once a person is labeled, the videos in which this person appears get sampled and assigned to the designated person catalog. There's no need to reindex the videos.
 
