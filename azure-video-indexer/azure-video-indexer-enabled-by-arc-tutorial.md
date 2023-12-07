@@ -3,7 +3,7 @@ title: Tutorial - Azure AI Video Indexer enabled by Arc
 description: This tutorial shows you how to deploy Azure Video Indexer with Arc.
 ms.topic: tutorial
 ms.service: azure-video-indexer
-ms.date: 12/04/2023
+ms.date: 12/07/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -281,5 +281,3 @@ az k8s-extension update --name videoindexer \
 
 ## Sample
 [AVIenabledbyArc on GitHub](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/AVIenabledbyArc/vi-edge-deployment-script.sh)
-
-[!INCLUDE [footer](includes/footer.md)]
