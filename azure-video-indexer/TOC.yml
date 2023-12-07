@@ -269,53 +269,53 @@ items:
     - name: Disaster recovery
       href: video-indexer-disaster-recovery.md
       displayName: two Azure AI Video Indexer accounts, secondary Azure AI Video Indexer account, Azure AI Video Indexer failover, business continuity disaster recovery, Azure paired regions, Azure free trial, regional datacenter outage, disaster recovery description, regional datacenter failure, activity log alerts, service health notifications, secondary account, two options, one account, Azure region, Azure subscription, instant failover, recovery time, regional pairs, service notifications, optimal availability, availability policies, multiple tenants, primary region, title, author, topic, article, date, environment, apps, BCDR, isolation, information, availability-zones, replication, Prerequisites, microsoft, redundancy, service-notifications, multiple-tenants
-  - name: Troubleshooting
-    items:
-    - name: Account connection issues
-      href: manage-account-connected-to-azure.md
-      displayName: Azure Media Services resource group name, Azure AI Video Indexer account owner, The Entra ID (Azure AD) application key, underlying Azure Media Services account, underlying Media Services account, Azure AI Video Indexer accounts, Event Grid resource provider, same Entra ID (Azure AD) user, Azure Media Services** dialog, Azure AD application ID, Media Services API, Media Service resource, Media reserved units, optimal indexing performance, 10 S3 Reserved Units, Videos Indexer account, default **Streaming Endpoint, Azure subscription ID, account configuration adjustments, app key, user icon, Manage application, trial account, app ID, Azure portal, indexing jobs, desired ID, service principal, account settings, top-right corner, following things, exact places, left panel, relevant parameters, relevant errors, Microsoft.EventGrid, pricing information, following settings, warning messages, FAQ section, errors/warnings description, title, connection, article, topic, number, type, links, changes, videoindexer, page, values, subscriptions, list, permissions, Certificates, secrets, details, couple, minutes, state, order, media-services, instructions
-    - name: Switch between tenants in portal
-      href: switch-tenants-portal.md
-      displayName: Azure AI Video Indexer Azure Resource Manager, Azure AI Video Indexer website description, current Azure subscription, Azure Active Directory, same subscription tenant, Azure AD account, correct domain name, Azure environment, AVI website, Azure portal, same problem, tenant switching, tenant list, relevant accounts, Trial accounts, Classic accounts, ARM accounts, right-top corner, last step, top-right corner, current directory, account name, two options, ARM) account, AAD account, other options, default directory, different directory, new directory, user name, following section, multiple tenants, different directories, title, article, Note, users, videoindexer, Screenshot, credentials, Hover, account-attributes, domains, preferences, button, organization, domain-name
-    - name: Resource health
-      href: resource-health.md
-  - name: Reference
-    items:
-    - name: Azure AI Video Indexer API
-      href: https://api-portal.videoindexer.ai/
-    - name: Azure AI Video Indexer ARM REST API
-      href: /rest/api/videoindexer/preview/accounts
-    - name: Azure AI Video Indexer output json
-      href: video-indexer-output-json-v2.md
-      displayName: optical character recognition elements, Azure AI Video Indexer output description, Get Video Index API, Azure AI Video Indexer insights, VI account ID, Azure Monitor, JSON output, Root elements, privacy mode, SummarizedInsights elements, backward compatibility, following modes, Operations&operation, audio effects, failure code, failure message, external URL, external metadata, time ranges, creation time, first video, Public video, Private video, adult video, JSON content, external ID, similar details, total duration, actual thumbnail, insights object, insight type, current user, other videos, video insights, thumbnail ID, base playlist, title, topic, article, transcripts, OCRs, faces, instances, information, Name, accountId, privacyMode, state, durationInSeconds, TIP, Summary, section, Attribute, example, breakdown, everyone, link, api-details, Get-Video-Thumbnail, thumbnailVideoId, thumbnailId, zero, keywords, sentiments, audioEffects, labels, brands, statistics, emotions, progress, processing, failureCode, failureMessage, externalId, externalUrl
-    - name: Monitor Video Indexer data reference
-      href: monitor-video-indexer-data-reference.md
-      displayName: Azure AI Video Indexer data reference, Virtual machine scale set, automated metric-supported reference article, Azure Monitor "shoebox" manifest, main "Monitoring [servicename]" article, monitoring data reference article, Important reference material, GitHub user alias, optional team alias, Virtual Machine metrics, Monitor [servicename] article, official service name, reference information, IMPORTANT STEP, Azure services, Microsoft alias, Type Namespace, usage type, correct capitalization, extra content, relevant bookmarks, underlying systems, product group, additional explanation, other articles, missing metrics, individual metrics, Multi-dimensional metrics, customized example, extra information, other information, specific information, Microsoft.Compute, Metric Type, following dimensions, platform metrics, OPTION 2 EXAMPLE, Metric dimensions, 1 EXAMPLE, title, description, author, subject-monitoring, date, VERSION, Template, search, details, section, logs, headings, order, 2 options, level, Link, PM, virtualMachine, NOTE, sync, CosmosDB, setup, azure-monitor, Unit, TODO, label, text, list, Questions, multi-dimensional-metrics, storage
-    - name: Azure Video Indexer enabled by Arc Troubleshooting
-      href: azure-video-indexer-enabled-by-arc-troubleshooting.md
-  - name: Resources
-    items:
-    - name: Azure Roadmap
-      href: https://azure.microsoft.com/roadmap/?category=web-mobile
-    - name: Pricing
-      href: https://azure.microsoft.com/pricing/details/video-indexer/
-    - name: Regional availability
-      href: https://azure.microsoft.com/global-infrastructure/services/
-    - name: Regions
-      href: regions.md
-      displayName: Azure region West US, Azure AI Video Indexer APIs, Azure region code name, az account list-locations, Azure portal, Azure regions, preview mode, top-right corner, Language model, CLI command, Brands model, Person model, location` parameter, default value, title, description, article, topic, call, microsoft, global-infrastructure, services, trial, videoindexer, ai, website, page, image, media, line, example, json, displayName, latitude, longitude, westus2, subscriptionId
-    - name: Microsoft Q&A
-      href: /answers/topics/azure-video-indexer.html
-    - name: FAQ
-      href: faq.yml
-    - name: AMS deprecation FAQ
-      href: ams-deprecation-faq.yml
-    - name: Release notes
-      href: release-notes.md
-      displayName: Azure AI Video Indexer release notes, recent Azure AI Video Indexer developments, Video Indexer Restricted Viewer, Azure AI Video Indexer accounts, Azure AI Video Indexer website, low-quality face detection occurrences, Azure Cost Analysis reports, Network Security Service tag, Video Indexer IPs, Azure Billing statement, Video Analysis SKUs, upload video index, service impacting events, Textual logo detection, Entra ID, Azure AD directories, Network Service Tag, Microsoft Docs description, Detect textual logo, particular transcript line, Network Security Tag, RSS feed reader, Get Supported Languages, Basic Audio Analysis, important product updates, recent developments, new Advanced SKU, Video SKU, Azure discounts, cost savings, Face grouping, network traffic, Switching directories, Advanced Audio, latest updates, Important notice, latest releases, Known issues, Bug fixes, Deprecated functionality, Advanced presets, distinct meter, 40% price reduction, market trends, input minute, deployment scripts, existing configuration, Notification experience, notification panel, new releases, text logos, Language support, grouping algorithm, same capabilities, limited access, New languages, competitive pricing, new pricing, planned changes, indexing operations, Speakers' names, new speakers, AI capabilities, title, article, topic, references_regions, page, URL, search, +Media+Services+, Video+Indexer+release, information, INCLUDE, deprecation, announcement, February, January, order, use, Standard, consideration, feedback, customers, prices, options, costs, features, advantage, addition, AzureVideoAnalyzerForMedia, VideoIndexer, The, videos, tenants, Irish, Bulgarian, Catalan, Greek, Estonian, Croatian, Latvian, Romanian, Slovak, Slovenian, Telugu, Malayalam, Kannada, Icelandic, Armenian, Gujarati, Tamil, API, details, number, UI, json, usability, November, identified, Update-Video-Index, October, role
-    - name: Stack Overflow
-      href: https://stackoverflow.com/search?q=video-indexer
-    - name: Azure ideas
-      href: https://aka.ms/UserVoiceVI
-    - name: Blogs
-      href: https://azure.microsoft.com/blog/tag/video-indexer/
+- name: Troubleshooting
+  items:
+  - name: Account connection issues
+    href: manage-account-connected-to-azure.md
+    displayName: Azure Media Services resource group name, Azure AI Video Indexer account owner, The Entra ID (Azure AD) application key, underlying Azure Media Services account, underlying Media Services account, Azure AI Video Indexer accounts, Event Grid resource provider, same Entra ID (Azure AD) user, Azure Media Services** dialog, Azure AD application ID, Media Services API, Media Service resource, Media reserved units, optimal indexing performance, 10 S3 Reserved Units, Videos Indexer account, default **Streaming Endpoint, Azure subscription ID, account configuration adjustments, app key, user icon, Manage application, trial account, app ID, Azure portal, indexing jobs, desired ID, service principal, account settings, top-right corner, following things, exact places, left panel, relevant parameters, relevant errors, Microsoft.EventGrid, pricing information, following settings, warning messages, FAQ section, errors/warnings description, title, connection, article, topic, number, type, links, changes, videoindexer, page, values, subscriptions, list, permissions, Certificates, secrets, details, couple, minutes, state, order, media-services, instructions
+  - name: Switch between tenants in portal
+    href: switch-tenants-portal.md
+    displayName: Azure AI Video Indexer Azure Resource Manager, Azure AI Video Indexer website description, current Azure subscription, Azure Active Directory, same subscription tenant, Azure AD account, correct domain name, Azure environment, AVI website, Azure portal, same problem, tenant switching, tenant list, relevant accounts, Trial accounts, Classic accounts, ARM accounts, right-top corner, last step, top-right corner, current directory, account name, two options, ARM) account, AAD account, other options, default directory, different directory, new directory, user name, following section, multiple tenants, different directories, title, article, Note, users, videoindexer, Screenshot, credentials, Hover, account-attributes, domains, preferences, button, organization, domain-name
+  - name: Resource health
+    href: resource-health.md
+- name: Reference
+  items:
+  - name: Azure AI Video Indexer API
+    href: https://api-portal.videoindexer.ai/
+  - name: Azure AI Video Indexer ARM REST API
+    href: /rest/api/videoindexer/preview/accounts
+  - name: Azure AI Video Indexer output json
+    href: video-indexer-output-json-v2.md
+    displayName: optical character recognition elements, Azure AI Video Indexer output description, Get Video Index API, Azure AI Video Indexer insights, VI account ID, Azure Monitor, JSON output, Root elements, privacy mode, SummarizedInsights elements, backward compatibility, following modes, Operations&operation, audio effects, failure code, failure message, external URL, external metadata, time ranges, creation time, first video, Public video, Private video, adult video, JSON content, external ID, similar details, total duration, actual thumbnail, insights object, insight type, current user, other videos, video insights, thumbnail ID, base playlist, title, topic, article, transcripts, OCRs, faces, instances, information, Name, accountId, privacyMode, state, durationInSeconds, TIP, Summary, section, Attribute, example, breakdown, everyone, link, api-details, Get-Video-Thumbnail, thumbnailVideoId, thumbnailId, zero, keywords, sentiments, audioEffects, labels, brands, statistics, emotions, progress, processing, failureCode, failureMessage, externalId, externalUrl
+  - name: Monitor Video Indexer data reference
+    href: monitor-video-indexer-data-reference.md
+    displayName: Azure AI Video Indexer data reference, Virtual machine scale set, automated metric-supported reference article, Azure Monitor "shoebox" manifest, main "Monitoring [servicename]" article, monitoring data reference article, Important reference material, GitHub user alias, optional team alias, Virtual Machine metrics, Monitor [servicename] article, official service name, reference information, IMPORTANT STEP, Azure services, Microsoft alias, Type Namespace, usage type, correct capitalization, extra content, relevant bookmarks, underlying systems, product group, additional explanation, other articles, missing metrics, individual metrics, Multi-dimensional metrics, customized example, extra information, other information, specific information, Microsoft.Compute, Metric Type, following dimensions, platform metrics, OPTION 2 EXAMPLE, Metric dimensions, 1 EXAMPLE, title, description, author, subject-monitoring, date, VERSION, Template, search, details, section, logs, headings, order, 2 options, level, Link, PM, virtualMachine, NOTE, sync, CosmosDB, setup, azure-monitor, Unit, TODO, label, text, list, Questions, multi-dimensional-metrics, storage
+  - name: Azure Video Indexer enabled by Arc Troubleshooting
+    href: azure-video-indexer-enabled-by-arc-troubleshooting.md
+- name: Resources
+  items:
+  - name: Azure Roadmap
+    href: https://azure.microsoft.com/roadmap/?category=web-mobile
+  - name: Pricing
+    href: https://azure.microsoft.com/pricing/details/video-indexer/
+  - name: Regional availability
+    href: https://azure.microsoft.com/global-infrastructure/services/
+  - name: Regions
+    href: regions.md
+    displayName: Azure region West US, Azure AI Video Indexer APIs, Azure region code name, az account list-locations, Azure portal, Azure regions, preview mode, top-right corner, Language model, CLI command, Brands model, Person model, location` parameter, default value, title, description, article, topic, call, microsoft, global-infrastructure, services, trial, videoindexer, ai, website, page, image, media, line, example, json, displayName, latitude, longitude, westus2, subscriptionId
+  - name: Microsoft Q&A
+    href: /answers/topics/azure-video-indexer.html
+  - name: FAQ
+    href: faq.yml
+  - name: AMS deprecation FAQ
+    href: ams-deprecation-faq.yml
+  - name: Release notes
+    href: release-notes.md
+    displayName: Azure AI Video Indexer release notes, recent Azure AI Video Indexer developments, Video Indexer Restricted Viewer, Azure AI Video Indexer accounts, Azure AI Video Indexer website, low-quality face detection occurrences, Azure Cost Analysis reports, Network Security Service tag, Video Indexer IPs, Azure Billing statement, Video Analysis SKUs, upload video index, service impacting events, Textual logo detection, Entra ID, Azure AD directories, Network Service Tag, Microsoft Docs description, Detect textual logo, particular transcript line, Network Security Tag, RSS feed reader, Get Supported Languages, Basic Audio Analysis, important product updates, recent developments, new Advanced SKU, Video SKU, Azure discounts, cost savings, Face grouping, network traffic, Switching directories, Advanced Audio, latest updates, Important notice, latest releases, Known issues, Bug fixes, Deprecated functionality, Advanced presets, distinct meter, 40% price reduction, market trends, input minute, deployment scripts, existing configuration, Notification experience, notification panel, new releases, text logos, Language support, grouping algorithm, same capabilities, limited access, New languages, competitive pricing, new pricing, planned changes, indexing operations, Speakers' names, new speakers, AI capabilities, title, article, topic, references_regions, page, URL, search, +Media+Services+, Video+Indexer+release, information, INCLUDE, deprecation, announcement, February, January, order, use, Standard, consideration, feedback, customers, prices, options, costs, features, advantage, addition, AzureVideoAnalyzerForMedia, VideoIndexer, The, videos, tenants, Irish, Bulgarian, Catalan, Greek, Estonian, Croatian, Latvian, Romanian, Slovak, Slovenian, Telugu, Malayalam, Kannada, Icelandic, Armenian, Gujarati, Tamil, API, details, number, UI, json, usability, November, identified, Update-Video-Index, October, role
+  - name: Stack Overflow
+    href: https://stackoverflow.com/search?q=video-indexer
+  - name: Azure ideas
+    href: https://aka.ms/UserVoiceVI
+  - name: Blogs
+    href: https://azure.microsoft.com/blog/tag/video-indexer/
