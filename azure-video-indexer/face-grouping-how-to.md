@@ -37,5 +37,3 @@ Once a person is labeled, the videos in which this person appears get sampled an
 ### Find all the videos where the person is detected
 
 After a person is labeled, you can find all the videos where the identified person appears. You can use the people section of a video’s insights, select the People item from the Model customizations menu, or you can search for the person’s name.
-
-Adding a link to get a [term](https://learn.microsoft.com/en-us/windows-server/) out of GitHub. This will be deleted.
