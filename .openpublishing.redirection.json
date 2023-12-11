@@ -34,6 +34,11 @@
             "source_path_from_root": "/azure-video-indexer/compare-video-indexer-with-media-services-presets.md",
             "redirect_url": "/azure/azure-video-indexer/video-indexer-overview",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/azure-video-indexer-enabled-by-arc-tutorial.md",
+            "redirect_url": "/azure/azure-video-indexer/azure-video-indexer-enabled-by-arc-quickstart",
+            "redirect_document_id": false
         }
     ]
 }

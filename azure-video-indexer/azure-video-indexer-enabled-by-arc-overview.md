@@ -128,7 +128,31 @@ Azure Video Indexer enabled by Arc also supports bringing your own model. See th
 - You can use only cloud account access tokens obtained via the Azure portal. Cloud video access tokens aren't supported, but with the API, extension access tokens are available and we support all types.
 -   Video error messages aren't stored due to memory limitations.
 
-## Next steps
+## Capacity planning
 
-- [Try Azure Video Indexer enabled by Arc](azure-video-indexer-enabled-by-arc-tutorial.md)
-- [View the API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Account-Access-Token)
+It is important to plan the resources needed for your environment. The table below outlines the recommended and minimal resources needed to index videos in a range of lengths and sizes. Use the table to determine the capacity needed for your deployment. Things to consider include:
+
+- Video length
+- Video size
+- Minimal turnover duration - Need definition. What is turnover?
+- Average turnover duration - Need definition. What is turnover?
+- Turnover duration P50, P75, P85 - What does P50 stand for?
+- Node count - the number of virtual machines needed to process the video
+- Recommended CPU - the number of recommended (not minimal) cores for each node
+- Recommended memory - the size of recommended (not minimal) memory for each node
+- Total resources - total recommended (not minimal) cores and memory
+- Minimum resources per machine - the minimum resources needed for analyzing each video
+
+| **Video Duration** | **Video Size** | **Minimal Turnover Duration** | **Average Turnover Duration** | **Turnover Duration P50** | **Turnover Duration P75** | **Turnover Duration P85** | **Node Count** | **Recommended CPU** | **Recommended Memory** | **Total Resources** | **Minimal Resources per Machine** |
+|--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 20 seconds | 3.114 Mb | 03:57 minutes | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 90 seconds | 5.044 Mb | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 9 minutes | 31.37 Mb | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 24 minutes | 334 Mb | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 33 minutes | 810 Mb | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1:07 hours | 1.6 Gb | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+## Next steps
+- Try deployment in the Azure portal using [Azure Video Indexer enabled by Arc quickstart](azure-video-indexer-enabled-by-arc-quickstart.md) 
+- Try the [Azure Video Indexer enabled by Arc sample on GitHub ](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/AVIenabledbyArc/readme.md)
+- Try the [Azure Video Indexer enable by Arc Jumpstart](https://arcjumpstart.com/azure_arc_jumpstart/azure_edge_iot_ops/aks_edge_essentials_single_vi)
