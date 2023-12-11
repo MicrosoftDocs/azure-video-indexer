@@ -132,8 +132,7 @@ Azure Video Indexer enabled by Arc also supports bringing your own model. See th
 
 It is important to plan the resources needed for your environment. The table below outlines the recommended and minimal resources needed to index videos in a range of lengths and sizes. Use the table to determine the capacity needed for your deployment. Things to consider include:
 
-- Video length
-- Video size
+- Video length and size
 - Minimal turnover duration - Need definition. What is turnover?
 - Average turnover duration - Need definition. What is turnover?
 - Turnover duration P50, P75, P85 - What does P50 stand for?
