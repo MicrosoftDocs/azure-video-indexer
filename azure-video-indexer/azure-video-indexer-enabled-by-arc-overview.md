@@ -3,12 +3,12 @@ title: Azure AI Video Indexer enabled by Arc overview
 description: Azure AI Video Indexer enabled by Arc an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 11/16/2023
+ms.date: 12/11/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
-# Azure Video Indexer enabled by Arc (Preview) overview
+# Azure Video Indexer enabled by Arc overview (preview)
 
 [!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)] ([!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)]) is an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 
@@ -26,7 +26,7 @@ Before you start working with [!INCLUDE [variable-edge-product-name](includes/va
 - virtual machines based on VMware vSphere
 
 ### What is an Azure Arc extension?
-An Azure Arc extension is a way to of deliver agents, scripts, and configurations to your on-premises machines orchestrated using the Azure Portal or API. For more information about Azure Arc extensions, see [Manage VM extensions](/azure/azure-arc/servers/manage-vm-extensions).
+An Azure Arc extension is a way to of deliver agents, scripts, and configurations to your on-premises machines orchestrated using the Azure portal or API. For more information about Azure Arc extensions, see [Manage VM extensions](/azure/azure-arc/servers/manage-vm-extensions).
 
 [!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)] works on both heavy edge and light edge devices, giving you design flexibility. An example of a heavy edge device is Azure Stack HCI. Examples of light edge devices include cell phones, vehicles, and sensors.
 
@@ -90,7 +90,7 @@ Here is your alphabetized list:
 - MPEG-4 Part 2
 - VC-1/WMV9
 
-### Audio codecs up to 2 tracks
+### Audio codecs up to two tracks
  
 - AAC (AAC-LC, AAC-HE, and AAC-HEv2) 
 - FLAC	
@@ -111,9 +111,21 @@ Here is your alphabetized list:
 - Italian
 - Spanish
 
+## Bring your own model
+
+Azure Video Indexer enabled by Arc also supports bringing your own model. See the [Bring Your Own Model (BYO)](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md) article for details.
+
 ## Limitations
 
--   Up to 2-GB media file size in storage. Manage the quality (how it affects indexing results) to size ratio accordingly.
+- The supported file size for indexing is up to 2 GB.
+- Upgrading the extension:
+    - Extension support applies for the latest version only.
+    - We recommend setting that `auto-upgrade` property to `true`. This setting keeps the extension up to date.
+    - If the auto upgrade setting is set to false, the version upgrade should be done incrementally. Jumping between versions can cause indexing processes to fail.
+- After the extension installation or upgrade, expect the *first* index\translation process duration to be longer. The longer duration is due to AI model image download. The duration varies depending on network speed.
+- Only one Video Indexer extension can be deployed per Arc enabled Kubernetes cluster.
+- The cluster's volume performance (based on storage class) has significant influence on the turnover duration of the indexing job especially since the frame extraction is writing all frames into the volume).
+- You can use only cloud account access tokens obtained via the Azure portal. Cloud video access tokens aren't supported, but with the API, extension access tokens are available and we support all types.
 -   Video error messages aren't stored due to memory limitations.
 
 ## Next steps
