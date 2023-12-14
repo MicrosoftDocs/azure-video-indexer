@@ -155,6 +155,6 @@ It is important to plan the resources needed for your environment. The table bel
 | 1:07 hours | 1.6 Gb | 48:11 minutes | 49:56 minutes | 49:46 minutes | 50:44 minutes | 51:58 minutes | 4 | 64 cores | 256 GB | 64 cores/256 GB | 32 cores/6 GB |
 
 ## Next steps
-- Try deploying in the Azure portal using the [Azure Video Indexer enabled by Arc quickstart](azure-video-indexer-enabled-by-arc-quickstart.md) 
+- Try deploying in the Azure portal using the [Azure Video Indexer enabled by Arc quickstart](azure-video-indexer-enabled-by-arc-tutorial.md) 
 - Try the [Azure Video Indexer enabled by Arc sample on GitHub ](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/AVIenabledbyArc/readme.md)
 - Try the [Azure Video Indexer enable by Arc Jumpstart](https://arcjumpstart.com/azure_arc_jumpstart/azure_edge_iot_ops/aks_edge_essentials_single_vi)

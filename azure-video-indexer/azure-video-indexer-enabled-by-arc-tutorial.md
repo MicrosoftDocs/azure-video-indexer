@@ -1,18 +1,18 @@
 ---
-title: Tutorial - Azure AI Video Indexer enabled by Arc
-description: This tutorial shows you how to deploy Azure Video Indexer with Arc.
+title: Try Azure Video Indexer enabled by Arc
+description: This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 ms.topic: tutorial
 ms.service: azure-video-indexer
-ms.date: 12/07/2023
+ms.date: 12/14/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
-# Tutorial: Try Azure Video Indexer enabled by Arc
+# Try Azure Video Indexer enabled by Arc
 
 Azure Video Indexer enabled by Arc ([!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)]) is an Azure Arc Extension Enabled Service that runs video and audio analysis on edge devices. The solution is designed to run on Azure Stack Edge Profile, a heavy edge device, and supports many video formats, including MP4 and other common formats. The solution supports several languages in all basic audio-related models. It assumes that one Video Indexer resource is mapped to one extension.
 
-This tutorial walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
+This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 
 ## Prerequisites
 
