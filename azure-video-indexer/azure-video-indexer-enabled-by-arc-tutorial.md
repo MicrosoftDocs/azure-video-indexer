@@ -43,7 +43,7 @@ The following list is the minimum and recommended requirements if the extension 
 > At least a 2-node cluster is recommended for high availability and scalability. The recommended settings refer to cluster wide settings, so for example, if you have 2 nodes, each node should have 16 cores and 32 GB of RAM.
 
 > [!TIP] 
-> We recommend creating a dedicate node-pool / auto-scaling groups to host the VI Solution
+> We recommend creating a dedicated node-pool / auto-scaling groups to host the VI Solution
 
 ### Minimum software requirements
 
@@ -58,17 +58,17 @@ The following list is the minimum and recommended requirements if the extension 
 | Parameter | Default | Description |
 | --------- | ------- | ----------- |
 | release-namespace | yes | The Kubernetes namespace that the extension is installed into |
-| cluster-name | - | The Kubernetes Azure Arc instance name
-| resource-group | - | The Kubernetes Azure Arc resource group name
+| cluster-name |  | The Kubernetes Azure Arc instance name
+| resource-group |  | The Kubernetes Azure Arc resource group name
 | version | yes | Video Indexer Extension version, leave empty for latest |
-| speech.endpointUri | - | Speech Service Url Endpoint (link)
-| speech.secret | - | Speech Instance secret (link) |
-| translate.endpointUri | - | Translation Service Url Endpoint (link)
-| translate.secret | - | Translation Service secret (link)
-| ocr.endpointUri | - | OCR Service Url Endpoint (link)
-| ocr.secret | - |OCR Service secret (link) |
-| videoIndexer.accountId | - | Video Indexer Account ID |
-| videoIndexer.endpointUri | - | Dns Name or IP to be used as the extension external endpoint.|
+| speech.endpointUri |  | Speech Service Url Endpoint (link)
+| speech.secret |  | Speech Instance secret (link) |
+| translate.endpointUri |  | Translation Service Url Endpoint (link)
+| translate.secret |  | Translation Service secret (link)
+| ocr.endpointUri |  | OCR Service Url Endpoint (link)
+| ocr.secret |  |OCR Service secret (link) |
+| videoIndexer.accountId |  | Video Indexer Account ID |
+| videoIndexer.endpointUri |  | Dns Name or IP to be used as the extension external endpoint.|
 
 ## Prepare for deployment
 
