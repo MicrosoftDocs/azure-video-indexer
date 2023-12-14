@@ -72,35 +72,6 @@ During the deployment, the script asks for environment specific values. Have the
 > [!WARNING]
 > This sample environment is **NOT** meant to be used in production and only provided to quickly test functionality. Be certain to restrict access to the IP addresses in the environment to prevent security issues.
 
-## [One-click deployment](#tab/oneclick)
-
-## One-Click Deploy Sample to Azure
-
-If you would like to test the extension on a sample edge device, this deployment script can be used to quickly set up a K8S cluster and all pods to run Azure Video Indexer. This script does the following things:
-
-- Creates a small two node AKS Cluster (costs are ~$0.80/hour)
-- Enables ARC Extension on top of the cluster
-- Adds Video Indexer Arc Extension
-- Adds Video Indexer and Cognitive Services Speech + Translation containers
-- Exposes the Video Indexer Swagger API for data plane operations
-
-You can read more on how to set up your Cloud Shell environment [here](/azure/cloud-shell/quickstart?tabs=azurecli).
-
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://shell.azure.com/bash?url=)
-
-In Cloud Shell execute these two commands:
-
-```bash
-curl -sSL https://github.com/Azure-Samples/media-services-video-indexer/blob/master/AVIenabledbyArc/vi-edge-deployment-script.sh -o install_vi_arc.sh
-```
-
-```bash
-sh install_vi_arc.sh
-```
-
-When finished, you can use the URL of the new Video Indexer extension running on the AKS cluster to perform test Video Indexer on Edge.
-<!------------------------------------------------------>
-
 ## [Deploy in Azure Portal](#tab/portal)
 
 1. In the Azure portal, navigate to your Azure Arc-connected cluster.
