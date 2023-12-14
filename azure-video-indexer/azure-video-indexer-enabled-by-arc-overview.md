@@ -3,12 +3,12 @@ title: Azure AI Video Indexer enabled by Arc overview
 description: Azure AI Video Indexer enabled by Arc an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 11/16/2023
+ms.date: 12/11/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
-# Azure Video Indexer enabled by Arc (Preview) overview
+# Azure Video Indexer enabled by Arc overview (preview)
 
 [!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)] ([!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)]) is an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 
@@ -26,7 +26,7 @@ Before you start working with [!INCLUDE [variable-edge-product-name](includes/va
 - virtual machines based on VMware vSphere
 
 ### What is an Azure Arc extension?
-An Azure Arc extension is a way to of deliver agents, scripts, and configurations to your on-premises machines orchestrated using the Azure Portal or API. For more information about Azure Arc extensions, see [Manage VM extensions](/azure/azure-arc/servers/manage-vm-extensions).
+An Azure Arc extension is a way to of deliver agents, scripts, and configurations to your on-premises machines orchestrated using the Azure portal or API. For more information about Azure Arc extensions, see [Manage VM extensions](/azure/azure-arc/servers/manage-vm-extensions).
 
 [!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)] works on both heavy edge and light edge devices, giving you design flexibility. An example of a heavy edge device is Azure Stack HCI. Examples of light edge devices include cell phones, vehicles, and sensors.
 
@@ -90,7 +90,7 @@ Here is your alphabetized list:
 - MPEG-4 Part 2
 - VC-1/WMV9
 
-### Audio codecs up to 2 tracks
+### Audio codecs up to two tracks
  
 - AAC (AAC-LC, AAC-HE, and AAC-HEv2) 
 - FLAC	
@@ -111,12 +111,50 @@ Here is your alphabetized list:
 - Italian
 - Spanish
 
+## Bring your own model
+
+Azure Video Indexer enabled by Arc also supports bringing your own model. See the [Bring Your Own Model (BYO)](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md) article for details.
+
 ## Limitations
 
--   Up to 2-GB media file size in storage. Manage the quality (how it affects indexing results) to size ratio accordingly.
+- The supported file size for indexing is up to 2 GB.
+- Upgrading the extension:
+    - Extension support applies for the latest version only.
+    - We recommend setting that `auto-upgrade` property to `true`. This setting keeps the extension up to date.
+    - If the auto upgrade setting is set to false, the version upgrade should be done incrementally. Jumping between versions can cause indexing processes to fail.
+- After the extension installation or upgrade, expect the *first* index\translation process duration to be longer. The longer duration is due to AI model image download. The duration varies depending on network speed.
+- Only one Video Indexer extension can be deployed per Arc enabled Kubernetes cluster.
+- The cluster's volume performance (based on storage class) has significant influence on the turnover duration of the indexing job especially since the frame extraction is writing all frames into the volume).
+- You can use only cloud account access tokens obtained via the Azure portal. Cloud video access tokens aren't supported, but with the API, extension access tokens are available and we support all types.
 -   Video error messages aren't stored due to memory limitations.
 
-## Next steps
+## Capacity planning
 
-- [Try Azure Video Indexer enabled by Arc](azure-video-indexer-enabled-by-arc-tutorial.md)
-- [View the API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Account-Access-Token)
+It is important to plan the resources needed for your environment. The table below outlines the recommended and minimal resources needed to index videos in a range of lengths and sizes. Use the table to determine the capacity needed for your deployment. Things to consider include:
+
+- Video length and size
+- Minimal turnover duration - Need definition. What is turnover?
+- Average turnover duration - Need definition. What is turnover?
+- Turnover duration P50, P75, P85 - What does P50 stand for?
+- Node count - the number of virtual machines needed to process the video
+- Recommended CPU - the number of recommended (not minimal) cores for each node
+- Recommended memory - the size of recommended (not minimal) memory for each node
+- Total resources - total recommended (not minimal) cores and memory
+- Minimum resources per machine - the minimum resources needed for analyzing each video
+
+> [!TIP]
+> For videos over 9 minutes, the recommended total capacity is 256 cores with 1024 GB of memory, and the minimum resources per machine is 32 cores and 10 GB of memory.
+
+| **Video Duration** | **Video Size** | **Minimal Turnover Duration** | **Average Turnover Duration** | **Turnover Duration P50** | **Turnover Duration P75** | **Turnover Duration P85** | **Node Count** | **Recommended CPU** | **Recommended Memory** | **Total Resources** | **Minimal Resources per Machine** |
+|--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 20 seconds | 3.114 Mb | 03:57 minutes | 04:24 minutes | 04:24 minutes | 04:39 minutes | 04:44 minutes | 2 | 16 cores | 64 GB | 32 cores/128 GB | 16 cores/6GB |
+| 90 seconds | 5.044 Mb | 05:12 minutes | 05:27 minutes | 05:26 minutes | 05:34 minutes | 05:37 minutes | 2 | 32 cores | 128 GB | 64 cores/256 GB | 16 cores/6 GB |
+| 9 minutes | 31.37 Mb | 08:06 minutes | 08:23 minutes | 08:15 minutes | 08:32 minutes | 08:42 minutes | 3 | 64 cores | 256 GB | 64 cores/256 GB | 32 cores/6 GB |
+| 24 minutes | 334 Mb | 22:56 minutes | 23:29 minutes | 23:14 minutes | 23:34 minutes | 24:49 minutes | 4 | 64 cores | 256 GB | 64 cores/256 GB | 32 cores/6 GB |
+| 33 minutes | 810 Mb | 21:34 minutes | 22:35 minutes | 22:43 minutes | 22:48 minutes | 23:29 minutes | 4 | 64 cores | 256 GB | 64 cores/256 GB | 32 cores/6 GB |
+| 1:07 hours | 1.6 Gb | 48:11 minutes | 49:56 minutes | 49:46 minutes | 50:44 minutes | 51:58 minutes | 4 | 64 cores | 256 GB | 64 cores/256 GB | 32 cores/6 GB |
+
+## Next steps
+- Try deploying in the Azure portal using the [Azure Video Indexer enabled by Arc quickstart](azure-video-indexer-enabled-by-arc-tutorial.md) 
+- Try the [Azure Video Indexer enabled by Arc sample on GitHub ](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/AVIenabledbyArc/readme.md)
+- Try the [Azure Video Indexer enable by Arc Jumpstart](https://arcjumpstart.com/azure_arc_jumpstart/azure_edge_iot_ops/aks_edge_essentials_single_vi)
