@@ -1,34 +1,31 @@
 ---
-title: Tutorial - Azure AI Video Indexer enabled by Arc
-description: This tutorial shows you how to deploy Azure Video Indexer with Arc.
+title: Try Azure Video Indexer enabled by Arc
+description: This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 ms.topic: tutorial
 ms.service: azure-video-indexer
-ms.date: 12/07/2023
+ms.date: 12/14/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
-# Tutorial: Try Azure Video Indexer enabled by Arc
+# Try Azure Video Indexer enabled by Arc
 
 Azure Video Indexer enabled by Arc ([!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)]) is an Azure Arc Extension Enabled Service that runs video and audio analysis on edge devices. The solution is designed to run on Azure Stack Edge Profile, a heavy edge device, and supports many video formats, including MP4 and other common formats. The solution supports several languages in all basic audio-related models. It assumes that one Video Indexer resource is mapped to one extension.
 
-This tutorial walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
+This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 
 ## Prerequisites
 
 > [!IMPORTANT]
 > To successfully deploy the Azure Video Indexer extension, it is **mandatory** that your Azure subscription id is approved in advance. You must first sign up using [this form](https://aka.ms/vi-register).
 
-- Review the [!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)][ overview](azure-video-indexer-enabled-by-arc-overview.md).
-- Set up the following things before you attempt the rest of this tutorial:
-    - Create an Azure subscription with permissions to create Azure resources.
-    - Create an Azure Video Indexer Account. Use the [Create Video Indexer account](create-account-portal.md) tutorial.
-    - Install the latest version of the [Azure CLI](/cli/azure/install-azure-cli). (You can skip this step if you're using Cloud Shell.)
-    - **If not using Cloud Shell**, install the latest version of *connectedk8s* Azure CLI extension. Use the following command.
-    
-        ```bash
-        az extension add --name connectedk8s
-        ```
+- Create an Azure subscription with permissions to create Azure resources.
+- Create an Azure Video Indexer Account. Use the [Create Video Indexer account](create-account-portal.md) tutorial.
+
+To use the Video Indexer extension, you need to have an externally facing endpoint, which can be either a DNS name or IP. The endpoint should be set as a secure transfer protocol (`https:\\`) and is used as the extension API endpoint, formatted as `https:\\{endpointUri}/swagger/index.html`. It is also used by the Video Indexer web portal to communicate with the extension. It is recommended that you use an ingress control to manage the endpoint. 
+
+> [!NOTE]
+> If the endpoint is not publicly accessible, you will not be able to perform actions on the extension from the web portal.
 
 > [!IMPORTANT]
 > The AKS cluster contains the Video Indexer extension must be in the East US region.
@@ -37,12 +34,10 @@ This tutorial walks you through the steps required to enable Video Indexer as an
 
 The following list is the minimum and recommended requirements if the extension contains single language support. If you install multiple speech and translation containers with several languages, increase the hardware requirements accordingly.
 
-| Component | Minimum Requirements | Recommended Requirements
-| --- | --- | --- |
-| VM Count | 1 | 2
-| CPU (Per Cluster)| 16 cores | 32 cores | 
-| RAM (Per Cluster)| 32 GB | 64 GB |
-| Storage | 30 GB | 50 GB |
+| Configuration | VM Count | Node CPU Cores Count  | Node Ram | Node Storage | Remarks
+| --- | --- | --- | --- | --- | --- |
+| Minimum | 1 | 32 Cores | 64 GB | 50 GB | Storage needs to support `ReadWriteMany` Storage Class |
+| Recommended | 2 | 48-64 Cores | 256 GB | 100 GB | Storage needs to support `ReadWriteMany` Storage Class |
 
 > [!Note] 
 > At least a 2-node cluster is recommended for high availability and scalability. The recommended settings refer to cluster wide settings, so for example, if you have 2 nodes, each node should have 16 cores and 32 GB of RAM.
@@ -54,9 +49,26 @@ The following list is the minimum and recommended requirements if the extension 
 
 | Component |  Minimum Requirements |
 | --- | --- |
-| Operating System | Ubuntu 20.04 LTS or any Linux Compatible OS |
-| Kubernetes | 1.24 |
-| Azure CLI | 2.4.0 |
+| Operating System | Ubuntu 22.04 LTS or any Linux Compatible OS |
+| Kubernetes | 1.26 |
+| Azure CLI | 2.48.0 |
+
+## Parameter definitions
+
+| Parameter | Default | Description |
+| --------- | ------- | ----------- |
+| release-namespace | yes | The Kubernetes namespace that the extension is installed into |
+| cluster-name | - | The Kubernetes Azure Arc instance name
+| resource-group | - | The Kubernetes Azure Arc resource group name
+| version | yes | Video Indexer Extension version, leave empty for latest |
+| speech.endpointUri | - | Speech Service Url Endpoint (link)
+| speech.secret | - | Speech Instance secret (link) |
+| translate.endpointUri | - | Translation Service Url Endpoint (link)
+| translate.secret | - | Translation Service secret (link)
+| ocr.endpointUri | - | OCR Service Url Endpoint (link)
+| ocr.secret | - |OCR Service secret (link) |
+| videoIndexer.accountId | - | Video Indexer Account ID |
+| videoIndexer.endpointUri | - | Dns Name or IP to be used as the extension external endpoint.|
 
 ## Prepare for deployment
 
@@ -67,39 +79,7 @@ During the deployment, the script asks for environment specific values. Have the
 | What is the Video Indexer account ID during deployment? | GUID | Your Video Indexer Account ID |
 | What is the Azure subscription ID during deployment? | GUID | Your Azure Subscription ID |
 | What is the name of the Video Indexer resource group during deployment? | string | The Resource Group Name of your Video Indexer Account |
-| What is the name of the Video Indexer account during deployment? | string | Your Video Indexer Account name |
-
-> [!WARNING]
-> This sample environment is **NOT** meant to be used in production and only provided to quickly test functionality. Be certain to restrict access to the IP addresses in the environment to prevent security issues.
-
-## [One-click deployment](#tab/oneclick)
-
-## One-Click Deploy Sample to Azure
-
-If you would like to test the extension on a sample edge device, this deployment script can be used to quickly set up a K8S cluster and all pods to run Azure Video Indexer. This script does the following things:
-
-- Creates a small two node AKS Cluster (costs are ~$0.80/hour)
-- Enables ARC Extension on top of the cluster
-- Adds Video Indexer Arc Extension
-- Adds Video Indexer and Cognitive Services Speech + Translation containers
-- Exposes the Video Indexer Swagger API for data plane operations
-
-You can read more on how to set up your Cloud Shell environment [here](/azure/cloud-shell/quickstart?tabs=azurecli).
-
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://shell.azure.com/bash?url=)
-
-In Cloud Shell execute these two commands:
-
-```bash
-curl -sSL https://github.com/Azure-Samples/media-services-video-indexer/blob/master/AVIenabledbyArc/vi-edge-deployment-script.sh -o install_vi_arc.sh
-```
-
-```bash
-sh install_vi_arc.sh
-```
-
-When finished, you can use the URL of the new Video Indexer extension running on the AKS cluster to perform test Video Indexer on Edge.
-<!------------------------------------------------------>
+| What is the name of the Video Indexer account during deployment? | string | Your Video Indexer Account name | 
 
 ## [Deploy in Azure Portal](#tab/portal)
 
@@ -207,7 +187,6 @@ az k8s-extension create --name videoindexer \
     --cluster-name ${connectedClusterName} \
     --resource-group ${connectedClusterRg} \
     --cluster-type connectedClusters \
-    --release-train viextensiondemo  \
     --version ${version} \
     --auto-upgrade-minor-version false \
     --config-protected-settings "speech.endpointUri=${speechUri}" \
@@ -221,7 +200,61 @@ az k8s-extension create --name videoindexer \
     --config "storage.storageClass=azurefile-csi"
 ```
 
-There are other parameters that can be used to have a more fine grained control on the extension creation:
+## Things to keep in mind
+
+### Storage class
+Video Indexer extension requires that a storage volume must be available on the Kubernetes cluster. The storage class needs to support `ReadWriteMany`. It's important to note that the indexing process is IO intensive, so the IOPS (input/output operations per second) of the storage volume will have a significant impact on the duration of the process.
+
+### Managed AI resources 
+Some Azure AI resources (Translator, Transcription and OCR) will be created on the Microsoft tenant. 
+
+These resources are for your subscription only and are under a pay-as-you-go model. If you already have an AI Video Indexer Arc-enabled resource in your subscription, it will be associated with existing Azure AI resources.
+
+## Create and get resource keys
+
+### Create AI resources keys 
+
+```
+$Subscription="<your subscription ID>"
+$ResourceGroup="<your resource group name"
+$AccountName="<your account name>"
+
+az rest --method post --verbose --uri https://management.azure.com/subscriptions/${Subscription}/resourceGroups/${ResourceGroup}/providers/Microsoft.VideoIndexer/accounts/${AccountName}/CreateExtensionDependencies?api-version=2023-06-02-preview
+
+```
+
+When the response to a request is "accepted" (202), it means that the resources are currently being created. To track the provisioning state of these resources, you can poll the location header that was returned in the response from the previous call. Typically, this process requires waiting for approximately one minute.
+
+A response of type "conflict" (409) means the resources already exist for the subscription, use the get command to retrive the keys.  
+
+### Get AI resources keys
+
+```
+$Subscription="<your subscription ID>"
+$ResourceGroup="<your resource group name"
+$AccountName="<your account name>" 
+
+az rest --method post --uri  https://management.azure.com/subscriptions/${Subscription}/resourceGroups/${ResourceGroup}/providers/Microsoft.VideoIndexer/accounts/${AccountName}/ListExtensionDependenciesData?api-version=2023-06-02-preview
+```
+ 
+Response format:
+```json
+{
+    "speechCognitiveServicesPrimaryKey": "<key>",
+    "speechCognitiveServicesSecondaryKey": "<key>",
+    "translatorCognitiveServicesPrimaryKey": "<key>",
+    "translatorCognitiveServicesSecondaryKey": "<key>",
+    "speechCognitiveServicesEndpoint": "<uri>",
+    "translatorCognitiveServicesEndpoint": "<uri>",
+    "ocrCognitiveServicesPrimaryKey": "<key>",
+    "ocrCognitiveServicesSecondaryKey": "<key>",
+    "ocrCognitiveServicesEndpoint": "<uri>"
+}
+```
+
+## Optional configuration
+
+The extension default settings are set to handle the common workloads, for specific cases, the following parameters can be used to configure the resource allocation:
 
 | Parameter | Default | Description |
 |-----------|---------|-------------|
@@ -241,6 +274,8 @@ There are other parameters that can be used to have a more fine grained control 
 | videoIndexer.webapi.resources.limits.mem | 6Gi | The limits memory capacity for the web api pod  |
 | storage.storageClass | "" | The storage class to be used |
 | storage.useExternalPvc | false | determines whether an external PVC is used. if true, the VideoIndexer PVC isn't installed |
+
+## Example deployment script
 
 Here's an example deployment script: 
 
@@ -273,11 +308,9 @@ az k8s-extension update --name videoindexer \
     --cluster-name ${connectedClusterName} \
     --resource-group ${connectedClusterRg} \
     --cluster-type connectedClusters \
-    --release-train ${releaseTrain}  \
-    --version ${version} \
-    --config "speech.resource.requests.cpu=500m"                        
+    --version ${version} \                        
 ```
 ---
 
 ## Sample
-[AVIenabledbyArc on GitHub](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/AVIenabledbyArc/vi-edge-deployment-script.sh)
+[Sample script to deploy Arc enabled AKS cluster with Video Indexer extension](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/AVIenabledbyArc/vi-edge-deployment-script.sh)
