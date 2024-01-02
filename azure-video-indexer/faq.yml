@@ -119,7 +119,7 @@ sections:
     - question: What is needed to participate in the preview?
       answer: To participate in the preview, you need an active Azure subscription, a connection to Azure, an environment that is capable of running the extension (see [requirements]()), and permission to join the preview. You can submit a request to join the preview [here](https://aka.ms/vi-register). 
     - question: How can I get started with Azure Video Indexer enabled by Arc?
-      answer: You can either follow the [tutorial](azure-video-indexer-enabled-by-arc-tutorial.md) and experience Azure Arc-enabled Kubernetes automated scenarios with Azure Arc [Jumpstart](https://azurearcjumpstart.io/azure_arc_jumpstart/azure_arc_k8s/).
+      answer: You can either follow the [quickstart](azure-video-indexer-enabled-by-arc-quickstart.md) and experience Azure Arc-enabled Kubernetes automated scenarios with Azure Arc [Jumpstart](https://azurearcjumpstart.io/azure_arc_jumpstart/azure_arc_k8s/).
     - question: Why is the download so large? 
       answer: During the installation of the extension, machine learning containers are downloaded to the edge compute. Some of these containers can be several gigabytes in size, and the download time will depend on network conditions. In some cases, the download may take longer than 15 minutes.
     - question: Do I need to configure storage to my Kubernetes cluster?
