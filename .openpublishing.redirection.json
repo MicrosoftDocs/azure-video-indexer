@@ -37,7 +37,7 @@
         },
         {
             "source_path_from_root": "/azure-video-indexer/azure-video-indexer-enabled-by-arc-tutorial.md",
-            "redirect_url": "/azure/azure-video-indexer/azure-video-indexer-enabled-by-arc-tutorial",
+            "redirect_url": "/azure/azure-video-indexer/azure-video-indexer-enabled-by-arc-quickstart",
             "redirect_document_id": false
         }
     ]
