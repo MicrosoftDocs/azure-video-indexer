@@ -143,7 +143,7 @@ az k8s-extension create --name videoindexer \
     --config "storage.storageClass=azurefile-csi"
 ```
 
-## Create and get resource keys
+## Step 3 - Create and get resource keys
 
 ### Create AI resources keys 
 
