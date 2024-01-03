@@ -2,7 +2,7 @@
 title: Indexing configuration guide
 description: This article explains the configuration options of indexing process with Azure AI Video Indexer.
 ms.topic: conceptual
-ms.date: 04/27/2023
+ms.date: 01/02/2023
 ms.author: inhenkel
 author: DavidDyckman
 ms.service: azure-video-indexer
@@ -63,7 +63,7 @@ Below are the indexing type options with details of their insights provided. To 
 
 |Audio only|Video only |Audio & Video |
 |---|---|---|
-|Basic |||
+|Basic | Basic | Basic |
 |Standard| Standard |Standard |
 |Advanced |Advanced|Advanced |
 
@@ -77,11 +77,13 @@ Below are the indexing type options with details of their insights provided. To 
 
 ### Video only 
 
+- **Basic**: Indexes and extract insights by using video only (ignoring audio) and provides the following insights: labels, object detection, OCR, scenes (keyframes and shots), and black frame detection.
 - **Standard**: Indexes and extract insights by using video only (ignoring audio) and provides the following insights: labels (OCR), named entities (OCR - brands, locations, people), OCR, people, scenes (keyframes and shots), black frames, visual content moderation, and topic extraction (OCR). 
 - **Advanced**: Indexes and extract insights by using video only (ignoring audio) and provides the following insights: labels (OCR), matched person (preview), named entities (OCR - brands, locations, people), OCR, observed people (preview), people, scenes (keyframes and shots), clapperboard detection, digital pattern detection, featured clothing insight, textless slate detection, textual logo detection, black frames, visual content moderation, and topic extraction (OCR). 
 
 ### Audio and Video   
 
+- **Basic**: Indexes and extract insights by using audio and video and provides the following insights: transcription, translation, formatting of output captions and subtitles (closed captions), object detection, OCR, scenes (keyframes and shots), and black frames.
 - **Standard**: Indexes and extract insights by using audio and video and provides the following insights: transcription, translation, formatting of output captions and subtitles (closed captions), automatic language detection, emotions, keywords, named entities (brands, locations, people), OCR, scenes (keyframes and shots), black frames, visual content moderation, people, sentiments, speakers, topic extraction, and textual content moderation.   
 - **Advanced**: Indexes and extract insights by using audio and video and provides the following insights: transcription, translation, formatting of output captions and subtitles (closed captions), automatic language detection, textual content moderation, audio event detection, emotions, keywords, matched person, named entities (brands, locations, people), OCR, observed people (preview), people, clapperboard detection, digital pattern detection, featured clothing insight, textless slate detection, sentiments, speakers, scenes (keyframes and shots), textual logo detection, black frames, visual content moderation, and topic extraction.   
 
@@ -101,9 +103,6 @@ There are several aspects that influence the total costs of the encoding job. Th
 For Media Services encoding pricing details, see [pricing](https://azure.microsoft.com/pricing/details/media-services/#pricing). 
 
 When indexing a video, default streaming settings are applied. Below are the streaming type options that can be modified if you, select **Advanced** settings and go to **Streaming quality**. 
-
-|Single bitrate|Adaptive bitrate| No streaming |
-|---|---|---|
 
 - **Single bitrate**: With Single Bitrate, the standard Media Services encoder cost will apply for the output. If the video height is greater than or equal to 720p HD, Azure AI Video Indexer encodes it with a resolution of 1280 x 720. Otherwise, it's encoded as 640 x 468. The default setting is content-aware encoding. 
 - **Adaptive bitrate**: With Adaptive Bitrate, if you upload a video in 720p HD single bitrate to Azure AI Video Indexer and select Adaptive Bitrate, the encoder will use the [AdaptiveStreaming](/rest/api/media/transforms/create-or-update?tabs=HTTP#encodernamedpreset) preset. An output of 720p HD (no output exceeding 720p HD is created) and several lower quality outputs are created (for playback on smaller screens/low bandwidth environments). Each output will use the Media Encoder Standard base price and apply a multiplier for each output. The multiplier is 2x for HD, 1x for non-HD, and 0.25 for audio and billing is per minute of the input video. 
