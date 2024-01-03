@@ -61,6 +61,8 @@ All VI enabled by Arc accounts are Azure Resource Manager (ARM) accounts. ARM op
 | [Scene detection](scenes-shots-keyframes.md) | :heavy_check_mark: |  | :heavy_check_mark: |
 | [Shot detection](scenes-shots-keyframes.md) | :heavy_check_mark: |  | :heavy_check_mark: |
 
+:::image type="content" source="media/common/avi-flow-edge.svg" lightbox="media/common/avi-flow-edge.svg" alt-text="Graphic Azure Video Indexer enabled by Arc available presets already listed":::
+
 ## Supported input formats and codecs
 
 ### Video formats

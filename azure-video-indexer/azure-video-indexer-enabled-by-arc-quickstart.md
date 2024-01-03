@@ -70,6 +70,8 @@ The following list is the minimum and recommended requirements if the extension 
 | videoIndexer.accountId |  | Video Indexer Account ID |
 | videoIndexer.endpointUri |  | Dns Name or IP to be used as the extension external endpoint.|
 
+:::image type="content" source="media/common/avi-arc-diagram.svg" lightbox="media/common/avi-arc-diagram.svg" alt-text="AVI Arc block diagram":::
+
 ## Prepare for deployment
 
 During the deployment, the script asks for environment specific values. Have these values ready so you can copy and paste them when the script asks for them. 
