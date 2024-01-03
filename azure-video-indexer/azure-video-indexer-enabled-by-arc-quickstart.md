@@ -14,6 +14,10 @@ Azure Video Indexer enabled by Arc ([!INCLUDE [variable-edge-product-name](inclu
 
 This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 
+## Example deployment
+
+:::image type="content" source="media/common/avi-arc-diagram.svg" lightbox="media/common/avi-arc-diagram.svg" alt-text="AVI Arc block diagram":::
+
 ## Prerequisites
 
 > [!IMPORTANT]
@@ -69,8 +73,6 @@ The following list is the minimum and recommended requirements if the extension 
 | ocr.secret |  |OCR Service secret (link) |
 | videoIndexer.accountId |  | Video Indexer Account ID |
 | videoIndexer.endpointUri |  | Dns Name or IP to be used as the extension external endpoint.|
-
-:::image type="content" source="media/common/avi-arc-diagram.svg" lightbox="media/common/avi-arc-diagram.svg" alt-text="AVI Arc block diagram":::
 
 ## Prepare for deployment
 
