@@ -93,9 +93,3 @@ As of July 1, 2024, AVI won’t use AMS for encoding or streaming. As a result, 
 - Video Indexer [dynamic encryption](/azure/media-services/latest/drm-content-protection-concept) of media files will no longer be supported.
 - Media files created by non-AMS dependent accounts won’t be playable by the [Azure Media Player](https://azure.microsoft.com/products/media-services/media-player).
 - Using a Cognitive Insights widget and playing the content with the Azure Media Player outlined [here](video-indexer-embed-widgets.md) will no longer be supported.
-
-## Timeline
-
-This graphic shows the timeline for the changes.
-
-:::image type="content" source="media/avi-ams-retirement-announcement/azure-video-indexer-azure-media-services-changes.png" lightbox="media/avi-ams-retirement-announcement/azure-video-indexer-azure-media-services-changes.png" alt-text="Diagram of AVI changes timeline that visually represents what has been discussed in the document.":::
