@@ -2,7 +2,7 @@
 title: Azure AI Video Indexer (AVI) changes related to Azure Media Service (AMS) retirement  
 description: This article explains the upcoming changes to Azure AI Video Indexer (AVI) related to the retirement of Azure Media Services (AMS).
 ms.topic: conceptual
-ms.date: 11/14/2023
+ms.date: 1/3/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -14,11 +14,11 @@ This article explains the upcoming changes to Azure AI Video Indexer (AVI) resul
 
 Currently, AVI requires the creation of an AMS account. Additionally, AVI uses AMS for video encoding and streaming operations. The required changes will affect all AVI customers. See the official AI AVI announcement [here](https://azure.microsoft.com/updates/videoindexer-2/).
 
-To continue using AVI beyond June 30, 2024, all customers **must** make changes to their AVI accounts to remove the AMS dependency. Detailed guidance for converting AVI accounts will be provided in January 2024 when the new account type is released.
+To continue using AVI beyond June 30, 2024, all customers **must** make changes to their AVI accounts to remove the AMS dependency. Detailed guidance for converting AVI accounts will be provided in February 2024 when the new account type is released.
 
 ## Pricing and billing
 
-Currently, AVI uses AMS for encoding and streaming for the AVI player. AMS charges you for both encoding and streaming. In the future, AVI will encode media and you'll be billed using the updated AVI accounts. Pricing details will be shared in January 2024. There will be no charge for the AVI video player.
+Currently, AVI uses AMS for encoding and streaming for the AVI player. AMS charges you for both encoding and streaming. In the future, AVI will encode media and you'll be billed using the updated AVI accounts. Pricing details will be shared in February 2024. There will be no charge for the AVI video player.
 
 ## AVI changes
 
@@ -40,13 +40,13 @@ See [Azure AI Video Indexer account types](/azure/azure-video-indexer/accounts-o
 
 ### Azure Resource Manager (ARM)-based accounts
 
-**New accounts:** As of January 15, all newly created AVI accounts will be non-AMS dependent accounts. You'll no longer be able to create AMS-dependent accounts.
+**New accounts:** As of February 15, all newly created AVI accounts will be non-AMS dependent accounts. You'll no longer be able to create AMS-dependent accounts.
 
 **Existing accounts**: Existing accounts will continue to work through June 30, 2024. To continue using the account beyond June 30, customers must go through the process to convert their account to a non-AMS dependent account. If you don’t convert your account to a non-AMS dependent account, you won't be able to access the account or use it beyond June 30.
 
 ### Classic accounts
 
-- **New accounts:** As of January 15, all newly created AVI accounts will be non-AMS dependent accounts. You'll no longer be able to create Classic accounts.
+- **New accounts:** As of February 15, all newly created AVI accounts will be non-AMS dependent accounts. You'll no longer be able to create Classic accounts.
 - **Existing accounts:** Existing classic accounts will continue to work through June 30, 2024. AVI will release an updated API version for the non-AMS dependent accounts that doesn’t contain any AMS related parameters.
 
 To continue using the account beyond June 30, 2024, classic accounts will have to go through two steps:
@@ -56,12 +56,12 @@ To continue using the account beyond June 30, 2024, classic accounts will have t
 
 ### Existing trial accounts
 
-- As of January 15, 2024 Video Indexer trial accounts will continue to work as usual. However, when using them through the APIs, customers must use the updated APIs.
-- AVI supports [importing content](import-content-from-trial.md) from a trial AVI account to a paid AVI account. This import option will be supported only until **January 15th, 2024**.
+- As of February 15, 2024 Video Indexer trial accounts will continue to work as usual. However, when using them through the APIs, customers must use the updated APIs.
+- AVI supports [importing content](import-content-from-trial.md) from a trial AVI account to a paid AVI account. This import option will be supported only until **February 15th, 2024**.
 
 ## API changes
 
-**Between January 15 to June 30, 2024**, AVI will support both existing data and control plane APIs as well as the updated APIs that exclude all AMS related parameters.
+**Between February 15 to June 30, 2024**, AVI will support both existing data and control plane APIs as well as the updated APIs that exclude all AMS related parameters.
 
 New AVI accounts as well as existing AVI accounts that have completed the steps to remove all AMS dependencies will only use the updated APIs that will exclude all AMS related parameters.
 
@@ -93,9 +93,3 @@ As of July 1, 2024, AVI won’t use AMS for encoding or streaming. As a result, 
 - Video Indexer [dynamic encryption](/azure/media-services/latest/drm-content-protection-concept) of media files will no longer be supported.
 - Media files created by non-AMS dependent accounts won’t be playable by the [Azure Media Player](https://azure.microsoft.com/products/media-services/media-player).
 - Using a Cognitive Insights widget and playing the content with the Azure Media Player outlined [here](video-indexer-embed-widgets.md) will no longer be supported.
-
-## Timeline
-
-This graphic shows the timeline for the changes.
-
-:::image type="content" source="media/avi-ams-retirement-announcement/azure-video-indexer-azure-media-services-changes.png" lightbox="media/avi-ams-retirement-announcement/azure-video-indexer-azure-media-services-changes.png" alt-text="Diagram of AVI changes timeline that visually represents what has been discussed in the document.":::
