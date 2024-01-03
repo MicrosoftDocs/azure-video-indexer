@@ -19,10 +19,10 @@ This article walks you through the steps required to enable Video Indexer as an 
 The below is a block diagram showing Azure Video Indexer running on Azure Arc. There are three types: 
 
 1. Store type A uses both vision and audio presets.
-1. Stor type B uses only vision presets. It also has a custom model. For more information about using a custom model with Azure Video Indexer enabled by Arc, see [Bring Your Own AI model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md). 
+1. Store type B uses only vision presets. It also has a custom model. For more information about using a custom model with Azure Video Indexer enabled by Arc, see [Bring Your Own AI model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md). 
 1. Store C uses only audio presets. 
 
-The extension is stored on each edge device, each devices associated with a single AI Video Indexer account which interfaces with Azure Arc and the cloud.
+The extension is stored on each edge device and each device is associated with a single AI Video Indexer account which interfaces with Azure Arc and the cloud.
 
 :::image type="content" source="media/common/avi-arc-diagram.svg" lightbox="media/common/avi-arc-diagram.svg" alt-text="AVI Arc block diagram":::
 
