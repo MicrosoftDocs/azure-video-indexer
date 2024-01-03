@@ -2,7 +2,7 @@
 title: Indexing configuration guide
 description: This article explains the configuration options of indexing process with Azure AI Video Indexer.
 ms.topic: conceptual
-ms.date: 04/27/2023
+ms.date: 01/02/2023
 ms.author: inhenkel
 author: DavidDyckman
 ms.service: azure-video-indexer
@@ -63,7 +63,7 @@ Below are the indexing type options with details of their insights provided. To 
 
 |Audio only|Video only |Audio & Video |
 |---|---|---|
-|Basic |||
+|Basic | Basic | Basic |
 |Standard| Standard |Standard |
 |Advanced |Advanced|Advanced |
 
@@ -77,11 +77,13 @@ Below are the indexing type options with details of their insights provided. To 
 
 ### Video only 
 
+- **Basic**: Indexes and extract insights by using video only (ignoring audio) and provides the following insights: labels, object detection, OCR, scenes (keyframes and shots), and black frame detection.
 - **Standard**: Indexes and extract insights by using video only (ignoring audio) and provides the following insights: labels (OCR), named entities (OCR - brands, locations, people), OCR, people, scenes (keyframes and shots), black frames, visual content moderation, and topic extraction (OCR). 
 - **Advanced**: Indexes and extract insights by using video only (ignoring audio) and provides the following insights: labels (OCR), matched person (preview), named entities (OCR - brands, locations, people), OCR, observed people (preview), people, scenes (keyframes and shots), clapperboard detection, digital pattern detection, featured clothing insight, textless slate detection, textual logo detection, black frames, visual content moderation, and topic extraction (OCR). 
 
 ### Audio and Video   
 
+- **Basic**: Indexes and extract insights by using audio and video and provides the following insights: transcription, translation, formatting of output captions and subtitles (closed captions), object detection, OCR, scenes (keyframes and shots), and black frames.
 - **Standard**: Indexes and extract insights by using audio and video and provides the following insights: transcription, translation, formatting of output captions and subtitles (closed captions), automatic language detection, emotions, keywords, named entities (brands, locations, people), OCR, scenes (keyframes and shots), black frames, visual content moderation, people, sentiments, speakers, topic extraction, and textual content moderation.   
 - **Advanced**: Indexes and extract insights by using audio and video and provides the following insights: transcription, translation, formatting of output captions and subtitles (closed captions), automatic language detection, textual content moderation, audio event detection, emotions, keywords, matched person, named entities (brands, locations, people), OCR, observed people (preview), people, clapperboard detection, digital pattern detection, featured clothing insight, textless slate detection, sentiments, speakers, scenes (keyframes and shots), textual logo detection, black frames, visual content moderation, and topic extraction.   
 
