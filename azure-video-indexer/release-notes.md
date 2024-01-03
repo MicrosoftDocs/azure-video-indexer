@@ -3,7 +3,7 @@ title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
 ms.topic: article
 ms.custom: references_regions
-ms.date: 12/1/2023
+ms.date: 1/3/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -19,6 +19,32 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+## December 2023
+
+### New preset option - Basic Video
+
+Video Indexer has added a new indexing preset option, Basic Video. It's available when indexing in the cloud, or the edge with Video Indexers Azure Arc extension. It is a low-cost indexing option that includes many useful AI insights, including OCR, object detection, and visual labels. Basic Video can be used to generate insights together with Basic Audio (Basic Audio and Video) or on its own (Basic Video only). To learn more about your indexing options, see the [Indexing configuration guide](indexing-configuration-guide.md#indexing-options).
+
+### Get Frames API
+
+You can now extract frames from an indexed video for a selected video section by making a `FramesSasUrls` request.  For more information see [FrameSelection](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md#frame-selection).
+
+
+### Bring Your Own Model (Preview)
+
+- Added UI support for custom insights.
+- Added search support for custom insights.
+
+For more information, see [Bring Your Own AI Model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md).
+
+### Search by Object on the Azure AI Video Indexer website and the API
+
+You can now use the search feature to search for videos with specific objects (for example, cars, motorcycles and more) on the [Azure AI Video Indexer website](https://www.videoindexer.ai/) or by using a [search](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Search-Videos) request.
+
+### Known issues
+
+The detectors have been trained using the front view of objects. You may experience misclassification of objects that are shown in bird's-eye view.
 
 ## November 2023
 
