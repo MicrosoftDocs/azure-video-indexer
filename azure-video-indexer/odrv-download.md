@@ -2,7 +2,7 @@
 title: Index videos stored on OneDrive - Azure AI Video Indexer
 description: Learn how to index videos stored on OneDrive by using Azure AI Video Indexer.
 ms.topic: article
-ms.date: 12/17/2021
+ms.date: 1/2/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -91,9 +91,6 @@ Use this parameter to define an AI bundle that you want to apply on your audio o
 - `AdvancedAudio`: Index and extract insights by using audio only (ignoring video). Include advanced audio features (such as audio event detection) in addition to the standard audio analysis.
 - `AdvancedVideo`: Index and extract insights by using video only (ignoring audio). Include advanced video features (such as observed people tracing) in addition to the standard video analysis.
 - `AdvancedVideoAndAudio`: Index and extract insights by using both advanced audio and advanced video analysis.
-
-> [!NOTE]
-> The preceding advanced presets include models that are in public preview. When these models reach general availability, there might be implications for the price.
 
 Azure AI Video Indexer covers up to two tracks of audio. If the file has more audio tracks, they're treated as one track. If you want to index the tracks separately, you need to extract the relevant audio file and index it as `AudioOnly`.
 
