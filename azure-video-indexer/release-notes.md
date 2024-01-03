@@ -38,7 +38,7 @@ You can now extract frames from an indexed video for a selected video section by
 
 For more information, see [Bring Your Own AI Model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md).
 
-### Search by Object on the Azure AI Video Indexer website and the API
+### Search by object on the Azure AI Video Indexer website and API
 
 You can now use the search feature to search for videos with specific objects (for example, cars, motorcycles and more) on the [Azure AI Video Indexer website](https://www.videoindexer.ai/) or by using a [search](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Search-Videos) request.
 
