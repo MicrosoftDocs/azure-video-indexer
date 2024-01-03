@@ -104,9 +104,6 @@ For Media Services encoding pricing details, see [pricing](https://azure.microso
 
 When indexing a video, default streaming settings are applied. Below are the streaming type options that can be modified if you, select **Advanced** settings and go to **Streaming quality**. 
 
-|Single bitrate|Adaptive bitrate| No streaming |
-|---|---|---|
-
 - **Single bitrate**: With Single Bitrate, the standard Media Services encoder cost will apply for the output. If the video height is greater than or equal to 720p HD, Azure AI Video Indexer encodes it with a resolution of 1280 x 720. Otherwise, it's encoded as 640 x 468. The default setting is content-aware encoding. 
 - **Adaptive bitrate**: With Adaptive Bitrate, if you upload a video in 720p HD single bitrate to Azure AI Video Indexer and select Adaptive Bitrate, the encoder will use the [AdaptiveStreaming](/rest/api/media/transforms/create-or-update?tabs=HTTP#encodernamedpreset) preset. An output of 720p HD (no output exceeding 720p HD is created) and several lower quality outputs are created (for playback on smaller screens/low bandwidth environments). Each output will use the Media Encoder Standard base price and apply a multiplier for each output. The multiplier is 2x for HD, 1x for non-HD, and 0.25 for audio and billing is per minute of the input video. 
 
