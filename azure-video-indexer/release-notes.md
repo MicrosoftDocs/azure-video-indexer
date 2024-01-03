@@ -26,7 +26,7 @@ Video indexer has released the following things in November:
 
 ### Azure Video Indexer enabled by Arc (Preview)
 
-You can use Video Indexer for your hybrid scenarios by hosting it on-premises in a Kubernetes cluster. For more information, see the [Azure Video Indexer enabled by Arc overview](azure-video-indexer-enabled-by-arc-overview.md). You can also try out the extension by following the [tutorial](azure-video-indexer-enabled-by-arc-tutorial.md).
+You can use Video Indexer for your hybrid scenarios by hosting it on-premises in a Kubernetes cluster. For more information, see the [Azure Video Indexer enabled by Arc overview](azure-video-indexer-enabled-by-arc-overview.md). You can also try out the extension by following the [tutorial](azure-video-indexer-enabled-by-arc-quickstart.md).
 
 ### Bring Your Own Model (Preview)
 

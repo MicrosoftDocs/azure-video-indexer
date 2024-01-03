@@ -1,9 +1,9 @@
 ---
 title: Try Azure Video Indexer enabled by Arc
 description: This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
-ms.topic: tutorial
+ms.topic: quickstart
 ms.service: azure-video-indexer
-ms.date: 12/14/2023
+ms.date: 1/2/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -101,7 +101,10 @@ During the deployment, the script asks for environment specific values. Have the
 
 ## Manual deployment
 
-Follow these steps to deploy the Video Indexer Arc Extension to your Arc K8S Enabled cluster. 
+Follow these steps to deploy the Video Indexer Arc Extension to your Arc K8S Enabled cluster. Before you get started here are some things to keep in mind:
+
+- **Storage class** - Video Indexer extension requires that a storage volume must be available on the Kubernetes cluster. The storage class needs to support `ReadWriteMany`. It's important to note that the indexing process is IO intensive, so the IOPS (input/output operations per second) of the storage volume will have a significant impact on the duration of the process.
+- **Managed AI resources** - Some Azure AI resources (Translator, Transcription and OCR) will be created on the Microsoft tenant. These resources are for your subscription only and are under a pay-as-you-go model. If you already have an AI Video Indexer Arc-enabled resource in your subscription, it will be associated with existing Azure AI resources.
 
 ### Step 1 - Create Azure Arc Kubernetes Cluster and connect it to your cluster
 
@@ -117,67 +120,7 @@ az connectedk8s connect --name myAKSCluster --resource-group myResourceGroup
 > [!TIP] 
 > Follow the article [how to connect your cluster to Azure Arc](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli) on Azure Docs for a complete walkthrough of this process.
 
-### Step 2 - Create Cognitive Services Resources for the extension
-
-> [!NOTE] 
-> The resources are created once per each subscription, and used by all the extensions under that subscription. 
-
-One of the prerequisites of installing an Azure Video Indexer Arc extension are speech and translator resources. Once the resources are created, their key and endpoint need to be provided during the installation process. The resources are created once per subscription.
-
-Run the following commands:
-
-```bash
-$Subscription="<your subscription ID>"
-$ResourceGroup="<your resource group name"
-$AccountName="<your account name>"
-az rest --method post --verbose --uri https://management.azure.com/subscriptions/${Subscription}/resourceGroups/${ResourceGroup}/providers/Microsoft.VideoIndexer/accounts/${AccountName}/CreateExtensionDependencies?api-version=2023-06-02-preview
-```
-
-If the response is "accepted" (202), the resources are being created. You can track their provisioning state by polling the location header returned in the response from the previous call. Alternatively, you can wait for one minute, and proceed to the next step.
-
-```bash
-az rest --method get --uri <the uri from the location response header>
-```
-
-If the response is "conflict" (409), it means the resources already exist for your subscription and you can proceed to the below command without waiting. Once the resources have been created, get their data using this command: 
-
-```bash
-az rest --method post --uri  https://management.azure.com/subscriptions/${Subscription}/resourceGroups/${ResourceGroup}/providers/Microsoft.VideoIndexer/accounts/${AccountName}/ListExtensionDependenciesData?api-version=2023-06-02-preview
-```
-
-The response comes in the following format:
- 
-```json
-{
-    "speechCognitiveServicesPrimaryKey": "<key>",
-    "speechCognitiveServicesSecondaryKey": "<key>",
-    "translatorCognitiveServicesPrimaryKey": "<key>",
-    "translatorCognitiveServicesSecondaryKey": "<key>",
-    "speechCognitiveServicesEndpoint": "<uri>",
-    "translatorCognitiveServicesEndpoint": "<uri>",
-    "ocrCognitiveServicesPrimaryKey": "<key>",
-    "ocrCognitiveServicesSecondaryKey": "<key>",
-    "ocrCognitiveServicesEndpoint": "<uri>"
-}
-```
-Use this data in the next step. 
-
-### Step 3 - Create Azure Arc Video Indexer Extension
-
-The following parameters are used as input to the extension creation command: 
-
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| release-namespace | yes | The Kubernetes namespace that the extension is installed into | 
-| cluster-name | | The Kubernetes Azure Arc instance name |
-| resource-group | | The Kubernetes Azure Arc resource group name |
-| version | latest | Video Indexer Extension version |
-| speech.endpointUri |  | Speech Service Url Endpoint |
-| speech.secret |  | Speech Instance secret |
-| translate.endpointUri |  | Translation Service Url Endpoint  |
-| translate.secret |  | Translation Service secret |
-| videoIndexer.accountId |  | Video Indexer Account ID |
-| frontend.endpointUri |  | Video Indexer Dns Name to be used as the Portal endpoint |
+### Step 2 - Create Azure Arc Video Indexer Extension
 
 ```bash
 az k8s-extension create --name videoindexer \
@@ -200,17 +143,7 @@ az k8s-extension create --name videoindexer \
     --config "storage.storageClass=azurefile-csi"
 ```
 
-## Things to keep in mind
-
-### Storage class
-Video Indexer extension requires that a storage volume must be available on the Kubernetes cluster. The storage class needs to support `ReadWriteMany`. It's important to note that the indexing process is IO intensive, so the IOPS (input/output operations per second) of the storage volume will have a significant impact on the duration of the process.
-
-### Managed AI resources 
-Some Azure AI resources (Translator, Transcription and OCR) will be created on the Microsoft tenant. 
-
-These resources are for your subscription only and are under a pay-as-you-go model. If you already have an AI Video Indexer Arc-enabled resource in your subscription, it will be associated with existing Azure AI resources.
-
-## Create and get resource keys
+## Step 3 - Create and get resource keys
 
 ### Create AI resources keys 
 
