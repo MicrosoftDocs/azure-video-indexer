@@ -24,7 +24,7 @@ The below is a block diagram showing Azure Video Indexer running on Azure Arc. T
 
 The extension is stored on each edge device and each device is associated with a single AI Video Indexer account which interfaces with Azure Arc and the cloud.
 
-:::image type="content" source="media/common/avi-arc-diagram.svg" lightbox="media/common/avi-arc-diagram.svg" alt-text="AVI Arc block diagram":::
+:::image type="content" source="media/common/vi-arc-diagram-v2.svg" lightbox="media/common/avi-arc-diagram.svg" alt-text="AVI Arc block diagram":::
 
 ## Prerequisites
 
