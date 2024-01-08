@@ -10,9 +10,21 @@ author: IngridAtMicrosoft
 
 # Try Azure Video Indexer enabled by Arc
 
-Azure Video Indexer enabled by Arc ([!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)]) is an Azure Arc Extension Enabled Service that runs video and audio analysis on edge devices. The solution is designed to run on Azure Stack Edge Profile, a heavy edge device, and supports many video formats, including MP4 and other common formats. The solution supports several languages in all basic audio-related models. It assumes that one Video Indexer resource is mapped to one extension.
+Azure Video Indexer enabled by Arc ([!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)]) is an Azure Arc Extension Enabled Service that runs video and audio analysis on edge devices. The solution is designed to run on Azure Stack Edge Profile, a heavy edge device, and supports many video formats, including MP4 and other common formats. It supports several languages in all basic audio-related models. It assumes that one Video Indexer resource is mapped to one extension.
 
 This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
+
+## Example deployment
+
+The below is a block diagram showing Azure Video Indexer running on Azure Arc. There are three types: 
+
+1. Store type A uses both vision and audio presets.
+1. Store type B uses only vision presets. It also has a custom model. For more information about using a custom model with Azure Video Indexer enabled by Arc, see [Bring Your Own AI model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md). 
+1. Store C uses only audio presets. 
+
+The extension is stored on each edge device and each device is associated with a single AI Video Indexer account which interfaces with Azure Arc and the cloud.
+
+:::image type="content" source="media/common/vi-arc-diagram-v2.svg" lightbox="media/common/avi-arc-diagram.svg" alt-text="AVI Arc block diagram":::
 
 ## Prerequisites
 
