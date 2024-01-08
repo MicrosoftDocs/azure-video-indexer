@@ -42,10 +42,6 @@ For more information, see [Bring Your Own AI Model](azure-video-indexer-enabled-
 
 You can now use the search feature to search for videos with specific objects (for example, cars, motorcycles and more) on the [Azure AI Video Indexer website](https://www.videoindexer.ai/) or by using a [search](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Search-Videos) request.
 
-### Known issues
-
-The detectors have been trained using the front view of objects. You may experience misclassification of objects that are shown in bird's-eye view.
-
 ## November 2023
 
 Video indexer has released the following things in November:
