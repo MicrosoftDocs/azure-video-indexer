@@ -3,7 +3,7 @@ title: Azure AI Video Indexer Bring Your Own AI model (Preview) overview
 description: This article is an overview of Azure AI Video Indexer enabled by Arc bring your own model.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 11/27/2023
+ms.date: 1/21/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -82,7 +82,7 @@ Azure Video Indexer supports 1 FPS for the Basic/Standard video level and 4 FPS 
 
 You can use the skip frames and page size parameters for time selection. The formula is the skip frames value multiplied by the FPS plus the page size value multiplied by the FPS can be used to determine the time range.
 
-**URL:** `api/v2/Accounts/{accountId}/Videos/{videoId}/FramesSasUrls[?urlsLifetimeSeconds][&pageSize][&skip][&accessToken]`
+**URL:** `https://api.videoindexer.ai/{location}/Accounts/{accountId}/Videos/{videoId}/FramesFilePaths[?urlsLifetimeSeconds][&pageSize][&skip][&accessToken]`
 
 **Parameters:**
 
