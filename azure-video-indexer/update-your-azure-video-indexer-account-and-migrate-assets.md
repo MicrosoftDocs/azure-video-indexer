@@ -52,6 +52,7 @@ Update an existing ARM account.
     
     See [APIs: Details - Microsoft Azure API Management - developer portal (videoindexer.ai)](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Start-Account-Migration)
 
+---
 
 ## Connect a classic account to a new ARM based account
 
@@ -100,6 +101,8 @@ If your account is a classic account, you are required to connect the classic ac
 
     See [APIs: Details - Microsoft Azure API Management - developer portal (videoindexer.ai)](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Start-Account-Migration) for more information.
 
+---
+
 ## Opt in to AVI migration of an already updated account
 
 To opt in to AVI migration of an already updated account, you can use either the Azure portal or the API.
@@ -116,3 +119,4 @@ POST https://api.videoindexer.ai/{location}/Accounts/{accountId}/AMSAssetsMigrat
 ```
 
 See [APIs: Details - Microsoft Azure API Management - developer portal (videoindexer.ai)](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Start-Account-Migration) for more information.
+---
