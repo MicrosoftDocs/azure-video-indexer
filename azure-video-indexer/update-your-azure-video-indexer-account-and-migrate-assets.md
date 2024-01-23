@@ -17,7 +17,7 @@ As described in the [AVI update and migration guide](azure-video-indexer-retirem
 You can opt in to AVI migration using either the Azure portal or the API during the account update process.
 
 > [!IMPORTANT] 
-> Until June 30th you can still opt in to migration performed by AVI or choose not to migrate your assets. After June 30th, there will be no option to migrate your assets at all.
+> Until June 30 you can still opt in to migration performed by AVI or choose not to migrate your assets. After June 30th, there will be no option to migrate your assets at all.
 
 ## Update an existing ARM account
 
