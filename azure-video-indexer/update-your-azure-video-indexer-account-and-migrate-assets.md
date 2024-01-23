@@ -112,6 +112,8 @@ To opt in to AVI migration of an already updated account, you can use either the
 
 ### [Opt in with the API](#tab/optinapi)
 
+Include the access token in the request.
+
 ```REST API
 POST https://api.videoindexer.ai/{location}/Accounts/{accountId}/AMSAssetsMigration[?accessToken]
 ```
