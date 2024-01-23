@@ -119,4 +119,5 @@ POST https://api.videoindexer.ai/{location}/Accounts/{accountId}/AMSAssetsMigrat
 ```
 
 See [APIs: Details - Microsoft Azure API Management - developer portal (videoindexer.ai)](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Start-Account-Migration) for more information.
+
 ---
