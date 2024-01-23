@@ -41,11 +41,11 @@ Uploading a video for indexing will no longer support the use of an AMS asset ID
 
 Linking an Azure Storage account to an AVI account is permanent and can’t be undone. Therefore, it's recommended that you create a storage account that is solely for use with the AVI account. (This is especially important if you expect to use network restrictions.) It’s recommended that the storage account is in the same region as the AVI account.
 
-You won’t be able to link your AVI account to the storage account that was previously associated with the AMS account. Keep in mind that when you create a new AVI account, it will be associated with a new storage account and not the one that you used with the AMS account.
+You won’t be able to link your AVI account to the storage account that was previously associated with the AMS account. 
 
 ### Streaming player
 
-Azure Media Player is also being retired as of June 30, 2024. If you have been using the AVI streaming endpoint to stream videos, you must choose a different player that supports Dash or HLS packaging and the use of a token in the request. AVI will be using the [Shaka player](https://developers.google.com/widevine/open-source/shaka-player).
+Azure Media Player is also being retired as of June 30, 2024. If you have been using the AVI streaming endpoint to stream videos, you must choose a different player that supports Dash or HLS packaging and the use of a token in the request. 
 
 ### Streaming and Streaming endpoints
 
@@ -53,7 +53,7 @@ Azure Media Player is also being retired as of June 30, 2024. If you have been u
 
 **Newly indexed video** - All API requests for a streaming URL will get a URL to an AVI endpoint rather than an AMS endpoint. The AVI endpoint will be prefixed with “vi-apim.”
 
-**Previously indexed videos** – Your updated AVI account will still be able to stream your AMS assets until they're migrated. In this case, responses to requests for a streaming URL, Get Streaming Video URL and Get Video Index, will differ depending on whether the assets have been migrated. Therefore, your application must be able to play from both the AMS endpoint and the AVI endpoints. The Shaka player will only be able to play AVI endpoints while AMP will be able to play AMS endpoints.
+**Previously indexed videos** – Your updated AVI account will still be able to stream your AMS assets until they're migrated. In this case, responses to requests for a streaming URL, Get Streaming Video URL and Get Video Index, will differ depending on whether the assets have been migrated. Therefore, your application must be able to play from both the AMS endpoint and the AVI endpoints. For example, Shaka player will only be able to play AVI endpoints while AMP will be able to play AMS endpoints.
 
 **Unmigrated videos -** Requests for videos that aren’t migrated will return an AMS streaming URL until June 30, 2024. After that date, you won’t be able to make requests to AMS at all.
 
@@ -76,14 +76,10 @@ AVI won’t charge for streaming. AVI will charge a flat rate for encoding, whic
 > [!IMPORTANT] 
 > Even after you have updated your account, AVI will still access your AMS account and its associated storage account until all your videos have been migrated. Until the migration is complete, it is important that you do not delete or change the accounts, roles, or permissions of the AMS, Azure Storage or AVI accounts. You will receive an email notification that the migration is complete, and you can check the migration status on the AVI website as well.
 
-You have two options for migrating your videos:
-
-1.  Asking for AVI assistance with migration, which is recommended.
-1.  Not migrating.
 
 ### Recommended: Ask for AVI assistance with migration
 
-AVI is offering to perform both file processing and asset migration. You can opt in through the Azure portal or through an API request when you update your account up until the AMS retirement on June 30, 2024. For more information, see [Azure AI Video Indexer Account types.](/azure/azure-video-indexer/accounts-overview)
+AVI is offering to perform both file processing and asset migration. You can opt in through the Azure portal or through an API request when you update your account up until the AMS retirement on June 30, 2024. 
 
 Migration won’t happen immediately, but AVI commits to migrating your assets before the AMS retirement date.
 
