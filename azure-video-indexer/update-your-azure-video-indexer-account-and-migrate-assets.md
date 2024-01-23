@@ -1,6 +1,6 @@
 ---
 title: Update your Azure Video Indexer account and migrate assets  
-description: Azure Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it is retiring on June 30th, 2024. Therefore, AVI is removing the dependency on AMS. As described in the update and migration guide azure-video-indexer-retirement-guide.md, your Azure Video Indexer account needs to be updated. During the update, you will have the opportunity to opt-in to having the AVI product team migrate your assets for you. If you don’t opt-in during the update process, your assets won’t be migrated.
+description: Azure Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, AVI is removing the dependency on AMS. As described in the update and migration guide azure-video-indexer-retirement-guide.md, your Azure Video Indexer account needs to be updated. During the update, you'll have the opportunity to opt in to having the AVI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
 ms.topic: conceptual
 ms.service: azure-video-indexer
 ms.date: 01/22/2024
@@ -10,9 +10,9 @@ author: IngridAtMicrosoft
 
 # Update your Azure Video Indexer account and migrate assets
 
-Azure Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it is retiring on June 30th, 2024. Therefore, AVI is removing the dependency on AMS.
+Azure Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, AVI is removing the dependency on AMS.
 
-As described in the [AVI update and migration guide](azure-video-indexer-retirement-guide.md), your Azure Video Indexer account needs to be updated. During the update, you will have the opportunity to opt in to having the AVI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
+As described in the [AVI update and migration guide](azure-video-indexer-retirement-guide.md), your Azure Video Indexer account needs to be updated. During the update, you'll have the opportunity to opt in to having the AVI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
 
 You can opt in to AVI migration using either the Azure portal or the API during the account update process.
 
@@ -23,7 +23,7 @@ You can opt in to AVI migration using either the Azure portal or the API during 
 
 Update an existing ARM account.
 
-### [Azure portal](#tab/portal)
+### [Update existing account in Azure portal](#tab/updateexistingportal)
 
 1.  In the Azure portal, navigate to the AVI ARM account you want to work with.
 1.  Select **Update account**. The Update account pane appears.
@@ -35,7 +35,7 @@ Update an existing ARM account.
 1.  If you didn’t opt in to the migration process during storage creation, you can opt in by selecting the **Migrate content** tab. The migration prompt appears.
 1.  Select **Request migration** to continue. When the migration request has been received, a success notification appears, the Migrate content tab disappears, and the banner disappears.
 
-### [API](#tab/api)
+### [Update existing account with the API](#tab/updateexsitingapi)
 
 1.  Invoke Create or Update Account ARM API for your account
     ```rest interactive
@@ -57,7 +57,7 @@ Update an existing ARM account.
 
 If your account is a classic account, you are required to connect the classic account to an ARM account before the classic account is retired. The following steps walk you through creating a new ARM based account.
 
-### [Azure portal](#tab/portal)
+### [Connect a classic account in the Azure portal](#tab/connectclassicportal)
 
 1.  In the Azure portal, select **+ Create a resource.**
 1.  Search for and select *Azure AI Video Indexer.* The Create a Video Indexer resource page appears.
@@ -78,9 +78,9 @@ If your account is a classic account, you are required to connect the classic ac
 1.  When the deployment is complete, select **Go to resource**. The storage resource overview page appears.
 1.  If you assigned a system assigned managed identity during the storage creation process, a notification on the page says that you must select a managed identity role assignment. Select the **Assign role** button.
 1.  You can opt in to AVI migration by selecting the **Migrate content** tab. The migration prompt appears.
-1.  Select **Request migration** to continue. When the migration request has been received, a success notification appears, the Migrate content tab disappears, and the banner disappears.
+1.  Select **Request migration** to continue. When the migration request is received, a success notification appears, the Migrate content tab disappears, and the banner disappears.
 
-### [API](#tab/api)
+### [Connect a classic account with the API](#tab/connectapi)
 
 1.  Invoke Create or Update Account ARM API for your account
 
@@ -104,12 +104,12 @@ If your account is a classic account, you are required to connect the classic ac
 
 To opt in to AVI migration of an already updated account, you can use either the Azure portal or the API.
 
-### [Azure portal](#tab/portal)
+### [Opt in in the Azure portal](#tab/optinportal)
 
 1.  You can opt in to AVI migration by selecting the **Migrate content** tab. The migration prompt appears.
-2.  Select **Request migration** to continue. When the migration request has been received, a success notification appears, the Migrate content tab disappears, and the banner disappears.
+2.  Select **Request migration** to continue. When the migration request is received, a success notification appears, the Migrate content tab disappears, and the banner disappears.
 
-### [API](#tab/api)
+### [Opt in with the API](#tab/optinapi)
 
 ```rest
 POST https://api.videoindexer.ai/{location}/Accounts/{accountId}/AMSAssetsMigration[?accessToken]
