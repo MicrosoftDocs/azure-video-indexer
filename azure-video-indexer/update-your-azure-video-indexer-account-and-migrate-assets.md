@@ -37,14 +37,13 @@ Update an existing ARM account.
 
 ### [Update existing account with the API](#tab/updateexsitingapi)
 
-1.  Invoke Create or Update Account ARM API for your account
+1.  Invoke Create or Update Account ARM API for your account. In the request body, Set the *storageServices* property with the storage account that will be linked to the AVI account.
 
     ```REST API
     PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.VideoIndexer/accounts/{accountName}?api-version=2024-01-01
     ```
     See [Accounts - Create Or Update - REST API (Azure Azure Video Indexer)](/rest/api/videoindexer/accounts/create-or-update?view=rest-videoindexer-2024-01-01&tabs=HTTP&preserve-view=true) for more information
     
-    1.  Set the *storageServices* property with the storage account that will be linked to the AVI account.
 1.  Opt in to migration process by invoking Start Account Migration API
     
     ```REST API
@@ -84,16 +83,14 @@ If your account is a classic account, you are required to connect the classic ac
 
 ### [Connect a classic account with the API](#tab/connectapi)
 
-1.  Invoke Create or Update Account ARM API for your account
+1.  Invoke Create or Update Account ARM API for your account. In the request body, set the *storageServices* property with the new storage account you’ve created, and set the *accountId* property with the account ID of the AVI Classic account.
 
     ```REST API
     PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.VideoIndexer/accounts/{accountName}?api-version=2024-01-01    
     ```
 
     See [Accounts - Create Or Update - REST API (Azure Azure Video Indexer)](/rest/api/videoindexer/accounts/create-or-update?view=rest-videoindexer-2024-01-01&tabs=HTTP&preserve-view=true) for more information.
-
-    1.  Set the *storageServices* properties with the new storage account you’ve created.
-    1.  Set the *accountId* property within the account ID of the AVI Classic account.
+  
 1.  Opt in to migration process by invoking Start Account Migration API
 
     ```REST API
