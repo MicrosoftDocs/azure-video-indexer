@@ -38,7 +38,8 @@ Update an existing ARM account.
 ### [Update existing account with the API](#tab/updateexsitingapi)
 
 1.  Invoke Create or Update Account ARM API for your account
-    ```rest interactive
+
+    ```REST API
     PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.VideoIndexer/accounts/{accountName}?api-version=2024-01-01
     ```
     See [Accounts - Create Or Update - REST API (Azure Azure Video Indexer)](/rest/api/videoindexer/accounts/create-or-update?view=rest-videoindexer-2024-01-01&tabs=HTTP&preserve-view=true) for more information
@@ -46,7 +47,7 @@ Update an existing ARM account.
     1.  Set the *storageServices* property with the storage account that will be linked to the AVI account.
 1.  Opt in to migration process by invoking Start Account Migration API
     
-    ```rest
+    ```REST API
     POST https://api.videoindexer.ai/{location}/Accounts/{accountId}/AMSAssetsMigration[?accessToken]
     ```
     
@@ -68,7 +69,7 @@ If your account is a classic account, you are required to connect the classic ac
 1.  Give the account a name in the **Resource name** field.
 1.  Connect the account to storage. Either…
     1.  Select an existing storage account from the **Storage account** dropdown or
-    1.  Create a new storage account. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal)
+    1.  Create a new storage account. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal).
 
 > [!NOTE]
 > If you attempt to link the account to the storage account that is associated with an AMS account, you will receive an error.
@@ -85,7 +86,7 @@ If your account is a classic account, you are required to connect the classic ac
 
 1.  Invoke Create or Update Account ARM API for your account
 
-    ```rest
+    ```REST API
     PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.VideoIndexer/accounts/{accountName}?api-version=2024-01-01    
     ```
 
@@ -95,7 +96,7 @@ If your account is a classic account, you are required to connect the classic ac
     1.  Set the *accountId* property within the account ID of the AVI Classic account.
 1.  Opt in to migration process by invoking Start Account Migration API
 
-    ```rest
+    ```REST API
     POST https://api.videoindexer.ai/{location}/Accounts/{accountId}/AMSAssetsMigration[?accessToken]
     ```
 
@@ -114,7 +115,7 @@ To opt in to AVI migration of an already updated account, you can use either the
 
 ### [Opt in with the API](#tab/optinapi)
 
-```rest
+```REST API
 POST https://api.videoindexer.ai/{location}/Accounts/{accountId}/AMSAssetsMigration[?accessToken]
 ```
 
