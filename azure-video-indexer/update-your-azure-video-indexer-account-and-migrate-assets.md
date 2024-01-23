@@ -21,7 +21,7 @@ You can opt in to AVI migration using either the Azure portal or the API during 
 
 ## Update an existing ARM account
 
-Update an existing ARM account.
+Update an existing Azure Resource Manager (ARM) account.
 
 ### [Update existing account in Azure portal](#tab/updateexistingportal)
 
