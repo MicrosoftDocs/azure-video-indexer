@@ -37,7 +37,7 @@ Update an existing ARM account.
 
 ### [Update existing account with the API](#tab/updateexsitingapi)
 
-1.  Invoke Create or Update Account ARM API for your account. In the request body, Set the *storageServices* property with the storage account that will be linked to the AVI account.
+1.  Invoke Create or Update Account ARM API for your account. In the request body, Set the *storageServices* properties (`resourceId` and `userAssignedIdentity`) with the storage account that will be linked to the AVI account.
 
     ```REST API
     PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.VideoIndexer/accounts/{accountName}?api-version=2024-01-01
@@ -83,7 +83,7 @@ If your account is a classic account, you are required to connect the classic ac
 
 ### [Connect a classic account with the API](#tab/connectapi)
 
-1.  Invoke Create or Update Account ARM API for your account. In the request body, set the *storageServices* property with the new storage account you’ve created, and set the *accountId* property with the account ID of the AVI Classic account.
+1.  Invoke Create or Update Account ARM API for your account. In the request body, set the *storageServices* properties (`resourceId` and `userAssignedIdentity`) with the new storage account you’ve created, and set the *accountId* property with the account ID of the AVI Classic account.
 
     ```REST API
     PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.VideoIndexer/accounts/{accountName}?api-version=2024-01-01    
