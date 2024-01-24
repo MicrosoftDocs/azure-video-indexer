@@ -83,6 +83,18 @@ You have two options for migrating your videos:
 
 ### Recommended: Ask for AVI assistance with migration
 
+Due to the AMS retirement, all AVI customers that persist AVI created videos and insights must process the assets to a new format and migrate them to the Azure Storage account linked to their AVI account. 
+This requires the following two operations:
+1.	It reprocesses the media assets, converting the AMS assets to CMAF format with HLS and DASH manifests. This is needed for the assets to be streamed by Video Indexer and other players.
+2.	Storing of these reprocessed assets in the Azure Storage account that you have linked to your AVI account.
+As AMS asset migration would be challenging to do on your own, AVI is providing a migration experience for both the file reprocessing and asset move. There is no cost for using the migration solution besides the storage of the migrated assets in a storage account and the networking costs associated with moving the data which should be low if both storage accounts are in the same region.
+If despite AVI’s multiple attempts and retries to migrate an asset it fails to migrate, the migration will be treated as completed with errors and you will be sent a list of the files that failed to migrate. They can also be downloaded from the Migration page in the AVI website.
+
+You can view the status and progress of your migration in the AVI website and will also receive a notification email once the migration is complete. 
+As the migration solution will migrate all AVI AMS assets, it’s a good time to review and delete any files that are no longer needed and don’t need to be migrated. 
+Once you have opted-in to the migration, it is recommended to not delete VI AMS assets until the migration is completed as they might not have been migrated yet.
+Microsoft disclaims any liability for any damages in relation to the migration.
+
 AVI is offering to perform both file processing and asset migration. You can opt in through the Azure portal or through an API request when you update your account up until the AMS retirement on June 30, 2024. For more information, see [Azure AI Video Indexer Account types.](/azure/azure-video-indexer/accounts-overview)
 
 Migration won’t happen immediately, but AVI commits to migrating your assets before the AMS retirement date.
@@ -90,6 +102,29 @@ Migration won’t happen immediately, but AVI commits to migrating your assets b
 Only your *AVI* associated AMS assets will be migrated. If other AMS assets exist on the same storage account, they won’t be migrated.
 
 AVI won’t delete the original copies of your AMS files. After migration, you can delete them yourself if needed.
+
+## FAQ
+
+### Can we request that AVI only migrates some of our accounts AVI AMS assets?
+No, its all or nothing. Before starting the migration, you should review and delete any assets you don’t want migrated.
+
+### I opted in to the AVI migrate solution but then changed my mind. Can I opt out? 
+You are not able to change the request through the portal or API and AVI might have already started migrating your assets. If needed, you can open a support ticket and if the migrate process hasn’t started yet, AVI might be able to cancel the request.
+
+### Does AVI charge me for the migration? 
+No, it’s a free experience. The only cost is the storage of the migrated assets in a storage account and the networking costs associated with moving the data which should be low if both storage accounts are in the same region.
+
+### If I don’t use AVI for streaming or encoding, do I still have to migrate AVI AMS assets to continue accessing AVI insights?
+No, unless you want to migrate the source video that you initially sent to AVI for indexing.
+
+### If we don’t doesn't persist any video data, do we have to migrate AVI AMS assets? 
+No, unless you want to migrate the source video that you initially sent to AVI for indexing.
+
+### I see that my asset migration is in process – does it matter if a particular video has been migrated yet? 
+In most cases no. The only scenario that is impacted is if you are using an AVI Streaming URL to play videos. Videos not yet migrated need to be played by a player that supports AMS assets, the Azure Media Player. Videos that were already indexed need to be played by a player that supports Dash or HLS packaging and the sending of a token in the request (such as Shaka, DashJS, or VideoJS).  
+
+### How can I tell if a video has been migrated? 
+By the reply of the Get Streaming URL request – if not yet migrated, it will contain mention of media service at the beginning.
 
 ## Detailed updating and migrating instructions
 
