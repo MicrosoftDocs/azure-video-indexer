@@ -105,9 +105,11 @@ Once you have opted in to the migration, it's recommended that VI AMS assets are
 
 Microsoft disclaims any liability for any damages in relation to the migration.
 
+<!--
 ## Detailed updating and migrating instructions
 
 For a complete step-by-step guide, see [Update your Azure Video Indexer account and migrate assets](update-your-azure-video-indexer-account-and-migrate-assets.md).
+-->
 
 ## FAQ
 
