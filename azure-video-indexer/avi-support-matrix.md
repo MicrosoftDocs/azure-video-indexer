@@ -16,7 +16,7 @@ This article describes the supported formats and limitations of Azure Video Inde
 
 If uploading a file from your device, the file size limit is 2 GB.
 
-If the video is uploaded from a URL, the file size limit is 30 GB. The URL must lead to an online media file (for example a OneDrive file) and not a webpage (like www.youtube.com).
+If the video is uploaded from a URL, the file size limit is 30 GB. The URL must lead to an online media file with a media file extension (for example `myvideo.MP4`) and not a webpage such as `https://www.youtube.com`.
 
 The file duration limit is 4 hours.
 
