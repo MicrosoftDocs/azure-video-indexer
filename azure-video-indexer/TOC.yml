@@ -11,8 +11,6 @@ items:
     href: azure-video-indexer-azure-media-services-retirement-announcement.md
   - name: AVI update and migration guide
     href: azure-video-indexer-ams-retirement-guide.md
-  - name: Update AVI account and migrate assets
-    href: update-your-azure-video-indexer-account-and-migrate-assets.md
   - name: Azure Video Indexer enabled by Arc overview
     href: azure-video-indexer-enabled-by-arc-overview.md
   - name: Account types
@@ -52,7 +50,7 @@ items:
 - name: Samples
   items:
   - name: Azure AI Video Indexer samples
-    href: https://github.com/Azure-Samples/media-services-video-indexer
+    href: https://github.com/Azure-Samples/azure-video-indexer-sample
   - name: Azure AI Video Indexer widgets
     href: https://www.npmjs.com/package/@azure/video-indexer-widgets
 - name: Concepts
