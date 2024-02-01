@@ -1,6 +1,6 @@
 ---
 title:  Azure Video Indexer with LLM prompts  
-description: Azure Video Indexer integrates with Large Language Models (LLMs). LLMs are natural language AI models that you can use to ask questions about video content and much more. Extract Azure Video Indexer’s insights into a prompt ready format that can be easily used with LLMs. There is no need to re-index videos to create the prompt-ready format of the videos.
+description: Azure Video Indexer integrates with Large Language Models (LLMs). LLMs are natural language AI models that you can use to ask questions about video content and much more. Extract Azure Video Indexer’s insights into a prompt ready format that can be easily used with LLMs. There's no need to reindex videos to create the prompt-ready format of the videos.
 ms.topic: conceptual
 ms.date: 1/31/2024
 ms.author: inhenkel
@@ -12,48 +12,57 @@ ms.service: azure-video-indexer
 
 ## Overview
 
-Azure Video Indexer integrates with Large Language Models (LLMs). LLMs are natural language AI models that you can use to ask questions about video content and much more. Extract Azure Video Indexer’s insights into a prompt ready format that can be easily used with LLMs. There is no need to re-index videos to create the prompt-ready format of the videos.
+Azure Video Indexer integrates with Large Language Models (LLMs). LLMs are natural language AI models that you can use to ask questions about video content and much more. Extract Azure Video Indexer’s insights into a prompt ready format that can be easily used with LLMs. There's no need to reindex videos to create the prompt-ready format of the videos.
 
 ## Use Cases
 
 **Generate a Video Summarization:** You can ask the LLM model to generate summaries of whole videos or video segments. Those segments can be combined to create several types of summaries like an informative summary, a teaser or other summary depending on your needs.
 
-**Searchability:** By converting video content into a text-based, prompt-ready format, you can perform detailed, natural language searches within your video content. This can significantly improve the discoverability within large video libraries based on specific queries.
+**Searchability:** By converting video content into a text-based, prompt-ready format, you can perform detailed, natural language searches within your video content. This can significantly improve discoverability within large video libraries based on specific queries.
 
-**Content Creation**: You can query your video library for specific moments in your videos associated with certain emotions or events. For example, you can retrieve ‘funny’ or ‘sad’ moments from a video series and use that to create a promo or highlight. Similarly, you can retrieve moments related to specific events of interest such as “past earthquakes during the last decade”.
+**Content Creation**: You can query your video library for specific moments in your videos associated with certain emotions or events. For example, you can retrieve ‘funny’ or ‘sad’ moments from a video series and use that to create a promo or highlight. Similarly, you can retrieve moments related to specific events of interest such as “past earthquakes during the last decade.”
 
-**Educational Purposes**: Create summaries from lecture videos to make it easier for students to review and understand the material. Students can also ask specific questions related to the lecture material. You can refer to the exact part of the video where the topic is discussed making the learning experience more efficient.
+**Educational Purposes**: Create summaries from lecture videos to make it easier for students to review and understand the material. Students can also ask specific questions related to the lecture material. You can refer to the exact part of the video where the article is discussed making the learning experience more efficient.
 
 **Interactive Experiences**: You can create interactive experiences, such as video-based chatbots or virtual assistants, that can answer user queries based on the content of the video.
 
 ## How it works
 
-For the output to be prompt-ready, the video is split into coherent sections that fit both the essence of the video and the prompt size. The sections are divided based on Azure Video Indexer Scene Segmentation and other insights. The results of the prompt content are consolidated and generated per segment separately.
-
-For example...
+For the output to be prompt-ready, the video is split into coherent sections that fit both the essence of the video and the prompt size. The sections are divided based on Azure Video Indexer Scene Segmentation and other insights. The results of the prompt content are consolidated and generated per segment separately. For example:
 
 ### Insights
 
-The following is a table containing the insights used for prompt generation.
+The following table contains the insights used for prompt generation.
 
-| **VI Insight**                        | **Tag and format**                                                                                    |
-|---------------------------------------|-------------------------------------------------------------------------------------------------------|
-|  Video title                          |  [Video title] \<video title\>                                                                        |
-|  Object detection                     |  [Detected objects] \<object 1\>, \<object 2\>, ...                                                   |
-|  Labels                               |  [Visual labels] \<label 1\>, \<label 2\>, ...                                                        |
-|  OCR                                  |  [OCR] \<ocr cluster1\> \<ocr cluster2\> ...                                                          |
-|  Transcript and speakers              | [Transcript] \<speaker name\>: \<transcript lines\>\\n\<speaker name\>: \<transcript lines\>\\n  ...  |
-|  Faces                                |  [Known people] \<face 1\>, \<face 2\>, ...                                                           |
-|  Audio effects (AED)                  |  [Audio effects] \< effect 1\>, \<effect 2\>, ...                                                     |
-|  Segment’s position within the video  |  [Tags] [Beginning, Middle, End, Rolling credits]                                                     |
+| **VI Insight**                        | **Tag and format** |
+| :------------------------------------ | :------------------ |
+|  Video title                          |  [Video title] \<video title\> |
+|  Object detection                     |  [Detected objects] \<object 1\>, \<object 2\>, ... |
+|  Labels                               |  [Visual labels] \<label 1\>, \<label 2\>, ... |
+|  OCR                                  |  [OCR] \<ocr cluster1\> \<ocr cluster2\> ...   |
+|  Transcript and speakers              | [Transcript] \<speaker name\>: \<transcript lines\>\\n\<speaker name\>: \<transcript lines\>\\n  ... |
+|  Faces                                |  [Known people] \<face 1\>, \<face 2\>, ... |
+|  Audio effects (AED)                  |  [Audio effects] \< effect 1\>, \<effect 2\>, ... |
+|  Segment’s position within the video  |  [Tags] [Beginning, Middle, End, Rolling credits] |
+
+## Create Prompt content for a video
+
+Use the Prompt Content API on your indexed video in order to get Prompt-Ready format per each segment.
+
+> [!Note]
+> The prompt content insights are subjected to the specific preset being used to index the video.
+
+- To generate the Prompt Content API, use the [POST Create Prompt Content](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Prompt-Content) request.
+- To view the prompt content, use the [Get PromptContent](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-PromptContent) request.
 
 ### Example request
 
-GET \<request goes here\>
+Use your AVI account ID and the video ID.
 
-Request body
+```
+POST https://api.videoindexer.ai/trial/Accounts/{accountId}/Videos/{videoId}/PromptContent
 
-\<request body goes here\>
+```
 
 ### Example response
 
@@ -82,34 +91,6 @@ index
 }
 ```
 
-**Create Prompt Content For a Video**
+## Limitations
 
-Use the Prompt Content API on your indexed video in order to get Prompt-Ready format per each segment.
-
-Please Note: The prompt content insights are subjected to the specific preset being used to index the video.
-
-To generate the Prompt Content API use the POST Create Prompt Content api.
-
-To view the prompt content use the Get PromptContent api
-
-To track the job progress of the Prompt Content create API:
-
-{
-
-"creationTime": "2024-01-11T11:48:01.0650121Z",
-
-"lastUpdateTime": "2024-01-11T11:48:01.0650121Z",
-
-"progress": 0,
-
-"jobType": "PromptContent",
-
-"state": "Processing"
-
-}
-
-**Limitations**
-
-The prompt content is based on the insights that described in the schema section. Hence, it is optimized to videos that contains as many insights as possible.
-
-There are limitations that are a result of the limitations of each insight that appear in the schema section.
+The prompt feature is optimized for videos that contain as many insights as possible.
