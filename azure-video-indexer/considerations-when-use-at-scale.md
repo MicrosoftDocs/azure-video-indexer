@@ -45,10 +45,6 @@ When you upload videos using URL, you just need to provide a path to the locatio
 
 To see an example of how to upload videos using URL, check out [this example](upload-index-videos.md). Or, you can use [AzCopy](/azure/storage/common/storage-use-azcopy-v10) for a fast and reliable way to get your content to a storage account from which you can submit it to Azure AI Video Indexer using [SAS URL](/azure/storage/common/storage-sas-overview). Azure AI Video Indexer recommends using *readonly* SAS URLs.
 
-## Automatic Scaling of Media Reserved Units
-
-Starting August 1st 2021, Azure Video Indexer enabled [Reserved Units](/azure/media-services/latest/concept-media-reserved-units)(MRUs) auto scaling by [Azure Media Services](/azure/media-services/latest/media-services-overview) (AMS), as a result you do not need to manage them through Azure Video Indexer. That allows price optimization, e.g. price reduction in many cases, based on your business needs as it is being auto scaled.
-
 ## Respect throttling
 
 Azure Video Indexer is built to deal with indexing at scale, and when you want to get the most out of it you should also be aware of the system's capabilities and design your integration accordingly. You don't want to send an upload request for a batch of videos just to discover that some of the movies didn't upload and you are receiving an HTTP 429 response code (too many requests). There is an API request limit of 10 requests per second and up to 120 requests per minute.

@@ -44,7 +44,7 @@ Before you start, see the [Recommendations](#recommendations) section (that foll
 
    ![Subscription and keys in the Azure AI Video Indexer API developer portal](./media/video-indexer-use-apis/subscriptions.png)
 
-An Azure AI Video Indexer user can use a single subscription key to connect to multiple Azure AI Video Indexer accounts. You can then link these Azure AI Video Indexer accounts to different Media Services accounts.
+An Azure AI Video Indexer user can use a single subscription key to connect to multiple Azure AI Video Indexer accounts.
 
 ## Obtain access token using the Authorization API
 
@@ -109,7 +109,6 @@ When you're uploading videos by using the API, you have the following options:
 
 * Upload your video from a URL (preferred).
 * Send the video file as a byte array in the request body.
-* Use existing an Azure Media Services asset by providing the [asset ID](/azure/media-services/latest/assets-concept). This option is supported in paid accounts only.
 * There is an API request limit of 10 requests per second and up to 120 requests per minute.
   
 ### Getting JSON output
@@ -125,7 +124,7 @@ When you're uploading videos by using the API, you have the following options:
 The following C# code snippet demonstrates the usage of all the Azure AI Video Indexer APIs together.
 
 > [!NOTE]
-> The following sample is intended for classic accounts only and not compatible with ARM-based accounts. For an updated sample for ARM (recommended), see [this ARM sample repo](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/API-Samples/C%23/ArmBased/Program.cs).
+> The following sample is intended for classic accounts only and not compatible with ARM-based accounts. For an updated sample for ARM (recommended), see [this ARM sample repo](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/API-Samples/C%23/ArmBased/Program.cs).
 
 ```csharp
 var apiUrl = "https://api.videoindexer.ai";
@@ -232,5 +231,5 @@ After you're done with this tutorial, delete resources that you aren't planning 
 ## Next steps
 
 - [Examine details of the output JSON](video-indexer-output-json-v2.md)
-- Check out the [sample code](https://github.com/Azure-Samples/media-services-video-indexer) that demonstrates important aspect of uploading and indexing a video. Following the code will give you a good idea of how to use our API for basic functionalities. Make sure to read the inline comments and notice our best practices advice.
+- Check out the [sample code](https://github.com/Azure-Samples/azure-video-indexer-samples) that demonstrates important aspect of uploading and indexing a video. Following the code will give you a good idea of how to use our API for basic functionalities. Make sure to read the inline comments and notice our best practices advice.
 
