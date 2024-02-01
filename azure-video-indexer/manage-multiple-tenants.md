@@ -32,14 +32,14 @@ When using this architecture, an Azure AI Video Indexer account is created for e
 * There's no ability to share custom models between tenants.
 
     Make sure there's no business requirement to share custom models.
-* Harder to manage due to multiple Azure AI Video Indexer (and associated Media Services) accounts per tenant.
+* Harder to manage due to multiple Azure AI Video Indexer accounts per tenant.
 
 > [!TIP]
 > Create an admin user for your system in [the Azure AI Video Indexer developer portal](https://api-portal.videoindexer.ai/) and use the Authorization API to provide your tenants the relevant [account access token](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Account-Access-Token).
 
 ## Single Azure AI Video Indexer account for all users
 
-When using this architecture, the customer is responsible for tenants isolation. All tenants have to use a single Azure AI Video Indexer account with a single Azure Media Service account. When uploading, searching, or deleting content, the customer will need to filter the proper results for that tenant.
+When using this architecture, the customer is responsible for tenants isolation. All tenants have to use a single Azure AI Video Indexer account. When uploading, searching, or deleting content, the customer will need to filter the proper results for that tenant.
 
 ![Single Azure AI Video Indexer account for all users](./media/manage-multiple-tenants/single-video-indexer-account-for-all-users.png)
 
@@ -66,7 +66,3 @@ When using this architecture, each tenant will have their own Azure subscription
 
 * This is the only option that enables billing separation.
 * This integration has more management overhead than Azure AI Video Indexer account per tenant. If billing isn't a requirement, it's recommended to use one of the other options described in this article.
-
-## Next steps
-
-[Overview](video-indexer-overview.md)
