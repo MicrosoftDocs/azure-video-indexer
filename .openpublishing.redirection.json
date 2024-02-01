@@ -39,6 +39,12 @@
             "source_path_from_root": "/azure-video-indexer/azure-video-indexer-enabled-by-arc-tutorial.md",
             "redirect_url": "/azure/azure-video-indexer/azure-video-indexer-enabled-by-arc-quickstart",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/add-contributor-role-on-the-media-service.md",
+            "redirect_url": "/azure/azure-video-indexer/azure-video-indexer-ams-retirement-guide",
+            "redirect_document_id": false
         }
+        
     ]
 }

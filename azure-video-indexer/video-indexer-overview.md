@@ -12,7 +12,7 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-Azure AI Video Indexer is a cloud application, part of Azure AI services, built on Azure Media Services and Azure AI services (such as the Face, Translator, Azure AI Vision, and Speech). It enables you to extract the insights from your videos using Azure AI Video Indexer video and audio models.
+Azure AI Video Indexer is a cloud application, part of Azure AI services, built on Azure AI services (such as the Face, Translator, Azure AI Vision, and Speech). It enables you to extract the insights from your videos using Azure AI Video Indexer video and audio models.
 
 Azure AI Video Indexer analyzes the video and audio content by running 30+ AI models, generating rich insights. Here is an illustration of the audio and video analysis performed by Azure AI Video Indexer in the background:
 
