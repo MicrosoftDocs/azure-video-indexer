@@ -16,11 +16,11 @@ This article gives an overview of Azure AI Video Indexer accounts types and prov
 
 ## Trial account
 
-When starting out with [Azure AI Video Indexer](https://www.videoindexer.ai/), click **start free** to kick off a quick and easy process of creating a trial account. No Azure subscription is required and this is a great way to explore Azure AI Video Indexer and try it out with your content. Keep in mind that the trial Azure AI Video Indexer account has a limitation on the number of indexing minutes, support, and SLA.
+When starting out with [Azure AI Video Indexer](https://www.videoindexer.ai/), select **start free** to kick off a quick and easy process of creating a trial account. No Azure subscription is required and this is a great way to explore Azure AI Video Indexer and try it out with your content. Keep in mind that the trial Azure AI Video Indexer account has a limitation on the number of indexing minutes, support, and SLA.
 
 With a trial account, Azure AI Video Indexer provides up to 2,400 minutes of free indexing when using the [Azure AI Video Indexer](https://www.videoindexer.ai/) website or the Azure AI Video Indexer API (see [developer portal](https://api-portal.videoindexer.ai/)).
 
-The trial account option is not available on the Azure Government cloud. For other Azure Government limitations, see [Limitations of Azure AI Video Indexer on Azure Government](connect-to-azure.md#limitations-of-azure-ai-video-indexer-on-azure-government).
+The trial account option isn't available on the Azure Government cloud. For other Azure Government limitations, see [Limitations of Azure AI Video Indexer on Azure Government](connect-to-azure.md#limitations-of-azure-ai-video-indexer-on-azure-government).
 
 > [!NOTE] 
 > Any trial account that has not been logged into for 12 months might be deleted. To prevent its deletion, simply log into the trial account.
@@ -46,7 +46,7 @@ Billing is per indexed minute, with the per minute cost determined by the select
  
 Before ARM based accounts were added to Azure AI Video Indexer, there was a "classic" account type (where the accounts management plane is built on API Management.) The classic account type is still used by some users.
 
-* If you are using a classic (paid) account and interested in moving to an ARM-based account, see [connect an existing classic Azure AI Video Indexer account to an ARM-based account](connect-classic-account-to-arm.md).
+* If you're using a classic (paid) account and interested in moving to an ARM-based account, see [connect an existing classic Azure AI Video Indexer account to an ARM-based account](connect-classic-account-to-arm.md).
  
 For more information on the difference between regular unlimited accounts and classic accounts, see [Azure AI Video Indexer as an Azure resource](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/azure-video-indexer-is-now-available-as-an-azure-resource/ba-p/2912422).
 
