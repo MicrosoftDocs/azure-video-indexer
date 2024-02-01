@@ -64,7 +64,9 @@ It's recommended to have the following three accounts located in the same region
 
     When you create an Azure AI Video Indexer account and connect it to Media Services, the media and metadata files are stored in the Azure storage account associated with that Media Services account. 
 
+<!--
 If your storage account is behind a firewall, see [storage account that is behind a firewall](faq.yml#can-a-storage-account-connected-to-the-media-services-account-be-behind-a-firewall).
+-->
 
 ### Create and configure a Media Services account
 

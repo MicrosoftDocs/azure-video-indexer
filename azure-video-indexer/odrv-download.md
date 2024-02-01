@@ -674,9 +674,11 @@ The upload operation might return the following status codes:
 >
 > `System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;`
 
+<!--
 ## Firewall
 
 For information about a storage account that's behind a firewall, see the [FAQ](faq.yml#can-a-storage-account-connected-to-the-media-services-account-be-behind-a-firewall).
+-->
 
 ## Next steps
 
