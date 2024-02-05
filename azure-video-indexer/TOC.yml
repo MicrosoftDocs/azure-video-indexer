@@ -50,7 +50,7 @@ items:
 - name: Samples
   items:
   - name: Azure AI Video Indexer samples
-    href: https://github.com/Azure-Samples/azure-video-indexer-sample
+    href: https://github.com/Azure-Samples/azure-video-indexer-samples
   - name: Azure AI Video Indexer widgets
     href: https://www.npmjs.com/package/@azure/video-indexer-widgets
 - name: Concepts
