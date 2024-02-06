@@ -2,7 +2,7 @@
 title: Import your content from the trial account
 description: Learn how to import your content from the trial account.
 ms.topic: tutorial
-ms.date: 12/19/2022
+ms.date: 02/05/2024
 ms.custom: ignite-fall-2021
 ms.author: itnorman
 author: IngridAtMicrosoft
@@ -23,7 +23,7 @@ When might you want to switch from a trial to a regular account?
 
 ## Create a new ARM account for the import
 
-* First you need to create an account. The regular account needs to have been already created and available before performing the import. Azure AI Video Indexer accounts are Azure Resource Manager (ARM) based and account creation can be performed through the Azure portal (see [Create an account with the Azure portal](create-account-portal.md)) or API (see [Create accounts with API](/rest/api/videoindexer/stable/accounts)).  
+* First you need to create an account. The regular account needs to have been already created and available before performing the import. Azure AI Video Indexer accounts are Azure Resource Manager (ARM) based and account creation can be performed through the Azure portal (see [Create an account with the Azure portal](create-account.md)) or API (see [Create accounts with API](/rest/api/videoindexer/stable/accounts)).  
 * The target ARM-based account has to be an empty account that has not yet been used to index any media files.
 * Import from trial can be performed only once per trial account.
 

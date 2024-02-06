@@ -3,7 +3,7 @@ title: How to enable network security
 description: This article gives an overview of the Azure AI Video Indexer  network security options.
 ms.topic: article
 ms.custom: devx-track-azurecli
-ms.date: 12/19/2022
+ms.date: 02/05/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -21,7 +21,7 @@ Azure AI Video Indexer is a service hosted on Azure. In some cases the service n
 Use [Network Security Groups with Service Tags](/azure/virtual-network/service-tags-overview) to limit access to your resources on a network level. A service tag represents a group of IP address prefixes from a given Azure service, in this case Azure AI Video Indexer. Microsoft manages the address prefixes grouped by the service tag and automatically updates the service tag as addresses change in our backend, minimizing the complexity of frequent updates to network security rules by the customer.
 
 > [!NOTE]
-> The NSG service tags feature is not available for trial and classic accounts. To update to an ARM account, see [Connect a classic account to ARM](connect-classic-account-to-arm.md) or [Import content from a trial account](import-content-from-trial.md).
+> The NSG service tags feature is not available for trial and classic accounts. To update to an ARM account, see the [migration guide](azure-video-indexer-ams-retirement-guide.md) or [Import content from a trial account](import-content-from-trial.md).
 
 ## Get started with service tags
 
