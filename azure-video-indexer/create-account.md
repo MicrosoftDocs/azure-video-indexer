@@ -26,7 +26,7 @@ The trial account option isn't available on the Azure Government cloud. For othe
 
 ## Classic account
 
-Classic accounts are being deprecated. It isn't recommended to create a new classic account.
+Classic accounts are deprecated. It isn't recommended to create a new classic account.
 
 If you currently have a classic account, see the [migration guide](azure-video-indexer-ams-retirement-guide.md).
 
