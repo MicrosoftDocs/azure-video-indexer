@@ -39,6 +39,19 @@ If you currently have a classic account, see the [migration guide](azure-video-i
 
 ### [Azure portal](#tab/portal)
 
+1.  In the Azure portal, select **+ Create a resource.**
+1.  Search for and select *Azure AI Video Indexer.* The Create a Video Indexer resource page appears.
+1.  Create a resource group and selecting the region.
+1.  Give the account a name in the **Resource name** field.
+1.  Connect the account to storage. Either…
+    1.  Select an existing storage account from the **Storage account** dropdown or
+    1.  Create a new storage account. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal).
+
+1.  Select or create a **user assigned managed identity**. (If you forget, a prompt in the storage overview page appears later in the process.)
+1.  Select **Review + create**. Validation of the configuration starts.
+1.  When validation is complete, select **Create**.
+1.  When the deployment is complete, select **Go to resource**. The storage resource overview page appears.
+1.  If you assigned a system assigned managed identity during the storage creation process, a notification on the page says that you must select a managed identity role assignment. Select the **Assign role** button.
 
 ### [API](#tab/api)
 [Create accounts with API](/rest/api/videoindexer/stable/accounts)

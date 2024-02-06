@@ -62,7 +62,7 @@ If your account is a classic account, you are required to connect the classic ac
 
 1.  In the Azure portal, select **+ Create a resource.**
 1.  Search for and select *Azure AI Video Indexer.* The Create a Video Indexer resource page appears.
-1.  **Skip** creating a resource group and selecting the region sections. The are auto populated by the following steps.
+1.  **Skip** creating a resource group and selecting the region sections. They are auto populated by the following steps.
 1.  Select the Connect all content from an existing classic account button.
 1.  Select the classic account from the **Available classic accounts dropdown** list.
 1.  Give the account a name in the **Resource name** field.
