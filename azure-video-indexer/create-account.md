@@ -26,9 +26,9 @@ The trial account option isn't available on the Azure Government cloud. For othe
 
 ## Classic account
 
-Classic accounts are deprecated. It isn't recommended to create a new classic account.
+You can no longer create a classic account.
 
-If you currently have a classic account, see the [migration guide](azure-video-indexer-ams-retirement-guide.md).
+Classic accounts will be retired on June 30th, 2024. If you currently have a classic account, see the [migration guide](azure-video-indexer-ams-retirement-guide.md).
 
 ## Paid account
 
@@ -55,6 +55,8 @@ If you currently have a classic account, see the [migration guide](azure-video-i
 
 ### [API](#tab/api)
 [Create accounts with API](/rest/api/videoindexer/stable/accounts)
+
+---
 
 ## Government account
 
