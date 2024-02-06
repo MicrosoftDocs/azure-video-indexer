@@ -46,7 +46,6 @@ Classic accounts will be retired on June 30th, 2024. If you currently have a cla
 1.  Connect the account to storage. Either…
     1.  Select an existing storage account from the **Storage account** dropdown or
     1.  Create a new storage account. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal).
-
 1.  Select or create a **user assigned managed identity**. (If you forget, a prompt in the storage overview page appears later in the process.)
 1.  Select **Review + create**. Validation of the configuration starts.
 1.  When validation is complete, select **Create**.
