@@ -1,6 +1,6 @@
 ---
 title:  Azure AI Video Indexer accounts  
-description: This article gives an overview of Azure AI Video Indexer accounts and provides links to other articles for more details.
+description: This article gives an overview of Azure AI Video Indexer accounts.
 ms.topic: conceptual
 ms.date: 10/16/2023
 ms.author: inhenkel
@@ -12,43 +12,26 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-This article gives an overview of Azure AI Video Indexer accounts types and provides links to other articles for more details.
+This article gives an overview of Azure AI Video Indexer accounts types.
 
 ## Trial account
 
-When starting out with [Azure AI Video Indexer](https://www.videoindexer.ai/), select **start free** to kick off a quick and easy process of creating a trial account. No Azure subscription is required and this is a great way to explore Azure AI Video Indexer and try it out with your content. Keep in mind that the trial Azure AI Video Indexer account has a limitation on the number of indexing minutes, support, and SLA.
+[!INCLUDE [trial-account](includes/trial-account.md)]
 
-With a trial account, Azure AI Video Indexer provides up to 2,400 minutes of free indexing when using the [Azure AI Video Indexer](https://www.videoindexer.ai/) website or the Azure AI Video Indexer API (see [developer portal](https://api-portal.videoindexer.ai/)).
+## Paid account
 
-The trial account option isn't available on the Azure Government cloud. For other Azure Government limitations, see [Limitations of Azure AI Video Indexer on Azure Government](connect-to-azure.md#limitations-of-azure-ai-video-indexer-on-azure-government).
+Azure AI Video Indexer paid accounts are Azure Resource Manager (ARM) based and unlike trial accounts, are created with your Azure subscription. ARM based accounts give you access to security and management capabilities, such as [RBAC user management](/azure/role-based-access-control/overview), [Azure Monitor integration](/azure/azure-monitor/overview), deployment through ARM templates, and more.
 
-> [!NOTE] 
-> Any trial account that has not been logged into for 12 months might be deleted. To prevent its deletion, simply log into the trial account.
+A paid account that doesn't have minute, support, or SLA limitations. Accounts can be created with the Azure portal <!--(see [Create an account with the Azure portal](create-account-portal.md)) or API (see [Create accounts with API](/rest/api/videoindexer/stable/accounts)).-->
 
-## Paid (unlimited) account
-
-When you have used up the free trial minutes or are ready to start using Video Indexer for production workloads, you can create a regular paid account which doesn't have minute, support, or SLA limitations. Account creation can be performed through the Azure portal (see [Create an account with the Azure portal](create-account-portal.md)) or API (see [Create accounts with API](/rest/api/videoindexer/stable/accounts)).
-
-Azure AI Video Indexer unlimited accounts are Azure Resource Manager (ARM) based and unlike trial accounts, are created in your Azure subscription. Moving to an unlimited ARM based account unlocks many security and management capabilities, such as [RBAC user management](/azure/role-based-access-control/overview), [Azure Monitor integration](/azure/azure-monitor/overview), deployment through ARM templates, and much more.
-
-Billing is per indexed minute, with the per minute cost determined by the selected preset.  For more information regarding pricing, see [Azure AI Video Indexer pricing](https://azure.microsoft.com/pricing/details/video-indexer/).
-
-## Create accounts
-
-* To create an ARM-based (paid) account with the Azure portal, see [Create accounts with the Azure portal](create-account-portal.md). 
-* To create an account with an API, see [Create accounts](/rest/api/videoindexer/stable/accounts)
-
-    > [!TIP]
-    > Make sure you are signed in with the correct domain to the [Azure AI Video Indexer website](https://www.videoindexer.ai/). For details, see [Switch tenants](switch-tenants-portal.md).  
-* [Upgrade a trial account to an ARM-based (paid) account and import your content for free](import-content-from-trial.md).  
+For more information about pricing, see [Azure AI Video Indexer pricing](https://azure.microsoft.com/pricing/details/video-indexer/).  
    
  ## Classic accounts
  
-Before ARM based accounts were added to Azure AI Video Indexer, there was a "classic" account type (where the accounts management plane is built on API Management.) The classic account type is still used by some users.
-
-* If you're using a classic (paid) account and interested in moving to an ARM-based account, see [connect an existing classic Azure AI Video Indexer account to an ARM-based account](connect-classic-account-to-arm.md).
+Before ARM based accounts were added to Azure AI Video Indexer, there was a "classic" account type. The classic account type is still used by some users. Azure AI Video Indexer requires all new accounts to be ARM-based accounts.  If you currently have a classic account, see the [migration guide](azure-video-indexer-azure-media-services-retirement-announcement).
  
-For more information on the difference between regular unlimited accounts and classic accounts, see [Azure AI Video Indexer as an Azure resource](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/azure-video-indexer-is-now-available-as-an-azure-resource/ba-p/2912422).
+<!-->
+For more information on the difference between paid accounts and classic accounts, see [Azure AI Video Indexer as an Azure resource](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/azure-video-indexer-is-now-available-as-an-azure-resource/ba-p/2912422). -->
 
 ## Limited access features
 
@@ -56,6 +39,6 @@ For more information on the difference between regular unlimited accounts and cl
 
 For more information, see [Azure AI Video Indexer limited access features](limited-access-features.md).
 
-## Next steps
+## Create an account
 
-Make sure to review [Pricing](https://azure.microsoft.com/pricing/details/video-indexer/).
+To create an account, see [Create an Azure AI Video Indexer account](create-account.md)
