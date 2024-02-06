@@ -20,7 +20,7 @@ You can also view a video that shows [how to upload and index media files](https
 
 ## Prerequisites
 
-- To upload media files, you need an active Azure AI Video Indexer account. If you don't have one, [sign up](https://aka.ms/vi-portal-link) for a free trial account, or create an [unlimited paid account](accounts-overview.md#paid-unlimited-account).
+- To upload media files, you need an active Azure AI Video Indexer account. If you don't have one, [sign up](https://aka.ms/vi-portal-link) for a free trial account, or create a [paid account](accounts-overview.md#paid-account).
 - To upload media files, you need at least contributor-level permission for your account. To manage permissions, see [Manage users and groups](restricted-viewer-role.md).
 - To upload media files from a URL, you need a publicly accessible URL for the media file. For example, if the file is hosted in an Azure storage account, you need to [generate a SAS token URL](/azure/ai-services/document-intelligence/create-sas-tokens?view=form-recog-3.0.0&preserve-view=true) and paste it in the input box. You can't use URLs from streaming services such as YouTube.
 
