@@ -2,7 +2,7 @@
 title: Create an Azure AI Video Indexer account
 description: This article explains how to create an account for Azure AI Video Indexer.
 ms.topic: how-to
-ms.date: 02/05/2025
+ms.date: 02/05/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
