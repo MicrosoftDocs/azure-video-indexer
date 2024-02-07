@@ -22,7 +22,7 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 ## January 2024
 
-## New LLM prompt content
+### New LLM prompt content
 
 You can now connect your video insights to Large Language Model (LLMs) for tasks like summarization and question answering. The API converts your video insights into a "prompt-ready" text format for use with LLMs. For more information, see [Azure Video Indexer with LLM prompts](prompt-overview.md).
 
