@@ -56,13 +56,37 @@ Update an existing Azure Resource Manager (ARM) account.
 
 ## Connect a classic account to a new ARM based account
 
-If your account is a classic account, you are required to connect the classic account to an ARM account before the classic account is retired. The following steps walk you through creating a new ARM based account.
+If your account is a classic account, you are required to connect the classic account to an ARM account before the classic account is retired. 
+
+### Transition state
+
+Connecting a classic account to be ARM-based triggers a 30 days of a transition state. In the transition state, an existing account can be accessed by generating an access token using both the:
+
+- Access token generated through API Management(classic way)
+- Access token generated through ARM
+
+The transition state moves all account management functionality to be managed by ARM and will be handled by [Azure Role Based Access Control (RBAC)][/azure/role-based-access-control/overview].
+
+The invite users feature in the Azure AI Video Indexer website gets disabled. The invited users on this account lose their access to the Azure AI Video Indexer account Media in the portal. However, this can be resolved by assigning the right role-assignment to these users through RBAC, see [How to assign RBAC][/azure/role-based-access-control/role-assignments-steps].
+
+Only the account owner, who performed the connect action, is automatically assigned as the owner on the connected account. When [Azure policies][/azure/governance/policy/overview] are enforced, they override the settings on the account.
+
+If users aren't added through Azure RBAC to the account after 30 days, they'll lose access through API as well as the Azure AI Video Indexer website.
+
+After the transition state ends, users will only be able to generate a valid access token through ARM, making Azure RBAC the exclusive way to manage role-based access control on the account.
+
+> [!Note]
+> If there are invited users you wish to remove access from, do it before connecting the account to ARM.
+
+Before the end of the 30 days of transition state, you can remove access from users through the Azure AI Video Indexer website account settings page.
+
+The following steps walk you through creating a new ARM based account.
 
 ### [Connect a classic account in the Azure portal](#tab/connectclassicportal)
 
 1.  In the Azure portal, select **+ Create a resource.**
 1.  Search for and select *Azure AI Video Indexer.* The Create a Video Indexer resource page appears.
-1.  **Skip** creating a resource group and selecting the region sections. They are auto populated by the following steps.
+1.  **Skip** creating a resource group and selecting the region sections. The are auto populated by the following steps.
 1.  Select the Connect all content from an existing classic account button.
 1.  Select the classic account from the **Available classic accounts dropdown** list.
 1.  Give the account a name in the **Resource name** field.
