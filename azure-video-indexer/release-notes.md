@@ -3,7 +3,7 @@ title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
 ms.topic: article
 ms.custom: references_regions
-ms.date: 1/3/2024
+ms.date: 02/06/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -19,6 +19,12 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+## January 2024
+
+### New LLM prompt content
+
+You can now connect your video insights to Large Language Model (LLMs) for tasks like summarization and question answering. The API converts your video insights into a "prompt-ready" text format for use with LLMs. For more information, see [Azure Video Indexer with LLM prompts](prompt-overview.md).
 
 ## December 2023
 
