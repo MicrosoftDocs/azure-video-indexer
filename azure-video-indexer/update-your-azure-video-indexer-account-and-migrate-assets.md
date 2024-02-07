@@ -12,7 +12,7 @@ author: IngridAtMicrosoft
 
 Azure Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, AVI is removing the dependency on AMS.
 
-As described in the [AVI update and migration guide](https://learn.microsoft.com/azure/azure-video-indexer/azure-video-indexer-ams-retirement-guide), your Azure Video Indexer account needs to be updated. During the update, you'll have the opportunity to opt in to having the AVI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
+As described in the [AVI update and migration guide](azure-video-indexer-ams-retirement-guide.md), your Azure Video Indexer account needs to be updated. During the update, you'll have the opportunity to opt in to having the AVI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
 
 You can opt in to AVI migration using either the Azure portal or the API during the account update process.
 
