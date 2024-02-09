@@ -73,13 +73,11 @@ AVI won’t charge for streaming. AVI will charge a flat rate for encoding, whic
 
 ## Migration
 
-Migration 
-
-## Recommended: Ask for AVI assistance with migration 
+### Recommended: Ask for AVI assistance with migration 
 
 Due to the June 30th, 2024 AMS retirement, all AVI customers that persist AVI created videos and insights must process the assets to a new format and migrate them to the Azure Storage account linked to their AVI account. 
 
-This requires the following two operations: 
+This requires the following operations: 
 
 - It reprocesses the media assets, converting the AMS assets to CMAF format with HLS and DASH manifests. This is needed for the assets to be streamed by Video Indexer and other players. 
 - Storing of these reprocessed assets in the Azure Storage account that you have linked to your AVI account. 
