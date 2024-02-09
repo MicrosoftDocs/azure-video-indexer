@@ -3,7 +3,7 @@ title: Preparing for AMS retirement - AVI update and migration guide
 description: Azure Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, AVI is removing the dependency on AMS. To continue using AVI, between February 15 and June 30 2024, you must take steps to transition away from their current AVI account AMS dependency. Follow this guide.
 ms.topic: conceptual
 ms.service: azure-video-indexer
-ms.date: 01/29/2024
+ms.date: 02/07/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -73,35 +73,31 @@ AVI won’t charge for streaming. AVI will charge a flat rate for encoding, whic
 
 ## Migration
 
-### Recommended: Ask for AVI assistance with migration
+Migration 
 
-AVI is offering to perform both file processing and asset migration. You can opt in through the Azure portal or through an API request when you update your account up until the AMS retirement on June 30, 2024. 
+## Recommended: Ask for AVI assistance with migration 
 
-Migration won’t happen immediately, but AVI commits to migrating your assets before the AMS retirement date.
+Due to the June 30th, 2024 AMS retirement, all AVI customers that persist AVI created videos and insights must process the assets to a new format and migrate them to the Azure Storage account linked to their AVI account. 
 
-Only your *AVI* associated AMS assets will be migrated. If other AMS assets exist on the same storage account, they won’t be migrated.
+This requires the following two operations: 
 
-AVI won’t delete the original copies of your AMS files. After migration, you can delete them yourself if needed.
+- It reprocesses the media assets, converting the AMS assets to CMAF format with HLS and DASH manifests. This is needed for the assets to be streamed by Video Indexer and other players. 
+- Storing of these reprocessed assets in the Azure Storage account that you have linked to your AVI account. 
+
+As AMS asset migration would be challenging to do on your own, AVI is providing a migration experience for both the file reprocessing and asset move. There's no cost for using the migration solution except storage of the migrated assets in a storage account and the networking costs associated with moving the data which should be low if both storage accounts are in the same region. Migration won’t happen immediately, but AVI commits to migrating your assets before the AMS retirement date. 
+
+You can opt in through the Azure portal or through an API request when you update your account up until the AMS retirement on June 30, 2024. 
+
+Only your AVI associated AMS assets will be migrated. If other AMS assets exist on the same storage account, they won’t be migrated. 
+
+AVI won’t delete the original copies of your AMS files. After the migration has successfully completed, if the AMS account linked to AVI as well as the storage account linked to AMS were only used for AVI,  you can consider deleting both of them if they are no longer needed. 
 
 > [!IMPORTANT] 
-> Even after you have updated your account, AVI will still access your AMS account and its associated storage account until all your videos have been migrated. Until the migration is complete, it's important that you DO NOT delete or change the accounts, roles, or permissions of the AMS, Azure Storage or AVI accounts. You will receive an email notification that the migration is complete, and you can check the migration status on the AVI website as well.
+> Even after you have updated your account, AVI will still access your AMS account and its associated storage account until all your videos have been migrated. Until the migration is complete, it's important that you DO NOT delete or change the accounts, roles, or permissions of the AMS, Azure Storage or AVI accounts. In addition, it's recommended that AVI AMS assets are not deleted until you are notified that the migration is complete as they might not have migrated yet. The AVI account owner will receive an email notification that the migration is complete and you can check the migration status on the AVI website as well. 
 
-Due to the AMS retirement, all AVI customers that persist AVI created videos and insights must process the assets to a new format and migrate them to the Azure Storage account linked to their AVI account. 
+If an asset fails to migrate, despite AVI’s multiple attempts and retries to migrate it, the migration will be treated as completed with errors and you'll be sent a list of the files that failed to migrate. They can also be downloaded from the Migration page in the AVI website. 
 
-This requires the following two operations:
-
-1. It reprocesses the media assets, converting the AMS assets to CMAF format with HLS and DASH manifests. This is needed for the assets to be streamed by Video Indexer and other players.
-1. Storing of these reprocessed assets in the Azure Storage account that you have linked to your AVI account.
-
-As AMS asset migration would be challenging to do on your own, AVI is providing a migration experience for both the file reprocessing and asset move. There's no cost for using the migration solution except storage of the migrated assets in a storage account and the networking costs associated with moving the data which should be low if both storage accounts are in the same region.
-
-If an asset fails to migrate, despite AVI’s multiple attempts and retries to migrate it, the migration will be treated as completed with errors and you'll be sent a list of the files that failed to migrate. They can also be downloaded from the Migration page in the AVI website.
-
-You can view the status and progress of your migration in the AVI website and will also receive a notification email once the migration is complete. 
-
-As the migration solution will migrate all AVI AMS assets, it’s a good time to review and delete any files that are no longer needed and don’t need to be migrated. 
-
-Once you have opted in to the migration, it's recommended that VI AMS assets are not deleted until you are notified that the migration is complete as they might not have been migrated yet.
+You can view the status and progress of your migration in the AVI website and the account owner will receive a notification email once the migration is complete. 
 
 Microsoft disclaims any liability for any damages in relation to the migration.
 
