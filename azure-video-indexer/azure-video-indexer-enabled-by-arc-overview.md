@@ -1,5 +1,5 @@
 ---
-title: Azure AI Video Indexer enabled by Arc overview  
+title: What is Azure Video Indexer enabled by Arc? (Preview)  
 description: Azure AI Video Indexer enabled by Arc an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 ms.topic: overview
 ms.service: azure-video-indexer
@@ -8,7 +8,7 @@ ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
-# Azure Video Indexer enabled by Arc overview (preview)
+# What is Azure Video Indexer enabled by Arc? (Preview)
 
 [!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)] ([!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)]) is an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 
@@ -158,5 +158,5 @@ It is important to plan the resources needed for your environment. The table bel
 
 ## Next steps
 - Try deploying in the Azure portal using the [Azure Video Indexer enabled by Arc quickstart](azure-video-indexer-enabled-by-arc-quickstart.md) 
-- Try the [Azure Video Indexer enabled by Arc sample on GitHub ](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/AVIenabledbyArc/readme.md)
+- Try the [Azure Video Indexer enabled by Arc sample on GitHub ](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoIndexerEnabledByArc/aks/readme.md)
 - Try the [Azure Video Indexer enable by Arc Jumpstart](https://arcjumpstart.com/azure_arc_jumpstart/azure_edge_iot_ops/aks_edge_essentials_single_vi)
