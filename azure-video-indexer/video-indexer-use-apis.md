@@ -1,9 +1,8 @@
 ---
 title: Use the Azure AI Video Indexer API
 description: This article describes how to get started with Azure AI Video Indexer API.
-ms.date: 11/27/2023
+ms.date: 02/06/2024
 ms.topic: tutorial
-ms.custom: devx-track-csharp
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: azure-video-indexer
@@ -121,115 +120,4 @@ When you're uploading videos by using the API, you have the following options:
 
 ## Code sample
 
-The following C# code snippet demonstrates the usage of all the Azure AI Video Indexer APIs together.
-
-> [!NOTE]
-> The following sample is intended for classic accounts only and not compatible with ARM-based accounts. For an updated sample for ARM (recommended), see [this ARM sample repo](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/API-Samples/C%23/ArmBased/Program.cs).
-
-```csharp
-var apiUrl = "https://api.videoindexer.ai";
-var accountId = "..."; 
-var location = "westus2"; // replace with the account's location, or with “trial” if this is a trial account
-var apiKey = "..."; 
-
-System.Net.ServicePointManager.SecurityProtocol = System.Net.ServicePointManager.SecurityProtocol | System.Net.SecurityProtocolType.Tls12;
-
-// create the http client
-var handler = new HttpClientHandler(); 
-handler.AllowAutoRedirect = false; 
-var client = new HttpClient(handler);
-client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", apiKey); 
-
-// obtain account access token
-var accountAccessTokenRequestResult = client.GetAsync($"{apiUrl}/auth/{location}/Accounts/{accountId}/AccessToken?allowEdit=true").Result;
-var accountAccessToken = accountAccessTokenRequestResult.Content.ReadAsStringAsync().Result.Replace("\"", "");
-
-client.DefaultRequestHeaders.Remove("Ocp-Apim-Subscription-Key");
-
-// upload a video
-var content = new MultipartFormDataContent();
-Debug.WriteLine("Uploading...");
-// get the video from URL
-var videoUrl = "VIDEO_URL"; // replace with the video URL
-
-// as an alternative to specifying video URL, you can upload a file.
-// remove the videoUrl parameter from the query string below and add the following lines:
-  //FileStream video =File.OpenRead(Globals.VIDEOFILE_PATH);
-  //byte[] buffer = new byte[video.Length];
-  //video.Read(buffer, 0, buffer.Length);
-  //content.Add(new ByteArrayContent(buffer));
-
-var uploadRequestResult = client.PostAsync($"{apiUrl}/{location}/Accounts/{accountId}/Videos?accessToken={accountAccessToken}&name=some_name&description=some_description&privacy=private&partition=some_partition&videoUrl={videoUrl}", content).Result;
-var uploadResult = uploadRequestResult.Content.ReadAsStringAsync().Result;
-
-// get the video id from the upload result
-var videoId = JsonConvert.DeserializeObject<dynamic>(uploadResult)["id"];
-Debug.WriteLine("Uploaded");
-Debug.WriteLine("Video ID: " + videoId);           
-
-// obtain video access token
-client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", apiKey);
-var videoTokenRequestResult = client.GetAsync($"{apiUrl}/auth/{location}/Accounts/{accountId}/Videos/{videoId}/AccessToken?allowEdit=true").Result;
-var videoAccessToken = videoTokenRequestResult.Content.ReadAsStringAsync().Result.Replace("\"", "");
-
-client.DefaultRequestHeaders.Remove("Ocp-Apim-Subscription-Key");
-
-// wait for the video index to finish
-while (true)
-{
-  Thread.Sleep(10000);
-
-  var videoGetIndexRequestResult = client.GetAsync($"{apiUrl}/{location}/Accounts/{accountId}/Videos/{videoId}/Index?accessToken={videoAccessToken}&language=English").Result;
-  var videoGetIndexResult = videoGetIndexRequestResult.Content.ReadAsStringAsync().Result;
-
-  var processingState = JsonConvert.DeserializeObject<dynamic>(videoGetIndexResult)["state"];
-
-  Debug.WriteLine("");
-  Debug.WriteLine("State:");
-  Debug.WriteLine(processingState);
-
-  // job is finished
-  if (processingState != "Uploaded" && processingState != "Processing")
-  {
-      Debug.WriteLine("");
-      Debug.WriteLine("Full JSON:");
-      Debug.WriteLine(videoGetIndexResult);
-      break;
-  }
-}
-
-// search for the video
-var searchRequestResult = client.GetAsync($"{apiUrl}/{location}/Accounts/{accountId}/Videos/Search?accessToken={accountAccessToken}&id={videoId}").Result;
-var searchResult = searchRequestResult.Content.ReadAsStringAsync().Result;
-Debug.WriteLine("");
-Debug.WriteLine("Search:");
-Debug.WriteLine(searchResult);
-
-// get insights widget url
-var insightsWidgetRequestResult = client.GetAsync($"{apiUrl}/{location}/Accounts/{accountId}/Videos/{videoId}/InsightsWidget?accessToken={videoAccessToken}&widgetType=Keywords&allowEdit=true").Result;
-var insightsWidgetLink = insightsWidgetRequestResult.Headers.Location;
-Debug.WriteLine("Insights Widget url:");
-Debug.WriteLine(insightsWidgetLink);
-
-// get player widget url
-var playerWidgetRequestResult = client.GetAsync($"{apiUrl}/{location}/Accounts/{accountId}/Videos/{videoId}/PlayerWidget?accessToken={videoAccessToken}").Result;
-var playerWidgetLink = playerWidgetRequestResult.Headers.Location;
-Debug.WriteLine("");
-Debug.WriteLine("Player Widget url:");
-Debug.WriteLine(playerWidgetLink);
-```
-
-## Clean up resources
-
-After you're done with this tutorial, delete resources that you aren't planning to use.
-
-## See also
-
-- [Azure AI Video Indexer overview](video-indexer-overview.md)
-- [Regions](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services)
-
-## Next steps
-
-- [Examine details of the output JSON](video-indexer-output-json-v2.md)
-- Check out the [sample code](https://github.com/Azure-Samples/azure-video-indexer-samples) that demonstrates important aspect of uploading and indexing a video. Following the code will give you a good idea of how to use our API for basic functionalities. Make sure to read the inline comments and notice our best practices advice.
-
+See the [sample repo](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/API-Samples/C%23/ArmBased/Program.cs) for a code sample.

@@ -12,12 +12,9 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-In this article, you'll learn how to manage access (authorization) to an Azure AI Video Indexer account. As Azure AI Video Indexer’s role management differs depending on the Video Indexer Account type, this document will first cover access management of regular accounts (ARM-based) and then of Classic and Trial accounts.   
+In this article, you'll learn how to manage access (authorization) to an Azure AI Video Indexer account.
 
-To see your accounts, select **User Accounts** at the top-right of the [Azure AI Video Indexer website](https://videoindexer.ai/). Classic and Trial accounts will have a label with the account type to the right of the account name.
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="./media/restricted-viewer-role/accounts.png" alt-text="Image of accounts.":::
+To see your accounts, select **User Accounts** at the top-right of the [Azure AI Video Indexer website](https://videoindexer.ai/). Trial accounts will have a label with the account type to the right of the account name.
 
 ## User management of ARM accounts
 
@@ -52,7 +49,7 @@ Disabled features will appear to users with the **Restricted Viewer** access as 
 > The Restricted Viewer role is only available in Azure AI Video Indexer ARM accounts. 
 >
 
-### Manage account access (for account owners)
+### Manage account access
 
 If you're an account owner, you can add and remove roles for the account. You can also assign roles to users. Use the following links to discover how to manage access: 
 
@@ -62,25 +59,14 @@ If you're an account owner, you can add and remove roles for the account. You ca
 - [REST API](/azure/role-based-access-control/role-assignments-rest) 
 - [Azure Resource Manager templates](/azure/role-based-access-control/role-assignments-template) 
 
-## User management of classic and trial accounts  
+## Manager trial account users  
 
-User management of classic accounts, including the creation of new users, is performed in the Account settings section of the Video Indexer website. This can be accessed by either: 
+User management of trial accounts, including the creation of new users, is performed in the Account settings section of the Video Indexer website. This can be accessed by either: 
 
-- Selecting the **User accounts** icon at the top-right of the website and then settings. 
-- Selecting the **Account settings** icon on the left of the website. 
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="./media/restricted-viewer-role/settings.png" alt-text="Image of account settings.":::
+- Selecting the **User accounts** icon and then settings. 
+- Selecting the **Account settings** icon.
 
 ### Share the account
 
-In the **Account setting** section, select **Manage Roles** to view all the account users and people with pending invites. 
-
-To add users, click **Invite more people to this account**. They'll receive an invitation but you also have the option to copy the invite link to share it directly. Once they've accepted the invitation, you can define their role as either **Owner** or **Contributor**. See above in the [ARM Account user management](#user-management-of-arm-accounts) section for a description of the **Owner** and **Contributor** roles.  
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="./media/restricted-viewer-role/share-account.png" alt-text="Image of invited users.":::
-
-## Next steps
-
-[Overview](video-indexer-overview.md)
+1. In the **Account setting** section, select **Manage Roles** to view all the account users and people with pending invites. 
+1. To add users, select **Invite more people to this account**. Users can receive an invitation but you also have the option to copy the invite link to share it directly. Once the invitation is accepted, you can define their role as either **Owner** or **Contributor**. See the [ARM Account user management](#user-management-of-arm-accounts) section for a description of the **Owner** and **Contributor** roles.
