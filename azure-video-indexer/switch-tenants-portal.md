@@ -17,7 +17,7 @@ When working with multiple tenants/directories in the Azure environment user mig
 When logging in the Azure AI Video Indexer website, a default directory will load and the relevant accounts and list them in the **Account list**.
 
 > [!Note]
-> Trial accounts and Classic accounts are global and not tenant-specific. Hence, the tenant switching described in this article only applies to your ARM accounts.
+> Trial accounts are global and not tenant-specific. Hence, the tenant switching described in this article only applies to your ARM accounts.
 >
 > The option to switch directories is available only for users using Entra ID to log in. 
 

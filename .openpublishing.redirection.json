@@ -44,7 +44,26 @@
             "source_path_from_root": "/azure-video-indexer/add-contributor-role-on-the-media-service.md",
             "redirect_url": "/azure/azure-video-indexer/azure-video-indexer-ams-retirement-guide",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/connect-classic-account-to-arm.md",
+            "redirect_url": "/azure/azure-video-indexer/azure-video-indexer-ams-retirement-guide",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/connect-to-azure.md",
+            "redirect_url": "/azure/azure-video-indexer/azure-video-indexer-ams-retirement-guide",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/create-account-portal.md",
+            "redirect_url": "/azure/azure-video-indexer/create-account",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/import-content-from-trial.md",
+            "redirect_url": "/azure/azure-video-indexer/azure-video-indexer-ams-retirement-guide",
+            "redirect_document_id": false
         }
-        
     ]
 }

@@ -99,11 +99,9 @@ You can view the status and progress of your migration in the AVI website and th
 
 Microsoft disclaims any liability for any damages in relation to the migration.
 
-<!--
 ## Detailed updating and migrating instructions
 
 For a complete step-by-step guide, see [Update your Azure Video Indexer account and migrate assets](update-your-azure-video-indexer-account-and-migrate-assets.md).
--->
 
 ## FAQ
 
