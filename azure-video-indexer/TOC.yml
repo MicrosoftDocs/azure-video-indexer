@@ -13,7 +13,7 @@ items:
     items:
     - name: AVI migration guide
       href: azure-video-indexer-ams-retirement-guide.md
-    - name: AVI update you AVI account
+    - name: AVI update your AVI account
       href: update-your-azure-video-indexer-account-and-migrate-assets.md
   - name: What is Azure Video Indexer enabled by Arc?
     href: azure-video-indexer-enabled-by-arc-overview.md
