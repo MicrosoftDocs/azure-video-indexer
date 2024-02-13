@@ -10,7 +10,11 @@ items:
   - name: Changes related to Azure Media Service (AMS) retirement
     href: azure-video-indexer-azure-media-services-retirement-announcement.md
   - name: AVI update and migration guide
-    href: azure-video-indexer-ams-retirement-guide.md
+    items:
+    - name: AVI migration guide
+      href: azure-video-indexer-ams-retirement-guide.md
+    - name: AVI update you AVI account
+      href: update-your-azure-video-indexer-account-and-migrate-assets.md
   - name: What is Azure Video Indexer enabled by Arc?
     href: azure-video-indexer-enabled-by-arc-overview.md
   - name: Account types
