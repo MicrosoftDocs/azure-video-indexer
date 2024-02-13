@@ -47,7 +47,7 @@
         },
         {
             "source_path_from_root": "/azure-video-indexer/connect-classic-account-to-arm.md",
-            "redirect_url": "/azure/azure-video-indexer/azure-video-indexer-ams-retirement-guide",
+            "redirect_url": "/azure/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets",
             "redirect_document_id": false
         },
         {
