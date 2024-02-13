@@ -147,6 +147,7 @@ Azure Video Indexer enabled by Arc also supports bringing your own model. See th
 -   Video error messages aren't stored due to memory limitations.
 
 ## Next steps
-- Try deploying in the Azure portal using the [Azure Video Indexer enabled by Arc quickstart](azure-video-indexer-enabled-by-arc-quickstart.md) 
-- Try the [Azure Video Indexer enabled by Arc sample on GitHub ](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoIndexerEnabledByArc/aks/readme.md)
-- Try the [Azure Video Indexer enable by Arc Jumpstart](https://arcjumpstart.com/azure_arc_jumpstart/azure_edge_iot_ops/aks_edge_essentials_single_vi)
+ 
+- Try the [Azure AI Video Indexer enabled by Arc sample on GitHub ](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoIndexerEnabledByArc/aks/readme.md)
+- Try the [Azure AI Video Indexer enable by Arc Jumpstart](https://arcjumpstart.com/azure_arc_jumpstart/azure_edge_iot_ops/aks_edge_essentials_single_vi)
+- Try deploying in the Azure portal using the [Azure AI Video Indexer enabled by Arc quickstart](azure-video-indexer-enabled-by-arc-quickstart.md)
