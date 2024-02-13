@@ -3,34 +3,39 @@ title: What is Azure Video Indexer enabled by Arc? (Preview)
 description: Azure AI Video Indexer enabled by Arc an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 1/2/2024
+ms.date: 2/13/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
-# What is Azure Video Indexer enabled by Arc? (Preview)
+# What is Azure AI Video Indexer enabled by Arc? (Preview)
 
-[!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)] ([!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)]) is an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
+Azure Video Indexer enabled by Arc is an Azure Arc Extension enabled service that runs video and audio analysis on edge devices. The solution is designed to run on Azure Stack Edge Profile, a heavy edge device, and supports many video formats, including MP4 and other common formats. It supports several languages in all basic audio-related models. It assumes that one Video Indexer resource is mapped to one extension.
 
-Before you start working with [!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)], review the [transparency note](/legal/azure-video-indexer/transparency-note) to understand usage restrictions.
+If you aren't already familiar with [Azure AI Video Indexer](/azure/azure-video-indexer/), it's recommended that you familiarize yourself with the cloud service first.
 
-## Azure Arc
+Additionally, before you start working with [!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)], review the [transparency note](/legal/azure-video-indexer/transparency-note) to understand usage restrictions.
 
-[Azure Arc](/azure/azure-arc/overview) allows you to manage the resource types hosted outside of Azure, such as:
+> [!IMPORTANT]
+> To successfully deploy the Azure Video Indexer extension, it is **mandatory** that your Azure subscription id is approved in advance. You must first sign up using [this form](https://aka.ms/vi-register).
 
-- Windows and Linux physical servers
-- Kubernetes clusters
-- Azure data services
-- SQL server
-- Azure Stack HCI
-- virtual machines based on VMware vSphere
+# What is Azure Arc and Azure Arc-enabled Kubernetes?
 
-### What is an Azure Arc extension?
-An Azure Arc extension is a way to of deliver agents, scripts, and configurations to your on-premises machines orchestrated using the Azure portal or API. For more information about Azure Arc extensions, see [Manage VM extensions](/azure/azure-arc/servers/manage-vm-extensions).
+Azure Arc simplifies governance and management of complex environments that extend across data centers, multiple clouds, and edge by delivering a consistent multi-cloud and on-premises management platform.
 
-[!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)] works on both heavy edge and light edge devices, giving you design flexibility. An example of a heavy edge device is Azure Stack HCI. Examples of light edge devices include cell phones, vehicles, and sensors.
+Azure Arc-enabled Kubernetes allows you to attach Kubernetes clusters running anywhere so that you can manage and configure them in Azure. By managing all of your Kubernetes resources in a single control plane, you can enable a more consistent development and operation experience to run cloud-native apps anywhere and on any Kubernetes platform.
 
-You can use [!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)] on any of the compute resources offered by Azure Arc.
+When the Azure Arc agents are deployed to the cluster, an outbound connection to Azure is initiated, using industry-standard SSL to secure data in transit.
+
+Once clusters are connected to Azure, they're represented as their own resources in Azure Resource Manager (ARM), and they can be organized using resource groups and tagging.
+
+See these articles to understand more about [Azure Arc](/azure/azure-arc/overview) and [Azure Arc-enabled Kubernetes](/azure/azure-arc/kubernetes/overview).
+
+## What is an Azure Arc extension?
+
+Virtual machine (VM) extensions are small applications that provide post-deployment configuration and automation tasks on Azure VMs. For example, if a virtual machine requires software installation, anti-virus protection, or to run a script in it, a VM extension can be used. To understand more about extensions, see [Virtual machine extension management with Azure Arc-enabled servers](/azure/azure-arc/servers/manage-vm-extensions).
+
+The Azure Video Indexer extension is what allows you to install and deploy Azure AI Video indexer to the Kubernetes cluster.
 
 ## Use cases
 
@@ -46,6 +51,18 @@ All VI enabled by Arc accounts are Azure Resource Manager (ARM) accounts. ARM op
 
 > [!NOTE]
 > To successfully deploy the VI Extension it is mandatory that we approve your Azure subscription id in advance. Therefore you must first sign up using [this form](https://aka.ms/vi-register).
+
+## Example deployment 
+
+The below is a block diagram showing Azure Video Indexer running on Azure Arc. There are three types: 
+
+1. Store type A uses both vision and audio presets.
+1. Store type B uses only vision presets. It also has a custom model. For more information about using a custom model with Azure Video Indexer enabled by Arc, see [Bring Your Own AI model](../azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md). 
+1. Store C uses only audio presets. 
+
+The extension is stored on each edge device and each device is associated with a single AI Video Indexer account that interfaces with Azure Arc and the cloud.
+
+:::image type="content" source="../media/common/vi-arc-diagram-v2.svg" lightbox="../media/common/avi-arc-diagram.svg" alt-text="AVI Arc block diagram":::
 
 ## Supported AI presets
 
