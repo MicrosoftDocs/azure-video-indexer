@@ -3,7 +3,7 @@ title: Azure Video Indexer support matrix and service limits
 description: This article describes the supported formats and limitations of Azure Video Indexer.
 ms.topic: conceptual
 ms.service: azure-video-indexer
-ms.date: 01/24/2024
+ms.date: 02/13/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -88,7 +88,7 @@ Azure AI Video Indexer supports the following file formats:
 | Apple ProRes 4444 XQ                                                     |
 | HEVC/H.265 Main Profile                                                  |
 
-Azure AI Video Indexer supports the following Input audio codecs:
+## Supported input audio codecs
 
 | Input Audio Codecs                            |
 |-----------------------------------------------|
