@@ -19,7 +19,7 @@ Additionally, before you start working with [!INCLUDE [variable-edge-product-nam
 > [!IMPORTANT]
 > To successfully deploy the Azure Video Indexer extension, it is **mandatory** that your Azure subscription id is approved in advance. You must first sign up using [this form](https://aka.ms/vi-register).
 
-# What is Azure Arc and Azure Arc-enabled Kubernetes?
+## What is Azure Arc and Azure Arc-enabled Kubernetes?
 
 Azure Arc simplifies governance and management of complex environments that extend across data centers, multiple clouds, and edge by delivering a consistent multi-cloud and on-premises management platform.
 
@@ -57,7 +57,7 @@ All VI enabled by Arc accounts are Azure Resource Manager (ARM) accounts. ARM op
 The below is a block diagram showing Azure Video Indexer running on Azure Arc. There are three types: 
 
 1. Store type A uses both vision and audio presets.
-1. Store type B uses only vision presets. It also has a custom model. For more information about using a custom model with Azure Video Indexer enabled by Arc, see [Bring Your Own AI model](../azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md). 
+1. Store type B uses only vision presets. It also has a custom model. For more information about using a custom model with Azure Video Indexer enabled by Arc, see [Bring Your Own AI model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md). 
 1. Store C uses only audio presets. 
 
 The extension is stored on each edge device and each device is associated with a single AI Video Indexer account that interfaces with Azure Arc and the cloud.
