@@ -2,8 +2,7 @@
 title: Sign up for Azure AI Video Indexer and upload your first video - Azure
 description: Learn how to sign up and upload your first video using the Azure AI Video Indexer website.
 ms.topic: quickstart
-ms.date: 08/24/2022
-ms.custom: mode-other
+ms.date: 02/14/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -86,6 +85,6 @@ For more details, see [Upload and index videos](upload-index-videos.md) and chec
 
 * To embed widgets, see [Embed visual widgets in your application](video-indexer-embed-widgets.md).
 * For the API integration, see [Use Azure AI Video Indexer REST API](video-indexer-use-apis.md).
-* Check out our [introduction lab](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/IntroToVideoIndexer.md).
+* Check out our [introduction lab](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/IntroToVideoIndexer.md).
 
    At the end of the workshop, you'll have a good understanding of the kind of information that can be extracted from video and audio content, you'll be more    prepared to identify opportunities related to content intelligence, pitch video AI on Azure, and demo several scenarios on Azure AI Video Indexer.
