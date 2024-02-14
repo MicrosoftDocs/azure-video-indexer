@@ -65,11 +65,11 @@ Connecting a classic account to be ARM-based triggers a 30 days of a transition 
 - Access token generated through API Management(classic way)
 - Access token generated through ARM
 
-The transition state moves all account management functionality to be managed by ARM and will be handled by [Azure Role Based Access Control (RBAC)][/azure/role-based-access-control/overview].
+The transition state moves all account management functionality to be managed by ARM and will be handled by [Azure Role Based Access Control (RBAC)](/azure/role-based-access-control/overview).
 
-The invite users feature in the Azure AI Video Indexer website gets disabled. The invited users on this account lose their access to the Azure AI Video Indexer account Media in the portal. However, this can be resolved by assigning the right role-assignment to these users through RBAC, see [How to assign RBAC][/azure/role-based-access-control/role-assignments-steps].
+The invite users feature in the Azure AI Video Indexer website gets disabled. The invited users on this account lose their access to the Azure AI Video Indexer account Media in the portal. However, this can be resolved by assigning the right role-assignment to these users through RBAC, see [How to assign RBAC](/azure/role-based-access-control/role-assignments-steps).
 
-Only the account owner, who performed the connect action, is automatically assigned as the owner on the connected account. When [Azure policies][/azure/governance/policy/overview] are enforced, they override the settings on the account.
+Only the account owner, who performed the connect action, is automatically assigned as the owner on the connected account. When [Azure policies](/azure/governance/policy/overview) are enforced, they override the settings on the account.
 
 If users aren't added through Azure RBAC to the account after 30 days, they'll lose access through API as well as the Azure AI Video Indexer website.
 
