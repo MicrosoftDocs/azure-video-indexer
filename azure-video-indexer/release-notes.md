@@ -183,7 +183,7 @@ We have optimized the memory usage of the observed people model, resulting in a 
 
 On January 01, 2023 we introduced the Advanced Audio and Video SKU for Advanced presets. This was done on order to report the use of each preset, Basic, Standard & Advanced, with their own distinct meter on the Azure Billing statement. This can also be seen on Azure Cost Analysis reports.
 
-Starting February 1st, we’re excited to announce a 40% price reduction on the Basic Audio Analysis, Audio Analysis and Video Analysis SKUs. We took into consideration feedback from our customers and market trends to make changes that will benefit them. By reducing prices and introducing a new Advanced SKU, we are providing competitive pricing and more options for customers to balance costs and features. Additionally, as we continue to improve and add more AI capabilities, customers will be able to take advantage of these cost savings when performing new or re-indexing operations.
+Starting February 1st, we’re excited to announce a 40% price reduction on the Basic Audio Analysis, Audio Analysis and Video Analysis SKUs. We took into consideration feedback from our customers and market trends to make changes that will benefit them. By reducing prices and introducing a new Advanced SKU, we're providing competitive pricing and more options for customers to balance costs and features. Additionally, as we continue to improve and add more AI capabilities, customers will be able to take advantage of these cost savings when performing new or reindexing operations.
 
 This change will be implemented automatically, and customers who already have Azure discounts will continue to receive them in addition to the new pricing.
 
@@ -248,7 +248,7 @@ For details, see [Slate detection](slate-detection-insight.md).
 
 ### New source languages support for STT, translation, and search
 
-Now supporting source languages for STT (speech-to-text), translation, and search in Ukraine and Vietnamese. It means transcription, translation, and search features are also supported for these languages in the [Azure AI Video Indexer](https://www.videoindexer.ai/) website, widgets and APIs.
+Now supporting source languages for STT (speech-to-text), translation, and search in Ukraine and Vietnamese. It means transcription, translation, and search features are also supported for these languages in the [Azure AI Video Indexer](https://www.videoindexer.ai/) website, widgets, and APIs.
 
 For more information, see [supported languages](language-support.md).
 
@@ -268,7 +268,7 @@ For more information, see [Examine word-level transcription information](edit-tr
 
 The new set of logs, described below, enables you to better monitor your indexing pipeline.
 
-Azure AI Video Indexer now supports Diagnostics settings for indexing events. You can now export logs monitoring upload, and re-indexing of media files through diagnostics settings to Azure Log Analytics, Storage, Event Hubs, or a third-party solution.
+Azure AI Video Indexer now supports Diagnostics settings for indexing events. You can now export logs monitoring upload, and reindexing of media files through diagnostics settings to Azure Log Analytics, Storage, Event Hubs, or a third-party solution.
 
 ### Expanded supported languages in LID and MLID through Azure AI Video Indexer API
 
@@ -312,7 +312,7 @@ You can search or filter the account list using the account name or region. Sele
 
 ### General availability of ARM-based accounts
 
-With an Azure Resource Management (ARM) based [paid (unlimited)](accounts-overview.md) accounts, you are able to use:
+With an Azure Resource Management (ARM) based [paid (unlimited)](accounts-overview.md) accounts, you're able to use:
 
 - [Azure role-based access control (RBAC)](/azure/role-based-access-control/overview).
 - Managed Identity to better secure the communication between your Azure Media Services and Azure AI Video Indexer account, Network Service Tags, and native integration with Azure Monitor to monitor your account (audit and indexing logs).
@@ -325,15 +325,15 @@ To create an ARM-based account, see [create an account](create-account-portal.md
 
 ### Update topic inferencing model
 
-Azure AI Video Indexer topic inferencing model was updated and now we extract more than 6.5 million topics (for example, covering topics such as Covid virus). To benefit from recent model updates you need to re-index your video files.
+Azure AI Video Indexer topic inferencing model was updated and now we extract more than 6.5 million topics (for example, covering topics such as Covid virus). To benefit from recent model updates you need to reindex your video files.
 
 ### Topic inferencing model is now available on Azure Government
 
-You can now leverage topic inferencing model in your Azure AI Video Indexer paid account on [Azure Government](/azure/azure-government/documentation-government-welcome) in Virginia and Arizona regions. With this release we completed the AI parity between Azure global and Azure Government. To benefit from the model updates you need to re-index your video files.
+You can now leverage topic inferencing model in your Azure AI Video Indexer paid account on [Azure Government](/azure/azure-government/documentation-government-welcome) in Virginia and Arizona regions. With this release we completed the AI parity between Azure global and Azure Government. To benefit from the model updates you need to reindex your video files.
 
 ### Session length is now 30 days in the Azure AI Video Indexer website
 
-The [Azure AI Video Indexer website](https://vi.microsoft.com) session length was extended to 30 days. You can preserve your session without having to re-login every 1 hour.
+The [Azure AI Video Indexer website](https://vi.microsoft.com) session length was extended to 30 days. You can preserve your session without having to log in again every 1 hour.
 
 ## July 2022
 
@@ -341,7 +341,7 @@ The [Azure AI Video Indexer website](https://vi.microsoft.com) session length wa
 
 The featured clothing insight enables more targeted ads placement.
 
-The insight provides information of key items worn by individuals within a video and the timestamp in which the clothing appears. This allows high-quality in-video contextual advertising, where relevant clothing ads are matched with the specific time within the video in which they are viewed.
+The insight provides information of key items worn by individuals within a video and the timestamp in which the clothing appears. This allows high-quality in-video contextual advertising, where relevant clothing ads are matched with the specific time within the video in which they're viewed.
 
 To view the featured clothing of an observed person, you have to index the video using Azure AI Video Indexer advanced video settings. For details on how featured clothing images are ranked and how to view this insight, see [featured clothing](observed-people-featured-clothing.md).
 
@@ -355,7 +355,7 @@ You can also change the primary managed identity using the **Identity** tab in t
 
 ### Limited access of celebrity recognition and face identification features
 
-As part of Microsoft's commitment to responsible AI, we are designing and releasing Azure AI Video Indexer – identification and celebrity recognition features. These features are designed to protect the rights of individuals and society and fostering transparent human-computer interaction. Thus, there is a limited access and use of Azure AI Video Indexer – identification and celebrity recognition features.
+As part of Microsoft's commitment to responsible AI, we're designing and releasing Azure AI Video Indexer – identification and celebrity recognition features. These features are designed to protect the rights of individuals and society and fostering transparent human-computer interaction. Thus, there's a limited access and use of Azure AI Video Indexer – identification and celebrity recognition features.
 
 Identification and celebrity recognition features require registration and are only available to Microsoft managed customers and partners.
 Customers who wish to use this feature are required to apply and submit an [intake form](https://aka.ms/facerecognition). For more information, read [Azure AI Video Indexer limited access](limited-access-features.md).
@@ -390,13 +390,13 @@ You can now enable or disable the celebrity recognition model on the account lev
 
 ### Azure AI Video Indexer repository name
 
-As of May 1st, our new updated repository of Azure AI Video Indexer widget was renamed. Use https://www.npmjs.com/package/@azure/video-indexer-widgets instead
+As of May 1st, our new updated repository of Azure AI Video Indexer widget was renamed. Use https://www.npmjs.com/package/@azure/video-indexer-widgets instead.
 
 ## April 2022
 
 ### Renamed **Azure Video Analyzer for Media** back to **Azure AI Video Indexer**
 
-As of today, Azure Video analyzer for Media product name is **Azure AI Video Indexer** and all product related assets (web portal, marketing materials). It is a backward compatible change that has no implication on APIs and links. **Azure AI Video Indexer**'s new logo:
+As of today, Azure Video analyzer for Media product name is **Azure AI Video Indexer** and all product related assets (web portal, marketing materials). It's a backward compatible change that has no implication on APIs and links. **Azure AI Video Indexer**'s new logo:
 
 :::image type="content" source="./media/video-indexer.svg" alt-text="New logo":::
 
@@ -446,7 +446,7 @@ It means transcription, translation, and search features are also supported for 
 
 ### The projects feature is now GA
 
-The projects feature is now GA and ready for productive use. There is no pricing impact related to the "Preview to GA" transition. See [Add video clips to your projects](use-editor-create-project.md).
+The projects feature is now GA and ready for productive use. There's no pricing impact related to the "Preview to GA" transition. See [Add video clips to your projects](use-editor-create-project.md).
 
 ### New source languages support for STT, translation, and search on API level
 
@@ -471,7 +471,7 @@ For more information go to [create an Azure AI Video Indexer account](https://te
 
 ### People’s clothing detection
 
-When indexing a video with Azure AI Video Indexer advanced video settings, you can view the new people’s clothing detection capability. If there are people detected in your media file, you can now view the clothing type they are wearing through the media player.
+When indexing a video with Azure AI Video Indexer advanced video settings, you can view the new people’s clothing detection capability. If there are people detected in your media file, you can now view the clothing type they're wearing through the media player.
 
 ### Face bounding box (preview)
 
@@ -491,7 +491,7 @@ The new AVAM package enables you to easily embed and communicate between our wi
 
 ### Re-index video or audio files
 
-There is now an option to re-index video or audio files that have failed during the indexing process.
+There's now an option to reindex video or audio files that have failed during the indexing process.
 
 ### Improve accessibility support
 
@@ -523,7 +523,7 @@ These languages are available in both API and Azure AI Video Indexer website. Se
 
 ### New theme for Azure AI Video Indexer
 
-New theme is available: 'Azure' along with the 'light' and 'dark themes. To select a theme, click on the gear icon in the top-right corner of the website, find themes under **User settings**.
+New theme is available: 'Azure' along with the 'light' and 'dark themes. To select a theme, select on the gear icon in the top-right corner of the website, find themes under **User settings**.
 
 ### New open-source code you can leverage
 
@@ -577,7 +577,7 @@ The newly added bundle is available when indexing or re-indexing your file by ch
 
 ### New developer portal
 
-Azure AI Video Indexer has a new [developer portal](https://api-portal.videoindexer.ai/), try out the new Azure AI Video Indexer APIs and find all the relevant resources in one place: [GitHub repository](https://github.com/Azure-Samples/media-services-video-indexer), [Stack overflow](https://stackoverflow.com/questions/tagged/video-indexer), [Azure AI Video Indexer tech community](https://techcommunity.microsoft.com/t5/azure-media-services/bg-p/AzureMediaServices/label-name/Video%20Indexer) with relevant blog posts, [Azure AI Video Indexer FAQs](faq.yml), [User Voice](https://feedback.azure.com/d365community/forum/09041fae-0b25-ec11-b6e6-000d3a4f0858) to provide your feedback and suggest features, and  ['CodePen' link](https://codepen.io/videoindexer) with widgets code samples.
+Azure AI Video Indexer has a new [developer portal](https://api-portal.videoindexer.ai/). Try out the new Azure AI Video Indexer APIs and find all the relevant resources in one place: [GitHub repository](https://github.com/Azure-Samples/media-services-video-indexer), [Stack overflow](https://stackoverflow.com/questions/tagged/video-indexer), [Azure AI Video Indexer tech community](https://techcommunity.microsoft.com/t5/azure-media-services/bg-p/AzureMediaServices/label-name/Video%20Indexer) with relevant blog posts, [Azure AI Video Indexer FAQs](faq.yml), [User Voice](https://feedback.azure.com/d365community/forum/09041fae-0b25-ec11-b6e6-000d3a4f0858) to provide your feedback and suggest features, and  ['CodePen' link](https://codepen.io/videoindexer) with widgets code samples.
 
 ### Advanced customization capabilities for insight widget
 
@@ -585,7 +585,7 @@ SDK is now available to embed Azure AI Video Indexer's insights widget in your o
 
 ### Azure AI Video Indexer deployed in the US North Central, US West and Canada Central
 
-You can now create an Azure AI Video Indexer paid account in the US North Central, US West and Canada Central regions
+You can now create an Azure AI Video Indexer paid account in the US North Central, US West and Canada Central regions.
 
 ### New source languages support for speech-to-text (STT), translation and search
 
@@ -652,12 +652,12 @@ You can now create an Azure AI Video Indexer paid account in the Switzerland Wes
 
 Starting March 1st 2021, you no longer will be able to sign up and sign in to the [Azure AI Video Indexer website](https://www.videoindexer.ai/) [developer portal](video-indexer-use-apis.md) using Facebook or LinkedIn.
 
-You will be able to sign up and sign in using one of these providers: Entra ID, Microsoft, and Google.
+You'll be able to sign up and sign in using one of these providers: Entra ID, Microsoft, and Google.
 
 > [!NOTE]
 > The Azure AI Video Indexer accounts connected to LinkedIn and Facebook won't be accessible after March 1st 2021.
 >
-> You should [invite](restricted-viewer-role.md#share-the-account) an Entra ID, Microsoft, or Google email you own to the Azure AI Video Indexer account so you will still have access. You can add an additional owner of supported providers, as described in [invite](restricted-viewer-role.md#share-the-account). <br/>
+> You should [invite](restricted-viewer-role.md#share-the-account) an Entra ID, Microsoft, or Google email your own to the Azure AI Video Indexer account so you will still have access. You can add an additional owner of supported providers, as described in [invite](restricted-viewer-role.md#share-the-account). <br/>
 > Alternatively, you can create a paid account and migrate the data.
 
 ## August 2020
@@ -676,7 +676,7 @@ As part of WCAG (Web Content Accessibility guidelines), the Azure AI Video Index
 
 Multi-language identification is moved from preview to GA and ready for productive use.
 
-There is no pricing impact related to the "Preview to GA" transition.
+There's no pricing impact related to the "Preview to GA" transition.
 
 ### Azure AI Video Indexer website improvements
 
@@ -743,17 +743,17 @@ A new player skin launched with updated design.
 
     The Account object has a `Url` field pointing to the location of the [Azure AI Video Indexer website](https://www.videoindexer.ai/).
 For paid accounts the `Url` field is currently pointing to an internal URL instead of the public website.
-In the coming weeks we will change it and return the [Azure AI Video Indexer website](https://www.videoindexer.ai/) URL for all accounts (trial and paid).
+In the coming weeks we'll change it and return the [Azure AI Video Indexer website](https://www.videoindexer.ai/) URL for all accounts (trial and paid).
 
     don't use the internal URLs, you should be using the [Azure AI Video Indexer public APIs](https://api-portal.videoindexer.ai/).
-* If you are embedding Azure AI Video Indexer URLs in your applications and the URLs aren't pointing to the [Azure AI Video Indexer website](https://www.videoindexer.ai/) or the Azure AI Video Indexer API endpoint (`https://api.videoindexer.ai`) but rather to a regional endpoint (for example, `https://wus2.videoindexer.ai`), regenerate the URLs.
+* If you're embedding Azure AI Video Indexer URLs in your applications and the URLs aren't pointing to the [Azure AI Video Indexer website](https://www.videoindexer.ai/) or the Azure AI Video Indexer API endpoint (`https://api.videoindexer.ai`) but rather to a regional endpoint (for example, `https://wus2.videoindexer.ai`), regenerate the URLs.
 
    You can do it by either:
 
     * Replacing the URL with a URL pointing to the Azure AI Video Indexer widget APIs (for example, the [insights widget](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Insights-Widget))
     * Using the Azure AI Video Indexer website to generate a new embedded URL:
 
-         Press **Play** to get to your video's page -> click the **&lt;/&gt; Embed** button -> copy the URL into your application:
+         Press **Play** to get to your video's page -> select the **&lt;/&gt; Embed** button -> copy the URL into your application:
 
     The regional URLs aren't supported and will be blocked in the coming weeks.
 
@@ -810,7 +810,7 @@ When streaming endpoint is disabled, Azure AI Video Indexer will show a descript
 
 ### Error handling improvement
 
-Status code 409 will now be returned from [Re-Index Video](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Re-Index-Video) and [Update Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Video-Index) APIs in case a video is actively indexed, to prevent overriding the current re-index changes by accident.
+Status code 409 will now be returned from [Re-Index Video](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Re-Index-Video) and [Update Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Video-Index) APIs in case a video is actively indexed, to prevent overriding the current reindex changes by accident.
 
 ## November 2019
 
