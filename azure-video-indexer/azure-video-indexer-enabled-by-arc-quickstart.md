@@ -258,4 +258,4 @@ az k8s-extension update --name videoindexer \
 ---
 
 ## Sample
-[Sample script to deploy Arc enabled AKS cluster with Video Indexer extension](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/AVIenabledbyArc/vi-edge-deployment-script.sh)
+[Sample script to deploy Arc enabled AKS cluster with Video Indexer extension](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks)
