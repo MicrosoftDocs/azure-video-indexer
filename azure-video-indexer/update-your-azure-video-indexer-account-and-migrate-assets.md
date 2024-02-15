@@ -3,7 +3,7 @@ title: Update your Azure Video Indexer account and migrate assets
 description: Azure Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, AVI is removing the dependency on AMS. As described in the update and migration guide azure-video-indexer-retirement-guide.md, your Azure Video Indexer account needs to be updated. During the update, you'll have the opportunity to opt in to having the AVI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
 ms.topic: conceptual
 ms.service: azure-video-indexer
-ms.date: 01/22/2024
+ms.date: 02/15/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -22,6 +22,14 @@ You can opt in to AVI migration using either the Azure portal or the API during 
 ## Update an existing ARM account
 
 Update an existing Azure Resource Manager (ARM) account.
+
+### Permissions
+
+You must have the following permissions to update an existing ARM account:
+
+- A **Contributor** role on the Azure Video Indexer account
+- An **Owner** role or both **Contributor** and **User Access Administrator** roles on the linked storage account
+- Read permission on the Azure Media Services AMS resource
 
 ### [Update existing account in Azure portal](#tab/updateexistingportal)
 
@@ -82,6 +90,14 @@ Before the end of the 30 days of transition state, you can remove access from us
 
 The following steps walk you through creating a new ARM based account.
 
+### Permissions
+
+You must have the following permissions to connect a classic account to an ARM-based account:
+
+- **Owner** permission on the classic account
+- **Contributor** permission on the subscription
+- **Owner** or both **Contributor** and **User Access Administrator** roles on the linked storage account.
+
 ### [Connect a classic account in the Azure portal](#tab/connectclassicportal)
 
 1.  In the Azure portal, select **+ Create a resource.**
@@ -128,6 +144,10 @@ The following steps walk you through creating a new ARM based account.
 ## Opt in to AVI migration of an already updated account
 
 To opt in to AVI migration of an already updated account, you can use either the Azure portal or the API.
+
+### Permissions
+
+You must have a **Contributor** role on the Azure Video Indexer account.
 
 ### [Opt in in the Azure portal](#tab/optinportal)
 
