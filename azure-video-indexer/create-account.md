@@ -37,8 +37,7 @@ Classic accounts will be retired on June 30th, 2024. If you currently have a cla
 - An Azure subscription
 - At the subscription level, either the **Owner** role, or both **Contributor** and **User Access Administrator** roles
 
-> [!TIP]
-> To determine what roles have currently been assigned, see [View the access a user has to Azure resources](/azure/role-based-access-control/check-access).
+To determine what roles have currently been assigned, see [View the access a user has to Azure resources](/azure/role-based-access-control/check-access).
 
 ### [Azure portal](#tab/portal)
 
