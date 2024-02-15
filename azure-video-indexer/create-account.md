@@ -2,7 +2,7 @@
 title: Create an Azure AI Video Indexer account
 description: This article explains how to create an account for Azure AI Video Indexer.
 ms.topic: how-to
-ms.date: 02/05/2024
+ms.date: 02/15/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -34,8 +34,10 @@ Classic accounts will be retired on June 30th, 2024. If you currently have a cla
 
 ### Prerequisites
 
-- An Azure subscription.
-* An **Owner** role, or both **Contributor** and **User Access Administrator** roles. For more information, see [View the access a user has to Azure resources](/azure/role-based-access-control/check-access).
+- An Azure subscription
+- At the subscription level, either the **Owner** role, or both **Contributor** and **User Access Administrator** roles
+
+To determine what roles have currently been assigned, see [View the access a user has to Azure resources](/azure/role-based-access-control/check-access).
 
 ### [Azure portal](#tab/portal)
 
@@ -63,7 +65,7 @@ Government accounts have special requirements and limitations.
 
 - Only paid accounts are available on Azure Government.
 - No manual content moderation available in Azure Government. In the public cloud, when content is deemed offensive based on a content moderation, the customer can ask for a human to look at that content and potentially revert that decision.
-- For Azure Government, we don't present a Bing description of celebrities and named entities identified. It's a UI capability only.
+- For Azure Government, a Bing description of celebrities and named entities identified isn't presented. It's a UI capability only.
 
 ### Prerequisites for connecting to Azure Government
 
