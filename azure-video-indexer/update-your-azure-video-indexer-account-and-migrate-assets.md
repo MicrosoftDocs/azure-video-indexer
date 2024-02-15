@@ -29,7 +29,7 @@ You must have the following permissions to update an existing ARM account:
 
 - A **Contributor** role on the Azure Video Indexer account
 - An **Owner** role or both **Contributor** and **User Access Administrator** roles on the linked storage account
-- Read permission on the Azure Media Services AMS resource
+- Read permission on the AMS resource
 
 ### [Update existing account in Azure portal](#tab/updateexistingportal)
 
@@ -96,7 +96,7 @@ You must have the following permissions to connect a classic account to an ARM-b
 
 - **Owner** permission on the classic account
 - **Contributor** permission on the subscription
-- **Owner** or both **Contributor** and **User Access Administrator** roles on the linked storage account.
+- **Owner** or both **Contributor** and **User Access Administrator** roles on the linked storage account
 
 ### [Connect a classic account in the Azure portal](#tab/connectclassicportal)
 

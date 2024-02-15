@@ -34,8 +34,10 @@ Classic accounts will be retired on June 30th, 2024. If you currently have a cla
 
 ### Prerequisites
 
-- An Azure subscription.
-* At the subscription level, either the **Owner** role, or both **Contributor** and **User Access Administrator** roles. For more information, see [View the access a user has to Azure resources](/azure/role-based-access-control/check-access).
+- An Azure subscription
+- At the subscription level, either the **Owner** role, or both **Contributor** and **User Access Administrator** roles
+
+For more information, see [View the access a user has to Azure resources](/azure/role-based-access-control/check-access).
 
 ### [Azure portal](#tab/portal)
 
