@@ -35,7 +35,7 @@ The AMS asset ID will no longer be used for uploading a video. A video URL or lo
 - **API**
     - You must update account creation and requests to use the AVI API version 2023-01-01.
     - Requests must be submitted with the [Azure Storage Account property](https://github.com/Azure/azure-rest-api-specs/blob/main/specification/vi/resource-manager/Microsoft.VideoIndexer/stable/2024-01-01/vi.json) rather than the AMS account.
-- **Portal** – During the AVI account creation process, the AVI account will be associated with the Azure Storage account.
+- **Portal** During the AVI account creation process, the AVI account will be associated with the Azure Storage account.
 
 ### Storage account
 
