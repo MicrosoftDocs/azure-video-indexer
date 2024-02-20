@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Customize a speech model in the website
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 [!INCLUDE [speech model](./includes/speech-model.md)]
  

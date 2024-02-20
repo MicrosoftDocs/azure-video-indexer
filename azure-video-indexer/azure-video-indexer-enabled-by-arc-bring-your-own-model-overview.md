@@ -45,7 +45,7 @@ Before you can start using the BYO model feature with Azure AI Video Indexer, yo
 1. Create custom code that:
     1. Listens for Event Hub events. 
     1. Extracts the `video id` from the events. 
-    1. Retrieves the relevant assets by calling AVI Apis. In this scenario, request *Get Video Index* and *Get frames SAS URLs*.
+    1. Retrieves the relevant assets by calling VI Apis. In this scenario, request *Get Video Index* and *Get frames SAS URLs*.
     1. Sends the assets to the external AI model. 
     1. Creates a JSON object based on the insights retrieved from the custom AI model.  
     1. Requests *Patch Update Video Index*.

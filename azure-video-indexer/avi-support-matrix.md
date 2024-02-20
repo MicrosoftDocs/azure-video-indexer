@@ -22,7 +22,7 @@ The file duration limit is 4 hours.
 
 ## Index request limit
 
-When uploading and indexing through the AVI website, up to 10 videos can be indexed in a single request. When submitting requests through the API, there is an API request limit of 10 requests per second and up to 120 requests per minute.
+When uploading and indexing through the VI website, up to 10 videos can be indexed in a single request. When submitting requests through the API, there is an API request limit of 10 requests per second and up to 120 requests per minute.
 
 ## Languages
 
@@ -40,7 +40,7 @@ The number of source files in a Project is limited to 10 when using the website 
 
 ## Custom person models
 
-Each Person model supports up to 1 million people and each AVI account can have up to 50 Person models.
+Each Person model supports up to 1 million people and each VI account can have up to 50 Person models.
 
 ## Logo detection
 

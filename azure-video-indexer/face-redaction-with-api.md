@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Redact faces by using Azure AI Video Indexer API
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 You can use Azure AI Video Indexer to detect and identify faces in video. To modify your video to blur (redact) faces of specific individuals, you can use API.
 

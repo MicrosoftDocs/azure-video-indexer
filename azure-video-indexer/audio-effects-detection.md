@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Enable audio effects detection (preview)
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 **Audio effects detection** is one of Azure AI Video Indexer AI capabilities that detects various acoustics events and classifies them into different acoustic categories (such as dog barking, crowd reactions, laugher and more).
 

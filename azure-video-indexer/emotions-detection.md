@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Text-based emotion detection
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 Emotions detection is an Azure AI Video Indexer AI feature that automatically detects emotions in video's transcript lines. Each sentence can either be detected as: 
 

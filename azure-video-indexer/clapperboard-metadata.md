@@ -52,7 +52,7 @@ In the following example, the board contains the following fields:
 
 #### View the insight
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 To see the instances on the website, select **Insights** and scroll to **Clapper boards**. You can hover over each clapper board, or unfold **Show/Hide clapper board info** and see the metadata:
 

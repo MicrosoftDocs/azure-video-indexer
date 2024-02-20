@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Customize a speech model with the API
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 [!INCLUDE [speech model](./includes/speech-model.md)]
 
@@ -63,7 +63,7 @@ The response provides metadata on the newly created dataset following the format
         "error": null 
     }, 
     "displayName": "Contoso plain text", 
-    "description": "AVI dataset", 
+    "description": "VI dataset", 
     "locale": "en-US", 
     "kind": "Language", 
     "status": "Waiting", 
@@ -133,7 +133,7 @@ The response provides metadata on the specified dataset following the format of 
         "error": null 
     }, 
     "displayName": "Contoso plain text", 
-    "description": "AVI dataset", 
+    "description": "VI dataset", 
     "locale": "en-US", 
     "kind": "Language", 
     "status": "Complete", 
