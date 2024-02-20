@@ -3,7 +3,7 @@ title: Try Azure AI Video Indexer enabled by Arc
 description: This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 ms.topic: quickstart
 ms.service: azure-video-indexer
-ms.date: 1/2/2024
+ms.date: 02/20/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -16,13 +16,13 @@ This article walks you through the steps required to enable Video Indexer as an 
 
 ## Example deployment
 
-The below is a block diagram showing Azure AI Video Indexer running on Azure Arc. There are three types: 
+Here is a block diagram showing Azure AI Video Indexer running on Azure Arc. There are three types: 
 
 1. Store type A uses both vision and audio presets.
 1. Store type B uses only vision presets. It also has a custom model. For more information about using a custom model with Azure AI Video Indexer enabled by Arc, see [Bring Your Own AI model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md). 
 1. Store C uses only audio presets. 
 
-The extension is stored on each edge device and each device is associated with a single AI Video Indexer account which interfaces with Azure Arc and the cloud.
+The extension is stored on each edge device and each device is associated with a single AI Video Indexer account that interfaces with Azure Arc and the cloud.
 
 :::image type="content" source="media/common/vi-arc-diagram-v2.svg" lightbox="media/common/avi-arc-diagram.svg" alt-text="VI Arc block diagram":::
 
@@ -31,10 +31,10 @@ The extension is stored on each edge device and each device is associated with a
 > [!IMPORTANT]
 > To successfully deploy the Azure AI Video Indexer extension, it is **mandatory** that your Azure subscription id is approved in advance. You must first sign up using [this form](https://aka.ms/vi-register).
 
-- Create an Azure subscription with permissions to create Azure resources.
+- Create an Azure subscription with permissions for creating Azure resources.
 - Create an Azure AI Video Indexer Account. Use the [Create Video Indexer account](create-account-portal.md) tutorial.
 
-To use the Video Indexer extension, you need to have an externally facing endpoint, which can be either a DNS name or IP. The endpoint should be set as a secure transfer protocol (`https:\\`) and is used as the extension API endpoint, formatted as `https:\\{endpointUri}/swagger/index.html`. It is also used by the Video Indexer web portal to communicate with the extension. It is recommended that you use an ingress control to manage the endpoint. 
+To use the Video Indexer extension, you need to have an externally facing endpoint, which can be either a DNS name or IP. The endpoint should be set as a secure transfer protocol (`https:\\`) and is used as the extension API endpoint, formatted as `https:\\{endpointUri}/swagger/index.html`. It's also used by the Video Indexer web portal to communicate with the extension. It's recommended that you use an ingress control to manage the endpoint. 
 
 > [!NOTE]
 > If the endpoint is not publicly accessible, you will not be able to perform actions on the extension from the web portal.
@@ -93,7 +93,7 @@ During the deployment, the script asks for environment specific values. Have the
 | What is the name of the Video Indexer resource group during deployment? | string | The Resource Group Name of your Video Indexer Account |
 | What is the name of the Video Indexer account during deployment? | string | Your Video Indexer Account name | 
 
-## [Deploy in Azure Portal](#tab/portal)
+## [Deploy in Azure portal](#tab/portal)
 
 1. In the Azure portal, navigate to your Azure Arc-connected cluster.
 1. From the menu, select **Extensions** > **+ Add** > **Azure AI Video Indexer Arc Extension**.
@@ -116,7 +116,7 @@ During the deployment, the script asks for environment specific values. Have the
 Follow these steps to deploy the Video Indexer Arc Extension to your Arc K8S Enabled cluster. Before you get started here are some things to keep in mind:
 
 - **Storage class** - Video Indexer extension requires that a storage volume must be available on the Kubernetes cluster. The storage class needs to support `ReadWriteMany`. It's important to note that the indexing process is IO intensive, so the IOPS (input/output operations per second) of the storage volume will have a significant impact on the duration of the process.
-- **Managed AI resources** - Some Azure AI resources (Translator, Transcription and OCR) will be created on the Microsoft tenant. These resources are for your subscription only and are under a pay-as-you-go model. If you already have an AI Video Indexer Arc-enabled resource in your subscription, it will be associated with existing Azure AI resources.
+- **Managed AI resources** - Some Azure AI resources (Translator, Transcription, and OCR) will be created on the Microsoft tenant. These resources are for your subscription only and are under a pay-as-you-go model. If you already have an AI Video Indexer Arc-enabled resource in your subscription, it will be associated with existing Azure AI resources.
 
 ### Step 1 - Create Azure Arc Kubernetes Cluster and connect it to your cluster
 
@@ -170,7 +170,7 @@ az rest --method post --verbose --uri https://management.azure.com/subscriptions
 
 When the response to a request is "accepted" (202), it means that the resources are currently being created. To track the provisioning state of these resources, you can poll the location header that was returned in the response from the previous call. Typically, this process requires waiting for approximately one minute.
 
-A response of type "conflict" (409) means the resources already exist for the subscription, use the get command to retrive the keys.  
+A response of type "conflict" (409) means the resources already exist for the subscription, use the get command to retrieve the keys.  
 
 ### Get AI resources keys
 
@@ -212,11 +212,11 @@ The extension default settings are set to handle the common workloads, for speci
 | translate.resource.requests.mem | 16Gi | The requested memory capacity for the translate pod |
 | translate.resource.limits.cpu | -- | The limits number of cores for the translate pod. must be > translate.resource.requests.cpu  |
 | translate.resource.limits.mem | -- | The limits memory capacity for the translate pod. must be > translate.resource.requests.mem  |
-| videoIndexer.webapi.resources.requests.cpu | 0.5 | The request number of cores for the web api pod  |
-| videoIndexer.webapi.resources.requests.mem | 4Gi | The request memory capacity for the web api pod  |
-| videoIndexer.webapi.resources.limits.cpu | 1 | The limits number of cores for the web api pod  |
-| videoIndexer.webapi.resources.limits.mem | 6Gi | The limits memory capacity for the web api pod  |
-| videoIndexer.webapi.resources.limits.mem | 6Gi | The limits memory capacity for the web api pod  |
+| videoIndexer.webapi.resources.requests.cpu | 0.5 | The request number of cores for the web API pod  |
+| videoIndexer.webapi.resources.requests.mem | 4Gi | The request memory capacity for the web API pod  |
+| videoIndexer.webapi.resources.limits.cpu | 1 | The limits number of cores for the web API pod  |
+| videoIndexer.webapi.resources.limits.mem | 6Gi | The limits memory capacity for the web API pod  |
+| videoIndexer.webapi.resources.limits.mem | 6Gi | The limits memory capacity for the web API pod  |
 | storage.storageClass | "" | The storage class to be used |
 | storage.useExternalPvc | false | determines whether an external PVC is used. if true, the VideoIndexer PVC isn't installed |
 

@@ -3,7 +3,7 @@ title: Azure AI Video Indexer Bring Your Own AI model (Preview) overview
 description: This article is an overview of Azure AI Video Indexer enabled by Arc bring your own model.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 1/21/2024
+ms.date: 02/20/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -20,10 +20,10 @@ This capability is flexible enough to accommodate all forms and types of insight
 
 The feature is available for both the cloud and edge use cases.
 
-DISCLAIMER: Microsoft’s [Code of conduct for Azure OpenAI Service](/legal/cognitive-services/openai/code-of-conduct?context=%2Fazure%2Fai-services%2Fopenai%2Fcontext%2Fcontext) applies to your use of the Bring Your Own Model feature, which includes Microsoft’s right to discontinue your access and use of this feature for non-compliance.
+DISCLAIMER: Microsoft’s [Code of conduct for Azure OpenAI Service](/legal/cognitive-services/openai/code-of-conduct?context=%2Fazure%2Fai-services%2Fopenai%2Fcontext%2Fcontext) applies to your use of the Bring Your Own Model feature, which includes Microsoft’s right to discontinue your access and use of this feature for noncompliance.
 
 ## Pricing
-With the Video Indexer BYO model, users can add custom insights to video insight objects without incurring any additional costs beyond the listed cost of the indexing process. However, any costs related to the external environment and model should not be considered part of Video Indexer's billing price. We strongly recommend reviewing our best practices section to optimize the external logic and reduce costs.
+With the Video Indexer BYO model, users can add custom insights to video insight objects without incurring any additional costs beyond the listed cost of the indexing process. However, any costs related to the external environment and model shouldn't be considered part of Video Indexer's billing price. We strongly recommend reviewing our best practices section to optimize the external logic and reduce costs.
 
 ### General workflow
 
@@ -43,9 +43,9 @@ Before you can start using the BYO model feature with Azure AI Video Indexer, yo
 
 1. Train or bring an external AI model that receives video assets and return an insight.   
 1. Create custom code that:
-    1. Listens for Event Hub events. 
+    1. Listens for Event Hubss events. 
     1. Extracts the `video id` from the events. 
-    1. Retrieves the relevant assets by calling VI Apis. In this scenario, request *Get Video Index* and *Get frames SAS URLs*.
+    1. Retrieves the relevant assets by calling VI APIs. In this scenario, request *Get Video Index* and *Get frames SAS URLs*.
     1. Sends the assets to the external AI model. 
     1. Creates a JSON object based on the insights retrieved from the custom AI model.  
     1. Requests *Patch Update Video Index*.
@@ -61,8 +61,8 @@ The values for populating the custom data are as follows:
 | **displayType** | Defines the type of UI representation for this specific insight group. **Default value**: Capsules<br/>**Possible types**:<br/>*Capsule* – One level text only <br/>*CapsuleAndTags* -Two levels text only more will be added in the future.  | false |
 | **results** | Array of objects that represent the insights detected by the external AI model | true |
 | **results.id** | User provided ID of the result object, should be unique within the results scope | true |
-| **results.type** | This field represents the type of insight that was categorized by the external AI model.  It is used to represent a general insight category, which means that there could be multiple insights of this type identified in a specific frame. Examples of insight types include: "basketball", "crowd clapping", "white shirt". | true |
-| **results.subType** | This field represents the type of insight that was categorized by the external AI model. It is used to represent a specific insight category, which means that there could be only a single insight of this type identified in a specific frame. Examples of insight types include: "basketball \#23", "John clapping", "Dana’s white shirt". | false |
+| **results.type** | This field represents the type of insight that was categorized by the external AI model.  It's used to represent a general insight category, which means that there could be multiple insights of this type identified in a specific frame. Examples of insight types include: "basketball", "crowd clapping", "white shirt". | true |
+| **results.subType** | This field represents the type of insight that was categorized by the external AI model. It's used to represent a specific insight category, which means that there could be only a single insight of this type identified in a specific frame. Examples of insight types include: "basketball \#23", "John clapping", "Dana’s white shirt". | false |
 | **results.metaData** | More data on the insight | false |
 | **results.instances** | Array that represents the time windows the insight was detected in. | true |
 | **results.instances.confidence** | Set with the confidence score returned from the external model | false |
@@ -73,7 +73,7 @@ The values for populating the custom data are as follows:
  
 ## Framerate
 
-Azure AI Video Indexer supports 1 FPS for the Basic/Standard video level and 4 FPS for the advanced level. Higher frame rates aren't supported. You can optimize indexing by:
+Azure AI Video Indexer supports one FPS for the Basic/Standard video level and four FPS for the advanced level. Higher frame rates aren't supported. You can optimize indexing by:
 
 - Processing only specific segments that are of interest such as frames that include a detected sound, object or person, or 
 - sample a lower FPS, for example,  every 5 seconds. 
