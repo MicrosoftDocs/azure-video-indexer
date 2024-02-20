@@ -11,7 +11,7 @@ ms.service: azure-video-indexer
 
 # Customize a Person model with the Azure AI Video Indexer API
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 [!INCLUDE [Gate notice](./includes/face-limited-access.md)]
 

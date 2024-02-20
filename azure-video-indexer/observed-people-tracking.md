@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Track observed people in a video
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 Azure AI Video Indexer detects observed people in videos and provides information such as the location of the person in the video frame and the exact timestamp (start, end) when a person appears. The API returns the bounding box coordinates (in pixels) for each person instance detected, including detection confidence.  
  

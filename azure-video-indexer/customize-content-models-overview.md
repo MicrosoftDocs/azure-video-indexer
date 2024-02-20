@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Customizing content models in Azure AI Video Indexer
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 [!INCLUDE [Gate notice](./includes/face-limited-access.md)]
 

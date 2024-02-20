@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # View Azure AI Video Indexer insights
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 This article shows you how to view the Azure AI Video Indexer insights of a video.
 

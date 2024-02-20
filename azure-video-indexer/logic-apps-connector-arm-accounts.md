@@ -1,6 +1,6 @@
 ---
-title: Logic Apps connector with ARM-based AVI accounts
-description: This article shows how to unlock new experiences and monetization opportunities Azure AI Video Indexer connectors with Logic App and Power Automate with AVI ARM accounts.
+title: Logic Apps connector with ARM-based VI accounts
+description: This article shows how to unlock new experiences and monetization opportunities Azure AI Video Indexer connectors with Logic App and Power Automate with VI ARM accounts.
 ms.topic: how-to
 ms.date: 11/16/2022
 ms.author: Itnorman
@@ -8,11 +8,11 @@ author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-# Logic Apps connector with ARM-based AVI accounts
+# Logic Apps connector with ARM-based VI accounts
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-Azure AI Video Indexer (AVI) [REST API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) supports both server-to-server and client-to-server communication. The API enables you to integrate video and audio insights into your application logic.
+Azure AI Video Indexer (VI) [REST API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) supports both server-to-server and client-to-server communication. The API enables you to integrate video and audio insights into your application logic.
 
 > [!TIP]
 > For the latest `api-version`, chose the latest stable version in [our REST documentation](/rest/api/videoindexer/stable/generate).
@@ -22,11 +22,11 @@ To make the integration easier, we support [Logic Apps](https://azure.microsof
 You can use the connectors to set up custom workflows to effectively index and extract insights from a large amount of video and audio files, without writing a single line of code. Furthermore, using the connectors for the integration gives you better visibility on the health of your workflow and an easy way to debug it.
 
 > [!TIP]
-> If you are using a classic AVI account, see [Logic Apps connector with classic-based AVI accounts](logic-apps-connector-tutorial.md).
+> If you are using a classic VI account, see [Logic Apps connector with classic-based VI accounts](logic-apps-connector-tutorial.md).
 
 ## Get started with the Azure AI Video Indexer connectors
 
-To help you get started quickly with the Azure AI Video Indexer connectors, the example in this article creates Logic App flows. The Logic App and Power Automate capabilities and their editors are almost identical, thus the diagrams and explanations are applicable to both. The example in this article is based on the ARM AVI account. If you're working with a classic account, see [Logic App connectors with classic-based AVI accounts](logic-apps-connector-tutorial.md).
+To help you get started quickly with the Azure AI Video Indexer connectors, the example in this article creates Logic App flows. The Logic App and Power Automate capabilities and their editors are almost identical, thus the diagrams and explanations are applicable to both. The example in this article is based on the ARM VI account. If you're working with a classic account, see [Logic App connectors with classic-based VI accounts](logic-apps-connector-tutorial.md).
 
 The "upload and index your video automatically" scenario covered in this article is composed of two different flows that work together. The "two flow" approach is used to support async upload and indexing of larger files effectively. 
 
@@ -168,7 +168,7 @@ The following image shows the first flow:
     1. Fill **Upload video and index** action parameters.
     
         > [!TIP]
-        > If the AVI Account ID cannot be found and isn't in the drop-down, use the custom value.
+        > If the VI Account ID cannot be found and isn't in the drop-down, use the custom value.
         
         |Key| Value|
         |----|----|

@@ -1,14 +1,14 @@
 ### YamlMime:FAQ
 metadata:
-  title: Frequently asked questions about Azure Video Indexer and AMS deprecation  - Azure
-  description: This article gives answers to frequently asked questions about Azure Video Indexer and AMS deprecation.
+  title: Frequently asked questions about Azure AI Video Indexer and AMS deprecation  - Azure
+  description: This article gives answers to frequently asked questions about Azure AI Video Indexer and AMS deprecation.
   services: azure-video-indexer
   author: IngridAtMicrosoft
   ms.topic: faq
   ms.date: 06/27/2023
   ms.author: inhenkel
-title: Azure Video Indexer and AMS deprecation frequently asked questions
-summary: This article answers frequently asked questions about Azure Video Indexer.
+title: Azure AI Video Indexer and AMS deprecation frequently asked questions
+summary: This article answers frequently asked questions about Azure AI Video Indexer.
 
 
 sections:
@@ -18,25 +18,25 @@ sections:
         answer: |
             Azure Media Services is being deprecated as a product. For more information, see [AMS deprecation announcement](https://aka.ms/ams-retirement).
           
-      - question:  Is Azure Video Indexer also being deprecated?
+      - question:  Is Azure AI Video Indexer also being deprecated?
         answer: |
-          No. While Azure Video Indexer currently relies on Azure Media Services for video encoding, Azure Video Indexer isn't being deprecated. 
+          No. While Azure AI Video Indexer currently relies on Azure Media Services for video encoding, Azure AI Video Indexer isn't being deprecated. 
 
       - question:  Will I be able to use Video Indexer after Media Services is deprecated?
         answer: |
-          Yes, you continue to be able to use Azure Video Indexer. 
+          Yes, you continue to be able to use Azure AI Video Indexer. 
 
       - question: What do I need to do before the deprecation?
         answer: |
-          We try to keep the impact of Azure Media Services deprecation to a minimum for Azure Video Indexer customers. We'll continue to inform you and post updates to our documentation when changes or actions are requires from you.  
+          We try to keep the impact of Azure Media Services deprecation to a minimum for Azure AI Video Indexer customers. We'll continue to inform you and post updates to our documentation when changes or actions are requires from you.  
 
       - question: Why do I still need to create a Media Services account even when it’s being deprecated?
         answer: |
-          While today you need to create an Azure Media Services account as part of Azure Video Indexer, we're working on removing this dependency before Azure Media Services is fully deprecated. 
+          While today you need to create an Azure Media Services account as part of Azure AI Video Indexer, we're working on removing this dependency before Azure Media Services is fully deprecated. 
 
-      - question: Will I see a change in features or behavior of Azure Video Indexer?
+      - question: Will I see a change in features or behavior of Azure AI Video Indexer?
         answer: |
-          Azure Video Indexer uses Azure Media Services for encoding and streaming. We'll replace these capabilities with “like for like” alternatives as much as possible. We'll continue to provide streaming capability for videos hosted through Video Indexer. 
+          Azure AI Video Indexer uses Azure Media Services for encoding and streaming. We'll replace these capabilities with “like for like” alternatives as much as possible. We'll continue to provide streaming capability for videos hosted through Video Indexer. 
 
       - question: Why should I move to Video Indexer ARM accounts?
         answer: |

@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Media transcription, translation and language identification
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 Azure AI Video Indexer transcription, translation and language identification automatically detects, transcribes, and translates the speech in media files into over 50 languages. 
 

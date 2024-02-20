@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Manage access to an Azure AI Video Indexer account
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 In this article, you'll learn how to manage access (authorization) to an Azure AI Video Indexer account.
 

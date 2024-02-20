@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Redact faces by using Azure AI Video Indexer API
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 You can use Azure AI Video Indexer to detect and identify faces in video. To modify your video to blur (redact) faces of specific individuals, you can use API.
 
@@ -32,7 +32,7 @@ Face service access is limited based on eligibility and usage criteria to suppor
 
 Face redaction in Video Indexer relies on the output of existing Video Indexer face detection results that we provide in our Video Standard and Advanced Analysis presets.
 
-To redact a video, you must first upload a video to Video Indexer and complete an analysis by using the **Standard** or **Advanced** video presets. You can do this by using the [Azure Video Indexer website](https://www.videoindexer.ai/media/library) or [API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video). You can then use face redaction API to reference this video by using the `videoId` value. We create a new video in which the indicated faces are redacted. Both the video analysis and face redaction are separate billable jobs. For more information, see our [pricing page](https://azure.microsoft.com/pricing/details/video-indexer/).
+To redact a video, you must first upload a video to Video Indexer and complete an analysis by using the **Standard** or **Advanced** video presets. You can do this by using the [Azure AI Video Indexer website](https://www.videoindexer.ai/media/library) or [API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video). You can then use face redaction API to reference this video by using the `videoId` value. We create a new video in which the indicated faces are redacted. Both the video analysis and face redaction are separate billable jobs. For more information, see our [pricing page](https://azure.microsoft.com/pricing/details/video-indexer/).
 
 ## Types of blurring
 

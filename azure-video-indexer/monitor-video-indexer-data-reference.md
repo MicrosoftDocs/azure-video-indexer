@@ -11,7 +11,7 @@ ms.service: azure-video-indexer
 
 # Monitor Azure AI Video Indexer data reference
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 See [Monitoring Azure AI Video Indexer](monitor-video-indexer.md) for details on collecting and analyzing monitoring data for Azure AI Video Indexer.
 

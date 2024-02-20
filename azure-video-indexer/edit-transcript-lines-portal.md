@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # View and update transcriptions
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 This article explains how to insert or remove a transcript line in the Azure AI Video Indexer website. It also shows how to view word-level information.
 

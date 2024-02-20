@@ -10,9 +10,9 @@ ms.service: azure-video-indexer
 
 # How to detect textual logo
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 > [!NOTE]
 > Textual logo detection (preview) creation process is currently available through API. The result can be viewed through the Azure AI Video Indexer [website](https://www.videoindexer.ai/). 

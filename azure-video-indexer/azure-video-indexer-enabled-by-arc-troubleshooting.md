@@ -8,7 +8,7 @@ ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
-# Azure Video Indexer enabled by Arc troubleshooting guide
+# Azure AI Video Indexer enabled by Arc troubleshooting guide
 
 Use this guide to troubleshoot issues with [!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)] ([!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)]).
 

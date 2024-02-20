@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Switch between multiple tenants
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 When working with multiple tenants/directories in the Azure environment user might need to switch between the different directories. 
 
@@ -55,11 +55,11 @@ This section shows how to get the domain name from the Azure portal. You can the
 
 If you want to see domains for all of your directories and switch between them, see [Switch and manage directories with the Azure portal](/azure/azure-portal/set-preferences#switch-and-manage-directories).
 
-### Sign in with the correct domain name on the AVI website
+### Sign in with the correct domain name on the VI website
 
 1. Go to the [Azure AI Video Indexer](https://www.videoindexer.ai/) website.
 1. Press **Sign out** after pressing the button in the top-right corner.
-1. On the AVI website, press **Sign in** and choose the Entra ID account.
+1. On the VI website, press **Sign in** and choose the Entra ID account.
 
     > [!div class="mx-imgBorder"]
     > ![Sign in with the AAD account.](./media/switch-directory/choose-account.png)
