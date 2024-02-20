@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Limited Access features of Azure AI Video Indexer
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 <!-- possible cross repo dependency, copied to local, see metadata -->
 [!INCLUDE [Gate notice](./includes/identity-gate-notice.md)]

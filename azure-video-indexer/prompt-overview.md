@@ -1,6 +1,6 @@
 ---
-title:  Azure Video Indexer with LLM prompts  
-description: Azure Video Indexer integrates with Large Language Models (LLMs). LLMs are natural language AI models that you can use to ask questions about video content and much more. Extract Azure Video Indexer’s insights into a prompt ready format that can be easily used with LLMs. There's no need to reindex videos to create the prompt-ready format of the videos.
+title:  Azure AI Video Indexer with LLM prompts  
+description: Azure AI Video Indexer integrates with Large Language Models (LLMs). LLMs are natural language AI models that you can use to ask questions about video content and much more. Extract Azure AI Video Indexer’s insights into a prompt ready format that can be easily used with LLMs. There's no need to reindex videos to create the prompt-ready format of the videos.
 ms.topic: conceptual
 ms.date: 1/31/2024
 ms.author: inhenkel
@@ -8,11 +8,11 @@ author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-# Azure Video Indexer with LLM prompts
+# Azure AI Video Indexer with LLM prompts
 
 ## Overview
 
-Azure Video Indexer integrates with Large Language Models (LLMs). LLMs are natural language AI models that you can use to ask questions about video content and much more. Extract Azure Video Indexer’s insights into a prompt ready format that can be easily used with LLMs. There's no need to reindex videos to create the prompt-ready format of the videos.
+Azure AI Video Indexer integrates with Large Language Models (LLMs). LLMs are natural language AI models that you can use to ask questions about video content and much more. Extract Azure AI Video Indexer’s insights into a prompt ready format that can be easily used with LLMs. There's no need to reindex videos to create the prompt-ready format of the videos.
 
 ## Use Cases
 
@@ -28,7 +28,7 @@ Azure Video Indexer integrates with Large Language Models (LLMs). LLMs are natur
 
 ## How it works
 
-For the output to be prompt-ready, the video is split into coherent sections that fit both the essence of the video and the prompt size. The sections are divided based on Azure Video Indexer Scene Segmentation and other insights. The results of the prompt content are consolidated and generated per segment separately. For example:
+For the output to be prompt-ready, the video is split into coherent sections that fit both the essence of the video and the prompt size. The sections are divided based on Azure AI Video Indexer Scene Segmentation and other insights. The results of the prompt content are consolidated and generated per segment separately. For example:
 
 ### Insights
 

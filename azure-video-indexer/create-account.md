@@ -1,5 +1,5 @@
 ---
-title: Create an Azure AI Video Indexer account
+title: Create an Azure AI Video Indexer (VI) account
 description: This article explains how to create an account for Azure AI Video Indexer.
 ms.topic: how-to
 ms.date: 02/15/2024
@@ -8,9 +8,9 @@ author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
  
-# Create an Azure AI Video Indexer (AVI) account
+# Create an Azure AI Video Indexer (VI) account
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 [!INCLUDE [Gate notice](./includes/face-limited-access.md)]
 

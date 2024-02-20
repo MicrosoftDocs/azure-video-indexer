@@ -1,6 +1,6 @@
 ---
-title: Azure Video Indexer support matrix and service limits  
-description: This article describes the supported formats and limitations of Azure Video Indexer.
+title: Azure AI Video Indexer support matrix and service limits  
+description: This article describes the supported formats and limitations of Azure AI Video Indexer.
 ms.topic: conceptual
 ms.service: azure-video-indexer
 ms.date: 02/13/2024
@@ -8,9 +8,9 @@ ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
-# Azure Video Indexer support matrix and service limits
+# Azure AI Video Indexer support matrix and service limits
 
-This article describes the supported formats and limitations of Azure Video Indexer.
+This article describes the supported formats and limitations of Azure AI Video Indexer.
 
 ## Upload file size and video duration
 
@@ -22,7 +22,7 @@ The file duration limit is 4 hours.
 
 ## Index request limit
 
-When uploading and indexing through the AVI website, up to 10 videos can be indexed in a single request. When submitting requests through the API, there is an API request limit of 10 requests per second and up to 120 requests per minute.
+When uploading and indexing through the VI website, up to 10 videos can be indexed in a single request. When submitting requests through the API, there is an API request limit of 10 requests per second and up to 120 requests per minute.
 
 ## Languages
 
@@ -40,7 +40,7 @@ The number of source files in a Project is limited to 10 when using the website 
 
 ## Custom person models
 
-Each Person model supports up to 1 million people and each AVI account can have up to 50 Person models.
+Each Person model supports up to 1 million people and each VI account can have up to 50 Person models.
 
 ## Logo detection
 

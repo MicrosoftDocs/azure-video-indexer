@@ -11,7 +11,7 @@ ms.service: azure-video-indexer
 
 # Tutorial: deploy Azure AI Video Indexer by using Bicep
 
-[!INCLUDE [AMS AVI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
 In this tutorial, you create an Azure AI Video Indexer account by using [Bicep](/azure/azure-resource-manager/bicep/overview).
 
