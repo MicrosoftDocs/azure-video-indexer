@@ -1,5 +1,5 @@
 ---
-title: What is Azure Video Indexer enabled by Arc? (Preview)  
+title: What is Azure AI Video Indexer enabled by Arc? (Preview)  
 description: Azure AI Video Indexer enabled by Arc an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 ms.topic: overview
 ms.service: azure-video-indexer
@@ -17,7 +17,7 @@ If you aren't already familiar with [Azure AI Video Indexer](/azure/azure-video-
 Additionally, before you start working with [!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)], review the [transparency note](/legal/azure-video-indexer/transparency-note) to understand usage restrictions.
 
 > [!IMPORTANT]
-> To successfully deploy the Azure Video Indexer extension, it is **mandatory** that your Azure subscription id is approved in advance. You must first sign up using [this form](https://aka.ms/vi-register).
+> To successfully deploy the Azure AI Video Indexer extension, it is **mandatory** that your Azure subscription id is approved in advance. You must first sign up using [this form](https://aka.ms/vi-register).
 
 ## What is Azure Arc and Azure Arc-enabled Kubernetes?
 
@@ -56,7 +56,7 @@ All Azure AI Video Indexer enabled by Arc accounts are Azure Resource Manager (A
 The following block diagram shows the Azure AI Video Indexer extension running on Azure Arc. There are three types: 
 
 1. Store type A uses both vision and audio presets.
-1. Store type B uses only vision presets. It also has a custom model. For more information about using a custom model with Azure Video Indexer enabled by Arc, see [Bring Your Own AI model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md). 
+1. Store type B uses only vision presets. It also has a custom model. For more information about using a custom model with Azure AI Video Indexer enabled by Arc, see [Bring Your Own AI model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md). 
 1. Store C uses only audio presets. 
 
 The extension is stored on each edge device and each device is associated with a single Azure AI Video Indexer account that interfaces with Azure Arc and the cloud.
@@ -77,7 +77,7 @@ The extension is stored on each edge device and each device is associated with a
 | [Scene detection](scenes-shots-keyframes.md) | :heavy_check_mark: |  | :heavy_check_mark: |
 | [Shot detection](scenes-shots-keyframes.md) | :heavy_check_mark: |  | :heavy_check_mark: |
 
-:::image type="content" source="media/common/avi-flow-edge.svg" lightbox="media/common/avi-flow-edge.svg" alt-text="Graphic Azure Video Indexer enabled by Arc available presets already listed":::
+:::image type="content" source="media/common/avi-flow-edge.svg" lightbox="media/common/avi-flow-edge.svg" alt-text="Graphic Azure AI Video Indexer enabled by Arc available presets already listed":::
 
 ## Supported input formats and codecs
 
@@ -131,7 +131,7 @@ Here is your alphabetized list:
 
 ## Bring your own model
 
-Azure Video Indexer enabled by Arc also supports bringing your own model. See the [Bring Your Own Model (BYO)](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md) article for details.
+Azure AI Video Indexer enabled by Arc also supports bringing your own model. See the [Bring Your Own Model (BYO)](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md) article for details.
 
 ## Limitations
 

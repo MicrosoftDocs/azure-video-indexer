@@ -1,6 +1,6 @@
 ---
 title: Preparing for AMS retirement - AVI migration and updating guide  
-description: Azure Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, AVI is removing the dependency on AMS. To continue using AVI, between February 15 and June 30 2024, you must take steps to transition away from their current AVI account AMS dependency. Follow this guide.
+description: Azure AI Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, AVI is removing the dependency on AMS. To continue using AVI, between February 15 and June 30 2024, you must take steps to transition away from their current AVI account AMS dependency. Follow this guide.
 ms.topic: conceptual
 ms.service: azure-video-indexer
 ms.date: 02/15/2024
@@ -11,7 +11,7 @@ author: IngridAtMicrosoft
 
 # Preparing for AMS retirement: AVI migration and updating guide
 
-Azure Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, AVI is removing the dependency on AMS.
+Azure AI Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, AVI is removing the dependency on AMS.
 
 To continue using AVI, between February 15 and June 30 2024, you must take the following steps to transition away from their current AVI account AMS dependency:
 
@@ -101,7 +101,7 @@ Microsoft disclaims any liability for any damages in relation to the migration.
 
 ## Detailed updating and migrating instructions
 
-For a complete step-by-step guide, see [Update your Azure Video Indexer account and migrate assets](update-your-azure-video-indexer-account-and-migrate-assets.md).
+For a complete step-by-step guide, see [Update your Azure AI Video Indexer account and migrate assets](update-your-azure-video-indexer-account-and-migrate-assets.md).
 
 ## FAQ
 

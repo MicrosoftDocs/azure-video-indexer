@@ -14,7 +14,7 @@ With AVI, scaling the facial recognition of thousands of faces is easy if a labe
 
 ## Overview
 
-You can use this feature by selecting the **group faces** button located in the **people customization** tab of the **model customization** screen in the Azure Video Indexer web interface. Then, you can review the grouped faces and tag them. You can group faces iteratively to find more face groupings.
+You can use this feature by selecting the **group faces** button located in the **people customization** tab of the **model customization** screen in the Azure AI Video Indexer web interface. Then, you can review the grouped faces and tag them. You can group faces iteratively to find more face groupings.
 
 ## Limitations and requirements
 

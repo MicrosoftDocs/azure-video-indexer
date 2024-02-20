@@ -8,13 +8,13 @@ ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
-# Azure Video Indexer Bring Your Own (BYO) AI Model (Preview) overview
+# Azure AI Video Indexer Bring Your Own (BYO) AI Model (Preview) overview
 
-This article is an overview of Azure Video Indexer bring your own AI model.
+This article is an overview of Azure AI Video Indexer bring your own AI model.
 
 ## Introduction
 
-Azure Video Indexer offers a set of AIs optimized for video and audio content that can be applied to many content types. You can combine more insights from Microsoft sources, custom sources, or third party sources with the built-in Azure Video Indexer insights all in a seamless experience.
+Azure AI Video Indexer offers a set of AIs optimized for video and audio content that can be applied to many content types. You can combine more insights from Microsoft sources, custom sources, or third party sources with the built-in Azure AI Video Indexer insights all in a seamless experience.
 
 This capability is flexible enough to accommodate all forms and types of insights, including detection-oriented and classification-oriented AIs. You have the freedom to select the data that your external model operates upon, such as the video's frames, the entire video, or just the audio track. You can also use other insights already produced for the video, such as detected objects, faces, and labels. This allows you to run the external analysis on only the related section of the video, improving performance and reducing costs.
 
@@ -27,7 +27,7 @@ With the Video Indexer BYO model, users can add custom insights to video insight
 
 ### General workflow
 
-1. Video is uploaded and indexed with Azure Video Indexer.  
+1. Video is uploaded and indexed with Azure AI Video Indexer.  
 1. When the indexing process is completed, an event is created.  
 1. Your custom code listens to the event and starts the video post-processing process.
     1. Get insights extracted by Video Indexer.
@@ -39,7 +39,7 @@ With the Video Indexer BYO model, users can add custom insights to video insight
 
 ## Prerequisites
 
-Before you can start using the BYO model feature with Azure Video Indexer, you must: 
+Before you can start using the BYO model feature with Azure AI Video Indexer, you must: 
 
 1. Train or bring an external AI model that receives video assets and return an insight.   
 1. Create custom code that:
@@ -73,7 +73,7 @@ The values for populating the custom data are as follows:
  
 ## Framerate
 
-Azure Video Indexer supports 1 FPS for the Basic/Standard video level and 4 FPS for the advanced level. Higher frame rates aren't supported. You can optimize indexing by:
+Azure AI Video Indexer supports 1 FPS for the Basic/Standard video level and 4 FPS for the advanced level. Higher frame rates aren't supported. You can optimize indexing by:
 
 - Processing only specific segments that are of interest such as frames that include a detected sound, object or person, or 
 - sample a lower FPS, for example,  every 5 seconds. 

@@ -24,7 +24,7 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 ### New LLM prompt content
 
-You can now connect your video insights to Large Language Model (LLMs) for tasks like summarization and question answering. The API converts your video insights into a "prompt-ready" text format for use with LLMs. For more information, see [Azure Video Indexer with LLM prompts](prompt-overview.md).
+You can now connect your video insights to Large Language Model (LLMs) for tasks like summarization and question answering. The API converts your video insights into a "prompt-ready" text format for use with LLMs. For more information, see [Azure AI Video Indexer with LLM prompts](prompt-overview.md).
 
 ## December 2023
 
@@ -52,9 +52,9 @@ You can now use the search feature to search for videos with specific objects (f
 
 Video indexer has released the following things in November:
 
-### Azure Video Indexer enabled by Arc (Preview)
+### Azure AI Video Indexer enabled by Arc (Preview)
 
-You can use Video Indexer for your hybrid scenarios by hosting it on-premises in a Kubernetes cluster. For more information, see the [Azure Video Indexer enabled by Arc overview](azure-video-indexer-enabled-by-arc-overview.md). You can also try out the extension by following the [tutorial](azure-video-indexer-enabled-by-arc-quickstart.md).
+You can use Video Indexer for your hybrid scenarios by hosting it on-premises in a Kubernetes cluster. For more information, see the [Azure AI Video Indexer enabled by Arc overview](azure-video-indexer-enabled-by-arc-overview.md). You can also try out the extension by following the [tutorial](azure-video-indexer-enabled-by-arc-quickstart.md).
 
 ### Bring Your Own Model (Preview)
 
@@ -106,9 +106,9 @@ As a result of the June 30th 2024 [retirement of Azure Media Services (AMS)](/az
 
 ## July 2023
 
-### Redact faces with Azure Video Indexer API
+### Redact faces with Azure AI Video Indexer API
 
-You can now redact faces with Azure Video Indexer API. For more information see [Redact faces with Azure Video Indexer API](face-redaction-with-api.md).
+You can now redact faces with Azure AI Video Indexer API. For more information see [Redact faces with Azure AI Video Indexer API](face-redaction-with-api.md).
 
 ### API request limit increase
 

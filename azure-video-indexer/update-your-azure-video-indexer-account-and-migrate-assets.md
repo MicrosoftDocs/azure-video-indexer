@@ -1,6 +1,6 @@
 ---
-title: Update your Azure Video Indexer account and migrate assets  
-description: Azure Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, AVI is removing the dependency on AMS. As described in the update and migration guide azure-video-indexer-retirement-guide.md, your Azure Video Indexer account needs to be updated. During the update, you'll have the opportunity to opt in to having the AVI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
+title: Update your Azure AI Video Indexer account and migrate assets  
+description: Azure AI Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, AVI is removing the dependency on AMS. As described in the update and migration guide azure-video-indexer-retirement-guide.md, your Azure AI Video Indexer account needs to be updated. During the update, you'll have the opportunity to opt in to having the AVI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
 ms.topic: conceptual
 ms.service: azure-video-indexer
 ms.date: 02/15/2024
@@ -8,11 +8,11 @@ ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
-# Update your Azure Video Indexer account and migrate assets
+# Update your Azure AI Video Indexer account and migrate assets
 
-Azure Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, AVI is removing the dependency on AMS.
+Azure AI Video Indexer (AVI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, AVI is removing the dependency on AMS.
 
-As described in the [AVI update and migration guide](azure-video-indexer-ams-retirement-guide.md), your Azure Video Indexer account needs to be updated. During the update, you'll have the opportunity to opt in to having the AVI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
+As described in the [AVI update and migration guide](azure-video-indexer-ams-retirement-guide.md), your Azure AI Video Indexer account needs to be updated. During the update, you'll have the opportunity to opt in to having the AVI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
 
 You can opt in to AVI migration using either the Azure portal or the API during the account update process.
 
@@ -27,7 +27,7 @@ Update an existing Azure Resource Manager (ARM) account.
 
 You must have the following permissions to update an existing ARM account:
 
-- A **Contributor** role on the Azure Video Indexer account
+- A **Contributor** role on the Azure AI Video Indexer account
 - An **Owner** role or both **Contributor** and **User Access Administrator** roles on the linked storage account
 - Read permission on the AMS resource
 
@@ -50,7 +50,7 @@ You must have the following permissions to update an existing ARM account:
     ```REST API
     PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.VideoIndexer/accounts/{accountName}?api-version=2024-01-01
     ```
-    See [Accounts - Create Or Update - REST API (Azure Azure Video Indexer)](/rest/api/videoindexer/accounts/create-or-update?view=rest-videoindexer-2024-01-01&tabs=HTTP&preserve-view=true) for more information
+    See [Accounts - Create Or Update - REST API (Azure Azure AI Video Indexer)](/rest/api/videoindexer/accounts/create-or-update?view=rest-videoindexer-2024-01-01&tabs=HTTP&preserve-view=true) for more information
     
 1.  Opt in to migration process by invoking Start Account Migration API
     
@@ -129,7 +129,7 @@ You must have the following permissions to connect a classic account to an ARM-b
     PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.VideoIndexer/accounts/{accountName}?api-version=2024-01-01    
     ```
 
-    See [Accounts - Create Or Update - REST API (Azure Azure Video Indexer)](/rest/api/videoindexer/accounts/create-or-update?view=rest-videoindexer-2024-01-01&tabs=HTTP&preserve-view=true) for more information.
+    See [Accounts - Create Or Update - REST API (Azure Azure AI Video Indexer)](/rest/api/videoindexer/accounts/create-or-update?view=rest-videoindexer-2024-01-01&tabs=HTTP&preserve-view=true) for more information.
   
 1.  Opt in to migration process by invoking Start Account Migration API
 
@@ -147,7 +147,7 @@ To opt in to AVI migration of an already updated account, you can use either the
 
 ### Permissions
 
-You must have a **Contributor** role on the Azure Video Indexer account.
+You must have a **Contributor** role on the Azure AI Video Indexer account.
 
 ### [Opt in in the Azure portal](#tab/optinportal)
 

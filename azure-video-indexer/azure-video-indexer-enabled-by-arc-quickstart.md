@@ -1,5 +1,5 @@
 ---
-title: Try Azure Video Indexer enabled by Arc
+title: Try Azure AI Video Indexer enabled by Arc
 description: This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 ms.topic: quickstart
 ms.service: azure-video-indexer
@@ -8,18 +8,18 @@ ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
-# Try Azure Video Indexer enabled by Arc
+# Try Azure AI Video Indexer enabled by Arc
 
-Azure Video Indexer enabled by Arc ([!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)]) is an Azure Arc Extension Enabled Service that runs video and audio analysis on edge devices. The solution is designed to run on Azure Stack Edge Profile, a heavy edge device, and supports many video formats, including MP4 and other common formats. It supports several languages in all basic audio-related models. It assumes that one Video Indexer resource is mapped to one extension.
+Azure AI Video Indexer enabled by Arc ([!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)]) is an Azure Arc Extension Enabled Service that runs video and audio analysis on edge devices. The solution is designed to run on Azure Stack Edge Profile, a heavy edge device, and supports many video formats, including MP4 and other common formats. It supports several languages in all basic audio-related models. It assumes that one Video Indexer resource is mapped to one extension.
 
 This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 
 ## Example deployment
 
-The below is a block diagram showing Azure Video Indexer running on Azure Arc. There are three types: 
+The below is a block diagram showing Azure AI Video Indexer running on Azure Arc. There are three types: 
 
 1. Store type A uses both vision and audio presets.
-1. Store type B uses only vision presets. It also has a custom model. For more information about using a custom model with Azure Video Indexer enabled by Arc, see [Bring Your Own AI model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md). 
+1. Store type B uses only vision presets. It also has a custom model. For more information about using a custom model with Azure AI Video Indexer enabled by Arc, see [Bring Your Own AI model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md). 
 1. Store C uses only audio presets. 
 
 The extension is stored on each edge device and each device is associated with a single AI Video Indexer account which interfaces with Azure Arc and the cloud.
@@ -29,10 +29,10 @@ The extension is stored on each edge device and each device is associated with a
 ## Prerequisites
 
 > [!IMPORTANT]
-> To successfully deploy the Azure Video Indexer extension, it is **mandatory** that your Azure subscription id is approved in advance. You must first sign up using [this form](https://aka.ms/vi-register).
+> To successfully deploy the Azure AI Video Indexer extension, it is **mandatory** that your Azure subscription id is approved in advance. You must first sign up using [this form](https://aka.ms/vi-register).
 
 - Create an Azure subscription with permissions to create Azure resources.
-- Create an Azure Video Indexer Account. Use the [Create Video Indexer account](create-account-portal.md) tutorial.
+- Create an Azure AI Video Indexer Account. Use the [Create Video Indexer account](create-account-portal.md) tutorial.
 
 To use the Video Indexer extension, you need to have an externally facing endpoint, which can be either a DNS name or IP. The endpoint should be set as a secure transfer protocol (`https:\\`) and is used as the extension API endpoint, formatted as `https:\\{endpointUri}/swagger/index.html`. It is also used by the Video Indexer web portal to communicate with the extension. It is recommended that you use an ingress control to manage the endpoint. 
 
@@ -96,13 +96,13 @@ During the deployment, the script asks for environment specific values. Have the
 ## [Deploy in Azure Portal](#tab/portal)
 
 1. In the Azure portal, navigate to your Azure Arc-connected cluster.
-1. From the menu, select **Extensions** > **+ Add** > **Azure Video Indexer Arc Extension**.
+1. From the menu, select **Extensions** > **+ Add** > **Azure AI Video Indexer Arc Extension**.
 1. Select **Create**. The *Create an AI Video Indexer extension* screen will appear.
 1. Configure the extension in *Instance details*:
     1. Select the **subscription** and **resource group** for your extension.
     1. Select the **region and connected** k8 cluster.
     1. Enter a **name** for your extension.
-    1. Select the **Azure Video Indexer Account** that the extension will be connected to.
+    1. Select the **Azure AI Video Indexer Account** that the extension will be connected to.
     1. Enter the **cluster endpoint**, either an IP or DNS Name to be used as the API endpoint.
     1. Provide the **storage class** you want to use for the extension that's supported by your Kubernetes distribution. For example, if you're using AKS, you could use `azurefile-cli`. For more information on predefined storage classes supported by AKS, see [Storage Classes in AKS](/azure/aks/concepts-storage#storage-classes). If you're using other Kubernetes distributions, see your Kubernetes distribution documentation for predefined storage classes supported or the way you can provide your own.
 1. Select **Review + create** and then **Create**.
