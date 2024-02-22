@@ -27,7 +27,7 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 - All new VI account video packaging, streaming, and encoding is performed by VI, and you will no longer be able to create AMS-based VI accounts. See the [new account create guide](create-account.md).
 - VI encoding/packaging is billed at a flat rate of 1 cent per minute with free streaming.
 - You can update your VI accounts from AMS-based to the new AMS-less account type.
-- You can opt-in to have your AMS VI assets reprocessed and migrated by VI, so you can continue to access your videos and insights. The migration will begin in late March.
+- You can opt in to have your AMS VI assets reprocessed and migrated by VI, so you can continue to access your videos and insights. The migration will begin in late March.
 
 The following documentation guides you through the account and asset migration process:
 
