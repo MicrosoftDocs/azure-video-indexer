@@ -33,7 +33,7 @@ The following documentation guides you through the account and asset migration p
 
 - See the [Preparing for AMS retirement: VI migration and updating guide](azure-video-indexer-ams-retirement-guide.md).
 - See the [Update your Azure AI Video Indexer account and migrate assets]().
-- See the new [API version](/rest/api/videoindexer/accounts?view=rest-videoindexer-2024-01-01).
+- See the new [API version](/rest/api/videoindexer/accounts?view=rest-videoindexer-2024-01-01&preserve-view=true).
 
 ## January 2024
 
