@@ -3,7 +3,7 @@ title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
 ms.topic: article
 ms.custom: references_regions
-ms.date: 02/06/2024
+ms.date: 02/21/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -19,6 +19,21 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+## February 2024
+
+### AMS-less accounts and migration guidance
+
+- All new VI account video packaging, streaming, and encoding is performed by VI, and you will no longer be able to create AMS-based VI accounts. See the [new account create guide](create-account.md).
+- VI encoding/packaging is billed at a flat rate of 1 cent per minute with free streaming.
+- You can update your VI accounts from AMS-based to the new AMS-less account type.
+- You can opt in to have your AMS VI assets reprocessed and migrated by VI, so you can continue to access your videos and insights. The migration will begin in late March.
+
+The following documentation guides you through the account and asset migration process:
+
+- See the [Preparing for AMS retirement: VI migration and updating guide](azure-video-indexer-ams-retirement-guide.md).
+- See the [Update your Azure AI Video Indexer account and migrate assets]().
+- See the new [API version](/rest/api/videoindexer/accounts?view=rest-videoindexer-2024-01-01&preserve-view=true).
 
 ## January 2024
 
