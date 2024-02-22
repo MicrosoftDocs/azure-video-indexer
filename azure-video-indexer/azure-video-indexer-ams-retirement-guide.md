@@ -3,7 +3,7 @@ title: Preparing for AMS retirement - VI migration and updating guide
 description: Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS. To continue using VI, between February 15 and June 30 2024, you must take steps to transition away from their current VI account AMS dependency. Follow this guide.
 ms.topic: conceptual
 ms.service: azure-video-indexer
-ms.date: 02/15/2024
+ms.date: 02/21/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -69,7 +69,7 @@ You'll receive an email notification that the migration is complete, and you can
 
 ### Billing
 
-VI won’t charge for streaming. VI will charge a flat rate for encoding, which will cost less than it previously cost to encode with AMS. The charge for encoding will appear as “Video Modification." Remember to check if you need to change any billing alerts.
+VI won’t charge for streaming. VI will charge a flat rate for encoding, which will cost less than it previously cost to encode with AMS in most cases. The charge for encoding will appear as “Video Modification." Remember to check if you need to change any billing alerts.
 
 ## Migration
 
