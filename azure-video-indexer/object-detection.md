@@ -1,7 +1,7 @@
 ---
 title: Azure AI Video Indexer object detection overview
 description: An introduction to Azure AI Video Indexer object detection overview.
-ms.date: 09/26/2023
+ms.date: 02/21/2024
 ms.topic: article
 ms.author: inhenkel
 author: IngridAtMicrosoft
@@ -207,7 +207,5 @@ To examine object detection more thoroughly, use [Get Video Index](https://api-p
 ## Limitations
 
 - Up to 20 detections per frame for standard and advanced processing and 35 tracks per class.
-- The video area shouldn't exceed 1920 x 1080 pixels.
 - Object size shouldn't be greater than 90 percent of the frame.
-- A high frame rate (> 30 FPS) may result in slower indexing, with little added value to the quality of the detection and tracking.
 - Other factors that may affect the accuracy of the object detection include low light conditions, camera motion, and occlusion.
