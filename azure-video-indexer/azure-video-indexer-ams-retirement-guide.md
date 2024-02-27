@@ -3,7 +3,7 @@ title: Preparing for AMS retirement - VI migration and updating guide
 description: Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS. To continue using VI, between February 15 and June 30 2024, you must take steps to transition away from their current VI account AMS dependency. Follow this guide.
 ms.topic: conceptual
 ms.service: azure-video-indexer
-ms.date: 02/21/2024
+ms.date: 02/27/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -33,7 +33,7 @@ The AMS asset ID will no longer be used for uploading a video. A video URL or lo
 ### Account creation and management
 
 - **API**
-    - You must update account creation and requests to use the VI API version 2023-01-01.
+    - You must update account creation and requests to use the VI API version 2024-01-01.
     - Requests must be submitted with the [Azure Storage Account property](https://github.com/Azure/azure-rest-api-specs/blob/main/specification/vi/resource-manager/Microsoft.VideoIndexer/stable/2024-01-01/vi.json) rather than the AMS account.
 - **Portal** During the VI account creation process, the VI account will be associated with the Azure Storage account.
 
