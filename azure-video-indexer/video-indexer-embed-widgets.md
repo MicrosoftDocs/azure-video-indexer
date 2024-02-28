@@ -192,7 +192,7 @@ For more information, see the [Video Indexer Player + VI Insights demo](https://
 
 You can choose the types of insights that you want. To do this, specify them as a value to the following URL parameter that's added to the embed code that you get (from the [API](https://aka.ms/avam-dev-portal) or from the [Azure AI Video Indexer](https://www.videoindexer.ai/) website): `&widgets=<list of wanted widgets>`.
 
-The possible values are listed [here](#cognitive-insights-widget).
+The possible values are listed [here](#insights-widget).
 
 For example, if you want to embed a widget that contains only people and keywords insights, the iframe embed URL will look like this:
 
