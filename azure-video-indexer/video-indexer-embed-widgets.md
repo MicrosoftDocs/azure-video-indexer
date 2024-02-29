@@ -1,26 +1,25 @@
 ---
 title: Embed Azure AI Video Indexer widgets in your apps
-description: Learn how to embed Azure AI Video Indexer widgets in your apps.
+description: Embed Azure AI Video Indexer widgets in your apps. Azure AI Video Indexer supports embedding three types of widgets into your apps.
 ms.topic: how-to
-ms.date: 01/10/2023
+ms.date: 02/28/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
+#customer intent: As a developer, I want to learn how to embed Azure AI Video Indexer widgets in my apps so that I can enhance the functionality of my applications.
 ---
 
 # Embed Azure AI Video Indexer widgets in your apps
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-This article shows how you can embed Azure AI Video Indexer widgets in your apps. Azure AI Video Indexer supports embedding three types of widgets into your apps: *Cognitive Insights*, *Player*, and *Editor*.
-
-Starting with version 2, the widget base URL includes the region of the specified account. For example, an account in the West US region generates: `https://www.videoindexer.ai/embed/insights/.../?location=westus2`.
+This article shows how you can embed Azure AI Video Indexer widgets in your apps. Azure AI Video Indexer supports embedding three types of widgets into your apps: *Insights*, *Player*, and *Editor*.
 
 ## Widget types
 
-### Cognitive Insights widget
+### Insights widget
 
-A Cognitive Insights widget includes all visual insights that were extracted from your video indexing process. The Cognitive Insights widget supports the following optional URL parameters:
+A Insights widget includes all visual insights that were extracted from your video indexing process. The Insights widget supports the following optional URL parameters:
 
 |Name|Definition|Description|
 |---|---|---|
@@ -87,8 +86,7 @@ To embed a video, use the website as described below:
 
 You can embed public videos assembling the URL as follows:
 
-`https://www.videoindexer.ai/embed/[insights | player]/<accountId>/<videoId>`
-  
+`https://www.videoindexer.ai/embed/[insights | player]/<accountId>/<videoId>` 
   
 #### Private videos
 
@@ -102,9 +100,7 @@ To provide editing insights capabilities in your embedded widget, you must pass 
 
 ## Widgets interaction
 
-The Cognitive Insights widget can interact with a video on your app. This section shows how to achieve this interaction.
-
-![Cognitive Insights widget](./media/video-indexer-embed-widgets/video-indexer-widget03.png)
+The Insights widget can interact with a video on your app. This section shows how to achieve this interaction.
 
 ### Flow overview
 
@@ -124,14 +120,14 @@ To get Azure AI Video Indexer widgets to communicate with other components:
 - Uses the cross-origin communication HTML5 method `postMessage`.
 - Validates the message across VideoIndexer.ai origin.
 
-If you implement your own player code and integrate with Cognitive Insights widgets, it's your responsibility to validate the origin of the message that comes from VideoIndexer.ai.
+If you implement your own player code and integrate with Insights widgets, it's your responsibility to validate the origin of the message that comes from VideoIndexer.ai.
 
 ### Embed widgets in your app or blog (recommended)
 
 This section shows how to achieve interaction between two Azure AI Video Indexer widgets so that when a user selects the insight control on your app, the player jumps to the relevant moment.
 
 1. Copy the Player widget embed code.
-2. Copy the Cognitive Insights embed code.
+2. Copy the Insights embed code.
 3. Add the [Mediator file](https://breakdown.blob.core.windows.net/public/vb.widgets.mediator.js) to handle the communication between the two widgets:<br/> 
 `<script src="https://breakdown.blob.core.windows.net/public/vb.widgets.mediator.js"></script>`
 
@@ -139,65 +135,9 @@ Now when a user selects the insight control on your app, the player jumps to the
 
 For more information, see the [Azure AI Video Indexer - Embed both Widgets demo](https://codepen.io/videoindexer/pen/NzJeOb).
 
-### Embed the Cognitive Insights widget and use Azure Media Player to play the content
+### Embed the Azure AI Video Indexer Insights widget and use a different video player
 
-This section shows how to achieve interaction between a Cognitive Insights widget and an Azure Media Player instance by using the [AMP plug-in](https://breakdown.blob.core.windows.net/public/amp-vb.plugin.js).
-
-1. Add an Azure AI Video Indexer plug-in for the AMP player:<br/> `<script src="https://breakdown.blob.core.windows.net/public/amp-vb.plugin.js"></script>`
-2. Instantiate Azure Media Player with the Azure AI Video Indexer plug-in.
-
-    ```javascript
-    // Init the source.
-    function initSource() {
-        var tracks = [{
-        kind: 'captions',
-        // To load vtt from VI, replace it with your vtt URL.
-        src: this.getSubtitlesUrl("c4c1ad4c9a", "English"),
-        srclang: 'en',
-        label: 'English'
-        }];
-        myPlayer.src([
-        {
-            "src": "//amssamples.streaming.mediaservices.windows.net/91492735-c523-432b-ba01-faba6c2206a2/AzureMediaServicesPromo.ism/manifest",
-            "type": "application/vnd.ms-sstr+xml"
-        }
-        ], tracks);
-    }
-
-    // Init your AMP instance.
-    var myPlayer = amp('vid1', { /* Options */
-        "nativeControlsForTouch": false,
-        autoplay: true,
-        controls: true,
-        width: "640",
-        height: "400",
-        poster: "",
-        plugins: {
-        videobreakedown: {}
-        }
-    }, function () {
-        // Activate the plug-in.
-        this.videobreakdown({
-        videoId: "c4c1ad4c9a",
-        syncTranscript: true,
-        syncLanguage: true,
-        location: "trial" /* location option for paid accounts (default is trial) */
-        });
-
-        // Set the source dynamically.
-        initSource.call(this);
-    });
-    ```
-
-3. Copy the Cognitive Insights embed code.
-
-You can now communicate with Azure Media Player.
-
-For more information, see the [Azure Media Player + VI Insights demo](https://codepen.io/videoindexer/pen/rYONrO).
-
-### Embed the Azure AI Video Indexer Cognitive Insights widget and use a different video player
-
-If you use a video player other than Azure Media Player, you must manually manipulate the video player to achieve the communication.
+If you use a video player other than Video Indexer Player, you must manually manipulate the video player to achieve the communication.
 
 1. Insert your video player.
 
@@ -210,7 +150,7 @@ If you use a video player other than Azure Media Player, you must manually manip
     </video>
     ```
 
-2. Embed the Cognitive Insights widget.
+2. Embed the Insights widget.
 3. Implement communication for your player by listening to the "message" event. For example:
 
     ```javascript
@@ -244,19 +184,15 @@ If you use a video player other than Azure Media Player, you must manually manip
     </script>
     ```
 
-For more information, see the [Azure Media Player + VI Insights demo](https://codepen.io/videoindexer/pen/YEyPLd).
-
-## Adding subtitles
-
-If you embed Azure AI Video Indexer insights with your own [Azure Media Player](https://aka.ms/azuremediaplayer), you can use the `GetVttUrl` method to get closed captions (subtitles). You can also call a JavaScript method from the Azure AI Video Indexer AMP plug-in `getSubtitlesUrl` (as shown earlier).
+For more information, see the [Video Indexer Player + VI Insights demo](https://codepen.io/videoindexer/pen/YEyPLd).
 
 ## Customizing embeddable widgets
 
-### Cognitive Insights widget
+### Insights widget
 
 You can choose the types of insights that you want. To do this, specify them as a value to the following URL parameter that's added to the embed code that you get (from the [API](https://aka.ms/avam-dev-portal) or from the [Azure AI Video Indexer](https://www.videoindexer.ai/) website): `&widgets=<list of wanted widgets>`.
 
-The possible values are listed [here](#cognitive-insights-widget).
+The possible values are listed [here](#insights-widget).
 
 For example, if you want to embed a widget that contains only people and keywords insights, the iframe embed URL will look like this:
 
@@ -296,12 +232,9 @@ See the [code samples](https://github.com/Azure-Samples/media-services-video-ind
 
 | File/folder                       | Description                                |
 |-----------------------------------|--------------------------------------------|
-| `azure-media-player`              | Load an Azure AI Video Indexer video in a custom Azure Media Player.                        |
-| `azure-media-player-vi-insights`  | Embed VI Insights with a custom Azure Media Player.                             |
 | `control-vi-embedded-player`      | Embed VI Player and control it from outside.                                    |
 | `custom-index-location`           | Embed VI Insights from a custom external location (can be customer a blob).     |
 | `embed-both-insights`             | Basic usage of VI Insights both player and insights.                            |
-| `embed-insights-with-AMP`         | Embed VI Insights widget with a custom Azure Media Player.                      |
 | `customize-the-widgets`           | Embed VI widgets with customized options.                                     |
 | `embed-both-widgets`              | Embed VI Player and Insights and communicate between them.                      |
 | `url-generator`                   | Generates widgets custom embed URL based on user-specified options.             |
@@ -319,7 +252,7 @@ Instead of adding an iframe element to embed the insights widget, with this new 
 
 For more information, see our official [GitHub](https://github.com/Azure-Samples/media-services-video-indexer/tree/master/Embedding%20widgets/widget-customization#readme).
 
-## Next steps
+## Related content
 
 For information about how to view and edit Azure AI Video Indexer insights, see [View and edit Azure AI Video Indexer insights](video-indexer-view-edit.md).
 
