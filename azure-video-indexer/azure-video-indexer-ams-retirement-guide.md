@@ -3,7 +3,7 @@ title: Preparing for AMS retirement - VI migration and updating guide
 description: Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS. To continue using VI, between February 15 and June 30 2024, you must take steps to transition away from their current VI account AMS dependency. Follow this guide.
 ms.topic: conceptual
 ms.service: azure-video-indexer
-ms.date: 02/27/2024
+ms.date: 03/05/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -30,12 +30,15 @@ The following is a description of the changes to the VI product that apply once 
 
 The AMS asset ID will no longer be used for uploading a video. A video URL or local file will be used instead.
 
-### Account creation and management
+### Account creation, update and management
 
-- **API**
+- **Account update**: All VI accounts created prior to February 15th must be updated so that they are linked to an Azure Storage account instead of an AMS account. For guidance on how to do it in the portal or through the API, see [Updating an existing ARM account](update-your-azure-video-indexer-account-and-migrate-assets.md).
+- **Classic account - connect to new ARM account**: As [announced in September 2023](https://azure.microsoft.com/en-us/updates/videoindexer-2/), VI Classic accounts are being retired June 30th, 2024. Prior to the retirement, all Classic accounts must be connected to a new ARM based VI account. For guidance on how to do it in the portal or through the API, see [Connect a Classic account to a new ARM based account](/azure/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets?tabs=updateexistingportal%2Cconnectclassicportal%2Coptinportal#connect-a-classic-account-to-a-new-arm-based-account).
+- **Account creation with API**
     - You must update account creation and requests to use the VI API version 2024-01-01.
     - Requests must be submitted with the [Azure Storage Account property](https://github.com/Azure/azure-rest-api-specs/blob/main/specification/vi/resource-manager/Microsoft.VideoIndexer/stable/2024-01-01/vi.json) rather than the AMS account.
-- **Portal** During the VI account creation process, the VI account will be associated with the Azure Storage account.
+- **Portal**: During the VI account creation process, new VI accounts will be associated with an Azure Storage account.
+
 
 ### Storage account
 
