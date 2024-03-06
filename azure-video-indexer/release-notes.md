@@ -3,7 +3,7 @@ title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
 ms.topic: article
 ms.custom: references_regions
-ms.date: 02/21/2024
+ms.date: 03/05/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -35,6 +35,12 @@ The following documentation guides you through the account and asset migration p
 - See the [Preparing for AMS retirement: VI migration and updating guide](azure-video-indexer-ams-retirement-guide.md).
 - See the [Update your Azure AI Video Indexer account and migrate assets]().
 - See the new [API version](/rest/api/videoindexer/accounts?view=rest-videoindexer-2024-01-01&preserve-view=true).
+
+### TLS1.3 support 
+We support TLS 1.3, the latest version of the Transport Layer Security (TLS) protocol, which encrypts data to provide a secure communication channel between two endpoints. 
+
+### Azure AI Video Indexer deployed in the Sweden Central and US West3 
+You can now create an Azure AI Video Indexer paid account in the Sweden Central and US West3 regions.
 
 ## January 2024
 
