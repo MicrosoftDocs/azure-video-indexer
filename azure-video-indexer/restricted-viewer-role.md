@@ -2,7 +2,7 @@
 title: Manage access to an Azure AI Video Indexer account
 description: This article talks about Video Indexer restricted viewer built-in role. This role is an account level permission, which allows users to grant restricted access to a specific user or security group. 
 ms.topic: how-to
-ms.date: 11/27/2023
+ms.date: 03/06/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -70,3 +70,9 @@ User management of trial accounts, including the creation of new users, is perfo
 
 1. In the **Account setting** section, select **Manage Roles** to view all the account users and people with pending invites. 
 1. To add users, select **Invite more people to this account**. Users can receive an invitation but you also have the option to copy the invite link to share it directly. Once the invitation is accepted, you can define their role as either **Owner** or **Contributor**. See the [ARM Account user management](#user-management-of-arm-accounts) section for a description of the **Owner** and **Contributor** roles.
+
+## Troubleshooting
+
+If you see the following error message when you log in to the Azure portal, you must ask for a **Contributor** or **Restricted Viewer** role from the account owner to get access.
+
+:::image type="content" source="media/common/you-need-permission-to-view-content.png" alt-text="An error message that states that you don't have permission to access the account."::: 
