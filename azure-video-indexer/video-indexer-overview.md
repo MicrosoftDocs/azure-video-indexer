@@ -2,7 +2,7 @@
 title: What is Azure AI Video Indexer?
 description: This article gives an overview of the Azure AI Video Indexer service.
 ms.topic: overview
-ms.date: 08/02/2023
+ms.date: 03/11/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -56,6 +56,7 @@ Unless specified otherwise, a model is generally available.
     * **People's detected clothing** (preview): Detects the clothing types of people appearing in the video and provides information such as long or short sleeves, long or short pants and skirt or dress. The detected clothing is associated with the people wearing it and the exact timestamp (start, end) along with a confidence level for the detection are provided. For more information, see [detected clothing](detected-clothing.md).
     * **Featured clothing** (preview): captures featured clothing images appearing in a video. You can improve your targeted ads by using the featured clothing insight. For information on how the featured clothing images are ranked and how to get the insights, see [featured clothing](observed-people-featured-clothing.md).
 * **Matched person** (preview): Matches people that were observed in the video with the corresponding faces detected. The matching between the observed people and the faces contain a confidence level.
+* **Object detection** Detects unique objects that are also tracked so that if they return to the frame they are recognized.
 * **Slate detection** (preview): identifies the following movie post-production insights when indexing a video using the advanced indexing option:
     
     * Clapperboard detection with metadata extraction.
