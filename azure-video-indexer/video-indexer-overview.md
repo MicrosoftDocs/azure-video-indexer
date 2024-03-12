@@ -54,10 +54,10 @@ Unless specified otherwise, a model is generally available.
 * **Editorial shot type detection**: Tags shots based on their type (like wide shot, medium shot, close up, extreme close up, two shot, multiple people, outdoor and indoor, and so on). For more information, see [Editorial shot type detection](scenes-shots-keyframes.md#editorial-shot-type-detection).
 * **Observed people tracking** (preview): Detects observed people in videos and provides information such as the location of the person in the video frame (using bounding boxes) and the exact timestamp (start, end) and confidence when a person appears. For more information, see [Trace observed people in a video](observed-people-tracking.md).
     * **People's detected clothing** (preview): Detects the clothing types of people appearing in the video and provides information such as long or short sleeves, long or short pants and skirt or dress. The detected clothing is associated with the people wearing it and the exact timestamp (start, end) along with a confidence level for the detection are provided. For more information, see [detected clothing](detected-clothing.md).
-    * **Featured clothing** (preview): captures featured clothing images appearing in a video. You can improve your targeted ads by using the featured clothing insight. For information on how the featured clothing images are ranked and how to get the insights, see [featured clothing](observed-people-featured-clothing.md).
+    * **Featured clothing** (preview): Captures featured clothing images appearing in a video. You can improve your targeted ads by using the featured clothing insight. For information on how the featured clothing images are ranked and how to get the insights, see [featured clothing](observed-people-featured-clothing.md).
 * **Matched person** (preview): Matches people that were observed in the video with the corresponding faces detected. The matching between the observed people and the faces contain a confidence level.
-* **Object detection** Detects unique objects that are also tracked so that if they return to the frame they are recognized.
-* **Slate detection** (preview): identifies the following movie post-production insights when indexing a video using the advanced indexing option:
+* **Object detection** Detects unique objects that are also tracked so that if they return to the frame they are recognized. See [Azure AI Video Indexer object detection](object-detection.md)
+* **Slate detection** (preview): Identifies the following movie post-production insights when indexing a video using the advanced indexing option:
     
     * Clapperboard detection with metadata extraction.
     * Digital patterns detection, including color bars.
