@@ -7,6 +7,8 @@ ms.author: inhenkel
 
 ## Minimum hardware requirements
 
+Video Indexer enabled by Arc is designed to run on any Arc enabled Kubernetes environment.
+
 The following list is the minimum and recommended requirements if the extension contains single language support. If you install multiple speech and translation containers with several languages, increase the hardware requirements accordingly.
 
 >[!NOTE]

@@ -42,28 +42,7 @@ To use the Video Indexer extension, you need to have an externally facing endpoi
 > [!IMPORTANT]
 > The AKS cluster contains the Video Indexer extension must be in the East US region.
 
-## Minimum hardware requirements
-
-The following list is the minimum and recommended requirements if the extension contains single language support. If you install multiple speech and translation containers with several languages, increase the hardware requirements accordingly.
-
-| Configuration | VM Count | Node CPU Cores Count  | Node Ram | Node Storage | Remarks
-| --- | --- | --- | --- | --- | --- |
-| Minimum | 1 | 32 Cores | 64 GB | 50 GB | Storage needs to support `ReadWriteMany` Storage Class |
-| Recommended | 2 | 48-64 Cores | 256 GB | 100 GB | Storage needs to support `ReadWriteMany` Storage Class |
-
-> [!Note] 
-> At least a 2-node cluster is recommended for high availability and scalability. The recommended settings refer to cluster wide settings, so for example, if you have 2 nodes, each node should have 16 cores and 32 GB of RAM.
-
-> [!TIP] 
-> We recommend creating a dedicated node-pool / auto-scaling groups to host the VI Solution
-
-### Minimum software requirements
-
-| Component |  Minimum Requirements |
-| --- | --- |
-| Operating System | Ubuntu 22.04 LTS or any Linux Compatible OS |
-| Kubernetes | 1.26 |
-| Azure CLI | 2.48.0 |
+[!INCLUDE [minimum-software-requirements](includes/minimum-software-requirements.md)]
 
 ## Parameter definitions
 
