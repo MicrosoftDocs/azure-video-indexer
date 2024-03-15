@@ -33,6 +33,7 @@ The extension is stored on each edge device and each device is associated with a
 
 - Create an Azure subscription with permissions for creating Azure resources.
 - Create an Azure AI Video Indexer Account. Use the [Create Video Indexer account](create-account-portal.md) tutorial.
+- Download the [example video](./media/common/video.mp4).
 
 To use the Video Indexer extension, you need to have an externally facing endpoint, which can be either a DNS name or IP. The endpoint should be set as a secure transfer protocol (`https:\\`) and is used as the extension API endpoint, formatted as `https:\\{endpointUri}/swagger/index.html`. It's also used by the Video Indexer web portal to communicate with the extension. It's recommended that you use an ingress control to manage the endpoint. 
 
@@ -44,7 +45,12 @@ To use the Video Indexer extension, you need to have an externally facing endpoi
 
 ## Minimum hardware requirements for this quickstart
 
-This quickstart is designed to allow you to see the extension in action, so smaller resource sizes have been chosen for you to work with in a test environment. For the minimum hardware requirements in a production environment, see the [Minimum hardware requirements]() in the overview article.
+This quickstart is designed to allow you to see the extension in action, so smaller resource sizes have been chosen for you to work with in a *test* environment. For this quickstart, the minimum hardware requirements are:
+
+- CPU: 16 cores
+- Memory: 16 GB
+
+For the minimum hardware requirements in a *production* environment, see the [Minimum hardware requirements](azure-video-indexer-enabled-by-arc-overview.md#minimum-hardware-requirements) in the overview article.
 
 [!INCLUDE [minimum-software-requirements](includes/vi-arc-minimum-software-requirements.md)]
 
