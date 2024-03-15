@@ -46,7 +46,7 @@ To use the Video Indexer extension, you need to have an externally facing endpoi
 
 This quickstart is designed to allow you to see the extension in action, so smaller resource sizes have been chosen for you to work with in a test environment. For the minimum hardware requirements in a production environment, see the [Minimum hardware requirements]() in the overview article.
 
-[!INCLUDE [minimum-software-requirements](includes/minimum-software-requirements.md)]
+[!INCLUDE [minimum-software-requirements](includes/vi-arc-minimum-software-requirements.md)]
 
 ## Parameter definitions
 
