@@ -79,9 +79,9 @@ The extension is stored on each edge device and each device is associated with a
 
 :::image type="content" source="media/common/avi-flow-edge.svg" lightbox="media/common/avi-flow-edge.svg" alt-text="Graphic Azure AI Video Indexer enabled by Arc available presets already listed":::
 
-[!INCLUDE [minimum-hardware-requirements](includes/minimum-hardware-requirements.md)]
+[!INCLUDE [minimum-hardware-requirements](includes/vi-arc-minimum-hardware-requirements.md)]
 
-[!INCLUDE [minimum-hardware-requirements](includes/minimum-software-requirements.md)]
+[!INCLUDE [minimum-hardware-requirements](includes/vi-arc-minimum-software-requirements.md)]
 
 ## Supported input formats and codecs
 
