@@ -32,8 +32,8 @@ The AMS asset ID will no longer be used for uploading a video. A video URL or lo
 
 ### Account creation, update, and management
 
-- **Account update**: All VI accounts created prior to February 15th must be updated so that they're linked to an Azure Storage account instead of an AMS account. For guidance on how to do it in the portal or through the API, see [Updating an existing ARM account](update-your-azure-video-indexer-account-and-migrate-assets.md).
-- **Classic account - connect to new ARM account**: As [announced in September 2023](https://azure.microsoft.com/updates/videoindexer-2/), VI Classic accounts are being retired June 30th, 2024. Prior to the retirement, all Classic accounts must be connected to a new ARM based VI account. For guidance on how to do it in the portal or through the API, see [Connect a Classic account to a new ARM based account](/azure/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets?tabs=updateexistingportal%2Cconnectclassicportal%2Coptinportal#connect-a-classic-account-to-a-new-arm-based-account).
+- **Account update**: All VI accounts created before February 15th must be updated so that they're linked to an Azure Storage account instead of an AMS account. For guidance on how to do it in the portal or through the API, see [Updating an existing ARM account](update-your-azure-video-indexer-account-and-migrate-assets.md).
+- **Classic account - connect to new ARM account**: As [announced in September 2023](https://azure.microsoft.com/updates/videoindexer-2/), VI Classic accounts are being retired June 30th, 2024. Before the retirement, all Classic accounts must be connected to a new ARM based VI account. For guidance on how to do it in the portal or through the API, see [Connect a Classic account to a new ARM based account](/azure/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets?tabs=updateexistingportal%2Cconnectclassicportal%2Coptinportal#connect-a-classic-account-to-a-new-arm-based-account).
 - **Account creation with API**
     - You must update account creation and requests to use the VI API version 2024-01-01.
     - Requests must be submitted with the [Azure Storage Account property](https://github.com/Azure/azure-rest-api-specs/blob/main/specification/vi/resource-manager/Microsoft.VideoIndexer/stable/2024-01-01/vi.json) rather than the AMS account.
@@ -42,7 +42,7 @@ The AMS asset ID will no longer be used for uploading a video. A video URL or lo
 
 ### Storage account
 
-Linking an Azure Storage account to an VI account is permanent and can’t be undone. Therefore, it's recommended that you create a storage account that is solely for use with the VI account. (This is especially important if you expect to use network restrictions.) It’s recommended that the storage account is in the same region as the VI account.
+Linking an Azure Storage account to a VI account is permanent and can’t be undone. Therefore, it's recommended that you create a storage account that is solely for use with the VI account. (This is especially important if you expect to use network restrictions.) It’s recommended that the storage account is in the same region as the VI account.
 
 You won’t be able to link your VI account to the storage account that was previously associated with the AMS account. 
 
@@ -62,7 +62,7 @@ Azure Media Player is also being retired as of June 30, 2024. If you have been u
 
 ### Projects
 
-VI has a Projects feature that can be used to edit and stitch together videos. Once your VI account has been updated, the feature will be limited until your videos are migrated. Updated VI accounts and VI accounts created after February 15th will not be able to create new Projects until June 2024.
+VI has a Projects feature that can be used to edit and stitch together videos. Once your VI account has been updated, the feature will be limited until your videos are migrated. Updated VI accounts and VI accounts created after February 15th won't be able to create new Projects until June 2024.
 
 Existing projects will be playable, but you won’t be able to edit or render them. If needed, render and download the project files before you update your account.
 
@@ -130,7 +130,7 @@ No, unless you want to migrate the source video that you initially sent to VI fo
 
 ### I see that my asset migration is in process – does it matter if a particular video has been migrated yet? 
 
-In most cases, no. The only scenario that is impacted is if you're using an VI Streaming URL to play videos. Videos not yet migrated need to be played by a player that supports AMS assets, the Azure Media Player. Videos that were already indexed need to be played by a player that supports Dash or HLS packaging and the sending of a token in the request (such as Shaka, DashJS, or VideoJS).  
+In most cases, no. The only scenario that is impacted is if you're using a VI Streaming URL to play videos. Videos not yet migrated need to be played by a player that supports AMS assets, the Azure Media Player. Videos that were already indexed need to be played by a player that supports Dash or HLS packaging and the sending of a token in the request (such as Shaka, DashJS, or VideoJS).  
 
 ### How can I tell if a video has been migrated yet? 
 
