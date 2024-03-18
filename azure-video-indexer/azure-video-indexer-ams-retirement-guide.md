@@ -3,7 +3,7 @@ title: Preparing for AMS retirement - VI migration and updating guide
 description: Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS. To continue using VI, between February 15 and June 30 2024, you must take steps to transition away from their current VI account AMS dependency. Follow this guide.
 ms.topic: conceptual
 ms.service: azure-video-indexer
-ms.date: 03/05/2024
+ms.date: 03/18/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -62,7 +62,7 @@ Azure Media Player is also being retired as of June 30, 2024. If you have been u
 
 ### Projects
 
-VI has a Projects feature that can be used to edit and stitch together videos. Once your VI account has been updated, the feature will be limited until your videos are migrated.
+VI has a Projects feature that can be used to edit and stitch together videos. Once your VI account has been updated, the feature will be limited until your videos are migrated. Updated VI accounts and VI accounts created after February 15th will not be able to create new Projects until June 2024.
 
 Existing projects will be playable, but you won’t be able to edit or render them. If needed, render and download the project files before you update your account.
 
