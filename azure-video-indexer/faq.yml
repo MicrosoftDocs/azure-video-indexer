@@ -4,9 +4,8 @@ metadata:
   description: This article gives answers to frequently asked questions about Azure AI Video Indexer.
   services: azure-video-indexer
   author: IngridAtMicrosoft
-  manager: femila
   ms.topic: faq
-  ms.date: 08/07/2023
+  ms.date: 03/18/2024
   ms.author: inhenkel
 title: Azure AI Video Indexer frequently asked questions
 summary: This article answers frequently asked questions about Azure AI Video Indexer.
@@ -58,7 +57,7 @@ sections:
 
       - question: What media formats does Azure AI Video Indexer support?
         answer: |
-          Azure AI Video Indexer supports most common media formats.
+          Azure AI Video Indexer supports most common media formats. See [Azure AI Video Indexer support matrix and service limits](avi-support-matrix.md#supported-file-formats).
 
       - question: How do I upload a media file into Azure AI Video Indexer and what are the limitations?
         answer: |
