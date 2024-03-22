@@ -79,7 +79,3 @@ Additionally, each instance in the transcription section includes the language i
 * Adding keywords isn't supported.
 * The language indication isn't included in the exported closed caption file.
 * The update transcript in the API doesn't support multiple languages files.
-
-## Next steps
-
-[Azure AI Video Indexer overview](video-indexer-overview.md)

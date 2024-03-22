@@ -2,7 +2,7 @@
 title: What is Azure AI Video Indexer?
 description: This article gives an overview of the Azure AI Video Indexer service.
 ms.topic: overview
-ms.date: 03/11/2024
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -114,15 +114,3 @@ As an important reminder, you must comply with all applicable laws in your use o
 Before uploading any video/image to Azure AI Video Indexer, You must have all the proper rights to use the video/image, including, where required by law, all the necessary consents from individuals (if any) in the video/image, for the use, processing, and storage of their data in Azure AI Video Indexer and Azure. Some jurisdictions may impose special legal requirements for the collection, online processing and storage of certain categories of data, such as biometric data. Before using Azure AI Video Indexer and Azure for the processing and storage of any data subject to special legal requirements, You must ensure compliance with any such legal requirements that may apply to You.
 
 To learn about compliance, privacy and security in Azure AI Video Indexer please visit the Microsoft [Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Azure/default.aspx). For Microsoft's privacy obligations, data handling and retention practices, including how to delete your data, please review Microsoft's [Privacy Statement](https://privacy.microsoft.com/PrivacyStatement), the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) ("OST") and [Data Processing Addendum](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67) ("DPA"). By using Azure AI Video Indexer, you agree to be bound by the OST, DPA and the Privacy Statement.
-
-## Next steps
-
-You're ready to get started with Azure AI Video Indexer. For more information, see the following articles:
-
-- [Indexing and configuration guide](indexing-configuration-guide.md)
-- [Pricing](https://azure.microsoft.com/pricing/details/video-indexer/)
-- [Get started with the Azure AI Video Indexer website](video-indexer-get-started.md).
-- [Process content with Azure AI Video Indexer REST API](video-indexer-use-apis.md).
-- [Embed visual widgets in your application](video-indexer-embed-widgets.md).
-
-For the latest updates, see [Azure AI Video Indexer release notes](release-notes.md).

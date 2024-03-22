@@ -2,7 +2,7 @@
 title: Language support in Azure AI Video Indexer
 description: This article provides a comprehensive list of language support by service features in Azure AI Video Indexer.
 ms.topic: conceptual
-ms.date: 03/10/2023
+ms.date: 03/22/2024
 ms.custom: ignite-2022
 ms.author: inhenkel
 author: IngridAtMicrosoft
@@ -187,8 +187,3 @@ If you need to use languages for identification that aren't used by default, you
 When you upload a file, the Video Indexer language model cross references 9 languages by default. If there's a match, the model generates the transcription for the file with the detected language.
 
 Use the language parameter to specify `multi` (MLID) or `auto` (LID) parameters. Use the `customLanguages` parameter to specify up to 10 languages. (The parameter is used only when the language parameter is set to `multi` or `auto`.) To learn more about using the API, see [Use the Azure AI Video Indexer API](video-indexer-use-apis.md).
-
-## Next steps
-
-- [Overview](video-indexer-overview.md)
-- [Release notes](release-notes.md)

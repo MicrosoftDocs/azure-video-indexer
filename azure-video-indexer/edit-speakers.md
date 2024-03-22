@@ -2,7 +2,7 @@
 title: Edit speakers in the Azure AI Video Indexer website
 description: The article demonstrates how to edit speakers with the Azure AI Video Indexer website.
 ms.topic: how-to
-ms.date: 11/01/2022
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -74,7 +74,3 @@ If the speaker you wish to assign doesn't appear on the list you can either **As
 ## Limitations
 
 When adding a new speaker or renaming a speaker, the new name should be unique.
-
-## Next steps 
-
-[Insert or remove transcript lines in the Azure AI Video Indexer website](edit-transcript-lines-portal.md)

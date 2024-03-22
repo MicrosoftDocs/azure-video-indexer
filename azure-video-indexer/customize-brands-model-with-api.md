@@ -2,7 +2,7 @@
 title: Customize a Brands model with Azure AI Video Indexer API
 description: Learn how to customize a Brands model with the Azure AI Video Indexer API.
 ms.topic: article
-ms.date: 01/14/2020
+ms.date: 03/22/2024
 ms.custom: prevauth-anikaz
 ms.author: kumud
 author: IngridAtMicrosoft
@@ -184,7 +184,3 @@ The `useBuiltIn` flag set to true means that Bing brands are enabled. If `useBui
 ### Response
 
 There's no returned content when the Brands model setting is updated successfully.
-
-## Next steps
-
-[Customize Brands model using website](customize-brands-model-with-website.md)

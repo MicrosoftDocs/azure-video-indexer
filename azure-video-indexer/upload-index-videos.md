@@ -2,7 +2,7 @@
 title: Upload and index videos with Azure AI Video Indexer using the Video Indexer website
 description: Learn how to upload videos by using Azure AI Video Indexer.
 ms.topic: article
-ms.date: 02/05/2024
+ms.date: 03/22/2024
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: azure-video-indexer
@@ -88,7 +88,3 @@ If you encounter any issues while uploading media files, try the following solut
     If you're using a trial account, check that the account quota for daily count, daily duration, or total duration. To view your quota and usage, see the Account settings.
 - If the upload from URL failed, make sure that the URL is valid and accessible by Video Indexer. Make sure that the URL isn't from a streaming service such as YouTube. Make sure that the media file isn't encrypted, protected by DRM, corrupted, or damaged. Make sure that it's a media file format supported by Video Indexer. For a list of supported formats, see [supported media formats](/azure/media-services/latest/encode-media-encoder-standard-formats-reference).
 - If the upload from file system failed, make sure that the file size isn't larger than 2 GB. Make sure that you have a stable internet connection.
-
-## Next steps
-
-[Supported media formats](/azure/azure-video-indexer/upload-index-videos?tabs=with-arm-account-account#supported-file-formats)

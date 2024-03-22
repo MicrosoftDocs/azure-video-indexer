@@ -3,7 +3,7 @@ title: How to enable network security
 description: This article gives an overview of the Azure AI Video Indexer  network security options.
 ms.topic: article
 ms.custom: devx-track-azurecli
-ms.date: 02/05/2024
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -52,7 +52,3 @@ You can also use Azure CLI to create a new or update an existing NSG rule and ad
 Example of a security rule using service tags. For more details, visit https://aka.ms/servicetags
 
 `az network nsg rule create -g MyResourceGroup --nsg-name MyNsg -n MyNsgRuleWithTags --priority 400 --source-address-prefixes VideoIndexer --destination-address-prefixes '*' --destination-port-ranges '*' --direction Inbound --access Allow --protocol Tcp --description "Allow traffic from Video Indexer"`
-
-## Next steps
-
-[Disaster recovery](video-indexer-disaster-recovery.md)

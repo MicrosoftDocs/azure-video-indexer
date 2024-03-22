@@ -1,7 +1,7 @@
 ---
 title: Azure AI Video Indexer labels identification overview
 description: This article gives an overview of an Azure AI Video Indexer labels identification.
-ms.date: 06/15/2022
+ms.date: 03/22/2024
 ms.topic: article
 author: IngridAtMicrosoft
 ms.author: inhenkel
@@ -127,27 +127,3 @@ When used responsibly and carefully, Azure AI Video Indexer is a valuable tool f
 - [Capabilities and limitations](/legal/cognitive-services/computer-vision/imageanalysis-transparency-note#system-performance-and-limitations-for-image-analysis)    
 - [Evaluation of image analysis](/legal/cognitive-services/computer-vision/imageanalysis-transparency-note#evaluation-of-image-analysis) 
 - [Data, privacy and security](/legal/cognitive-services/computer-vision/ocr-data-privacy-security)
-
-## Next steps
-
-### Learn More about Responsible AI
-
-- [Microsoft Responsible AI principles](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6) 
-- [Microsoft Responsible AI resources](https://www.microsoft.com/ai/responsible-ai-resources)
-- [Microsoft Azure Learning courses on Responsible AI](/training/paths/responsible-ai-business-principles/)
-- [Microsoft Global Human Rights Statement](https://www.microsoft.com/corporate-responsibility/human-rights-statement?activetab=pivot_1:primaryr5)  
-
-### Contact us
-
-`visupport@microsoft.com`  
-
-## Azure AI Video Indexer insights
-
-- [Audio effects detection](audio-effects-detection.md)
-- [Face detection](face-detection.md)
-- [OCR](ocr.md)
-- [Keywords extraction](keywords.md)
-- [Transcription, Translation & Language identification](transcription-translation-lid.md)
-- [Named entities](named-entities.md)
-- [Observed people tracking & matched persons](observed-matched-people.md)
-- [Topics inference](topics-inference.md)

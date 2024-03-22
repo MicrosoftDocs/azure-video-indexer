@@ -2,7 +2,7 @@
 title: Enable and view a textless slate with matching scene
 description: Learn about how to enable and view a textless slate with matching scene.
 ms.topic: article
-ms.date: 09/20/2022
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -26,9 +26,3 @@ In order to set the indexing process to include the slate metadata, select the *
 ### Insight
 
 This insight can only be viewed in the form of the downloaded json file.
-
-## Next steps
-
-* [Slate detection overview](slate-detection-insight.md)
-* [How to enable and view clapper board with extracted metadata](clapperboard-metadata.md).
-* [How to enable and view digital patterns with color bars](digital-patterns-color-bars.md).

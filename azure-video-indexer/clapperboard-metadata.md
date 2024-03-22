@@ -2,7 +2,7 @@
 title: Enable and view a clapper board with extracted metadata
 description: Learn about how to enable and view a clapper board with extracted metadata.
 ms.topic: article
-ms.date: 10/10/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -93,9 +93,3 @@ The values may not always be correctly identified by the detection algorithm. He
 - The clapper board may not be detected if the frame is blurred or that the text written on it can't be identified by the human eye.  
 - Empty fields’ values may lead to wrong fields categories.  
 <!-- If a part of a clapper board is hidden a value with the highest confidence is shown.  -->
-
-## Next steps
-
-* [Slate detection overview](slate-detection-insight.md)
-* [How to enable and view digital patterns with color bars](digital-patterns-color-bars.md).
-* [How to enable and view textless slate with matched scene](textless-slate-scene-matching.md).

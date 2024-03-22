@@ -1,7 +1,7 @@
 ---
 title: Azure AI Video Indexer text-based emotion detection overview 
 description: This article gives an overview of Azure AI Video Indexer text-based emotion detection.
-ms.date: 08/02/2023
+ms.date: 03/22/2024
 ms.topic: article
 ms.author: inhenkel
 author: IngridAtMicrosoft
@@ -126,29 +126,3 @@ Interpretation: The outputs of this model should not be used to make assessments
 - The results of the model can be inaccurate, as this is an AI system, and should be treated with caution.
 - The confidence of the model in its prediction should also be taken into account.
 - Non English videos will produce less accurate results.
-
-## Next steps
-
-### Learn More about Responsible AI
-
-- [Microsoft Responsible AI principles](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6) 
-- [Microsoft Responsible AI resources](https://www.microsoft.com/ai/responsible-ai-resources)
-- [Microsoft Azure Learning courses on Responsible AI](/training/paths/responsible-ai-business-principles/)
-- [Microsoft Global Human Rights Statement](https://www.microsoft.com/corporate-responsibility/human-rights-statement?activetab=pivot_1:primaryr5)  
-
-### Contact us
-
-`visupport@microsoft.com`  
-
-## Azure AI Video Indexer insights
-
-View some other Azure Video Insights:
-
-- [Audio effects detection](audio-effects-detection.md)
-- [Face detection](face-detection.md)
-- [OCR](ocr.md)
-- [Keywords extraction](keywords.md)
-- [Transcription, Translation & Language identification](transcription-translation-lid.md)
-- [Named entities](named-entities.md)
-- [Observed people tracking & matched persons](observed-matched-people.md)
-- [Topics inference](topics-inference.md)

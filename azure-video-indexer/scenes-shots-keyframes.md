@@ -2,7 +2,7 @@
 title: Azure AI Video Indexer scenes, shots, and keyframes 
 description: This topic gives an overview of the Azure AI Video Indexer scenes, shots, and keyframes.
 ms.topic: how-to
-ms.date: 06/07/2022
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -118,8 +118,3 @@ Additional characteristics:
 
 * Two shots: shows two persons’ faces of medium size.
 * Multiple faces: more than two persons.
-
-
-## Next steps
-
-[Examine the Azure AI Video Indexer output produced by the API](video-indexer-output-json-v2.md#scenes)

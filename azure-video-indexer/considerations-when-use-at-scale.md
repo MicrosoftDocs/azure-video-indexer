@@ -2,7 +2,7 @@
 title: Things to consider when using Azure AI Video Indexer at scale - Azure
 description: This topic explains what things to consider when using Azure AI Video Indexer at scale.
 ms.topic: how-to
-ms.date: 07/03/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -82,7 +82,3 @@ In many cases, indexing performance has almost no difference between HD (720P) v
 For example, for the face detection feature, a higher resolution can help with the scenario where there are many small but contextually important faces. However, this comes with a quadratic increase in runtime and an increased risk of false positives.
 
 Therefore, we recommend you to verify that you get the right results for your use case and to first test it locally. Upload the same video in 720P and in 4K and compare the insights you get.
-
-## Next steps
-
-[Examine the Azure AI Video Indexer output produced by API](video-indexer-output-json-v2.md)

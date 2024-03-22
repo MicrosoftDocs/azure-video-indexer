@@ -2,7 +2,7 @@
 title: Customize a speech model in Azure AI Video Indexer  
 description: This article gives an overview of what is a speech model in Azure AI Video Indexer. 
 ms.topic: conceptual
-ms.date: 03/06/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -135,10 +135,3 @@ Let's say you plan on indexing sports content and anticipate transcript accuracy
 4. Create a new speech model and add the original plain text dataset and the new pronunciation dataset file. 
 5. Reindex the video with the new speech model. 
 6. If needed, repeat steps 1-5 until the results are satisfactory. 
-
-## Next steps
-
-To get started with speech customization, see:
-
-- [Customize a speech model using the API](customize-speech-model-with-api.md)
-- [Customize a speech model using the website](customize-speech-model-with-website.md)

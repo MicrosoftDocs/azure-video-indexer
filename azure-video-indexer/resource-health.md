@@ -2,7 +2,7 @@
 title: Diagnose Video Indexer resource issues with Azure Resource Health
 description: Learn how to diagnose Video Indexer resource issues with Azure Resource Health.
 ms.topic: how-to
-ms.date: 05/12/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -52,8 +52,3 @@ If you experience problems with the resource, the **Unknown** health status 
 ### Degraded 
 
 The Degraded health status indicates your Video Indexer resource has detected a loss in performance, although it's still available for usage. 
-
-## Next steps
-
-- [Configuring Resource Health alerts](/azure/service-health/resource-health-alert-arm-template-guide) 
-- [Monitor Video Indexer](monitor-video-indexer.md) 

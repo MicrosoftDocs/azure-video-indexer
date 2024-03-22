@@ -2,7 +2,7 @@
 title: Track observed people in a video
 description: This topic gives an overview of Track observed people in a video concept.
 ms.topic: how-to
-ms.date: 08/07/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -73,7 +73,3 @@ The following JSON response illustrates what Video Indexer returns when tracking
 ## Limitations and assumptions 
 
 For more information, see [Considerations and limitations when choosing a use case](observed-matched-people.md#considerations-and-limitations-when-choosing-a-use-case).
-
-## Next steps
-
-Review [overview](video-indexer-overview.md)
