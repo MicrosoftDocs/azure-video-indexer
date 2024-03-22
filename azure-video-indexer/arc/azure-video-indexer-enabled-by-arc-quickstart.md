@@ -51,7 +51,7 @@ This quickstart is designed to allow you to see the extension in action, so smal
 - CPU: 16 cores
 - Memory: 16 GB
 
-For the minimum hardware requirements in a *production* environment, see the [Minimum hardware requirements](/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-overview#minimum-hardware-requirements) in the overview article.
+For the minimum hardware requirements in a *production* environment, see the [Minimum hardware requirements](/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-overview) in the overview article.
 
 [!INCLUDE [minimum-software-requirements](../includes/vi-arc-minimum-software-requirements.md)]
 
