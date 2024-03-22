@@ -1,6 +1,6 @@
 ---
 title: Deploy Azure AI Video Indexer enabled by Arc using an ARM template
-description: Learn how to create an Azure AI Video Indexer account by using an Azure Resource Manager (ARM) template.
+description: Learn how to create an Azure AI Video Indexer enabled by Arc account by using an Azure Resource Manager (ARM) template.
 ms.topic: quickstart
 ms.custom: devx-track-arm-template
 ms.date: 03/22/2024
@@ -12,9 +12,9 @@ ms.service: azure-video-indexer
 
 # Quickstart: Deploy Azure AI Video Indexer enabled by Arc using an ARM template
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](../includes/important-ams-retirement-avi-announcement.md)]
 
-[!INCLUDE [Gate notice](./includes/face-limited-access.md)]
+[!INCLUDE [Gate notice](../includes/face-limited-access.md)]
 
 In this quickstart, you'll create an Azure AI Video Indexer enabled by Arc account by using the Azure Resource Manager template ARM template. The resource will be deployed to your subscription and will create the Azure AI Video Indexer resource based on parameters defined in the *avam.template* file.
 
