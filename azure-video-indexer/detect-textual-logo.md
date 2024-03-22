@@ -12,14 +12,12 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
-
 > [!NOTE]
 > Textual logo detection (preview) creation process is currently available through API. The result can be viewed through the Azure AI Video Indexer [website](https://www.videoindexer.ai/). 
 
-**Textual logo detection** insights are based on the OCR textual detection, which matches a specific predefined text.
+**Textual logo detection** insights are based on the Optical Character Recognition (OCR) textual detection, which matches a specific predefined text.
 
-For example, if a user would create a textual logo: “Microsoft”, different appearances of the word ‘Microsoft’ will be detected as the ‘Microsoft’ logo. A logo can have different variations, these variations can be associated with the main logo name. For example, user might have under the ‘Microsoft’ logo the following variations: ‘MS’, ‘MSFT’ etc.
+For example, if you created the textual logo "Microsoft", appearances of the word "Microsoft" are detected as the Microsoft logo. A logo can have different variations. These variations can be associated with the main logo name. For example, you might have under the ‘Microsoft’ logo the following variations: ‘MS’, ‘MSFT’ etc.
 
 ```json
 {
@@ -40,7 +38,7 @@ For example, if a user would create a textual logo: “Microsoft”, different a
 
 ## Prerequisite
 
-The Azure Video Index account must have (at the very least) the `contributor` role assigned to the resource.
+The Azure Video Index account must have at least the `contributor` role assigned to the resource.
 
 ## How to use
 
@@ -61,9 +59,9 @@ Use the [Create logo](https://api-portal.videoindexer.ai/api-details#api=Operati
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="./media/textual-logo-detection/logo-api.png" alt-text="Diagram of logo API.":::
  
-In this tutorial we use the example supplied as default: 
+In this example, we use the example supplied as default: 
 
-Insert the following:
+Insert the following parameters:
 
 * `Location`: The location of the Azure AI Video Indexer account.
 * `Account ID`: The ID of the Azure AI Video Indexer account.
@@ -87,10 +85,10 @@ The default body is:
 
 |Key|Value|
 |---|---|
-|Name|Name of the logo, would be used in the Azure AI Video Indexer website.|
-|wikipediaSearchTerm|Used to create a description in the Video Indexer website.|
-|text|The text the model will compare too, make sure to add the obvious name as part of the variations. (e.g Microsoft)|
-|caseSensitive| true/false according to the variation.|
+|Name|Name of the logo used in the Azure AI Video Indexer website.|
+|wikipediaSearchTerm|Term used to create a description in the Video Indexer website.|
+|text|The text the model uses for comparison. Make sure to add the obvious name as part of the variations. (e.g Microsoft)|
+|caseSensitive| Determines whether the text is case sensitive. Set to true/false according to the variation.|
 
 The response should return **201 Created**.
 
@@ -124,7 +122,7 @@ content-type: application/json; charset=utf-8
  
 Use the [Create Logo Group](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Logo-Group) API to create a logo group. Use the **try it** button. 
  
-Insert the following: 
+Insert the following parameters: 
 
 * `Location`: The location of the Azure AI Video Indexer account.
 * `Account ID`: The ID of the Azure AI Video Indexer account.
@@ -145,7 +143,7 @@ In the **Body** paste the logo ID from the previous step.
 }
 ```
 
-* The default example has two logo IDs, we have created the first group with only one logo ID.
+* The default example has two logo IDs. The first group was created with only one logo ID.
 
     The response should return **201 Created**. 
 
@@ -172,40 +170,40 @@ In the **Body** paste the logo ID from the previous step.
  
 Use the upload API call: 
 
-Specify the following:
+Specify the following parameters:
 
-* `Location`: The location of the Azure AI Video Indexer account.
-* `Account`: The ID of the Azure AI Video Indexer account. 
-* `Name`: The name of the media file you're indexing. 
-* `Language`: `en-US`. For more information, see [Language support](language-support.md)
-* `IndexingPreset`: Select **Advanced Video/Audio+video**.  
-* `Videourl`: The url.
-* `LogoGroupID`: GUID representing the logo group (you got it in the response when creating it).
-* `Access token`: The token, at least at a contributor level permission. 
+- `Location`: The location of the Azure AI Video Indexer account
+- `Account`: The ID of the Azure AI Video Indexer account
+- `Name`: The name of the media file you're indexing
+- `Language`: `en-US`. For more information, see [Language support](language-support.md).
+- `IndexingPreset`: Select **Advanced Video/Audio+video**  
+- `Videourl`: The url
+- `LogoGroupID`: GUID representing the logo group (you got it in the response when creating it)
+- `Access token`: The token, at least at a contributor level permission
  
 ## Inspect the output 
 
-Assuming the textual logo model has found a match, you'll be able to view the result in the [Azure AI Video Indexer website](https://www.videoindexer.ai/).
+Assuming the textual logo model finds a match, you're able to view the result in the [Azure AI Video Indexer website](https://www.videoindexer.ai/).
  
 ### Insights  
 
-A new section would appear in the insights panel showing the number of custom logos that were detected. One representative thumbnail will be displayed representing the new logo. 
+A new section would appear in the insights panel showing the number of custom logos that were detected. One representative thumbnail is displayed representing the new logo. 
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="./media/textual-logo-detection/logo-insight.png" alt-text="Diagram of logo insight.":::
 
 ### Timeline 
 
-When switching to the Timeline view, under the **View**, mark the **Logos** checkbox. All detected thumbnails will be displayed according to their time stamp.
+When switching to the Timeline view, under the **View**, mark the **Logos** checkbox. All detected thumbnails are displayed according to their time stamp.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="./media/textual-logo-detection/logo-timeline.png" alt-text="Diagram of logo timeline.":::
 
-All logo instances that were recognized with a certainty above 80% present will be displayed, the extended list of detection including low certainty detection are available in the [Artifacts](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Artifact-Download-Url) file.
+All logo instances that were recognized with a certainty above 80% present are displayed. The extended list of detections, including low certainty detection, are available in the [Artifacts](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Artifact-Download-Url) file.
 
 ## Add a logo to an existing logo group
 
-In the first part of this article, we had one instance of a logo and we have associated it to the right logo group upon the creation of the logo group. If all logo instances are created before the logo group is created, they can be associated with logo group on the creation phase. However, if the group was already created, the new instance should be associated to the group following these steps:
+In the first part of this article, there was one instance of a logo and associated to the right logo group upon the creation of the logo group. If all logo instances are created before the logo group is created, they can be associated with logo group on the creation phase. However, if the group was already created, the new instance should be associated to the group following these steps:
 
 1. Create the logo.
 
