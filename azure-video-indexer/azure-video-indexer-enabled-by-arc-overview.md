@@ -3,14 +3,14 @@ title: What is Azure AI Video Indexer enabled by Arc? (Preview)
 description: Azure AI Video Indexer enabled by Arc an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 2/13/2024
+ms.date: 03/18/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
 # What is Azure AI Video Indexer enabled by Arc? (Preview)
 
-Azure AI Video Indexer enabled by Arc is an Azure Arc extension enabled service that runs video and audio analysis on edge devices. The solution is designed to run on Azure Stack Edge Profile, a heavy edge device, and supports many video formats, including MP4 and other common formats. It supports several languages in all basic audio-related models. It assumes that one Video Indexer account is mapped to one extension.
+Azure AI Video Indexer enabled by Arc is an Azure Arc extension enabled service that runs video and audio analysis on edge devices. The solution is designed to run on [Azure Arc enabled Kubernetes](/azure/azure-arc/kubernetes/) and supports many video formats, including MP4 and other common formats. It supports several languages in all basic audio-related models. It assumes that one Video Indexer account is mapped to one extension.
 
 If you aren't already familiar with [Azure AI Video Indexer](/azure/azure-video-indexer/), it's recommended that you familiarize yourself with the cloud service first.
 
@@ -37,9 +37,13 @@ Virtual machine (VM) extensions are small applications that provide post-deploym
 
 The Azure AI Video Indexer extension installs and deploys Azure AI Video indexer to the Kubernetes cluster.
 
-## Use cases
+All Azure AI Video Indexer enabled by Arc only supports Azure Resource Manager (ARM) accounts. ARM operations are decoupled from video insight operations. This design allows you to perform analysis on your edge devices without the need to upload your media assets to Azure.
 
-All Azure AI Video Indexer enabled by Arc accounts are Azure Resource Manager (ARM) accounts. ARM operations are decoupled from video insight operations. This design allows you to perform analysis on your edge devices without the need to upload your media assets to Azure.
+Azure AI Video Indexer enabled by Arc doesn't support classic accounts. For more information about the retirement of classic accounts, see [Preparing for AMS retirement: VI migration and updating guide](azure-video-indexer-ams-retirement-guide.md)
+
+The extension is supported in [direct connection mode](/azure/azure-arc/data/connectivity) scenarios only. Control plane information is sent to the cloud, for example, monitoring, usage. New extension versions are downloaded from the cloud. No customer data, such as what videos were indexed, is sent from the edge location to the cloud.
+
+## Use cases
 
 - **Data governance** – You can bring the AI to the content instead of vice versa. Use Azure AI Video Indexer enabled by Arc when you can’t move indexed content from on-premises to the cloud due to:
     - regulation.
@@ -47,9 +51,6 @@ All Azure AI Video Indexer enabled by Arc accounts are Azure Resource Manager (A
     - data store being too large, making lift and shift a significant effort.
 - **On-premises workflow** – Your indexing process is part of an on-premises workflow, and you want to lower the indexing duration latency affecting the flow.
 - **Pre-indexing** – You want to index before uploading the content to the cloud. To create clarity, you can presort your on-premises video and/or audio archive, and then only upload it for standard and/or advanced indexing in the cloud.
-
-> [!IMPORTANT]
-> To successfully deploy the extension it is mandatory that we approve your Azure subscription id in advance. Therefore you must first sign up using [this form](https://aka.ms/vi-register).
 
 ## Example deployment 
 
@@ -74,10 +75,15 @@ The extension is stored on each edge device and each device is associated with a
 | [Captioning](view-closed-captions.md) |  | :heavy_check_mark: | :heavy_check_mark: |
 | [Key frame detection](scenes-shots-keyframes.md) | :heavy_check_mark: |  | :heavy_check_mark: |
 | [OCR](ocr.md) | :heavy_check_mark: |  | :heavy_check_mark: |
+| [Object detection](object-detection.md) | :heavy_check_mark: |  | :heavy_check_mark: |
 | [Scene detection](scenes-shots-keyframes.md) | :heavy_check_mark: |  | :heavy_check_mark: |
 | [Shot detection](scenes-shots-keyframes.md) | :heavy_check_mark: |  | :heavy_check_mark: |
 
 :::image type="content" source="media/common/avi-flow-edge.svg" lightbox="media/common/avi-flow-edge.svg" alt-text="Graphic Azure AI Video Indexer enabled by Arc available presets already listed":::
+
+[!INCLUDE [minimum-hardware-requirements](includes/vi-arc-minimum-hardware-requirements.md)]
+
+[!INCLUDE [minimum-hardware-requirements](includes/vi-arc-minimum-software-requirements.md)]
 
 ## Supported input formats and codecs
 

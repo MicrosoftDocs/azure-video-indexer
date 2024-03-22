@@ -3,14 +3,14 @@ title: Try Azure AI Video Indexer enabled by Arc
 description: This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 ms.topic: quickstart
 ms.service: azure-video-indexer
-ms.date: 03/12/2024
+ms.date: 03/18/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
 # Try Azure AI Video Indexer enabled by Arc
 
-Azure AI Video Indexer enabled by Arc is an Azure Arc extension enabled service that runs video and audio analysis on edge devices. The solution is designed to run on Azure Stack Edge Profile, a heavy edge device, and supports many video formats, including MP4 and other common formats. It supports several languages in all basic audio-related models. It assumes that one Video Indexer resource is mapped to one extension.
+[Azure AI Video Indexer enabled by Arc](azure-video-indexer-enabled-by-arc-overview.md) is an Azure Arc extension enabled service that runs video and audio analysis on edge devices. The solution is designed to run on [Azure Arc enabled Kubernetes](/azure/azure-arc/kubernetes/) and supports many video formats, including MP4 and other common formats. It supports several languages in all basic audio-related models. It assumes that one Video Indexer resource is mapped to one extension.
 
 This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 
@@ -33,6 +33,8 @@ The extension is stored on each edge device and each device is associated with a
 
 - Create an Azure subscription with permissions for creating Azure resources.
 - Create an Azure AI Video Indexer Account. Use the [Create Video Indexer account](create-account-portal.md) tutorial.
+- Create an [Arc enabled Kubernetes cluster](/azure/aks/hybrid/aks-create-clusters-portal).
+- Download the [example video](./media/common/video.mp4).
 
 To use the Video Indexer extension, you need to have an externally facing endpoint, which can be either a DNS name or IP. The endpoint should be set as a secure transfer protocol (`https:\\`) and is used as the extension API endpoint, formatted as `https:\\{endpointUri}/swagger/index.html`. It's also used by the Video Indexer web portal to communicate with the extension. It's recommended that you use an ingress control to manage the endpoint. 
 
@@ -42,28 +44,16 @@ To use the Video Indexer extension, you need to have an externally facing endpoi
 > [!IMPORTANT]
 > The AKS cluster contains the Video Indexer extension must be in the East US region.
 
-## Minimum hardware requirements
+## Minimum hardware requirements for this quickstart
 
-The following list is the minimum and recommended requirements if the extension contains single language support. If you install multiple speech and translation containers with several languages, increase the hardware requirements accordingly.
+This quickstart is designed to allow you to see the extension in action, so smaller resource sizes have been chosen for you to work with in a *test* environment. For this quickstart, the minimum hardware requirements are:
 
-| Configuration | VM Count | Node CPU Cores Count  | Node Ram | Node Storage | Remarks
-| --- | --- | --- | --- | --- | --- |
-| Minimum | 1 | 32 Cores | 64 GB | 50 GB | Storage needs to support `ReadWriteMany` Storage Class |
-| Recommended | 2 | 48-64 Cores | 256 GB | 100 GB | Storage needs to support `ReadWriteMany` Storage Class |
+- CPU: 16 cores
+- Memory: 16 GB
 
-> [!Note] 
-> At least a 2-node cluster is recommended for high availability and scalability. The recommended settings refer to cluster wide settings, so for example, if you have 2 nodes, each node should have 16 cores and 32 GB of RAM.
+For the minimum hardware requirements in a *production* environment, see the [Minimum hardware requirements](azure-video-indexer-enabled-by-arc-overview.md#minimum-hardware-requirements) in the overview article.
 
-> [!TIP] 
-> We recommend creating a dedicated node-pool / auto-scaling groups to host the VI Solution
-
-### Minimum software requirements
-
-| Component |  Minimum Requirements |
-| --- | --- |
-| Operating System | Ubuntu 22.04 LTS or any Linux Compatible OS |
-| Kubernetes | 1.26 |
-| Azure CLI | 2.48.0 |
+[!INCLUDE [minimum-software-requirements](includes/vi-arc-minimum-software-requirements.md)]
 
 ## Parameter definitions
 
