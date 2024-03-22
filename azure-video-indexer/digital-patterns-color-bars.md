@@ -2,7 +2,7 @@
 title: Enable and view digital patterns with color bars
 description: Learn about how to enable and view digital patterns with color bars.
 ms.topic: article
-ms.date: 09/20/2022
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -77,9 +77,3 @@ The following table describes fields found in json:
 - There can be a mismatch if the input video is of low quality (for example – old Analog recordings). 
 - The digital patterns will be identified over the 10 min of the beginning and 10 min of the ending part of the video.  
 <!-- -  What about the limited set of digital patterns that we compare to? It's not any digital pattern -->
-
-## Next steps
-
-* [Slate detection overview](slate-detection-insight.md)
-* [How to enable and view clapper board with extracted metadata](clapperboard-metadata.md)
-* [How to enable and view textless slate with matched scene](textless-slate-scene-matching.md)

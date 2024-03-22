@@ -2,7 +2,7 @@
 title: Customize a Person model with Azure AI Video Indexer API
 description: Learn how to customize a Person model with the Azure AI Video Indexer API.
 ms.topic: article
-ms.date: 01/14/2020
+ms.date: 03/22/2024
 ms.custom: prevauth-anikaz
 ms.author: kumud
 author: IngridAtMicrosoft
@@ -84,7 +84,3 @@ You can update a face that Azure AI Video Indexer recognized as a celebrity with
 To update the face, use the [update a video face](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Video-Face) API.
 
 Names are unique for Person models, so if you give two different faces in the same Person model the same `name` parameter value, Azure AI Video Indexer views the faces as the same person and converges them once you reindex your video.
-
-## Next steps
-
-[Customize Person model using the Azure AI Video Indexer website](customize-person-model-with-website.md)

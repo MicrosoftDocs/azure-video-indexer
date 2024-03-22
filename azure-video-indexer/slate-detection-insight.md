@@ -2,7 +2,7 @@
 title: Slate detection insights
 description: Learn about slate detection insights.
 ms.topic: article
-ms.date: 09/20/2022
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -39,7 +39,3 @@ For details about viewing each slate insight, see:
 - [How to enable and view clapper board with extracted metadata](clapperboard-metadata.md).
 - [How to enable and view digital patterns with color bars](digital-patterns-color-bars.md)
 - [How to enable and view textless slate with scene matching](textless-slate-scene-matching.md).
-
-## Next steps
-
-[Overview](video-indexer-overview.md)

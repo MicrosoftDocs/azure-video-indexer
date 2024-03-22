@@ -2,7 +2,7 @@
 title: Enable the matched person insight
 description: The topic explains how to use a match observed people feature. These are people that are detected in the video with the corresponding faces ("People" insight).
 ms.topic: how-to
-ms.date: 12/10/2021
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -105,7 +105,3 @@ It's important to note the limitations of Mapped person, to avoid or mitigate th
 **Spatial allocation per frame**: There is no match where different people appear in the same spatial position relatively to the frame in a short time.
 
 See the limitations of Observed people: [Trace observed people in a video](observed-people-tracking.md)
-
-## Next steps
-
-[Overview](video-indexer-overview.md)

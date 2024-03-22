@@ -2,7 +2,7 @@
 title: Customize a speech model with Azure AI Video Indexer website
 description: Learn how to customize a speech model with the Azure AI Video Indexer website.
 ms.topic: how-to
-ms.date: 03/06/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -144,7 +144,3 @@ During the upload process, you can select the source language of the video. In t
 > :::image type="content" source="./media/customize-speech-model/contoso-model.png" alt-text="Screenshot of indexing a video.":::
 
 Select the Upload option in the bottom of the page, and your new video will be indexed using your Language model. The same steps apply when you want to re-index a video with a custom model. 
-
-## Next steps
-
-[Customize a speech model using the API](customize-speech-model-with-api.md)

@@ -2,7 +2,7 @@
 title: Detect textual logo with Azure AI Video Indexer
 description: This article gives an overview of Azure AI Video Indexer textual logo detection.
 ms.topic: how-to
-ms.date: 01/22/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -203,9 +203,7 @@ When switching to the Timeline view, under the **View**, mark the **Logos** chec
 
 All logo instances that were recognized with a certainty above 80% present will be displayed, the extended list of detection including low certainty detection are available in the [Artifacts](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Artifact-Download-Url) file.
 
-## Next steps
-
-### Adding a logo to an existing logo group
+## Add a logo to an existing logo group
 
 In the first part of this article, we had one instance of a logo and we have associated it to the right logo group upon the creation of the logo group. If all logo instances are created before the logo group is created, they can be associated with logo group on the creation phase. However, if the group was already created, the new instance should be associated to the group following these steps:
 
@@ -233,7 +231,7 @@ In the first part of this article, we had one instance of a logo and we have ass
     1. Then add to the list the logo ID from step 1.
 1. Validate the response of the [Update logo group](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Logo-Groups) making sure the list contains the previous IDs and the new.
 
-### Additional information and limitations 
+## Additional information and limitations 
  
 * A logo group can contain up to 50 logos.
 * One logo can be linked to more than one group.

@@ -2,7 +2,7 @@
 title: Regions in which Azure AI Video Indexer is available  
 description: This article talks about Azure regions in which Azure AI Video Indexer is available.
 ms.topic: article
-ms.date: 09/14/2020
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -47,9 +47,3 @@ For example, for the Azure region West US 2 (displayed below), you will use "wes
       "subscriptionId": null
     }
 ```
-
-## Next steps
-
-- [Customize Language model using APIs](customize-language-model-with-api.md)
-- [Customize Brands model using APIs](customize-brands-model-with-api.md)
-- [Customize Person model using APIs](customize-person-model-with-api.md)

@@ -1,7 +1,7 @@
 ---
 title: Azure AI Video Indexer media transcription, translation and language identification overview  
 description: An introduction to Azure AI Video Indexer media transcription, translation and language identification components responsibly.
-ms.date: 06/15/2022
+ms.date: 03/22/2024
 ms.topic: article
 ms.author: inhenkel
 author: IngridAtMicrosoft
@@ -132,27 +132,3 @@ When used responsibly and carefully, Azure AI Video Indexer is a valuable tool f
 - Ambiguous speaker identification: Some segments of speech may not have enough unique characteristics for the model to confidently attribute to a specific speaker.
 
 For more information, see: guidelines and limitations in [language detection and transcription](/azure/azure-video-indexer/multi-language-identification-transcription).  
-
-## Next steps
-
-### Learn More about Responsible AI
-
-- [Microsoft Responsible AI principles](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6) 
-- [Microsoft Responsible AI resources](https://www.microsoft.com/ai/responsible-ai-resources)
-- [Microsoft Azure Learning courses on Responsible AI](/training/paths/responsible-ai-business-principles/)
-- [Microsoft Global Human Rights Statement](https://www.microsoft.com/corporate-responsibility/human-rights-statement?activetab=pivot_1:primaryr5)  
-
-### Contact us
-
-`visupport@microsoft.com`  
-
-## Azure AI Video Indexer insights
-
-- [Audio effects detection](audio-effects-detection.md)
-- [Face detection](face-detection.md)
-- [OCR](ocr.md)
-- [Keywords extraction](keywords.md)
-- [Labels identification](labels-identification.md) 
-- [Named entities](named-entities.md)
-- [Observed people tracking & matched faces](observed-matched-people.md)
-- [Topics inference](topics-inference.md)

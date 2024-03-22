@@ -3,7 +3,7 @@ title: What is Azure AI Video Indexer enabled by Arc? (Preview)
 description: Azure AI Video Indexer enabled by Arc an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 03/18/2024
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -152,7 +152,7 @@ Azure AI Video Indexer enabled by Arc also supports bringing your own model. See
 - You can use only cloud account access tokens obtained via the Azure portal. Cloud video access tokens aren't supported, but with the API, extension access tokens are available and we support all types.
 -   Video error messages aren't stored due to memory limitations.
 
-## Next steps
+## Related articles
  
 - Try the [Azure AI Video Indexer enabled by Arc sample on GitHub ](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoIndexerEnabledByArc/aks/readme.md)
 - Try the [Azure AI Video Indexer enable by Arc Jumpstart](https://arcjumpstart.com/azure_arc_jumpstart/azure_edge_iot_ops/aks_edge_essentials_single_vi)

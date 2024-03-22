@@ -2,7 +2,7 @@
 title: Customize a Brands model in Azure AI Video Indexer - Azure  
 description: This article gives an overview of what is a Brands model in Azure AI Video Indexer and how to customize it. 
 ms.topic: conceptual
-ms.date: 02/20/2019
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -23,11 +23,3 @@ In the "Microsoft Build 2017 Day 2" presentation, the brand "Microsoft Windows" 
 ![Brands overview](./media/content-model-customization/brands-overview.png)
 
 Talking about Windows in the context of construction won't detect the word "Windows" as a brand, and same for Box, Apple, Fox, etc., based on advanced Machine Learning algorithms that know how to disambiguate from context. Brand Detection works for all our supported languages.
-
-## Next steps
-
-To bring your own brands, check out these articles:
-
-[Customize the brands model using the API](customize-brands-model-with-api.md)
-
-[Customize the brands model using the website](customize-brands-model-with-website.md)

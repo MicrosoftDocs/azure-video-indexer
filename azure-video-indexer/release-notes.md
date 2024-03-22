@@ -3,7 +3,7 @@ title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
 ms.topic: article
 ms.custom: references_regions
-ms.date: 03/05/2024
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -951,7 +951,3 @@ When calling the [Update Video transcript API](https://api-portal.videoindexer.a
 ### New download transcript formats – TXT and CSV
 
 In addition to the closed captioning format already supported (SRT, VTT, and TTML), Azure AI Video Indexer now supports downloading the transcript in TXT and CSV formats.
-
-## Next steps
-
-[Overview](video-indexer-overview.md)

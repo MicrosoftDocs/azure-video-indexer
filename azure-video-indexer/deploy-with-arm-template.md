@@ -3,7 +3,7 @@ title: Deploy Azure AI Video Indexer by using an ARM template
 description: Learn how to create an Azure AI Video Indexer account by using an Azure Resource Manager (ARM) template.
 ms.topic: tutorial
 ms.custom: devx-track-arm-template
-ms.date: 02/14/2024
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -109,7 +109,3 @@ If you're new to template deployment, see:
 * [Azure Resource Manager documentation](/azure/azure-resource-manager/)
 * [Deploy resources with ARM templates](/azure/azure-resource-manager/templates/deploy-powershell)
 * [Deploy resources with Bicep and the Azure CLI](/azure/azure-resource-manager/bicep/deploy-cli)
-
-## Next steps
-
-Connect a [classic paid Azure AI Video Indexer account to a Resource Manager-based account](connect-classic-account-to-arm.md).

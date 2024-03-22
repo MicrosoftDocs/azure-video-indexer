@@ -2,7 +2,7 @@
 title: Use Azure AI Video Indexer to auto identify spoken languages 
 description: This article describes how the Azure AI Video Indexer language identification model is used to automatically identifying the spoken language in a video.
 ms.topic: how-to
-ms.date: 08/28/2023
+ms.date: 03/22/2024
 ms.author: ellbe
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -56,8 +56,3 @@ Automatic language identification (LID) supports the following languages:
 - Low-quality audio may affect the model results.
 - The model requires at least one minute of speech in the audio.
 - The model is designed to recognize a spontaneous conversational speech (not voice commands, singing, and so on).
-
-## Next steps
-
-- [Overview](video-indexer-overview.md)
-- [Automatically identify and transcribe multi-language content](multi-language-identification-transcription.md)
