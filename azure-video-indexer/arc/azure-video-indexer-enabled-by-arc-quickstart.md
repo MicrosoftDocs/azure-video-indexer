@@ -32,7 +32,7 @@ The extension is stored on each edge device and each device is associated with a
 > To successfully deploy the Azure AI Video Indexer extension, it is **mandatory** that your Azure subscription id is approved in advance. You must first sign up using [this form](https://aka.ms/vi-register).
 
 - Create an Azure subscription with permissions for creating Azure resources.
-- Create an Azure AI Video Indexer Account. Use the [Create Video Indexer account](create-account-portal.md) tutorial.
+- Create an Azure AI Video Indexer Account. Use the [Create Video Indexer account](/azure/azure-video-indexer/create-account-portal) tutorial.
 - Create an [Arc enabled Kubernetes cluster](/azure/aks/hybrid/aks-create-clusters-portal).
 - Download the [example video](./media/common/video.mp4).
 
@@ -51,9 +51,9 @@ This quickstart is designed to allow you to see the extension in action, so smal
 - CPU: 16 cores
 - Memory: 16 GB
 
-For the minimum hardware requirements in a *production* environment, see the [Minimum hardware requirements](azure-video-indexer-enabled-by-arc-overview.md#minimum-hardware-requirements) in the overview article.
+For the minimum hardware requirements in a *production* environment, see the [Minimum hardware requirements](/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-overview#minimum-hardware-requirements) in the overview article.
 
-[!INCLUDE [minimum-software-requirements](includes/vi-arc-minimum-software-requirements.md)]
+[!INCLUDE [minimum-software-requirements](../includes/vi-arc-minimum-software-requirements.md)]
 
 ## Parameter definitions
 
