@@ -18,8 +18,8 @@ Using this quickstart, you can create an Azure AI Video Indexer (VI) account by 
 The following resources are installed using the Bicep template:
 
 - Azure Storage account
-- VI account with a connection to the storage account using a system assigned managed identity.
-- The Storage Blob Data Contributor role assignment for the VI account on the storage account.
+- VI account with a connection to the storage account using a system assigned managed identity
+- The Storage Blob Data Contributor role assignment for the VI account on the storage account
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ The following resources are installed using the Bicep template:
 
 ## Review the Bicep file
 
-The code that accompanies this quickstart can be found on [GitHub](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/Deploy-Samples/bicep).
+The code that accompanies this quickstart can be found in the [Official Azure AI Video Indexer Samples](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/Deploy-Samples/bicep).
 
 The `main.bicep` file orchestrates the installation of two modules:
 
@@ -41,7 +41,7 @@ The `main.bicep` file orchestrates the installation of two modules:
 
 ## Create the Bicep file
 
-1. Copy and paste the following content to a file called `main.bicep` in your working directory.
+1. Copy and paste the following content to a file called *main.bicep* in your working directory.
 
     ```cli
     param location string = resourceGroup().location 
@@ -76,12 +76,12 @@ The `main.bicep` file orchestrates the installation of two modules:
 
 1. Edit the `main.bicep` file by filling in the missing parameters:
     
-    - storageAccountName - the name of the storage account you want connected to the Azure AI Video Indexer account
-    - videoIndexerAccountName - the VI account name
+    - *storageAccountName* - the name of the storage account you want connected to the Azure AI Video Indexer account
+    - *videoIndexerAccountName* - the VI account name
 
 ## Create a Video AI Indexer Bicep module
 
-Copy and paste the following content to a file called `videoindexer.bicep` in your working directory. The file deploys the storage account along with a VI account with a system assigned identity.
+Copy and paste the following content to a file called *videoindexer.bicep* in your working directory. The file deploys the storage account along with a VI account with a system assigned identity.
 
 ```cli
 
@@ -128,7 +128,7 @@ output servicePrincipalId string = videoIndexer.identity.principalId
 
 ## Create a role assignment Bicep module
 
-Copy and paste the following content to a file called `role-assignment-.bicep` in your working directory. The module grants the system assigned identity the role of “Storage Blob Data Contributor” on the storage account of the VI account.
+Copy and paste the following content to a file called *role-assignment.bicep* in your working directory. The module grants the system assigned identity the role of Storage Blob Data Contributor on the storage account of the VI account.
 
 ```cli
 
@@ -155,32 +155,32 @@ resource roleAssignment 'Microsoft.Authorization/roleAssignments@2020-04-01-prev
 
 ## Deploy the Bicep files
 
-1. Open a terminal and ensure that you are signed in to your Azure subscription.
+1. Open a terminal and ensure that you're signed in to your Azure subscription.
     
     `az login`
     
     `az account set --subscription <your-subscription-name>`
 
-1. Create a resource group
+1. Create a resource group.
 
-    `az group create -n myResourceGroup -l eastus`
+    `az group create -n <your-resource-group-name> -l eastus`
 
 1. Deploy the template to the resource group.
 
-    `az deployment group create --resource-group myResourceGroup --template-file .\main.template.json`
+    `az deployment group create --resource-group <your-resource-group-name> --template-file .\main.template.json`
 
-1. Wait for the deployment to finish and inspect the create resource on Azure Portal. 
+1. Wait for the deployment to finish and inspect the created resource on Azure portal. 
 
 ## Related articles
 
 If you're new to Azure AI Video Indexer, see:
 
-The [Azure AI Video Indexer](/azure/azure-video-indexer/) documentation
-The [Azure AI Video Indexer developer portal](https://api-portal.videoindexer.ai/)
-Other [Azure AI Video Indexer samples](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/README.md).
+- The [Azure AI Video Indexer documentation](/azure/azure-video-indexer/)
+- The [Azure AI Video Indexer developer portal](https://api-portal.videoindexer.ai/)
+- The [Official Azure AI Video Indexer Samples](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/README.md)
 
 If you're new to Bicep deployment, see:
 
-[Azure Resource Manager](/azure/azure-resource-manager/) documentation
-[Deploy Resources with Bicep and Azure PowerShell](/azure/azure-resource-manager/bicep/deploy-powershell)
-[Deploy Resources with Bicep and Azure CLI](/azure/azure-resource-manager/bicep/deploy-cli)
+- [Azure Resource Manager documentation](/azure/azure-resource-manager/)
+- [Deploy Resources with Bicep and Azure PowerShell](/azure/azure-resource-manager/bicep/deploy-powershell)
+- [Deploy Resources with Bicep and Azure CLI](/azure/azure-resource-manager/bicep/deploy-cli)
