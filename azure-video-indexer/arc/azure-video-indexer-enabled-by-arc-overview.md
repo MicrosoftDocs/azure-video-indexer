@@ -14,7 +14,7 @@ Azure AI Video Indexer enabled by Arc is an Azure Arc extension enabled service 
 
 If you aren't already familiar with [Azure AI Video Indexer](/azure/azure-video-indexer/), it's recommended that you familiarize yourself with the cloud service first.
 
-Additionally, before you start working with [!INCLUDE [variable-edge-product-name](includes/variable-edge-product-name.md)], review the [transparency note](/legal/azure-video-indexer/transparency-note) to understand usage restrictions.
+Additionally, before you start working with Azure AI Video Indexer enabled by Arc, review the [transparency note](/legal/azure-video-indexer/transparency-note) to understand usage restrictions.
 
 > [!IMPORTANT]
 > To successfully deploy the Azure AI Video Indexer extension, it is **mandatory** that your Azure subscription id is approved in advance. You must first sign up using [this form](https://aka.ms/vi-register).
@@ -39,7 +39,7 @@ The Azure AI Video Indexer extension installs and deploys Azure AI Video indexer
 
 All Azure AI Video Indexer enabled by Arc only supports Azure Resource Manager (ARM) accounts. ARM operations are decoupled from video insight operations. This design allows you to perform analysis on your edge devices without the need to upload your media assets to Azure.
 
-Azure AI Video Indexer enabled by Arc doesn't support classic accounts. For more information about the retirement of classic accounts, see [Preparing for AMS retirement: VI migration and updating guide](azure-video-indexer-ams-retirement-guide.md)
+Azure AI Video Indexer enabled by Arc doesn't support classic accounts. For more information about the retirement of classic accounts, see [Preparing for AMS retirement: VI migration and updating guide](/azure/azure-video-indexer/azure-video-indexer-ams-retirement-guide)
 
 The extension is supported in [direct connection mode](/azure/azure-arc/data/connectivity) scenarios only. Control plane information is sent to the cloud, for example, monitoring, usage. New extension versions are downloaded from the cloud. No customer data, such as what videos were indexed, is sent from the edge location to the cloud.
 
@@ -57,33 +57,33 @@ The extension is supported in [direct connection mode](/azure/azure-arc/data/con
 The following block diagram shows the Azure AI Video Indexer extension running on Azure Arc. There are three types: 
 
 1. Store type A uses both vision and audio presets.
-1. Store type B uses only vision presets. It also has a custom model. For more information about using a custom model with Azure AI Video Indexer enabled by Arc, see [Bring Your Own AI model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md). 
+1. Store type B uses only vision presets. It also has a custom model. For more information about using a custom model with Azure AI Video Indexer enabled by Arc, see [Bring Your Own AI model](/azure/azure-video-indexer/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview). 
 1. Store C uses only audio presets. 
 
 The extension is stored on each edge device and each device is associated with a single Azure AI Video Indexer account that interfaces with Azure Arc and the cloud.
 
-:::image type="content" source="./media/common/vi-arc-diagram-v2.svg" lightbox="./media/common/vi-arc-diagram-v2.svg" alt-text="VI Arc block diagram":::
+:::image type="content" source="../media/common/vi-arc-diagram-v2.svg" lightbox="../media/common/vi-arc-diagram-v2.svg" alt-text="VI Arc block diagram":::
 
 ## Supported AI presets
 
-[!INCLUDE [variable-edge-product-acronym](includes/variable-edge-product-acronym.md)] supports the following indexing presets:
+Azure AI Video Indexer enabled by Arc supports the following indexing presets:
 
 | Model | Basic Video | Basic Audio | Basic Video & Audio |
 |--|--|--|--|
-| [Transcription](transcription-translation-lid.md) |  | :heavy_check_mark: | :heavy_check_mark: |
-| [Translation](transcription-translation-lid.md) |  | :heavy_check_mark: | :heavy_check_mark: |
-| [Captioning](view-closed-captions.md) |  | :heavy_check_mark: | :heavy_check_mark: |
-| [Key frame detection](scenes-shots-keyframes.md) | :heavy_check_mark: |  | :heavy_check_mark: |
-| [OCR](ocr.md) | :heavy_check_mark: |  | :heavy_check_mark: |
-| [Object detection](object-detection.md) | :heavy_check_mark: |  | :heavy_check_mark: |
-| [Scene detection](scenes-shots-keyframes.md) | :heavy_check_mark: |  | :heavy_check_mark: |
-| [Shot detection](scenes-shots-keyframes.md) | :heavy_check_mark: |  | :heavy_check_mark: |
+| [Transcription](/azure/azure-video-indexer/transcription-translation-lid) |  | :heavy_check_mark: | :heavy_check_mark: |
+| [Translation](/azure/azure-video-indexer/transcription-translation-lid) |  | :heavy_check_mark: | :heavy_check_mark: |
+| [Captioning](/azure/azure-video-indexer/view-closed-captions) |  | :heavy_check_mark: | :heavy_check_mark: |
+| [Key frame detection](/azure/azure-video-indexer/scenes-shots-keyframes) | :heavy_check_mark: |  | :heavy_check_mark: |
+| [OCR](/azure/azure-video-indexer/ocr) | :heavy_check_mark: |  | :heavy_check_mark: |
+| [Object detection](/azure/azure-video-indexer/object-detection) | :heavy_check_mark: |  | :heavy_check_mark: |
+| [Scene detection](/azure/azure-video-indexer/scenes-shots-keyframes) | :heavy_check_mark: |  | :heavy_check_mark: |
+| [Shot detection](/azure/azure-video-indexer/scenes-shots-keyframes) | :heavy_check_mark: |  | :heavy_check_mark: |
 
-:::image type="content" source="media/common/avi-flow-edge.svg" lightbox="media/common/avi-flow-edge.svg" alt-text="Graphic Azure AI Video Indexer enabled by Arc available presets already listed":::
+:::image type="content" source="../media/common/avi-flow-edge.svg" lightbox="../media/common/avi-flow-edge.svg" alt-text="Graphic Azure AI Video Indexer enabled by Arc available presets already listed":::
 
-[!INCLUDE [minimum-hardware-requirements](includes/vi-arc-minimum-hardware-requirements.md)]
+[!INCLUDE [minimum-hardware-requirements](../includes/vi-arc-minimum-hardware-requirements.md)]
 
-[!INCLUDE [minimum-hardware-requirements](includes/vi-arc-minimum-software-requirements.md)]
+[!INCLUDE [minimum-hardware-requirements](../includes/vi-arc-minimum-software-requirements.md)]
 
 ## Supported input formats and codecs
 
@@ -137,7 +137,7 @@ Here is your alphabetized list:
 
 ## Bring your own model
 
-Azure AI Video Indexer enabled by Arc also supports bringing your own model. See the [Bring Your Own Model (BYO)](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md) article for details.
+Azure AI Video Indexer enabled by Arc also supports bringing your own model. See the [Bring Your Own Model (BYO)](/azure/azure-video-indexer/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview) article for details.
 
 ## Limitations
 
@@ -156,4 +156,4 @@ Azure AI Video Indexer enabled by Arc also supports bringing your own model. See
  
 - Try the [Azure AI Video Indexer enabled by Arc sample on GitHub ](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoIndexerEnabledByArc/aks/readme.md)
 - Try the [Azure AI Video Indexer enable by Arc Jumpstart](https://arcjumpstart.com/azure_arc_jumpstart/azure_edge_iot_ops/aks_edge_essentials_single_vi)
-- Try deploying in the Azure portal using the [Azure AI Video Indexer enabled by Arc quickstart](azure-video-indexer-enabled-by-arc-quickstart.md)
+- Try deploying in the Azure portal using the [Azure AI Video Indexer enabled by Arc quickstart](/azure/azure-video-indexer/azure-video-indexer-enabled-by-arc-quickstart)

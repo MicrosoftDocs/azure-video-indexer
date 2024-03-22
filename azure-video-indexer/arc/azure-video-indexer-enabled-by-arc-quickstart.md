@@ -24,7 +24,7 @@ Here is a block diagram showing Azure AI Video Indexer running on Azure Arc. The
 
 The extension is stored on each edge device and each device is associated with a single AI Video Indexer account that interfaces with Azure Arc and the cloud.
 
-:::image type="content" source="media/common/vi-arc-diagram-v2.svg" lightbox="media/common/avi-arc-diagram.svg" alt-text="VI Arc block diagram":::
+:::image type="content" source="../media/common/vi-arc-diagram-v2.svg" lightbox="../media/common/avi-arc-diagram.svg" alt-text="VI Arc block diagram":::
 
 ## Prerequisites
 
@@ -32,9 +32,9 @@ The extension is stored on each edge device and each device is associated with a
 > To successfully deploy the Azure AI Video Indexer extension, it is **mandatory** that your Azure subscription id is approved in advance. You must first sign up using [this form](https://aka.ms/vi-register).
 
 - Create an Azure subscription with permissions for creating Azure resources.
-- Create an Azure AI Video Indexer Account. Use the [Create Video Indexer account](create-account-portal.md) tutorial.
+- Create an Azure AI Video Indexer Account. Use the [Create Video Indexer account](/azure/azure-video-indexer/create-account-portal) tutorial.
 - Create an [Arc enabled Kubernetes cluster](/azure/aks/hybrid/aks-create-clusters-portal).
-- Download the [example video](./media/common/video.mp4).
+- Download the [example video](../media/common/video.mp4).
 
 To use the Video Indexer extension, you need to have an externally facing endpoint, which can be either a DNS name or IP. The endpoint should be set as a secure transfer protocol (`https:\\`) and is used as the extension API endpoint, formatted as `https:\\{endpointUri}/swagger/index.html`. It's also used by the Video Indexer web portal to communicate with the extension. It's recommended that you use an ingress control to manage the endpoint. 
 
@@ -51,9 +51,9 @@ This quickstart is designed to allow you to see the extension in action, so smal
 - CPU: 16 cores
 - Memory: 16 GB
 
-For the minimum hardware requirements in a *production* environment, see the [Minimum hardware requirements](azure-video-indexer-enabled-by-arc-overview.md#minimum-hardware-requirements) in the overview article.
+For the minimum hardware requirements in a *production* environment, see the [Minimum hardware requirements](/azure/azure-video-indexer/azure-video-indexer-enabled-by-arc-overview#minimum-hardware-requirements) in the overview article.
 
-[!INCLUDE [minimum-software-requirements](includes/vi-arc-minimum-software-requirements.md)]
+[!INCLUDE [minimum-software-requirements](../includes/vi-arc-minimum-software-requirements.md)]
 
 ## Parameter definitions
 

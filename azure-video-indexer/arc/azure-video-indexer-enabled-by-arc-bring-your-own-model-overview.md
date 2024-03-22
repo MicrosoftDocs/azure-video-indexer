@@ -35,7 +35,7 @@ With the Video Indexer BYO model, users can add custom insights to video insight
     1. Send the keyframe to the custom AI model. 
     1. Patch the custom insights back to Video Indexer.
 
-:::image type="content" source="media/common/general-byo-workflow.svg" lightbox="media/common/general-byo-workflow.svg" alt-text="diagram of the workflow described above"::: 
+:::image type="content" source="../media/common/general-byo-workflow.svg" lightbox="../media/common/general-byo-workflow.svg" alt-text="diagram of the workflow described above"::: 
 
 ## Prerequisites
 
@@ -149,4 +149,4 @@ You can use the skip frames and page size parameters for time selection. The for
 -->
 
 ## Related content
-[Use the Azure AI Video Indexer API](video-indexer-use-apis.md)
+[Use the Azure AI Video Indexer API](/azure/azure-video-indexer/video-indexer-use-apis)

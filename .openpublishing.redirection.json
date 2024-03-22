@@ -41,6 +41,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path_from_root": "/azure-video-indexer/azure-video-indexer-enabled-by-arc-quickstart.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-quickstart",
+            "redirect_document_id": false
+        },
+        {
             "source_path_from_root": "/azure-video-indexer/add-contributor-role-on-the-media-service.md",
             "redirect_url": "/azure/azure-video-indexer/azure-video-indexer-ams-retirement-guide",
             "redirect_document_id": false
@@ -63,6 +68,21 @@
         {
             "source_path_from_root": "/azure-video-indexer/import-content-from-trial.md",
             "redirect_url": "/azure/azure-video-indexer/azure-video-indexer-ams-retirement-guide",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/azure-video-indexer-enabled-by-arc-overview.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/azure-video-indexer-enabled-by-arc-troubleshooting.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-troubleshooting",
             "redirect_document_id": false
         }
     ]
