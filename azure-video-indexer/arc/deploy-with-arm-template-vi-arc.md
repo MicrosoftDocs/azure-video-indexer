@@ -23,7 +23,7 @@ In this quickstart, you'll create an Azure AI Video Indexer enabled by Arc accou
 - An Azure subscription
 - A [user assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp)
 
-
+<!--
 ## Deploy the sample
 
 ----
@@ -107,3 +107,4 @@ If you're new to template deployment, see:
 * [Azure Resource Manager documentation](/azure/azure-resource-manager/)
 * [Deploy resources with ARM templates](/azure/azure-resource-manager/templates/deploy-powershell)
 * [Deploy resources with Bicep and the Azure CLI](/azure/azure-resource-manager/bicep/deploy-cli)
+-->
