@@ -2,7 +2,7 @@
 title: View Azure AI Video Indexer insights
 description: This article demonstrates how to view Azure AI Video Indexer insights.
 ms.topic: article
-ms.date: 04/12/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -38,12 +38,3 @@ This article shows you how to view the Azure AI Video Indexer insights of a vide
 - If you plan to download artifact files, beware of the following: 
 	
 	[!INCLUDE [artifacts](./includes/artifacts.md)]
-	
-## Next steps
-
-[Use your videos' deep insights](use-editor-create-project.md)
-
-## See also
-
-[Azure AI Video Indexer overview](video-indexer-overview.md)
-

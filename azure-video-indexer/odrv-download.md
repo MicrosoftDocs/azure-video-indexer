@@ -2,7 +2,7 @@
 title: Index videos stored on OneDrive - Azure AI Video Indexer
 description: Learn how to index videos stored on OneDrive by using Azure AI Video Indexer.
 ms.topic: article
-ms.date: 1/2/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -162,7 +162,3 @@ The upload operation might return the following status codes:
 
 For information about a storage account that's behind a firewall, see the [FAQ](faq.yml#can-a-storage-account-connected-to-the-media-services-account-be-behind-a-firewall).
 -->
-
-## Next steps
-
-[Examine the Azure AI Video Indexer output produced by an API](video-indexer-output-json-v2.md)

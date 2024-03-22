@@ -2,7 +2,7 @@
 title: Customize a Brands model with the Azure AI Video Indexer website
 description: Learn how to customize a Brands model with the Azure AI Video Indexer website.
 ms.topic: article
-ms.date: 12/15/2019
+ms.date: 03/22/2024
 ms.custom: prevauth-anikaz
 ms.author: kumud
 author: IngridAtMicrosoft
@@ -95,7 +95,3 @@ The **Exclude brands** section represents the brands that you don't want Azure A
 
 1. Select the trash icon next to the brand that you want to delete.
 2. Select **Delete** and the brand will no longer appear in your *Exclude brands* list.
-
-## Next steps
-
-[Customize Brands model using APIs](customize-brands-model-with-api.md)

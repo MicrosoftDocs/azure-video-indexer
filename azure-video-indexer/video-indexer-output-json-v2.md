@@ -2,7 +2,7 @@
 title: Examine the Azure AI Video Indexer output
 description: This article examines the Azure AI Video Indexer output produced by the Get Video Index API.
 ms.topic: article
-ms.date: 08/02/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -867,9 +867,3 @@ Azure AI Video Indexer makes an inference of main topics from transcripts. When 
 },
 
 ```
-
-## Next steps
-
-Explore the [Azure AI Video Indexer API developer portal](https://api-portal.videoindexer.ai).
-
-For information about how to embed widgets in your application, see [Embed Azure AI Video Indexer widgets into your applications](video-indexer-embed-widgets.md). 

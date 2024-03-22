@@ -2,7 +2,7 @@
 title: Switch between tenants on the Azure AI Video Indexer website
 description: This article shows how to switch between tenants in the Azure AI Video Indexer website. 
 ms.topic: how-to
-ms.date: 11/27/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -79,7 +79,3 @@ If you want to see domains for all of your directories and switch between them, 
 
     > [!div class="mx-imgBorder"]
     > ![Find the organization.](./media/switch-directory/find-your-organization.png)
-
-## Next steps
-
-[FAQ](faq.yml)

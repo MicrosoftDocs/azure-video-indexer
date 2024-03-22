@@ -2,7 +2,7 @@
 title: Limited Access features of Azure AI Video Indexer 
 description: This article talks about the limited access features of Azure AI Video Indexer.
 ms.topic: conceptual
-ms.date: 10/10/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -39,8 +39,3 @@ FAQ about Limited Access can be found [here](https://aka.ms/limitedaccesscogserv
 If you need help with Azure AI Video Indexer, find support [here](/azure/ai-services/cognitive-services-support-options). 
 
 [Report Abuse](https://msrc.microsoft.com/report/abuse) of Azure AI Video Indexer. 
-
-## Next steps
-
-Learn more about the legal terms that apply to this service [here](https://azure.microsoft.com/support/legal/). 
-

@@ -2,7 +2,7 @@
 title:  Azure AI Video Indexer insights overview
 description: This article gives a brief overview of Azure AI Video Indexer insights.
 ms.topic: conceptual
-ms.date: 08/02/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -66,7 +66,3 @@ This API returns a URL only with a link to the specific resource type you reques
 ## Examine the Azure AI Video Indexer output
 
 For more information, see [Examine the Azure AI Video Indexer output]( video-indexer-output-json-v2.md).
-
-## Next steps
-
-[View and edit video insights](video-indexer-view-edit.md).

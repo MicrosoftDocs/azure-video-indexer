@@ -2,7 +2,7 @@
 title: Enable detected clothing feature
 description: Azure AI Video Indexer detects clothing associated with the person wearing it in the video and provides information such as the type of clothing detected and the timestamp of the appearance (start, end). The API returns the detection confidence level.
 ms.topic: how-to
-ms.date: 08/07/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -103,7 +103,3 @@ As the detected clothing feature uses observed people tracking, the tracking qua
 - As clothing detection is dependent on the visibility of the person’s body, the accuracy is higher if a person is fully visible.
 - There maybe errors when a person is without clothing.
 - In this scenario or others of poor visibility, results may be given such as long pants and skirt or dress. 
-
-## Next steps 
-
-[Track observed people in a video](observed-people-tracking.md)

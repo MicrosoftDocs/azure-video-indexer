@@ -2,7 +2,7 @@
 title: Azure AI Video Indexer failover and disaster recovery
 description: Learn how to fail over to a secondary Azure AI Video Indexer account if a regional datacenter failure or disaster occurs.
 ms.topic: article
-ms.date: 07/29/2019
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -31,7 +31,3 @@ To implement BCDR, you need to have two Azure AI Video Indexer accounts to handl
 > You can automate BCDR by setting up activity log alerts for service health notifications as per [Create activity log alerts on service notifications](/azure/service-health/alerts-activity-log-service-notifications-portal).
 
 For information about using multiple tenants, see [Manage multiple tenants](manage-multiple-tenants.md). To implement BCDR, choose one of these two options: [Azure AI Video Indexer account per tenant](./manage-multiple-tenants.md#azure-ai-video-indexer-account-per-tenant) or [Azure subscription per tenant](./manage-multiple-tenants.md#azure-subscription-per-tenant).
-
-## Next steps
-
-[Manage an Azure AI Video Indexer account connected to Azure](manage-account-connected-to-azure.md).

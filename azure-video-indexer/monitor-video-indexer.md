@@ -134,7 +134,7 @@ VIAudit
 | summarize count() by bin(TimeGenerated, 1h)
 ```
 
-## Next steps
+## Related articles
 
 - See [Monitoring Azure AI Video Indexer data reference](monitor-video-indexer-data-reference.md) for a reference of the metrics, logs, and other important values created by Azure AI Video Indexer account.
 - See [Monitoring Azure resources with Azure Monitor](/azure/azure-monitor/essentials/monitor-azure-resource) for details on monitoring Azure resources.

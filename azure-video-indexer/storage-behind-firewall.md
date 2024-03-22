@@ -2,7 +2,7 @@
 title: Use Video Indexer with storage behind firewall
 description: This article gives an overview how to configure Azure AI Video Indexer to use storage behind firewall.
 ms.topic: article
-ms.date: 03/21/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -59,7 +59,3 @@ This concludes the tutorial. With these steps you've completed the following act
 1. Assigning the Video Indexer managed-identity the necessary roles to Media Services (Contributor) and Storage (Storage Blob Data Owner).
 1. Assigning the Media Services Managed-identity role to the Storage.
 1. Locking down your storage account behind firewall and allow Azure Trusted Services to access the Storage account using Managed-identity.
-
-## Next steps
-
-[Disaster recovery](video-indexer-disaster-recovery.md)

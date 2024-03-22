@@ -2,7 +2,7 @@
 title: Enable audio effects detection  
 description: Audio Effects Detection is one of Azure AI Video Indexer AI capabilities that detects various acoustics events and classifies them into different acoustic categories (for example, gunshot, screaming, crowd reaction and more).
 ms.topic: how-to
-ms.date: 10/18/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -133,7 +133,3 @@ Audio effects can be added to the closed captions files supported by Azure AI Vi
 * Door knocks and door slams can sometimes be mistakenly labeled as gunshot and explosions.
 * Prolonged shouting and human physical effort sounds can sometimes be mistakenly detected.
 * Group of people laughing can sometime be classified as both Laughter and Crowd reactions.
-
-## Next steps
-
-Review [overview](video-indexer-overview.md)

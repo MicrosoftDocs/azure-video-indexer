@@ -2,7 +2,7 @@
 title:  Azure AI Video Indexer terminology & concepts overview
 description: This article gives a brief overview of Azure AI Video Indexer terminology and concepts.
 ms.topic: conceptual
-ms.date: 10/10/2023
+ms.date: 03/24/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -64,8 +64,3 @@ Time range is the time period in the original video. Adjusted time range is the 
 ## Widgets
 
 Azure AI Video Indexer supports embedding widgets in your apps. For more information, see [Embed Azure AI Video Indexer widgets in your apps](video-indexer-embed-widgets.md).
-
-## Next steps
-
-- [overview](video-indexer-overview.md)
-- Once you [set up](video-indexer-get-started.md), start using [insights](video-indexer-output-json-v2.md) and check out other **How to guides**.

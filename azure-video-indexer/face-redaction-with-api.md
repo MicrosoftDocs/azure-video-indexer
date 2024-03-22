@@ -2,7 +2,7 @@
 title: Redact faces by using Azure AI Video Indexer API 
 description: Learn how to use the Azure AI Video Indexer face redaction feature by using API.
 ms.topic: how-to
-ms.date: 08/11/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -364,8 +364,3 @@ The server didn't respond to the gateway within the expected time.
     "Message": "Server did not respond to gateway within expected time"
 }
 ```
-
-## Next steps
-
-- Learn more about [Video Indexer](https://azure.microsoft.com/pricing/details/video-indexer/).
-- See [Azure pricing](https://azure.microsoft.com/pricing/) for encoding, streaming, and storage billed by Azure service providers.

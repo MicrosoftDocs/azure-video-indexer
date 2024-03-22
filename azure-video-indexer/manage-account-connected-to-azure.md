@@ -69,9 +69,3 @@ If your account needs some adjustments, you see relevant errors and warnings abo
 * Media reserved units
 
     You must allocate Media Reserved Units on your Media Service resource in order to index videos. For optimal indexing performance, it's recommended to allocate at least 10 S3 Reserved Units. For pricing information, see the FAQ section of the [Media Services pricing](https://azure.microsoft.com/pricing/details/media-services/) page.
-
-## Next steps
-
-You can programmatically interact with your trial account or Azure AI Video Indexer accounts that are connected to Azure by following the instructions in: [Use APIs](video-indexer-use-apis.md).
-
-Use the same Entra ID user you used when connecting to Azure.

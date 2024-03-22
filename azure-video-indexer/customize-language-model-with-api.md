@@ -2,7 +2,7 @@
 title: Customize a Language model with Azure AI Video Indexer API
 description: Learn how to customize a Language model with the Azure AI Video Indexer API.
 ms.topic: article
-ms.date: 02/04/2020
+ms.date: 03/22/2024
 ms.custom: prevauth-anikaz
 ms.author: kumud
 author: IngridAtMicrosoft
@@ -290,7 +290,3 @@ The [download a file](https://api-portal.videoindexer.ai/api-details#api=Operati
 ### Response
 
 The response is the download of a text file with the contents of the file in the JSON format.
-
-## Next steps
-
-[Customize Language model using website](customize-language-model-with-website.md)

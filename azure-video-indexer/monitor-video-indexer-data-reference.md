@@ -150,8 +150,7 @@ The following schemas are in use by Azure AI Video Indexer:
 }
   ```
 
-## Next steps
+## Related articles
 
-<!-- replace below with the proper link to your main monitoring service article -->
 - See [Monitoring Azure AI Video Indexer](monitor-video-indexer.md) for a description of monitoring Azure AI Video Indexer.
 - See [Monitoring Azure resources with Azure Monitor](/azure/azure-monitor/essentials/monitor-azure-resource) for details on monitoring Azure resources.

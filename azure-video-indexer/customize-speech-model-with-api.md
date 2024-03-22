@@ -2,7 +2,7 @@
 title: Customize a speech model with the Azure AI Video Indexer API
 description: Learn how to customize a speech model with the Azure AI Video Indexer API.
 ms.topic: how-to
-ms.date: 03/06/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -286,8 +286,3 @@ The [delete speech model](https://api-portal.videoindexer.ai/api-details#api=O
 ### Response 
 
 There's no returned content when the speech model is deleted successfully. 
-
-## Next steps
-
-[Customize a speech model using the website](customize-speech-model-with-website.md)
-

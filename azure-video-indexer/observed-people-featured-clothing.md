@@ -2,7 +2,7 @@
 title: Enable featured clothing of an observed person
 description: When indexing a video using Azure AI Video Indexer advanced video settings, you can view the featured clothing of an observed person. 
 ms.topic: how-to
-ms.date: 08/14/2023
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -83,8 +83,3 @@ It's important to note the limitations of featured clothing to avoid or mitigate
 - Frames containing blurred people are more prone to low quality results.   
 
 For more information, see the [limitations of observed people](observed-people-tracking.md#limitations-and-assumptions). 
-
-## Next steps 
-
-- [Trace observed people in a video](observed-people-tracking.md)
-- [People's detected clothing](detected-clothing.md)

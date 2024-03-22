@@ -2,7 +2,7 @@
 title: Search for exact moments in videos with Azure AI Video Indexer
 description: Learn how to search for exact moments in videos using Azure AI Video Indexer.
 ms.topic: how-to
-ms.date: 11/23/2019
+ms.date: 03/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -49,7 +49,3 @@ You can download the source video, insights of the video, transcripts by clickin
 You can create a clip based on your video of specific lines and moments by clicking **Open in editor**. Then editing the video, and saving the project. For details, see [Use your videos' deep insights](use-editor-create-project.md).
 
 :::image type="content" source="./media/video-indexer-search/embed-download-create-projects.png" alt-text="Embed, download, create projects of the video":::
-
-## Next steps
-
-[Process content with Azure AI Video Indexer REST API](video-indexer-use-apis.md)

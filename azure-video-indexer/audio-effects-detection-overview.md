@@ -3,7 +3,7 @@ title: Introduction to Azure AI Video Indexer audio effects detection
 titleSuffix: Azure AI Video Indexer 
 description: An introduction to Azure AI Video Indexer audio effects detection component responsibly.
 ms.service: azure-video-indexer
-ms.date: 06/15/2022
+ms.date: 03/22/2024
 ms.topic: article
 author: IngridAtMicrosoft
 ms.author: inhenkel
@@ -116,25 +116,3 @@ When used responsibly and carefully, Azure AI Video Indexer is a valuable tool f
 - Be aware of any applicable laws or regulations that exist in your area regarding processing, analyzing, and sharing audio containing people.  
 - Keep a human in the loop. Don't use any solution as a replacement for human oversight and decision-making.   
 - Fully examine and review the potential of any AI model you're using to understand its capabilities and limitations.  
-
-## Next steps
-
-- [Microsoft Responsible AI principles](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6) 
-- [Microsoft Responsible AI resources](https://www.microsoft.com/ai/responsible-ai-resources)
-- [Microsoft Azure Learning courses on Responsible AI](/training/paths/responsible-ai-business-principles/)
-- [Microsoft Global Human Rights Statement](https://www.microsoft.com/corporate-responsibility/human-rights-statement?activetab=pivot_1:primaryr5)  
-
-### Contact us
-
-`visupport@microsoft.com`  
-
-## Azure AI Video Indexer insights
-
-- [Face detection](face-detection.md)
-- [OCR](ocr.md)
-- [Keywords extraction](keywords.md)
-- [Transcription, translation & language identification](transcription-translation-lid.md)
-- [Labels identification](labels-identification.md) 
-- [Named entities](named-entities.md)
-- [Observed people tracking & matched faces](observed-matched-people.md)
-- [Topics inference](topics-inference.md)

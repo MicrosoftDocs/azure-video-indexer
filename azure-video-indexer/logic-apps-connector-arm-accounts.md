@@ -2,7 +2,7 @@
 title: Logic Apps connector with ARM-based VI accounts
 description: This article shows how to unlock new experiences and monetization opportunities Azure AI Video Indexer connectors with Logic App and Power Automate with VI ARM accounts.
 ms.topic: how-to
-ms.date: 11/16/2022
+ms.date: 03/22/2024
 ms.author: Itnorman
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -270,7 +270,3 @@ Create the second flow, Logic Apps of type consumption. The second flow is t
     1. Go back to the first flow and paste the URL in the **Upload video and index** action for the **Callback URL parameter**.
  
 Make sure both flows are saved.
-
-## Next steps
-
-Try out your newly created Logic App or Power Automate solution by adding a video to your Azure blobs container, and go back a few minutes later to see that the insights appear in the destination folder. 

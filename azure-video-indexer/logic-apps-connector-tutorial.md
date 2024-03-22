@@ -2,7 +2,7 @@
 title: The Azure AI Video Indexer connectors with Logic App and Power Automate.
 description: This tutorial shows how to unlock new experiences and monetization opportunities Azure AI Video Indexer connectors with Logic App and Power Automate.
 ms.topic: tutorial
-ms.date: 09/21/2020
+ms.date: 03/22/2024
 ms.author: alzam
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -125,7 +125,7 @@ The article also shows how to index a video automatically by copying it to OneDr
 
 After you are done with this tutorial, feel free to keep this Logic App or Power Automate solution up and running if you need. However, if you do not want to keep this running and do not want to be billed, Turn Off both of your flows if you’re using Power Automate. Disable both of the flows if you’re using Logic Apps. 
 
-## Next steps
+## Additional uses
 
 This tutorial showed just one Azure AI Video Indexer connectors example. You can use the Azure AI Video Indexer connectors for any API call provided by Azure AI Video Indexer. For example: upload and retrieve insights, translate the results, get embeddable widgets and even customize your models. Additionally, you can choose to trigger those actions based on different sources like updates to file repositories or emails sent. You can then choose to have the results update to our relevant infrastructure or application or generate any number of action items.  
 
