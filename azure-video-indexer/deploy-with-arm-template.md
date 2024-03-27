@@ -24,15 +24,16 @@ Once the account is created, you can use the Video Indexer API to interact with 
 
 ## Deploy the sample
 
-----
+You have two deployment options:
 
-### Option 1: Select the button for deploying to Azure, and fill in the missing parameters
+### [Deploy button](#tab/deplybutton)
+
+Select the button for deploying to Azure, and fill in the missing parameters.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fazure-video-indexer-samples%2Fmaster%2FDeploy-Samples%2FArm%2Fvideoindexer.template.json)
 
-----
 
-## Option 2: Deploy using a CLI script
+### [Deploy with CLI](#tab/deplycli)
 
 Use the Bash environment in Azure Cloud Shell. For more information, see [Quickstart for Bash in Azure Cloud Shell](/azure/cloud-shell/overview).
 
@@ -51,6 +52,8 @@ Run [az version](/cli/azure/reference-index?#az-version) to find the version and
 1. Create a new resource group in the same location as your Azure AI Video Indexer account using the `az group` create command:
     
 `az deployment group create --resource-group myResourceGroup --template-file .\videoindexer.template.json --parameters=.\videoindexer.parameters.json`
+
+---
 
 ## Parameters
 
