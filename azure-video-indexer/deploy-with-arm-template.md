@@ -3,7 +3,7 @@ title: Deploy Azure AI Video Indexer by using an ARM template
 description: Learn how to create an Azure AI Video Indexer account by using an Azure Resource Manager (ARM) template.
 ms.topic: quickstart
 ms.custom: devx-track-arm-template
-ms.date: 03/22/2024
+ms.date: 03/27/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -15,97 +15,76 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [Gate notice](./includes/face-limited-access.md)]
 
-In this tutorial, you'll create an Azure AI Video Indexer account by using the Azure Resource Manager template (ARM template, which is in preview). The resource will be deployed to your subscription and will create the Azure AI Video Indexer resource based on parameters defined in the *avam.template* file.
+Using this quickstart, you can create an Azure AI Video Indexer account by using an Azure Resource Manager template.
 
-> [!NOTE]
-> This sample is *not* for connecting an existing Azure AI Video Indexer classic account to a Resource Manager-based Azure AI Video Indexer account.
->
-> For full documentation on the Azure AI Video Indexer API, visit the [developer portal](https://aka.ms/avam-dev-portal). For the latest API version for *Microsoft.VideoIndexer*, see the [template reference](/azure/templates/microsoft.videoindexer/accounts?tabs=bicep).
+A [Azure Resource Manager template](/azure/azure-resource-manager/templates/overview) is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration using declarative syntax. You describe your intended deployment without writing the sequence of programming commands to create the deployment.
 
-## Prerequisites
+Once the account is created, you can use the Video Indexer API to interact with the account, upload videos, and get AI Insights. To get started, see [Use Azure AI Video Indexer REST API](/azure/azure-video-indexer/video-indexer-use-apis).
 
-You need an Azure Media Services account. You can create one for free through [Create a Media Services account](/azure/media-services/latest/account-create-how-to).
 
 ## Deploy the sample
 
-----
+You have two deployment options:
 
-### Option 1: Select the button for deploying to Azure, and fill in the missing parameters
+### [Deploy button](#tab/deplybutton)
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fmedia-services-video-indexer%2Fmaster%2FDeploy-Samples%2FArmTemplates%2Favam.template.json)
+Select the button for deploying to Azure, and fill in the missing parameters.
 
-----
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fazure-video-indexer-samples%2Fmaster%2FDeploy-Samples%2FArm%2Fvideoindexer.template.json)
 
-### Option 2: Deploy by using a PowerShell script
 
-1. Open the [template file](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/Deploy-Samples/ArmTemplates/avam.template.json) and inspect its contents.
-2. Fill in the required parameters.
-3. Run the following PowerShell commands:
+### [Deploy with CLI](#tab/deplycli)
 
-   * Create a new resource group on the same location as your Azure AI Video Indexer account by using the [New-AzResourceGroup](/powershell/module/az.resources/new-azresourcegroup) cmdlet.
+Use the Bash environment in Azure Cloud Shell. For more information, see [Quickstart for Bash in Azure Cloud Shell](/azure/cloud-shell/overview).
 
-     ```powershell
-      New-AzResourceGroup -Name myResourceGroup -Location eastus
-     ```
+If you prefer to run CLI reference commands locally, [install](/cli/azure/install-azure-cli) the Azure CLI. If you're running on Windows or macOS, consider running Azure CLI in a Docker container. For more information, see [How to run the Azure CLI in a Docker container](/cli/azure/run-azure-cli-docker). 
+ 
+If you're using a local installation, sign in to the Azure CLI by using the [az login](/cli/azure/reference-index#az-login) command. To finish the authentication process, follow the steps displayed in your terminal. For other sign-in options, see [Sign in with the Azure CLI](/cli/azure/authenticate-azure-cli). 
 
-   * Deploy the template to the resource group by using the [New-AzResourceGroupDeployment](/powershell/module/az.resources/new-azresourcegroupdeployment) cmdlet.
+Run [az version](/cli/azure/reference-index?#az-version) to find the version and dependent libraries that are installed. To upgrade to the latest version, run [az upgrade](/cli/azure/reference-index?#az-upgrade). 
 
-     ```powershell
-     New-AzResourceGroupDeployment -ResourceGroupName myResourceGroup -TemplateFile ./avam.template.json
-     ```
+1. Open the [template file](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/Deploy-Samples/Arm/videoindexer.template.json) and inspect its contents. 
+1. Open the [parameter file](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/Deploy-Samples/Arm/videoindexer.parameters.json) and fill in the required parameters (see parameters). 
+1. Run the following command: 
 
-> [!NOTE]
-> If you want to work with Bicep format, see [Deploy by using Bicep](./deploy-with-bicep.md).
+    `az group create -n myResourceGroup -l eastus` 
+
+1. Create a new resource group in the same location as your Azure AI Video Indexer account using the `az group` create command:
+    
+    `az deployment group create --resource-group myResourceGroup --template-file .\videoindexer.template.json --parameters=.\videoindexer.parameters.json`
+
+---
 
 ## Parameters
 
 ### name
 
-* Type: string
-* Description: The name of the new Azure AI Video Indexer account.
-* Required: true
+- Type: string
+- Description: The name of the new Azure AI Video Indexer account.
+- Required: true
 
-### location
+### storageAccountName
 
-* Type: string
-* Description: The Azure location where the Azure AI Video Indexer account should be created.
-* Required: false
-
-> [!NOTE]
-> You need to deploy your Azure AI Video Indexer account in the same location (region) as the associated Azure Media Services resource.
-
-### mediaServiceAccountResourceId
-
-* Type: string
-* Description: The resource ID of the Azure Media Services resource.
-* Required: true
-
-### managedIdentityId
-
-> [!NOTE]
-> User assigned managed Identify must have at least Contributor role on the Media Service before deployment, when using System Assigned Managed Identity the Contributor role should be assigned after deployment.
-
-* Type: string
-* Description: The resource ID of the managed identity that's used to grant access between Azure Media Services resource and the Azure AI Video Indexer account.
-* Required: true
+- Type: string 
+- Description: The Name of the storageAccount that will be used by Video Indexer Account. 
+- Required: true 
 
 ### tags
 
-* Type: object
-* Description: The array of objects that represents custom user tags on the Azure AI Video Indexer account.
-* Required: false
+- Type: object
+- Description: The array of objects that represents custom user tags on the Azure AI Video Indexer account.
+- Required: false
 
 ## Reference documentation
 
 If you're new to Azure AI Video Indexer, see:
 
-* [The Azure AI Video Indexer documentation](./index.yml)
-* [The Azure AI Video Indexer API developer portal](https://api-portal.videoindexer.ai/)
-
-After you complete this tutorial, head to other Azure AI Video Indexer samples described in [README.md](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/README.md).
+- [The Azure AI Video Indexer documentation](./index.yml)
+- [The Azure AI Video Indexer API developer portal](https://api-portal.videoindexer.ai/)
+- See other [Azure AI Video Indexer samples](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/README.md).
 
 If you're new to template deployment, see:
 
-* [Azure Resource Manager documentation](/azure/azure-resource-manager/)
-* [Deploy resources with ARM templates](/azure/azure-resource-manager/templates/deploy-powershell)
-* [Deploy resources with Bicep and the Azure CLI](/azure/azure-resource-manager/bicep/deploy-cli)
+- [Azure Resource Manager documentation](/azure/azure-resource-manager/)
+- [Deploy resources with ARM templates](/azure/azure-resource-manager/templates/deploy-powershell)
+- [Deploy resources with Bicep and the Azure CLI](/azure/azure-resource-manager/bicep/deploy-cli)
