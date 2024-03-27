@@ -51,7 +51,7 @@ Run [az version](/cli/azure/reference-index?#az-version) to find the version and
 
 1. Create a new resource group in the same location as your Azure AI Video Indexer account using the `az group` create command:
     
-`az deployment group create --resource-group myResourceGroup --template-file .\videoindexer.template.json --parameters=.\videoindexer.parameters.json`
+    `az deployment group create --resource-group myResourceGroup --template-file .\videoindexer.template.json --parameters=.\videoindexer.parameters.json`
 
 ---
 
