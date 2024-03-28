@@ -162,6 +162,7 @@ To examine object detection more thoroughly, use [Get Video Index](https://api-p
         - frisbee
     :::column-end:::
     :::column:::
+        - hair dryer
         - handbag
         - hot dog
         - kite
@@ -169,6 +170,7 @@ To examine object detection more thoroughly, use [Get Video Index](https://api-p
         - laptop
         - microwave
         - motorcycle
+        - mouse (a computer mouse not the animal)
         - necktie
         - orange
         - oven
