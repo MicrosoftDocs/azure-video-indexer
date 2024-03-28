@@ -1,7 +1,7 @@
 ---
 title: Azure AI Video Indexer object detection overview
 description: An introduction to Azure AI Video Indexer object detection overview.
-ms.date: 02/21/2024
+ms.date: 03/27/2024
 ms.topic: article
 ms.author: inhenkel
 author: IngridAtMicrosoft
@@ -200,12 +200,31 @@ To examine object detection more thoroughly, use [Get Video Index](https://api-p
         - train
         - umbrella
         - vase
+        - weapon, see [Specific class notes for the weapon class](#specific-class-notes)
         - wine glass
     :::column-end:::
 :::row-end:::
 
 ## Limitations
 
-- Up to 20 detections per frame for standard and advanced processing and 35 tracks per class.
-- Object size shouldn't be greater than 90 percent of the frame.
+- There are up to 20 detections per frame for standard and advanced processing and 35 tracks per class.
+- Object size shouldn't be greater than 90 percent of the frame. Very large objects that consistently span over a large portion of the frame might not be recognized.
+- Small or blurry objects can be hard to detect. The can either be missed or misclassified (wine glass, cup).
+- Objects that are transient and appear in very few frames may ot be recognized.
 - Other factors that may affect the accuracy of the object detection include low light conditions, camera motion, and occlusion.
+- Video AI Indexer supports only real world objects. There is no support for animation or CGI. Computer generated graphics (such as news-stickers) may produce strange results.
+- See [specific class notes](#specific-class-notes).
+
+## Specific class notes
+
+### Bound written materials
+
+Binders, brochures, and other written materials tend to be detected as "book".
+
+### Weapon
+
+- The weapon class includes appearance of hand gun and rifles.
+- Hands holding dark objects (mostly, but not limited to blurry objects) may be confused with weapons.
+- Weapons over a very dark background can be missed.
+- Low quality videos (resolution, compression, etc) may affect the ability of the model to identify the weapon.
+- Mechanical objects (including robots) and complicated machinery may sometimes be detected as weapons.
