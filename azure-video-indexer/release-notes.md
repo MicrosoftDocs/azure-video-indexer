@@ -3,7 +3,7 @@ title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
 ms.topic: article
 ms.custom: references_regions
-ms.date: 03/22/2024
+ms.date: 03/24/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -19,6 +19,12 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+## March 2024
+
+### Object detection of weapons
+
+Azure AI Video Indexer now detects weapons. The weapons class includes hand guns and rifles. For the limitations of the class, see the limitations of the weapons class under [Specific class notes](object-detection.md#specific-class-notes)  object detection documentation.
 
 ## February 2024
 
