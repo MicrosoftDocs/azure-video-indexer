@@ -23,7 +23,7 @@ Follow these steps to enable Managed Identity for Storage and then lock your sto
 
 ## Assign the Managed Identity and role
 
-Follow all of the steps for creating an Azure AI Video Indexer account, but also use the steps below:
+Follow all of the steps for [creating an Azure AI Video Indexer account](/azure/azure-video-indexer/create-account?tabs=portal), but also use the steps below:
 
 1. When you select **Assign Role**, the following roles are assigned: `Azure Media Services : Contributor` and `Azure Storage : Storage Blob Data Owner`. You can verify or manually set assignments by navigating to the **Identity** menu of your Video Indexer account and selecting **Azure Role Assignments**.
 1. Navigate to your Storage account. Select **Networking** from the menu and select **Enabled from selected virtual networks and IP addresses** in the **Public network access** section.
