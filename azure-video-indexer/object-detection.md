@@ -10,11 +10,11 @@ ms.service: azure-video-indexer
 
 # Azure AI Video Indexer object detection
 
-Azure AI Video Indexer can detect objects in videos. The insight is part of standard and advanced video presets.
+Azure AI Video Indexer can detect objects in videos. The insight is part of standard and advanced video presets. Object detection is included in the insights that are the result of an [Upload](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) request.
 
-## Prerequisites
+## Transparency note
 
-Review [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context)
+Before using object detection, review [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context).
 
 ## JSON keys and definitions
 
@@ -32,9 +32,7 @@ Review [transparency note overview](/legal/azure-video-indexer/transparency-note
 | start | the time that the object appears in the frame | 
 | end | the time that the object no longer appears in the frame |
 
-## JSON response
-
-Object detection is included in the insights that are the result of an [Upload](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) request. 
+## JSON response 
 
 ### Detected and tracked objects
 
@@ -85,48 +83,6 @@ detectedObjects: [
     }
 ]
 ```
-
-## Try object detection
-
-You can try out object detection with the web portal or with the API.
-
-## [Web Portal](#tab/webportal)
-
-Once you have uploaded a video, you can view the insights. On the insights tab, you can view the list of objects detected and their main instances.
-
-### Insights
-Select the **Insights** tab. The objects are in descending order of the number of appearances in the video.
-
-:::image type="content" source="media/object-detection/insights-tab.png" alt-text="screenshot of the interface of the insights tab":::
-
-### Timeline
-Select the **Timeline** tab.
-
-:::image type="content" source="media/object-detection/timeline-tab.png" alt-text="screenshot of the interface of the timeline tab":::
-
-Under the timeline tab, all object detection is displayed according to the time of appearance. When you hover over a specific detection, it shows the detection percentage of certainty. 
-
-### Player
-
-The player automatically marks the detected object with a bounding box. The selected object from the insights pane is highlighted in blue with the objects type and serial number also displayed.
- 
-Filter the bounding boxes around objects by selecting bounding box icon on the player.
-
-:::image type="content" source="media/object-detection/object-filtering-icon.png" alt-text="screenshot of object filtering icon player interface":::
-
-Then, select or deselect the detected objects checkboxes.
-
-:::image type="content" source="media/object-detection/object-filtering.png" alt-text="screenshot of object filtering detected objects in the player interface":::
-
-Download the insights by selecting **Download** and then **Insights (JSON)**.
-
-## [API](#tab/api)
-
-When you use the [Upload](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) request with the standard or advanced video presets, object detection is included in the indexing.
-
-To examine object detection more thoroughly, use [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index).
-
----
 
 ## Supported objects
 
@@ -230,3 +186,45 @@ Binders, brochures, and other written materials tend to be detected as "book".
 - Weapons over a very dark background can be missed.
 - Low quality videos (resolution, compression, etc) may affect the ability of the model to identify the weapon.
 - Mechanical objects (including robots) and complicated machinery may sometimes be detected as weapons.
+
+## Try object detection
+
+You can try out object detection with the web portal or with the API.
+
+## [Web Portal](#tab/webportal)
+
+Once you have uploaded a video, you can view the insights. On the insights tab, you can view the list of objects detected and their main instances.
+
+### Insights
+Select the **Insights** tab. The objects are in descending order of the number of appearances in the video.
+
+:::image type="content" source="media/object-detection/insights-tab.png" alt-text="screenshot of the interface of the insights tab":::
+
+### Timeline
+Select the **Timeline** tab.
+
+:::image type="content" source="media/object-detection/timeline-tab.png" alt-text="screenshot of the interface of the timeline tab":::
+
+Under the timeline tab, all object detection is displayed according to the time of appearance. When you hover over a specific detection, it shows the detection percentage of certainty. 
+
+### Player
+
+The player automatically marks the detected object with a bounding box. The selected object from the insights pane is highlighted in blue with the objects type and serial number also displayed.
+ 
+Filter the bounding boxes around objects by selecting bounding box icon on the player.
+
+:::image type="content" source="media/object-detection/object-filtering-icon.png" alt-text="screenshot of object filtering icon player interface":::
+
+Then, select or deselect the detected objects checkboxes.
+
+:::image type="content" source="media/object-detection/object-filtering.png" alt-text="screenshot of object filtering detected objects in the player interface":::
+
+Download the insights by selecting **Download** and then **Insights (JSON)**.
+
+## [API](#tab/api)
+
+When you use the [Upload](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) request with the standard or advanced video presets, object detection is included in the indexing.
+
+To examine object detection more thoroughly, use [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index).
+
+---
