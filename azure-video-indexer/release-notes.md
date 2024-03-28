@@ -24,7 +24,7 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 ### Object detection of weapons
 
-Azure AI Video Indexer now detects weapons. The weapons class includes hand guns and rifles. For the limitations of the class, see the limitations of the weapons class under [Specific class notes](object-detection.md#specific-class-notes)  object detection documentation.
+Azure AI Video Indexer now detects weapons. The weapons class includes hand guns and rifles. For the limitations of the weapons class under [Specific class notes](object-detection.md#specific-class-notes)  object detection documentation.
 
 ## February 2024
 

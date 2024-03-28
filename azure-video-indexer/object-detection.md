@@ -225,7 +225,7 @@ Binders, brochures, and other written materials tend to be detected as "book".
 
 ### Weapon
 
-- The weapon class includes appearance of hand gun and rifles.
+- The weapon class includes appearances of hand gun and rifles.
 - Hands holding dark objects (mostly, but not limited to blurry objects) may be confused with weapons.
 - Weapons over a very dark background can be missed.
 - Low quality videos (resolution, compression, etc) may affect the ability of the model to identify the weapon.
