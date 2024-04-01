@@ -3,7 +3,7 @@ title: Try Azure AI Video Indexer enabled by Arc
 description: This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 ms.topic: quickstart
 ms.service: azure-video-indexer
-ms.date: 03/18/2024
+ms.date: 04/1/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -245,6 +245,11 @@ az k8s-extension update --name videoindexer \
     --cluster-type connectedClusters \
     --version ${version} \                        
 ```
+
+## [Deploy with ARM or Bicep](#tab/arm)
+
+You can deploy Azure AI Video Indexer enabled by Arc with an ARM template and Bicep. See the [Samples repo README](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks) for detailed instructions.
+
 ---
 
 ## Sample
