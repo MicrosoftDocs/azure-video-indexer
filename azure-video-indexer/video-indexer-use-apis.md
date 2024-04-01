@@ -1,6 +1,6 @@
 ---
-title: Use the Azure AI Video Indexer API
-description: This article describes how to get started with Azure AI Video Indexer API.
+title: Use the Azure AI Video Indexer API with a trial account
+description: This article describes how to get started with Azure AI Video Indexer API and a trial account.
 ms.date: 04/01/2024
 ms.topic: quickstart
 author: IngridAtMicrosoft
@@ -8,7 +8,7 @@ ms.author: inhenkel
 ms.service: azure-video-indexer
 ---
 
-# Quickstart: Use the Azure AI Video Indexer (VI) API
+# Quickstart: Use the API with a trial account
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
@@ -16,7 +16,7 @@ Azure AI Video Indexer consolidates various audio and video artificial intellige
 
 [!INCLUDE [accounts](./includes/create-accounts-intro.md)]
 
-This article shows you how to use the [Azure AI Video Indexer API](https://api-portal.videoindexer.ai/).
+This article shows you how to use the [Azure AI Video Indexer API](https://api-portal.videoindexer.ai/) with a *trial account*. To use a paid account, see [the Accounts overview](create-account.md#paid-account).
 
 ## Prerequisites
 
