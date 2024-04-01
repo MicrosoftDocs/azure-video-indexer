@@ -1,123 +1,99 @@
 ---
 title: Use the Azure AI Video Indexer API
 description: This article describes how to get started with Azure AI Video Indexer API.
-ms.date: 02/06/2024
-ms.topic: tutorial
+ms.date: 04/01/2024
+ms.topic: quickstart
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: azure-video-indexer
 ---
 
-# Tutorial: Use the Azure AI Video Indexer API
+# Quickstart: Use the Azure AI Video Indexer (VI) API
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-Azure AI Video Indexer consolidates various audio and video artificial intelligence (AI) technologies offered by Microsoft into one integrated service, making development simpler. The APIs are designed to enable developers to focus on consuming Media AI technologies without worrying about scale, global reach, availability, and reliability of cloud platforms. You can use the API to upload your files, get detailed video insights, get URLs of embeddable insight and player widgets, and more.
+Azure AI Video Indexer consolidates various audio and video artificial intelligence (AI) technologies offered by Microsoft into one integrated service, making development simpler. Azure AI Video Indexer is designed to enable developers to focus on using media AI technologies without worrying about scale, global reach, availability, and reliability of cloud platforms. You can use the API to upload your files, get detailed video insights, get URLs of embeddable insights, player widgets, and more.
 
 [!INCLUDE [accounts](./includes/create-accounts-intro.md)]
 
-This article shows how the developers can take advantage of the [Azure AI Video Indexer API](https://api-portal.videoindexer.ai/).
+This article shows you how to use the [Azure AI Video Indexer API](https://api-portal.videoindexer.ai/).
 
-## Prerequisite
+## Prerequisites
 
-Before you start, see the [Recommendations](#recommendations) section (that follows later in this article).
+1. Upload a media file. There are two ways to do this:
+    1. **Upload a media file to the URL of your choice (recommended)**. You can use a public network location. After you upload the file, you can check whether the file is accessible to AVI by copying and pasting it into your browser's location bar. If you can play the media file, then it is likely that VI can also access it. If you would like to secure the storage location using Azure Storage Blob, upload the file and obtain a SAS URL. For more information about getting a secure URL for your file, see [Azure Blob Storage SAS URLs](/azure/storage/common/storage-sas-overview). This URL is used to copy your file to Azure AI Video Indexer for indexing.
+    1. **Send the video file a byte array in the request body**. For more information about uploading a media file as a byte array in a request body, see [Upload a blob with .NET](/azure/storage/blobs/storage-blob-upload).
+
+> [!NOTE]
+> There is an API request limit of 10 requests per second and up to 120 requests per minute.
 
 ## Subscribe to the API
 
-1. Sign in to the [Azure AI Video Indexer API developer portal](https://api-portal.videoindexer.ai/).
+1. **Sign in** to the [Azure AI Video Indexer API developer portal](https://api-portal.videoindexer.ai/).
 
    > [!Important]
    > * You must use the same provider you used when you signed up for Azure AI Video Indexer.
    > * Personal Google and Microsoft (Outlook/Live) accounts can only be used for trial accounts. Accounts connected to Azure require Entra ID.
-   > * There can be only one active account per email. If a user tries to sign in with user@gmail.com for LinkedIn and later with user@gmail.com for Google, the latter will display an error page, saying the user already exists.
+   > * There can be only one active account per email. If a user tries to sign in with *user@gmail.com* for LinkedIn and later with *user@gmail.com* for Google, the latter will display an error page, saying the user already exists.
 	
-   ![Sign in to the Azure AI Video Indexer API developer portal](./media/video-indexer-use-apis/sign-in.png)
-1. Subscribe.
-
-   Select the [Products](https://api-portal.videoindexer.ai/products) tab. Then, select **Authorization** and subscribe.
+1. **Subscribe** by selecting the [Products](https://api-portal.videoindexer.ai/products) tab. Then, select **Authorization** and subscribe.
 
    > [!NOTE]
    > New users are automatically subscribed to Authorization.
 	
-   After you subscribe, you can find your subscription under **[Products](https://api-portal.videoindexer.ai/products)** -> **Profile**. In the subscriptions section, you'll find the primary and secondary keys. The keys should be protected. The keys should only be used by your server code. They shouldn't be available on the client side (.js, .html, and so on).
-
-   ![Subscription and keys in the Azure AI Video Indexer API developer portal](./media/video-indexer-use-apis/subscriptions.png)
-
-An Azure AI Video Indexer user can use a single subscription key to connect to multiple Azure AI Video Indexer accounts.
+1. **Find, copy and save the primary and secondary keys**. You can find your subscription in your **[Profile](https://api-portal.videoindexer.ai/profile)**. The primary and secondary keys are in the **Subscriptions** section.
+1. Select the **Show** link for both the Primary key and the Secondary key. Copy and paste them to a text editor until you are ready to use them in your environment variables file.
+ 
+> [!IMPORTANT]
+> The keys should be protected. The keys should only be used by your server code. They shouldn't be available on the client side (.js, .html, and so on).
 
 ## Obtain access token using the Authorization API
 
-Once you subscribe to the Authorization API, you can obtain access tokens. These access tokens are used to authenticate against the Operations API.
+You don't want to give full access to every user for your application. There are several levels of access for VI.
 
-Each call to the Operations API should be associated with an access token, matching the authorization scope of the call.
+| Level | View videos | Process videos | View projects | Process projects | View accounts | Manage accounts | 
+| ----------------------- | --- | --- | --- | --- | --- | --- | 
+| **Video Reader**        | :heavy_check_mark: | | | | | |
+| **Video Contributor**   | :heavy_check_mark: | :heavy_check_mark: | | | | |
+| **Project Reader**      | :heavy_check_mark: | | :heavy_check_mark: | | | |
+| **Project Contributor** | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | | |
+| **Account Reader**      | :heavy_check_mark: | | | | | |
+| **Account Contributor** | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:|:heavy_check_mark: | :heavy_check_mark:|
 
-- User level: User level access tokens let you perform operations on the **user** level. For example, get associated accounts.
-- Account level: Account level access tokens let you perform operations on the **account** level or the **video** level. For example, upload video, list all videos, get video insights, and so on.
-- Video level: Video level access tokens let you perform operations on a specific **video**. For example, get video insights, download captions, get widgets, and so on.
+### Create and send the access token request
 
-You can control the permission level of tokens in two ways:
+Set the `subscription-id`, the `resource-group-name`, the VI `account-name` in the request and set the `scope` and `permissionType` parameter in the request body to the access level you need. For example, if you want to provide access to a user so that they can work with projects but cannot work with accounts, set the `permissionType` to "Contributor" and the `scope` to "Project". 
 
-* For **Account** tokens, you can use the **Get Account Access Token With Permission** API and specify the permission type (**Reader**/**Contributor**/**MyAccessManager**/**Owner**).
-* For all types of tokens (including **Account** tokens), you can specify **allowEdit=true/false**. **false** is the equivalent of a **Reader** permission (read-only) and **true** is the equivalent of a **Contributor** permission (read-write).
+```HTTP
 
-For most server-to-server scenarios, you'll probably use the same **account** token since it covers both **account** operations and **video** operations. However, if you're planning to make client side calls to Azure AI Video Indexer (for example, from JavaScript), you would want to use a **video** access token to prevent clients from getting access to the entire account. That's also the reason that when embedding Azure AI Video Indexer client code in your client (for example, using **Get Insights Widget** or **Get Player Widget**), you must provide a **video** access token.
+POST https://management.azure.com/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.VideoIndexer/accounts/{account-name}/generateAccessToken?api-version=2024-01-01
 
-To make things easier, you can use the **Authorization** API > **GetAccounts** to get your accounts without obtaining a user token first. You can also ask to get the accounts with valid tokens, enabling you to skip an additional call to get an account token.
+{
+  "permissionType": "Reader",
+  "scope": "Project",
+  "projectId": "07ec9e38d4"
+}
 
-Access tokens expire after 1 hour. Make sure your access token is valid before using the Operations API. If it expires, call the Authorization API again to get a new access token.
+```
+
+Sample response
+
+```json
+{
+  "accessToken": "<jwt token of 1260 characters length>"
+}
+```
+
+For details and examples of setting the scope and permission types, see the [VI REST API](/rest/api/videoindexer/generate/access-token?view=rest-videoindexer-2024-01-01&tabs=HTTP#permissiontype).
 
 You're ready to start integrating with the API. Find [the detailed description of each Azure AI Video Indexer REST API](https://api-portal.videoindexer.ai/).
 
-## Operational API calls
-
-The Account ID parameter is required in all operational API calls. Account ID is a GUID that can be obtained in one of the following ways:
-
-* Use the **Azure AI Video Indexer website** to get the Account ID:
-
-    1. Browse to the [Azure AI Video Indexer](https://www.videoindexer.ai/) website and sign in.
-    2. Browse to the **Settings** page.
-    3. Copy the account ID.
-
-        ![Azure AI Video Indexer settings and account ID](./media/video-indexer-use-apis/account-id.png)
-
-* Use **Azure AI Video Indexer Developer Portal** to programmatically get the Account ID.
-
-    Use the [Get account](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Account) API.
-
-    > [!TIP]
-    > You can generate access tokens for the accounts by defining `generateAccessTokens=true`.
-
-* Get the account ID from the URL of a player page in your account.
-
-    When you watch a video, the ID appears after the `accounts` section and before the `videos` section.
-
-    ```
-    https://www.videoindexer.ai/accounts/00000000-f324-4385-b142-f77dacb0a368/videos/d45bf160b5/
-    ```
+For a detailed example of using the keys in your environment variable file, and using access tokens see the Azure AI Video Indexer [sample](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/API-Samples/C%23/ArmBased/Program.cs). 
 
 ## Recommendations
-
-This section lists some recommendations when using Azure AI Video Indexer API.
-
-### Uploading
-
-- If you're planning to upload a video, it's recommended to place the file in some public network location (for example, an Azure Blob Storage account). Get the link to the video and provide the URL as the upload file param.
-
-	The URL provided to Azure AI Video Indexer must point to a media (audio or video) file. An easy verification for the URL (or SAS URL) is to paste it into a browser, if the file starts playing/downloading, it's likely a good URL. If the browser is rendering some visualization, it's likely not a link to a file but to an HTML page.
-When you're uploading videos by using the API, you have the following options:
-
-* Upload your video from a URL (preferred).
-* Send the video file as a byte array in the request body.
-* There is an API request limit of 10 requests per second and up to 120 requests per minute.
-  
-### Getting JSON output
 
 - When you call the API that gets video insights for the specified video, you get a detailed JSON output as the response content. [See details about the returned JSON in this article](video-indexer-output-json-v2.md).
 - The JSON output produced by the API contains `Insights` and `SummarizedInsights` elements. We highly recommend using `Insights` and not using `SummarizedInsights` (which is present for backward compatibility).
 - We don't recommend that you use data directly from the artifacts folder for production purposes. Artifacts are intermediate outputs of the indexing process. They're essentially raw outputs of the various AI engines that analyze the videos; the artifacts schema may change over time. 
 
-    It's recommended that you use the [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index) API, as described in [Get insights and artifacts produced by the API](insights-overview.md#get-insights-produced-by-the-api) and **not** [Get-Video-Artifact-Download-Url](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Artifact-Download-Url).
-
-## Code sample
-
-See the [sample repo](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/API-Samples/C%23/ArmBased/Program.cs) for a code sample.
+It's recommended that you use the [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index) API, as described in [Get insights and artifacts produced by the API](insights-overview.md#get-insights-produced-by-the-api) and **not** [Get-Video-Artifact-Download-Url](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Artifact-Download-Url).
