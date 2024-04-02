@@ -16,36 +16,31 @@ Azure AI Video Indexer consolidates various audio and video artificial intellige
 
 [!INCLUDE [accounts](./includes/create-accounts-intro.md)]
 
-This article shows you how to use the [Azure AI Video Indexer API](https://api-portal.videoindexer.ai/) with a *trial account*. To use a paid account, see [the Accounts overview](create-account.md#paid-account).
+This article shows you how to use the [Azure AI Video Indexer API](https://api-portal.videoindexer.ai/) with a *trial account*. To use a paid account, see [Create an account](create-account.md#paid-account).
 
 ## Prerequisites
 
-1. Upload a media file. There are two ways to do this:
-    1. **Upload a media file to the URL of your choice (recommended)**. You can use a public network location. After you upload the file, you can check whether the file is accessible to AVI by copying and pasting it into your browser's location bar. If you can play the media file, then it is likely that VI can also access it. If you would like to secure the storage location using Azure Storage Blob, upload the file and obtain a SAS URL. For more information about getting a secure URL for your file, see [Azure Blob Storage SAS URLs](/azure/storage/common/storage-sas-overview). This URL is used to copy your file to Azure AI Video Indexer for indexing.
-    1. **Send the video file a byte array in the request body**. For more information about uploading a media file as a byte array in a request body, see [Upload a blob with .NET](/azure/storage/blobs/storage-blob-upload).
+Upload a media file. There are two ways to do this:
+    
+1. **Upload a media file to the URL of your choice (recommended)**. You can use a public network location. After you upload the file, you can check whether the file is accessible to AVI by copying and pasting it into your browser's location bar. If you can play the media file, then it is likely that VI can also access it. If you would like to secure the storage location using Azure Storage Blob, upload the file and obtain a SAS URL. For more information about getting a secure URL for your file, see [Azure Blob Storage SAS URLs](/azure/storage/common/storage-sas-overview). This URL is used to copy your file to Azure AI Video Indexer for indexing.
+    
+1. **Send the video file a byte array in the request body**. For more information about uploading a media file as a byte array in a request body, see [Upload a blob with .NET](/azure/storage/blobs/storage-blob-upload).
 
 > [!NOTE]
 > There is an API request limit of 10 requests per second and up to 120 requests per minute.
 
 ## Subscribe to the API
 
+> [!Important]
+> - You must use the same email you used when you signed up for Azure AI Video Indexer.
+> - Personal Google and Microsoft (Outlook/Live) accounts can only be used for trial accounts. Accounts connected to Azure require Entra ID.
+> - There can be only one active account per email. If a user tries to sign in with *user@gmail.com* for LinkedIn and later with *user@gmail.com* for Google, the latter will display an error page, saying the user already exists.
+> - Keys should be protected. The keys should only be used by your server code. They shouldn't be available on the client side (.js, .html, and so on).
+
 1. **Sign in** to the [Azure AI Video Indexer API developer portal](https://api-portal.videoindexer.ai/).
-
-   > [!Important]
-   > * You must use the same provider you used when you signed up for Azure AI Video Indexer.
-   > * Personal Google and Microsoft (Outlook/Live) accounts can only be used for trial accounts. Accounts connected to Azure require Entra ID.
-   > * There can be only one active account per email. If a user tries to sign in with *user@gmail.com* for LinkedIn and later with *user@gmail.com* for Google, the latter will display an error page, saying the user already exists.
-	
-1. **Subscribe** by selecting the [Products](https://api-portal.videoindexer.ai/products) tab. Then, select **Authorization** and subscribe.
-
-   > [!NOTE]
-   > New users are automatically subscribed to Authorization.
-	
+1. **Subscribe** by selecting the [Products](https://api-portal.videoindexer.ai/products) tab. Then, select **Authorization** and subscribe. New users are automatically subscribed to Authorization.
 1. **Find, copy and save the primary and secondary keys**. You can find your subscription in your **[Profile](https://api-portal.videoindexer.ai/profile)**. The primary and secondary keys are in the **Subscriptions** section.
 1. Select the **Show** link for both the Primary key and the Secondary key. Copy and paste them to a text editor until you are ready to use them in your environment variables file.
- 
-> [!IMPORTANT]
-> The keys should be protected. The keys should only be used by your server code. They shouldn't be available on the client side (.js, .html, and so on).
 
 ## Obtain access token using the Authorization API
 
@@ -57,8 +52,8 @@ You don't want to give full access to every user for your application. There are
 | **Video Contributor**   | :heavy_check_mark: | :heavy_check_mark: | | | | |
 | **Project Reader**      | :heavy_check_mark: | | :heavy_check_mark: | | | |
 | **Project Contributor** | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | |
-| **Account Reader**      | :heavy_check_mark: | | | | | |
-| **Account Contributor** | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |:heavy_check_mark: | :heavy_check_mark:|
+| **Account Reader**      | :heavy_check_mark: | |:heavy_check_mark: | |:heavy_check_mark: | |
+| **Account Contributor** | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |:heavy_check_mark: | :heavy_check_mark: |
 
 ### Create and send the access token request
 
