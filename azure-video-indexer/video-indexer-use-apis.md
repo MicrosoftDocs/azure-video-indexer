@@ -57,7 +57,9 @@ You don't want to give full access to every user for your application. There are
 
 ### Create and send the access token request
 
-Set the `subscription-id`, the `resource-group-name`, the VI `account-name` in the request and set the `scope` and `permissionType` parameter in the request body to the access level you need. For example, if you want to provide access to a user so that they can work with projects but cannot work with accounts, set the `permissionType` to "Contributor" and the `scope` to "Project". 
+Set the `subscription-id`, the `resource-group-name`, the VI `account-name` in the request and set the `scope` and `permissionType` parameter in the request body to the access level you need. 
+
+For example, if you want to provide access to a user so that they can work with projects but cannot work with accounts, set the `permissionType` to "Contributor" and the `scope` to "Project". In the case of setting permissions for a project, provide the `projectId`. 
 
 ```HTTP
 
@@ -81,7 +83,9 @@ POST https://management.azure.com/subscriptions/{subscription-id}/resourceGroups
 
 For more examples of setting the scope and permission types, see the [VI REST API](/rest/api/videoindexer/generate/access-token?view=rest-videoindexer-2024-01-01).
 
-You're ready to start integrating with the API. Find [the detailed description of each Azure AI Video Indexer REST API](https://api-portal.videoindexer.ai/).
+## Start using the API
+
+You're ready to start using the API. Find [the detailed description of each Azure AI Video Indexer REST API](https://api-portal.videoindexer.ai/).
 
 For a detailed example of using the keys in your environment variable file, and using access tokens see the Azure AI Video Indexer [sample](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/API-Samples/C%23/ArmBased/Program.cs). 
 
@@ -90,5 +94,4 @@ For a detailed example of using the keys in your environment variable file, and 
 - When you call the API that gets video insights for the specified video, you get a detailed JSON output as the response content. [See details about the returned JSON in this article](video-indexer-output-json-v2.md).
 - The JSON output produced by the API contains `Insights` and `SummarizedInsights` elements. We highly recommend using `Insights` and not using `SummarizedInsights` (which is present for backward compatibility).
 - We don't recommend that you use data directly from the artifacts folder for production purposes. Artifacts are intermediate outputs of the indexing process. They're essentially raw outputs of the various AI engines that analyze the videos; the artifacts schema may change over time. 
-
-It's recommended that you use the [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index) API, as described in [Get insights and artifacts produced by the API](insights-overview.md#get-insights-produced-by-the-api) and **not** [Get-Video-Artifact-Download-Url](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Artifact-Download-Url).
+- It's recommended that you use the [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index) API, as described in [Get insights and artifacts produced by the API](insights-overview.md#get-insights-produced-by-the-api) and **not** [Get-Video-Artifact-Download-Url](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Artifact-Download-Url).
