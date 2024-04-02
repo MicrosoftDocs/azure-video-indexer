@@ -3,7 +3,7 @@ title: Preparing for AMS retirement - VI migration and updating guide
 description: Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS. To continue using VI, between February 15 and June 30 2024, you must take steps to transition away from their current VI account AMS dependency. Follow this guide.
 ms.topic: conceptual
 ms.service: azure-video-indexer
-ms.date: 03/18/2024
+ms.date: 04/02/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -45,6 +45,12 @@ The AMS asset ID will no longer be used for uploading a video. A video URL or lo
 Linking an Azure Storage account to a VI account is permanent and can’t be undone. Therefore, it's recommended that you create a storage account that is solely for use with the VI account. (This is especially important if you expect to use network restrictions.) It’s recommended that the storage account is in the same region as the VI account.
 
 You won’t be able to link your VI account to the storage account that was previously associated with the AMS account. 
+
+## Classic accounts- API token based authentication
+
+As [VI Classic accounts are retiring June 30th, 2024](/azure/azure-video-indexer/azure-video-indexer-azure-media-services-retirement-announcement#classic-accounts), all customers with Classic VI accounts need to [connect them to Azure Resource Manager (ARM) based VI accounts](/azure/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets?tabs=updateexistingportal%2cconnectclassicportal%2coptinportal#connect-a-classic-account-to-a-new-arm-based-account) prior to July 1st 2024. With this change, the way that VI access tokens are generated changes. While VI Classic accounts generate access tokens for authentication with the [Classic Get Access Token API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Account-Access-Token), updated VI accounts are ARM based and ARM based accounts use the [ARM API](/rest/api/videoindexer/generate/access-token)  to generate access tokens.
+
+Once you have connected your Classic account to an ARM, account, there is a [30-day transition state period](/azure/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets?tabs=updateexistingportal%2cconnectclassicportal%2coptinportal#transition-state) during which VI supports accessing your count with both Classic API and ARM API generated access tokens. Learn how to connect your Classic account to an ARM account here.
 
 ### Streaming player
 
