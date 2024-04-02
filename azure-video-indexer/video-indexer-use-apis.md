@@ -84,7 +84,7 @@ POST https://management.azure.com/subscriptions/{subscription-id}/resourceGroups
 }
 ```
 
-For more examples of setting the scope and permission types, see the [VI REST API](/rest/api/videoindexer/generate/access-token?view=rest-videoindexer-2024-01-01&tabs=HTTP#permissiontype).
+For more examples of setting the scope and permission types, see the [VI REST API](/rest/api/videoindexer/generate/access-token?view=rest-videoindexer-2024-01-01).
 
 You're ready to start integrating with the API. Find [the detailed description of each Azure AI Video Indexer REST API](https://api-portal.videoindexer.ai/).
 
