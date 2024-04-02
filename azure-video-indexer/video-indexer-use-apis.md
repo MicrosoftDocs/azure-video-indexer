@@ -50,7 +50,7 @@ You don't want to give full access to every user for your application. There are
 | ----------------------- | --- | --- | --- | --- | --- | --- | 
 | **Video Reader**        | :heavy_check_mark: | | | | | |
 | **Video Contributor**   | :heavy_check_mark: | :heavy_check_mark: | | | | |
-| **Project Reader**      | :heavy_check_mark: | |:heavy_check_mark: | | | |
+| **Project Reader**      | :heavy_check_mark: | | :heavy_check_mark: | | | |
 | **Project Contributor** | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | | |
 | **Account Reader**      | :heavy_check_mark: | | :heavy_check_mark: | | :heavy_check_mark: | |
 | **Account Contributor** | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
