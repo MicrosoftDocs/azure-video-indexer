@@ -81,7 +81,7 @@ POST https://management.azure.com/subscriptions/{subscription-id}/resourceGroups
 }
 ```
 
-For more examples of setting the scope and permission types, see the [VI REST API](/rest/api/videoindexer/generate/access-token?view=rest-videoindexer-2024-01-01).
+For more examples of setting the scope and permission types, see the [VI REST API](/rest/api/videoindexer/generate/access-token?view=rest-videoindexer-2024-01-01&preserve-view=true).
 
 ## Start using the API
 
