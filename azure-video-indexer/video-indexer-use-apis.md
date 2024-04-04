@@ -20,9 +20,9 @@ This article shows you how to use the [Azure AI Video Indexer API](https://api-p
 
 ## Prerequisites
 
-Upload a media file. There are two ways to do this:
+Upload a media file. There are two ways:
     
-1. **Upload a media file to the URL of your choice (recommended)**. You can use a public network location. After you upload the file, you can check whether the file is accessible to AVI by copying and pasting it into your browser's location bar. If you can play the media file, then it is likely that VI can also access it. If you would like to secure the storage location using Azure Storage Blob, upload the file and obtain a SAS URL. For more information about getting a secure URL for your file, see [Azure Blob Storage SAS URLs](/azure/storage/common/storage-sas-overview). This URL is used to copy your file to Azure AI Video Indexer for indexing.
+1. **Upload a media file to the URL of your choice (recommended)**. You can use a public network location. After you upload the file, you can check whether the file is accessible to AVI by copying and pasting it into your browser's location bar. If you can play the media file, then it's likely that VI can also access it. If you would like to secure the storage location using Azure Storage Blob, upload the file and obtain a SAS URL. For more information about getting a secure URL for your file, see [Azure Blob Storage SAS URLs](/azure/storage/common/storage-sas-overview). This URL is used to copy your file to Azure AI Video Indexer for indexing.
     
 1. **Send the video file a byte array in the request body**. For more information about uploading a media file as a byte array in a request body, see [Upload a blob with .NET](/azure/storage/blobs/storage-blob-upload).
 
@@ -40,9 +40,9 @@ Upload a media file. There are two ways to do this:
 1. **Sign in** to the [Azure AI Video Indexer API developer portal](https://api-portal.videoindexer.ai/).
 1. **Subscribe** by selecting the [Products](https://api-portal.videoindexer.ai/products) tab. Then, select **Authorization** and subscribe. New users are automatically subscribed to Authorization.
 1. **Find, copy and save the primary and secondary keys**. You can find your subscription in your **[Profile](https://api-portal.videoindexer.ai/profile)**. The primary and secondary keys are in the **Subscriptions** section.
-1. Select the **Show** link for both the Primary key and the Secondary key. Copy and paste them to a text editor until you are ready to use them in your environment variables file.
+1. Select the **Show** link for both the Primary key and the Secondary key. Copy and paste them to a text editor until you're ready to use them in your environment variables file.
 
-## Obtain access token using the Authorization API
+## Obtain an access token using the Authorization API
 
 You don't want to give full access to every user for your application. There are several levels of access for VI.
 
@@ -59,7 +59,7 @@ You don't want to give full access to every user for your application. There are
 
 Set the `subscription-id`, the `resource-group-name`, the VI `account-name` in the request and set the `scope` and `permissionType` parameter in the request body to the access level you need. 
 
-For example, if you want to provide access to a user so that they can work with projects but cannot work with accounts, set the `permissionType` to "Contributor" and the `scope` to "Project". In the case of setting permissions for a project, provide the `projectId`. 
+For example, if you want to provide access to a user so that they can work with projects but can't work with accounts, set the `permissionType` to "Contributor" and the `scope` to "Project." IF setting permissions for a project, provide the `projectId`. 
 
 ```HTTP
 
@@ -93,5 +93,5 @@ For a detailed example of using the keys in your environment variable file, and 
 
 - When you call the API that gets video insights for the specified video, you get a detailed JSON output as the response content. [See details about the returned JSON in this article](video-indexer-output-json-v2.md).
 - The JSON output produced by the API contains `Insights` and `SummarizedInsights` elements. We highly recommend using `Insights` and not using `SummarizedInsights` (which is present for backward compatibility).
-- We don't recommend that you use data directly from the artifacts folder for production purposes. Artifacts are intermediate outputs of the indexing process. They're essentially raw outputs of the various AI engines that analyze the videos; the artifacts schema may change over time. 
-- It's recommended that you use the [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index) API, as described in [Get insights and artifacts produced by the API](insights-overview.md#get-insights-produced-by-the-api) and **not** [Get-Video-Artifact-Download-Url](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Artifact-Download-Url).
+- We don't recommend that you use data directly from the artifacts folder for production purposes. Artifacts are intermediate outputs of the indexing process and are raw outputs of the various AI engines that analyze the videos. The artifacts schema can change over time. 
+- Use the [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index) API, as described in [Get insights and artifacts produced by the API](insights-overview.md#get-insights-produced-by-the-api) and **not** [Get-Video-Artifact-Download-Url](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Artifact-Download-Url).
