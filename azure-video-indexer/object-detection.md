@@ -36,9 +36,9 @@ Before using object detection, review [transparency note overview](/legal/azure-
 
 ### Detected and tracked objects
 
-Detected and tracked objects appear under “detected Objects” in the downloaded *insights.json* file. Every time a unique object is detected, it's given an ID. That object is also tracked, meaning that the model watches for the detected object to return to the frame.  If it does, another instance is added to the instances for the object with different start and end times.
+Detected and tracked objects appear under "detected Objects" in the downloaded *insights.json* file. Every time a unique object is detected, it's given an ID. That object is also tracked, meaning that the model watches for the detected object to return to the frame. If it does, another instance is added to the instances for the object with different start and end times.
 
-In this example, the first car was detected and given an ID of 1 since it was also the first object detected. Then, a different car was detected and that car was given the ID of 23 since it was the 23rd object detected. Later, the first car appeared again and another instance was added to the JSON. Here is the resulting JSON:
+In this example, the first car was detected and given an ID of 1 since it was also the first object detected. Then, a different car was detected and that car was given the ID of 23 since it was the 23rd object detected. Later, the first car appeared again and another instance was added to the JSON. Here's the resulting JSON:
 
 ```json
 detectedObjects: [
@@ -170,25 +170,25 @@ detectedObjects: [
 - There are up to 20 detections per frame for standard and advanced processing and 35 tracks per class.
 - Object size shouldn't be greater than 90 percent of the frame. Very large objects that consistently span over a large portion of the frame might not be recognized.
 - Small or blurry objects can be hard to detect. They can either be missed or misclassified (wine glass, cup).
-- Objects that are transient and appear in very few frames may not be recognized.
-- Other factors that may affect the accuracy of the object detection include low light conditions, camera motion, and occlusions.
-- Azure AI Video Indexer supports only real world objects. There is no support for animation or CGI. Computer generated graphics (such as news-stickers) may produce strange results.
+- Objects that are transient and appear in very few frames might not be recognized.
+- Other factors that might affect the accuracy of the object detection include low light conditions, camera motion, and occlusions.
+- Azure AI Video Indexer supports only real world objects. There's no support for animation or CGI. Computer generated graphics (such as news-stickers) might produce strange results.
 - See [specific class notes](#specific-class-notes).
 
 ## Specific class notes
 
 ### Bound written materials
 
-Binders, brochures, and other written materials tend to be detected as "book".
+Binders, brochures, and other written materials tend to be detected as "book."
 
 ### Weapon
 
 - The weapon class includes appearances of hand gun and rifles.
-- Hands holding dark objects (mostly, but not limited to blurry objects) may be confused with weapons.
+- Hands holding dark objects (mostly, but not limited to blurry objects) might be confused with weapons.
 - Weapons over a very dark background can be missed.
-- Low quality videos (resolution, compression, etc) may affect the ability of the model to identify the weapon.
-- Mechanical objects (including robots) and complicated machinery may sometimes be detected as weapons.
-- For recall oriented tasks, the filtered tracks are available under "filtered_tracks". These are tracks that had lower overall confidence score and will not show up in the Azure AI Video Indexer portal.
+- Low quality videos (resolution, compression, etc.) might affect the ability of the model to identify the weapon.
+- Mechanical objects (including robots) and complicated machinery might sometimes be detected as weapons.
+- For recall oriented tasks, the filtered tracks are available under "filtered_tracks." These tracks had lower overall confidence score and won't show up in the Azure AI Video Indexer portal.
 
 ## Try object detection
 
@@ -196,7 +196,7 @@ You can try out object detection with the web portal or with the API.
 
 ## [Web Portal](#tab/webportal)
 
-Once you have uploaded a video, you can view the insights. On the insights tab, you can view the list of objects detected and their main instances.
+Once a video is uploaded, you can view the insights. On the insights tab, you can view the list of objects detected and their main instances.
 
 ### Insights
 Select the **Insights** tab. The objects are in descending order of the number of appearances in the video.
