@@ -1,7 +1,7 @@
 ---
 title: Azure AI Video Indexer object detection overview
 description: An introduction to Azure AI Video Indexer object detection overview.
-ms.date: 03/27/2024
+ms.date: 04/09/2024
 ms.topic: article
 ms.author: inhenkel
 author: IngridAtMicrosoft
@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Azure AI Video Indexer object detection
 
-Azure AI Video Indexer can detect objects in videos. The insight is part of standard and advanced video presets. Object detection is included in the insights that are the result of an [Upload](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) request.
+Azure AI Video Indexer can detect objects in videos. The insight is part of standard and advanced video presets. Object detection is included in the insights that are the result of an [Upload Video](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) request.
 
 ## Transparency note
 
@@ -92,10 +92,12 @@ detectedObjects: [
         - apple
         - backpack
         - banana
-        - baseball bat
         - baseball glove
         - bed
+        - bench
         - bicycle
+        - boat
+        - book
         - bottle
         - bowl
         - broccoli
@@ -121,12 +123,13 @@ detectedObjects: [
         - hair dryer
         - handbag
         - hot dog
+        - keyboard
         - kite
         - knife
         - laptop
         - microwave
         - motorcycle
-        - mouse (a computer mouse not the animal)
+        - computer mouse
         - necktie
         - orange
         - oven
@@ -135,19 +138,18 @@ detectedObjects: [
         - potted plant
     :::column-end:::
     :::column:::
-        - refrigerator
-        - remote
         - sandwich
         - scissors
+        - sink
         - skateboard
         - skis
         - snowboard
         - spoon
         - sports ball
+        - stop sign
         - suitcase
         - surfboard
         - teddy bear
-        - television
     :::column-end:::
     :::column:::
         - tennis racket
@@ -167,10 +169,10 @@ detectedObjects: [
 
 - There are up to 20 detections per frame for standard and advanced processing and 35 tracks per class.
 - Object size shouldn't be greater than 90 percent of the frame. Very large objects that consistently span over a large portion of the frame might not be recognized.
-- Small or blurry objects can be hard to detect. The can either be missed or misclassified (wine glass, cup).
-- Objects that are transient and appear in very few frames may ot be recognized.
-- Other factors that may affect the accuracy of the object detection include low light conditions, camera motion, and occlusion.
-- Video AI Indexer supports only real world objects. There is no support for animation or CGI. Computer generated graphics (such as news-stickers) may produce strange results.
+- Small or blurry objects can be hard to detect. They can either be missed or misclassified (wine glass, cup).
+- Objects that are transient and appear in very few frames may not be recognized.
+- Other factors that may affect the accuracy of the object detection include low light conditions, camera motion, and occlusions.
+- Azure AI Video Indexer supports only real world objects. There is no support for animation or CGI. Computer generated graphics (such as news-stickers) may produce strange results.
 - See [specific class notes](#specific-class-notes).
 
 ## Specific class notes
@@ -186,6 +188,7 @@ Binders, brochures, and other written materials tend to be detected as "book".
 - Weapons over a very dark background can be missed.
 - Low quality videos (resolution, compression, etc) may affect the ability of the model to identify the weapon.
 - Mechanical objects (including robots) and complicated machinery may sometimes be detected as weapons.
+- For recall oriented tasks, the filtered tracks are available under "filtered_tracks". These are tracks that had lower overall confidence score and will not show up in the Azure AI Video Indexer portal.
 
 ## Try object detection
 
@@ -205,7 +208,7 @@ Select the **Timeline** tab.
 
 :::image type="content" source="media/object-detection/timeline-tab.png" alt-text="screenshot of the interface of the timeline tab":::
 
-Under the timeline tab, all object detection is displayed according to the time of appearance. When you hover over a specific detection, it shows the detection percentage of certainty. 
+Under the timeline tab, all objects detected are displayed according to the time of appearance. When you hover over a specific detection, it shows the detection percentage of certainty. 
 
 ### Player
 
