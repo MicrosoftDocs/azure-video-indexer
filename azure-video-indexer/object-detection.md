@@ -1,7 +1,7 @@
 ---
 title: Azure AI Video Indexer object detection overview
 description: An introduction to Azure AI Video Indexer object detection overview.
-ms.date: 04/09/2024
+ms.date: 04/16/2024
 ms.topic: article
 ms.author: inhenkel
 author: IngridAtMicrosoft
@@ -188,7 +188,7 @@ Binders, brochures, and other written materials tend to be detected as "book."
 - Weapons over a very dark background can be missed.
 - Low quality videos (resolution, compression, etc.) might affect the ability of the model to identify the weapon.
 - Mechanical objects (including robots) and complicated machinery might sometimes be detected as weapons.
-- For recall oriented tasks, the filtered tracks are available under "filtered_tracks." These tracks had lower overall confidence score and won't show up in the Azure AI Video Indexer portal.
+- For recall oriented tasks, the filtered tracks are available under "low_confidence_results" in the artifacts file called *xxx.json*. These detections had lower overall confidence scores and won't show up in the Azure AI Video Indexer portal.
 
 ## Try object detection
 
