@@ -3,7 +3,7 @@ title: Preparing for AMS retirement - VI migration and updating guide
 description: Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS. To continue using VI, between February 15 and June 30 2024, you must take steps to transition away from their current VI account AMS dependency. Follow this guide.
 ms.topic: conceptual
 ms.service: azure-video-indexer
-ms.date: 04/02/2024
+ms.date: 04/16/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -38,7 +38,6 @@ The AMS asset ID will no longer be used for uploading a video. A video URL or lo
     - You must update account creation and requests to use the VI API version 2024-01-01.
     - Requests must be submitted with the [Azure Storage Account property](https://github.com/Azure/azure-rest-api-specs/blob/main/specification/vi/resource-manager/Microsoft.VideoIndexer/stable/2024-01-01/vi.json) rather than the AMS account.
 - **Portal**: During the VI account creation process, new VI accounts will be associated with an Azure Storage account.
-
 
 ### Storage account
 
@@ -99,8 +98,7 @@ Only your VI associated AMS assets will be migrated. If other AMS assets exi
 
 VI won’t delete the original copies of your AMS files. After the migration has successfully completed, if the AMS account linked to VI and the storage account linked to AMS were only used for VI, you can consider deleting both them.
 
-> [!IMPORTANT] 
-> Even after you have updated your account, VI will still access your AMS account and its associated storage account until all your videos have been migrated. Until the migration is complete, it's important that you DO NOT delete or change the accounts, roles, or permissions of the AMS, Azure Storage or VI accounts. In addition, it's recommended that VI AMS assets are not deleted until you are notified that the migration is complete as they might not have migrated yet. The VI account owner will receive an email notification that the migration is complete and you can check the migration status on the VI website as well. 
+[!INCLUDE [migrate-important](includes/migrate-important.md)]
 
 If an asset fails to migrate, despite VI’s multiple attempts and retries to migrate it, the migration will be treated as completed with errors and you'll be sent a list of the files that failed to migrate. They can also be downloaded from the Migration page in the VI website. 
 
@@ -128,7 +126,7 @@ No, it’s a free experience. The only cost is the storage of the migrated asset
 
 ### If I don’t use VI for streaming or encoding, do I still have to migrate VI AMS assets to continue accessing VI insights?
 
-No, unless you want to migrate the source video that you initially sent to VI for indexing.
+It's still encouraged as it will make sure that any VI data or asset currently available to you continues to be available.
 
 ### If we don’t persist any video data, do we have to migrate VI AMS assets? 
 
@@ -141,3 +139,9 @@ In most cases, no. The only scenario that is impacted is if you're using a VI St
 ### How can I tell if a video has been migrated yet? 
 
 By the reply of the Get Streaming URL request – if not yet migrated, it will contain mention of media service at the beginning.
+
+### Can multiple VI accounts be linked to a single storage account? 
+Yes
+
+### Can multiple storage accounts be linked to a single VI account?
+No
