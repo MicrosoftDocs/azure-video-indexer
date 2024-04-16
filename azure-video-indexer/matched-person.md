@@ -33,7 +33,7 @@ The **Matched person** feature is available when indexing your file by choosing 
 
 To view the Matched person on the [Azure AI Video Indexer](https://www.videoindexer.ai/) website, go to **View** -> **Show Insights** -> select the **All** option or **View** -> **Custom View** -> **Mapped Faces**. 
 
-When you choose to see insights of your video on the [Azure AI Video Indexer](https://www.videoindexer.ai/) website, the matched person could be viewed from the **Observed People tracing** insight. When choosing a thumbnail of a person the matched person became available.
+When you choose to see insights of your video on the [Azure AI Video Indexer](https://www.videoindexer.ai/) website, the matched person could be viewed from the **Observed People tracking** insight. When choosing a thumbnail of a person the matched person became available.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="./media/matched-person/from-observed-people.png" alt-text="View matched people from the Observed People insight":::
@@ -44,7 +44,7 @@ Searching for a specific person by name, returning all the appearances of the sp
 
 ## JSON code sample
 
-The following JSON response illustrates what Azure AI Video Indexer returns when tracing observed people having Mapped person associated: 
+The following JSON response illustrates what Azure AI Video Indexer returns when tracking observed people having Mapped person associated: 
 
 ```json
 "observedPeople": [
