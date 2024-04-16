@@ -190,6 +190,30 @@ Binders, brochures, and other written materials tend to be detected as "book."
 - Mechanical objects (including robots) and complicated machinery might sometimes be detected as weapons.
 - For recall oriented tasks, the filtered tracks are available under "low_confidence_results" in the artifacts file called *xxx.json*. These detections had lower overall confidence scores and won't show up in the Azure AI Video Indexer portal.
 
+Sample result:
+
+```json
+
+"low_confidence_results": [
+		{
+			"id": 1,
+			"type": "Weapon",
+			"wikiDataID": "Q1574963",
+			"instances": [
+				{
+					"x": 0.30859,
+					"y": 0.64722,
+					"width": 0.11641,
+					"height": 0.19861,
+					"frame": 214,
+					"start": "0:00:08.925583",
+					"end": "0:00:08.967292",
+					"confidence": 0.063,
+					"detection_class": "handgun"
+				}
+...
+```
+
 ## Try object detection
 
 You can try out object detection with the web portal or with the API.
