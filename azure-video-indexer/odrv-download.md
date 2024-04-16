@@ -89,7 +89,7 @@ Use this parameter to define an AI bundle that you want to apply on your audio o
     The `DefaultWithNoiseReduction` value is now mapped to a default preset (deprecated).
 - `BasicAudio`: Index and extract insights by using audio only (ignoring video). Include only basic audio features (transcription, translation, formatting of output captions and subtitles).
 - `AdvancedAudio`: Index and extract insights by using audio only (ignoring video). Include advanced audio features (such as audio event detection) in addition to the standard audio analysis.
-- `AdvancedVideo`: Index and extract insights by using video only (ignoring audio). Include advanced video features (such as observed people tracing) in addition to the standard video analysis.
+- `AdvancedVideo`: Index and extract insights by using video only (ignoring audio). Include advanced video features (such as observed people tracking) in addition to the standard video analysis.
 - `AdvancedVideoAndAudio`: Index and extract insights by using both advanced audio and advanced video analysis.
 
 Azure AI Video Indexer covers up to two tracks of audio. If the file has more audio tracks, they're treated as one track. If you want to index the tracks separately, you need to extract the relevant audio file and index it as `AudioOnly`.
