@@ -3,7 +3,7 @@ title: Update your Azure AI Video Indexer account and migrate assets
 description: Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS. As described in the update and migration guide azure-video-indexer-retirement-guide.md, your Azure AI Video Indexer account needs to be updated. During the update, you'll have the opportunity to opt in to having the VI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
 ms.topic: conceptual
 ms.service: azure-video-indexer
-ms.date: 04/02/2024
+ms.date: 04/17/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -29,7 +29,9 @@ The following permissions are required to update an existing ARM account:
 
 - A **Contributor** role on the Azure AI Video Indexer account
 - An **Owner** role or both **Contributor** and **User Access Administrator** roles on the linked storage account
-- The Azure AI Video Indexer resource must maintain **Reader** permission on the AMS resource.
+- A **Reader** role for the Azure AI Video Indexer resource on the AMS resource.
+
+If the AMS linked storage account is behind a firewall, then VI needs to be assigned the following managed identity - Storage Blob Data Owner. To learn more, see [Use Video Indexer with storage behind firewall](/azure/azure-video-indexer/storage-behind-firewall).
 
 ### [Update existing account in Azure portal](#tab/updateexistingportal)
 
@@ -97,7 +99,7 @@ You must have the following permissions to update an existing ARM account as wel
 - **Owner** permission on the classic account
 - **Contributor** permission on the subscription
 - **Owner** or both **Contributor** and **User Access Administrator** roles on the VI linked storage account
-- The Azure AI Video Indexer resource must maintain **Reader** permission on the AMS resource.
+- A **Reader** role for the Azure AI Video Indexer resource on the AMS resource.
 
 If the AMS linked storage account is behind a firewall, then VI needs to be assigned the following managed identity - Storage Blob Data Owner. To learn more, see [Use Video Indexer with storage behind firewall](/azure/azure-video-indexer/storage-behind-firewall).
 
