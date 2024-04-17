@@ -31,7 +31,7 @@ The following permissions are required to update an existing ARM account:
 - An **Owner** role or both **Contributor** and **User Access Administrator** roles on the linked storage account
 - A **Reader** role for the Azure AI Video Indexer resource on the AMS resource.
 
-If the AMS linked storage account is behind a firewall, then VI needs to be assigned the following managed identity - Storage Blob Data Owner. To learn more, see [Use Video Indexer with storage behind firewall](/azure/azure-video-indexer/storage-behind-firewall).
+If the AMS linked storage account is behind a firewall, VI needs to be assigned the following managed identity - Storage Blob Data Owner. To learn more, see [Use Video Indexer with storage behind firewall](/azure/azure-video-indexer/storage-behind-firewall).
 
 ### [Update existing account in Azure portal](#tab/updateexistingportal)
 
@@ -101,7 +101,7 @@ You must have the following permissions to update an existing ARM account as wel
 - **Owner** or both **Contributor** and **User Access Administrator** roles on the VI linked storage account
 - A **Reader** role for the Azure AI Video Indexer resource on the AMS resource.
 
-If the AMS linked storage account is behind a firewall, then VI needs to be assigned the following managed identity - Storage Blob Data Owner. To learn more, see [Use Video Indexer with storage behind firewall](/azure/azure-video-indexer/storage-behind-firewall).
+If the AMS linked storage account is behind a firewall, VI needs to be assigned the following managed identity - Storage Blob Data Owner. To learn more, see [Use Video Indexer with storage behind firewall](/azure/azure-video-indexer/storage-behind-firewall).
 
 ### [Connect a classic account in the Azure portal](#tab/connectclassicportal)
 
