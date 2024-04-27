@@ -1,5 +1,5 @@
 ---
-title:Azure OpenAI text summarization with Azure AI Video Indexer overview
+title: Azure OpenAI text summarization with Azure AI Video Indexer overview
 description: This article is an overview of Azure OpenAI text summarization with Azure AI Video Indexer. 
 ms.topic: overview
 ms.date: 04/27/2024
