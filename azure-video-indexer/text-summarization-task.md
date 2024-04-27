@@ -1,6 +1,6 @@
 ---
 title: Use Azure OpenAI text summarization with Azure AI Video Indexer
-description: In this article, you'll learn how to use Azure OpenAI text summarization with Azure AI Video Indexer. 
+description: This article shows you how to use Azure OpenAI text summarization with Azure AI Video Indexer. 
 ms.topic: how-to
 ms.date: 04/27/2024
 ms.author: inhenkel
@@ -12,7 +12,7 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-In this article, you'll learn how to use Azure OpenAI text summarization with Azure AI Video Indexer.
+This article shows you how to use Azure OpenAI text summarization with Azure AI Video Indexer.
 
 ## Prerequisites
 
@@ -23,12 +23,12 @@ In this article, you'll learn how to use Azure OpenAI text summarization with Az
 
 ## Open web pages in your browser
 
-It's easier to follow these instructions if you already have the needed web pages open. Copy and paste the following parameters to your favorite text editor. Here's a list to get you started.
+It's easier to follow these instructions if you already have the needed web pages open. Copy and paste the following parameters to your favorite text editor. Here's a list to get you started:
 
 - VI account ID:
 - video file ID: 
 - deployment name:
-- 
+- access token:
 
 1. Open the [Azure portal](https://portal.azure.com) in one tab or window, and sign in.
     1. Navigate to the Azure AI Video Indexer account page for the account ID.
@@ -74,7 +74,7 @@ First, check on the summary status. Until the summary job is finished, the state
 1. Select **Send**.
 
 > [!NOTE]
-> There is always a disclaimer available in the response about the summary.
+> There is always a disclaimer available in the response about the summary. Also, there is a link to the job status API in the *Location* header.
 
 ## List video summaries
 
@@ -83,8 +83,3 @@ You can list the video summaries by page. Select **GET List Video Summaries** an
 ## Delete a video summary
 
 Deleting the video summary is as simple as selecting DEL Delete Video Summary, using the same parameters, and selecting **Send**.
-
-
- 
-
-
