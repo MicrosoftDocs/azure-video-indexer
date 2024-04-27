@@ -1,6 +1,6 @@
 ---
 title: Use Azure OpenAI text summarization with Azure AI Video Indexer
-description: This article talks about Video Indexer restricted viewer built-in role. This role is an account level permission, which allows users to grant restricted access to a specific user or security group. 
+description: In this article, you'll learn how to use Azure OpenAI text summarization with Azure AI Video Indexer. 
 ms.topic: how-to
 ms.date: 04/27/2024
 ms.author: inhenkel
@@ -30,7 +30,7 @@ It's easier to follow these instructions if you already have the needed web page
 - deployment name:
 - 
 
-1. Open the [Azure portal](http://portal.azure.com) in one tab or window, and sign in.
+1. Open the [Azure portal](https://portal.azure.com) in one tab or window, and sign in.
     1. Navigate to the Azure AI Video Indexer account page for the account ID.
     1. Navigate to the Azure OpenAI account page
         1. From the menu, select Model deployments, then select Manage deployments. The Azure OpenAI Studio opens. Copy the Deployment Name you want to use. 
