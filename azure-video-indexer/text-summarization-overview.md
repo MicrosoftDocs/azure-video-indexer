@@ -2,7 +2,7 @@
 title: Azure OpenAI text summarization with Azure AI Video Indexer overview
 description: This article is an overview of Azure OpenAI text summarization with Azure AI Video Indexer. 
 ms.topic: overview
-ms.date: 04/27/2024
+ms.date: 05/3/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -68,7 +68,7 @@ Videos that are shot in low lighting or have fast motion might be difficult for 
 AI models are typically trained on a wide variety of speech, including different accents and dialects. However, if the video contains speech with an accent or dialect that isn't well represented in the training data, the model might struggle to accurately extract the transcript from the video.
 
 ### Videos containing harmful content
-Videos with harmful or sensitive content might be filtered out and excluded, leading to a partial summary.
+Videos containing harmful or sensitive content may result in a partial summary as the parts containing sensitive or harmful content (including adjustment scenes) might be excluded.
 
 ## Additional information
 
