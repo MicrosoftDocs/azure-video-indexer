@@ -20,6 +20,24 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Bug fixes
 * Deprecated functionality
 
+## April 2024
+
+### Text summarization
+
+Azure AI Video Indexer now provides a brief summary of what a video is about without having to watch the entire video. It's designed to save you time by digesting long videos and giving you the gist in a much shorter format. It distills lengthy videos into concise, digestible summaries.
+
+It uses summarization algorithms to identify the most relevant insights for the video. It involves scoring insights based on their importance and relevance to the overall theme. A user-friendly interface allows you to input videos and customize the type of summary you need.
+
+For more information about text summarization, see [Text Summarization Overview](text-summarization-overview.md).
+
+### Exclude models
+
+You are now able to exclude models when indexing through both the VI Website and API. When uploading a video to index, select **Advanced settings** > **Indexing presets** and then select the AI models to be excluded from the indexing results. This can enable more efficient indexing and VI results only containing the insights you are interested in.
+
+### New availability region
+
+Azure AI Video Indexer is now available in Germany West Central region.
+
 ## March 2024
 
 ### Object detection of weapons
