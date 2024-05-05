@@ -2,7 +2,7 @@
 title: Azure OpenAI text summarization with Azure AI Video Indexer overview
 description: This article is an overview of Azure OpenAI text summarization with Azure AI Video Indexer. 
 ms.topic: overview
-ms.date: 05/3/2024
+ms.date: 05/5/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -20,7 +20,7 @@ Azure AI Video Indexer provides a brief summary of what a video is about without
 
 The system is intended to be a supportive tool that enhances productivity and learning by distilling lengthy videos into concise, digestible summaries.
 
-It uses summarization algorithms to identify the most relevant insights for the video. It involves scoring insights based on their importance and relevance to the overall theme. A user-friendly interface allows users to input videos and customize the type of summary they need.
+It uses summarization algorithms to identify the most relevant insights for the video. It involves scoring insights based on their importance and relevance to the overall theme. A user-friendly interface allows you to input videos and customize the type of summary you need.
 
 The system provides options for feedback, enabling it to learn and improve over time based on user interactions.
 
