@@ -32,7 +32,7 @@ For more information about text summarization, see [Text Summarization Overview]
 
 ### Exclude models
 
-You are now able to exclude models when indexing through both the VI Website and API. When uploading a video to index, select Advanced settings > Indexing presets and you can then select the AI models to be excluded from the indexing results. This can enable more efficient indexing and VI results only containing the insights you are interested in.
+You are now able to exclude models when indexing through both the VI Website and API. When uploading a video to index, select **Advanced settings** > **Indexing presets** and then select the AI models to be excluded from the indexing results. This can enable more efficient indexing and VI results only containing the insights you are interested in.
 
 ### New availability region
 
