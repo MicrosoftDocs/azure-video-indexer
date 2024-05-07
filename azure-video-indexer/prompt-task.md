@@ -23,8 +23,7 @@ This article shows you how to Use Azure AI Video Indexer to create prompt conten
 It's easier to follow these instructions if you already have the needed web pages open. Copy and paste the following parameters to your favorite text editor. Here's a list to get you started:
 
 - VI account ID:
-- video file ID: 
-- deployment name:
+- video file ID:
 - access token:
 
 1. Open the [Azure portal](https://portal.azure.com) in one tab or window, and sign in.
