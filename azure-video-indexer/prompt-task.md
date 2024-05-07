@@ -91,12 +91,37 @@ expires: Tue, 07 May 2024 04:57:23 GMT
         "id": 0,
         "start": "0:00:00.050033",
         "end": "0:02:06.700033",
-        "content": "[Video title] satya_nadella_build_keynote_2018\n[Known people] Satya Nadella\n[Visual labels] indoor, audience, clothing, person, presentation, human face, man, wall, footwear, glasses, auditorium, microphone\n[OCR] Satya, Nadella, 0:01 / 4:59, Nadel, 8-8, Microsoft, oft, Satya Nadella, Chief Executive Officer, Micr, Microsoft Build, Opportunity & Responsibility, Mi, Micros, croso\n[Transcript] Please welcome Satya Nadella.\nGood morning and welcome to Bill 2018.\nWelcome to Seattle.\nIt's fantastic to see you all back here.\nYou know, this morning I got up and I was reading the news and I hear Bill Gates is talking about stock and he's talking about the Apple stock.\nAnd I said, wow, in the 30 years that at least I've known Bill, I've never seen him talk about stock.\nBut today must be a new day for sure when you hear Bill talk about Apple stock.\nSo that's the new Microsoft for you.\nYou know last year we talked about opportunity and responsibility and both those topics have been so far amplified.\nIt's unimaginable.\nIn fact, for the first time here, last year is when I started talking about the Intelligent Edge, and 12 months after it's everywhere.\nIn fact, at this conference it's going to be something that we will unpack in great detail.\nThe platform advances are pretty amazing, but most importantly, it's the developers who are pushing these platform advances.\nSo to see the Intelligent edge go from some sort of a conceptual frame to this real thing that's shaping the cloud is stunning."
+        "content": "[Video title] satya_nadella_build_keynote_2018\n[Known people] Satya Nadella\n[Visual labels] indoor, 
+        audience, clothing, person, presentation, human face, man, wall, footwear, glasses, auditorium, microphone\n[OCR] Satya, 
+        Nadella, 0:01 / 4:59, Nadel, 8-8, Microsoft, oft, Satya Nadella, Chief Executive Officer, Micr, Microsoft Build, 
+        Opportunity & Responsibility, Mi, Micros, croso\n[Transcript] Please welcome Satya Nadella.\nGood morning and welcome to 
+        Bill 2018.\nWelcome to Seattle.\nIt's fantastic to see you all back here.\nYou know, this morning I got up and I was 
+        reading the news and I hear Bill Gates is talking about stock and he's talking about the Apple stock.\nAnd I said, wow, in 
+        the 30 years that at least I've known Bill, I've never seen him talk about stock.\nBut today must be a new day for sure 
+        when you hear Bill talk about Apple stock.\nSo that's the new Microsoft for you.\nYou know last year we talked about 
+        opportunity and responsibility and both those topics have been so far amplified.\nIt's unimaginable.\nIn fact, for the 
+        first time here, last year is when I started talking about the Intelligent Edge, and 12 months after it's everywhere.\nIn 
+        fact, at this conference it's going to be something that we will unpack in great detail.\nThe platform advances are pretty 
+        amazing, but most importantly, it's the developers who are pushing these platform advances.\nSo to see the Intelligent 
+        edge go from some sort of a conceptual frame to this real thing that's shaping the cloud is stunning."
     }, {
         "id": 1,
         "start": "0:02:06.700033",
         "end": "0:04:38.916667",
-        "content": "[Video title] satya_nadella_build_keynote_2018\n[Known people] Satya Nadella\n[Detected objects] car\n[Visual labels] indoor, audience, clothing, person, presentation, human face, man, footwear, glasses, outdoor\n[OCR] Microsoft, Opportunity & Responsibility, ponsibility, ros, SPEA., 4:03 / 4:59\n[Transcript] Last year, we also talked about this notion of responsibility and that none of us wanted to see a future that Huxley imagined or Orville imagined, and that's now become a mainstream topic of discussion.\nAnd so I was thinking about the historical parallels, where there was this much change, this kind of opportunity, this kind of tumultuous discussion.\nAnd I was reminded of a book that I read maybe three years ago by Robert Gordon, The Rise and Fall of American Productivity or American Growth.\nAnd in there he in fact talks about the industrial revolution and even contrasts it with the digital revolution.\nHe gives Peace C credit for the last time digital technology showed up in our productivity stats, which is nice.\nBut in general he sort of talks about what an amazing revolution the industrial revolution was in terms of its broad sectoral impact and productivity and growth.\nThis is a picture of New York City probably 1905, I'm told.\nFlat iron building and what you see is horse carriages.\nAnd if you go to the next picture, this is 20 years after and you see all the artefacts of the industrial revolution and it's diffusion.\nYou see the automobiles.\nThese buildings now are beginning to have sewage systems, drainage, air conditioning is coming, Radios, telephones, high rises.\nIt's pretty amazing."
+        "content": "[Video title] satya_nadella_build_keynote_2018\n[Known people] Satya Nadella\n[Detected objects] car\n[Visual 
+        labels] indoor, audience, clothing, person, presentation, human face, man, footwear, glasses, outdoor\n[OCR] Microsoft, 
+        Opportunity & Responsibility, ponsibility, ros, SPEA., 4:03 / 4:59\n[Transcript] Last year, we also talked about this 
+        notion of responsibility and that none of us wanted to see a future that Huxley imagined or Orville imagined, and that's 
+        now become a mainstream topic of discussion.\nAnd so I was thinking about the historical parallels, where there was this 
+        much change, this kind of opportunity, this kind of tumultuous discussion.\nAnd I was reminded of a book that I read maybe 
+        three years ago by Robert Gordon, The Rise and Fall of American Productivity or American Growth.\nAnd in there he in fact 
+        talks about the industrial revolution and even contrasts it with the digital revolution.\nHe gives Peace C credit for the 
+        last time digital technology showed up in our productivity stats, which is nice.\nBut in general he sort of talks about 
+        what an amazing revolution the industrial revolution was in terms of its broad sectoral impact and productivity and growth.
+        \nThis is a picture of New York City probably 1905, I'm told.\nFlat iron building and what you see is horse carriages.    
+        \nAnd if you go to the next picture, this is 20 years after and you see all the artefacts of the industrial revolution and 
+        it's diffusion.\nYou see the automobiles.\nThese buildings now are beginning to have sewage systems, drainage, air 
+        conditioning is coming, Radios, telephones, high rises.\nIt's pretty amazing."
     }]
 }
 
