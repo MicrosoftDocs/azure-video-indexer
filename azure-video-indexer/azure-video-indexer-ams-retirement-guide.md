@@ -3,7 +3,7 @@ title: Preparing for AMS retirement - VI migration and updating guide
 description: "Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS. To continue using VI, between February 15 and June 30 2024, you must take the following steps to transition steps."
 ms.topic: conceptual
 ms.service: azure-video-indexer
-ms.date: 04/16/2024
+ms.date: 05/08/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -47,7 +47,7 @@ You won’t be able to link your VI account to the storage account that was prev
 
 ## Classic accounts- API token based authentication
 
-As [VI Classic accounts are retiring June 30th, 2024](/azure/azure-video-indexer/azure-video-indexer-azure-media-services-retirement-announcement#classic-accounts), all customers with Classic VI accounts need to [connect them to Azure Resource Manager (ARM) based VI accounts](/azure/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets?tabs=updateexistingportal%2cconnectclassicportal%2coptinportal#connect-a-classic-account-to-a-new-arm-based-account) prior to July 1st 2024. With this change, the way that VI access tokens are generated changes. While VI Classic accounts generate access tokens for authentication with the [Classic Get Access Token API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Account-Access-Token), updated VI accounts are ARM based and ARM based accounts use the [ARM API](/rest/api/videoindexer/generate/access-token)  to generate access tokens.
+As [VI Classic accounts are retiring June 30th, 2024](/azure/azure-video-indexer/azure-video-indexer-azure-media-services-retirement-announcement#classic-accounts), all customers with Classic VI accounts need to [connect them to Azure Resource Manager (ARM) based VI accounts](/azure/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets?tabs=updateexistingportal%2cconnectclassicportal%2coptinportal#connect-a-classic-account-to-a-new-arm-based-account) before July 1st 2024. With this change, the way that VI access tokens are generated changes. While VI Classic accounts generate access tokens for authentication with the [Classic Get Access Token API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Account-Access-Token), updated VI accounts are ARM based and ARM based accounts use the [ARM API](/rest/api/videoindexer/generate/access-token)  to generate access tokens.
 
 Once you have connected your Classic account to an ARM, account, there's a [30-day transition state period](/azure/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets?tabs=updateexistingportal%2cconnectclassicportal%2coptinportal#transition-state) during which VI supports accessing your count with both Classic API and ARM API generated access tokens. Learn how to connect your Classic account to an ARM account here.
 
@@ -66,7 +66,7 @@ Azure Media Player is also being retired as of June 30, 2024. If you have been u
 **Unmigrated videos -** Requests for videos that aren’t migrated will return an AMS streaming URL until June 30, 2024. After that date, you won’t be able to make requests to AMS at all.
 
 ### Projects
-
+<!-- Edited 5/8/2024 due to delay
 VI has a Projects feature that can be used to edit and stitch together videos. Once your VI account has been updated, the feature will be limited until your videos are migrated. Updated VI accounts and VI accounts created after February 15th won't be able to create new Projects until June 2024.
 
 Existing projects will be playable, but you won’t be able to edit or render them. If needed, render and download the project files before you update your account.
@@ -74,6 +74,17 @@ Existing projects will be playable, but you won’t be able to edit or render th
 If VI is migrating your VI AMS assets for you, projects will be disabled during the days/hours your assets are being migrated. Once the migration is complete, they'll be playable.
 
 You'll receive an email notification that the migration is complete, and you can check the migration status on the VI website as well.
+-->
+
+Azure AI Video Indexer has a Projects feature that is used to edit and stitch together videos. Once your VI account is updated, the feature will be limited. Updated VI accounts and VI accounts created after February 15th won't be able to create new Projects until July 2024.
+
+Existing projects will be playable, but you won’t be able to edit or render them. If needed, render and download the project files before you update your account.
+
+Projects will be disabled during the days/hours your VI AMS assets are being migrated. Once the migration is complete, they'll be playable.
+
+You'll receive an email notification that the migration is complete, and you can check the migration status on the VI website as well.
+
+
 
 ### Billing
 
