@@ -276,7 +276,7 @@ items:
     - name: Disaster recovery
       href: video-indexer-disaster-recovery.md
       displayName: two Azure AI Video Indexer accounts, secondary Azure AI Video Indexer account, Azure AI Video Indexer failover, business continuity disaster recovery, Azure paired regions, Azure free trial, regional datacenter outage, disaster recovery description, regional datacenter failure, activity log alerts, service health notifications, secondary account, two options, one account, Azure region, Azure subscription, instant failover, recovery time, regional pairs, service notifications, optimal availability, availability policies, multiple tenants, primary region, title, author, topic, article, date, environment, apps, BCDR, isolation, information, availability-zones, replication, Prerequisites, microsoft, redundancy, service-notifications, multiple-tenants
-  - name: Integrate with other services
+  - name: Integrate
     items:
     - name: Create LLM prompt content
       href: prompt-task.md
