@@ -86,12 +86,12 @@
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "/azure-video-indexer/includes/text-summarization-overview.md",
+            "source_path_from_root": "/azure-video-indexer/text-summarization-overview.md",
             "redirect_url": "/azure/azure-video-indexer/video-indexer-overview",
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "/azure-video-indexer/includes/text-summarization-task.md",
+            "source_path_from_root": "/azure-video-indexer/text-summarization-task.md",
             "redirect_url": "/azure/azure-video-indexer/video-indexer-overview",
             "redirect_document_id": false
         }
