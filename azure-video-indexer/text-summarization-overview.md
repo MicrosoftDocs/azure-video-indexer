@@ -49,6 +49,10 @@ You can set summaries to use different styles of language: neutral, casual, or f
 
 ## Limitations
 
+### Models
+
+Fine-tuned models are not supported.
+
 ### Non-English languages
 The text summarization is optimized for the English language. However, it's compatible with all languages supported by the specific GenAI model being used, that is, GPT3.5 Turbo or GPT4.0. So, when applied to non-English languages, the accuracy and quality of the summaries might vary. To mitigate this limitation, be extra careful and verify the generated summaries for accuracy and completeness.  
 
@@ -73,10 +77,6 @@ Videos containing harmful or sensitive content may result in a partial summary a
 ## Additional information
 
 For more information about the way text summarization is used, see the [Transparency notes](/legal/azure-video-indexer/transparency-note#text-summarization) for text summarization.
-
-## Limitations
-
-Fine tuned models are not supported.
 
 ## Try textual video summarization
 [Try using textual video summarization](text-summarization-task.md).
