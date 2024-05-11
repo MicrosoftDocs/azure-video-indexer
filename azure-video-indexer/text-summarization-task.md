@@ -18,7 +18,7 @@ This article shows you how to use text summarization with Azure AI Video Indexer
 
 - An [Azure OpenAI *gpt-35-turbo* or *gpt-4* deployment](/azure/ai-services/openai/how-to/working-with-models?tabs=powershell).
 - Content filters at or above Medium set on the deployment. For more information about to use content filters, see [Content filtering](/azure/ai-services/openai/how-to/content-filters).
-- An [Azure AI Video Indexer account](/azure/azure-video-indexer/connect-azure-open-ai-task.md) connected to an Azure OpenAI account.
+- An [Azure AI Video Indexer account](connect-azure-open-ai-task.md) connected to an Azure OpenAI account.
 - Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the [form](https://aka.ms/oai/access).
 - A video uploaded to your Azure AI Video Indexer library.
 
