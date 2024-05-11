@@ -72,9 +72,6 @@ items:
   - name: VI with LLM prompts
     href: prompt-overview.md
     displayName: LLM, prompt, large language model
-  - name: VI with text summarization
-    href: text-summarization-overview.md
-    displayName: text summarization
   - name: Insights overview
     displayName: optical character recognition elements, Azure AI Video Indexer account, Azure AI Video Indexer OCR, Azure AI Video Indexer insights, specific predefined text, Detect textual logo, timestamped transcript lines, Textual logo detection, Audio effects detection, insights output file, detailed JSON output, 30+ AI models, Azure portal, account types, audio content, audio cues, video insights, entire video, rich insights, aggregated view, time ranges, common insights, frame(s, representative frames, aesthetic properties, easier consumption, Faces detection, different appearances, Microsoft" logo, sentimentType` field, single audio-file, other insights, Insights tab, right-top corner, response status, response content, Operations&operation, JSON content, insight type, one insight, brief overview, Named entities, Sixteen speakers, Topics inference, title, description, article, data, transcripts, OCRs, emotions, details, example, instances, information, audio-effects-detection-transparency-note, Scenes, shots, keyframes, contrast, stableness, navigation, speech, azure-video-indexer, face-detection-transparency, user, word, Labels, entities-transparency, People, ocr-transparency-note, Sentiments, Transcription, translation, language, features, website, videoindexer, Screenshot, indexer-output, Press, artifacts, API
     href: insights-overview.md
@@ -251,9 +248,6 @@ items:
         - name: Customize language model with the API
           href: customize-language-model-with-api.md
           displayName: Azure AI Video Indexer API, speech recognition
-        - name: Use text summarization
-          href: text-summarization-task.md
-          displayName: text summarization, Azure OpenAI
     - name: Bring your own model
       href: ./arc/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md
     - name: Logic Apps connector
