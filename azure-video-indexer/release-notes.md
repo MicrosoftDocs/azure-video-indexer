@@ -22,6 +22,7 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 ## April 2024
 
+<!--This goes in May 
 ### Text summarization
 
 Azure AI Video Indexer now provides a brief summary of what a video is about without having to watch the entire video. It's designed to save you time by digesting long videos and giving you the gist in a much shorter format. It distills lengthy videos into concise, digestible summaries.
@@ -29,6 +30,7 @@ Azure AI Video Indexer now provides a brief summary of what a video is about wit
 It uses summarization algorithms to identify the most relevant insights for the video. It involves scoring insights based on their importance and relevance to the overall theme. A user-friendly interface allows you to input videos and customize the type of summary you need.
 
 For more information about text summarization, see [Text Summarization Overview](text-summarization-overview.md).
+-->
 
 ### Exclude models
 
