@@ -74,5 +74,9 @@ Videos containing harmful or sensitive content may result in a partial summary a
 
 For more information about the way text summarization is used, see the [Transparency notes](/legal/azure-video-indexer/transparency-note#text-summarization) for text summarization.
 
+## Limitations
+
+Fine tuned models are not supported.
+
 ## Try textual video summarization
 [Try using textual video summarization](text-summarization-task.md).

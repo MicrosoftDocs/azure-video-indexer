@@ -8,17 +8,18 @@ author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-# Use Azure OpenAI text summarization with Azure AI Video Indexer
+# Use text summarization with Azure AI Video Indexer
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-This article shows you how to use Azure OpenAI text summarization with Azure AI Video Indexer.
+This article shows you how to use text summarization with Azure AI Video Indexer. This example uses Azure OpenAI deployments.
 
 ## Prerequisites
 
-- An [Azure AI Video Indexer account](/azure/azure-video-indexer/create-account?tabs=portal).
-- Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the [form](https://aka.ms/oai/access).
 - An [Azure OpenAI *gpt-35-turbo* or *gpt-4* deployment](/azure/ai-services/openai/how-to/working-with-models?tabs=powershell).
+- Content filters at or above Medium set on the deployment. For more information about to use content filters, see [Content filtering](/azure/ai-services/openai/how-to/content-filters).
+- An [Azure AI Video Indexer account](/azure/azure-video-indexer/connect-azure-open-ai-task.md) connected to an Azure OpenAI account.
+- Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the [form](https://aka.ms/oai/access).
 - A video uploaded to your Azure AI Video Indexer library.
 
 ## Open web pages in your browser
@@ -48,6 +49,31 @@ Generate an access token in the Azure portal:
 1. From the **Scope** dropdown, select **Account**.
 1. Select **Generate**. The access token is generated.
 1. Copy the access token to your clipboard.
+
+## [Web](#tab/web)
+
+You can use the Azure AI Video Indexer web portal to summarize text.
+
+1. If you don't have the web portal open already open the [Azure AI Video Indexer web portal](https://api-portal.videoindexer.ai/).
+1. Upload a file and wait for it to index.
+1. Select **Generate summary**. The textual summary is generated.
+
+### Summary customizations
+
+Once the summary has been generated, you can choose to regenerate the summary by selecting **Shorter**, **Longer**, **Casual** or **Formal** from the summary choices.
+
+You can also customize the summary by selecting the **Customize summary** icon. You can choose from **Short**, **Medium** or **Long** summary lengths, and you can choose **Neutral**, **Casual**, or **Formal** as a summary style. Once you have made your choices, select **Generate again**.
+
+### Change model deployment
+
+1. Select the **Customize summary** icon.
+1. Select the model deployment you want to use from the **Model deployment** dropdown list.
+1. Select **Generate again**.
+
+> [!NOTE]
+> Remember that the model deployment is a combination of the model and the filters. Additionally, every time you customize the text summary it represents an API PUT request.
+
+## [API](#tab/api)
 
 ## Create a video summary
 
@@ -83,3 +109,30 @@ You can list the video summaries by page. Select **GET List Video Summaries** an
 ## Delete a video summary
 
 Deleting the video summary is as simple as selecting DEL Delete Video Summary, using the same parameters, and selecting **Send**.
+
+---
+
+## Troubleshooting
+
+### Unable to connect Azure Open AI
+
+### Generate summary doesn't appear
+
+You might not have connected your Azure OpenAI account to the Azure AI Video Indexer account correctly.
+
+### Couldn't generate summary
+
+- You need to add content filters to the deployment to avoid showing harmful content. Go back to the Azure OpenAI studio and add filters to your deployment.
+- If you created a permissive content filter for content that has sensitive or harmful content, edit the sensitive content out of the video and try again.
+- You might not have asked for a transcript or there might not be enough information generated during the indexing process.
+- You may be using an advanced preset.
+- The video may not have enough audio in it to create a transform.
+
+### Unable to use a model deployment or deployment missing
+
+- You might not have created a deployment.
+- Someone may have changed or deleted the deployed model.
+
+### Throttling 
+
+There may be too many requests being sent to VI. Wait for a few minutes and try again.
