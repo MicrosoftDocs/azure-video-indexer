@@ -52,16 +52,19 @@ Generate an access token in the Azure portal:
 
 ## [Web](#tab/web)
 
+## Generate a text summary
+
 You can use the Azure AI Video Indexer web portal to summarize text.
 
 1. If you don't have the web portal open already open the [Azure AI Video Indexer web portal](https://api-portal.videoindexer.ai/).
 1. Upload a file and wait for it to index.
 1. Select **Generate summary**. The textual summary is generated.
 
-### Summary customizations
+## Summary customizations
 
-Once the summary has been generated, you can choose to regenerate the summary by selecting **Shorter**, **Longer**, **Casual** or **Formal** from the summary choices.
+Once the summary has been generated, you can make adjustments to it by customizing the summary style or changing the model deployment.
 
+### Customize summary style
 You can also customize the summary by selecting the **Customize summary** icon. You can choose from **Short**, **Medium** or **Long** summary lengths, and you can choose **Neutral**, **Casual**, or **Formal** as a summary style. Once you have made your choices, select **Generate again**.
 
 ### Change model deployment
