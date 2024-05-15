@@ -158,8 +158,8 @@ Deleting the video summary is as simple as selecting DEL Delete Video Summary, u
 | Create-Video-Summary | 400 | Invalid summary style value '{style} | INVALID_INPUT |  |  |
 | Get-Video-Summary | 200 | NA | NA |  |  |
 | Get-Video-Summary | 404 | Summary '{summaryId}' not found for video '{videoId}' | NOT_FOUND |  |  |
-| Get-Video-Summary | 200 | Couldn’t generate a summary because the video content was flagged as harmful. For more details see here: (Content filters)[/azure/ai-services/openai/concepts/content-filter] | NA | All sections in the video have triggered the content filter. | There is no solution for the specific video. |
-| Get-Video-Summary | 200 | Not enough information in order to generate summary. | NA | The video insights do not contain enough information in order to create prompts for OAI | If the preset of the video doesn't contain all the models, then reindexing with a more advanced preset that contains audio might help. |
+| Get-Video-Summary | 200 | Couldn’t generate a summary because the video content was flagged as harmful. For details, see [Content filters](/azure/ai-services/openai/concepts/content-filter) | NA | All sections in the video have triggered the content filter. | There is no solution for the specific video. |
+| Get-Video-Summary | 200 | Not enough information in order to generate summary. | NA | The video insights do not contain enough information in order to create prompts for OAI | If the preset of the video doesn't contain all the models, then re-indexing with a more advanced preset that contains audio might help. |
 | Get-Video-Summary | 200 | Could not get Azure OpenAI deployments for resource {_resourceName} |  |  |  |
 | Get-Video-Summary | 200 | Deployment {DeploymentName} does not exist |  |  |  |
 | Get-Video-Summary | 200 | Azure OpenAI couldn't be reached. Try running the summary again later. |  |  | Try summarization job again later. |
