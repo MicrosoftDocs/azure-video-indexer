@@ -2,7 +2,7 @@
 title: Use Azure OpenAI text summarization with Azure AI Video Indexer
 description: This article shows you how to use Azure OpenAI text summarization with Azure AI Video Indexer. 
 ms.topic: how-to
-ms.date: 04/27/2024
+ms.date: 05/15/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -43,17 +43,6 @@ It's easier to follow these instructions if you already have the needed web page
     1. Navigate to the library page, choose a video, then right-click on it for the video file ID.
 1. Open the [Azure AI Video Indexer API](https://api-portal.videoindexer.ai/) in another tab or window and sign in.
 
-## Generate an access token
-
-Generate an access token in the Azure portal:
-
-1. Navigate to your Azure AI Video Indexer account.
-1. From the menu, select **Management** then **Management API**.
-1. From the **Permission** type dropdown, select **Contributor**.
-1. From the **Scope** dropdown, select **Account**.
-1. Select **Generate**. The access token is generated.
-1. Copy the access token to your clipboard.
-
 ## [Web](#tab/web)
 
 ## Generate a text summary
@@ -62,6 +51,7 @@ You can use the Azure AI Video Indexer web portal to summarize text.
 
 1. If you don't have the web portal open already open the [Azure AI Video Indexer web portal](https://api-portal.videoindexer.ai/).
 1. Upload a file and wait for it to index.
+1. Select the video to navigate to the media page.
 1. Select **Generate summary**. The textual summary is generated.
 
 ## Summary customizations
@@ -80,9 +70,45 @@ You can also customize the summary by selecting the **Customize summary** icon. 
 > [!NOTE]
 > Remember that the model deployment is a combination of the model and the filters. Additionally, every time you customize the text summary it represents an API PUT request.
 
+## Troubleshooting
+
+Before looking for specific solutions, be sure that you created the resources in the [Prerequisites](#prerequisites) section of the document.
+
+### Generate summary doesn't appear
+
+You might not have connected your Azure OpenAI account to the Azure AI Video Indexer account correctly.
+
+### Couldn't generate summary
+
+- You need to add content filters to the deployment to avoid showing harmful content. Go back to the Azure OpenAI studio and add filters to your deployment.
+- If you created a permissive content filter for content that has sensitive or harmful content, edit the sensitive content out of the video and try again.
+- You might not have asked for a transcript or there might not be enough information generated during the indexing process.
+- You may be using an advanced preset.
+- The video may not have enough audio in it to create a transform.
+
+### Unable to use a model deployment or deployment missing
+
+- You might not have created a deployment.
+- Someone may have changed or deleted the deployed model.
+
+### Throttling 
+
+There may be too many requests being sent to VI. Wait for a few minutes and try again.
+
 ## [API](#tab/api)
 
 ## Create a video summary
+
+### Generate an access token
+
+Generate an access token in the Azure portal:
+
+1. Navigate to your Azure AI Video Indexer account.
+1. From the menu, select **Management** then **Management API**.
+1. From the **Permission** type dropdown, select **Contributor**.
+1. From the **Scope** dropdown, select **Account**.
+1. Select **Generate**. The access token is generated.
+1. Copy the access token to your clipboard.
 
 You should have all of the parameters needed to create a video summary ready to go in your text editor.
 
@@ -117,29 +143,32 @@ You can list the video summaries by page. Select **GET List Video Summaries** an
 
 Deleting the video summary is as simple as selecting DEL Delete Video Summary, using the same parameters, and selecting **Send**.
 
+## Error codes
+
+| Request | Status code | Error Message | Error Type | Reason | Mitigation |
+|---|--|--|--|--|--|
+|  |  |  |  |  |  |
+| Create-Video-Summary | 400 | Account is not connected to Azure Open AI | INVALID_INPUT |  | Go to the Azure portal and connect an Account. |
+| Create-Video-Summary | 400 | No deployment found with this name: {deploymentName} | INVALID_INPUT |  |  |
+| Create-Video-Summary | 400 | This model doesn't support generating summaries. | INVALID_INPUT |  |  |
+| Create-Video-Summary | 400 | This model doesn't support generating summaries. | INVALID_INPUT |  |  |
+| Create-Video-Summary | 400 | Couldn’t generate a summary because the AI model must have content filters added to avoid showing harmful content. " +  \$"Add the following policies: {string.Join(",", Enum.GetValues\<FilterType\>().Where(type =\> type != FilterType.JailBreak))}." +  \$"Set the AllowedContentLevel to at least {AllowedContentLevel.Medium} for both sources {FilterSource.Prompt} and {FilterSource.Completion} | SUMMARY_FILTERS_NOT_FOUND |  |  |
+| Create-Video-Summary | 400 | Video not found | VIDEO_NOT_FOUND |  |  |
+| Create-Video-Summary | 400 | Video indexing has not finished successfully yet | VIDEO_ALREADY_IN_PROGRESS |  |  |
+| Create-Video-Summary | 400 | Invalid summary length value '{length}' | INVALID_INPUT |  |  |
+| Create-Video-Summary | 400 | Invalid summary style value '{style} | INVALID_INPUT |  |  |
+| Get-Video-Summary | 200 | NA | NA |  |  |
+| Get-Video-Summary | 404 | Summary '{summaryId}' not found for video '{videoId}' | NOT_FOUND |  |  |
+| Get-Video-Summary | 200 | Couldn’t generate a summary because the video content was flagged as harmful. For more details see here: (Content filters)[/azure/ai-services/openai/concepts/content-filter] | NA | All sections in the video have triggered the content filter. | There is no solution for the specific video. |
+| Get-Video-Summary | 200 | Not enough information in order to generate summary. | NA | The video insights do not contain enough information in order to create prompts for OAI | If the preset of the video doesn't contain all the models, then reindexing with a more advanced preset that contains audio might help. |
+| Get-Video-Summary | 200 | Could not get Azure OpenAI deployments for resource {_resourceName} |  |  |  |
+| Get-Video-Summary | 200 | Deployment {DeploymentName} does not exist |  |  |  |
+| Get-Video-Summary | 200 | Azure OpenAI couldn't be reached. Try running the summary again later. |  |  | Try summarization job again later. |
+| Create-Video-Summary |  |  |  | No role assignment |  |
+| Get-Video-Summary |  |  |  | No role assignment |  |
+
 ---
 
-## Troubleshooting
+## Other considerations
 
-Before looking for specific solutions, be sure that you created the resources in the [Prerequisites](#prerequisites) section of the document.
-
-### Generate summary doesn't appear
-
-You might not have connected your Azure OpenAI account to the Azure AI Video Indexer account correctly.
-
-### Couldn't generate summary
-
-- You need to add content filters to the deployment to avoid showing harmful content. Go back to the Azure OpenAI studio and add filters to your deployment.
-- If you created a permissive content filter for content that has sensitive or harmful content, edit the sensitive content out of the video and try again.
-- You might not have asked for a transcript or there might not be enough information generated during the indexing process.
-- You may be using an advanced preset.
-- The video may not have enough audio in it to create a transform.
-
-### Unable to use a model deployment or deployment missing
-
-- You might not have created a deployment.
-- Someone may have changed or deleted the deployed model.
-
-### Throttling 
-
-There may be too many requests being sent to VI. Wait for a few minutes and try again.
+It is recommended to create the Azure AI Video Indexer and Azure OpenAI accounts in the same region or you might experience performance issues.
