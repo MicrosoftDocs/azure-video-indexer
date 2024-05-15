@@ -72,7 +72,7 @@ Videos that are shot in low lighting or have fast motion might be difficult for 
 AI models are typically trained on a wide variety of speech, including different accents and dialects. However, if the video contains speech with an accent or dialect that isn't well represented in the training data, the model might struggle to accurately extract the transcript from the video.
 
 ### Videos containing harmful content
-Videos containing harmful or sensitive content may result in a partial summary as the parts containing sensitive or harmful content (including adjustment scenes) might be excluded.
+Videos containing harmful or sensitive content may result in a partial summary as the parts containing sensitive or harmful content might be excluded.
 
 ## Additional information
 

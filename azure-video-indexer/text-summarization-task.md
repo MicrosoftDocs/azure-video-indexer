@@ -81,7 +81,7 @@ You might not have connected your Azure OpenAI account to the Azure AI Video Ind
 ### Couldn't generate summary
 
 - You need to add content filters to the deployment to avoid showing harmful content. Go back to the Azure OpenAI studio and add filters to your deployment.
-- If you created a permissive content filter for content that has sensitive or harmful content, edit the sensitive content out of the video and try again.
+- You might have created a permissive content filter for content that has sensitive or harmful content. The content filter needs to be at least Medium. If you set the content filter to Medium AND harmful content remains in the video, the filter will be triggered. In this case, there is no solution. 
 - You might not have asked for a transcript or there might not be enough information generated during the indexing process.
 - You may be using an advanced preset.
 - The video may not have enough audio in it to create a transform.
@@ -137,7 +137,7 @@ First, check on the summary status. Until the summary job is finished, the state
 
 ## List video summaries
 
-You can list the video summaries by page. Select **GET List Video Summaries** and use the same parameters already described. If there's a large list of summaries, use the page parameters to return the response in pages.
+You can list the video summaries by page. Select **GET List Video Summaries** and use the same parameters already described. If there's a large list of summaries, use the page parameters to return the response in pages. Use the summary ID for the GET Video Summary request.
 
 ## Delete a video summary
 
@@ -149,10 +149,9 @@ Deleting the video summary is as simple as selecting DEL Delete Video Summary, u
 |---|--|--|--|--|--|
 |  |  |  |  |  |  |
 | Create-Video-Summary | 400 | Account is not connected to Azure Open AI | INVALID_INPUT |  | Go to the Azure portal and connect an Account. |
-| Create-Video-Summary | 400 | No deployment found with this name: {deploymentName} | INVALID_INPUT |  |  |
-| Create-Video-Summary | 400 | This model doesn't support generating summaries. | INVALID_INPUT |  |  |
-| Create-Video-Summary | 400 | This model doesn't support generating summaries. | INVALID_INPUT |  |  |
-| Create-Video-Summary | 400 | Couldn’t generate a summary because the AI model must have content filters added to avoid showing harmful content. " +  \$"Add the following policies: {string.Join(",", Enum.GetValues\<FilterType\>().Where(type =\> type != FilterType.JailBreak))}." +  \$"Set the AllowedContentLevel to at least {AllowedContentLevel.Medium} for both sources {FilterSource.Prompt} and {FilterSource.Completion} | SUMMARY_FILTERS_NOT_FOUND |  |  |
+| Create-Video-Summary | 400 | No deployment found with this name: {deploymentName} | INVALID_INPUT |  | Check the deployment name string. |
+| Create-Video-Summary | 400 | This model doesn't support generating summaries. | INVALID_INPUT |  | Choose a different model  |
+| Create-Video-Summary | 400 | Couldn’t generate a summary because the AI model must have content filters added to avoid showing harmful content. " +  \$"Add the following policies: {string.Join(",", Enum.GetValues\<FilterType\>().Where(type =\> type != FilterType.JailBreak))}." +  \$"Set the AllowedContentLevel to at least {AllowedContentLevel.Medium} for both sources {FilterSource.Prompt} and {FilterSource.Completion} | SUMMARY_FILTERS_NOT_FOUND |  | See error message. |
 | Create-Video-Summary | 400 | Video not found | VIDEO_NOT_FOUND |  |  |
 | Create-Video-Summary | 400 | Video indexing has not finished successfully yet | VIDEO_ALREADY_IN_PROGRESS |  |  |
 | Create-Video-Summary | 400 | Invalid summary length value '{length}' | INVALID_INPUT |  |  |
