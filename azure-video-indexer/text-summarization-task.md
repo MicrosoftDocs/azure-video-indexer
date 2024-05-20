@@ -49,17 +49,17 @@ It's easier to follow these instructions if you already have the needed web page
 
 You can use the Azure AI Video Indexer web portal to summarize text.
 
-1. If you don't have the web portal open already open the [Azure AI Video Indexer web portal](https://api-portal.videoindexer.ai/).
+1. If you don't have the web portal open already, open the [Azure AI Video Indexer web portal](https://api-portal.videoindexer.ai/).
 1. Upload a file and wait for it to index.
 1. Select the video to navigate to the media page.
 1. Select **Generate summary**. The textual summary is generated.
 
 ## Summary customizations
 
-Once the summary has been generated, you can make adjustments to it by customizing the summary style or changing the model deployment.
+Once the summary is generated, you can make adjustments to it by customizing the summary style or changing the model deployment.
 
 ### Customize summary style
-You can also customize the summary by selecting the **Customize summary** icon. You can choose from **Short**, **Medium** or **Long** summary lengths, and you can choose **Neutral**, **Casual**, or **Formal** as a summary style. Once you have made your choices, select **Generate again**.
+You can also customize the summary by selecting the **Customize summary** icon. You can choose from **Short**, **Medium, or **Long** summary lengths, and you can choose **Neutral**, **Casual**, or **Formal** as a summary style. Once you make your choices, select **Generate again**.
 
 ### Change model deployment
 
@@ -81,7 +81,7 @@ You might not have connected your Azure OpenAI account to the Azure AI Video Ind
 ### Couldn't generate summary
 
 - You need to add content filters to the deployment to avoid showing harmful content. Go back to the Azure OpenAI studio and add filters to your deployment.
-- You might have created a permissive content filter for content that has sensitive or harmful content. The content filter needs to be at least Medium. If you set the content filter to Medium AND harmful content remains in the video, the filter will be triggered. In this case, there is no solution. 
+- You might have created a permissive content filter for content that has sensitive or harmful content. The content filter needs to be at least Medium. If you set the content filter to Medium AND harmful content remains in the video, the filter will be triggered. In this case, there's no solution. 
 - You might not have asked for a transcript or there might not be enough information generated during the indexing process.
 - You may be using an advanced preset.
 - The video may not have enough audio in it to create a transform.
