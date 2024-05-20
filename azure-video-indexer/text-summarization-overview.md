@@ -2,7 +2,7 @@
 title: Azure OpenAI text summarization with Azure AI Video Indexer overview
 description: This article is an overview of Azure OpenAI text summarization with Azure AI Video Indexer. 
 ms.topic: overview
-ms.date: 05/5/2024
+ms.date: 05/15/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -49,6 +49,10 @@ You can set summaries to use different styles of language: neutral, casual, or f
 
 ## Limitations
 
+### Models
+
+Fine-tuned models are not supported.
+
 ### Non-English languages
 The text summarization is optimized for the English language. However, it's compatible with all languages supported by the specific GenAI model being used, that is, GPT3.5 Turbo or GPT4.0. So, when applied to non-English languages, the accuracy and quality of the summaries might vary. To mitigate this limitation, be extra careful and verify the generated summaries for accuracy and completeness.  
 
@@ -68,7 +72,7 @@ Videos that are shot in low lighting or have fast motion might be difficult for 
 AI models are typically trained on a wide variety of speech, including different accents and dialects. However, if the video contains speech with an accent or dialect that isn't well represented in the training data, the model might struggle to accurately extract the transcript from the video.
 
 ### Videos containing harmful content
-Videos containing harmful or sensitive content may result in a partial summary as the parts containing sensitive or harmful content (including adjustment scenes) might be excluded.
+Videos containing harmful or sensitive content may result in a partial summary as the parts containing sensitive or harmful content might be excluded.
 
 ## Additional information
 

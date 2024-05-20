@@ -84,16 +84,6 @@
             "source_path_from_root": "/azure-video-indexer/azure-video-indexer-enabled-by-arc-troubleshooting.md",
             "redirect_url": "/azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-troubleshooting",
             "redirect_document_id": false
-        },
-        {
-            "source_path_from_root": "/azure-video-indexer/text-summarization-overview.md",
-            "redirect_url": "/azure/azure-video-indexer/video-indexer-overview",
-            "redirect_document_id": false
-        },
-        {
-            "source_path_from_root": "/azure-video-indexer/text-summarization-task.md",
-            "redirect_url": "/azure/azure-video-indexer/video-indexer-overview",
-            "redirect_document_id": false
         }
     ]
 }
