@@ -3,7 +3,7 @@ title: Preparing for AMS retirement - VI migration and updating guide
 description: "Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS. To continue using VI, between February 15 and June 30 2024, you must take the following steps to transition steps."
 ms.topic: conceptual
 ms.service: azure-video-indexer
-ms.date: 05/08/2024
+ms.date: 05/21/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -33,7 +33,7 @@ The AMS asset ID will no longer be used for uploading a video. A video URL or lo
 ### Account creation, update, and management
 
 - **Account update**: All VI accounts created before February 15th must be updated so that they're linked to an Azure Storage account instead of an AMS account. For guidance on how to do it in the portal or through the API, see [Updating an existing ARM account](update-your-azure-video-indexer-account-and-migrate-assets.md).
-- **Classic account - connect to new ARM account**: As [announced in September 2023](https://azure.microsoft.com/updates/videoindexer-2/), VI Classic accounts are being retired June 30th, 2024. Before the retirement, all Classic accounts must be connected to a new ARM based VI account. For guidance on how to do it in the portal or through the API, see [Connect a Classic account to a new ARM based account](/azure/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets?tabs=updateexistingportal%2Cconnectclassicportal%2Coptinportal#connect-a-classic-account-to-a-new-arm-based-account).
+- **Classic account - connect to new ARM account**: As [announced in September 2023](https://azure.microsoft.com/updates/videoindexer-2/), VI Classic accounts are being retired June 30, 2024. Before the retirement, all Classic accounts must be connected to a new ARM based VI account. For guidance on how to do it in the portal or through the API, see [Connect a Classic account to a new ARM based account](/azure/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets?tabs=updateexistingportal%2Cconnectclassicportal%2Coptinportal#connect-a-classic-account-to-a-new-arm-based-account).
 - **Account creation with API**
     - You must update account creation and requests to use the VI API version 2024-01-01.
     - Requests must be submitted with the [Azure Storage Account property](https://github.com/Azure/azure-rest-api-specs/blob/main/specification/vi/resource-manager/Microsoft.VideoIndexer/stable/2024-01-01/vi.json) rather than the AMS account.
@@ -41,13 +41,15 @@ The AMS asset ID will no longer be used for uploading a video. A video URL or lo
 
 ### Storage account
 
-Linking an Azure Storage account to a VI account is permanent and can’t be undone. Therefore, it's recommended that you create a storage account that is solely for use with the VI account. (This is especially important if you expect to use network restrictions.) It’s recommended that the storage account is in the same region as the VI account.
+Linking an Azure Storage account to a VI account is permanent and can’t be undone. Therefore, we recommend that you create a storage account that is solely for use with the VI account. This is especially important if you expect to use network restrictions. We recommend that the storage account is in the same region as the VI account.
 
-You won’t be able to link your VI account to the storage account that was previously associated with the AMS account. 
+If no videos were successfully indexed or videos migrated to the updated VI account, you can change the linked storage account through our API with a [PUT account](/rest/api/videoindexer/accounts/create-or-update?view=rest-videoindexer-2024-01-01&tabs=HTTP&preserve-view=true) request. This can be useful if there's an issue with the linked storage account or if you quickly realize you would like to link to a different storage account.
+
+You won’t be able to link your VI account to the storage account that was previously associated with the AMS account.
 
 ## Classic accounts- API token based authentication
 
-As [VI Classic accounts are retiring June 30th, 2024](/azure/azure-video-indexer/azure-video-indexer-azure-media-services-retirement-announcement#classic-accounts), all customers with Classic VI accounts need to [connect them to Azure Resource Manager (ARM) based VI accounts](/azure/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets?tabs=updateexistingportal%2cconnectclassicportal%2coptinportal#connect-a-classic-account-to-a-new-arm-based-account) before July 1st 2024. With this change, the way that VI access tokens are generated changes. While VI Classic accounts generate access tokens for authentication with the [Classic Get Access Token API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Account-Access-Token), updated VI accounts are ARM based and ARM based accounts use the [ARM API](/rest/api/videoindexer/generate/access-token)  to generate access tokens.
+As [VI Classic accounts are retiring June 30, 2024](/azure/azure-video-indexer/azure-video-indexer-azure-media-services-retirement-announcement#classic-accounts), all customers with Classic VI accounts need to [connect them to Azure Resource Manager (ARM) based VI accounts](/azure/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets?tabs=updateexistingportal%2cconnectclassicportal%2coptinportal#connect-a-classic-account-to-a-new-arm-based-account) before July 1, 2024. With this change, the way that VI access tokens are generated changes. While VI Classic accounts generate access tokens for authentication with the [Classic Get Access Token API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Account-Access-Token), updated VI accounts are ARM based and ARM based accounts use the [ARM API](/rest/api/videoindexer/generate/access-token)  to generate access tokens.
 
 Once you have connected your Classic account to an ARM, account, there's a [30-day transition state period](/azure/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets?tabs=updateexistingportal%2cconnectclassicportal%2coptinportal#transition-state) during which VI supports accessing your count with both Classic API and ARM API generated access tokens. Learn how to connect your Classic account to an ARM account here.
 
@@ -57,9 +59,9 @@ Azure Media Player is also being retired as of June 30, 2024. If you have been u
 
 ### Streaming and Streaming endpoints
 
-**Adaptive bitrate streaming** – Encoding and streaming with adaptive bitrate is no longer supported and indexing requests will fail if streaming is set to adaptive bitrate. Instead, submit a request to encode with either single bitrate or no streaming.
+**Adaptive bitrate streaming** – Encoding and streaming with adaptive bitrate is no longer supported and indexing requests fail if streaming is set to adaptive bitrate. Instead, submit a request to encode with either single bitrate or no streaming.
 
-**Newly indexed video** - All API requests for a streaming URL will get a URL to a VI endpoint rather than an AMS endpoint. The VI endpoint will be prefixed with “vi-apim.”
+**Newly indexed video** - All API requests for a streaming URL get a URL to a VI endpoint rather than an AMS endpoint. The VI endpoint will be prefixed with “vi-apim.”
 
 **Previously indexed videos** – Your updated VI account will still be able to stream your AMS assets until they're migrated. In this case, responses to requests for a streaming URL, `Get Streaming Video URL` and `Get Video Index`, will differ depending on whether the assets have been migrated. Therefore, your application must be able to play from both the AMS endpoint and the VI endpoints. For example, Shaka player will only be able to play VI endpoints while AMP will be able to play AMS endpoints.
 
@@ -75,16 +77,13 @@ If VI is migrating your VI AMS assets for you, projects will be disabled during 
 
 You'll receive an email notification that the migration is complete, and you can check the migration status on the VI website as well.
 -->
+Azure AI Video Indexer has a Projects feature that is used to edit and stitch together videos. Once your VI account is updated, the feature will be limited. Updated VI accounts and VI accounts created after February 15th won't be able to render and download projects until August 2024.
 
-Azure AI Video Indexer has a Projects feature that is used to edit and stitch together videos. Once your VI account is updated, the feature will be limited. Updated VI accounts and VI accounts created after February 15th won't be able to create new Projects until July 2024.
+Once your account is updated its assets are migrated, existing projects will be playable, but you won’t be able to edit or render them. If needed, render and download the project files before you update your account.
 
-Existing projects will be playable, but you won’t be able to edit or render them. If needed, render and download the project files before you update your account.
+Projects will be disabled during the days/hours your VI AMS assets are being migrated. Once the migration is complete, you'll be able to create new projects.
 
-Projects will be disabled during the days/hours your VI AMS assets are being migrated. Once the migration is complete, they'll be playable.
-
-You'll receive an email notification that the migration is complete, and you can check the migration status on the VI website as well.
-
-
+You'll receive an email notification that the migration is complete, and you can also check the migration status on the VI website.
 
 ### Billing
 
