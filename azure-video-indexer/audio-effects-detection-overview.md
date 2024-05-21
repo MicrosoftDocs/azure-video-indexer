@@ -3,7 +3,7 @@ title: Introduction to Azure AI Video Indexer audio effects detection
 titleSuffix: Azure AI Video Indexer 
 description: An introduction to Azure AI Video Indexer audio effects detection component responsibly.
 ms.service: azure-video-indexer
-ms.date: 03/22/2024
+ms.date: 03/23/2024
 ms.topic: article
 author: IngridAtMicrosoft
 ms.author: inhenkel
