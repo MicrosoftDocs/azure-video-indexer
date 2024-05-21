@@ -43,7 +43,7 @@ The AMS asset ID will no longer be used for uploading a video. A video URL or lo
 
 Linking an Azure Storage account to a VI account is permanent and can’t be undone. Therefore, we recommend that you create a storage account that is solely for use with the VI account. This is especially important if you expect to use network restrictions. We recommend that the storage account is in the same region as the VI account.
 
-If no videos were successfully indexed or videos migrated to the updated VI account, you can change the linked storage account through our API with a [PUT account](/rest/api/videoindexer/accounts/create-or-update?view=rest-videoindexer-2024-01-01&tabs=HTTP) request. This can be useful if there's an issue with the linked storage account or if you quickly realize you would like to link to a different storage account.
+If no videos were successfully indexed or videos migrated to the updated VI account, you can change the linked storage account through our API with a [PUT account](/rest/api/videoindexer/accounts/create-or-update?view=rest-videoindexer-2024-01-01&tabs=HTTP&preserve-view=true) request. This can be useful if there's an issue with the linked storage account or if you quickly realize you would like to link to a different storage account.
 
 You won’t be able to link your VI account to the storage account that was previously associated with the AMS account.
 
