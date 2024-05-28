@@ -5,7 +5,7 @@ metadata:
   services: azure-video-indexer
   author: IngridAtMicrosoft
   ms.topic: faq
-  ms.date: 03/18/2024
+  ms.date: 05/27/2024
   ms.author: inhenkel
 title: Azure AI Video Indexer frequently asked questions
 summary: This article answers frequently asked questions about Azure AI Video Indexer.
@@ -64,6 +64,9 @@ sections:
           In the Azure AI Video Indexer web-based portal, you can upload a media file using the file upload dialog or by pointing to a URL that directly hosts the source file. Any URL that hosts the media content using an iFrame or embed code will not work (see [example](https://www.videoindexer.ai/accounts/7e1282e8-083c-46ab-8c20-84cae3dc289d/videos/5cfa29e152/?t=4.11)).
 
           For more information, please see this [how-to guide](./upload-index-videos.md).
+      
+      - question: Can I stream a video using an external HTML5 video player
+        answer: Yes. To access the raw video file from video indexer you can use the Get Video Source File Download Url method to get the MP4 file URL and put it in the video tag.
  
       - question: How many files can I stitch and render in a project?
         answer: |
