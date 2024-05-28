@@ -2,7 +2,7 @@
 title: Use Video Indexer with storage behind firewall
 description: This article gives an overview how to configure Azure AI Video Indexer to use storage behind firewall.
 ms.topic: article
-ms.date: 03/24/2024
+ms.date: 05/28/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -16,8 +16,14 @@ When you create a Video Indexer account, you must associate it with an Azure Sto
 
 If you want to use a firewall to secure your storage account and enable trusted storage, [Managed Identities](/azure/media-services/latest/concept-managed-identities) authentication that allows Video Indexer access through the firewall is the preferred option. It allows Video Indexer to access the storage account that has been configured without needing public access for [trusted storage access.](/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-to-trusted-azure-services)
 
-> [!IMPORTANT] 
-> When you lock your storage accounts without public access be aware that the client device you're using to download the video source file using the Video Indexer portal will be the source ip that the storage account will see and allow/deny depending on the network configuration of your storage account. For instance, if I'm accessing the Video Indexer portal from my home network and I want to download the video source file a sas url to the storage account is created, my device will initiate the request and as a consequence the storage account will see my home ip as source ip. If you did not add exception for this ip you will not be able to access the SAS url to the source video. Work with your network/storage administrator on a network strategy i.e. use your corporate network, VPN or Private Link. 
+> [!IMPORTANT]
+> It's important to understand the implications if you lock your storage accounts without public access, especially in relation to the Video Indexer portal. The source IP of the client device is pivotal in this scenario. If the storage account is locked and does not have an exception for the source IP, access to the SAS URL for the video source file will be denied. This applies to both downloading and streaming video content.
+
+> To ensure seamless access, we recommend that you work closely with your network/storage administrator to accommodate these requirements. Utilize your corporate network, a VPN, or Azure Private Link to provide the necessary connectivity while you maintain the security posture of your storage accounts.
+
+> For instance, Azure Private Link provides a secure way to access Azure services privately from your virtual network. It simplifies the network architecture and secures the connection between endpoints in Azure by eliminating data exposure to the public internet.
+
+> Any changes to network configurations should be carefully planned and tested to avoid disrupting access to essential services and resources.
 
 Follow these steps to enable Managed Identity for Storage and then lock your storage account. It's assumed that you already created a Video Indexer account and associated the Storage account.
 
