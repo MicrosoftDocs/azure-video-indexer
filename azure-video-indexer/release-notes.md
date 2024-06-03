@@ -38,6 +38,10 @@ Azure AI Video Indexer now offers an integration with Azure Open AI. You can con
 
 For more information about connecting Azure Open AI to your VI account, see [Create or update an Azure AI Video Indexer account with an Azure OpenAI connection](connect-azure-open-ai-task.md).
 
+### Expansion of Prompt Content API
+
+Azure AI Video Indexer’s Prompt Content API now supports additional language models: Phi2, Llama and GPT 4V. Using the Prompt Content API with GPT 4V outputs the keyframes, that could be analyzed by the Language model along with the other insights.
+
 ## April 2024
 
 ### Exclude models
