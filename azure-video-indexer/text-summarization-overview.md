@@ -2,7 +2,7 @@
 title: Azure OpenAI text summarization with Azure AI Video Indexer overview
 description: This article is an overview of Azure OpenAI text summarization with Azure AI Video Indexer. 
 ms.topic: overview
-ms.date: 05/15/2024
+ms.date: 06/03/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -51,7 +51,7 @@ You can set summaries to use different styles of language: neutral, casual, or f
 
 ### Models
 
-Fine-tuned models are not supported.
+Fine-tuned models are not supported. A fine-tuned model in Azure OpenAI (AOAI) is a pre-trained AI model that has been further optimized for a specific task by training it on a personalized dataset, thereby enhancing its performance and accuracy for that specific application.
 
 ### Non-English languages
 The text summarization is optimized for the English language. However, it's compatible with all languages supported by the specific GenAI model being used, that is, GPT3.5 Turbo or GPT4.0. So, when applied to non-English languages, the accuracy and quality of the summaries might vary. To mitigate this limitation, be extra careful and verify the generated summaries for accuracy and completeness.  
