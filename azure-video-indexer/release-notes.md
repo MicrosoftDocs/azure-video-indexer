@@ -20,17 +20,25 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Bug fixes
 * Deprecated functionality
 
-## April 2024
-
-<!--This goes in May 
+## May 2024
+ 
 ### Text summarization
 
 Azure AI Video Indexer now provides a brief summary of what a video is about without having to watch the entire video. It's designed to save you time by digesting long videos and giving you the gist in a much shorter format. It distills lengthy videos into concise, digestible summaries.
 
 It uses summarization algorithms to identify the most relevant insights for the video. It involves scoring insights based on their importance and relevance to the overall theme. A user-friendly interface allows you to input videos and customize the type of summary you need.
 
+You can customize the summary by selecting Short, Longer, Formal, or Casual as well as specify the specific model deployment.
+
 For more information about text summarization, see [Text Summarization Overview](text-summarization-overview.md).
--->
+
+### Azure OpenAI integration
+
+Azure AI Video Indexer now offers an integration with Azure Open AI. You can connect your Azure Open AI resource when creating a new Azure Video Indexer account or add it to your existing Azure Video Indexer account. When you connect VI with Azure Open AI, you can use the Textual summary capability, available from the API and from the portal. 
+
+For more information about connecting Azure Open AI to your VI account, see [Create or update an Azure AI Video Indexer account with an Azure OpenAI connection](connect-azure-open-ai-task.md).
+
+## April 2024
 
 ### Exclude models
 
