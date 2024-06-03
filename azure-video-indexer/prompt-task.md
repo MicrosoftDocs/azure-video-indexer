@@ -2,7 +2,7 @@
 title: Use Azure AI Video Indexer to create prompt content 
 description: This article shows you how to use Azure AI Video Indexer to create prompt content. 
 ms.topic: how-to
-ms.date: 05/06/2024
+ms.date: 06/03/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -49,7 +49,7 @@ Generate an access token in the Azure portal:
 
 You should have all of the parameters needed to create a video summary ready to go in your text editor.
 
-1. On the Azure AI Video Indexer API page, search for *prompt*. 
+1. Got to the [Create Promot Content](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Prompt-Content) page in the API, or on the Azure AI Video Indexer API page, search for *prompt*.
 1. Select the **Try it** button next to *Create Prompt Content*. The API parameters pane opens.
 1. Select the location from the **location** dropdown list.
 1. Copy and paste the VI account ID in the **accountId** field.
