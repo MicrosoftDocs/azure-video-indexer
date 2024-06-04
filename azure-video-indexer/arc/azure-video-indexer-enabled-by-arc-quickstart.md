@@ -36,13 +36,10 @@ The extension is stored on each edge device and each device is associated with a
 - Create an [Arc enabled Kubernetes cluster](/azure/aks/hybrid/aks-create-clusters-portal).
 - Download the [example video](../media/common/video.mp4).
 
-To use the Video Indexer extension, you need to have an externally facing endpoint, which can be either a DNS name or IP. The endpoint should be set as a secure transfer protocol (`https:\\`) and is used as the extension API endpoint, formatted as `https:\\{endpointUri}/swagger/index.html`. It's also used by the Video Indexer web portal to communicate with the extension. It's recommended that you use an ingress control to manage the endpoint. 
+To use the Video Indexer extension, you need to have an externally facing endpoint, which can be either a DNS name or IP. The endpoint should be set as a secure transfer protocol (`https:\\`) and is used as the extension API endpoint. It's also used by the Video Indexer web portal to communicate with the extension. It's recommended that you use an ingress control to manage the endpoint. 
 
 > [!NOTE]
-> If the endpoint is not publicly accessible, you will not be able to perform actions on the extension from the web portal.
-
-> [!IMPORTANT]
-> The AKS cluster contains the Video Indexer extension must be in the East US region.
+> If the endpoint is not publicly accessible, you will be able to perform actions on the extension from the web portal only from the local network.
 
 ## Minimum hardware requirements for this quickstart
 
@@ -181,7 +178,6 @@ az k8s-extension create --name videoindexer \
     --config-protected-settings "ocr.endpointUri=$($csResourcesData.ocrCognitiveServicesEndpoint)" `
     --config-protected-settings "ocr.secret=$($csResourcesData.ocrCognitiveServicesPrimaryKey)" `
     --config "videoIndexer.accountId=${viAccountId}" \
-    --config "frontend.endpointUri=${dnsName}" \
     --config "storage.storageClass=azurefile-csi"
 ```
 
