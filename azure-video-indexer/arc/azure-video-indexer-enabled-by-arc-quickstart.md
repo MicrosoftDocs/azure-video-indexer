@@ -131,7 +131,7 @@ $Subscription="<your subscription ID>"
 $ResourceGroup="<your resource group name"
 $AccountName="<your account name>"
 
-az rest --method post --verbose --uri https://management.azure.com/subscriptions/${Subscription}/resourceGroups/${ResourceGroup}/providers/Microsoft.VideoIndexer/accounts/${AccountName}/CreateExtensionDependencies?api-version=2023-06-02-preview
+az rest --method post --verbose --uri https://management.azure.com/subscriptions/${Subscription}/resourceGroups/${ResourceGroup}/providers/Microsoft.VideoIndexer/accounts/${AccountName}/CreateExtensionDependencies?api-version=2024-01-01
 
 ```
 
@@ -146,7 +146,7 @@ $Subscription="<your subscription ID>"
 $ResourceGroup="<your resource group name"
 $AccountName="<your account name>" 
 
-az rest --method post --uri  https://management.azure.com/subscriptions/${Subscription}/resourceGroups/${ResourceGroup}/providers/Microsoft.VideoIndexer/accounts/${AccountName}/ListExtensionDependenciesData?api-version=2023-06-02-preview
+az rest --method post --uri  https://management.azure.com/subscriptions/${Subscription}/resourceGroups/${ResourceGroup}/providers/Microsoft.VideoIndexer/accounts/${AccountName}/ListExtensionDependenciesData?api-version=2024-01-01-preview
 ```
  
 Response format:
