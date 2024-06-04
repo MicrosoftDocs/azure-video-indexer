@@ -3,7 +3,7 @@ title: Try Azure AI Video Indexer enabled by Arc
 description: This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 ms.topic: quickstart
 ms.service: azure-video-indexer
-ms.date: 04/1/2024
+ms.date: 06/04/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -36,13 +36,10 @@ The extension is stored on each edge device and each device is associated with a
 - Create an [Arc enabled Kubernetes cluster](/azure/aks/hybrid/aks-create-clusters-portal).
 - Download the [example video](../media/common/video.mp4).
 
-To use the Video Indexer extension, you need to have an externally facing endpoint, which can be either a DNS name or IP. The endpoint should be set as a secure transfer protocol (`https:\\`) and is used as the extension API endpoint, formatted as `https:\\{endpointUri}/swagger/index.html`. It's also used by the Video Indexer web portal to communicate with the extension. It's recommended that you use an ingress control to manage the endpoint. 
+To use the Video Indexer extension, you need to have an externally facing endpoint, which can be either a DNS name or IP. The endpoint should be set as a secure transfer protocol (`https:\\`) and is used as the extension API endpoint. It's also used by the Video Indexer web portal to communicate with the extension. It's recommended that you use an ingress control to manage the endpoint. 
 
 > [!NOTE]
-> If the endpoint is not publicly accessible, you will not be able to perform actions on the extension from the web portal.
-
-> [!IMPORTANT]
-> The AKS cluster contains the Video Indexer extension must be in the East US region.
+> If the endpoint is not publicly accessible, you will be able to perform actions on the extension from the web portal only from the local network.
 
 ## Minimum hardware requirements for this quickstart
 
@@ -131,7 +128,7 @@ $Subscription="<your subscription ID>"
 $ResourceGroup="<your resource group name"
 $AccountName="<your account name>"
 
-az rest --method post --verbose --uri https://management.azure.com/subscriptions/${Subscription}/resourceGroups/${ResourceGroup}/providers/Microsoft.VideoIndexer/accounts/${AccountName}/CreateExtensionDependencies?api-version=2023-06-02-preview
+az rest --method post --verbose --uri https://management.azure.com/subscriptions/${Subscription}/resourceGroups/${ResourceGroup}/providers/Microsoft.VideoIndexer/accounts/${AccountName}/CreateExtensionDependencies?api-version=2024-01-01
 
 ```
 
@@ -146,7 +143,7 @@ $Subscription="<your subscription ID>"
 $ResourceGroup="<your resource group name"
 $AccountName="<your account name>" 
 
-az rest --method post --uri  https://management.azure.com/subscriptions/${Subscription}/resourceGroups/${ResourceGroup}/providers/Microsoft.VideoIndexer/accounts/${AccountName}/ListExtensionDependenciesData?api-version=2023-06-02-preview
+az rest --method post --uri  https://management.azure.com/subscriptions/${Subscription}/resourceGroups/${ResourceGroup}/providers/Microsoft.VideoIndexer/accounts/${AccountName}/ListExtensionDependenciesData?api-version=2024-01-01-preview
 ```
  
 Response format:
@@ -162,6 +159,26 @@ Response format:
     "ocrCognitiveServicesSecondaryKey": "<key>",
     "ocrCognitiveServicesEndpoint": "<uri>"
 }
+```
+
+### Step 3 - Create Azure Arc Video Indexer Extension
+
+```bash
+az k8s-extension create --name videoindexer \
+    --extension-type Microsoft.videoindexer \
+    --scope cluster \
+    --release-namespace ${namespace} \
+    --cluster-name ${connectedClusterName} \
+    --resource-group ${connectedClusterRg} \
+    --cluster-type connectedClusters \
+    --config-protected-settings "speech.endpointUri=${speechUri}" \
+    --config-protected-settings "speech.secret=${speechSecret}" \
+    --config-protected-settings "translate.endpointUri=${translateUri}" \
+    --config-protected-settings "translate.secret=${translateSecret}" \
+    --config-protected-settings "ocr.endpointUri=$($csResourcesData.ocrCognitiveServicesEndpoint)" `
+    --config-protected-settings "ocr.secret=$($csResourcesData.ocrCognitiveServicesPrimaryKey)" `
+    --config "videoIndexer.accountId=${viAccountId}" \
+    --config "storage.storageClass=azurefile-csi"
 ```
 
 ## Optional configuration
@@ -204,29 +221,6 @@ az k8s-extension create --name videoindexer \
     --config "videoIndexer.webapi.resources.limits.mem=8Gi"\
     --config "videoIndexer.webapi.resources.limits.cpu=1"\ 
 ```
-
-### Step 3 - Create Azure Arc Video Indexer Extension
-
-```bash
-az k8s-extension create --name videoindexer \
-    --extension-type Microsoft.videoindexer \
-    --scope cluster \
-    --release-namespace ${namespace} \
-    --cluster-name ${connectedClusterName} \
-    --resource-group ${connectedClusterRg} \
-    --cluster-type connectedClusters \
-    --config-protected-settings "speech.endpointUri=${speechUri}" \
-    --config-protected-settings "speech.secret=${speechSecret}" \
-    --config-protected-settings "translate.endpointUri=${translateUri}" \
-    --config-protected-settings "translate.secret=${translateSecret}" \
-    --config-protected-settings "ocr.endpointUri=$($csResourcesData.ocrCognitiveServicesEndpoint)" `
-    --config-protected-settings "ocr.secret=$($csResourcesData.ocrCognitiveServicesPrimaryKey)" `
-    --config "videoIndexer.accountId=${viAccountId}" \
-    --config "frontend.endpointUri=${dnsName}" \
-    --config "storage.storageClass=azurefile-csi"
-```
-
-
 
 ### Step 4 - Verify Deployment
 
