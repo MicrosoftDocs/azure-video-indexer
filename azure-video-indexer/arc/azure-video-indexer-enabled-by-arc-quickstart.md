@@ -3,7 +3,7 @@ title: Try Azure AI Video Indexer enabled by Arc
 description: This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 ms.topic: quickstart
 ms.service: azure-video-indexer
-ms.date: 04/1/2024
+ms.date: 06/04/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -164,6 +164,27 @@ Response format:
 }
 ```
 
+### Step 3 - Create Azure Arc Video Indexer Extension
+
+```bash
+az k8s-extension create --name videoindexer \
+    --extension-type Microsoft.videoindexer \
+    --scope cluster \
+    --release-namespace ${namespace} \
+    --cluster-name ${connectedClusterName} \
+    --resource-group ${connectedClusterRg} \
+    --cluster-type connectedClusters \
+    --config-protected-settings "speech.endpointUri=${speechUri}" \
+    --config-protected-settings "speech.secret=${speechSecret}" \
+    --config-protected-settings "translate.endpointUri=${translateUri}" \
+    --config-protected-settings "translate.secret=${translateSecret}" \
+    --config-protected-settings "ocr.endpointUri=$($csResourcesData.ocrCognitiveServicesEndpoint)" `
+    --config-protected-settings "ocr.secret=$($csResourcesData.ocrCognitiveServicesPrimaryKey)" `
+    --config "videoIndexer.accountId=${viAccountId}" \
+    --config "frontend.endpointUri=${dnsName}" \
+    --config "storage.storageClass=azurefile-csi"
+```
+
 ## Optional configuration
 
 The extension default settings are set to handle the common workloads, for specific cases, the following parameters can be used to configure the resource allocation:
@@ -204,29 +225,6 @@ az k8s-extension create --name videoindexer \
     --config "videoIndexer.webapi.resources.limits.mem=8Gi"\
     --config "videoIndexer.webapi.resources.limits.cpu=1"\ 
 ```
-
-### Step 3 - Create Azure Arc Video Indexer Extension
-
-```bash
-az k8s-extension create --name videoindexer \
-    --extension-type Microsoft.videoindexer \
-    --scope cluster \
-    --release-namespace ${namespace} \
-    --cluster-name ${connectedClusterName} \
-    --resource-group ${connectedClusterRg} \
-    --cluster-type connectedClusters \
-    --config-protected-settings "speech.endpointUri=${speechUri}" \
-    --config-protected-settings "speech.secret=${speechSecret}" \
-    --config-protected-settings "translate.endpointUri=${translateUri}" \
-    --config-protected-settings "translate.secret=${translateSecret}" \
-    --config-protected-settings "ocr.endpointUri=$($csResourcesData.ocrCognitiveServicesEndpoint)" `
-    --config-protected-settings "ocr.secret=$($csResourcesData.ocrCognitiveServicesPrimaryKey)" `
-    --config "videoIndexer.accountId=${viAccountId}" \
-    --config "frontend.endpointUri=${dnsName}" \
-    --config "storage.storageClass=azurefile-csi"
-```
-
-
 
 ### Step 4 - Verify Deployment
 
