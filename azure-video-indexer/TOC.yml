@@ -72,9 +72,6 @@ items:
   - name: Using at scale
     href: considerations-when-use-at-scale.md
     displayName: 30-GB upload size limitation, six best practices, world wide web, serverless event-driven platform, Azure AI Video Indexer, videoUrl optional parameter, upload video API, HTTP 429 response code, byte array file, callBack URL definition, Media Reserved Units, right indexing parameters, file size limitations, Azure description, Azure Functions, upload speed, videoUrl field, HTTP response, code samples, right parameters, upload request, efficient way, high dependency, service reliability, First consideration, Operations&operation, reliable way, Automatic Scaling, price optimization, price reduction, many cases, next retry, POST notification, use case, different parameters, media file, next request, technological constraints, excess money, business needs, many requests, status change, indexing process, storage account, title, Things, scale, topic, videos, archive, article, questions, smart, choice, information, considerations, 2 GB, issues, performance, files, multi-part, network, connectivity, packets, image, first-consideration, path, location, care, rest, api-portal, videoindexer, details, TIP, example, fast, content, August, media-services, concept, MRUs, AMS, result, Respect, system, capabilities, integration, batch, movies, fact, minute, header, throttling, github, master, flow, decisions, uploading
-  - name: VI with LLM prompts
-    href: prompt-overview.md
-    displayName: LLM, prompt, large language model
   - name: Insights overview
     displayName: optical character recognition elements, Azure AI Video Indexer account, Azure AI Video Indexer OCR, Azure AI Video Indexer insights, specific predefined text, Detect textual logo, timestamped transcript lines, Textual logo detection, Audio effects detection, insights output file, detailed JSON output, 30+ AI models, Azure portal, account types, audio content, audio cues, video insights, entire video, rich insights, aggregated view, time ranges, common insights, frame(s, representative frames, aesthetic properties, easier consumption, Faces detection, different appearances, Microsoft" logo, sentimentType` field, single audio-file, other insights, Insights tab, right-top corner, response status, response content, Operations&operation, JSON content, insight type, one insight, brief overview, Named entities, Sixteen speakers, Topics inference, title, description, article, data, transcripts, OCRs, emotions, details, example, instances, information, audio-effects-detection-transparency-note, Scenes, shots, keyframes, contrast, stableness, navigation, speech, azure-video-indexer, face-detection-transparency, user, word, Labels, entities-transparency, People, ocr-transparency-note, Sentiments, Transcription, translation, language, features, website, videoindexer, Screenshot, indexer-output, Press, artifacts, API
     href: insights-overview.md
@@ -99,9 +96,6 @@ items:
       href: topics-inference.md
     - name: Text-based emotion detection
       href: emotions-detection.md
-    - name: Text summarization
-      href: text-summarization-overview.md
-      displayName: text summarization
     - name: Object detection
       href: object-detection.md
     - name: Slate detection
@@ -124,6 +118,15 @@ items:
     - name: Customize person model overview
       href: customize-person-model-overview.md
       displayName: multiple Person model support, multiple custom Person models, Azure AI Video Indexer website, top LinkedIn influencers, to 1 million people, multiple Person models, specific custom model, celebrity recognition feature, separate Person model, specific Person model, one million faces, Person model ID, default Person model, 50 Person models, Azure  description, Gate notice, data source, image files, different use-cases, different channels, new face, title, article, overview, conceptual, videos, IMDB, Wikipedia, Customers, name, account, example, content, NOTE, limit, API
+  - name: VI with LLM
+    href: generative_ai_with_vi.md
+    items:
+    - name: VI with LLM prompts
+      href: prompt-overview.md
+      displayName: LLM, prompt, large language model
+    - name: Text summarization
+      href: text-summarization-overview.md
+      displayName: text summarization
 - name: How to guides
   items:
   - name: Manage accounts
@@ -192,9 +195,6 @@ items:
       - name: View and update transcriptions
         href: edit-transcript-lines-portal.md
         displayName: Azure AI Video Indexer website description, same three dots icon, new transcript time stamp line, new transcription line** option, Content model customization, default time stamp, relevant transcript lines, two transcription lines, word-level transcription information, Delete line Lines, following transcript line, next transcript line, New lines, two lines, word-level information, transcript timeline, transcript edits, end/start time, existing line, desired place, editing options, top-right corner, unzipped files, PT0.28S, new text, edit mode, free text, Speaker name, title, transcriptions, article, View, update, section, videoindexer, gap, beginning, user, image, Screenshot, media, transcript-lines-portal, new-transcription-line, previous, NOTE, part, languages, API, example, accuracy, milliseconds, sentences, phrases, words, Confidence, Duration, ai, arrow, Artifacts, speechservices, json, NBest, RecognitionStatus, Success, Channel, Offset, ITN, Display, 3S, dev, 1.
-      - name: Summarize text
-        href: text-summarization-task.md
-        displayName: summarize text, summary, transcript, audio, large language model, LLM
       - name: Edit speakers
         href: edit-speakers.md
         displayName: Azure AI Video Indexer website description, Azure AI Video Indexer account, update video index, specific transcript line, same editing operations, current video, transcript quality, edit actions, other videos, edit mode, wrong assignment, transcript lines, unique identity, actual name, new name, new speaker, Speaker names, existing speaker, different speaker, speakers' names, title, article, clarity, videoindexer, ai, API, Update-Video-Index, NOTE, addition, image, Screenshot, media, menu, checkmark, list, Limitations
@@ -257,8 +257,16 @@ items:
         - name: Customize language model with the API
           href: customize-language-model-with-api.md
           displayName: Azure AI Video Indexer API, speech recognition
-    - name: Bring your own model
-      href: ./arc/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md
+    - name: Use LLM and other models
+      items:
+      - name: Summarize text
+        href: text-summarization-task.md
+        displayName: summarize text, summary, transcript, audio, large language model, LLM
+      - name: Create LLM prompt content
+        href: prompt-task.md
+        displayName: LLM, large lanugage model, LLama2, Phi2, GPT3_5Turbo, or GPT4
+      - name: Edge - Bring your own model
+        href: ./arc/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md
     - name: Logic Apps connector
       items:
       - name: with ARM-based VI accounts
@@ -279,11 +287,6 @@ items:
     - name: Disaster recovery
       href: video-indexer-disaster-recovery.md
       displayName: two Azure AI Video Indexer accounts, secondary Azure AI Video Indexer account, Azure AI Video Indexer failover, business continuity disaster recovery, Azure paired regions, Azure free trial, regional datacenter outage, disaster recovery description, regional datacenter failure, activity log alerts, service health notifications, secondary account, two options, one account, Azure region, Azure subscription, instant failover, recovery time, regional pairs, service notifications, optimal availability, availability policies, multiple tenants, primary region, title, author, topic, article, date, environment, apps, BCDR, isolation, information, availability-zones, replication, Prerequisites, microsoft, redundancy, service-notifications, multiple-tenants
-  - name: Integrate
-    items:
-    - name: Create LLM prompt content
-      href: prompt-task.md
-      displayName: LLM, large lanugage model, LLama2, Phi2, GPT3_5Turbo, or GPT4
 - name: Troubleshooting
   items:
   - name: Account connection issues
