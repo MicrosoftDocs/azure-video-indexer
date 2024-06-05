@@ -118,7 +118,7 @@ items:
     - name: Customize person model overview
       href: customize-person-model-overview.md
       displayName: multiple Person model support, multiple custom Person models, Azure AI Video Indexer website, top LinkedIn influencers, to 1 million people, multiple Person models, specific custom model, celebrity recognition feature, separate Person model, specific Person model, one million faces, Person model ID, default Person model, 50 Person models, Azure  description, Gate notice, data source, image files, different use-cases, different channels, new face, title, article, overview, conceptual, videos, IMDB, Wikipedia, Customers, name, account, example, content, NOTE, limit, API
-  - name: VI with LLM
+  - name: VI with generative AI
     href: generative_ai_with_vi.md
     items:
     - name: VI with LLM prompts
@@ -127,6 +127,8 @@ items:
     - name: Text summarization
       href: text-summarization-overview.md
       displayName: text summarization
+    - name: Edge - Bring your own model
+      href: ./arc/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md
 - name: How to guides
   items:
   - name: Manage accounts
