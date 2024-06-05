@@ -264,7 +264,7 @@ items:
         displayName: summarize text, summary, transcript, audio, large language model, LLM
       - name: Create LLM prompt content
         href: prompt-task.md
-        displayName: LLM, large lanugage model, LLama2, Phi2, GPT3_5Turbo, or GPT4
+        displayName: LLM, large language model, LLama2, Phi2, GPT3_5Turbo, or GPT4
       - name: Edge - Bring your own model
         href: ./arc/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md
     - name: Logic Apps connector
