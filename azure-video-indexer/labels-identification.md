@@ -18,13 +18,6 @@ Labels identification is an Azure AI Video Indexer AI feature that identifies vi
 
 Review [Transparency Note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context)
 
-## General principles 
-
-This article discusses labels identification and the key considerations for making use of this technology responsibly. There are many things you need to consider when deciding how to use and implement an AI-powered feature:
-
-- Does this feature perform well in my scenario? Before deploying labels identification into your scenario, test how it performs using real-life data and make sure it can deliver the accuracy you need.
-- Are we equipped to identify and respond to errors? AI-powered products and features won't be 100% accurate, so consider how you'll identify and respond to any errors that may occur.
-
 ## View the insight
 
 When working on the website the instances are displayed in the Insights tab. They can also be generated in a categorized list in a JSON file that includes the Labels ID, category, instances together with each label’s specific start and end times and confidence score, as follows: 

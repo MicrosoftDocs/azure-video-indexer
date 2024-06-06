@@ -23,13 +23,6 @@ The resulting insights are displayed in a categorized list in the Insights tab, 
 
 Review [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context)
 
-## General principles
-
-This article discusses observed people tracking and matched faces and the key considerations for making use of this technology responsibly. There are many things you need to consider when deciding how to use and implement an AI-powered feature:
-
-- Will this feature perform well in my scenario? Before deploying observed people tracking and matched faces into your scenario, test how it performs using real-life data and make sure it can deliver the accuracy you need.
-- Are we equipped to identify and respond to errors? AI-powered products and features will not be 100% accurate, so consider how you'll identify and respond to any errors that may occur.
-
 ## View the insight
 
 When uploading the media file, go to Video + Audio Indexing and select Advanced.
