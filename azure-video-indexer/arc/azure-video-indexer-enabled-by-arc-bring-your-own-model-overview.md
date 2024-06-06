@@ -138,15 +138,9 @@ You can use the skip frames and page size parameters for time selection. The for
         ]
     }... 
 ```
-<!--
-## Tutorial, How-tos, and Quickstarts
-[Bring your own model quickstart](azure-video-indexer-enabled-by-arc-bring-your-own-model-quickstart.md)
--->
 
-<!--
 ## Bring Your Own model samples
 [BYO samples](https://github.com/Azure-Samples/media-services-video-indexer/tree/master/BYO_Samples)
--->
 
 ## Related content
 [Use the Azure AI Video Indexer API](/azure/azure-video-indexer/video-indexer-use-apis)
