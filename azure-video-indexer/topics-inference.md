@@ -20,13 +20,6 @@ The resulting insights are also generated in a categorized list in a JSON file w
 
 Review [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context)
 
-## General principles 
-
-This article discusses topics and the key considerations for making use of this technology responsibly. There are many things you need to consider when deciding how to use and implement an AI-powered feature:
-
-- Will this feature perform well in my scenario? Before deploying topics inference into your scenario, test how it performs using real-life data and make sure it can deliver the accuracy you need.
-- Are we equipped to identify and respond to errors? AI-powered products and features won't be 100% accurate, so consider how you'll identify and respond to any errors that may occur.
-
 ## View the insight
 
 To display Topics Inference insights on the website.

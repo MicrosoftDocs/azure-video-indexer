@@ -25,13 +25,6 @@ Face detection insights are generated as a categorized list in a JSON file that 
 
 Review [Transparency Note for Azure AI Video Indexer](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context).
 
-## General principles
-
-This article discusses face detection and key considerations for using this technology responsibly. You need to consider many important factors when you decide how to use and implement an AI-powered feature, including:
-
-- Will this feature perform well in your scenario? Before you deploy face detection in your scenario, test how it performs by using real-life data. Make sure that it can deliver the accuracy you need.
-- Are you equipped to identify and respond to errors? AI-powered products and features aren't 100 percent accurate, so consider how you'll identify and respond to any errors that occur.
-
 ## Key terms  
 
 | Term | Definition |
