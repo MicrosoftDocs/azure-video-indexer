@@ -216,18 +216,3 @@ It's important to note the limitations of observed people tracking, to avoid or 
 * People with similar clothes: (for example, people wear uniforms, players in sport games) could be detected as the same person with the same ID number.
 * Obstruction – there maybe errors where there are obstructions (scene/self or obstructions by other people).
 * Pose: The tracks may be split due to different poses (back/front)
-
-### Other considerations
-
-When used responsibly and carefully, Azure AI Video Indexer is a valuable tool for many industries. To respect the privacy and safety of others, and to comply with local and global regulations, we recommend the following:
-
-- Always respect an individual’s right to privacy, and only ingest videos for lawful and justifiable purposes.
-- Don't purposely disclose inappropriate media showing young children or family members of celebrities or other content that may be detrimental or pose a threat to an individual’s personal freedom.
-- Commit to respecting and promoting human rights in the design and deployment of your analyzed media.
-- When using 3rd party materials, be aware of any existing copyrights or permissions required before distributing content derived from them.
-- Always seek legal advice when using media from unknown sources.
-- Always obtain appropriate legal and professional advice to ensure that your uploaded videos are secured and have adequate controls to preserve the integrity of your content and to prevent unauthorized access.
-- Provide a feedback channel that allows users and individuals to report issues with the service.
-- Be aware of any applicable laws or regulations that exist in your area regarding processing, analyzing, and sharing media containing people.
-- Keep a human in the loop. Don't use any solution as a replacement for human oversight and decision-making.
-- Fully examine and review the potential of any AI model you're using to understand its capabilities and limitations.

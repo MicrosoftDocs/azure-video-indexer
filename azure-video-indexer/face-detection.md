@@ -1,7 +1,7 @@
 ---
 title: Face detection overview
 description: Get an overview of face detection in Azure AI Video Indexer.
-ms.date: 04/17/2023
+ms.date: 06/06/2024
 ms.topic: article
 ms.author: inhenkel
 author: IngridAtMicrosoft
@@ -121,16 +121,6 @@ Face detection is a valuable tool for many industries when it's used responsibly
 - Carefully consider the accuracy of the results. To promote more accurate detection, check the quality of the video. Low-quality video might affect the insights that are presented.
 - Carefully review results if you use face detection for law enforcement. People might not be detected if they're small, sitting, crouching, or obstructed by objects or other people. To ensure fair and high-quality decisions, combine face detection-based automation with human oversight.
 - Don't use face detection for decisions that might have serious, adverse impacts. Decisions that are based on incorrect output can have serious, adverse impacts. It's advisable to include human review of decisions that have the potential for serious impacts on individuals.
-- Always respect an individual’s right to privacy, and ingest videos only for lawful and justifiable purposes.
-- Don't purposely disclose inappropriate content about young children, family members of celebrities, or other content that might be detrimental to or pose a threat to an individual’s personal freedom.
-- Commit to respecting and promoting human rights in the design and deployment of your analyzed media.
-- If you use third-party materials, be aware of any existing copyrights or required permissions before you distribute content that's derived from them.  
-- Always seek legal advice if you use content from an unknown source.  
-- Always obtain appropriate legal and professional advice to ensure that your uploaded videos are secured and that they have adequate controls to preserve content integrity and prevent unauthorized access.
-- Provide a feedback channel that allows users and individuals to report issues they might experience with the service.
-- Be aware of any applicable laws or regulations that exist in your area about processing, analyzing, and sharing media that features people.  
-- Keep a human in the loop. Don't use any solution as a replacement for human oversight and decision making.
-- Fully examine and review the potential of any AI model that you're using to understand its capabilities and limitations.  
 
 ## Related content
 
