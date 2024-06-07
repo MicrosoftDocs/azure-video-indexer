@@ -17,7 +17,7 @@ Audio effects detection is an Azure AI Video Indexer feature that detects insi
 
 When working on the website, the instances are displayed in the Insights tab. They can also be generated in a categorized list in a JSON file that includes the category ID, type, name, and instances per category together with the specific timeframes and confidence score. 
 
-## Prerequisites  
+## Transparency note
 
 Review [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) 
 

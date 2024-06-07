@@ -69,9 +69,7 @@ During the emotions detection procedure, the transcript of the video is processe
 - When uploading a file always use high quality audio and video content.
 
 
-## Transparency Notes
-
-### General 
+## Transparency Note
 
 Review [Transparency Note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context)
 
