@@ -1,7 +1,7 @@
 ---
 title: Azure AI Video Indexer keywords extraction overview 
 description: An introduction to Azure AI Video Indexer keywords extraction component responsibly.
-ms.date: 03/22/2024
+ms.date: 06/06/2024
 ms.topic: article
 ms.author: inhenkel
 author: IngridAtMicrosoft
@@ -20,11 +20,11 @@ Review [Transparency Note overview](/legal/azure-video-indexer/transparency-note
 
 ## View the insight
 
-When working on the website the insights are displayed in the **Insights** tab. They can also be generated in a categorized list in a JSON file which includes the Keyword’s ID, text, together with each keyword’s specific start and end time and confidence score.  
+On the website, the insights are displayed in the **Insights** tab. They can also be generated in a categorized list in a JSON file that includes the Keyword’s ID, text, together with each keyword’s specific start and end time and confidence score.  
 
-To display the instances in a JSON file, do the following: 
+To display the instances in a JSON file: 
 
-1. Click Download and then Insights (JSON).  
+1. Select Download and then Insights (JSON).  
 1. Copy the text and paste it into your Online JSON Viewer. 
     
     ```json
@@ -90,32 +90,16 @@ During the Keywords procedure, audio and images in a media file are processed, a
 |Component|Definition|
 |---|---|
 |Source language |	The user uploads the source file for indexing. |
-|Transcription API	|The audio file is sent to Azure AI services and the translated transcribed output is returned. If a language has been specified it is processed.| 
+|Transcription API	|The audio file is sent to Azure AI services and the translated transcribed output is returned. If a language has been specified, it's processed.| 
 |OCR of video	|Images in a media file are processed using the Azure AI Vision Read API to extract text, its location, and other insights.  |
 |Keywords extraction	|An extraction algorithm processes the transcribed audio. The results are then combined with the insights detected in the video during the OCR process. The keywords and where they appear in the media and then detected and identified. |
-|Confidence level|	The estimated confidence level of each keyword is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty will be represented as an 0.82 score.|
+|Confidence level|	The estimated confidence level of each keyword is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
 
 ## Example use cases 
 
 - Personalization of keywords to match customer interests, for example websites about England posting promotions about English movies or festivals. 
-- Deep-searching archives for insights on specific keywords to create feature stories about companies, personas or technologies, for example by a news agency.  
+- Deep-searching archives for insights on specific keywords to create feature stories about companies, personas, or technologies, for example by a news agency.  
 
 ## Considerations and limitations when choosing a use case 
-
-Below are some considerations to keep in mind when using keywords extraction: 
-
-- When uploading a file always use high-quality video content. The recommended maximum frame size is HD and frame rate is 30 FPS. A frame should contain no more than 10 people. When outputting frames from videos to AI models, only send around 2 or 3 frames per second. Processing 10 and more frames might delay the AI result.   
-- When uploading a file always use high quality audio and video content. At least 1 minute of spontaneous conversational speech is required to perform analysis. Audio effects are detected in non-speech segments only. The minimal duration of a non-speech section is 2 seconds. Voice commands and singing aren't supported.  
-
-When used responsibly and carefully Keywords is a valuable tool for many industries. To respect the privacy and safety of others, and to comply with local and global regulations, we recommend the following:   
-
-- Always respect an individual’s right to privacy, and only ingest media for lawful and justifiable purposes.   
-- Don't purposely disclose inappropriate media showing young children or family members of celebrities or other content that may be detrimental or pose a threat to an individual’s personal freedom.   
-- Commit to respecting and promoting human rights in the design and deployment of your analyzed media.   
-- When using 3rd party materials, be aware of any existing copyrights or permissions required before distributing content derived from them.  
-- Always seek legal advice when using media from unknown sources.  
-- Always obtain appropriate legal and professional advice to ensure that your uploaded media is secured and have adequate controls to preserve the integrity of your content and to prevent unauthorized access.     
-- Provide a feedback channel that allows users and individuals to report issues with the service.   
-- Be aware of any applicable laws or regulations that exist in your area regarding processing, analyzing, and sharing media containing people.  
-- Keep a human in the loop. Don't use any solution as a replacement for human oversight and decision-making.   
-- Fully examine and review the potential of any AI model you're using to understand its capabilities and limitations.  
+ 
+Always upload a high-quality audio and video content. The recommended maximum frame size is HD and frame rate is 30 FPS. A frame should contain no more than 10 people. When outputting frames from videos to AI models, only send around 2 or 3 frames per second. Processing 10 and more frames might delay the AI result. At least 1 minute of spontaneous conversational speech is required to perform analysis. Audio effects are detected in nonspeech segments only. The minimal duration of a nonspeech section is 2 seconds. Voice commands and singing aren't supported. 

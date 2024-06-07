@@ -105,16 +105,6 @@ During the transcription, translation and language identification procedure, spe
 When used responsibly and carefully, Azure AI Video Indexer is a valuable tool for many industries. To respect the privacy and safety of others, and to comply with local and global regulations, we recommend:   
 
 - Carefully consider the accuracy of the results, to promote more accurate data, check the quality of the audio, low quality audio might impact the detected insights.  
-- Always respect an individual’s right to privacy, and only ingest videos for lawful and justifiable purposes.  
-- Don't purposely disclose inappropriate media showing young children or family members of celebrities or other content that might be detrimental or pose a threat to an individual’s personal freedom.  
-- Commit to respecting and promoting human rights in the design and deployment of your analyzed media.  
-- When using third-party materials, be aware of any existing copyrights or permissions required before distributing content derived from them. 
-- Always seek legal advice when using media from unknown sources. 
-- Always obtain appropriate legal and professional advice to ensure that your uploaded videos are secured and have adequate controls to preserve the integrity of your content and to prevent unauthorized access.    
-- Provide a feedback channel that allows users and individuals to report issues with the service.  
-- Be aware of any applicable laws or regulations that exist in your area regarding processing, analyzing, and sharing media containing people. 
-- Keep a human in the loop. Don't use any solution as a replacement for human oversight and decision-making.  
-- Fully examine and review the potential of any AI model you're using to understand its capabilities and limitations.
 - Video Indexer doesn't perform speaker recognition so speakers aren't assigned an identifier across multiple files. You're unable to search for an individual speaker in multiple files or transcripts. 
 - Speaker identifiers are assigned randomly and can only be used to distinguish different speakers in a single file. 
 - Cross-talk and overlapping speech: When multiple speakers talk simultaneously or interrupt each other, it becomes challenging for the model to accurately distinguish and assign the correct text to the corresponding speakers.

@@ -3,7 +3,7 @@ title: Introduction to Azure AI Video Indexer audio effects detection
 titleSuffix: Azure AI Video Indexer 
 description: An introduction to Azure AI Video Indexer audio effects detection component responsibly.
 ms.service: azure-video-indexer
-ms.date: 03/23/2024
+ms.date: 06/06/2024
 ms.topic: article
 author: IngridAtMicrosoft
 ms.author: inhenkel
@@ -17,7 +17,7 @@ Audio effects detection is an Azure AI Video Indexer feature that detects insi
 
 When working on the website, the instances are displayed in the Insights tab. They can also be generated in a categorized list in a JSON file that includes the category ID, type, name, and instances per category together with the specific timeframes and confidence score. 
 
-## Prerequisites  
+## Transparency note
 
 Review [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) 
 
@@ -97,15 +97,5 @@ During the audio effects detection procedure, audio in a media file is processed
     - Knocking on a door or slamming a door might be labeled as a gunshot or explosion. 
     - Prolonged shouting or sounds of physical human effort might be incorrectly classified. 
     - A group of people laughing might be classified as both laughter and crowd. 
-    - Natural and nonsynthetic gunshot and explosions sounds are supported. 
-
-When used responsibly and carefully, Azure AI Video Indexer is a valuable tool for many industries. To respect the privacy and safety of others, and to comply with local and global regulations, we recommend the following:   
-
-- Always respect an individual’s right to privacy, and only ingest audio for lawful and justifiable purposes.   
-- Don't purposely disclose inappropriate audio of young children or family members of celebrities or other content that may be detrimental or pose a threat to an individual’s personal freedom.   
-- Commit to respecting and promoting human rights in the design and deployment of your analyzed audio.   
-- When using third party materials, be aware of any existing copyrights or permissions required before distributing content derived from them.  
-- Always seek legal advice when using audio from unknown sources.  
-- Be aware of any applicable laws or regulations that exist in your area regarding processing, analyzing, and sharing audio containing people.  
-- Keep a human in the loop. Don't use any solution as a replacement for human oversight and decision-making.   
-- Fully examine and review the potential of any AI model you're using to understand its capabilities and limitations.  
+    - Natural and nonsynthetic gunshot and explosions sounds are supported.
+    
