@@ -1,7 +1,7 @@
 ---
 title: Azure AI Video Indexer labels identification overview
 description: This article gives an overview of an Azure AI Video Indexer labels identification.
-ms.date: 03/22/2024
+ms.date: 06/06/2024
 ms.topic: article
 author: IngridAtMicrosoft
 ms.author: inhenkel
@@ -99,19 +99,6 @@ During the Labels procedure, objects in a media file are processed, as follows:
 - Carefully consider the accuracy of the results, to promote more accurate detections, check the quality of the video, low quality video might impact the detected insights. 
 - Carefully consider when using for law enforcement that Labels potentially cannot detect parts of the video. To ensure fair and high-quality decisions, combine Labels with human oversight. 
 - Don't use labels identification for decisions that may have serious adverse impacts. Machine learning models can result in undetected or incorrect classification output. Decisions based on incorrect output could have serious adverse impacts. Additionally, it's advisable to include human review of decisions that have the potential for serious impacts on individuals. 
-
-When used responsibly and carefully, Azure AI Video Indexer is a valuable tool for many industries. To respect the privacy and safety of others, and to comply with local and global regulations, we recommend the following:   
-
-- Always respect an individual’s right to privacy, and only ingest videos for lawful and justifiable purposes.  
-- Don't purposely disclose inappropriate content about young children or family members of celebrities or other content that may be detrimental or pose a threat to an individual’s personal freedom.  
-- Commit to respecting and promoting human rights in the design and deployment of your analyzed media.  
-- When using 3rd party materials, be aware of any existing copyrights or permissions required before distributing content derived from them. 
-- Always seek legal advice when using content from unknown sources. 
-- Always obtain appropriate legal and professional advice to ensure that your uploaded videos are secured and have adequate controls to preserve the integrity of your content and to prevent unauthorized access.    
-- Provide a feedback channel that allows users and individuals to report issues with the service.  
-- Be aware of any applicable laws or regulations that exist in your area regarding processing, analyzing, and sharing media containing people. 
-- Keep a human in the loop. Do not use any solution as a replacement for human oversight and decision-making.  
-- Fully examine and review the potential of any AI model you're using to understand its capabilities and limitations.
 
 ## Learn more about labels identification
 
