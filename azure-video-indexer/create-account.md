@@ -2,7 +2,7 @@
 title: Create an Azure AI Video Indexer (VI) account
 description: This article explains how to create an account for Azure AI Video Indexer.
 ms.topic: how-to
-ms.date: 02/15/2024
+ms.date: 06/10/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -47,7 +47,7 @@ To determine what roles have currently been assigned, see [View the access a use
 1.  Give the account a name in the **Resource name** field.
 1.  Connect the account to storage. Either…
     1.  Select an existing storage account from the **Storage account** dropdown or
-    1.  Create a new storage account. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal).
+    1.  Create a new storage account. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). *Storage accounts for VI must be a Standard general-purpose v2 storage account*.
 1.  Select or create a **user assigned managed identity**. (If you forget, a prompt in the storage overview page appears later in the process.)
 1.  Select **Review + create**. Validation of the configuration starts.
 1.  When validation is complete, select **Create**.
