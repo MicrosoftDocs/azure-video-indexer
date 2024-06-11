@@ -2,7 +2,7 @@
 title: The Azure AI Video Indexer connectors with Logic App and Power Automate.
 description: This tutorial shows how to unlock new experiences and monetization opportunities Azure AI Video Indexer connectors with Logic App and Power Automate.
 ms.topic: tutorial
-ms.date: 03/22/2024
+ms.date: 06/10/2024
 ms.author: alzam
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
