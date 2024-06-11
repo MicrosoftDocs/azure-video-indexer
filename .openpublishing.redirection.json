@@ -87,12 +87,12 @@
         },
         {
             "source_path_from_root": "/azure-video-indexer/odrv-download.md",
-            "redirect_url": "/azure/azure-video-indexer/arc/upload-index-videos",
+            "redirect_url": "/azure/azure-video-indexer/upload-index-videos",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/azure-video-indexer/video-indexer-get-started.md",
-            "redirect_url": "/azure/azure-video-indexer/arc/upload-index-videos",
+            "redirect_url": "/azure/azure-video-indexer/upload-index-videos",
             "redirect_document_id": false
         }
     ]
