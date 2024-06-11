@@ -2,7 +2,7 @@
 title: Use Video Indexer with storage behind firewall
 description: This article gives an overview how to configure Azure AI Video Indexer to use storage behind firewall.
 ms.topic: article
-ms.date: 05/28/2024
+ms.date: 06/10/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -12,7 +12,7 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-When you create a Video Indexer account, you must associate it with an Azure Storage account. Video Indexer can access the storage account using system authentication or Managed Identity authentication. Video Indexer validates that the user adding the association has access to the storage account with Azure Resource Manager Role Based Access Control (RBAC).
+When you create a Video Indexer account, you must associate it with an Azure Storage account. *Storage accounts for VI must be a Standard general-purpose v2 storage account*. Video Indexer can access the storage account using system authentication or Managed Identity authentication. Video Indexer validates that the user adding the association has access to the storage account with Azure Resource Manager Role Based Access Control (RBAC).
 
 If you want to use a firewall to secure your storage account and enable trusted storage, [Managed Identities](/azure/media-services/latest/concept-managed-identities) authentication that allows Video Indexer access through the firewall is the preferred option. It allows Video Indexer to access the storage account that has been configured without needing public access for [trusted storage access.](/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-to-trusted-azure-services)
 

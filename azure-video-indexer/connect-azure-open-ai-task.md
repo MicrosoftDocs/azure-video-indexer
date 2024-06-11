@@ -2,7 +2,7 @@
 title: Create an Azure AI Video Indexer account with an Azure OpenAI connection
 description: This article shows you how to create an Azure AI Video Indexer account with an Azure OpenAI connection. 
 ms.topic: how-to
-ms.date: 05/15/2024
+ms.date: 06/10/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -45,7 +45,7 @@ You can create an Azure AI Video Indexer account with an Azure OpenAI connection
 1. Give the account a name in the **Resource name** field.
 1. Connect the account to storage. Either…
     1. Select an existing storage account from the **Storage account** dropdown or
-    1. Create a new storage account. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal).
+    1. Create a new storage account. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). *Storage accounts for VI must be a Standard general-purpose v2 storage account*.
 1. Select the Azure OpenAI account you want to work with from the **Azure OpenAI Resource** dropdown list.
 1. Select **system assigned managed identity**.
 1. Select the **I have all the rights to use the content/file, and agree that it will be handled per the Online Services Terms  and the Microsoft Privacy Statement** checkbox.
