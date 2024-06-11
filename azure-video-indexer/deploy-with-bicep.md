@@ -3,7 +3,7 @@ title:  Deploy Azure AI Video Indexer by using Bicep
 description: Learn how to create an Azure AI Video Indexer account by using a Bicep file.
 ms.topic: quickstart
 ms.custom: devx-track-bicep
-ms.date: 03/22/2024
+ms.date: 06/10/2024
 ms.author: jgao
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -17,7 +17,7 @@ Using this quickstart, you can create an Azure AI Video Indexer (VI) account by 
 
 The following resources are installed using the Bicep template:
 
-- Azure Storage account
+- Azure Storage account. *Storage accounts for VI must be a Standard general-purpose v2 storage account*.
 - VI account with a connection to the storage account using a system assigned managed identity
 - The Storage Blob Data Contributor role assignment for the VI account on the storage account
 
