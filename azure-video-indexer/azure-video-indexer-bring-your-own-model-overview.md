@@ -35,7 +35,7 @@ With the Video Indexer BYO model, users can add custom insights to video insight
     1. Send the keyframe to the custom AI model. 
     1. Patch the custom insights back to Video Indexer.
 
-:::image type="content" source="media/common/general-byo-workflow.svg" lightbox="../media/common/general-byo-workflow.svg" alt-text="diagram of the workflow described above"::: 
+:::image type="content" source="media/common/general-byo-workflow.svg" lightbox="media/common/general-byo-workflow.svg" alt-text="diagram of the workflow described above"::: 
 
 ## Prerequisites
 
