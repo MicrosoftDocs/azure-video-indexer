@@ -39,7 +39,7 @@ If the AMS linked storage account is behind a firewall, VI needs to be assigned 
 1.  Select **Update account**. The Update account pane appears.
 1.  Connect the account to storage. Either…
     1.  Select an existing storage account from the **Storage account** dropdown or
-    1.  Create a new storage account. *Storage accounts linked to VI must be a Standard general-purpose v2 storage account or Standard general-purpose v1 storage account. It cannot be a Premium block blob, Premium file share, or Premium page blob account.*. For more information about creating a storage account, see Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). 
+    1.  Create a new storage account. *Storage accounts linked to VI must be a Standard general-purpose v2 storage account or Standard general-purpose v1 storage account. It cannot be a Premium block blob, Premium file share, or Premium page blob account.*. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). 
 1.  Select the **Request to migrate** checkbox.
 1.  Once the storage is created, a notification appears that says that you must select a managed identity role assignment. Select the **Assign role** button.
 1.  If you didn’t opt in to the migration process during storage creation, you can opt in by selecting the **Migrate content** tab. The migration prompt appears.
