@@ -2,7 +2,7 @@
 title: Generative AI with Azure AI Video Indexer
 description: This article discusses the use of generative AI with Azure AI Video Indexer.
 ms.topic: how-to
-ms.date: 06/04/2024
+ms.date: 06/18/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -39,5 +39,5 @@ Azure AI Video Indexer supports the following models.
 - [Use Azure OpenAI text summarization](text-summarization-task.md)
 - [Prompt content](prompt-overview.md)
 - [Use Azure AI Video Indexer to create prompt content](prompt-task.md)
-- [Edge: Bring Your Own Model](arc/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md)
-- [Edge: Bring Your Own Model sample](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/c6160dae4e60d00e384e2871ee352cb455b871c7/BringYourOwn-Samples)
+- [Bring Your Own Model](azure-video-indexer-bring-your-own-model-overview.md)
+- [Bring Your Own Model sample](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples)
