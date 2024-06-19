@@ -3,7 +3,7 @@ title: Azure AI Video Indexer Bring Your Own AI model (Preview) overview
 description: This article is an overview of Azure AI Video Indexer enabled by Arc bring your own model.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 02/20/2024
+ms.date: 06/18/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -35,7 +35,7 @@ With the Video Indexer BYO model, users can add custom insights to video insight
     1. Send the keyframe to the custom AI model. 
     1. Patch the custom insights back to Video Indexer.
 
-:::image type="content" source="../media/common/general-byo-workflow.svg" lightbox="../media/common/general-byo-workflow.svg" alt-text="diagram of the workflow described above"::: 
+:::image type="content" source="media/common/general-byo-workflow.svg" lightbox="media/common/general-byo-workflow.svg" alt-text="diagram of the workflow described above"::: 
 
 ## Prerequisites
 
@@ -140,7 +140,7 @@ You can use the skip frames and page size parameters for time selection. The for
 ```
 
 ## Bring Your Own model samples
-[BYO samples](https://github.com/Azure-Samples/media-services-video-indexer/tree/master/BYO_Samples)
+[BYO samples](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples)
 
 ## Related content
 [Use the Azure AI Video Indexer API](/azure/azure-video-indexer/video-indexer-use-apis)
