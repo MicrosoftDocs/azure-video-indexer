@@ -3,7 +3,7 @@ title: Preparing for AMS retirement - VI migration and updating guide
 description: "Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS. To continue using VI, between February 15 and June 30 2024, you must take the following steps to transition steps."
 ms.topic: conceptual
 ms.service: azure-video-indexer
-ms.date: 06/10/2024
+ms.date: 06/19/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -55,7 +55,7 @@ Once you have connected your Classic account to an ARM, account, there's a [30-d
 
 ### Streaming player
 
-Azure Media Player is also being retired as of June 30, 2024. If you have been using the VI streaming endpoint to stream videos, you must choose a different player that supports Dash or HLS packaging and the use of a token in the request. 
+As Azure Media Player is also being retired as of June 30, 2024, updated VI accounts don't use it. Once you have updated your account, newly indexed videos as well as migrated videos won't be playable by Azure Media Player. If you have been using the VI streaming endpoint to stream videos, you must choose a different player that supports Dash or HLS packaging and the use of a token in the request.
 
 ### Streaming and Streaming endpoints
 
