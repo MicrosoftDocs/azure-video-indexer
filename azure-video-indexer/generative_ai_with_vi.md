@@ -39,5 +39,5 @@ Azure AI Video Indexer supports the following models.
 - [Use Azure OpenAI text summarization](text-summarization-task.md)
 - [Prompt content](prompt-overview.md)
 - [Use Azure AI Video Indexer to create prompt content](prompt-task.md)
-- [Bring Your Own Model](arc/azure-video-indexer-bring-your-own-model-overview.md)
+- [Bring Your Own Model](azure-video-indexer-bring-your-own-model-overview.md)
 - [Bring Your Own Model sample](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples)
