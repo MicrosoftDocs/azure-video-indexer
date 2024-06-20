@@ -3,7 +3,7 @@ title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
 ms.topic: article
 ms.custom: references_regions
-ms.date: 03/24/2024
+ms.date: 06/20/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -51,12 +51,6 @@ You are now able to exclude models when indexing through both the VI Website and
 ### New availability region
 
 Azure AI Video Indexer is now available in Germany West Central region.
-
-## March 2024
-
-### Object detection of weapons
-
-Azure AI Video Indexer now detects weapons. The weapons class includes hand guns and rifles. For the limitations of the weapons class under [Specific class notes](object-detection.md#specific-class-notes)  object detection documentation.
 
 ## February 2024
 
