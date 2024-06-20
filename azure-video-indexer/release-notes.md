@@ -3,7 +3,7 @@ title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
 ms.topic: article
 ms.custom: references_regions
-ms.date: 03/24/2024
+ms.date: 06/20/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -24,7 +24,7 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
  
 ### Text summarization
 
-Azure AI Video Indexer now provides a brief summary of what a video is about without having to watch the entire video. It's designed to save you time by digesting long videos and giving you the gist in a much shorter format. It distills lengthy videos into concise, digestible summaries.
+Azure AI Video Indexer now provides a brief summary of what a video is about without having to watch the entire video. It's designed to save you time by digesting long videos and giving you the gist in a shorter format. It distills lengthy videos into concise, digestible summaries.
 
 It uses summarization algorithms to identify the most relevant insights for the video. It involves scoring insights based on their importance and relevance to the overall theme. A user-friendly interface allows you to input videos and customize the type of summary you need.
 
@@ -34,29 +34,23 @@ For more information about text summarization, see [Text Summarization Overview]
 
 ### Azure OpenAI integration
 
-Azure AI Video Indexer now offers an integration with Azure Open AI. You can connect your Azure Open AI resource when creating a new Azure Video Indexer account or add it to your existing Azure Video Indexer account. When you connect VI with Azure Open AI, you can use the Textual summary capability, available from the API and from the portal. 
+Azure AI Video Indexer now offers an integration with Azure OpenAI. You can connect your Azure OpenAI resource when creating a new Azure Video Indexer account or add it to your existing Azure Video Indexer account. When you connect VI with Azure OpenAI, you can use the Textual summary capability, available from the API and from the portal. 
 
-For more information about connecting Azure Open AI to your VI account, see [Create or update an Azure AI Video Indexer account with an Azure OpenAI connection](connect-azure-open-ai-task.md).
+For more information about connecting Azure OpenAI to your VI account, see [Create or update an Azure AI Video Indexer account with an Azure OpenAI connection](connect-azure-open-ai-task.md).
 
 ### Expansion of Prompt Content API
 
-Azure AI Video Indexer’s Prompt Content API now supports additional language models: Phi2, Llama and GPT 4V. Using the Prompt Content API with GPT 4V outputs the keyframes, that could be analyzed by the Language model along with the other insights.
+Azure AI Video Indexer’s Prompt Content API now supports more language models: Phi 2, Llama, and GPT 4V. Using the Prompt Content API with GPT 4V outputs the keyframes that can be analyzed by the Language model along with the other insights.
 
 ## April 2024
 
 ### Exclude models
 
-You are now able to exclude models when indexing through both the VI Website and API. When uploading a video to index, select **Advanced settings** > **Indexing presets** and then select the AI models to be excluded from the indexing results. This can enable more efficient indexing and VI results only containing the insights you are interested in.
+You're now able to exclude models when indexing through both the VI Website and API. When uploading a video to index, select **Advanced settings** > **Indexing presets** and then select the AI models to be excluded from the indexing results. This can enable more efficient indexing and VI results only containing the insights you are interested in.
 
 ### New availability region
 
 Azure AI Video Indexer is now available in Germany West Central region.
-
-## March 2024
-
-### Object detection of weapons
-
-Azure AI Video Indexer now detects weapons. The weapons class includes hand guns and rifles. For the limitations of the weapons class under [Specific class notes](object-detection.md#specific-class-notes)  object detection documentation.
 
 ## February 2024
 
