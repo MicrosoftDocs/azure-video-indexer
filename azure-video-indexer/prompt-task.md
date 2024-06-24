@@ -137,4 +137,4 @@ Prompt content API supports visual language models. When selecting the GPT-4V mo
 1. As described above, textual content for the prompt is in the JSON response.
 1. Each string in the "frames" part of the JSON response is the ID of the keyframe. 
 1. Use the ID to download the keyframe artifact using the [Get Video Artifact Download Url](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Artifact-Download-Url) request. (You can also download artifacts from the VI web portal.)
-1. Once you have both the textual content and the keyframe artifacts you can combine them as prompts for an AI model of your choice. 
+1. Once you have both the textual content and the keyframe artifacts, you can combine them as prompts for an AI model of your choice. 
