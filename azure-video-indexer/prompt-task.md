@@ -2,7 +2,7 @@
 title: Use Azure AI Video Indexer to create prompt content 
 description: This article shows you how to use Azure AI Video Indexer to create prompt content. 
 ms.topic: how-to
-ms.date: 06/03/2024
+ms.date: 06/19/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -60,6 +60,9 @@ You should have all of the parameters needed to create a video summary ready to 
 1. Select **Send**.
 
 If there aren't any issues with the request, the response shows *HTTP/1.1 202 Accepted*.
+
+> [!NOTE]
+> For summary related prompts, we recommend selecting the Summarized style. For search tasks,including answering specific questions about the video, we recommend using the Search style. 
 
 ### Check job status
 
@@ -125,3 +128,13 @@ expires: Tue, 07 May 2024 04:57:23 GMT
 }
 
 ```
+
+## Use keyframes for video with very little audio
+
+Prompt content API supports visual language models. When selecting the GPT-4V model, you can include keyframes as part of the prompt provided to the model. This feature is recommended for videos with limited insights available is or when there is no transcript in the video.
+
+1. Create and send a Prompt Content request.
+1. As described above, textual content for the prompt is in the JSON response.
+1. Each string in the "frames" part of the JSON response is the ID of the keyframe. 
+1. Use the ID to download the keyframe artifact using the [Get Video Artifact Download Url](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Artifact-Download-Url) request. (You can also download artifacts from the VI web portal.)
+1. Once you have both the textual content and the keyframe artifacts you can combine them as prompts for an AI model of your choice. 
