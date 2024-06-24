@@ -1,5 +1,5 @@
 ---
-title: Textual Video Summary with Azure Open AI
+title: Textual Video Summary with Azure OpenAI
 description: This article is an overview of Azure OpenAI text summarization with Azure AI Video Indexer. 
 ms.topic: overview
 ms.date: 06/19/2024
@@ -8,7 +8,7 @@ author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-# Textual Video Summary with Azure Open AI
+# Textual Video Summary with Azure OpenAI
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
@@ -51,7 +51,7 @@ You can set summaries to use different styles of language: neutral, casual, or f
 
 ### Models
 
-Fine-tuned models are not supported. A fine-tuned model in Azure OpenAI (AOAI) is a pre-trained AI model that has been further optimized for a specific task by training it on a personalized dataset, thereby enhancing its performance and accuracy for that specific application.
+Fine-tuned models aren't supported. A fine-tuned model in Azure OpenAI (AOAI) is a pretrained AI model that has been further optimized for a specific task by training it on a personalized dataset, thereby enhancing its performance and accuracy for that specific application.
 
 ### Non-English languages
 The text summarization is optimized for the English language. However, it's compatible with all languages supported by the specific GenAI model being used, that is, GPT3.5 Turbo or GPT4.0. So, when applied to non-English languages, the accuracy and quality of the summaries might vary. To mitigate this limitation, be extra careful and verify the generated summaries for accuracy and completeness.  
@@ -76,9 +76,9 @@ Videos containing harmful or sensitive content may result in a partial summary a
 
 ## Textual summarization on an Edge device 
 
-If you are using the Edge extension, you can generate a summary from the video page in the web portal and use the same functionality such as customizations but there is no option to change the model deployment. Instead, every new extension created will include a local [Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model that is developed by Microsoft. There is no charge for requests to the model.
+If you're using the Edge extension, you can generate a summary from the video page in the web portal and use the same functionality such as customizations but there's no option to change the model deployment. Instead, every new extension created will include a local [Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model that is developed by Microsoft. There's no charge for requests to the model.
 
-### Specfications
+### Specifications
 
 - Supported hardware: currently supports only Intel CPU and Nvidia GPU. 
     - CPU tested on: [Standard_F64s_v2](/azure/virtual-machines/fsv2-series) (utilization: ~30-32 cores) 
@@ -87,15 +87,15 @@ If you are using the Edge extension, you can generate a summary from the video p
 
 ### Known Limitations and Known Issues
 
-- CPU: Currently, running VI on AMD CPUs may lead to significantly longer runtimes and is not supported at this time.
+- CPU: Currently, running VI on AMD CPUs may lead to significantly longer runtimes and isn't supported at this time.
 - The summarization feature is created by an AI language model and serves to provide a general overview. Although we aim for accuracy and reliability, the content may not fully encapsulate the essence of the original material. We recommend that a human reviews and edits the summary before use. It should **not** be viewed as professional or personalized advice.
 - The summary results are generally consistent within each summarization setting. However, editing the transcript or reindexing the video may lead to different output results.
 - Disclaimer for product documentation: When utilizing summarization settings, the Neutral style might occasionally resemble the Formal style. The Casual style might include content-related hashtags. Additionally, in some instances, a “Medium” length summary might be shorter than a “Short” summary. 
 - Videos that have little content (such as very short videos) are typically not summarized to mitigate the potential model inaccuracies that can happen when dealing with short input.
 - The summary might occasionally include or reference internal instructions provided to it (referred to as “meta-prompt”). This could encompass directives to exclude harmful content.
-- The length of the summary might influence the level of detail extracted from the video summary. Longer summaries migh result in less specific details being included.
+- The length of the summary might influence the level of detail extracted from the video summary. Longer summaries might result in less specific details being included.
 - The generated summary might contain inaccuracies, such as incorrect identification of gender, age, and other personal characteristics.
-- If the original video contains inappropriate content, the video summarization output extract may be affected in the following ways: it might be incomplete, contain disclaimers regarding the inappropriate content, and in certain instances, it may include the actual inappropriate quotes, which may be presented with or without a disclaimer.
+- If the original video contains inappropriate content, the video summarization output extract might be affected in the following ways: it might be incomplete, contain disclaimers regarding the inappropriate content, and in certain instances, it may include the actual inappropriate quotes, which may be presented with or without a disclaimer.
 
 ## Additional information
 
