@@ -47,12 +47,6 @@ items:
     displayName: The Azure AI Video Indexer API developer portal, existing Azure AI Video Indexer classic account, Resource Manager-based Azure AI Video Indexer account, other Azure AI Video Indexer samples, new Azure AI Video Indexer account, The Azure AI Video Indexer documentation, Azure AI Video Indexer resource,  account,  resource, Azure Resource Manager template, Resource Manager-based account, latest API version, new resource group, custom user tags, following PowerShell commands, Azure CLI, ARM template description, Azure location, resource ID, full documentation, Reference documentation, ARM) template, Gate notice, Contributor role, System Assigned,  template deployment, same location, missing parameters, required parameters, az.resources, ARM templates, PowerShell script, Bicep format, title, preview, subscription, videoindexer, 2FAzure-Samples, 2Fmedia-services-video, master, ARM-Quick-Start, avam, json, contents, module, azresourcegroup, cmdlet, Name, TemplateFile, Type, string, false, region, mediaServiceAccountResourceId, Identity, access, object, array, README., Azure-Samples/media-services-video-indexer, resource-manager, paid, classic-account
   - name: Try VI enabled by Arc
     href: ./arc/azure-video-indexer-enabled-by-arc-quickstart.md
-- name: Samples
-  items:
-  - name: Azure AI Video Indexer samples
-    href: https://github.com/Azure-Samples/azure-video-indexer-samples
-  - name: Azure AI Video Indexer widgets
-    href: https://www.npmjs.com/package/@azure/video-indexer-widgets
 - name: Concepts
   items:
   - name: Account types
@@ -121,6 +115,12 @@ items:
       displayName: text summarization
     - name: Edge - Bring your own model
       href: ./arc/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md
+- name: Samples
+  items:
+  - name: Azure AI Video Indexer samples
+    href: https://github.com/Azure-Samples/azure-video-indexer-samples
+  - name: Azure AI Video Indexer widgets
+    href: https://www.npmjs.com/package/@azure/video-indexer-widgets
 - name: How to guides
   items:
   - name: Upload and index media
