@@ -95,7 +95,7 @@ If you're using the Edge extension, you can generate a summary from the video pa
 - The summary might occasionally include or reference internal instructions provided to it (referred to as “meta-prompt”). This could encompass directives to exclude harmful content.
 - The length of the summary might influence the level of detail extracted from the video summary. Longer summaries might result in less specific details being included.
 - The generated summary might contain inaccuracies, such as incorrect identification of gender, age, and other personal characteristics.
-- If the original video contains inappropriate content, the video summarization output extract might be affected in the following ways: it might be incomplete, contain disclaimers regarding the inappropriate content, and in certain instances, it may include the actual inappropriate quotes, which may be presented with or without a disclaimer.
+- If the original video contains inappropriate content, the video summarization output extract might be affected in the following ways: it might be incomplete, contain disclaimers regarding the inappropriate content, and in certain instances, it might include the actual inappropriate quotes, which may be presented with or without a disclaimer.
 
 ## Additional information
 
