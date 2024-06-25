@@ -305,6 +305,7 @@ items:
     displayName: optical character recognition elements, Azure AI Video Indexer output description, Get Video Index API, Azure AI Video Indexer insights, VI account ID, Azure Monitor, JSON output, Root elements, privacy mode, SummarizedInsights elements, backward compatibility, following modes, Operations&operation, audio effects, failure code, failure message, external URL, external metadata, time ranges, creation time, first video, Public video, Private video, adult video, JSON content, external ID, similar details, total duration, actual thumbnail, insights object, insight type, current user, other videos, video insights, thumbnail ID, base playlist, title, topic, article, transcripts, OCRs, faces, instances, information, Name, accountId, privacyMode, state, durationInSeconds, TIP, Summary, section, Attribute, example, breakdown, everyone, link, api-details, Get-Video-Thumbnail, thumbnailVideoId, thumbnailId, zero, keywords, sentiments, audioEffects, labels, brands, statistics, emotions, progress, processing, failureCode, failureMessage, externalId, externalUrl
   - name: Support matrix and limitations
     href: avi-support-matrix.md
+    displayName: quotas, limitations, upload file size, video duration, formats and limitations, file duration limit, index request limit
   - name: Language support
     href: language-support.md
     displayName: Supported source language, API language support, auto detection, multi-language identification
