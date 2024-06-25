@@ -14,13 +14,17 @@ author: IngridAtMicrosoft
 
 This article describes the supported formats and limitations of Azure AI Video Indexer.
 
-## Upload file size and video duration
+## Upload file size and video duration 
+
+### File size limits
 
 If uploading a file from your device, the file size limit is 2 GB.
 
 If the video is uploaded from a URL, the file size limit is 30 GB. The URL must lead to an online media file with a media file extension (for example `myvideo.MP4`) and not a webpage such as `https://www.youtube.com`.
 
-The file duration limit is 4 hours.
+### File duration limit
+
+The file duration limit is 6 hours for all presets with the exclusion of the Basic Audio preset which has a file duration limit of 12 hours.
 
 ## Index request limit
 
