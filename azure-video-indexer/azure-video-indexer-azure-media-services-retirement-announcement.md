@@ -10,6 +10,8 @@ ms.service: azure-video-indexer
 
 # Changes related to Azure Media Service (AMS) retirement
 
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+
 This article explains the upcoming changes to Azure AI Video Indexer (VI) resulting from the [retirement of Azure Media Services (AMS)](/azure/media-services/latest/azure-media-services-retirement).
 
 Currently, VI requires the creation of an AMS account. Additionally, VI uses AMS for video encoding and streaming operations. The required changes will affect all VI customers. See the official AI VI announcement [here](https://azure.microsoft.com/updates/videoindexer-2/).

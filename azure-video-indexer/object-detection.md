@@ -10,6 +10,8 @@ ms.service: azure-video-indexer
 
 # Azure AI Video Indexer object detection
 
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+
 Azure AI Video Indexer can detect objects in videos. The insight is part of standard and advanced video presets. Object detection is included in the insights that are the result of an [Upload Video](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) request.
 
 ## Transparency note
