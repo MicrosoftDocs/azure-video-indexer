@@ -96,7 +96,7 @@ During the deployment, the script asks for environment specific values. Have the
 
 ## Use a generative AI model
 
-You can also connect the VI account with the Phi 3 model. Simply select the **Phi 3** model from the Generative AI Model dropdown list. See the [transparency note](/legal/azure-video-indexer/transparency-note?context=%2Fazure%2Fazure-video-indexer%2Fcontext%2Fcontext#textual-summarization-on-an-edge-device) for this feature for more information.
+You can also connect the VI account with a generative AI model. Simply select the **Phi 3** model from the Generative AI Model dropdown list. See the [transparency note](/legal/azure-video-indexer/transparency-note?context=%2Fazure%2Fazure-video-indexer%2Fcontext%2Fcontext#textual-summarization-on-an-edge-device) for this feature for more information.
 
 <!------------------------------------------------------>
 
