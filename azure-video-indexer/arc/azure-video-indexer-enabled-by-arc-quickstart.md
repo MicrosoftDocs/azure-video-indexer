@@ -3,7 +3,7 @@ title: Try Azure AI Video Indexer enabled by Arc
 description: This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 ms.topic: quickstart
 ms.service: azure-video-indexer
-ms.date: 06/18/2024
+ms.date: 06/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -93,6 +93,10 @@ During the deployment, the script asks for environment specific values. Have the
     1. Enter the **cluster endpoint**, either an IP or DNS Name to be used as the API endpoint.
     1. Provide the **storage class** you want to use for the extension that's supported by your Kubernetes distribution. For example, if you're using AKS, you could use `azurefile-cli`. For more information on predefined storage classes supported by AKS, see [Storage Classes in AKS](/azure/aks/concepts-storage#storage-classes). If you're using other Kubernetes distributions, see your Kubernetes distribution documentation for predefined storage classes supported or the way you can provide your own.
 1. Select **Review + create** and then **Create**.
+
+## Use a generative AI model
+
+You can also connect the VI account with the Phi 3 model. Simply select the **Phi 3** model from the Generative AI Model dropdown list. See the [transparency note](/legal/azure-video-indexer/transparency-note?context=%2Fazure%2Fazure-video-indexer%2Fcontext%2Fcontext#textual-summarization-on-an-edge-device) for this feature for more information.
 
 <!------------------------------------------------------>
 
