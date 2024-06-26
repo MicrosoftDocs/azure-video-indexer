@@ -123,11 +123,6 @@ items:
     href: https://www.npmjs.com/package/@azure/video-indexer-widgets
 - name: How to guides
   items:
-  - name: Upload and index media
-    items:
-    - name: Upload and index videos
-      href: upload-index-videos.md
-      displayName: Azure AI Video Indexer API developer portal, external video content management, Azure AI Video Indexer description, Azure AI Video Indexer output, Azure AI Video Indexer website, optical character recognition, noise reduction algorithms, advanced video features, standard video analysis, basic audio features, advanced audio features, audio event detection, standard audio analysis, Supported file formats, Upload Video API, Azure Storage, short description, output captions, external ID, video files, two methods, Media Services, backup solution, Upload button, byte array, date info, VCM) system, indexing process, following values, DefaultWithNoiseReduction` value, audio files, audio stream, code sample, optional parameters, callback URL, existing parameters, original URL, default preset, people tracking, AI bundle, Operations&operation, =Operations, title, videos, uploading, topic, article, insights, list, codecs, media-encoder-standard-formats-reference, limits, 30 GB, size, 4 hours, length, metadata, persistence, videoindexer, image, Screenshot, progress, email, link, example, details, NOTE, apis, Configurations, section, externalID, integration, BasicAudio, transcription, translation, formatting, AdvancedAudio, addition, AdvancedVideo
   - name: Use insights
     items:
     - name: View and edit insights
