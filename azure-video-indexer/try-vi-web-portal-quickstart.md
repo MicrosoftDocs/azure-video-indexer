@@ -1,6 +1,6 @@
 ---
 title:  Quickstart - Try the Azure AI Video Indexer web portal
-description: This article show you how to get started with Azure AI Video Indexer (VI) by using the web portal. You are encouraged to experience indexing a video with the web portal before trying the API.
+description: This article shows you how to get started with Azure AI Video Indexer (VI) by using the web portal. You're encouraged to experience indexing a video with the web portal before trying the API.
 ms.topic: conceptual
 ms.date: 06/26/2024
 ms.author: inhenkel
@@ -10,16 +10,16 @@ ms.service: azure-video-indexer
 
 # Quickstart: Try the Azure AI Video Indexer web portal
 
-This article show you how to get started with Azure AI Video Indexer (VI) by using the web portal. You are encouraged to experience indexing a video with the web portal before trying the API.
+This article shows you how to get started with Azure AI Video Indexer (VI) by using the web portal. You're encouraged to experience indexing a video with the web portal before trying the API.
 
 ## Prerequisites
 
 Create or find an MP4 video.
 
-The video should be about 5 minutes in duration. It is suggested that they contain:
+The video should be about 5 minutes in duration. It's suggested that they contain:
 
 -   People speaking
--   Some non-speaking noises
+-   Some nonspeaking noises
 -   Objects such as coffee cups
 -   A couple of different scenes like an indoor scene followed by an outdoor scene
 
@@ -27,11 +27,11 @@ These suggestions are so that you can see a varied set of results after the vide
 
 ## Get a trial account
 
-Go to the [web portal](https://www.videoindexer.ai/) and sign in with an Entra account, a personal Microsoft account, or a Google account. You are automatically assigned a trial account.
+Go to the [web portal](https://www.videoindexer.ai/) and sign in with an Entra account, a personal Microsoft account, or a Google account. You're automatically assigned a trial account.
 
 ## Upload a video
 
-Upload and index the video using the default settings. The activity of indexing a video is called a “job”.
+Upload and index the video using the default settings. The activity of indexing a video is called a "job."
 
 On the home page of the web portal:
 
@@ -67,7 +67,7 @@ While your video is uploading, view some of the sample videos.
 
 ## View your video timeline and insights
 
-1.  Select **Library.** This is where your indexed videos are located. If your video hasn’t finished uploading, it will be represented by a thumbnail with the percentage of the video upload indicated.
+1.  Select **Library.** Your indexed videos are located here. If your video is still uploading, it's represented by a thumbnail with the percentage of the video upload indicated.
 2.  If the video indexing is complete, select **your video** to see the insights.
 3.  Compare the insights you received to the ones that you viewed in the Samples library.
 
@@ -76,4 +76,4 @@ While your video is uploading, view some of the sample videos.
 In the web portal, you can access the API JSON response of your indexing job.
 
 1.  Select Download.
-2.  Select Insights (JSON). The JSON file will open in a new browser window or tab.
+2.  Select Insights (JSON). The JSON file opens in a new browser window or tab.
