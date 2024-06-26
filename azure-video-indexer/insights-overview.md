@@ -32,7 +32,7 @@ For information about features and other insights, see:
 - [Azure AI Video Indexer overview](video-indexer-overview.md)
 - [Transparency note](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context)
 
-Once you [set up](video-indexer-get-started.md) an Azure AI Video Indexer account (see [account types](accounts-overview.md)) and [upload a video](upload-index-videos.md), you can view insights as described below.
+Once you [set up](video-indexer-get-started.md) an Azure AI Video Indexer account (see [account types](accounts-overview.md)) and [try the VI web portal quickstart](try-vi-web-portal-quickstart.md), you can view insights as described below.
 
 ## Get the insights using the website
 

@@ -24,7 +24,7 @@ The article provides six best practices of how to use Azure AI Video Indexer at 
 
 ## When uploading videos consider using a URL over byte array
 
-Azure AI Video Indexer does give you the choice to upload videos from URL or directly by sending the file as a byte array, the latter comes with some constraints. For more information, see [uploading considerations and limitations)](upload-index-videos.md)
+Azure AI Video Indexer gives you the choice to upload videos from a URL or directly by sending the file as a byte array, the latter comes with some constraints.
 
 First, it has file size limitations. The size of the byte array file is limited to 2 GB compared to the 30-GB upload size limitation while using URL.
 
@@ -41,9 +41,7 @@ Second, consider just some of the issues that can affect your performance and he
 When you upload videos using URL, you just need to provide a path to the location of a media file and Video Indexer takes care of the rest (see the `videoUrl` field in the [upload video](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) API).
 
 > [!TIP]
-> Use the `videoUrl` optional parameter of the upload video API.
-
-To see an example of how to upload videos using URL, check out [this example](upload-index-videos.md). Or, you can use [AzCopy](/azure/storage/common/storage-use-azcopy-v10) for a fast and reliable way to get your content to a storage account from which you can submit it to Azure AI Video Indexer using [SAS URL](/azure/storage/common/storage-sas-overview). Azure AI Video Indexer recommends using *readonly* SAS URLs.
+> Use the `videoUrl` optional parameter of the upload video API. Additionally, you can use [AzCopy](/azure/storage/common/storage-use-azcopy-v10) for a fast and reliable way to get your content to a storage account from which you can submit it to Azure AI Video Indexer using [SAS URL](/azure/storage/common/storage-sas-overview). Azure AI Video Indexer recommends using *readonly* SAS URLs.
 
 ## Respect throttling
 
@@ -67,11 +65,7 @@ For callback URL you can also use Azure Functions, a serverless event-driven pla
 
 ## Use the right indexing parameters for you
 
-When making decisions related to using Azure AI Video Indexer at scale, look at how to get the most out of it with the right parameters for your needs. Think about your use case, by defining different parameters you can save money and make the indexing process for your videos faster.
-
-Before uploading and indexing your video read the [documentation](upload-index-videos.md) to get a better idea of what your options are.
-
-For example, don’t set the preset to streaming if you don't plan to watch the video, don't index video insights if you only need audio insights.
+When making decisions related to using Azure AI Video Indexer at scale, look at how to get the most out of it with the right parameters for your needs. Think about your use case, by defining different parameters you can save money and make the indexing process for your videos faster. For example, don’t set the preset to streaming if you don't plan to watch the video, don't index video insights if you only need audio insights.
 
 ## Index in optimal resolution, not highest resolution
 

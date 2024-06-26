@@ -54,8 +54,8 @@ landingContent:
             url: import-content-from-trial.md
           - text: Use Azure AI Video Indexer API
             url: video-indexer-use-apis.md 
-          - text: Upload and index your videos
-            url: upload-index-videos.md
+          - text: Try VI web portal
+            url: try-vi-web-portal-quickstart.md
           - text: Examine output produced by API
             url: video-indexer-output-json-v2.md
           - text: Embed Azure AI Video Indexer widgets into apps
