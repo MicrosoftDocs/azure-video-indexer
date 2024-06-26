@@ -1,14 +1,14 @@
 ---
-title: Upload and index videos with Azure AI Video Indexer using the Video Indexer website
+title: Upload and index videos with Azure AI Video Indexer (VI)
 description: Learn how to upload videos by using Azure AI Video Indexer.
 ms.topic: article
-ms.date: 03/22/2024
+ms.date: 06/26/2024
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: azure-video-indexer
 ---
 
-# Upload media files using the Video Indexer website
+# Upload and index videos with Azure Video Indexer (VI)
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
@@ -16,12 +16,10 @@ You can upload media files from your file system or from a URL. You can also con
 
 This article shows how to upload and index media files (audio or video) using the [Azure AI Video Indexer website](https://aka.ms/vi-portal-link).
 
-You can also view a video that shows [how to upload and index media files](https://www.youtube.com/watch?v=H-SHX8N65vM&t=34s&ab_channel=AzureVideoIndexer).
-
 ## Prerequisites
 
-- To upload media files, you need an active Azure AI Video Indexer account. If you don't have one, [sign up](https://aka.ms/vi-portal-link) for a free trial account, or create a [paid account](accounts-overview.md#paid-account).
-- To upload media files, you need at least contributor-level permission for your account. To manage permissions, see [Manage users and groups](restricted-viewer-role.md).
+- An Azure AI Video Indexer account. You can [sign up](https://aka.ms/vi-portal-link) for a free trial account, or create a [paid account](accounts-overview.md#paid-account).
+- At least one video. See [supported file formats](avi-support-matrix.md?branch=pr-en-us-272#supported-file-formats).
 - To upload media files from a URL, you need a publicly accessible URL for the media file. For example, if the file is hosted in an Azure storage account, you need to [generate a SAS token URL](/azure/ai-services/document-intelligence/create-sas-tokens?view=form-recog-3.0.0&preserve-view=true) and paste it in the input box. You can't use URLs from streaming services such as YouTube.
 
 ## Quick upload
@@ -44,7 +42,7 @@ Use these steps to upload and index a media file using the quick upload option.
     - **Privacy**: Choose whether the video URL will be publicly available or private after indexing.
     - **Streaming quality**: Choose the streaming quality for the video. You can select **No streaming**, **Single bitrate**, or **Adaptive bitrate**. For more information, see [the streaming options](indexing-configuration-guide.md#streaming-quality-options)
     - **Video source language**: Choose the spoken language of the video to ensure high quality transcript and insights extraction. If you don't know the language or there's more than one spoken language, select **Auto-detect single language** or **Auto-detect multi language**. For more information, see  [Language detection](multi-language-identification-transcription.md).
-1. If it's the first time you upload a media file, you need to check the consent checkbox to agree to the terms and conditions.
+1. If it's the first time you're uploading a media file, you need to check the consent checkbox to agree to the terms and conditions.
 1. Select **Upload+index**.
 1. Review the summary page that shows the indexing settings and the upload progress.
 1. After the indexing is done, you can view the insights by selecting the video.
@@ -52,9 +50,6 @@ Use these steps to upload and index a media file using the quick upload option.
 ## Advanced upload
 
 Use these steps to upload and index a media file using the advanced upload option.
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="./media/upload-index-videos/advanced-settings.png" alt-text="Screenshot that shows advanced settings.":::
 
 1. Sign in to the [Video Indexer website](https://aka.ms/vi-portal-link).
 1. Select **Upload**.
