@@ -54,7 +54,7 @@ When [uploading videos](https://api-portal.videoindexer.ai/api-details#api=Opera
 * Customer needs to build a complex management layer on top of Azure AI Video Indexer.
 
 > [!TIP]
-> You can use the [priority](upload-index-videos.md) attribute to prioritize tenants jobs.
+> You can use the priority attribute to prioritize tenants jobs.
 
 ## Azure subscription per tenant 
 
