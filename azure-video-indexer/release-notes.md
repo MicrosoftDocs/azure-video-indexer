@@ -22,9 +22,6 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 ## June 2024
 
-### Textual Summary in Microsoft Edge
-The Textual summary capability is extended to the Edge by using the latest Phi 3 model. You can benefit from the same functionality as in the cloud, including customization of the summary to support different text summarization settings such as Formal, Casual, Short and Long.
-
 ### Code Samples
 
 - Use Azure AI Video indexer with Azure Open AI to make finding relevant video content easier for learners and trainers. See the blog post [Enhancing Training Search Experience using Azure AI Video Indexer](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/enhancing-training-search-experience-using-azure-ai-video/ba-p/4160409) and the [source code](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoQnA-Demo/README.md).
@@ -33,6 +30,9 @@ The Textual summary capability is extended to the Edge by using the latest Phi 3
 ### File Duration limit increase
 
 All presets now support the indexing of files up to 6 hours in length (the previous limit was 4 hours) and the Basic Audio preset supports indexing of files up to 12 hours in length.
+
+### Textual summarization on edge extension
+The textual summarization capability is now available on edge extension using the latest Phi 3 model. You can benefit from the same functionality as in the cloud, including customizing of the summary with several settings: Formal, Casual, Short and Long.
 
 ## May 2024
  
