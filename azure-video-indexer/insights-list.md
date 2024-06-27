@@ -29,26 +29,23 @@ Once you have uploaded and indexed a video, insights are available in JSON forma
 
 [!INCLUDE [Audio effects detection](./includes/audio-effects-detection.md)]
 
+[!INCLUDE [Keyword extraction](./includes/keyword.md)]
+
 [!INCLUDE [Optical Character Recognition (OCR)](./includes/ocr.md)]
 
 ## Some other insight
 
-Audio effects detection detects insights on acoustic events and classifies them into categories such as laughter, crowd reactions, alarms and/or sirens.
-
 ### Use cases
 
-Use cases
-
-### [Example response](#tab/otherresponse)
+### [Example response](#tab/response)
 
 Example response
 
-### [Components](#tab/othercomponents)
+### [Components](#tab/components)
 
 Components
 
-### [Transparency notes](#tab/othercomponentstransnote)
-
+### [Transparency notes](#tab/transnote)
 
 
 ---
