@@ -99,6 +99,11 @@
             "source_path_from_root": "/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md",
             "redirect_url": "/azure/azure-video-indexer/azure-video-indexer-bring-your-own-model-overview",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/upload-and-index-video.md",
+            "redirect_url": "/azure/azure-video-indexer/upload-and-index-media",
+            "redirect_document_id": false
         }
     ]
 }
