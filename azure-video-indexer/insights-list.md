@@ -31,7 +31,7 @@ Each insight example response in this article is a section of the entire JSON re
 
 [!INCLUDE [Audio effects detection](./includes/audio-effects-detection.md)]
 
-[!INCLUDE [Keyword extraction](./includes/keyword.md)]
+[!INCLUDE [Keyword extraction](./includes/keywords.md)]
 
 [!INCLUDE [Optical Character Recognition (OCR)](./includes/ocr.md)]
 
