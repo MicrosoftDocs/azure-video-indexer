@@ -77,7 +77,7 @@ During the audio effects detection procedure, audio in a media file is processed
 |Classification| 	An AI process analyzes each segment and classifies its contents into event categories such as crowd reaction or laughter. A probability list is then created for each event category according to department-specific rules. |
 |Confidence level|	The estimated confidence level of each audio effect is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
 
-### [Transparency notes](#tab/audioeffectscomponents)
+### [Transparency notes](#tab/audioeffectstransnote)
 
 
 - Avoid use of short or low-quality audio, audio effects detection provides probabilistic and partial data on detected nonspeech audio events. For accuracy, audio effects detection requires at least 2 seconds of clear nonspeech audio. Voice commands or singing aren't supported.   
@@ -112,7 +112,7 @@ Example response goes here.
 
 components go here
 
-### [Transparency notes](#tab/audioeffectscomponents)
+### [Transparency notes](#tab/othercomponentstransnote)
 
 
 
