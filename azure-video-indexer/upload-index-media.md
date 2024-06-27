@@ -30,7 +30,9 @@ Use these steps to upload and index a video file.
 1. Sign in to the [Video Indexer website](https://aka.ms/vi-portal-link).
 1. Select **Upload**.
 1. Select the file source. You can upload up to 10 files at a time.
-    - To upload from your file system, select **Browse files** and choose the files you want to upload. To add more files, select **Add file**. To remove a file, select **Remove** on the file name.
+    - To upload from your file system, select **Browse files** and choose the files you want to upload. 
+    - To add more files, select **Add file**. 
+    - To remove a file, select **Remove** on the file name.
     - To upload from a URL, select **Enter URL**, paste the source file URL, and select **Add**.
 1. Configure the basic settings for indexing or use the default configuration. You need to specify the following settings for each file:
     - **Privacy**: Choose whether the video URL will be publicly available or private after indexing.
