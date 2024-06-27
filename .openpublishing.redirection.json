@@ -101,8 +101,8 @@
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "/azure-video-indexer/upload-and-index-video.md",
-            "redirect_url": "/azure/azure-video-indexer/upload-and-index-media",
+            "source_path_from_root": "/azure-video-indexer/upload-index-video.md",
+            "redirect_url": "/azure/azure-video-indexer/upload-index-media",
             "redirect_document_id": false
         }
     ]
