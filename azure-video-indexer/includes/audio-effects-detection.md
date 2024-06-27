@@ -48,7 +48,7 @@ Audio effects detection detects insights on acoustic events and classifies the
           }
         ]
       }
-    ],
+    ]
 ```
 
 ### [Components](#tab/audioeffectscomponents)

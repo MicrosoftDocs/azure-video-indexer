@@ -26,7 +26,7 @@ For more information about OCR, see [OCR technology](/azure/ai-services/comput
 
 ### [Example response](#tab/ocrresponse)
 
-    ```json
+```json
     "ocr": [
         {
           "id": 1,
@@ -71,8 +71,8 @@ For more information about OCR, see [OCR technology](/azure/ai-services/comput
               "end": "0:00:45"
             }
           ]
-        },
-    ``` 
+        }
+``` 
 
 ### [Components](#tab/ocrcomponents) 
 
