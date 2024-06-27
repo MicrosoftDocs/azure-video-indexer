@@ -14,17 +14,81 @@ ms.service: azure-video-indexer
 
 This article is a complete list of Azure AI Video Indexer insights with a description, use cases, transparency consiterations and a sample response for each.
 
+## Transparency note
+
+[!IMPORTANT]
+> It is important to review [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all of VI features. Additionally, each insight has a transparency notes of their own located in the transparency tab for the insight.
+
 ## Audio effects detection
 
 Audio effects detection detects insights on acoustic events and classifies them into categories such as laughter, crowd reactions, alarms and/or sirens.
 
-### [Use cases](#tab/audioeffectsusecases)
+### Use cases
 
-- bullted list goes here
+- Companies with a large video archive can improve accessibility by offering more context for a hearing- impaired audience by transcription of nonspeech effects. 
+- Improved efficiency when creating raw data for content creators. Important moments in promos and trailers such as laughter, crowd reactions, gunshots, or explosions can be identified, for example,  in Media and Entertainment. 
+- Detecting and classifying gunshots, explosions, and glass shattering in a smart-city system or in other public environments that include cameras and microphones to offer fast and accurate detection of violence incidents.
+
+### [Example response](#tab/audioeffectsresponse)
+
+```json
+    "audioEffects": [
+      {
+        "id": 1,
+        "type": "Silence",
+        "instances": [
+          {
+            "confidence": 0,
+            "adjustedStart": "0:01:46.243",
+            "adjustedEnd": "0:01:50.434",
+            "start": "0:01:46.243",
+            "end": "0:01:50.434"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "type": "Speech",
+        "instances": [
+          {
+            "confidence": 0,
+            "adjustedStart": "0:00:00",
+            "adjustedEnd": "0:01:43.06",
+            "start": "0:00:00",
+            "end": "0:01:43.06"
+          }
+        ]
+      }
+    ],
+```
 
 ### [Components](#tab/audioeffectscomponents)
 
-components go here
+During the audio effects detection procedure, audio in a media file is processed, as follows:
+
+|Component|Definition|
+|---|---|
+|Source file |	The user uploads the source file for indexing. |
+|Segmentation|  	The audio is analyzed, nonspeech audio is identified and then split into short overlapping internals. |
+|Classification| 	An AI process analyzes each segment and classifies its contents into event categories such as crowd reaction or laughter. A probability list is then created for each event category according to department-specific rules. |
+|Confidence level|	The estimated confidence level of each audio effect is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
+
+### [Transparency notes](#tab/audioeffectscomponents)
+
+
+- Avoid use of short or low-quality audio, audio effects detection provides probabilistic and partial data on detected nonspeech audio events. For accuracy, audio effects detection requires at least 2 seconds of clear nonspeech audio. Voice commands or singing aren't supported.   
+- Avoid use of audio with loud background music or music with repetitive and/or linearly scanned frequency, audio effects detection is designed for nonspeech audio only and therefore can't classify events in loud music. Music with repetitive and/or linearly scanned frequency many be incorrectly classified as an alarm or siren. 
+- Carefully consider the methods of usage in law enforcement and similar institutions, to promote more accurate probabilistic data, carefully review the following: 
+
+    - Audio effects can be detected in nonspeech segments only. 
+    - The duration of a nonspeech section should be at least 2 seconds. 
+    - Low quality audio might impact the detection results.  
+    - Events in loud background music aren't classified.  
+    - Music with repetitive and/or linearly scanned frequency might be incorrectly classified as an alarm or siren. 
+    - Knocking on a door or slamming a door might be labeled as a gunshot or explosion. 
+    - Prolonged shouting or sounds of physical human effort might be incorrectly classified. 
+    - A group of people laughing might be classified as both laughter and crowd. 
+    - Natural and nonsynthetic gunshot and explosions sounds are supported.
 
 ---
 
@@ -32,29 +96,21 @@ components go here
 
 Audio effects detection detects insights on acoustic events and classifies them into categories such as laughter, crowd reactions, alarms and/or sirens.
 
-### [Use cases](#tab/otherusecases)
+### Use cases
 
-- bullted list goes here
+Use cases go here.
 
-**Audio effects detection** is one of Azure AI Video Indexer AI capabilities that detects various acoustics events and classifies them into different acoustic categories (such as dog barking, crowd reactions, laugher and more).
+### [Example response](#tab/otherresponse)
 
-Some scenarios where this feature is useful:
-
-- Companies with a large set of video archives can easily improve accessibility with audio effects detection. The feature provides more context for persons who are hard of hearing, and enhances video transcription with nonspeech effects.
-- In the Media & Entertainment domain, the detection feature can improve efficiency when creating raw data for content creators. Important moments in promos and trailers (such as laughter, crowd reactions, gunshot, or explosion) can be identified by using **audio effects detection**.
-- In the Public Safety & Justice domain, the feature can detect and classify gunshots, explosions, and glass shattering. It can be implemented in a smart-city system or in other public environments that include cameras and microphones to offer fast and accurate detection of violence incidents. 
+Example response goes here.
 
 ### [Components](#tab/othercomponents)
 
 components go here
 
-**Audio effects detection** is one of Azure AI Video Indexer AI capabilities that detects various acoustics events and classifies them into different acoustic categories (such as dog barking, crowd reactions, laugher and more).
+### [Transparency notes](#tab/audioeffectscomponents)
 
-Some scenarios where this feature is useful:
 
-- Companies with a large set of video archives can easily improve accessibility with audio effects detection. The feature provides more context for persons who are hard of hearing, and enhances video transcription with nonspeech effects.
-- In the Media & Entertainment domain, the detection feature can improve efficiency when creating raw data for content creators. Important moments in promos and trailers (such as laughter, crowd reactions, gunshot, or explosion) can be identified by using **audio effects detection**.
-- In the Public Safety & Justice domain, the feature can detect and classify gunshots, explosions, and glass shattering. It can be implemented in a smart-city system or in other public environments that include cameras and microphones to offer fast and accurate detection of violence incidents. 
 
 ---
 
