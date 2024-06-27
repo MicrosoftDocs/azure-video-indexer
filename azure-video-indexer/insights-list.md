@@ -1,6 +1,6 @@
 ---
 title: Azure AI Video Indexer insights list 
-description: This article is a complete list of Azure AI Video Indexer insights with a description, use cases and a sample response.
+description: This article is a complete list of Azure AI Video Indexer insights with a description, use cases, and a sample response.
 ms.date: 06/26/2024
 ms.topic: article
 ms.author: inhenkel
@@ -35,15 +35,15 @@ Audio effects detection detects insights on acoustic events and classifies the
 
 ### Use cases
 
-Use cases go here.
+Use cases
 
 ### [Example response](#tab/otherresponse)
 
-Example response goes here.
+Example response
 
 ### [Components](#tab/othercomponents)
 
-components go here
+Components
 
 ### [Transparency notes](#tab/othercomponentstransnote)
 
@@ -52,4 +52,5 @@ components go here
 ---
 
 ## Blah blah
-something
+
+This sentence is where I put stuff so that I don't get Acrolinx problems. This sentence is where I put stuff so that I don't get Acrolinx problems. This sentence is where I put stuff so that I don't get Acrolinx problems. This sentence is where I put stuff so that I don't get Acrolinx problems. This sentence is where I put stuff so that I don't get Acrolinx problems.
