@@ -16,12 +16,16 @@ This article is a complete list of Azure AI Video Indexer insights with a descri
 
 ## Transparency note
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > It is important to review [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all of VI features. Additionally, each insight has a transparency notes of their own located in the transparency tab for the insight.
 
 ## Viewing insights with the web portal
 
-Once you have uploaded and indexed a video, insights are available in JSON format for download. Select the media you want to work with from the **Library** tab, then select **Download** and the **Insights (JSON)**. The JSON file opens in a new browser tab.
+Once you have uploaded and indexed a video, insights are available in JSON format for download.
+
+1. Select the **Library** tab.
+1. Select media you want to work with.
+1. Select **Download** and the **Insights (JSON)**. The JSON file opens in a new browser tab.
 
 [!INCLUDE [Audio effects detection](./includes/audio-effects-detection.md)]
 
