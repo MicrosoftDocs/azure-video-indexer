@@ -22,7 +22,8 @@ This article shows you how to upload and index media files (audio or video) with
     - A URL that you can use to view or listen to the file by pasting the URL in the browser location field.
     - A SAS URL. If the file is hosted in an Azure storage account, [generate a SAS token URL](/azure/ai-services/document-intelligence/create-sas-tokens?view=form-recog-3.0.0&preserve-view=true) and paste it in the input box. 
 
-You **can't** use URLs from streaming services such as YouTube.
+> [!NOTE]
+> You **can't** use URLs from streaming services such as YouTube.
 
 ## Upload the file
 
