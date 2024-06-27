@@ -78,4 +78,8 @@ During the audio effects detection procedure, audio in a media file is processed
     - A group of people laughing might be classified as both laughter and crowd. 
     - Natural and nonsynthetic gunshot and explosions sounds are supported.
 
+### [Sample code](#tab/audioeffectssamplecode)
+
+[Link to sample code that uses the insight](#)
+
 ---

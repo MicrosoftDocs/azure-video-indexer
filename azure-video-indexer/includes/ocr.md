@@ -93,4 +93,8 @@ During the OCR procedure, text images in a media file are processed, as follows:
 - When extracting handwritten text, avoid using the OCR results of signatures that are hard to read for both humans and machines. A better way to use OCR is to use it for detecting the presence of a signature for further analysis. 
 - Don't use OCR for decisions that may have serious adverse impacts. Machine learning models that extract text can result in undetected or incorrect text output. Decisions based on incorrect output could have serious adverse impacts. Additionally, it's advisable to include human review of decisions that have the potential for serious impacts on individuals. 
 
+### [Sample code](#tab/ocrsamplecode)
+
+[Link to sample code that uses the insight](#)
+
 ---
