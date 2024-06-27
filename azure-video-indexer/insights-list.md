@@ -19,6 +19,10 @@ This article is a complete list of Azure AI Video Indexer insights with a descri
 [!IMPORTANT]
 > It is important to review [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all of VI features. Additionally, each insight has a transparency notes of their own located in the transparency tab for the insight.
 
+## Viewing insights with the web portal
+
+Once you have uploaded and indexed a video, insights are available in JSON format for download. Select the media you want to work with from the **Library** tab, then select **Download** and the **Insights (JSON)**. The JSON file opens in a new browser tab.
+
 ## Audio effects detection
 
 Audio effects detection detects insights on acoustic events and classifies them into categories such as laughter, crowd reactions, alarms and/or sirens.
