@@ -17,9 +17,10 @@ This article shows you how to upload and index media files (audio or video) with
 ## Prerequisites
 
 - An Azure AI Video Indexer account. You can [sign up](https://aka.ms/vi-portal-link) for a free trial account, or create a [paid account](accounts-overview.md#paid-account).
-- At least one media file. See [supported file formats](avi-support-matrix.md?branch=pr-en-us-272#supported-file-formats).
-- To upload media files from a URL, you need a publicly accessible URL for the file that can be opened via a URL in a web browser.
-- If the file is hosted in an Azure storage account, you need to [generate a SAS token URL](/azure/ai-services/document-intelligence/create-sas-tokens?view=form-recog-3.0.0&preserve-view=true) and paste it in the input box. 
+- A media file. See [supported file formats](avi-support-matrix.md?branch=pr-en-us-272#supported-file-formats).
+- A publicly accessible URL, either:
+    - A URL that you can use to view or listen to the file by pasting the URL in the browser location field.
+    - A SAS URL. If the file is hosted in an Azure storage account, [generate a SAS token URL](/azure/ai-services/document-intelligence/create-sas-tokens?view=form-recog-3.0.0&preserve-view=true) and paste it in the input box. 
 
 You **can't** use URLs from streaming services such as YouTube.
 
@@ -34,9 +35,9 @@ Use these steps to upload and index a video file.
     - To add more files, select **Add file**. 
     - To remove a file, select **Remove** on the file name.
     - To upload from a URL, select **Enter URL**, paste the source file URL, and select **Add**.
-1. Configure the basic settings for indexing or use the default configuration. You need to specify the following settings for each file:
+1. Configure the basic settings for indexing or use the default configuration. Specify the following settings for each file:
     - **Privacy**: Choose whether the video URL will be publicly available or private after indexing.
-    - **Streaming quality**: Choose the streaming quality for the video. You can select **Single bitrate**, or **No streaming** For more information, see [the streaming options](indexing-configuration-guide.md#streaming-quality-options)
+    - **Streaming quality**: Choose the streaming quality for the video. You can select **Single bitrate** or **No streaming** For more information, see [the streaming options](indexing-configuration-guide.md#streaming-quality-options).
     - **Video source language**: Choose the spoken language of the video to ensure high quality transcript and insights extraction. If you don't know the language or there's more than one spoken language, select **Auto-detect single language** or **Auto-detect multi-language**. For more information, see  [Language detection](multi-language-identification-transcription.md).
 1. If it's the first time you're uploading a media file, check the consent checkbox to agree to the terms and conditions.
 1. Configure the *general settings* for indexing. You can rename the files.
@@ -59,7 +60,7 @@ If you encounter any issues while uploading media files, try the following solut
 - If you're using a trial account, check the account quota for daily count, daily duration, or total duration. To view your quota and usage, select **Account settings**.
 - If the upload from URL failed, check that:
     - the URL is valid and public. You should be able to view or hear the file from placing the URL in the browser location field. 
-    - the media file isn't encrypted, protected by DRM, corrupted, or damaged. 
+    - the media file isn't encrypted, protected by digital rights management (DRM), corrupted, or damaged. 
     - it's a [supported media file](/azure/media-services/latest/encode-media-encoder-standard-formats-reference).
     - the file size isn't larger than 2 GB. 
     - you have a stable internet connection.
