@@ -8,7 +8,7 @@ ms.author: inhenkel
 ms.service: azure-video-indexer
 ---
 
-# Upload and index media with Azure Video Indexer (VI)
+# Upload and index media
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
