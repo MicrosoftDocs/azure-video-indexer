@@ -19,7 +19,7 @@ This article is a complete list of Azure AI Video Indexer insights with a descri
 > [!IMPORTANT]
 > It is important to read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight in this document also a transparency notes of their own and they are located in the transparency tab for the insight.
 
-## Viewing insights with the web portal
+## View Insight (JSON) with the web portal
 
 Once you have uploaded and indexed a video, insights are available in JSON format for download.
 
@@ -37,7 +37,11 @@ Each insight example response in this article is a section of the entire JSON re
 
 ## Some other insight
 
+Insight description
+
 ### Use cases
+
+Example use cases
 
 ### [Example response](#tab/response)
 
@@ -49,9 +53,6 @@ Components
 
 ### [Transparency notes](#tab/transnote)
 
+Insight specific transparency notes, limitation and considerations
 
 ---
-
-## Blah blah
-
-This sentence is where I put stuff so that I don't get Acrolinx problems. This sentence is where I put stuff so that I don't get Acrolinx problems. This sentence is where I put stuff so that I don't get Acrolinx problems. This sentence is where I put stuff so that I don't get Acrolinx problems. This sentence is where I put stuff so that I don't get Acrolinx problems.
