@@ -45,6 +45,14 @@ Azure AI Video Indexer enabled by Arc doesn't support classic accounts. For more
 
 The extension is supported in [direct connection mode](/azure/azure-arc/data/connectivity) scenarios only. Control plane information is sent to the cloud, for example, monitoring, usage. New extension versions are downloaded from the cloud. No customer data, such as what videos were indexed, is sent from the edge location to the cloud.
 
+## Language models
+
+The Phi 3 language model is automatically included and connected with your VI extension. You can start using it immediately. For more information about using language models with VI see:
+
+- [Use textual summarization](../text-summarization-task.md)
+- [Use Azure AI Video Indexer to create prompt content](../prompt-task.md)
+- [Azure AI Video Indexer Bring Your Own (BYO) AI Model (Preview) overview](../azure-video-indexer-bring-your-own-model-overview.md)
+
 ## Use cases
 
 - **Data governance** – You can bring the AI to the content instead of vice versa. Use Azure AI Video Indexer enabled by Arc when you can’t move indexed content from on-premises to the cloud due to:
@@ -80,6 +88,8 @@ Azure AI Video Indexer enabled by Arc supports the following indexing presets:
 | [Object detection](/azure/azure-video-indexer/object-detection) | :heavy_check_mark: |  | :heavy_check_mark: |
 | [Scene detection](/azure/azure-video-indexer/scenes-shots-keyframes) | :heavy_check_mark: |  | :heavy_check_mark: |
 | [Shot detection](/azure/azure-video-indexer/scenes-shots-keyframes) | :heavy_check_mark: |  | :heavy_check_mark: |
+| [Summarization](/azure/azure-video-indexer/text-summarization-overview) | :heavy_check_mark: |  |  |
+
 
 :::image type="content" source="../media/common/avi-flow-edge.svg" lightbox="../media/common/avi-flow-edge.svg" alt-text="Graphic Azure AI Video Indexer enabled by Arc available presets already listed":::
 
