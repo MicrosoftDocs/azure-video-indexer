@@ -135,6 +135,6 @@ The extension default settings are set to handle the common workloads, for speci
 | storage.storageClass | "" | The storage class to be used |
 | storage.useExternalPvc | false | determines whether an external PVC is used. if true, the VideoIndexer PVC isn't installed |
 
-## [Deploy with ARM or Bicep](#tab/arm)
+## Deploy with ARM or Bicep
 
 You can deploy Azure AI Video Indexer enabled by Arc with an ARM template and Bicep. See the [Samples repo README](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks) for detailed instructions.
