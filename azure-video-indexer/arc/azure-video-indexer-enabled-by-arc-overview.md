@@ -88,10 +88,11 @@ Azure AI Video Indexer enabled by Arc supports the following indexing presets:
 | [Object detection](/azure/azure-video-indexer/object-detection) | :heavy_check_mark: |  | :heavy_check_mark: |
 | [Scene detection](/azure/azure-video-indexer/scenes-shots-keyframes) | :heavy_check_mark: |  | :heavy_check_mark: |
 | [Shot detection](/azure/azure-video-indexer/scenes-shots-keyframes) | :heavy_check_mark: |  | :heavy_check_mark: |
-| [Summarization](/azure/azure-video-indexer/text-summarization-overview) | :heavy_check_mark: |  |  |
+| [Summarization](/azure/azure-video-indexer/text-summarization-overview) | :heavy_check_mark: | :heavy_check_mark: |  |
 
-
+<!--
 :::image type="content" source="../media/common/avi-flow-edge.svg" lightbox="../media/common/avi-flow-edge.svg" alt-text="Graphic Azure AI Video Indexer enabled by Arc available presets already listed":::
+-->
 
 [!INCLUDE [minimum-hardware-requirements](../includes/vi-arc-minimum-hardware-requirements.md)]
 
