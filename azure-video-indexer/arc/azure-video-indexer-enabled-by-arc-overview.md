@@ -10,9 +10,9 @@ author: IngridAtMicrosoft
 
 # What is Azure AI Video Indexer enabled by Arc? (Preview)
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](../includes/important-ams-retirement-avi-announcement.md)]
 
-[!INCLUDE [Arc intro](./includes/arc-intro.md)]
+[!INCLUDE [Arc intro](../includes/arc-intro.md)]
 
 If you aren't already familiar with [Azure AI Video Indexer](/azure/azure-video-indexer/), it's recommended that you familiarize yourself with the cloud service first.
 

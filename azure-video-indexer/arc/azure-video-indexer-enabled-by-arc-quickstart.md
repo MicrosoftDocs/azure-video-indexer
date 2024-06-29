@@ -10,9 +10,9 @@ author: IngridAtMicrosoft
 
 # Try Azure AI Video Indexer enabled by Arc
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](../includes/important-ams-retirement-avi-announcement.md)]
 
-[!INCLUDE [Arc intro](./includes/arc-intro.md)]
+[!INCLUDE [Arc intro](../includes/arc-intro.md)]
 
 This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 
