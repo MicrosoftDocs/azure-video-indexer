@@ -98,9 +98,9 @@ During the deployment, the script asks for environment specific values. Have the
 
 The Phi 3 language model is automatically included and connected with your VI extension. You can start using it immediately. For more information about using language models with VI see:
 
-[Use textual summarization](text-summarization-task.md)
-[Use Azure AI Video Indexer to create prompt content](prompt-task.md)
-[Azure AI Video Indexer Bring Your Own (BYO) AI Model (Preview) overview](azure-video-indexer-bring-your-own-model-overview.md)
+[Use textual summarization](../text-summarization-task.md)
+[Use Azure AI Video Indexer to create prompt content](../prompt-task.md)
+[Azure AI Video Indexer Bring Your Own (BYO) AI Model (Preview) overview](../azure-video-indexer-bring-your-own-model-overview.md)
 
 ## Manual deployment
 
