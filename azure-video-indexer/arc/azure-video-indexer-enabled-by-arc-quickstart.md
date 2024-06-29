@@ -96,13 +96,13 @@ During the deployment, the script asks for environment specific values. Have the
     1. Provide the **storage class** you want to use for the extension that's supported by your Kubernetes distribution. For example, if you're using AKS, you could use `azurefile-cli`. For more information on predefined storage classes supported by AKS, see [Storage Classes in AKS](/azure/aks/concepts-storage#storage-classes). If you're using other Kubernetes distributions, see your Kubernetes distribution documentation for predefined storage classes supported or the way you can provide your own.
 1. Select **Review + create** and then **Create**.
 
-## Phi 3 language model
+## Language models
 
 The Phi 3 language model is automatically included and connected with your VI extension. You can start using it immediately. For more information about using language models with VI see:
 
-[Use textual summarization](../text-summarization-task.md)
-[Use Azure AI Video Indexer to create prompt content](../prompt-task.md)
-[Azure AI Video Indexer Bring Your Own (BYO) AI Model (Preview) overview](../azure-video-indexer-bring-your-own-model-overview.md)
+- [Use textual summarization](../text-summarization-task.md)
+- [Use Azure AI Video Indexer to create prompt content](../prompt-task.md)
+- [Azure AI Video Indexer Bring Your Own (BYO) AI Model (Preview) overview](../azure-video-indexer-bring-your-own-model-overview.md)
 
 ## Manual deployment
 
