@@ -3,14 +3,16 @@ title: Try Azure AI Video Indexer enabled by Arc
 description: This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 ms.topic: quickstart
 ms.service: azure-video-indexer
-ms.date: 06/25/2024
+ms.date: 06/29/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
 # Try Azure AI Video Indexer enabled by Arc
 
-[Azure AI Video Indexer enabled by Arc](azure-video-indexer-enabled-by-arc-overview.md) is an Azure Arc extension enabled service that runs video and audio analysis on edge devices. The solution is designed to run on [Azure Arc enabled Kubernetes](/azure/azure-arc/kubernetes/) and supports many video formats, including MP4 and other common formats. It supports several languages in all basic audio-related models. It assumes that one Video Indexer resource is mapped to one extension.
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+
+[!INCLUDE [Arc intro](./includes/arc-intro.md)]
 
 This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 
@@ -103,6 +105,7 @@ The Phi 3 language model is automatically included and connected with your VI ex
 - [Use textual summarization](../text-summarization-task.md)
 - [Use Azure AI Video Indexer to create prompt content](../prompt-task.md)
 - [Azure AI Video Indexer Bring Your Own (BYO) AI Model (Preview) overview](../azure-video-indexer-bring-your-own-model-overview.md)
+
 
 ## Manual deployment
 
