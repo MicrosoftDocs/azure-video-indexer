@@ -80,7 +80,7 @@ During the deployment, the script asks for environment specific values. Have the
 | What is the name of the Video Indexer resource group during deployment? | string | The Resource Group Name of your Video Indexer Account |
 | What is the name of the Video Indexer account during deployment? | string | Your Video Indexer Account name | 
 
-## [Deploy in Azure portal](#tab/portal)
+## Deploy with the Azure portal
 
 1. In the Azure portal, navigate to your Azure Arc-connected cluster.
 1. From the menu, select **Extensions** > **+ Add** > **Azure AI Video Indexer Arc Extension**.
@@ -94,96 +94,16 @@ During the deployment, the script asks for environment specific values. Have the
     1. Provide the **storage class** you want to use for the extension that's supported by your Kubernetes distribution. For example, if you're using AKS, you could use `azurefile-cli`. For more information on predefined storage classes supported by AKS, see [Storage Classes in AKS](/azure/aks/concepts-storage#storage-classes). If you're using other Kubernetes distributions, see your Kubernetes distribution documentation for predefined storage classes supported or the way you can provide your own.
 1. Select **Review + create** and then **Create**.
 
-## Use a generative AI model
-
-You can also connect the VI account with a generative AI model. Simply select the **Phi 3** model from the Generative AI Model dropdown list. See the [transparency note](/legal/azure-video-indexer/transparency-note?context=%2Fazure%2Fazure-video-indexer%2Fcontext%2Fcontext#textual-summarization-on-an-edge-device) for this feature for more information.
-
-<!------------------------------------------------------>
-
-## [Manual deployment](#tab/manual)
 
 ## Manual deployment
 
-Follow these steps to deploy the Video Indexer Arc Extension to your Arc K8S Enabled cluster. Before you get started here are some things to keep in mind:
+Use the [sample deployment script](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks) to manually deploy the extension. Before you get started here are some things to keep in mind:
 
 - **Storage class** - Video Indexer extension requires that a storage volume must be available on the Kubernetes cluster. The storage class needs to support `ReadWriteMany`. It's important to note that the indexing process is IO intensive, so the IOPS (input/output operations per second) of the storage volume will have a significant impact on the duration of the process.
 - **Managed AI resources** - Some Azure AI resources (Translator, Transcription, and OCR) will be created on the Microsoft tenant. These resources are for your subscription only and are under a pay-as-you-go model. If you already have an AI Video Indexer Arc-enabled resource in your subscription, it will be associated with existing Azure AI resources.
 
-### Step 1 - Create Azure Arc Kubernetes Cluster and connect it to your cluster
-
-> [!Note] 
-> The following command assumes you have a Kubernetes cluster and that the current context on your ./kube/config file points to it.
-
-Run the following command to connect your cluster. This command deploys the Azure Arc agents to the cluster and installs Helm v. 3.6.3 to the *.azure* folder of the deployment machine. This Helm 3 installation is only used for Azure Arc, and it doesn't remove or change any previously installed versions of Helm on the machine.
-
-```bash
-az connectedk8s connect --name myAKSCluster --resource-group myResourceGroup
-```
-
 > [!TIP] 
 > Follow the article [how to connect your cluster to Azure Arc](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli) on Azure Docs for a complete walkthrough of this process.
-
-## Step 2 - Create and get resource keys
-
-### Create AI resources keys 
-
-```
-$Subscription="<your subscription ID>"
-$ResourceGroup="<your resource group name"
-$AccountName="<your account name>"
-
-az rest --method post --verbose --uri https://management.azure.com/subscriptions/${Subscription}/resourceGroups/${ResourceGroup}/providers/Microsoft.VideoIndexer/accounts/${AccountName}/CreateExtensionDependencies?api-version=2024-01-01
-
-```
-
-When the response to a request is "accepted" (202), it means that the resources are currently being created. To track the provisioning state of these resources, you can poll the location header that was returned in the response from the previous call. Typically, this process requires waiting for approximately one minute.
-
-A response of type "conflict" (409) means the resources already exist for the subscription, use the get command to retrieve the keys.  
-
-### Get AI resources keys
-
-```
-$Subscription="<your subscription ID>"
-$ResourceGroup="<your resource group name"
-$AccountName="<your account name>" 
-
-az rest --method post --uri  https://management.azure.com/subscriptions/${Subscription}/resourceGroups/${ResourceGroup}/providers/Microsoft.VideoIndexer/accounts/${AccountName}/ListExtensionDependenciesData?api-version=2024-01-01-preview
-```
- 
-Response format:
-```json
-{
-    "speechCognitiveServicesPrimaryKey": "<key>",
-    "speechCognitiveServicesSecondaryKey": "<key>",
-    "translatorCognitiveServicesPrimaryKey": "<key>",
-    "translatorCognitiveServicesSecondaryKey": "<key>",
-    "speechCognitiveServicesEndpoint": "<uri>",
-    "translatorCognitiveServicesEndpoint": "<uri>",
-    "ocrCognitiveServicesPrimaryKey": "<key>",
-    "ocrCognitiveServicesSecondaryKey": "<key>",
-    "ocrCognitiveServicesEndpoint": "<uri>"
-}
-```
-
-### Step 3 - Create Azure Arc Video Indexer Extension
-
-```bash
-az k8s-extension create --name videoindexer \
-    --extension-type Microsoft.videoindexer \
-    --scope cluster \
-    --release-namespace ${namespace} \
-    --cluster-name ${connectedClusterName} \
-    --resource-group ${connectedClusterRg} \
-    --cluster-type connectedClusters \
-    --config-protected-settings "speech.endpointUri=${speechUri}" \
-    --config-protected-settings "speech.secret=${speechSecret}" \
-    --config-protected-settings "translate.endpointUri=${translateUri}" \
-    --config-protected-settings "translate.secret=${translateSecret}" \
-    --config-protected-settings "ocr.endpointUri=$($csResourcesData.ocrCognitiveServicesEndpoint)" `
-    --config-protected-settings "ocr.secret=$($csResourcesData.ocrCognitiveServicesPrimaryKey)" `
-    --config "videoIndexer.accountId=${viAccountId}" \
-    --config "storage.storageClass=azurefile-csi"
-```
 
 ## Optional configuration
 
@@ -208,47 +128,6 @@ The extension default settings are set to handle the common workloads, for speci
 | storage.storageClass | "" | The storage class to be used |
 | storage.useExternalPvc | false | determines whether an external PVC is used. if true, the VideoIndexer PVC isn't installed |
 
-## Example deployment script
-
-Here's an example deployment script: 
-
-```bash
-az k8s-extension create --name videoindexer \
-    --extension-type Microsoft.videoindexer \
-    .......
-    --config AI.nodeSelector."beta\\.kubernetes\\.io/os"=linux
-    --config "speech.resource.requests.cpu=500m" \
-    --config "speech.resource.requests.mem=2Gi" \
-    --config "speech.resource.limits.cpu=1" \
-    --config "speech.resource.limits.mem=4Gi" \
-    --config "videoIndexer.webapi.resources.requests.mem=4Gi"\
-    --config "videoIndexer.webapi.resources.limits.mem=8Gi"\
-    --config "videoIndexer.webapi.resources.limits.cpu=1"\ 
-```
-
-### Step 4 - Verify Deployment
-
-```bash
-kubectl get pods -n video-indexer
-```
-
-## Updating the extension
-
-The following command can be used to update the extension with either another version or with different configuration parameters, if needed. You must specify the cluster name and resource group name.
-
-```bash
-az k8s-extension update --name videoindexer \
-    --cluster-name ${connectedClusterName} \
-    --resource-group ${connectedClusterRg} \
-    --cluster-type connectedClusters \
-    --version ${version} \                        
-```
-
 ## [Deploy with ARM or Bicep](#tab/arm)
 
 You can deploy Azure AI Video Indexer enabled by Arc with an ARM template and Bicep. See the [Samples repo README](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks) for detailed instructions.
-
----
-
-## Sample
-[Sample script to deploy Arc enabled AKS cluster with Video Indexer extension](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks)
