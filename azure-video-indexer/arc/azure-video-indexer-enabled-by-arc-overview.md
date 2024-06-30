@@ -47,7 +47,7 @@ The extension is supported in [direct connection mode](/azure/azure-arc/data/con
 
 ## Language models
 
-The Phi 3 language model is automatically included and connected with your VI extension. You can start using it immediately. For more information about using language models with VI see:
+The Phi 3 language model is included and automatically connected with your VI extension. You can start using it immediately. For more information about using language models with VI see:
 
 - [Use textual summarization](../text-summarization-task.md)
 - [Use Azure AI Video Indexer to create prompt content](../prompt-task.md)
