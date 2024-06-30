@@ -53,6 +53,8 @@ The Phi 3 language model is included and automatically connected with your VI ex
 - [Use Azure AI Video Indexer to create prompt content](../prompt-task.md)
 - [Azure AI Video Indexer Bring Your Own (BYO) AI Model (Preview) overview](../azure-video-indexer-bring-your-own-model-overview.md)
 
+See also the [transparancy note for textual summarization on an Edge device](/legal/azure-video-indexer/transparency-note?context=%2Fazure%2Fazure-video-indexer%2Fcontext%2Fcontext#textual-summarization-on-an-edge-device) for hardware requirements, limitations, and known issues.
+
 ## Use cases
 
 - **Data governance** – You can bring the AI to the content instead of vice versa. Use Azure AI Video Indexer enabled by Arc when you can’t move indexed content from on-premises to the cloud due to:
