@@ -3,7 +3,7 @@ title: Try Azure AI Video Indexer enabled by Arc
 description: This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 ms.topic: quickstart
 ms.service: azure-video-indexer
-ms.date: 06/29/2024
+ms.date: 07/01/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -105,6 +105,9 @@ Use the [sample deployment script](https://github.com/Azure-Samples/azure-video-
 
 - **Storage class** - Video Indexer extension requires that a storage volume must be available on the Kubernetes cluster. The storage class needs to support `ReadWriteMany`. It's important to note that the indexing process is IO intensive, so the IOPS (input/output operations per second) of the storage volume will have a significant impact on the duration of the process.
 - **Managed AI resources** - Some Azure AI resources (Translator, Transcription, and OCR) will be created on the Microsoft tenant. These resources are for your subscription only and are under a pay-as-you-go model. If you already have an AI Video Indexer Arc-enabled resource in your subscription, it will be associated with existing Azure AI resources.
+
+> [!IMPORTANT]
+> If you are using a language model, you must [label a node or a node pool](/azure/aks/use-labels) with "workload:summarization".  The label is a key-value pair, the key is "workload", and the value is "summarization". The machine labelled with this label must have at least 32 CPUs (for production), and we strongly recommend that they are Intel CPUs (as opposed to AMD).
 
 > [!TIP] 
 > Follow the article [how to connect your cluster to Azure Arc](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli) on Azure Docs for a complete walkthrough of this process.
