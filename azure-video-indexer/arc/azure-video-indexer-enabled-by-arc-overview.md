@@ -3,14 +3,16 @@ title: What is Azure AI Video Indexer enabled by Arc? (Preview)
 description: Azure AI Video Indexer enabled by Arc an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 03/22/2024
+ms.date: 06/29/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
 # What is Azure AI Video Indexer enabled by Arc? (Preview)
 
-Azure AI Video Indexer enabled by Arc is an Azure Arc extension enabled service that runs video and audio analysis on edge devices. The solution is designed to run on [Azure Arc enabled Kubernetes](/azure/azure-arc/kubernetes/) and supports many video formats, including MP4 and other common formats. It supports several languages in all basic audio-related models. It assumes that one Video Indexer account is mapped to one extension.
+[!INCLUDE [AMS VI retirement announcement](../includes/important-ams-retirement-avi-announcement.md)]
+
+[!INCLUDE [Arc intro](../includes/arc-intro.md)]
 
 If you aren't already familiar with [Azure AI Video Indexer](/azure/azure-video-indexer/), it's recommended that you familiarize yourself with the cloud service first.
 
@@ -42,6 +44,16 @@ All Azure AI Video Indexer enabled by Arc only supports Azure Resource Manager (
 Azure AI Video Indexer enabled by Arc doesn't support classic accounts. For more information about the retirement of classic accounts, see [Preparing for AMS retirement: VI migration and updating guide](/azure/azure-video-indexer/azure-video-indexer-ams-retirement-guide)
 
 The extension is supported in [direct connection mode](/azure/azure-arc/data/connectivity) scenarios only. Control plane information is sent to the cloud, for example, monitoring, usage. New extension versions are downloaded from the cloud. No customer data, such as what videos were indexed, is sent from the edge location to the cloud.
+
+## Language models
+
+The Phi 3 language model is included and automatically connected with your VI extension. You can start using it immediately. For more information about using language models with VI see:
+
+- [Use textual summarization](../text-summarization-task.md)
+- [Use Azure AI Video Indexer to create prompt content](../prompt-task.md)
+- [Azure AI Video Indexer Bring Your Own (BYO) AI Model (Preview) overview](../azure-video-indexer-bring-your-own-model-overview.md)
+
+See also the [transparancy note for textual summarization on an Edge device](/legal/azure-video-indexer/transparency-note?context=%2Fazure%2Fazure-video-indexer%2Fcontext%2Fcontext#textual-summarization-on-an-edge-device) for hardware requirements, limitations, and known issues.
 
 ## Use cases
 
@@ -78,8 +90,11 @@ Azure AI Video Indexer enabled by Arc supports the following indexing presets:
 | [Object detection](/azure/azure-video-indexer/object-detection) | :heavy_check_mark: |  | :heavy_check_mark: |
 | [Scene detection](/azure/azure-video-indexer/scenes-shots-keyframes) | :heavy_check_mark: |  | :heavy_check_mark: |
 | [Shot detection](/azure/azure-video-indexer/scenes-shots-keyframes) | :heavy_check_mark: |  | :heavy_check_mark: |
+| [Summarization](/azure/azure-video-indexer/text-summarization-overview) | :heavy_check_mark: | :heavy_check_mark: |  |
 
+<!--
 :::image type="content" source="../media/common/avi-flow-edge.svg" lightbox="../media/common/avi-flow-edge.svg" alt-text="Graphic Azure AI Video Indexer enabled by Arc available presets already listed":::
+-->
 
 [!INCLUDE [minimum-hardware-requirements](../includes/vi-arc-minimum-hardware-requirements.md)]
 

@@ -113,7 +113,7 @@ items:
     - name: Text summarization
       href: text-summarization-overview.md
       displayName: text summarization
-    - name: Edge - Bring your own model
+    - name: Bring your own model
       href: ./arc/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md
 - name: Samples
   items:
@@ -243,6 +243,8 @@ items:
     - name: Create LLM prompt content
       href: prompt-task.md
       displayName: LLM, large language model, LLama2, Phi2, GPT3_5Turbo, or GPT4
+    - name: Use Phi 3 model with VI enabled by Arc
+      href: /azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-quickstart?branch=pr-en-us-267&tabs=portal#use-a-generative-ai-model
     - name: Bring your own model
       href: azure-video-indexer-bring-your-own-model-overview.md
   - name: Manage accounts
