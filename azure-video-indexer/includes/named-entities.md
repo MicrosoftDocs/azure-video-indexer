@@ -21,7 +21,7 @@ In the web portal, the resulting insights are displayed in the **Insights** tab 
 
 ### [Example response](#tab/namedentitiesresponse)
     
-    ```json
+```json
     namedPeople: [
     {
     referenceId: "Satya_Nadella",
@@ -44,7 +44,7 @@ In the web portal, the resulting insights are displayed in the **Insights** tab 
     startSeconds: 91.8,
     endSeconds: 97.1
     },
-    ``` 
+``` 
 
 ### [Components](#tab/namedentitiescomponents) 
 

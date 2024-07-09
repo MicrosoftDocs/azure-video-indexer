@@ -19,7 +19,7 @@ Labels identification is an Azure AI Video Indexer AI feature that identifies vi
 
 ### [Example response](#tab/labelsresponse)
 
-    ```json
+```json
     "labels": [
         {
         "id": 1,
@@ -64,7 +64,7 @@ Labels identification is an Azure AI Video Indexer AI feature that identifies vi
             }
         ]
         },
-    ``` 
+``` 
 
 ### [Components](#tab/labelscomponents) 
 
