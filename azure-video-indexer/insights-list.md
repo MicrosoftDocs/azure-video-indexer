@@ -47,7 +47,7 @@ Each insight example response in this article is a section of the entire JSON re
 
 <!-- Slate detection -->
 
-<!-- Text-based emotion detection -->
+[!INCLUDE [Text-based emotion detection](./includes/emotions-detection.md)]
 
 <!-- Topics inference -->
 
