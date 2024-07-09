@@ -11,7 +11,7 @@ ms.author: inhenkel
 
 Audio effects detection detects insights on acoustic events and classifies them into categories such as laughter, crowd reactions, alarms and/or sirens.
 
-### Use cases
+### Audio effects use cases
 
 - Companies with a large video archive can improve accessibility by offering more context for a hearing- impaired audience by transcription of nonspeech effects. 
 - Improved efficiency when creating raw data for content creators. Important moments in promos and trailers such as laughter, crowd reactions, gunshots, or explosions can be identified, for example,  in Media and Entertainment. 

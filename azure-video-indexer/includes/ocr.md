@@ -16,7 +16,7 @@ OCR extracts insights from printed and handwritten text in over 50 languages, in
 
 For more information about OCR, see [OCR technology](/azure/ai-services/computer-vision/overview-ocr).
 
-## Use cases
+## OCR use cases
 
 - Deep searching media footage for images with signposts, street names or car license plates, for example, in law enforcement. 
 - Extracting text from images in media files and then translating it into multiple languages in labels for accessibility, for example in media or entertainment. 

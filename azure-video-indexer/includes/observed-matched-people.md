@@ -15,7 +15,7 @@ Observed people tracking and matched faces automatically detect and match people
 
 In the web portal, the resulting insights are displayed in a categorized list in the Insights tab, the tab includes a thumbnail of each person and their ID. Clicking the thumbnail of a person displays the matched person (the corresponding face in the People insight). Insights are also generated in a categorized list in a JSON file that includes the thumbnail ID of the person, the percentage of time appearing in the file, Wiki link (if they're a celebrity) and confidence level.
 
-## Example use cases
+## Observed people tracking and matched faces use cases
 
 - Tracking a person’s movement, for example,  in law enforcement for more efficiency when analyzing an accident or crime.
 - Improving efficiency by deep searching for matched people in organizational archives for insight on specific celebrities, for example when creating promos and trailers.

@@ -19,7 +19,7 @@ The celebrities recognition model covers approximately 1 million faces and is ba
 > [!IMPORTANT]
 > To support Microsoft Responsible AI principles, access to face identification, customization, and celebrity recognition features is limited and based on eligibility and usage criteria. Face identification, customization, and celebrity recognition features are available to Microsoft managed customers and partners. To apply for access, use the [facial recognition intake form](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUQjA5SkYzNDM4TkcwQzNEOE1NVEdKUUlRRCQlQCN0PWcu).
 
-## Example use cases
+## Face detection use cases
 
 The following list describes examples of common use cases for face detection:
 
@@ -37,7 +37,7 @@ The following list describes examples of common use cases for face detection:
 
 ### [Example response](#tab/facedetectionresponse)
 
-    ```json
+```json
     "faces": [
         {
         "id": 1785,
@@ -76,7 +76,7 @@ The following list describes examples of common use cases for face detection:
         ]
         }
     ]
-    ```
+```
 
 To download the JSON file via the API, go to the [Azure AI Video Indexer developer portal](https://api-portal.videoindexer.ai/).
 

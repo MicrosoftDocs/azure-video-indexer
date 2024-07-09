@@ -10,7 +10,7 @@ ms.author: inhenkel
 
 Labels identification is an Azure AI Video Indexer AI feature that identifies visual objects like sunglasses or actions like swimming, appearing in the video footage of a media file. There are many labels identification categories and once extracted, labels identification instances are displayed in the Insights tab and can be translated into over 50 languages. Clicking a Label opens the instance in the media file, select Play Previous or Play Next to see more instances.
 
-## Example use cases 
+## Labels indentification use cases 
 
 - Extracting labels from frames for contextual advertising or branding. For example, placing an ad for beer following footage on a beach.
 - Creating a verbal description of footage to enhance accessibility for the visually impaired, for example a background storyteller in movies. 

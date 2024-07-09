@@ -12,7 +12,7 @@ Named entities extraction uses Natural Language Processing (NLP) to extract insi
 
 In the web portal, the resulting insights are displayed in the **Insights** tab and are filtered into locations, people and brand categories. Clicking a named entity, displays its instance in the media file. It also displays a description of the entity and a Find on Bing link of recognizable entities.
 
-## Example use cases 
+## Named entities use cases 
 
 -	Contextual advertising, for example, placing an ad for a Pizza chain following footage on Italy.
 - Deep searching media archives for insights on people or locations to create feature stories for the news.
