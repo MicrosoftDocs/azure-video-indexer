@@ -1,24 +1,24 @@
 ---
-title: Clapperboard detection
+title: Clapper board detection
 ms.service: azure-video-indexer
 ms.topic: include
 ms.date: 07/09/2024
 ms.author: inhenkel
 ---
 
-## Post-production: clapperboard detection
+## Post-production: clapper board detection
 
-[Clapperboard](https://en.wikipedia.org/wiki/Clapperboard) detection detects clapperboards used during filming that also provides the information detected on the clapperboard as metadata, for example, *production*, *roll*, *scene*, *take*, etc.
+[Clapper board](https://en.wikipedia.org/wiki/Clapperboard) detection detects clapper boards used during filming that also provides the information detected on the clapper board as metadata, for example, *production*, *roll*, *scene*, *take*, etc.
 
-## Clapperboard use cases
+## Clapper board use cases
 
-Clapperboard detection is most commonly used for post-production editing of visual media.
+Clapper board detection is most commonly used for post-production editing of visual media.
 
 ### [Example responses](#tab/clapperboardresponse)
 
-This response shows all of the data that come from detecting clapperboards. If you would like to learn more about how clapperboards are used in media production, check out the [video from Studio Binder](https://www.youtube.com/watch?v=Heg6kDxXZ8k) that was indexed for this example.
+This response shows all of the data that come from detecting clapper boards. If you would like to learn more about how clapper boards are used in media production, check out the [video from Studio Binder](https://www.youtube.com/watch?v=Heg6kDxXZ8k) that was indexed for this example.
 
-#### Clapperboard detection
+#### Clapper board detection
 
 ```json
 "clapperboards": [
@@ -1588,12 +1588,12 @@ This response shows all of the data that come from detecting clapperboards. If y
 
 ### [Transparency notes](#tab/clappertransnote)
 
-- The values might not always be correctly identified by the detection algorithm.
+- The values might not be correctly identified by the detection algorithm.
 - The titles of the fields appearing on the clapper board are optimized to identify the most popular fields appearing on top of clapper boards.  
-- Handwritten text or digital digits may not be correctly identified by the fields detection algorithm.
+- Handwritten text or digital digits might not be correctly identified by the fields detection algorithm.
 - The algorithm is optimized to identify fields' categories that appear horizontally.  
-- The clapper board may not be detected if the frame is blurred or that the text written on it can't be identified by the human eye.  
-- Empty fields’ values may lead to wrong fields categories.
+- The clapper board might not be detected if the frame is blurred or that the text written on it can't be read by the human eye.  
+- Empty fields’ values might lead to wrong fields categories.
 
 ### [Sample code](#tab/clappersamplecode)
 
