@@ -1,22 +1,20 @@
 ---
-title: Slate detection
+title: Clapperboard detection
 ms.service: azure-video-indexer
 ms.topic: include
 ms.date: 07/09/2024
 ms.author: inhenkel
 ---
 
-# Slate detection
+## Post-production: clapperboard detection
 
-Slate detection insights are automatically identified when indexing a video using the advanced indexing option. These insights are most useful to customers involved in the movie post-production process.
+[Clapperboard](https://en.wikipedia.org/wiki/Clapperboard) detection detects clapperboards used during filming that also provides the information detected on the clapperboard as metadata, for example, *production*, *roll*, *scene*, *take*, etc.
 
-## Use cases
+## Clapperboard use cases
 
-- [Clapperboard](https://en.wikipedia.org/wiki/Clapperboard) detection with metadata extraction. This insight is used to detect clapperboard instances and information written on each (for example, *production*, *roll*, *scene*, *take*, etc. 
-- Digital patterns detection, including [color bars](https://en.wikipedia.org/wiki/SMPTE_color_bars). 
-- Textless slate detection, including scene matching.
+Clapperboard detection is most commonly used for post-production editing of visual media.
 
-### [Example responses](#tab/slateresponse)
+### [Example responses](#tab/clapperboardresponse)
 
 This response shows all of the data that come from detecting clapperboards. If you would like to learn more about how clapperboards are used in media production, check out the [video from Studio Binder](https://www.youtube.com/watch?v=Heg6kDxXZ8k) that was indexed for this example.
 
@@ -1577,51 +1575,28 @@ This response shows all of the data that come from detecting clapperboards. If y
                     }
                 ],
 ```
-### Digital patterns
 
-You can use digital patterns detection for detecting color bars and test cards.
+### [Components](#tab/clapperboardcomponents)
 
-```json
-  "framePatterns": [
-        {
-        "id": 1,
-        "patternType": "ColorBars",
-        "name": "SMPTE color bars",
-        "displayName": "null",
-        "thumbnailId": "47979a6b-63bc-44bb-b917-0600f78ec9ed",
-        "instances": [
-                        {
-                                "confidence": 0.512,
-                                "adjustedStart": "0:00:04.906261",
-                                "adjustedEnd": "0:00:05.321406",
-                                "start": "0:00:04.906261",
-                                "end": "0:00:05.321406"
-                            }
-                        ]
-                    },
-```
+|Name|Description|
+|---|---|
+|`id`|The clapper board ID.|
+|`thumbnailId`|The ID of the thumbnail.|
+|`isHeadSlate`|The value stands for head or tail (the board is upside-down) of the clapper board: `true` or `false`.|
+|`fields`|The fields found in the clapper board; also each field's name and value.|
+|`instances`|A list of time ranges where this element appeared.|
 
+### [Transparency notes](#tab/clappertransnote)
 
-<!--
-## View post-production insights
+- The values might not always be correctly identified by the detection algorithm.
+- The titles of the fields appearing on the clapper board are optimized to identify the most popular fields appearing on top of clapper boards.  
+- Handwritten text or digital digits may not be correctly identified by the fields detection algorithm.
+- The algorithm is optimized to identify fields' categories that appear horizontally.  
+- The clapper board may not be detected if the frame is blurred or that the text written on it can't be identified by the human eye.  
+- Empty fields’ values may lead to wrong fields categories.
 
-### The Insight tab
+### [Sample code](#tab/clappersamplecode)
 
-In order to set the indexing process to include the slate metadata, select the **Video + audio indexing** -> **Advanced** presets.
+[Link to sample code that uses the insight](#)
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="./media/slate-detection-process/advanced-setting.png" alt-text="This image shows the advanced setting in order to view post-production insights.":::
-
-### The Timeline tab
-
-After the file has been uploaded and indexed, if you want to view the timeline of the insight, select the **Post-production** checkmark from the list of insights.
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="./media/slate-detection-process/post-production-checkmark.png" alt-text="This image shows the post-production checkmark.":::
-
-For details about viewing each slate insight, see:
-
-- [How to enable and view clapper board with extracted metadata](clapperboard-metadata.md).
-- [How to enable and view digital patterns with color bars](digital-patterns-color-bars.md)
-- [How to enable and view textless slate with scene matching](textless-slate-scene-matching.md).
--->
+---

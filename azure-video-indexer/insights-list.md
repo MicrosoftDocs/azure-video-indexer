@@ -51,7 +51,7 @@ Each insight example response in this article is a section of the entire JSON re
 
 [!INCLUDE [Transcription ](./includes/transcription-translation-lid.md)]
 
-## Slate Detection
+## Post-production insights
 
 [!INCLUDE [Clapperboard detection](./includes/clapperboard.md)]
 
