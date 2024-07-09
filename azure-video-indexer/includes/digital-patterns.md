@@ -6,7 +6,7 @@ ms.date: 07/09/2024
 ms.author: inhenkel
 ---
 
-# Post-production: digital patterns
+## Post-production: digital patterns
 
 Digital patterns detection detects [color bars](https://en.wikipedia.org/wiki/SMPTE_color_bars) used during filming.
 
