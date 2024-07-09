@@ -20,6 +20,12 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Bug fixes
 * Deprecated functionality
 
+## July 2024
+
+### Textual summarization on edge extension
+The textual summarization capability is now available on edge extension using the latest Phi 3 model. You can benefit from the same functionality as in the cloud, including customizing of the summary with several settings: Formal, Casual, Short and Long.
+
+
 ## June 2024
 
 ### Code Samples
@@ -30,9 +36,6 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 ### File Duration limit increase
 
 All presets now support the indexing of files up to 6 hours in length (the previous limit was 4 hours) and the Basic Audio preset supports indexing of files up to 12 hours in length.
-
-### Textual summarization on edge extension
-The textual summarization capability is now available on edge extension using the latest Phi 3 model. You can benefit from the same functionality as in the cloud, including customizing of the summary with several settings: Formal, Casual, Short and Long.
 
 ## May 2024
  
