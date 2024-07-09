@@ -23,7 +23,7 @@ In the web portal, the resulting insights are displayed in a categorized list in
 
 ### [Example response](#tab/observedpeopleresponse)
 
-   ```json
+```json
     "observedPeople": [
       {
         "id": 1,
@@ -163,7 +163,7 @@ In the web portal, the resulting insights are displayed in a categorized list in
         ]
       }
     ]
-   ```
+```
 
 ### [Components](#tab/observedpeoplecomponents)
 

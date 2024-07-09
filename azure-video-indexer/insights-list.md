@@ -49,6 +49,6 @@ Each insight example response in this article is a section of the entire JSON re
 
 [!INCLUDE [Text-based emotion detection](./includes/emotions-detection.md)]
 
-<!-- Topics inference -->
+[!INCLUDE [Topics inference](./includes/topics-inference.md)]
 
 <!-- Transcription, translation, language -->
