@@ -1,7 +1,7 @@
 ---
 title: Azure AI Video Indexer insights list 
 description: This article is a complete list of Azure AI Video Indexer insights with a description, use cases, and a sample response.
-ms.date: 06/26/2024
+ms.date: 07/09/2024
 ms.topic: article
 ms.author: inhenkel
 author: IngridAtMicrosoft
@@ -31,9 +31,27 @@ Each insight example response in this article is a section of the entire JSON re
 
 [!INCLUDE [Audio effects detection](./includes/audio-effects-detection.md)]
 
+<!-- faces detection -->
+
 [!INCLUDE [Keyword extraction](./includes/keywords.md)]
 
+[!INCLUDE [Keyword extraction](./includes/labels-identification.md)]
+
+<!-- Named entities -->
+
 [!INCLUDE [Optical Character Recognition (OCR)](./includes/ocr.md)]
+
+<!-- Object detection -->
+
+<!-- Observed people tracking & matched faces -->
+
+<!-- Slate detection -->
+
+<!-- Text-based emotion detection -->
+
+<!-- Topics inference -->
+
+<!-- Transcription, translation, language -->
 
 ## Some other insight
 

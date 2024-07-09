@@ -1,10 +1,9 @@
 ---
 title: Audio effects detection
-titleSuffix: Azure AI Video Indexer
 services: azure-video-indexer
 ms.service: azure-video-indexer
 ms.topic: include
-ms.date: 06/26/2024
+ms.date: 07/09/2024
 ms.author: inhenkel
 ---
 
@@ -78,8 +77,8 @@ During the audio effects detection procedure, audio in a media file is processed
     - A group of people laughing might be classified as both laughter and crowd. 
     - Natural and nonsynthetic gunshot and explosions sounds are supported.
 
-### [Sample code](#tab/audioeffectssamplecode)
+---
+
+## Sample code
 
 [Link to sample code that uses the insight](#)
-
----
