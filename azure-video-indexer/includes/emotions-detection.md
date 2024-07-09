@@ -6,16 +6,9 @@ ms.date: 07/09/2024
 ms.author: inhenkel
 ---
 
-# Text-based emotion detection
+## Text-based emotion detection
 
-Emotions detection detects emotions in video's transcript lines. Each sentence can either be detected as: 
-
-- Anger
-- Fear
-- Joy 
-- Sad
-
-Or, none if no other emotion was detected.
+Emotions detection detects emotions in video's transcript lines. Each sentence can either be detected as *Anger*, *Fear*, *Joy*, *Sad*, *None* if no other emotion was detected.
 
 > [!IMPORTANT]
 > The model works on text only (labeling emotions in video transcripts.) This model doesn't infer the emotional state of people, may not perform where input is ambiguous or unclear, like sarcastic remarks. **Thus, the model shouldn't be used for things like assessing employee performance or the emotional state of a person**. 
@@ -73,8 +66,8 @@ During the emotions detection procedure, the transcript of the video is processe
 - The confidence of the model in its prediction should also be taken into account.
 - Non-english videos will produce less accurate results.
 
----
-
-## Sample code
+### [Sample code](#tab/emotionsamplecode)
 
 [Link to sample code that uses the insight](#)
+
+---

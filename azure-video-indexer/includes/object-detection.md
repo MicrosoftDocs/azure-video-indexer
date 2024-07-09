@@ -156,7 +156,7 @@ detectedObjects: [
 | start | the time that the object appears in the frame | 
 | end | the time that the object no longer appears in the frame |
 
-### [Transparency notes](#tab/labelstransnote)
+### [Transparency notes](#tab/objectdetectiontransnote)
 
 - There are up to 20 detections per frame for standard and advanced processing and 35 tracks per class.
 - Object size shouldn't be greater than 90 percent of the frame. Very large objects that consistently span over a large portion of the frame might not be recognized.
@@ -166,8 +166,8 @@ detectedObjects: [
 - Azure AI Video Indexer supports only real world objects. There's no support for animation or CGI. Computer generated graphics (such as news-stickers) might produce strange results.
 - Binders, brochures, and other written materials tend to be detected as "book."
 
----
-
-## Sample code
+### [Sample code](#tab/objectdetectionsamplecode)
 
 [Link to sample code that uses the insight](#)
+
+---

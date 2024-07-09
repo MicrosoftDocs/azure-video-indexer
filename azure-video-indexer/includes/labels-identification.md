@@ -83,20 +83,8 @@ During the Labels procedure, objects in a media file are processed, as follows:
 - Carefully consider when using for law enforcement that Labels potentially cannot detect parts of the video. To ensure fair and high-quality decisions, combine Labels with human oversight. 
 - Don't use labels identification for decisions that may have serious adverse impacts. Machine learning models can result in undetected or incorrect classification output. Decisions based on incorrect output could have serious adverse impacts. Additionally, it's advisable to include human review of decisions that have the potential for serious impacts on individuals. 
 
+### [Sample code](#tab/labelssamplecode)
+
+[Link to sample code that uses the insight](#)
+
 ---
-
-## Sample code
-
-[Link to sample code that uses the insight](#)
-
-## Learn more about labels identification
-
-- [Transparency note](/legal/cognitive-services/computer-vision/imageanalysis-transparency-note)
-- [Use cases](/legal/cognitive-services/computer-vision/imageanalysis-transparency-note#use-cases)
-- [Capabilities and limitations](/legal/cognitive-services/computer-vision/imageanalysis-transparency-note#system-performance-and-limitations-for-image-analysis)    
-- [Evaluation of image analysis](/legal/cognitive-services/computer-vision/imageanalysis-transparency-note#evaluation-of-image-analysis) 
-- [Data, privacy and security](/legal/cognitive-services/computer-vision/ocr-data-privacy-security)
-
-## Sample code
-
-[Link to sample code that uses the insight](#)

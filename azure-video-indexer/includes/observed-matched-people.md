@@ -186,8 +186,8 @@ In the web portal, the resulting insights are displayed in a categorized list in
 - Obstruction – there maybe errors where there are obstructions (scene/self or obstructions by other people).
 - Pose: The tracks may be split due to different poses (back/front)
 
----
-
-## Sample code
+### [Sample code](#tab/observedpeoplesamplecode)
 
 [Link to sample code that uses the insight](#)
+
+---

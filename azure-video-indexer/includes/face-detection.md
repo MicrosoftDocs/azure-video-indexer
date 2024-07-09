@@ -102,8 +102,8 @@ Face detection is a valuable tool for many industries when it's used responsibly
 - Carefully review results if you use face detection for law enforcement. People might not be detected if they're small, sitting, crouching, or obstructed by objects or other people. To ensure fair and high-quality decisions, combine face detection-based automation with human oversight.
 - Don't use face detection for decisions that might have serious, adverse impacts. Decisions that are based on incorrect output can have serious, adverse impacts. It's advisable to include human review of decisions that have the potential for serious impacts on individuals.
 
----
-
-## Sample code
+### [Sample code](#tab/facedetectionsamplecode)
 
 [Link to sample code that uses the insight](#)
+
+---

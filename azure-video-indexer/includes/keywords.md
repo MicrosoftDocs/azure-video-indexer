@@ -15,7 +15,7 @@ Keywords extraction detects insights on the different keywords discussed in me
 - Personalization of keywords to match customer interests, for example websites about England posting promotions about English movies or festivals. 
 - Deep-searching archives for insights on specific keywords to create feature stories about companies, personas, or technologies, for example by a news agency.
 
-### [Example response](#tab/response)
+### [Example response](#tab/keywordsresponse)
 
 ```json
     "keywords": [
@@ -67,7 +67,7 @@ Keywords extraction detects insights on the different keywords discussed in me
       }
 ```
 
-### [Components](#tab/components)
+### [Components](#tab/keywordscomponents)
 
 During the Keywords procedure, audio and images in a media file are processed, as follows:
 
@@ -79,12 +79,12 @@ During the Keywords procedure, audio and images in a media file are processed, a
 |Keywords extraction	|An extraction algorithm processes the transcribed audio. The results are then combined with the insights detected in the video during the OCR process. The keywords and where they appear in the media and then detected and identified. |
 |Confidence level|	The estimated confidence level of each keyword is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
 
-### [Transparency notes](#tab/transnote)
+### [Transparency notes](#tab/keywordstransnote)
 
 Always upload a high-quality audio and video content. The recommended maximum frame size is HD and frame rate is 30 FPS. A frame should contain no more than 10 people. When outputting frames from videos to AI models, only send around 2 or 3 frames per second. Processing 10 and more frames might delay the AI result. At least 1 minute of spontaneous conversational speech is required to perform analysis. Audio effects are detected in nonspeech segments only. The minimal duration of a nonspeech section is 2 seconds. Voice commands and singing aren't supported.
 
----
-
-## Sample code
+### [Sample code](#tab/keywordssamplecode)
 
 [Link to sample code that uses the insight](#)
+
+---
