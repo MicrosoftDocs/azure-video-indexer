@@ -21,7 +21,10 @@ You can view the names of the specific digital patterns. <!-- They are searchabl
 
 This insight is most useful to customers involved in the movie post-production process.
 
+
 ## View post-production insights
+
+
 
 In order to set the indexing process to include the slate metadata, select the **Video + audio indexing** -> **Advanced** presets.
 

@@ -45,10 +45,14 @@ Each insight example response in this article is a section of the entire JSON re
 
 [!INCLUDE [Observed matched people](./includes/observed-matched-people.md)]
 
-<!-- Slate detection -->
-
 [!INCLUDE [Text-based emotion detection](./includes/emotions-detection.md)]
 
 [!INCLUDE [Topics inference](./includes/topics-inference.md)]
 
-<!-- Transcription, translation, language -->
+[!INCLUDE [Transcription ](./includes/transcription-translation-lid.md)]
+
+## Slate Detection
+
+[!INCLUDE [Clapperboard detection](./includes/clapperboard.md)]
+
+[!INCLUDE [Digital patterns](./includes/digital-patterns.md)]
