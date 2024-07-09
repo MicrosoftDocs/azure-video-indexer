@@ -1,11 +1,9 @@
 ---
-title: Azure AI Video Indexer keywords extraction overview 
-description: An introduction to Azure AI Video Indexer keywords extraction component responsibly.
-ms.date: 06/06/2024
-ms.topic: article
-ms.author: inhenkel
-author: IngridAtMicrosoft
+title: Keywords extraction
 ms.service: azure-video-indexer
+ms.topic: include
+ms.date: 07/09/2024
+ms.author: inhenkel
 ---
 
 ## Keywords extraction

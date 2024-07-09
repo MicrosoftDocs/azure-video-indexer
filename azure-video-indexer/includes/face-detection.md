@@ -1,13 +1,12 @@
 ---
 title: Face detection
-services: azure-video-indexer
 ms.service: azure-video-indexer
 ms.topic: include
 ms.date: 07/09/2024
 ms.author: inhenkel
 ---
 
-# Face detection
+## Face detection
 
 Face detection detects faces in a media file, and then aggregates instances of similar faces into groups.
 

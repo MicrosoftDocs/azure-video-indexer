@@ -31,19 +31,19 @@ Each insight example response in this article is a section of the entire JSON re
 
 [!INCLUDE [Audio effects detection](./includes/audio-effects-detection.md)]
 
-<!-- faces detection -->
+[!INCLUDE [face detection](./includes/face-detection.md)]
 
 [!INCLUDE [Keyword extraction](./includes/keywords.md)]
 
 [!INCLUDE [Keyword extraction](./includes/labels-identification.md)]
 
-<!-- Named entities -->
+[!INCLUDE [named entities](./includes/named-entities.md)]
 
 [!INCLUDE [Optical Character Recognition (OCR)](./includes/ocr.md)]
 
-<!-- Object detection -->
+[!INCLUDE [Object detection](./includes/object-detection.md)]
 
-<!-- Observed people tracking & matched faces -->
+[!INCLUDE [Observed matched people](./includes/observed-matched-people.md)]
 
 <!-- Slate detection -->
 
@@ -52,25 +52,3 @@ Each insight example response in this article is a section of the entire JSON re
 <!-- Topics inference -->
 
 <!-- Transcription, translation, language -->
-
-## Some other insight
-
-Insight description
-
-### Use cases
-
-Example use cases
-
-### [Example response](#tab/response)
-
-Example response
-
-### [Components](#tab/components)
-
-Components
-
-### [Transparency notes](#tab/transnote)
-
-Insight specific transparency notes, limitation and considerations
-
----

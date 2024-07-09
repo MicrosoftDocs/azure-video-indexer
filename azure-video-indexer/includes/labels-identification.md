@@ -1,6 +1,5 @@
 ---
-title: Labels indetification
-services: azure-video-indexer
+title: Labels indentification
 ms.service: azure-video-indexer
 ms.topic: include
 ms.date: 07/09/2024
@@ -97,3 +96,7 @@ During the Labels procedure, objects in a media file are processed, as follows:
 - [Capabilities and limitations](/legal/cognitive-services/computer-vision/imageanalysis-transparency-note#system-performance-and-limitations-for-image-analysis)    
 - [Evaluation of image analysis](/legal/cognitive-services/computer-vision/imageanalysis-transparency-note#evaluation-of-image-analysis) 
 - [Data, privacy and security](/legal/cognitive-services/computer-vision/ocr-data-privacy-security)
+
+## Sample code
+
+[Link to sample code that uses the insight](#)
