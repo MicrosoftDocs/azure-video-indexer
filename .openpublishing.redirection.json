@@ -139,6 +139,16 @@
             "source_path_from_root": "/azure-video-indexer/ocr.md",
             "redirect_url": "/azure/azure-video-indexer/ocr-overview",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/digital-patterns-color-bars.md",
+            "redirect_url": "/azure/azure-video-indexer/digital-patterns-color-bars-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/slate-detection-insight.md",
+            "redirect_url": "/azure/azure-video-indexer/clapper-board-overview",
+            "redirect_document_id": false
         }
     ]
 }
