@@ -14,6 +14,8 @@ Digital patterns detection detects [color bars](https://en.wikipedia.org/wiki/SM
 
 Digital patterns detection is most commonly used for color correction during post-production editing of visual media.
 
+[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+
 ### [Example responses](#tab/patternsresponse)
 
 You can use digital patterns detection for detecting color bars and test cards.

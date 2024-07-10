@@ -24,6 +24,8 @@ For more information about OCR, see [OCR technology](/azure/ai-services/comput
 - Extracting text in images that is then automatically tagged and categorized for accessibility and future usage, for example to generate content at a news agency. 
 - Extracting text in warnings in online instructions and then translating the text to comply with local standards, for example, e-learning instructions for using equipment.
 
+[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+
 ### [Example response](#tab/ocrresponse)
 
 ```json

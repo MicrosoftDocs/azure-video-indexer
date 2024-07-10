@@ -21,6 +21,8 @@ Emotions detection detects emotions in video's transcript lines. Each sentence c
 - **Video Consumers and Viewers** - End-users, such as viewers or consumers of video content, can benefit from the system by understanding the emotional context of videos without having to watch them entirely. It is useful for users who want to decide if a video is worth watching or for people with limited time to spare.
 - **Entertainment Industry Professionals** - Professionals in the entertainment industry, such as movie producers or directors, can utilize the system to gauge the emotional impact of their film scripts or storylines, aiding in script refinement and audience engagement.
 
+[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+
 ### [Example response](#tab/emotionresponse) 
 
 ```json

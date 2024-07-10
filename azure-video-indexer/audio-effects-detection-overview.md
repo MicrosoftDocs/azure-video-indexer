@@ -13,6 +13,4 @@ ms.author: inhenkel
 
 [!INCLUDE [General transparency note](./includes/read-general-transparency-note.md)]
 
-[!INCLUDE [Insights introductory paragraph](./includes/insights-intro-paragraph.md)]
-
 [!INCLUDE [Audio effects detection description](./includes/audio-effects-detection.md)]

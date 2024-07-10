@@ -19,6 +19,8 @@ In the web portal, the resulting insights are displayed in the **Insights** tab 
 -	Creating a verbal description of footage via OCR processing to enhance accessibility for the visually impaired, for example a background storyteller in movies. 
 -	Extracting insights on brand names.
 
+[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+
 ### [Example response](#tab/namedentitiesresponse)
     
 ```json

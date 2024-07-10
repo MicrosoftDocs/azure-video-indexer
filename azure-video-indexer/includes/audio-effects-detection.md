@@ -17,6 +17,8 @@ Audio effects detection detects insights on acoustic events and classifies the
 - Improved efficiency when creating raw data for content creators. Important moments in promos and trailers such as laughter, crowd reactions, gunshots, or explosions can be identified, for example,  in Media and Entertainment. 
 - Detecting and classifying gunshots, explosions, and glass shattering in a smart-city system or in other public environments that include cameras and microphones to offer fast and accurate detection of violence incidents.
 
+[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+
 ### [Example response](#tab/audioeffectsresponse)
 
 ```json

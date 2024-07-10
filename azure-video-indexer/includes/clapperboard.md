@@ -14,6 +14,8 @@ ms.author: inhenkel
 
 Clapper board detection is most commonly used for post-production editing of visual media.
 
+[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+
 ### [Example responses](#tab/clapperboardresponse)
 
 This response shows all of the data that come from detecting clapper boards. If you would like to learn more about how clapper boards are used in media production, check out the [video from Studio Binder](https://www.youtube.com/watch?v=Heg6kDxXZ8k) that was indexed for this example.

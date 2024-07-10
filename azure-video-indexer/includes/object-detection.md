@@ -94,6 +94,8 @@ Azure AI Video Indexer can detect objects in videos.
     :::column-end:::
 :::row-end:::
 
+[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+
 ### [Example response](#tab/objectdetectionresponse) 
 
 Detected and tracked objects appear under "detected Objects" in the downloaded *insights.json* file. Every time a unique object is detected, it's given an ID. That object is also tracked, meaning that the model watches for the detected object to return to the frame. If it does, another instance is added to the instances for the object with different start and end times.
