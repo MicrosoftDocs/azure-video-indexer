@@ -1,13 +1,14 @@
 ---
-title: Azure AI Video Indexer (VI) audio effects detection overview 
-description: This article describes the Azure AI Video Indexer audio effects detection.
+title: Azure AI Video Indexer (VI) topics inference insight overview  
+description: This article describes the Azure AI Video Indexer topics inference insight.
 ms.date: 07/09/2024
 ms.topic: article
-author: IngridAtMicrosoft
 ms.author: inhenkel
+author: IngridAtMicrosoft
+ms.service: azure-video-indexer
 ---
 
-# Audio effects detection insight overview
+# Topics inference insight overview
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
@@ -15,4 +16,4 @@ ms.author: inhenkel
 
 [!INCLUDE [Insights introductory paragraph](./includes/insights-intro-paragraph.md)]
 
-[!INCLUDE [Audio effects detection description](./includes/audio-effects-detection.md)]
+[!INCLUDE [Insight details](./includes/face-detection.md)]

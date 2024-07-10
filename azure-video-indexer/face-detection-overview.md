@@ -1,14 +1,14 @@
 ---
-title: Azure AI Video Indexer observed people tracking and matched faces insight overview
-description: This article describes the Azure AI Video Indexer observed people tracking and matched faces insight.
-ms.date: 07/09/2024
+title: Azure AI Video Indexer (VI) face detection insight overview
+description: This article describes the Azure AI Video Indexer face detection insight.
+ms.date: 06/06/2024
 ms.topic: article
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-# Observed people tracking and matched faces insight overview
+# Face detection insight overview
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
@@ -16,4 +16,4 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [Insights introductory paragraph](./includes/insights-intro-paragraph.md)]
 
-[!INCLUDE [Insight details](./includes/observed-matched-people.md)]
+[!INCLUDE [Insight details](./includes/face-detection.md)]
