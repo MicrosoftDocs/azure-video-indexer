@@ -131,8 +131,8 @@
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "/azure-video-indexer/observed-people-tracking.md",
-            "redirect_url": "/azure/azure-video-indexer/observed-people-tracking-overview",
+            "source_path_from_root": "/azure-video-indexer/observed-matched-people.md",
+            "redirect_url": "/azure/azure-video-indexer/observed-matched-people-overview",
             "redirect_document_id": false
         },
         {
