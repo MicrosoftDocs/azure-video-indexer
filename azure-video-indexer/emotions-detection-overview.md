@@ -14,4 +14,4 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [General transparency note](./includes/read-general-transparency-note.md)]
 
-[!INCLUDE [Insight details](./includes/emotion-detection.md)]
+[!INCLUDE [Insight details](./includes/emotions-detection.md)]
