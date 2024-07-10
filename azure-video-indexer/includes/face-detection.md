@@ -37,6 +37,9 @@ The following list describes examples of common use cases for face detection:
 
 [!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
 
+> [!IMPORTANT]
+> When you review face detections in the UI, you might not see all faces that appear in the video. We expose only face groups that have a confidence of more than 0.5, and the face must appear for a minimum of 4 seconds or 10 percent of the value of `video_duration`. Only when these conditions are met do we show the face in the UI and in the *Insights.json* file. You can always retrieve all face instances from the face artifact file by using the API: `https://api.videoindexer.ai/{location}/Accounts/{accountId}/Videos/{videoId}/ArtifactUrl[?Faces][&accessToken]`.
+
 ### [Example response](#tab/facedetectionresponse)
 
 ```json
@@ -79,11 +82,6 @@ The following list describes examples of common use cases for face detection:
         }
     ]
 ```
-
-To download the JSON file via the API, go to the [Azure AI Video Indexer developer portal](https://api-portal.videoindexer.ai/).
-
-> [!IMPORTANT]
-> When you review face detections in the UI, you might not see all faces that appear in the video. We expose only face groups that have a confidence of more than 0.5, and the face must appear for a minimum of 4 seconds or 10 percent of the value of `video_duration`. Only when these conditions are met do we show the face in the UI and in the *Insights.json* file. You can always retrieve all face instances from the face artifact file by using the API: `https://api.videoindexer.ai/{location}/Accounts/{accountId}/Videos/{videoId}/ArtifactUrl[?Faces][&accessToken]`.
 
 ### [Components](#tab/facedetactioncomponents)
 
