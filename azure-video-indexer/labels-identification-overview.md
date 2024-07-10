@@ -16,4 +16,4 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [Insights introductory paragraph](./includes/insights-intro-paragraph.md)]
 
-[!INCLUDE [Audio effects detection description](./includes/label-identification.md)]
+[!INCLUDE [Audio effects detection description](./includes/labels-identification.md)]

@@ -98,7 +98,7 @@ The following JSON response illustrates what Azure AI Video Indexer returns when
 
 ## Limitations and assumptions
 
-As the detected clothing feature uses observed people tracking, the tracking quality is important. For tracking considerations and limitations, see [Considerations and limitations when choosing a use case](observed-matched-people.md#considerations-and-limitations-when-choosing-a-use-case).
+As the detected clothing feature uses observed people tracking, the tracking quality is important. For tracking considerations and limitations, see [the transparency notes for observed people](observed-matched-people.md).
 
 - As clothing detection is dependent on the visibility of the person’s body, the accuracy is higher if a person is fully visible.
 - There maybe errors when a person is without clothing.
