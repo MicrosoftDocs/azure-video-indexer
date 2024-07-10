@@ -1578,8 +1578,6 @@ This response shows all of the data that come from detecting clapper boards. If 
                 ],
 ```
 
-### [Components](#tab/clapperboardcomponents)
-
 |Name|Description|
 |---|---|
 |`id`|The clapper board ID.|
@@ -1587,6 +1585,10 @@ This response shows all of the data that come from detecting clapper boards. If 
 |`isHeadSlate`|The value stands for head or tail (the board is upside-down) of the clapper board: `true` or `false`.|
 |`fields`|The fields found in the clapper board; also each field's name and value.|
 |`instances`|A list of time ranges where this element appeared.|
+
+### [Components](#tab/clapperboardcomponents)
+
+
 
 ### [Transparency notes](#tab/clappertransnote)
 

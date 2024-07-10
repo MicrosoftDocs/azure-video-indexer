@@ -6,7 +6,7 @@ ms.date: 07/09/2024
 ms.author: inhenkel
 ---
 
-## View Insight (JSON) with the web portal
+## View the insight (JSON) with the web portal
 
 Once you have uploaded and indexed a video, insights are available in JSON format for download using the web portal.
 
@@ -14,4 +14,4 @@ Once you have uploaded and indexed a video, insights are available in JSON forma
 1. Select media you want to work with.
 1. Select **Download** and the **Insights (JSON)**. The JSON file opens in a new browser tab.
 
-Look for the key pair described in the sample response.
+Look for the key pair described in the example response.

@@ -91,10 +91,10 @@ The following table describes how images in a media file are processed during th
 
 | Component | Definition |
 |---|---|
-| source file | The user uploads the source file for indexing. |
-| detection and aggregation | The face detector identifies the faces in each frame. The faces are then aggregated and grouped. |
-| recognition | The celebrities model processes the aggregated groups to recognize celebrities. If you've created your own people model, it also processes groups to recognize other people. If people aren't recognized, they're labeled Unknown1, Unknown2, and so on. |
-| confidence value | Where applicable for well-known faces or for faces that are identified in the customizable list, the estimated confidence level of each label is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82 percent certainty is represented as an 0.82 score. |
+| Source file | The user uploads the source file for indexing. |
+| Detection and aggregation | The face detector identifies the faces in each frame. The faces are then aggregated and grouped. |
+| Recognition | The celebrities model processes the aggregated groups to recognize celebrities. If you've created your own people model, it also processes groups to recognize other people. If people aren't recognized, they're labeled Unknown1, Unknown2, and so on. |
+| Confidence value | Where applicable for well-known faces or for faces that are identified in the customizable list, the estimated confidence level of each label is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82 percent certainty is represented as an 0.82 score. |
 
 ### [Transparency notes](#tab/facedetectiontransnote)
 

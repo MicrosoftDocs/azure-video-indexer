@@ -146,8 +146,6 @@ detectedObjects: [
 ]
 ```
 
-### [Components](#tab/objectdetectioncomponents)
-
 | **Key** | **Definition** |
 | --- | --- |
 | ID | Incremental number of IDs of the detected objects in the media file |
@@ -161,6 +159,10 @@ detectedObjects: [
 | adjustedEnd | adjusted end time of the video when using the editor |
 | start | the time that the object appears in the frame | 
 | end | the time that the object no longer appears in the frame |
+
+### [Components](#tab/objectdetectioncomponents)
+
+No components are defined for object detection.
 
 ### [Transparency notes](#tab/objectdetectiontransnote)
 

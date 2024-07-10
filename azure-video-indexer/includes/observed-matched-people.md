@@ -171,11 +171,11 @@ In the web portal, the resulting insights are displayed in a categorized list in
 
 |Component|Definition|
 |---|---|
-|Source file |    The user uploads the source file for indexing.   |
-|Detection |    The media file is tracked to detect observed people and their clothing. For example, shirt with long sleeves, dress or long pants. Note that to be detected, the full upper body of the person must appear in the media.|
-|Local grouping    |The identified observed faces are filtered into local groups. If a person is detected more than once, additional observed faces instances are created for this person. |
-|Matching and Classification    |The observed people instances are matched to faces. If there is a known celebrity, the observed person will be given their name. Any number of observed people instances can be matched to the same face.  |
-|Confidence value|    The estimated confidence level of each observed person is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
+| Source file |    The user uploads the source file for indexing.   |
+| Detection |    The media file is tracked to detect observed people and their clothing. For example, shirt with long sleeves, dress or long pants. Note that to be detected, the full upper body of the person must appear in the media.|
+| Local grouping    |The identified observed faces are filtered into local groups. If a person is detected more than once, additional observed faces instances are created for this person. |
+| Matching and classification    |The observed people instances are matched to faces. If there is a known celebrity, the observed person will be given their name. Any number of observed people instances can be matched to the same face.  |
+| Confidence value|    The estimated confidence level of each observed person is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
 
 ### [Transparency notes](#tab/observedpeopletransnote)
 
