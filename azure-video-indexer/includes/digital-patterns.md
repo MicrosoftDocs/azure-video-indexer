@@ -30,14 +30,14 @@ You can use digital patterns detection for detecting color bars and test cards.
         "thumbnailId": "47979a6b-63bc-44bb-b917-0600f78ec9ed",
         "instances": [
                         {
-                                "confidence": 0.512,
-                                "adjustedStart": "0:00:04.906261",
-                                "adjustedEnd": "0:00:05.321406",
-                                "start": "0:00:04.906261",
-                                "end": "0:00:05.321406"
-                            }
-                        ]
-                    },
+                            "confidence": 0.512,
+                            "adjustedStart": "0:00:04.906261",
+                            "adjustedEnd": "0:00:05.321406",
+                            "start": "0:00:04.906261",
+                            "end": "0:00:05.321406"
+                        }
+                    ]
+                },
 ```
 
 ### [Components](#tab/patternscomponents)

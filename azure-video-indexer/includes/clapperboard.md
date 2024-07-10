@@ -1588,7 +1588,7 @@ This response shows all of the data that come from detecting clapper boards. If 
 
 ### [Components](#tab/clapperboardcomponents)
 
-
+No components are defined.
 
 ### [Transparency notes](#tab/clappertransnote)
 
