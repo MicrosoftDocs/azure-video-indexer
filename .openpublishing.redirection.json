@@ -104,6 +104,41 @@
             "source_path_from_root": "/azure-video-indexer/upload-index-videos.md",
             "redirect_url": "/azure/azure-video-indexer/upload-index-media",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/emotions-detection.md",
+            "redirect_url": "/azure/azure-video-indexer/emotions-detection-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/face-detection.md",
+            "redirect_url": "/azure/azure-video-indexer/face-detection-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/keywords.md",
+            "redirect_url": "/azure/azure-video-indexer/keywords-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/named-entities.md",
+            "redirect_url": "/azure/azure-video-indexer/named-entities-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/object-detection.md",
+            "redirect_url": "/azure/azure-video-indexer/object-detection-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/observed-people-tracking.md",
+            "redirect_url": "/azure/azure-video-indexer/observed-people-tracking-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/ocr.md",
+            "redirect_url": "/azure/azure-video-indexer/ocr-overview",
+            "redirect_document_id": false
         }
     ]
 }

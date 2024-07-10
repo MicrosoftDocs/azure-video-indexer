@@ -1,14 +1,14 @@
 ---
-title: Clapper board detection insight overview
-description: This article describes the Azure AI Video Indexer Clapper board detection insight.
+title: Azure AI Video Indexer labels identification overview
+description: This article describes the Azure AI Video Indexer labels identification detection insight.
+ms.date: 06/06/2024
 ms.topic: article
-ms.date: 07/09/2024
-ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.author: inhenkel
 ms.service: azure-video-indexer
 ---
 
-# Clapper board detection insight overview
+# Labels identification
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
@@ -16,4 +16,4 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [Insights introductory paragraph](./includes/insights-intro-paragraph.md)]
 
-[!INCLUDE [Audio effects detection description](./includes/audio-effects-detection.md)]
+[!INCLUDE [Audio effects detection description](./includes/label-identification.md)]
