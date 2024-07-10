@@ -98,6 +98,8 @@ The following table describes how images in a media file are processed during th
 
 ### [Transparency notes](#tab/facedetectiontransnote)
 
+[!INCLUDE [General transparency note](read-general-transparency-note.md)]
+
 Face detection is a valuable tool for many industries when it's used responsibly and carefully. To respect the privacy and safety of others, and to comply with local and global regulations, we recommend that you follow these use guidelines:
 
 - Carefully consider the accuracy of the results. To promote more accurate detection, check the quality of the video. Low-quality video might affect the insights that are presented.

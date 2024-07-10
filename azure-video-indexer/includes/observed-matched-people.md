@@ -179,6 +179,8 @@ In the web portal, the resulting insights are displayed in a categorized list in
 
 ### [Transparency notes](#tab/observedpeopletransnote)
 
+[!INCLUDE [General transparency note](read-general-transparency-note.md)]
+
 - People are generally not detected if they appear small (minimum person height is 100 pixels).
 - Maximum frame size is FHD
 - Low quality video (for example, dark lighting conditions) may impact the detection results.

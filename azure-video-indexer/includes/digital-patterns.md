@@ -54,6 +54,8 @@ You can use digital patterns detection for detecting color bars and test cards.
 
 ### [Transparency notes](#tab/patternstransnote)
 
+[!INCLUDE [General transparency note](read-general-transparency-note.md)]
+
 - There can be a mismatch if the input video is of low quality (for example – old Analog recordings). 
 - The digital patterns will be identified over the 10 min of the beginning and 10 min of the ending part of the video.
 

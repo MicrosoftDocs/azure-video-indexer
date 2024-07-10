@@ -87,7 +87,9 @@ During the OCR procedure, text images in a media file are processed, as follows:
 |Get read results model	|The output of the extracted text is displayed in a JSON file.|
 |Confidence value|	The estimated confidence level of each word is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty will be represented as an 0.82 score.|
 
-### [Transparency notes](#tab/ocrtransnote)  
+### [Transparency notes](#tab/ocrtransnote)
+
+[!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
 - Video Indexer has an OCR limit of 50,000 words per indexed video. Once the limit has been reached, no additional OCR results are generated.
 - Carefully consider the accuracy of the results, to promote more accurate detections, check the quality of the image, low quality images might impact the detected insights.  

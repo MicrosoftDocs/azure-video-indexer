@@ -81,6 +81,8 @@ During the Labels procedure, objects in a media file are processed, as follows:
 
 ### [Transparency notes](#tab/labelstransnote)
 
+[!INCLUDE [General transparency note](read-general-transparency-note.md)]
+
 - Carefully consider the accuracy of the results, to promote more accurate detections, check the quality of the video, low quality video might impact the detected insights. 
 - Carefully consider when using for law enforcement that Labels potentially cannot detect parts of the video. To ensure fair and high-quality decisions, combine Labels with human oversight. 
 - Don't use labels identification for decisions that may have serious adverse impacts. Machine learning models can result in undetected or incorrect classification output. Decisions based on incorrect output could have serious adverse impacts. Additionally, it's advisable to include human review of decisions that have the potential for serious impacts on individuals. 

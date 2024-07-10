@@ -86,7 +86,9 @@ During the transcription, translation and language identification procedure, spe
 |Output unification	|The transcribed and translated files are unified into the same file. The outputted data includes the speaker ID of each extracted sentence together with its confidence level.|
 |Confidence value	|The estimated confidence level of each sentence is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.| 
 
-### [Transparency notes](#tab/transcriptiontransnote) 
+### [Transparency notes](#tab/transcriptiontransnote)
+
+[!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
 When used responsibly and carefully, Azure AI Video Indexer is a valuable tool for many industries. To respect the privacy and safety of others, and to comply with local and global regulations, we recommend:   
 

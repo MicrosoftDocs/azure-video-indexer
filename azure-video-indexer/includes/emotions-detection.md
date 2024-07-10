@@ -21,6 +21,9 @@ Emotions detection detects emotions in video's transcript lines. Each sentence c
 - **Video Consumers and Viewers** - End-users, such as viewers or consumers of video content, can benefit from the system by understanding the emotional context of videos without having to watch them entirely. It is useful for users who want to decide if a video is worth watching or for people with limited time to spare.
 - **Entertainment Industry Professionals** - Professionals in the entertainment industry, such as movie producers or directors, can utilize the system to gauge the emotional impact of their film scripts or storylines, aiding in script refinement and audience engagement.
 
+> [!NOTE]
+> Text-based emotion detection is language independent, however if the transcript is not in English, it is first being translated to English and only then the model is applied. This may cause a reduced accuracy in emotions detection for non English languages.
+
 [!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
 
 ### [Example response](#tab/emotionresponse) 
@@ -39,10 +42,7 @@ Emotions detection detects emotions in video's transcript lines. Each sentence c
         "end": "0:00:05.75" 
       }
 
-``` 
-
-> [!NOTE]
-> Text-based emotion detection is language independent, however if the transcript is not in English, it is first being translated to English and only then the model is applied. This may cause a reduced accuracy in emotions detection for non English languages. 
+```  
 
 ### [Components](#tab/emotioncomponents) 
 
@@ -55,7 +55,9 @@ During the emotions detection procedure, the transcript of the video is processe
 |Emotions detection  |Each sentence is sent to the emotions detection model. The model produces the confidence level of each emotion. If the confidence level exceeds a specific threshold, and there's no ambiguity between positive and negative emotions, the emotion is detected. In any other case, the sentence is labeled as neutral.|
 |Confidence level |The estimated confidence level of the detected emotions is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score. |
 
-### [Transparency notes](#tab/emotiontransnote) 
+### [Transparency notes](#tab/emotiontransnote)
+
+[!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
 - This model is designed to help detect emotions in the transcript of a video. However, it isn't suitable for making assessments about an individual's emotional state, their ability, or their overall performance.  
 - This emotion detection model is intended to help determine the sentiment behind sentences in the video’s transcript. However, it only works on the text itself, and may not perform well for sarcastic input or in cases where input may be ambiguous or unclear. 

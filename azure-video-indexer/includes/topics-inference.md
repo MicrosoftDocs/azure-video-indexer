@@ -72,7 +72,9 @@ In the web portal, the extracted Topics and categories (when available) are list
 |Post-processing	|- Transcribed text, insights are extracted and tied to a Topic category together with the line number of the transcribed text. For example, Politics in line 7.<br/>- OCR and Facial Recognition, each insight is tied to a Topic category together with the time of the topic’s instance in the media file. For example, Freddie Mercury in the People and Music categories at 20.00. |
 |Confidence value	|The estimated confidence level of each topic is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
 
-### [Transparency notes](#tab/namedentitiestransnote) 
+### [Transparency notes](#tab/namedentitiestransnote)
+
+[!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
 Below are some considerations to keep in mind when using topics:
 

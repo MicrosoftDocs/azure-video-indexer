@@ -10,9 +10,9 @@ ms.author: inhenkel
 
 Azure AI Video Indexer can detect objects in videos.
 
+<!-- insert objected detection use cases here.
 ## Object detection use cases
-
-<!-- insert objected detection use cases here. -->
+-->
 
 ## Supported objects
 
@@ -165,6 +165,8 @@ detectedObjects: [
 No components are defined for object detection.
 
 ### [Transparency notes](#tab/objectdetectiontransnote)
+
+[!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
 - There are up to 20 detections per frame for standard and advanced processing and 35 tracks per class.
 - Object size shouldn't be greater than 90 percent of the frame. Very large objects that consistently span over a large portion of the frame might not be recognized.
