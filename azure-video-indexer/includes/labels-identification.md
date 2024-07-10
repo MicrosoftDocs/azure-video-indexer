@@ -89,6 +89,6 @@ During the Labels procedure, objects in a media file are processed, as follows:
 
 ### [Sample code](#tab/labelssamplecode)
 
-[Link to sample code that uses the insight](#)
+[See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
 ---

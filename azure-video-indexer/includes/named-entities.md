@@ -71,6 +71,6 @@ During the named entities extraction procedure, the media file is processed, as 
 
 ### [Sample code](#tab/namedentitiessamplecode)
 
-[Link to sample code that uses the insight](#)
+[See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
 ---

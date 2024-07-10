@@ -72,6 +72,6 @@ During the emotions detection procedure, the transcript of the video is processe
 
 ### [Sample code](#tab/emotionsamplecode)
 
-[Link to sample code that uses the insight](#)
+[See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
 ---

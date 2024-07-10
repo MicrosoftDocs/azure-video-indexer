@@ -84,6 +84,6 @@ Below are some considerations to keep in mind when using topics:
 
 ### [Sample code](#tab/namedentitiessamplecode)
 
-[Link to sample code that uses the insight](#)
+[See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
 ---

@@ -192,6 +192,6 @@ In the web portal, the resulting insights are displayed in a categorized list in
 
 ### [Sample code](#tab/observedpeoplesamplecode)
 
-[Link to sample code that uses the insight](#)
+[See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
 ---

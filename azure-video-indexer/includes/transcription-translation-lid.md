@@ -106,6 +106,6 @@ For more information, see: guidelines and limitations in [language detection and
 
 ### [Sample code](#tab/transcriptionsamplecode)
 
-[Link to sample code that uses the insight](#)
+[See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
 ---

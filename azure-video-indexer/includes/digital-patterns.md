@@ -61,6 +61,6 @@ You can use digital patterns detection for detecting color bars and test cards.
 
 ### [Sample code](#tab/patternssamplecode)
 
-[Link to sample code that uses the insight](#)
+[See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
 ---

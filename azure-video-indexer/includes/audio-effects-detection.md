@@ -83,6 +83,6 @@ During the audio effects detection procedure, audio in a media file is processed
 
 ### [Sample code](#tab/audioeffectssamplecode)
 
-[Link to sample code that uses the insight](#)
+[See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
 ---

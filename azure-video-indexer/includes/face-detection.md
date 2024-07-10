@@ -108,6 +108,6 @@ Face detection is a valuable tool for many industries when it's used responsibly
 
 ### [Sample code](#tab/facedetectionsamplecode)
 
-[Link to sample code that uses the insight](#)
+[See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
 ---

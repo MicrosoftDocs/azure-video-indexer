@@ -99,6 +99,6 @@ During the OCR procedure, text images in a media file are processed, as follows:
 
 ### [Sample code](#tab/ocrsamplecode)
 
-[Link to sample code that uses the insight](#)
+[See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
 ---
