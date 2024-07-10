@@ -149,6 +149,21 @@
             "source_path_from_root": "/azure-video-indexer/slate-detection-insight.md",
             "redirect_url": "/azure/azure-video-indexer/clapper-board-overview",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/labels-identification.md",
+            "redirect_url": "/azure/azure-video-indexer/labels-identification-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/topics-inference.md",
+            "redirect_url": "/azure/azure-video-indexer/topics-inference-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/transcription-translation-lid.md",
+            "redirect_url": "/azure/azure-video-indexer/transcription-translation-lid-overview",
+            "redirect_document_id": false
         }
     ]
 }
