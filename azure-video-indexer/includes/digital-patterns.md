@@ -40,8 +40,6 @@ You can use digital patterns detection for detecting color bars and test cards.
                 },
 ```
 
-### [Components](#tab/patternscomponents)
-
 |Name|Description|
 |---|---|
 |`id`|The digital pattern ID.|
@@ -51,6 +49,10 @@ You can use digital patterns detection for detecting color bars and test cards.
 |`displayName`| The friendly/display name.
 |`thumbnailId`|The ID of the thumbnail.|
 |`instances`|A list of time ranges where this element appeared.|
+
+### [Components](#tab/patternscomponents)
+
+No components defined.
 
 ### [Transparency notes](#tab/patternstransnote)
 
