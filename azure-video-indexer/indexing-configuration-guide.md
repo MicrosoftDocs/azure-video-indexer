@@ -2,7 +2,7 @@
 title: Indexing configuration guide
 description: This article explains the configuration options of indexing process with Azure AI Video Indexer.
 ms.topic: conceptual
-ms.date: 03/22/2024
+ms.date: 07/09/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -96,4 +96,4 @@ There are two options for streaming indexed videos:
 
 ### Customizing content models 
 
-Azure AI Video Indexer allows you to customize some of its models to be adapted to your specific use case. These models include brands, language, and person. If you have customized models, this section enables you to configure if one of the created models should be used for the indexing. 
+Azure AI Video Indexer allows you to customize some of its models to be adapted to your specific use case. These models include brands, language, and person. If you have customized models, this section of the web portal enables you to configure if one of the created models should be used for the indexing. 

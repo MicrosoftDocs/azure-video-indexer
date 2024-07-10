@@ -3,7 +3,7 @@ title: Logic Apps connector with ARM-based VI accounts
 description: This article shows how to unlock new experiences and monetization opportunities Azure AI Video Indexer connectors with Logic App and Power Automate with VI ARM accounts.
 ms.topic: how-to
 ms.date: 06/10/2024
-ms.author: Itnorman
+ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
