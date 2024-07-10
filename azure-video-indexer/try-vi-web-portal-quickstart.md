@@ -2,7 +2,7 @@
 title:  Quickstart - Try the Azure AI Video Indexer web portal
 description: This article shows you how to get started with Azure AI Video Indexer (VI) by using the web portal. You're encouraged to experience indexing a video with the web portal before trying the API.
 ms.topic: conceptual
-ms.date: 06/26/2024
+ms.date: 07/10/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -53,15 +53,15 @@ While your video is uploading, view some of the sample videos.
 
 ### View the timeline
 
-1.  Select the Timeline tab. The video transcript appears.
+1.  Select the **Timeline** tab. The video transcript appears.
 2.  Scan the transcript of the spoken audio of the video to get an idea of what was covered in the video.
 
 ### View the insights
 
-1.  Select the Samples tab.
+1.  Select the **Samples** tab.
 2.  Select any one of the videos from the Samples library.
-3.  Select View from the menu.
-4.  Select Monitoring to deselect most of the insights.
+3.  Select **View** from the menu.
+4.  Select **Monitoring** to deselect most of the insights.
 5.  Uncheck the remaining insight checkboxes. The insights area of the screen should be empty.
 6.  Select and unselect the checkboxes one at a time to see the resulting insights.
 
@@ -73,7 +73,7 @@ While your video is uploading, view some of the sample videos.
 
 ## View the JSON
 
-In the web portal, you can access the API JSON response of your indexing job.
+You can access the API JSON response of your indexing job.
 
-1.  Select Download.
-2.  Select Insights (JSON). The JSON file opens in a new browser window or tab.
+1.  Select **Download**.
+2.  Select **Insights (JSON)**. The JSON file opens in a new browser window or tab.
