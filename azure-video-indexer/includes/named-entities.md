@@ -17,7 +17,8 @@ ms.author: inhenkel
 -	Creating a verbal description of footage via OCR processing to enhance accessibility for the visually impaired, for example a background storyteller in movies. 
 -	Extracting insights on brand names.
 
-[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+[!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
+[!INCLUDE [get insights with the API](get-insights-api.md)]
 
 ### [Example response](#tab/namedentitiesresponse)
     

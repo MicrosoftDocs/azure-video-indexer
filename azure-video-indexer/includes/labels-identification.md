@@ -17,7 +17,8 @@ ms.author: inhenkel
 - Deep searching media archives for insights on specific objects to create feature stories for the news.
 - Using relevant labels to create content for trailers, highlights reels, social media or new clips.
 
-[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+[!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
+[!INCLUDE [get insights with the API](get-insights-api.md)]
 
 ### [Example response](#tab/labelsresponse)
 

@@ -18,7 +18,8 @@ In the web portal, the extracted Topics and categories (when available) are list
 - Deep-searching archives for insights on specific topics to create feature stories about companies, personas, or technologies, for example by a news agency. 
 - Monetization, increasing the worth of extracted insights. For example, industries like the news or social media that rely on ad revenue can deliver relevant ads by using the extracted insights as additional signals to the ad server.
 
-[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+[!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
+[!INCLUDE [get insights with the API](get-insights-api.md)]
 
 ### [Example response](#tab/topicsinferenceresponse)
      

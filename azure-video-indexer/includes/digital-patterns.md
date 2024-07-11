@@ -14,7 +14,8 @@ ms.author: inhenkel
 
 Digital patterns detection is most commonly used for color correction during post-production editing of visual media.
 
-[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+[!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
+[!INCLUDE [get insights with the API](get-insights-api.md)]
 
 ### [Example responses](#tab/patternsresponse)
 

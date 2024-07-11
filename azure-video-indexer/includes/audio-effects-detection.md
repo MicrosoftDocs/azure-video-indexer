@@ -17,7 +17,8 @@ ms.author: inhenkel
 - Improved efficiency when creating raw data for content creators. Important moments in promos and trailers such as laughter, crowd reactions, gunshots, or explosions can be identified, for example,  in Media and Entertainment. 
 - Detecting and classifying gunshots, explosions, and glass shattering in a smart-city system or in other public environments that include cameras and microphones to offer fast and accurate detection of violence incidents.
 
-[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+[!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
+[!INCLUDE [get insights with the API](get-insights-api.md)]
 
 ### [Example response](#tab/audioeffectsresponse)
 
