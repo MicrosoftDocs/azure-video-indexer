@@ -1587,9 +1587,11 @@ This response shows all of the data that come from detecting clapper boards. If 
 |`fields`|The fields found in the clapper board; also each field's name and value.|
 |`instances`|A list of time ranges where this element appeared.|
 
+<!--
 ### [Components](#tab/clapperboardcomponents)
 
 No components are defined.
+-->
 
 ### [Transparency notes](#tab/clappertransnote)
 

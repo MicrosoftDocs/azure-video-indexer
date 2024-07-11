@@ -25,7 +25,6 @@ For more information about OCR, see [OCR technology](/azure/ai-services/comput
 - Extracting text in warnings in online instructions and then translating the text to comply with local standards, for example, e-learning instructions for using equipment.
 
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
-
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
 ### [Example response](#tab/ocrresponse)
@@ -77,7 +76,7 @@ For more information about OCR, see [OCR technology](/azure/ai-services/comput
           ]
         }
 ``` 
-
+<!--
 ### [Components](#tab/ocrcomponents) 
 
 During the OCR procedure, text images in a media file are processed, as follows:  
@@ -88,6 +87,7 @@ During the OCR procedure, text images in a media file are processed, as follows:
 |Read model	|Images are detected in the media file and text is then extracted and analyzed by Azure AI services. |
 |Get read results model	|The output of the extracted text is displayed in a JSON file.|
 |Confidence value|	The estimated confidence level of each word is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty will be represented as an 0.82 score.|
+-->
 
 ### [Transparency notes](#tab/ocrtransnote)
 
