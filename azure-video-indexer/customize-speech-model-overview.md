@@ -2,7 +2,7 @@
 title: Customize a speech model in Azure AI Video Indexer  
 description: This article gives an overview of what is a speech model in Azure AI Video Indexer. 
 ms.topic: conceptual
-ms.date: 03/22/2024
+ms.date: 07/11/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -12,7 +12,7 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-[!INCLUDE [speech model](./includes/speech-model.md)]
+[!INCLUDE [speech model](./includes/speech-model-note.md)]
 
 Through Azure AI Video Indexer integration with [Azure AI Speech services](/azure/ai-services/speech-service/captioning-concepts), a Universal Language Model is utilized as a base model that is trained with Microsoft-owned data and reflects commonly used spoken language. The base model is pretrained with dialects and phonetics representing various common domains. The base model works well in most speech recognition scenarios. 
 

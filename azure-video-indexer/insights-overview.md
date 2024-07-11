@@ -12,39 +12,23 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-When a video is indexed, Azure AI Video Indexer analyzes the video and audio content by running 30+ AI models, generating rich insights. Insights contain an aggregated view of the data: transcripts, optical character recognition elements (OCRs), face, topics, emotions, etc. Once the video is indexed and analyzed, Azure AI Video Indexer produces a JSON content that contains details of the video insights. For example, each insight type includes instances of time ranges that show when the insight appears in the video.
+When a video is indexed, Azure AI Video Indexer analyzes the video and audio content by running 30+ AI models, generating JSON containing the video insights including transcripts, optical character recognition elements (OCRs), face, topics, emotions, etc. Each insight type includes instances of time ranges that show when the insight appears in the video. 
 
-Once you [set up](video-indexer-get-started.md) an Azure AI Video Indexer account (see [account types](accounts-overview.md)) and [try the VI web portal quickstart](try-vi-web-portal-quickstart.md), you can view insights as described below.
+Use the links in the insights table to learn how to get each insight JSON response in the web portal and using the API.
 
-## Get the insights using the website
+## Insights
 
-To visually examine the video's insights, press the **Play** button on the video on the [Azure AI Video Indexer](https://www.videoindexer.ai/) website. 
-
-![Screenshot of the Insights tab in Azure AI Video Indexer.](./media/video-indexer-output-json/video-indexer-summarized-insights.png)
-
-To get insights produced on the website or the Azure portal:
-
-1. Browse to the [Azure AI Video Indexer](https://www.videoindexer.ai/) website and sign in.
-1. Find a video whose output you want to examine.
-1. Press **Play**.
-1. Choose the **Insights** tab.
-2. Select which insights you want to view (under the **View** drop-down, on the right-top corner).
-3. Go to the **Timeline** tab to see timestamped transcript lines.
-4. Select **Download** > **Insights (JSON)** to get the insights output file.
-5. If you want to download artifacts, beware of the following:
-
-    [!INCLUDE [artifacts](./includes/artifacts.md)]
-
-## Get insights produced by the API
-
-When indexing with an API and the response status is OK, you get a detailed JSON output as the response content. When calling the [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index) API, we recommend passing `&includeSummarizedInsights=false`. 
-
-[!INCLUDE [insights](./includes/insights.md)]
-
-This API returns a URL only with a link to the specific resource type you request. An additional GET request must be made to this URL for the specific artifact. The file types for each artifact type vary depending on the artifact.
-
-[!INCLUDE [artifacts](./includes/artifacts.md)]
-
-## Examine the Azure AI Video Indexer output
-
-For more information, see [Examine the Azure AI Video Indexer output]( video-indexer-output-json-v2.md).
+| Insight | Description |
+| ------- | ----------- |
+| [Audio effects detection](audio-effects-detection-insight.md) | [!INCLUDE [Audio effects detection description](./includes/audio-effects-detection-description.md)] |
+| [Face detection](face-detection-insight.md) | [!INCLUDE [Face detection description](./includes/face-detection-description.md)] |
+| [Keywords extraction](keywords-insight.md) | [!INCLUDE [keywords-descritpion](./includes/keywords-description.md)] |
+| [Labels identification](labels-identification-insight.md) | [!INCLUDE [labels identification description](./includes/labels-identification-description.md)] |
+| [Media transcription, translation, and language identification](transcription-translation-lid-insight.md) | [!INCLUDE [transcription description](./includes/transcription-translation-lid-description.md)] |
+| [Named entities](named-entities-insight.md) | [!INCLUDE [Named entities description](./includes/named-entities-description.md)] |
+| [Object detection](object-detection-insight.md)| [!INCLUDE [object detection description](./includes/object-detection-description.md)] |
+| [OCR](ocr-insight.md) | [!INCLUDE [ocr description](./includes/ocr-description.md)] |
+| [Post-production: clapper board detection](clapper-board-insight.md) | [!INCLUDE [clapper board description](./includes/clapperboard-description.md)] |
+| [Post-production: digital patterns](digital-patterns-color-bars-insight.md) | [!INCLUDE [digital patterns description](./includes/digital-patterns-description.md)] |
+| [Text-based emotion detection](emotions-detection-insight.md) | [!INCLUDE [Emotions detection description](./includes/emotions-detection-description.md)] |
+| [Topics inference](topics-inference-insight.md) | [!INCLUDE [topics inference description](./includes/topics-inference-description.md)] |

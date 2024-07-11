@@ -8,14 +8,15 @@ ms.author: inhenkel
 
 ## Keywords extraction
 
-Keywords extraction detects insights on the different keywords discussed in media files. It extract insights in both single language and multi-language media files.
+[!INCLUDE [keywords-descritpion](keywords-description.md)]
 
 ### Keywords extraction use cases
 
 - Personalization of keywords to match customer interests, for example websites about England posting promotions about English movies or festivals. 
 - Deep-searching archives for insights on specific keywords to create feature stories about companies, personas, or technologies, for example by a news agency.
 
-[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+[!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
+[!INCLUDE [get insights with the API](get-insights-api.md)]
 
 ### [Example response](#tab/keywordsresponse)
 
