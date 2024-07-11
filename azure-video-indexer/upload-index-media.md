@@ -44,8 +44,8 @@ Use these steps to upload and index a video file.
 1. Configure the *general settings* for indexing. You can rename the files.
 1. Configure the *advanced settings* for indexing. These settings are for all files in the batch:
     - **Indexing preset**: [Choose the preset](indexing-configuration-guide.md#indexing-options) that fits your needs. You can also exclude sensitive AI by selecting the checkbox.
-    - **People model**: If you're using a [customized people](customize-person-model-overview.md) model, choose it from the dropdown list.
-    - **Brand categories**: If you're using a [customized brand](customize-brands-model-overview.md) model, choose it from the dropdown list.
+    - **People model**: If you're using a [customized people](customize-person-model-how-to.md) model, choose it from the dropdown list.
+    - **Brand categories**: If you're using a [customized brand](customize-brands-model-how-to.md) model, choose it from the dropdown list.
     - **File information**: If you want to add metadata, enter the text in the input box. Metadata is shared between all files in the same upload batch. When uploading a single file, you can add a description.
 1. Select **Review + upload**.
 1. Review the summary page that shows the indexing settings and the upload progress.
