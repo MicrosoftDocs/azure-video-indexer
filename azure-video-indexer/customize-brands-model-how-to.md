@@ -16,12 +16,12 @@ Azure AI Video Indexer supports brand detection from speech and visual text duri
 
 Brand detection is useful in a wide variety of business scenarios such as content archive and discovery, contextual advertising, social media analysis, retail compete analysis, and more. Azure AI Video Indexer brand detection enables you to index brand mentions in speech and visual text, using Bing's brands database as well as with customization by building a custom Brands model for each Azure AI Video Indexer account. The custom Brands model feature allows you to select whether or not Azure AI Video Indexer will detect brands from the Bing brands database, exclude certain brands from being detected (essentially creating a list of unapproved brands), and include brands that should be part of your model that might not be in Bing's brands database (essentially creating a list of approved brands). The custom Brands model that you create will only be available in the account in which you created the model.
 
-Azure AI Video Indexer supports brand detection from speech and visual text during indexing and reindexing of video and audio content. The brand detection feature identifies mentions of products, services, and companies suggested by Bing's brands database. For example, if Microsoft is mentioned in video or audio content or if it shows up in visual text in a video, Azure AI Video Indexer detects it as a brand in the content. A custom Brands model allows you to exclude certain brands from being detected and include brands that should be part of your model that might not be in Bing's brands database. For more information, see [Overview](customize-brands-model-overview.md).
+Azure AI Video Indexer supports brand detection from speech and visual text during indexing and reindexing of video and audio content. The brand detection feature identifies mentions of products, services, and companies suggested by Bing's brands database. For example, if Microsoft is mentioned in video or audio content or if it shows up in visual text in a video, Azure AI Video Indexer detects it as a brand in the content. A custom Brands model allows you to exclude certain brands from being detected and include brands that should be part of your model that might not be in Bing's brands database.
 
 > [!NOTE]
 > If your video was indexed prior to adding a brand, you need to reindex it.
 
-You can use the Azure AI Video Indexer APIs to create, use, and edit custom Brands models detected in a video, as described in this topic. You can also use the Azure AI Video Indexer website, as described in [Customize Brands model using the Azure AI Video Indexer website](customize-brands-model-with-api.md).
+You can use the Azure AI Video Indexer APIs to create, use, and edit custom Brands models detected in a video, as described in this topic.
 
 Azure AI Video Indexer supports brand detection from speech and visual text during indexing and reindexing of video and audio content. The brand detection feature identifies mentions of products, services, and companies suggested by Bing's brands database. For example, if Microsoft is mentioned in video or audio content or if it shows up in visual text in a video, Azure AI Video Indexer detects it as a brand in the content.
 
@@ -31,9 +31,7 @@ A custom Brands model allows you to:
 - select if you want Azure AI Video Indexer to exclude certain brands from being detected (essentially creating a blocklist of brands).
 - select if you want Azure AI Video Indexer to include brands that should be part of your model that might not be in Bing's brands database (essentially creating an accept list of brands).
 
-For a detailed overview, see this [Overview](customize-brands-model-overview.md).
-
-You can use the Azure AI Video Indexer website to create, use, and edit custom Brands models detected in a video, as described in this article. You can also use the API, as described in [Customize Brands model using APIs](customize-brands-model-with-api.md).
+You can use the Azure AI Video Indexer website to create, use, and edit custom Brands models detected in a video, as described in this article.
 
 > [!NOTE]
 > If your video was indexed prior to adding a brand, you need to reindex it. You will find **Re-index** item in the drop-down menu associated with the video. Select **Advanced options** -> **Brand categories** and check **All brands**.
