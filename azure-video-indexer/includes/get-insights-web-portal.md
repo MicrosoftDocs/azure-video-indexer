@@ -13,5 +13,4 @@ Once you have uploaded and indexed a video, insights are available in JSON forma
 1. Select the **Library** tab.
 1. Select media you want to work with.
 1. Select **Download** and the **Insights (JSON)**. The JSON file opens in a new browser tab.
-
-Look for the key pair described in the example response.
+1. Look for the key pair described in the example response.

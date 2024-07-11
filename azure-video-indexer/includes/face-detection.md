@@ -8,9 +8,7 @@ ms.author: inhenkel
 
 ## Face detection
 
-Face detection detects faces in a media file, and then aggregates instances of similar faces into groups.
-
-Face detection insights are generated as a categorized list in a JSON file that includes a thumbnail and either a name or an ID for each face. In the web portal, selecting a face’s thumbnail displays information like the name of the person (if they were recognized), the percentage of the video that the person appears, and the person's biography, if they're a celebrity. You can also scroll between instances in the video where the person appears.
+[!INCLUDE [Face detection description](face-detection-description.md)]
 
 ## Celebrities recognition model
 
@@ -35,7 +33,8 @@ The following list describes examples of common use cases for face detection:
 | **Enrollment** | The process of enrolling images of individuals for template creation so that they can be recognized. When a person is enrolled to a verification system that's used for authentication, their template is also associated with a primary identifier that's used to determine which template to compare against the probe template. High-quality images and images that represent natural variations in how a person looks (for instance, wearing glasses and not wearing glasses) generate high-quality enrollment templates. |
 | **Template** | Enrolled images of people are converted to templates, which are then used for facial recognition. Machine-interpretable features are extracted from one or more images of an individual to create that individual’s template. The enrollment or probe images aren't stored by the Face API, and the original images can't be reconstructed based on a template. Template quality is a key determinant for accuracy in your results. |
 
-[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+[!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
+[!INCLUDE [get insights with the API](get-insights-api.md)]
 
 > [!IMPORTANT]
 > When you review face detections in the UI, you might not see all faces that appear in the video. We expose only face groups that have a confidence of more than 0.5, and the face must appear for a minimum of 4 seconds or 10 percent of the value of `video_duration`. Only when these conditions are met do we show the face in the UI and in the *Insights.json* file. You can always retrieve all face instances from the face artifact file by using the API: `https://api.videoindexer.ai/{location}/Accounts/{accountId}/Videos/{videoId}/ArtifactUrl[?Faces][&accessToken]`.
@@ -93,6 +92,7 @@ The following table describes how images in a media file are processed during th
 | Detection and aggregation | The face detector identifies the faces in each frame. The faces are then aggregated and grouped. |
 | Recognition | The celebrities model processes the aggregated groups to recognize celebrities. If you've created your own people model, it also processes groups to recognize other people. If people aren't recognized, they're labeled Unknown1, Unknown2, and so on. |
 | Confidence value | Where applicable for well-known faces or for faces that are identified in the customizable list, the estimated confidence level of each label is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82 percent certainty is represented as an 0.82 score. |
+
 
 ### [Transparency notes](#tab/facedetectiontransnote)
 

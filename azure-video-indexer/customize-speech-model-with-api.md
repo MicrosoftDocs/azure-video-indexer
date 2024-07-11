@@ -12,7 +12,7 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-[!INCLUDE [speech model](./includes/speech-model.md)]
+[!INCLUDE [speech model](./includes/speech-model-note.md)]
 
 Azure AI Video Indexer lets you create custom language models to customize speech recognition by uploading adaptation text, namely text from the domain whose vocabulary you'd like the engine to adapt to or aligning word or name pronunciation with how it should be written. 
 

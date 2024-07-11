@@ -1,14 +1,14 @@
 ---
-title: Azure AI Video Indexer (VI) object detection overview
-description: This article describes the Azure AI Video Indexer object detection insight.
+title: Get object detection insights
+description: This article shows you how to get the Azure AI Video Indexer object detection insights.
 ms.date: 07/09/2024
-ms.topic: article
+ms.topic: how-to
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-# Object detection insight overview
+# Get object detection insights
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 

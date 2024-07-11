@@ -12,7 +12,7 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-[!INCLUDE [speech model](./includes/speech-model.md)]
+[!INCLUDE [speech model](./includes/speech-model-note.md)]
  
 Azure AI Video Indexer lets you create custom speech models to customize speech recognition by uploading datasets that are used to create a speech model. This article goes through the steps to do so through the Video Indexer website. You can also use the API, as described in [Customize speech model using API](customize-speech-model-with-api.md). 
 

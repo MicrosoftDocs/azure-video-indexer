@@ -52,46 +52,9 @@ items:
   - name: Account types
     href: accounts-overview.md
     displayName: existing classic account, limited access features, account types, accounts description, accounts types, unlimited accounts, trial account, pricing, API, unlimited ARM based account, regular unlimited accounts, classic account type, classic account type, classic (paid) account, Azure Resource Manager, up to 600 minutes, up to 2400 minutes, regular paid account, Azure Monitor integration, ARM based accounts, ARM-based (paid) account, trial account option, accounts management plane, free trial minutes, unlimited) account, Classic accounts, Azure subscription, Azure portal, ARM-based account, trial accounts, indexing minutes, Account creation, other articles, free indexing, management capabilities, ARM templates, easy process, great way, developer portal, production workloads, many security, correct domain, Switch tenants,  API Management, minute cost, SLA limitations, website users, minute, support, title, overview, links, details, videoindexer, quick, No, content, mind, number, api-portal, azure-video-indexer, based-access-control, deployment, Billing, preset, information, microsoft, account-portal, TIP, classic-account, difference, azure-resource, access-account-types
-  - name: Terminology & concepts overview
-    href: concepts-overview.md
-    displayName: Azure AI Video Indexer terminology, Azure AI Video Indexer widgets, visual content moderation models, 30+ AI models, adjusted time range, textual content moderation, entire video, original video, 1-hour video, inappropriate content, audio content, time period, overview description, brief overview, Artifact files, aggregated view, detailed explanation, frame(s, representative frames, aesthetic properties, different lines,  rich insights, different videos, Confidence scores, current playlist, Insights Insights, title, concepts, article, artifacts, number, answer, example, json, transcript, good, everyone, speakerId, language, instances, users, organization, values, information, indexer-output, visualcontentmoderation, data, faces, topics, emotions, Keyframes, shot, contrast, stableness, Scenes, 1 line, case, apps, guides
-  - name: Indexing configuration guide
-    href: indexing-configuration-guide.md
-    displayName: Azure AI Video Indexer account, Indexing configuration guide description, video source language list, Azure AI Video Indexer insights, initial upload screen, new media file, other setting options, multi-language (MLID) detection, indexing type options, video indexing options, Auto-detect single language, private, Standard audio, single bitrate, indexing process, indexing objectives, video setting, default setting, configuration options, custom models, informed decisions, large volumes, video name, good fit, Advanced Video, encoding job, two points, higher quality, output captions, same options, Advanced options, Advanced settings, language identification, appropriate language, scale guide, privacy settings, associated cost, great option, following insights, multiple languages, audio effects, streaming settings, videos language, title, article, users, range, implications, performance, impact, videoindexer, ai, experience, jobs, API, considerations, image, Screenshot, advanced-configuration, English, topic, examples, people, person, transcription, translation, need, case, LID/MLID, supported, link, microsoft, video-indexer, Indexes, formatting, emotions, keywords, entities, brands, locations, sentiments, speakers, preview
   - name: Insights
     displayName: optical character recognition elements, Azure AI Video Indexer account, Azure AI Video Indexer OCR, Azure AI Video Indexer insights, specific predefined text, Detect textual logo, timestamped transcript lines, Textual logo detection, Audio effects detection, insights output file, detailed JSON output, 30+ AI models, Azure portal, account types, audio content, audio cues, video insights, entire video, rich insights, aggregated view, time ranges, common insights, frame(s, representative frames, aesthetic properties, easier consumption, Faces detection, different appearances, Microsoft" logo, sentimentType` field, single audio-file, other insights, Insights tab, right-top corner, response status, response content, Operations&operation, JSON content, insight type, one insight, brief overview, Named entities, Sixteen speakers, Topics inference, title, description, article, data, transcripts, OCRs, emotions, details, example, instances, information, audio-effects-detection-transparency-note, Scenes, shots, keyframes, contrast, stableness, navigation, speech, azure-video-indexer, face-detection-transparency, user, word, Labels, entities-transparency, People, ocr-transparency-note, Sentiments, Transcription, translation, language, features, website, videoindexer, Screenshot, indexer-output, Press, artifacts, API
     href: insights-overview.md
-    items:
-    - name: Audio effects detection
-      href: audio-effects-detection-insight.md
-    - name: Faces detection
-      href: face-detection-insight.md
-    - name: OCR
-      href: ocr-insight.md
-    - name: Keywords extraction
-      href: keywords-insight.md
-    - name: Transcription, translation, language
-      href: transcription-translation-lid-insight.md
-    - name: Labels identification
-      href: labels-identification-insight.md
-    - name: Named entities
-      href: named-entities-insight.md
-    - name: Observed people tracking & matched faces
-      href: observed-matched-people-insight.md
-    - name: Topics inference
-      href: topics-inference-insight.md
-    - name: Text-based emotion detection
-      href: emotions-detection-insight.md
-    - name: Object detection
-      href: object-detection-insight.md
-    - name: Post-production insights
-      items:
-      - name: Clapper board detection
-        href: clapper-board-insight.md
-        displayName: Slate detection insights description, following slate detection insights, movie post-production process, advanced indexing option, Digital patterns detection, The Timeline tab, The Insight tab, indexing process, post-production insights, slate insight, audio indexing, Advanced** presets, advanced setting, slate metadata, post-production checkmark, clapper board, color bars, metadata extraction, scene matching, clapperboard instances, title, topic, article, video, customers, wikipedia, org, information, example, SMPTE_color_bars, order, image, media/slate-detection-process, advanced-setting, file, list, post-production-checkmark, details, color-bars
-      - name: Color bar detection
-        href: digital-patterns-color-bars-insight.md
-        displayName: Slate detection insights description, following slate detection insights, movie post-production process, advanced indexing option, Digital patterns detection, The Timeline tab, The Insight tab, indexing process, post-production insights, slate insight, audio indexing, Advanced** presets, advanced setting, slate metadata, post-production checkmark, clapper board, color bars, metadata extraction, scene matching, clapperboard instances, title, topic, article, video, customers, wikipedia, org, information, example, SMPTE_color_bars, order, image, media/slate-detection-process, advanced-setting, file, list, post-production-checkmark, details, color-bars
   - name: Customization
     displayName: customize, customizing
     items:
@@ -131,11 +94,41 @@ items:
   - name: Upload and index media
     href: upload-index-media.md
     displayName: Azure AI Video Indexer API developer portal, external video content management, Azure AI Video Indexer description, Azure AI Video Indexer output, Azure AI Video Indexer website, optical character recognition, noise reduction algorithms, advanced video features, standard video analysis, basic audio features, advanced audio features, audio event detection, standard audio analysis, Supported file formats, Upload Video API, Azure Storage, short description, output captions, external ID, video files, two methods, Media Services, backup solution, Upload button, byte array, date info, VCM) system, indexing process, following values, DefaultWithNoiseReduction` value, audio files, audio stream, code sample, optional parameters, callback URL, existing parameters, original URL, default preset, people tracking, AI bundle, Operations&operation, =Operations, title, videos, uploading, topic, article, insights, list, codecs, media-encoder-standard-formats-reference, limits, 30 GB, size, 4 hours, length, metadata, persistence, videoindexer, image, Screenshot, progress, email, link, example, details, NOTE, apis, Configurations, section, externalID, integration, BasicAudio, transcription, translation, formatting, AdvancedAudio, addition, AdvancedVideo
-  - name: Use insights
+  - name: Get insights
     items:
-    - name: View and edit insights
-      href: video-indexer-view-edit.md
-      displayName: Azure AI Video Indexer insights description, Azure Indexer widgets, Insights output, deep insights, exact moments, transcript line, artifact files, time ranges, player/insights view, other information, title, article, author, topic, videoindexer, ai, website, videos, indexer-search, Press, page, edit, example, faces, keywords, sentiments, people, transcripts, timelines, down, image, Screenshot, synchronization, application, indexer-output, Considerations, artifacts
+    - name: Audio effects detection insights
+      href: audio-effects-detection-insight.md
+    - name: Faces detection insights
+      href: face-detection-insight.md
+    - name: OCR insights
+      href: ocr-insight.md
+    - name: Keywords extraction insights
+      href: keywords-insight.md
+    - name: Transcription, translation, language insights
+      href: transcription-translation-lid-insight.md
+    - name: Labels identification insights
+      href: labels-identification-insight.md
+    - name: Named entities insights
+      href: named-entities-insight.md
+    - name: Observed people tracking & matched faces insights
+      href: observed-matched-people-insight.md
+    - name: Topics inference insights
+      href: topics-inference-insight.md
+    - name: Text-based emotion detection insights
+      href: emotions-detection-insight.md
+    - name: Object detection insights
+      href: object-detection-insight.md
+    - name: Post-production insights
+      items:
+      - name: Clapper board detection insights
+        href: clapper-board-insight.md
+        displayName: Slate detection insights description, following slate detection insights, movie post-production process, advanced indexing option, Digital patterns detection, The Timeline tab, The Insight tab, indexing process, post-production insights, slate insight, audio indexing, Advanced** presets, advanced setting, slate metadata, post-production checkmark, clapper board, color bars, metadata extraction, scene matching, clapperboard instances, title, topic, article, video, customers, wikipedia, org, information, example, SMPTE_color_bars, order, image, media/slate-detection-process, advanced-setting, file, list, post-production-checkmark, details, color-bars
+      - name: Color bar detection insights
+        href: digital-patterns-color-bars-insight.md
+        displayName: Slate detection insights description, following slate detection insights, movie post-production process, advanced indexing option, Digital patterns detection, The Timeline tab, The Insight tab, indexing process, post-production insights, slate insight, audio indexing, Advanced** presets, advanced setting, slate metadata, post-production checkmark, clapper board, color bars, metadata extraction, scene matching, clapperboard instances, title, topic, article, video, customers, wikipedia, org, information, example, SMPTE_color_bars, order, image, media/slate-detection-process, advanced-setting, file, list, post-production-checkmark, details, color-bars
+    - name: Indexing configuration guide
+      href: indexing-configuration-guide.md
+      displayName: Azure AI Video Indexer account, Indexing configuration guide description, video source language list, Azure AI Video Indexer insights, initial upload screen, new media file, other setting options, multi-language (MLID) detection, indexing type options, video indexing options, Auto-detect single language, private, Standard audio, single bitrate, indexing process, indexing objectives, video setting, default setting, configuration options, custom models, informed decisions, large volumes, video name, good fit, Advanced Video, encoding job, two points, higher quality, output captions, same options, Advanced options, Advanced settings, language identification, appropriate language, scale guide, privacy settings, associated cost, great option, following insights, multiple languages, audio effects, streaming settings, videos language, title, article, users, range, implications, performance, impact, videoindexer, ai, experience, jobs, API, considerations, image, Screenshot, advanced-configuration, English, topic, examples, people, person, transcription, translation, need, case, LID/MLID, supported, link, microsoft, video-indexer, Indexes, formatting, emotions, keywords, entities, brands, locations, sentiments, speakers, preview
     - name: Detect features of videos
       items:
       - name: Find exact moments within videos

@@ -1,5 +1,5 @@
 ---
-title: Slate detection
+title: Digital patterns
 ms.service: azure-video-indexer
 ms.topic: include
 ms.date: 07/09/2024
@@ -8,13 +8,14 @@ ms.author: inhenkel
 
 ## Post-production: digital patterns
 
-Digital patterns detection detects [color bars](https://en.wikipedia.org/wiki/SMPTE_color_bars) used during filming. Digital patterns is part of the post-production insights that you can select in the web portal [advanced settings](../indexing-configuration-guide.md?#advanced-settings) when you upload and index the file.
+[!INCLUDE [digital patterns description](digital-patterns-description.md)]
 
 ## Digital patterns use cases
 
 Digital patterns detection is most commonly used for color correction during post-production editing of visual media.
 
-[!INCLUDE [Insights introductory paragraph](insights-intro-paragraph.md)]
+[!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
+[!INCLUDE [get insights with the API](get-insights-api.md)]
 
 ### [Example responses](#tab/patternsresponse)
 
