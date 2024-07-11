@@ -239,6 +239,11 @@
             "source_path_from_root": "/azure-video-indexer/clapper-board-metadata.md",
             "redirect_url": "/azure/azure-video-indexer/clapper-board-insight",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/clapper-board-metadata.md",
+            "redirect_url": "/azure/azure-video-indexer/clapper-board-insight",
+            "redirect_document_id": false
         }
     ]
 }
