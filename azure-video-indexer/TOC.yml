@@ -63,34 +63,34 @@ items:
     href: insights-overview.md
     items:
     - name: Audio effects detection
-      href: audio-effects-detection-overview.md
+      href: audio-effects-detection-insight.md
     - name: Faces detection
-      href: face-detection-overview.md
+      href: face-detection-insight.md
     - name: OCR
-      href: ocr-overview.md
+      href: ocr-insight.md
     - name: Keywords extraction
-      href: keywords-overview.md
+      href: keywords-insight.md
     - name: Transcription, translation, language
-      href: transcription-translation-lid-overview.md
+      href: transcription-translation-lid-insight.md
     - name: Labels identification
-      href: labels-identification-overview.md
+      href: labels-identification-insight.md
     - name: Named entities
-      href: named-entities-overview.md
+      href: named-entities-insight.md
     - name: Observed people tracking & matched faces
-      href: observed-matched-people-overview.md
+      href: observed-matched-people-insight.md
     - name: Topics inference
-      href: topics-inference-overview.md
+      href: topics-inference-insight.md
     - name: Text-based emotion detection
-      href: emotions-detection-overview.md
+      href: emotions-detection-insight.md
     - name: Object detection
-      href: object-detection-overview.md
+      href: object-detection-insight.md
     - name: Post-production insights
       items:
       - name: Clapper board detection
-        href: clapper-board-overview.md
+        href: clapper-board-insight.md
         displayName: Slate detection insights description, following slate detection insights, movie post-production process, advanced indexing option, Digital patterns detection, The Timeline tab, The Insight tab, indexing process, post-production insights, slate insight, audio indexing, Advanced** presets, advanced setting, slate metadata, post-production checkmark, clapper board, color bars, metadata extraction, scene matching, clapperboard instances, title, topic, article, video, customers, wikipedia, org, information, example, SMPTE_color_bars, order, image, media/slate-detection-process, advanced-setting, file, list, post-production-checkmark, details, color-bars
       - name: Color bar detection
-        href: digital-patterns-color-bars-overview.md
+        href: digital-patterns-color-bars-insight.md
         displayName: Slate detection insights description, following slate detection insights, movie post-production process, advanced indexing option, Digital patterns detection, The Timeline tab, The Insight tab, indexing process, post-production insights, slate insight, audio indexing, Advanced** presets, advanced setting, slate metadata, post-production checkmark, clapper board, color bars, metadata extraction, scene matching, clapperboard instances, title, topic, article, video, customers, wikipedia, org, information, example, SMPTE_color_bars, order, image, media/slate-detection-process, advanced-setting, file, list, post-production-checkmark, details, color-bars
   - name: Customization
     displayName: customize, customizing
@@ -144,17 +144,6 @@ items:
       - name: Detect scenes, shots, keyframes
         href: scenes-shots-keyframes.md
         displayName: Azure AI Video Indexer website, Azure AI Video Indexer API, Azure AI Video Indexer scenes, Editorial shot type detection, high resolution image, Get Video Index, shot type characteristics, editorial type, entire video, Keyframe detection, Shot detection, temporal units, semantic properties, varying granularities, visual cues, single event, color coherence, end time, challenging task, semantic aspects, gradual transitions, color scheme, adjacent frames, consecutive frames, same camera, same time, frame(s, representative frames, aesthetic properties, indexing job, Download" drop, specific style, artistic purposes, different types, Scene detection, video content, first keyframe, keyframe IDs, keyframe images, underlying shot, individual shot, scene thumbnail, JSON file, output JSON, Operations&operation, consecutive shots, keyframes description, high-resolution keyframes, artifacts folder, 3 scenes, title, overview, videos, structural, capability, customers, example, series, beginning, NOTE, abrupt, metadata, start, list, contrast, stableness, part, ZIP, computer, warning, Screenshot, media/scenes, videoindexer, details, api-portal, Video-Index, insights, instances, thumbnailId, duration, call, clips, trailers, analysis, scale, size, location, face
-      - name: Slate detection
-        items:
-        - name: Clapper board with metadata extraction
-          href: clapperboard-metadata.md
-          displayName: Azure AI Video Indexer, Online JSON Viewer, Hide clapperboard info, wrong fields categories, Slate detection overview, movie post-production process, Empty fields’ values, fields detection algorithm, post-production clapperboards insights, indexing process, post-production checkmark, fields' categories, audio indexing, advanced setting, following table, clapper boards, digital digits, human eye, highest confidence, color bars, textless slate, post-production insights, following fields, popular fields, fields' values, View JSON, Juliako manager, clapperboard instance, time ranges, Handwritten text, digital patterns, slate metadata, Prod name, following example, JSON file, clapperboard` element, clapperboard ID, Clapperboard limitations, metadata description, clapperboard insight, clapperboard metadata, instances, title, topic, article, information, scene, date, wikipedia, customers, order, image, timeline, list, post-production-checkmark, content, media/slate-detection-process, camera, COD, FILTER, case, director, website, clapperboard-metadata, Download, thumbnail, head, tail, frame, part, color-bars
-        - name: Digital patterns with color bars
-          href: digital-patterns-color-bars.md
-          displayName: old Analog recordings, color bar type, Color Bar/Test card, color bar accuracy, movie post-production process, color bars instance, SMPTE color bars, Online JSON Viewer, specific digital patterns, Slate detection overview, digital pattern ID, color bars description, digital patterns insights, post-production clapperboards insights, indexing process, post-production checkmark, post-production insights, following types, Test cards, audio indexing, Advanced** presets, advanced setting, following table, time ranges, low quality, ending part, limited set, clapper board, textless slate, View JSON, slate metadata, confidence level, input video, framePatterns` element, friendly/display name, JSON file, title, topic, article, names, timeline, customers, order, image, advanced-setting, list, media, slate-detection-process, post-production-checkmark, instances, website, insights-color-bars, labels, Download, fields, patternType, ColorBars, TestCards, example, displayName, thumbnail, Limitations, mismatch, 10 min, beginning, scene
-        - name: Textless slate with scene matching
-          href: textless-slate-scene-matching.md
-          displayName: movie post-production process, post-production clapperboards insights, matching scene description, Slate detection overview, post-production insights, indexing process, textless slate, audio indexing, Advanced** presets, advanced setting, json file, clapper board, color bars, slate metadata, Juliako manager, digital patterns, title, topic, article, customers, order, image, advanced-setting, form, color-bars
     - name: Detect faces and identify people
       items:
       - name: Face redaction with API
