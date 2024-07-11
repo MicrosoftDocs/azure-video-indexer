@@ -68,7 +68,7 @@ ms.author: inhenkel
         ]
         },
 ``` 
-<!--
+
 ### [Components](#tab/labelscomponents) 
 
 During the Labels procedure, objects in a media file are processed, as follows:
@@ -79,7 +79,6 @@ During the Labels procedure, objects in a media file are processed, as follows:
 |Tagging|	Images are tagged and labeled. For example, door, chair, woman, headphones, jeans. |
 |Filtering and aggregation	|Tags are filtered according to their confidence level and aggregated according to their category.|
 |Confidence level|	The estimated confidence level of each label is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
--->
 
 ### [Transparency notes](#tab/labelstransnote)
 

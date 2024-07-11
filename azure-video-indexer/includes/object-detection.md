@@ -157,11 +157,10 @@ detectedObjects: [
 | start | the time that the object appears in the frame | 
 | end | the time that the object no longer appears in the frame |
 
-<!--
+
 ### [Components](#tab/objectdetectioncomponents)
 
 No components are defined for object detection.
--->
 
 ### [Transparency notes](#tab/objectdetectiontransnote)
 

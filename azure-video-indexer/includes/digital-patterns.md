@@ -51,11 +51,9 @@ You can use digital patterns detection for detecting color bars and test cards.
 |`thumbnailId`|The ID of the thumbnail.|
 |`instances`|A list of time ranges where this element appeared.|
 
-<!--
 ### [Components](#tab/patternscomponents)
 
 No components defined.
--->
 
 ### [Transparency notes](#tab/patternstransnote)
 

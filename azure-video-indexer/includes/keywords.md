@@ -69,7 +69,7 @@ ms.author: inhenkel
         ]
       }
 ```
-<!--
+
 ### [Components](#tab/keywordscomponents)
 
 During the Keywords procedure, audio and images in a media file are processed, as follows:
@@ -81,7 +81,6 @@ During the Keywords procedure, audio and images in a media file are processed, a
 |OCR of video	|Images in a media file are processed using the Azure AI Vision Read API to extract text, its location, and other insights.  |
 |Keywords extraction	|An extraction algorithm processes the transcribed audio. The results are then combined with the insights detected in the video during the OCR process. The keywords and where they appear in the media and then detected and identified. |
 |Confidence level|	The estimated confidence level of each keyword is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
--->
 
 ### [Transparency notes](#tab/keywordstransnote)
 

@@ -46,7 +46,7 @@ ms.author: inhenkel
     endSeconds: 97.1
     },
 ``` 
-<!--
+
 ### [Components](#tab/namedentitiescomponents) 
 
 During the named entities extraction procedure, the media file is processed, as follows:   
@@ -58,7 +58,6 @@ During the named entities extraction procedure, the media file is processed, as 
 | Analytics	|The insights are then sent to the Text Analytics API to extract the entities. For example, Microsoft, Paris or a person’s name like Paul or Sarah.
 | Processing and consolidation |	The results are then processed. Where applicable, Wikipedia links are added and brands are identified via the Video Indexer built-in and customizable branding lists.
 | Confidence value | The estimated confidence level of each named entity is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
--->
 
 ### [Transparency notes](#tab/namedentitiestransnote)
 

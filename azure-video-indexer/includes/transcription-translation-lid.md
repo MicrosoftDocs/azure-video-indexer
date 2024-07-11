@@ -75,7 +75,7 @@ When indexing media files with multiple speakers, Azure AI Video Indexer perform
           ]
         },
 ```
-<!--
+
 ### [Components](#tab/transcriptioncomponents)  
 
 During the transcription, translation and language identification procedure, speech in a media file is processed, as follows: 
@@ -86,7 +86,6 @@ During the transcription, translation and language identification procedure, spe
 |Transcription API|	The audio file is sent to Azure AI services to get the transcribed and translated output. If a language is specified, it's processed accordingly. If no language is specified, a LID or MLID process is run to identify the language after which the file is processed. |
 |Output unification	|The transcribed and translated files are unified into the same file. The outputted data includes the speaker ID of each extracted sentence together with its confidence level.|
 |Confidence value	|The estimated confidence level of each sentence is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.| 
--->
 
 ### [Transparency notes](#tab/transcriptiontransnote)
 

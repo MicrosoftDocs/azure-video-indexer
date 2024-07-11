@@ -45,7 +45,7 @@ ms.author: inhenkel
       }
 
 ```  
-<!--
+
 ### [Components](#tab/emotioncomponents) 
 
 During the emotions detection procedure, the transcript of the video is processed, as follows: 
@@ -56,7 +56,6 @@ During the emotions detection procedure, the transcript of the video is processe
 |Transcription API |The audio file is sent to Azure AI services and the translated transcribed output is returned. A language is processed if it's specified. |
 |Emotions detection  |Each sentence is sent to the emotions detection model. The model produces the confidence level of each emotion. If the confidence level exceeds a specific threshold, and there's no ambiguity between positive and negative emotions, the emotion is detected. In any other case, the sentence is labeled as neutral.|
 |Confidence level |The estimated confidence level of the detected emotions is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score. |
--->
 
 ### [Transparency notes](#tab/emotiontransnote)
 
