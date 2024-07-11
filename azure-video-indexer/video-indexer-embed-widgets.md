@@ -254,6 +254,4 @@ For more information, see our official [GitHub](https://github.com/Azure-Samples
 
 ## Related content
 
-For information about how to view and edit Azure AI Video Indexer insights, see [View and edit Azure AI Video Indexer insights](video-indexer-view-edit.md).
-
 Also, check out [Azure AI Video Indexer CodePen](https://codepen.io/videoindexer/pen/eGxebZ).

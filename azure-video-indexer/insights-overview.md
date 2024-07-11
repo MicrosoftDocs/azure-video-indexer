@@ -18,7 +18,7 @@ When a video is indexed, Azure AI Video Indexer analyzes the video and audio con
 
 | Insight | Description |
 | ------- | ----------- |
-| [Audio effects detection](audio-effects-detection-insight.md) | [!INCLUDE [Audio effects detection description](audio-effects-detection-description.md)] |
+| [Audio effects detection](audio-effects-detection-insight.md) | [!INCLUDE [Audio effects detection description](./includes/audio-effects-detection-description.md)] |
 | [Face detection](face-detection-insight.md) | [!INCLUDE [Face detection description](./includes/face-detection-description.md)] |
 | [Keywords extraction](keywords-insight.md) | [!INCLUDE [keywords-descritpion](./includes/keywords-description.md)] |
 | [Labels identification](labels-identification-insight.md) | [!INCLUDE [labels identification description](./includes/labels-identification-description.md)] |
