@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 ## Topics inference
 
-Topics inference creates inferred insights derived from the transcribed audio, OCR content in visual text, and celebrities recognized in the video using the Video Indexer facial recognition model. 
+[!INCLUDE [topics inference description](topics-inference-description.md)] 
 
 In the web portal, the extracted Topics and categories (when available) are listed in the Insights tab. To jump to the topic in the media file, click a Topic -> Play Previous or Play Next.
 

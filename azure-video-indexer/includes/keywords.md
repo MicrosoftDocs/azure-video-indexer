@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 ## Keywords extraction
 
-Keywords extraction detects insights on the different keywords discussed in media files. It extract insights in both single language and multi-language media files.
+[!INCLUDE [keywords-descritpion](keywords-description.md)]
 
 ### Keywords extraction use cases
 

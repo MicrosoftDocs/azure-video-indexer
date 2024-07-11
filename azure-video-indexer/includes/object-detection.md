@@ -8,11 +8,7 @@ ms.author: inhenkel
 
 ## Object detection
 
-Azure AI Video Indexer can detect objects in videos.
-
-<!-- insert objected detection use cases here.
-## Object detection use cases
--->
+[!INCLUDE [object detection description](object-detection-description.md)]
 
 ## Supported objects
 

@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 ## Optical character recognition (OCR)
 
-OCR extracts text from images like pictures, street signs and products in media files to create insights.
+[!INCLUDE [ocr description](ocr-description.md)]
 
 OCR extracts insights from printed and handwritten text in over 50 languages, including from an image with text in multiple languages. For more information, see [OCR supported languages](/azure/ai-services/computer-vision/language-support#optical-character-recognition-ocr).
 

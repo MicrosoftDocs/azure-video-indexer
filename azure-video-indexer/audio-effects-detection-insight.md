@@ -11,4 +11,4 @@ ms.author: inhenkel
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
-[!INCLUDE [Audio effects detection description](./includes/audio-effects-detection.md)]
+[!INCLUDE [Audio effects detection insight](./includes/audio-effects-detection.md)]

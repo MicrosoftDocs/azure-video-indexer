@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 ## Media transcription, translation, and language identification
 
-Transcription, translation, and language identification detects, transcribes, and translates the speech in media files into over 50 languages.
+[!INCLUDE [transcription description](transcription-translation-lid-description.md)]
 
 Azure AI Video Indexer (VI) processes the speech in the audio file to extract the transcription that is then translated into many languages. When selecting to translate into a specific language, both the transcription and the insights like keywords, topics, labels or OCR are translated into the specified language. Transcription can be used as is or be combined with speaker insights that map and assign the transcripts into speakers. Multiple speakers can be detected in an audio file. An ID is assigned to each speaker and is displayed under their transcribed speech.
 
