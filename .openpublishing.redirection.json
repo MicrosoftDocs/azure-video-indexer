@@ -314,6 +314,11 @@
             "source_path_from_root": "/azure-video-indexer/customize-speech-model-with-website.md",
             "redirect_url": "/azure/azure-video-indexer/customize-speech-model-how-to",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/customize-content-models-overview.md",
+            "redirect_url": "/azure/azure-video-indexer/customize-brands-model-how-to",
+            "redirect_document_id": false
         }
     ]
 }
