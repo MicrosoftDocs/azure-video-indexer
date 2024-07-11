@@ -1,14 +1,14 @@
 ---
-title: Azure AI Video Indexer labels identification overview
-description: This article describes the Azure AI Video Indexer labels identification detection insight.
+title: Get labels identification insights
+description: This article shows you how to get the Azure AI Video Indexer labels identification detection insights.
 ms.date: 06/06/2024
-ms.topic: article
+ms.topic: how-to
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: azure-video-indexer
 ---
 
-# Labels identification
+# Get labels identification insights
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
