@@ -164,6 +164,66 @@
             "source_path_from_root": "/azure-video-indexer/transcription-translation-lid.md",
             "redirect_url": "/azure/azure-video-indexer/transcription-translation-lid-overview",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/emotions-detection.md",
+            "redirect_url": "/azure/azure-video-indexer/emotions-detection-insight",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/face-detection.md",
+            "redirect_url": "/azure/azure-video-indexer/face-detection-insight",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/keywords.md",
+            "redirect_url": "/azure/azure-video-indexer/keywords-insight",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/named-entities.md",
+            "redirect_url": "/azure/azure-video-indexer/named-entities-insight",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/object-detection.md",
+            "redirect_url": "/azure/azure-video-indexer/object-detection-insight",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/observed-matched-people.md",
+            "redirect_url": "/azure/azure-video-indexer/observed-matched-people-insight",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/ocr.md",
+            "redirect_url": "/azure/azure-video-indexer/ocr-insight",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/digital-patterns-color-bars.md",
+            "redirect_url": "/azure/azure-video-indexer/digital-patterns-color-bars-insight",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/slate-detection-insight.md",
+            "redirect_url": "/azure/azure-video-indexer/clapper-board-insight",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/labels-identification.md",
+            "redirect_url": "/azure/azure-video-indexer/labels-identification-insight",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/topics-inference.md",
+            "redirect_url": "/azure/azure-video-indexer/topics-inference-insight",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/transcription-translation-lid.md",
+            "redirect_url": "/azure/azure-video-indexer/transcription-translation-lid-insight",
+            "redirect_document_id": false
         }
     ]
 }
