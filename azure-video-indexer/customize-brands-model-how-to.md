@@ -46,7 +46,7 @@ In the "Microsoft Build 2017 Day 2" presentation, the brand "Microsoft Windows" 
 
 Talking about Windows in the context of construction won't detect the word "Windows" as a brand, and same for Box, Apple, Fox, etc., based on advanced Machine Learning algorithms that know how to disambiguate from context. Brand Detection works for all our supported languages.
 
-### [Web portal](#tab/customizewebportal)
+## [Web portal](#tab/customizewebportal)
 
 ## Edit Brands model settings
 
@@ -116,7 +116,7 @@ The **Exclude brands** section represents the brands that you don't want Azure A
 1. Select the trash icon next to the brand that you want to delete.
 2. Select **Delete** and the brand will no longer appear in your *Exclude brands* list.
 
-### [API](#tab/customizeapi)
+## [API](#tab/customizeapi)
 
 ## Create a Brand
 
