@@ -7,4 +7,4 @@ ms.date: 07/09/2024
 ms.author: inhenkel
 ---
 
-Audio effects detection detects insights on acoustic events and classifies them into categories such as laughter, crowd reactions, alarms and/or sirens.
+Audio effects detection detects acoustic events and classifies them into categories such as laughter, crowd reactions, alarms and/or sirens.

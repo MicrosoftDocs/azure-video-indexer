@@ -242,7 +242,7 @@
         },
         {
             "source_path_from_root": "/azure-video-indexer/video-indexer-view-edit.md",
-            "redirect_url": "/azure/azure-video-indexer/get-insights-how-t.md",
+            "redirect_url": "/azure/azure-video-indexer/insights-overview.md",
             "redirect_document_id": false
         }
     ]

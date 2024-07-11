@@ -102,34 +102,34 @@ items:
     displayName: Azure AI Video Indexer API developer portal, external video content management, Azure AI Video Indexer description, Azure AI Video Indexer output, Azure AI Video Indexer website, optical character recognition, noise reduction algorithms, advanced video features, standard video analysis, basic audio features, advanced audio features, audio event detection, standard audio analysis, Supported file formats, Upload Video API, Azure Storage, short description, output captions, external ID, video files, two methods, Media Services, backup solution, Upload button, byte array, date info, VCM) system, indexing process, following values, DefaultWithNoiseReduction` value, audio files, audio stream, code sample, optional parameters, callback URL, existing parameters, original URL, default preset, people tracking, AI bundle, Operations&operation, =Operations, title, videos, uploading, topic, article, insights, list, codecs, media-encoder-standard-formats-reference, limits, 30 GB, size, 4 hours, length, metadata, persistence, videoindexer, image, Screenshot, progress, email, link, example, details, NOTE, apis, Configurations, section, externalID, integration, BasicAudio, transcription, translation, formatting, AdvancedAudio, addition, AdvancedVideo
   - name: Get insights
     items:
-    - name: Get audio effects detection insights
+    - name: Audio effects detection insights
       href: audio-effects-detection-insight.md
-    - name: Get faces detection insights
+    - name: Faces detection insights
       href: face-detection-insight.md
-    - name: Get OCR insights
+    - name: OCR insights
       href: ocr-insight.md
-    - name: Get keywords extraction insights
+    - name: Keywords extraction insights
       href: keywords-insight.md
-    - name: Get transcription, translation, language insights
+    - name: Transcription, translation, language insights
       href: transcription-translation-lid-insight.md
-    - name: Get labels identification insights
+    - name: Labels identification insights
       href: labels-identification-insight.md
-    - name: Get named entities insights
+    - name: Named entities insights
       href: named-entities-insight.md
-    - name: Get observed people tracking & matched faces insights
+    - name: Observed people tracking & matched faces insights
       href: observed-matched-people-insight.md
-    - name: Get topics inference insights
+    - name: Topics inference insights
       href: topics-inference-insight.md
-    - name: Get text-based emotion detection insights
+    - name: Text-based emotion detection insights
       href: emotions-detection-insight.md
-    - name: Get object detection insights
+    - name: Object detection insights
       href: object-detection-insight.md
     - name: Post-production insights
       items:
-      - name: Clapper board detection
+      - name: Clapper board detection insights
         href: clapper-board-insight.md
         displayName: Slate detection insights description, following slate detection insights, movie post-production process, advanced indexing option, Digital patterns detection, The Timeline tab, The Insight tab, indexing process, post-production insights, slate insight, audio indexing, Advanced** presets, advanced setting, slate metadata, post-production checkmark, clapper board, color bars, metadata extraction, scene matching, clapperboard instances, title, topic, article, video, customers, wikipedia, org, information, example, SMPTE_color_bars, order, image, media/slate-detection-process, advanced-setting, file, list, post-production-checkmark, details, color-bars
-      - name: Color bar detection
+      - name: Color bar detection insights
         href: digital-patterns-color-bars-insight.md
         displayName: Slate detection insights description, following slate detection insights, movie post-production process, advanced indexing option, Digital patterns detection, The Timeline tab, The Insight tab, indexing process, post-production insights, slate insight, audio indexing, Advanced** presets, advanced setting, slate metadata, post-production checkmark, clapper board, color bars, metadata extraction, scene matching, clapperboard instances, title, topic, article, video, customers, wikipedia, org, information, example, SMPTE_color_bars, order, image, media/slate-detection-process, advanced-setting, file, list, post-production-checkmark, details, color-bars
     - name: Detect features of videos
