@@ -563,7 +563,7 @@ Azure AI Video Indexer detects business and product brand names in the speech-to
 | `name` | The audio effect's type in the language in which the JSON was indexed. |
 | `instances` | A list of time ranges where this audio effect appeared. Each instance has a confidence field. |
 | `start` + `end` | The time range in the original video. |
-| `adjustedStart` + `adjustedEnd` | [Time range versus adjusted time range](concepts-overview.md#time-range-vs-adjusted-time-range). |
+| `adjustedStart` + `adjustedEnd` | Time range versus adjusted time range. |
 
 ```json
 audioEffects: [{

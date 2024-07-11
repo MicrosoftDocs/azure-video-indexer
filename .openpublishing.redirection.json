@@ -249,6 +249,11 @@
             "source_path_from_root": "/azure-video-indexer/audio-effects-detection.md",
             "redirect_url": "/azure/azure-video-indexer/audio-effects-detection-insight.md",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/concepts-overview.md",
+            "redirect_url": "/azure/azure-video-indexer/video-indexer-overview.md",
+            "redirect_document_id": false
         }
     ]
 }
