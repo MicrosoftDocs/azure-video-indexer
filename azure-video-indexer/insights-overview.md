@@ -19,17 +19,17 @@ When a video is indexed, Azure AI Video Indexer analyzes the video and audio con
 | Insight | Description |
 | ------- | ----------- |
 | [Audio effects detection](audio-effects-detection-insight.md) | [!INCLUDE [Audio effects detection description](audio-effects-detection-description.md)] |
-| [Face detection](face-detection-insight.md) | [!INCLUDE [Face detection description](face-detection-description.md)] |
-| [Keywords extraction](keywords-insight.md) | [!INCLUDE [keywords-descritpion](keywords-description.md)] |
-| [Labels identification]() | [!INCLUDE [labels identification description](labels-identification-description.md)] |
-| [Media transcription, translation, and language identification](transcription-translation-lid-insight.md) | [!INCLUDE [transcription description](transcription-translation-lid-description.md)] |
-| [Named entities](named-entities-insight.md) | [!INCLUDE [Named entities description](named-entities-description.md)] |
-| [Object detection](object-detection-insight.md)| [!INCLUDE [object detection description](object-detection-description.md)] |
-| [OCR](ocr-insight.md) | [!INCLUDE [ocr description](ocr-description.md)] |
-| [Post-production: clapper board detection](clapper-board-insight.md) | [!INCLUDE [clapper board description](clapperboard-description.md)] |
-| [Post-production: digital patterns](digital-patterns-color-bars-insight.md) | [!INCLUDE [digital patterns description](digital-patterns-description.md)] |
-| [Text-based emotion detection](emotions-detection-insight.md) | [!INCLUDE [Emotions detection description](emotions-detection-description.md)] |
-| [Topics inference](topics-inference-insight.md) | [!INCLUDE [topics inference description](topics-inference-description.md)] |
+| [Face detection](face-detection-insight.md) | [!INCLUDE [Face detection description](./includes/face-detection-description.md)] |
+| [Keywords extraction](keywords-insight.md) | [!INCLUDE [keywords-descritpion](./includes/keywords-description.md)] |
+| [Labels identification](labels-identification-insight.md) | [!INCLUDE [labels identification description](./includes/labels-identification-description.md)] |
+| [Media transcription, translation, and language identification](transcription-translation-lid-insight.md) | [!INCLUDE [transcription description](./includes/transcription-translation-lid-description.md)] |
+| [Named entities](named-entities-insight.md) | [!INCLUDE [Named entities description](./includes/named-entities-description.md)] |
+| [Object detection](object-detection-insight.md)| [!INCLUDE [object detection description](./includes/object-detection-description.md)] |
+| [OCR](ocr-insight.md) | [!INCLUDE [ocr description](./includes/ocr-description.md)] |
+| [Post-production: clapper board detection](clapper-board-insight.md) | [!INCLUDE [clapper board description](./includes/clapperboard-description.md)] |
+| [Post-production: digital patterns](digital-patterns-color-bars-insight.md) | [!INCLUDE [digital patterns description](./includes/digital-patterns-description.md)] |
+| [Text-based emotion detection](emotions-detection-insight.md) | [!INCLUDE [Emotions detection description](./includes/emotions-detection-description.md)] |
+| [Topics inference](topics-inference-insight.md) | [!INCLUDE [topics inference description](./includes/topics-inference-description.md)] |
 
 ## Insights JSON
 
