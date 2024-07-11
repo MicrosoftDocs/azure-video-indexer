@@ -1,14 +1,14 @@
 ---
-title:  Azure AI Video Indexer insights overview
-description: This article gives a brief overview of Azure AI Video Indexer insights.
-ms.topic: conceptual
+title:  Get Azure AI Video Indexer insights
+description: This article shows you how to get Azure AI Video Indexer insights.
+ms.topic: how-to
 ms.date: 07/09/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-# Azure AI Video Indexer insights
+# Get Azure AI Video Indexer insights
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
@@ -39,7 +39,7 @@ To get insights produced on the website or the Azure portal:
 
 When indexing with an API and the response status is OK, you get a detailed JSON output as the response content. When calling the [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index) API, we recommend passing `&includeSummarizedInsights=false`. 
 
-[!INCLUDE [insights](./includes/insights.md)]
+[!INCLUDE [insights](./includes/insights-recommendation-note.md)]
 
 This API returns a URL only with a link to the specific resource type you request. An additional GET request must be made to this URL for the specific artifact. The file types for each artifact type vary depending on the artifact.
 
