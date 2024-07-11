@@ -52,7 +52,7 @@ ms.author: inhenkel
       }
     ]
 ```
-
+<!--
 ### [Components](#tab/audioeffectscomponents)
 
 During the audio effects detection procedure, audio in a media file is processed, as follows:
@@ -63,6 +63,7 @@ During the audio effects detection procedure, audio in a media file is processed
 |Segmentation|  	The audio is analyzed, nonspeech audio is identified and then split into short overlapping internals. |
 |Classification| 	An AI process analyzes each segment and classifies its contents into event categories such as crowd reaction or laughter. A probability list is then created for each event category according to department-specific rules. |
 |Confidence level|	The estimated confidence level of each audio effect is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
+-->
 
 ### [Transparency notes](#tab/audioeffectstransnote)
 
