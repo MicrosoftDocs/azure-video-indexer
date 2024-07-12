@@ -1,6 +1,6 @@
 ---
-title: Customize a Brands model in Azure AI Video Indexer - Azure  
-description: This article gives an overview of what is a Brands model in Azure AI Video Indexer and how to customize it. 
+title: Customize a brands model in Azure AI Video Indexer
+description: This article shows you how to customize a brands model with Azure AI Video Indexer. 
 ms.topic: how-to
 ms.date: 03/22/2024
 ms.author: inhenkel
@@ -26,6 +26,11 @@ Customizing the brands model allows you to:
 
 > [!NOTE]
 > If your video was indexed prior to adding a brand, you need to reindex it. You will find **Re-index** item in the drop-down menu associated with the video. Select **Advanced options** -> **Brand categories** and check **All brands**.
+
+## Prerequisites
+
+- An Azure account
+- An Azure AI Video Indexer account
 
 ## [Web portal](#tab/customizewebportal)
 

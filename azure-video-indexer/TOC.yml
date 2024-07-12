@@ -175,6 +175,8 @@ items:
     - name: Customize person model
       href: customize-person-model-how-to.md
       displayName: multiple Person model support, multiple custom Person models, Azure AI Video Indexer website, top LinkedIn influencers, to 1 million people, multiple Person models, specific custom model, celebrity recognition feature, separate Person model, specific Person model, one million faces, Person model ID, default Person model, 50 Person models, Azure  description, Gate notice, data source, image files, different use-cases, different channels, new face, title, article, overview, conceptual, videos, IMDB, Wikipedia, Customers, name, account, example, content, NOTE, limit, API
+    - name: Speech model training best practices
+      href: speech-model-training-best-practices.md
     - name: Customize speech model
       href: customize-speech-model-how-to.md
       displayName: multiple model support, multiple custom Person models, Azure AI Video Indexer website, top LinkedIn influencers, to 1 million people, multiple Person models, specific custom model, celebrity recognition feature, separate Person model, specific Person model, one million faces, Person model ID, default Person model, 50 Person models, Azure  description, Gate notice, data source, image files, different use-cases, different channels, new face, title, article, overview, conceptual, videos, IMDB, Wikipedia, Customers, name, account, example, content, NOTE, limit, API

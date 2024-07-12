@@ -1,6 +1,6 @@
 ---
-title: Customize a Language model in Azure AI Video Indexer - Azure  
-description: This article gives an overview of what is a Language model in Azure AI Video Indexer and how to customize it.
+title: Customize a Language model in Azure AI Video Indexer
+description: This article shows you how to customize a language model in Azure AI Video Indexer.
 ms.topic: how-to
 ms.date: 07/11/2024
 ms.author: inhenkel
@@ -25,7 +25,7 @@ There are two ways to customize a language model:
 > Don't include the words or sentences as currently incorrectly transcribed (for example, *"communities"*) in the upload file as this will negate the intended impact. 
 > Only include the words as you would like them to appear (for example, *"Kubernetes"*).
 
-## Best practices for custom language models
+## Optimize your custom language model
 
 Azure AI Video Indexer learns based on probabilities of word combinations, so to learn best:
 
@@ -37,6 +37,11 @@ Azure AI Video Indexer learns based on probabilities of word combinations, so to
 * Avoid repetition of the exact same sentence multiple times. It may create bias against the rest of the input.
 * Avoid including uncommon symbols (~, # @ % &) as they'll get discarded. The sentences in which they appear will also get discarded.
 * Avoid putting too large inputs, such as hundreds of thousands of sentences, because doing so will dilute the effect of boosting.
+
+## Prerequisites
+
+- An Azure account
+- An Azure AI Video Indexer account
 
 ## [Web portal](#tab/customizewebportal)
 

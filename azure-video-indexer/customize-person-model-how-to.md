@@ -1,6 +1,6 @@
 ---
 title: Customize a Person model in Azure AI Video Indexer  
-description: This article gives an overview of what is a Person model in Azure AI Video Indexer and how to customize it. 
+description: This article shows you how to customize a a Person model in Azure AI Video Indexer. 
 ms.topic: how-to
 ms.date: 07/11/2024
 ms.author: inhenkel
@@ -24,6 +24,11 @@ You can create multiple person models per account. For example, if the content i
 You can use a person model when uploading/indexing or re-indexing a video by providing the person model ID. Training a new face for a video updates the associated custom model.
 
 If you don't need the multiple person model support, don't assign a person model ID to your video when uploading/indexing or re-indexing. Azure AI Video Indexer will use the default person model in your account.
+
+## Prerequisites
+
+- An Azure account
+- An Azure AI Video Indexer account
 
 ## [Web portal](#tab/customizewebportal)
 
