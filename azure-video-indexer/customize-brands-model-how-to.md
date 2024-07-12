@@ -8,7 +8,7 @@ author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-# Customize a Brands model in Azure AI Video Indexer
+# Customize a brands model in Azure AI Video Indexer
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
@@ -16,11 +16,11 @@ Azure AI Video Indexer supports brand detection from speech and visual text duri
 
 Brands are disambiguated from other terms using context. 
 
-The custom brands model that you create will only be available in the account in which you created the model.
+The custom brands model that you create are only available in the account in which you created the model.
 
 Customizing the brands model allows you to: 
 
-- Select whether or not Azure AI Video Indexer will detect brands from the Bing brands database
+- Select whether or not Azure AI Video Indexer detects brands from the Bing brands database
 - Exclude certain brands from being detected (essentially creating a list of unapproved brands)
 - Include brands that should be part of your model that might not be in Bing's brands database (approved brands).
 
@@ -29,9 +29,9 @@ Customizing the brands model allows you to:
 
 ## [Web portal](#tab/customizewebportal)
 
-## Edit Brands model settings
+## Edit brands model settings
 
-You have the option to set whether or not you want brands from the Bing brands database to be detected. To set this option, edit the settings of your brands model.
+You can set whether or not you want brands from the Bing brands database to be detected. To set this option, edit the settings of your brands model.
 
 1. Go to the [Azure AI Video Indexer](https://www.videoindexer.ai/) website and sign in.
 1. To customize a model in your account, select the **Content model customization** button on the left of the page.
@@ -48,7 +48,7 @@ The **Include brands** section represents custom brands that you want Azure AI V
 1. Provide a name (required), category (optional), description (optional), and reference URL (optional). 
   1. The category field is meant to help you tag your brands. This field shows up as the brand's *tags* when using the Azure AI Video Indexer APIs. For example, the brand "Azure" can be tagged or categorized as "Cloud". 
   1. The reference URL field can be any reference website for the brand (like a link to its Wikipedia page).
-1. Select **Save** and you'll see that the brand has been added to the **Include brands** list.
+1. Select **Save**. The brand is added to the **Include brands** list.
 
 ### Edit a brand on the include list
 
@@ -60,7 +60,7 @@ You can update the category, description, or reference URL of a brand. You can't
 ### Delete a brand on the include list
 
 1. Select the trash icon next to the brand that you want to delete.
-1. Select **Delete** and the brand will no longer appear in your *Include brands* list.
+1. Select **Delete**. The brand is no longer in your *Include brands* list.
 
 ## Exclude brands from the model
 
@@ -70,7 +70,7 @@ The **Exclude brands** section represents the brands that you don't want Azure A
 
 1. Select **+ Create new brand.**
 1. Provide a name (required), category (optional).
-1. Select **Save** and you'll see that the brand has been added to the *Exclude brands* list.
+1. Select **Save**. The brand is added to the *Exclude brands* list.
 
 ### Edit a brand on the exclude list
 
@@ -82,7 +82,7 @@ You can only update the category of a brand. You can't change the name of a bran
 ### Delete a brand on the exclude list
 
 1. Select the trash icon next to the brand that you want to delete.
-1. Select **Delete** and the brand will no longer appear in your *Exclude brands* list.
+1. Select **Delete**. The longer appears in your *Exclude brands* list.
 
 ## [API](#tab/customizeapi)
 
@@ -92,7 +92,7 @@ You can only update the category of a brand. You can't change the name of a bran
 
 ## Create a Brand
 
-The [Create a brand](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Brand) API creates a new custom brand and adds it to the custom brands model for the specified account.
+The [Create a brand](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Brand) request creates a new custom brand and adds it to the custom brands model for the specified account.
 
 Some other parameters that you can set in the body:
 
@@ -100,8 +100,6 @@ Some other parameters that you can set in the body:
 * The `tags` value is a list of tags for the brand. This tag shows up in the brand's *Category* field in the Azure AI Video Indexer website. For example, the brand "Azure" can be tagged or categorized as "Cloud".
 
 ### Example response
-
-The response provides information on the brand that you just created following the format of the example below.
 
 ```json
 {
@@ -123,7 +121,7 @@ The response provides information on the brand that you just created following t
 
 ## Delete a Brand
 
-The [delete a brand](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Brand) API removes a brand from the custom Brands model for the specified account. The account is specified in the `accountId` parameter. Once called successfully, the brand will no longer be in the *Include* or *Exclude* brands lists.
+The [delete a brand](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Brand) request removes a brand from the custom Brands model for the specified account. The account is specified in the `accountId` parameter. The brand is no longer in the *Include* or *Exclude* brands lists.
 
 ### Example response
 
@@ -131,11 +129,9 @@ There's no returned content when the brand is deleted successfully.
 
 ## Get a specific Brand
 
-The [get a brand](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Brand) API lets you search for the details of a brand in the custom brands model for the specified account using the brand ID.
+The [get a brand](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Brand) request lets you search for the details of a brand in the custom brands model for the specified account using the brand ID.
 
 ### Example response
-
-The response provides information on the brand that you searched (using brand ID) following the format of the example below.
 
 ```json
 {
@@ -157,11 +153,9 @@ The response provides information on the brand that you searched (using brand ID
 
 ## Update a specific brand
 
-The [update a brand](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Brand) API lets you search for the details of a brand in the custom Brands model for the specified account using the brand ID.
+The [update a brand](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Brand) request lets you search for the details of a brand in the custom Brands model for the specified account using the brand ID.
 
 ### Example response
-
-The response provides the updated information on the brand that you updated following the format of the example below.
 
 ```json
 {
@@ -183,11 +177,9 @@ The response provides the updated information on the brand that you updated foll
 
 ## Get all of the Brands
 
-The [get all brands](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Brands) API returns all of the brands in the custom Brands model for the specified account regardless of whether the brand is meant to be in the *Include* or *Exclude* brands list.
+The [get all brands](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Brands) request returns all of the brands in the custom brands, included and excluded, for the account.
 
 ### Example response
-
-The response provides a list of all of the brands in your account and each of their details following the format of the example below.
 
 ```json
 [
@@ -220,11 +212,9 @@ The response provides a list of all of the brands in your account and each of th
 
 ## Get Brands model settings
 
-The [get brands settings](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Brands) API returns the Brands model settings in the specified account. The Brands model settings represent whether detection from the Bing brands database is enabled or not. If Bing brands aren't enabled, Azure AI Video Indexer will only detect brands from the custom Brands model of the specified account.
+The [Get brands settings](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Brands) request returns the Brands model settings in the specified account. The Brands model settings represent whether detection from the Bing brands database is enabled or not. If Bing brands aren't enabled, Azure AI Video Indexer only detects brands from the custom Brands model of the specified account.
 
 ### Example response
-
-The response shows whether Bing brands are enabled following the format of the example below.
 
 ```json
 {
@@ -233,12 +223,9 @@ The response shows whether Bing brands are enabled following the format of the e
 }
 ```
 
-> [!NOTE]
-> `useBuiltIn` being set to true represents that Bing brands are enabled. If `useBuiltin` is false, Bing brands are disabled. The `state` value can be ignored because it has been deprecated.
-
 ## Update Brands model settings
 
-The [update brands](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Brands-Model-Settings) API updates the Brands model settings in the specified account. The Brands model settings represent whether detection from the Bing brands database is enabled or not. If Bing brands aren't enabled, Azure AI Video Indexer will only detect brands from the custom Brands model of the specified account.
+The [update brands](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Brands-Model-Settings) request updates the Brands model settings in the specified account. The Brands model settings represent whether detection from the Bing brands database is enabled or not. If Bing brands aren't enabled, Azure AI Video Indexer only detects brands from the custom Brands model.
 
 The `useBuiltIn` flag set to true means that Bing brands are enabled. If `useBuiltin` is false, Bing brands are disabled.
 
