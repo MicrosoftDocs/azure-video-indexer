@@ -272,7 +272,7 @@ During the upload process, you can select the source language of the video. In t
 Select the Upload option in the bottom of the page, and your new video will be indexed using your Language model. The same steps apply when you want to re-index a video with a custom model. 
 
 
-## [Web portal](#tab/customizeapi)
+## [API](#tab/customizeapi)
 
 [!INCLUDE [speech model](./includes/speech-model-note.md)]
 

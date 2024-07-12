@@ -291,7 +291,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "/azure-video-indexer/customize-langauge-model-with-website.md",
+            "source_path_from_root": "/azure-video-indexer/customize-language-model-with-website.md",
             "redirect_url": "/azure/azure-video-indexer/customize-language-model-how-to",
             "redirect_document_id": false
         },
