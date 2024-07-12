@@ -1,6 +1,6 @@
 ---
-title: Customize a speech model in Azure AI Video Indexer  
-description: This article gives an overview of what is a speech model in Azure AI Video Indexer. 
+title: Speech model training best practices  
+description: This article discusses the best ways to train a custom speech model for Azure AI Video Indexer. 
 ms.topic: conceptual
 ms.date: 07/11/2024
 ms.author: inhenkel
@@ -8,7 +8,7 @@ author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-# Customize a speech model
+# Speech model training best practices
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
 
@@ -20,7 +20,7 @@ However, sometimes the base model’s transcription doesn't accurately handle so
 
 ## When to use a customized speech model?  
 
-If your content contains industry specific terminology or when reviewing Video Indexer transcription results you notice inaccuracies, you can create and train a custom speech model to recognize the terms and improve the transcription quality. It may only be worthwhile to create a custom model if the relevant words and names are expected to appear repeatedly in the content you plan to index. Training a model is sometimes an iterative process and you might find that after the initial training, results could still use improvement and would benefit from additional training, see [How to Improve your custom model](#how-to-improve-your-custom-models) section for guidance.  
+If your content contains industry specific terminology or when reviewing Video Indexer transcription results you notice inaccuracies, you can create and train a custom speech model to recognize the terms and improve the transcription quality. It may only be worthwhile to create a custom model if the relevant words and names are expected to appear repeatedly in the content you plan to index. Training a model is sometimes an iterative process and you might find that after the initial training, results could still use improvement and would benefit from additional training, see [Improve your custom model](#improve-your-custom-models) section for guidance.  
 
 However, if you notice a few words or names transcribed incorrectly in the transcript, a custom speech model might not be needed, especially if the words or names aren’t expected to be commonly used in content you plan on indexing in the future. You can just edit and correct the transcript in the Video Indexer website (see [View and update transcriptions in Azure AI Video Indexer website](edit-transcript-lines-portal.md)) and don’t have to address it through a custom speech model.  
 
@@ -114,7 +114,7 @@ Refer to the following table to ensure that your pronunciation dataset files are
 |Number of pronunciations per line |1 |
 |Maximum file size |1 MB (1 KB for free tier) |
 
-## How to improve your custom models  
+## Improve your custom models  
 
 Training a pronunciation model can be an iterative process, as you might gain more knowledge on the pronunciation of the subject after initial training and evaluation of your model’s results. Since existing models can't be edited or modified, training a model iteratively requires the creation and uploading of datasets with additional information as well as training new custom models based on the new datasets. You would then reindex the media files with the new custom speech model. 
 

@@ -2,7 +2,7 @@
 title: What is Azure AI Video Indexer?
 description: This article gives an overview of the Azure AI Video Indexer service.
 ms.topic: overview
-ms.date: 03/22/2024
+ms.date: 07/11/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -74,7 +74,7 @@ Unless specified otherwise, a model is generally available.
 * **Closed captioning**: Creates closed captioning in three formats: VTT, TTML, SRT.
 * **Two channel processing**: Auto detects separate transcript and merges to single timeline.
 * **Noise reduction**: Clears up telephony audio or noisy recordings (based on Skype filters).
-* **Transcript customization** (CRIS): Trains custom speech to text models to create industry-specific transcripts. For more information, see [Customize a Language model from the Azure AI Video Indexer website](customize-language-model-with-website.md) and [Customize a Language model with the Azure AI Video Indexer APIs](customize-language-model-with-api.md).
+* **Transcript customization** (CRIS): Trains custom speech to text models to create industry-specific transcripts. For more information, see [Customize a Language model](customize-language-model-how-to.md).
 * **Speaker enumeration**: Maps and understands which speaker spoke which words and when. Sixteen speakers can be detected in a single audio-file.
 * **Speaker statistics**: Provides statistics for speakers' speech ratios.
 * **Textual content moderation**: Detects explicit text in the audio transcript.
