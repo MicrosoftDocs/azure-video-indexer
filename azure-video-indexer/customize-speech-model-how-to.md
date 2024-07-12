@@ -379,7 +379,7 @@ The [Get Speech Models](https://api-portal.videoindexer.ai/api-details#api=Ope
 
 ## Delete speech dataset 
 
-The [Delete Speech Dataset](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Speech-Dataset) API deletes the specified dataset. Any model that was trained with the deleted dataset continues to be available until the model is deleted. You cannot delete a dataset while it is in use for indexing or training.
+The [Delete Speech Dataset](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Speech-Dataset) API deletes the specified dataset. Any model that was trained with the deleted dataset continues to be available until the model is deleted. You can't delete a dataset while it is in use for indexing or training.
 
 ### Example response 
 
@@ -387,7 +387,7 @@ There's no returned content when the dataset is deleted successfully.
 
 ## Delete a speech model 
 
-The [Delete Speech Model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Speech-Model) API deletes the specified speech model. You cannot delete a model while it is in use for indexing or training. 
+The [Delete Speech Model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Speech-Model) API deletes the specified speech model. You can't delete a model while it is in use for indexing or training. 
 
 ### Response 
 
