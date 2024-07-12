@@ -158,7 +158,7 @@ As all custom models must contain a dataset, we'll start with the process of how
 1. Select either Plain text or Pronunciation from the Dataset type dropdown menu. Every speech model must have a plain text dataset and can optionally have a pronunciation dataset. To learn more about each type, see Customize a speech model with Azure AI Video Indexer. 
 1. Select Browse which will open the File Explorer. You can only use one file in each dataset. Choose the relevant text file. 
 1. Select a Language for the model. Choose the language that is spoken in the media files you plan on indexing with this model. 
-1. The Dataset name is pre-populated with the name of the file but you can modify the name. 
+1. The Dataset name is prepopulated with the name of the file but you can modify the name. 
 1. You can optionally add a description of the dataset. This could be helpful to distinguish each dataset if you expect to have multiple datasets. 
 
     > [!div class="mx-imgBorder"]
