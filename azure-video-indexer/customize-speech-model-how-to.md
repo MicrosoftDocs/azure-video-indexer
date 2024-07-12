@@ -48,7 +48,7 @@ You can view a dataset and its properties by:
 
 Then, select **View Dataset**.  
 
-You can then view the name, description, language and status of the dataset plus the following properties: 
+You can then view the name, description, language, and status of the dataset plus the following properties: 
 
 **Number of lines**: indicates the number of lines successfully loaded out of the total number of lines in the file. If the entire file is loaded successfully the numbers will match (for example, 10 of 10 normalized). If the numbers don't match (for example, 7 of 10 normalized), this means that only some of the lines successfully loaded and the rest had errors. Common causes of errors are formatting issues with a line, such as not spacing a tab between each word in a pronunciation file. Reviewing the plain text and pronunciation data for training articles should be helpful in finding the issue. To troubleshoot the cause, review the error details, which are contained in the report. Select **View report** to view the error details regarding the lines that didn't load successfully (errorKind). This can also be viewed by selecting the **Report** tab.
 
@@ -56,14 +56,14 @@ You can then view the name, description, language and status of the dataset plus
 
 **Plain text (normalized)**: This contains the normalized text of the loaded dataset file. Normalized text is the recognized text in plain form without formatting. 
 
-**Edit Details**: To edit a dataset's name or description, when hovering over the dataset, click on the ellipsis and then select Edit details. You're then able to edit the dataset name and description. 
+**Edit Details**: To edit a dataset's name or description, when hovering over the dataset, select on the ellipsis and then select Edit details. You're then able to edit the dataset name and description. 
 
 > [!Note]
 > The data in a dataset can't be edited or updated once the dataset has been uploaded. If you need to edit or update the data in a dataset, download the dataset, perform the edits, save the file, and upload the new dataset file. 
 
-**Download**: To download a dataset file, when hovering over the dataset, click on the ellipsis and then select Download. Alternatively, when viewing the dataset, you can select Download and then have the option of downloading the dataset file or the upload report in JSON form. 
+**Download**: To download a dataset file, when hovering over the dataset, select on the ellipsis and then select Download. Alternatively, when viewing the dataset, you can select Download and then have the option of downloading the dataset file or the upload report in JSON form. 
 
-**Delete**: To delete a dataset, when hovering over the dataset, click on the ellipsis and then select Delete.  
+**Delete**: To delete a dataset, when hovering over the dataset, select on the ellipsis and then select Delete.  
 
 ## Create a custom speech model 
 
@@ -74,7 +74,7 @@ Keep in mind the following when creating and using custom speech models:
 * A new model must include at least one plain text dataset and can have multiple plain text datasets.  
 * It's optional to include a pronunciation dataset and no more than one can be included.   
 * Once a model is created, you can't add additional datasets to it or perform any modifications to its datasets. If you need to add or modify datasets, create a new model. 
-* If you have indexed a video using a custom speech model and then delete the model, the transcript is not impacted unless you perform a re-index.  
+* If you have indexed a video using a custom speech model and then delete the model, the transcript isn't impacted unless you perform a reindex.  
 * If you deleted a dataset that was used to train a custom model, as the speech model was already trained by the dataset, it continues to use it until the speech model is deleted. 
 * If you delete a custom model, it has no impact of the transcription of videos that were already indexed using the model. 
 
@@ -110,20 +110,20 @@ There are two ways to train a model – through the dataset tab and through the 
 
 **View Model**: You can view a model and its properties by either clicking on the model’s name or when hovering over the model, clicking on the ellipsis and then selecting View Model.
     
-You'll then see in the Details tab the name, description, language and status of the model plus the following properties: 
+You'll then see in the Details tab the name, description, language, and status of the model plus the following properties: 
 
 **Model ID**: Each model has a unique GUID, which is needed when using the API for operations that reference the model. 
 
 **Created on**: The date the model was created. 
 
-**Edit Details**: To edit a model’s name or description, when hovering over the model, click on the ellipsis and then select Edit details. You're then able to edit the model’s name and description.
+**Edit Details**: To edit a model’s name or description, when hovering over the model, select on the ellipsis and then select Edit details. You're then able to edit the model’s name and description.
 
 > [!Note] 
 > Only the model’s name and description can be edited. If you want to make any changes to its datasets or add datasets, a new model must be created. 
 
-**Delete**: To delete a model, when hovering over the dataset, click on the ellipsis and then select Delete.  
+**Delete**: To delete a model, when hovering over the dataset, select on the ellipsis and then select Delete.  
 
-**Included datasets**: Click on the Included datasets tab to view the model’s datasets.
+**Included datasets**: Select on the Included datasets tab to view the model’s datasets.
 
 ## Use a custom language model when indexing a video 
 
@@ -132,7 +132,7 @@ A custom language model isn't used by default for indexing jobs, so must be sele
 1. During the upload process, select your custom language model source from the **language** drop-down menu. 
 1. Select **Upload**. 
 
-The same steps apply when you want to re-index a video with a custom model.
+The same steps apply when you want to reindex a video with a custom model.
 
 ## [API](#tab/customizeapi)
 
@@ -194,7 +194,7 @@ Define the parameters in the request body, including a URL to the text file to b
 
 The [Create Speech Model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Speech-Model) request creates and trains a custom speech model that can be used to improve the transcription accuracy of your videos. It must contain at least one plain text dataset. It can optionally have pronunciation datasets. Create it with all of the relevant dataset files as a model’s datasets can't be added or updated after its creation.
 
-Define the parameters in the request body, including a list of strings that the dataset or datasets for the model to include. The description and custom properties fiels are optional. The following is a sample of a request body:
+Define the parameters in the request body, including a list of strings that the dataset or datasets for the model to include. The description and custom properties fields are optional. This is a sample of a request body:
 
 ```json
 {
