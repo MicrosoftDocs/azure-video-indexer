@@ -19,11 +19,11 @@ Azure AI Video Indexer lets you create custom speech models to customize speech 
 For a detailed overview and best practices for custom speech models, see [Customize a speech model with Azure AI Video Indexer](customize-speech-model-overview.md).
 
 ## Prerequisites
-- Read the [Speech model training best practices guide](speech-model-training-best-practices-guide.md).
+- Read the [Speech model training best practices guide](speech-model-training-best-practices.md).
 - An Azure account
 - An Azure AI Video Indexer account
 
-## [Web portal](#tab/customizeapi) 
+## [Web portal](#tab/customizewebportal) 
 
 ## Create a dataset 
 
