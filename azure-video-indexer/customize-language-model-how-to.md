@@ -74,11 +74,11 @@ To use your language model on a new video, do one of the following actions:
 1. Select the **Video source language** drop-down and select a language model that you created from the list.
 1. Select the **Re-index** button and your video will be reindexed using your language model.
 
-## Edit a Language model
+## Edit a language model
 
 You can edit a language model by changing its name, adding files to it, and deleting files from it. If you add or delete files from the language model, you'll have to train the model again by selecting the green **Train** option.
 
-### Rename the Language model
+### Rename the language model
 
 You can change the name of the language model by selecting the ellipsis (**...**) button on the right side of the language model and selecting **Rename**. Enter the the new name.
 
@@ -253,7 +253,7 @@ To upload files to be added to the language model, you must upload files in the 
 
 Use the `id` of the files returned in the response to download the contents of the file.
 
-## Update a file from a Language model
+## Update a file from a language model
 
 The [Update Language Model File](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Language-Model-file) request allows you to update the name and `enable` state of a file in a custom Language model in the specified account.
 
@@ -271,7 +271,7 @@ The [Update Language Model File](https://api-portal.videoindexer.ai/api-details#
 
 Use the `id` of the file returned in the response to download the contents of the file.
 
-## Get a specific Language model
+## Get a specific language model
 
 The [Get Language Model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Language-Model) request returns information on the specified language model in the specified account such as language and the files that are in the language model.
 
@@ -347,7 +347,7 @@ The [Get Language Models](https://api-portal.videoindexer.ai/api-details#api=Ope
 ]
 ```
 
-## Delete a file from a Language model
+## Delete a file from a language model
 
 The [Delete Language Model File](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Language-Model-File) request deletes the specified file from the specified Language model in the specified account.
 
