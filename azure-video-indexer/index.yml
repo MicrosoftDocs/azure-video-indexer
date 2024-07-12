@@ -81,9 +81,9 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Customize a brands model 
-            url: customize-brands-model-with-website.md
+            url: customize-brands-model-how-to.md
           - text: Customize a language model
-            url: customize-language-model-with-website.md
+            url: customize-language-model-how-to.md
           - text: Customize a person model
-            url: customize-person-model-with-website.md
+            url: customize-person-model-how-to.md
 

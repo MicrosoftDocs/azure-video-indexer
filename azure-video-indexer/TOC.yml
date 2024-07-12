@@ -55,23 +55,6 @@ items:
   - name: Insights
     displayName: optical character recognition elements, Azure AI Video Indexer account, Azure AI Video Indexer OCR, Azure AI Video Indexer insights, specific predefined text, Detect textual logo, timestamped transcript lines, Textual logo detection, Audio effects detection, insights output file, detailed JSON output, 30+ AI models, Azure portal, account types, audio content, audio cues, video insights, entire video, rich insights, aggregated view, time ranges, common insights, frame(s, representative frames, aesthetic properties, easier consumption, Faces detection, different appearances, Microsoft" logo, sentimentType` field, single audio-file, other insights, Insights tab, right-top corner, response status, response content, Operations&operation, JSON content, insight type, one insight, brief overview, Named entities, Sixteen speakers, Topics inference, title, description, article, data, transcripts, OCRs, emotions, details, example, instances, information, audio-effects-detection-transparency-note, Scenes, shots, keyframes, contrast, stableness, navigation, speech, azure-video-indexer, face-detection-transparency, user, word, Labels, entities-transparency, People, ocr-transparency-note, Sentiments, Transcription, translation, language, features, website, videoindexer, Screenshot, indexer-output, Press, artifacts, API
     href: insights-overview.md
-  - name: Customization
-    displayName: customize, customizing
-    items:
-    - name: Customize content models overview
-      href: customize-content-models-overview.md
-      displayName: Azure AI Video Indexer website, Azure AI Video Indexer API, content models, customization
-    - name: Customize brands model overview
-      href: customize-brands-model-overview.md
-      displayName: advanced Machine Learning algorithms, Azure AI Video Indexer brand detection, Azure AI Video Indexer account, custom Brands model feature, social media analysis, retail compete analysis, brand detection feature, box detection example, Bing brands database, Azure  description, visual text, other terms, wide variety, business scenarios, contextual advertising, Day 2" presentation, high precision,  unapproved brands, 90k brands, audio content, Microsoft Build, brand mentions, Windows logo, Brands overview, Microsoft Windows, title, article, speech, indexing, products, services, companies, contents, archive, discovery, customization, list, part, transcript, verbatim, construction, word, Apple, Fox, languages, topics, APIs, website
-    - name: Customize speech model overview
-      href: customize-speech-model-overview.md
-    - name: Customize language model overview
-      href: customize-language-model-overview.md
-      displayName: Azure AI Video Indexer languages, Microsoft [Custom Speech Service, Azure AI Video Indexer APIs, automatic speech recognition, custom Language models, enough real examples, new probable sequences, several adaptation options, Video Indexer transcript, exact same sentence, Azure Kubernetes service, text file(s, specialized Language model, Azure  description, container service, many examples, adaptation text, upload file, default pronunciation, other cases, 2-word sequence, specific set, latter approach, intended impact, Best practices, one sentence, full sentence, uncommon symbols, large inputs, new words, improved results,  word combinations, one word, relevant words, sentences, title, article, overview, integration, cognitive-services, domain, vocabulary, engine, list, langues, context, communities, 2 ways, future, paragraphs, content, website, topics, section, probabilities, line, system, others, acronyms, usage, repetition, bias, rest, hundreds, thousands, effect
-    - name: Customize person model overview
-      href: customize-person-model-overview.md
-      displayName: multiple Person model support, multiple custom Person models, Azure AI Video Indexer website, top LinkedIn influencers, to 1 million people, multiple Person models, specific custom model, celebrity recognition feature, separate Person model, specific Person model, one million faces, Person model ID, default Person model, 50 Person models, Azure  description, Gate notice, data source, image files, different use-cases, different channels, new face, title, article, overview, conceptual, videos, IMDB, Wikipedia, Customers, name, account, example, content, NOTE, limit, API
   - name: VI with generative AI
     href: generative_ai_with_vi.md
     items:
@@ -182,46 +165,23 @@ items:
     href: video-indexer-embed-widgets.md
     displayName: following optional URL parameters, Azure AI Video Indexer widgets, The Cognitive Insights widget, A Cognitive Insights widget, A language code array, widget base URL, adaptive bit rate, video indexing process, A Boolean value, short language code, The Player widget, initial search term, audio player skin, bounding boxes options, West US region, video part, Widget types, widget loading, Available options, default value, widget name,three types, time point, location value, default selected, player language, insights language, location parameter, visual insights, download button, ascending order, descending order, language name, UI insights, search option, apps description, title, js, article, version, account, example, videoindexer, Definition, Strings, comma, people, keywords, audioEffects, labels, sentiments, emotions, topics, keyframes, transcript, ocr, speakers, scenes, controls, presets, tab, videoId, sorting, 3 values, property, spokenLanguage, startTime, endTime, links, preview, trial, Seconds, captions, autoplay, faces, 01
   - name: Customize content models
-    displayName: customizing
     items:
-    - name: Person
-      displayName: customizing, person
-      items:
-      - name: Customize person model with the website
-        href: customize-person-model-with-website.md
-        displayName: Azure AI Video Indexer website, standard image file types, content model customization button, The Default Person model, top LinkedIn influencers, Add model** button, list menu button, celebrity recognition feature, one million faces, other Person models, custom Person model, particular Person model, new Person model, video content, default model, file explorer, check button, new model, contextual menu, Gate notice, data source, detailed overview, Central management, batch process, new face, new name, new people, future videos, current videos, existing videos, same name, face images, current name, People tab, multiple people, existing people, unique names, title,  topic, article, IMDB, Wikipedia, person-model, API, account, left, page, content-model-customization, insights, indexing, face-model, right, media, new-person, peron, NOTE, usability, clarity, pop-up, details, JPG, PNG, time, effect, action, files, contents, arrow, options, Screenshot
-      - name: Customize person model with the API
-        href: customize-person-model-with-api.md
-        displayName: Azure AI Video Indexer API description, Azure AI Video Indexer website, Azure AI Video Indexer APIs, multiple Person model support, default custom Person model, top LinkedIn influencers, different use-case scenarios, specific custom model, multiple Person models, Customize Person model, separate Person model, specific Person model, celebrity recognition feature, new Person model, default Person model, one million faces, Person model ID, Example Person Model, 50 Person models, default model, Gate notice, data source, personModelId parameter, new face, future videos, past videos, current videos, id value, video content, face detection, Operations&operation, title, johndeu, topic, article, date, IMDB, Wikipedia, results, name, account, sports, football, basketball, soccer, limit, api-portal, videoindexer, details, Person-Model, response, format, json, list, IDs, Test, Re-Index-Video, command, action
-      - name: Use global face grouping
-        href: face-grouping-how-to.md
-    - name: Brands
-      displayName: customizing
-      items:
-      - name: Customize brands with the website
-        href: customize-brands-model-with-website.md
-        displayName: Content model customization dialog box, Azure AI Video Indexer website description, Azure AI Video Indexer APIs, custom Brands models, brand detection feature, reference URL field, Bing brands database, Brands model settings, reference website, audio content, visual text, drop-down menu, Advanced options, pencil icon, next section, new information, trash icon, Brands tab, accept list, detailed overview, Wikipedia page, new name, Brand categories, new brand, entire brand, category field, brands** list, brands* list, exclude list, Bing** option, brand name, title, johndeu, topic, article, speech, indexing, mentions, products, services, companies, example, Microsoft, blocklist, part, brands-model, NOTE, steps, videoindexer, account, left, image, content-model-customization, media, brand-model, Screenshot, Cloud, link, names
-      - name: Customize brands with the API
-        href: customize-brands-model-with-api.md
-        displayName: advanced Machine Learning algorithms, Azure AI Video Indexer brand detection, Azure AI Video Indexer account, custom Brands model feature, social media analysis, retail compete analysis, brand detection feature, box detection example, Bing brands database, Azure  description, visual text, other terms, wide variety, business scenarios, contextual advertising, Day 2" presentation, high precision, unapproved brands, 90k brands, audio content, Microsoft Build, brand mentions, Windows logo, Brands overview, speech, indexing
-    - name: Speech
-      displayName: customizing
-      items:
-      - name: Customize speech model with the website
-        href: customize-speech-model-with-website.md
-        displayName: Azure AI Video Indexer website, speech recognition
-      - name: Customize speech model with the API
-        href: customize-speech-model-with-api.md
-        displayName: Azure AI Video Indexer API, speech recognition
-    - name: Language
-      displayName: customizing
-      items:
-      - name: Customize language model with the website
-        href: customize-language-model-with-website.md
-        displayName: Azure AI Video Indexer website, speech recognition
-      - name: Customize language model with the API
-        href: customize-language-model-with-api.md
-        displayName: Azure AI Video Indexer API, speech recognition
+    - name: Customize brands model
+      href: customize-brands-model-how-to.md
+      displayName: advanced Machine Learning algorithms, Azure AI Video Indexer brand detection, Azure AI Video Indexer account, custom Brands model feature, social media analysis, retail compete analysis, brand detection feature, box detection example, Bing brands database, Azure  description, visual text, other terms, wide variety, business scenarios, contextual advertising, Day 2" presentation, high precision,  unapproved brands, 90k brands, audio content, Microsoft Build, brand mentions, Windows logo, Brands overview, Microsoft Windows, title, article, speech, indexing, products, services, companies, contents, archive, discovery, customization, list, part, transcript, verbatim, construction, word, Apple, Fox, languages, topics, APIs, website
+    - name: Customize language model
+      href: customize-language-model-how-to.md
+      displayName: multiple model support, multiple custom Person models, Azure AI Video Indexer website, top LinkedIn influencers, to 1 million people, multiple Person models, specific custom model, celebrity recognition feature, separate Person model, specific Person model, one million faces, Person model ID, default Person model, 50 Person models, Azure  description, Gate notice, data source, image files, different use-cases, different channels, new face, title, article, overview, conceptual, videos, IMDB, Wikipedia, Customers, name, account, example, content, NOTE, limit, API
+    - name: Customize person model
+      href: customize-person-model-how-to.md
+      displayName: multiple Person model support, multiple custom Person models, Azure AI Video Indexer website, top LinkedIn influencers, to 1 million people, multiple Person models, specific custom model, celebrity recognition feature, separate Person model, specific Person model, one million faces, Person model ID, default Person model, 50 Person models, Azure  description, Gate notice, data source, image files, different use-cases, different channels, new face, title, article, overview, conceptual, videos, IMDB, Wikipedia, Customers, name, account, example, content, NOTE, limit, API
+    - name: Customize speech model
+      href: customize-speech-model-how-to.md
+      displayName: multiple model support, multiple custom Person models, Azure AI Video Indexer website, top LinkedIn influencers, to 1 million people, multiple Person models, specific custom model, celebrity recognition feature, separate Person model, specific Person model, one million faces, Person model ID, default Person model, 50 Person models, Azure  description, Gate notice, data source, image files, different use-cases, different channels, new face, title, article, overview, conceptual, videos, IMDB, Wikipedia, Customers, name, account, example, content, NOTE, limit, API
+    - name: Speech model training best practices
+      href: speech-model-training-best-practices.md
+    - name: Use global face grouping
+      href: face-grouping-how-to.md     
   - name: Use LLM and other models
     items:
     - name: Summarize text
