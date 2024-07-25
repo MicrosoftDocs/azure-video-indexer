@@ -2,7 +2,7 @@
 title: Use Azure AI Video Indexer to create prompt content 
 description: This article shows you how to use Azure AI Video Indexer to create prompt content. 
 ms.topic: how-to
-ms.date: 06/19/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Use Azure AI Video Indexer to create prompt content
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 This article shows you how to Use Azure AI Video Indexer to create prompt content.
 

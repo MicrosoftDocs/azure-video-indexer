@@ -2,7 +2,7 @@
 title: Logic Apps connector with ARM-based VI accounts
 description: This article shows how to unlock new experiences and monetization opportunities Azure AI Video Indexer connectors with Logic App and Power Automate with VI ARM accounts.
 ms.topic: how-to
-ms.date: 06/10/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Logic Apps connector with ARM-based VI accounts
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 Azure AI Video Indexer (VI) [REST API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) supports both server-to-server and client-to-server communication. The API enables you to integrate video and audio insights into your application logic.
 

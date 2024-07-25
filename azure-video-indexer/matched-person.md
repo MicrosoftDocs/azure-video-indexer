@@ -2,7 +2,7 @@
 title: Enable the matched person insight
 description: The topic explains how to use a match observed people feature. These are people that are detected in the video with the corresponding faces ("People" insight).
 ms.topic: how-to
-ms.date: 03/22/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Enable the matched person insight
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 [!INCLUDE [Gate notice](./includes/face-limited-access.md)]
 

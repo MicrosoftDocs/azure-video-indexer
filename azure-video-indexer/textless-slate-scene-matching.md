@@ -2,7 +2,7 @@
 title: Enable and view a textless slate with matching scene
 description: Learn about how to enable and view a textless slate with matching scene.
 ms.topic: article
-ms.date: 03/22/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Enable and view a textless slate with matching scene
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 This article shows how to enable and view  a textless slate with matching scene (preview).
 

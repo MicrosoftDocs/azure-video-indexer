@@ -2,7 +2,7 @@
 title: Indexing configuration guide
 description: This article explains the configuration options of indexing process with Azure AI Video Indexer.
 ms.topic: conceptual
-ms.date: 07/09/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # The indexing configuration guide
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 It's important to understand the configuration options to index efficiently while ensuring you meet your indexing objectives. When indexing videos, users can use the default settings or adjust many of the settings. Azure AI Video Indexer allows you to choose between a range of language, indexing, custom models, and streaming settings that have implications on the insights generated, cost, and performance.  
 

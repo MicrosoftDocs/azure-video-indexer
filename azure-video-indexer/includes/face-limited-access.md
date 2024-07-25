@@ -5,7 +5,7 @@ services: azure-video-indexer
 manager: femila
 ms.service: azure-video-indexer
 ms.topic: include 
-ms.date: 06/14/2022
+ms.date: 07/25/2024
 ms.author: inhenkel
 ---
 
