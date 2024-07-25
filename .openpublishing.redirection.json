@@ -334,6 +334,11 @@
             "source_path_from_root": "/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets.md",
             "redirect_url": "/azure/azure-video-indexer/retirement/update-your-azure-video-indexer-account-and-migrate-assets",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/ams-deprecation-faq.yml",
+            "redirect_url": "/azure/azure-video-indexer/retirement/ams-deprecation-faq.yml",
+            "redirect_document_id": false
         }
     ]
 }

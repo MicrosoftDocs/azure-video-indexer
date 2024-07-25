@@ -189,7 +189,7 @@ Video Indexer has increased the API request limit from 60 requests per minute to
 
 ### FAQ - following the Azure Media Services retirement announcement 
 
-For more information, see [AMS deprecation FAQ](ams-deprecation-faq.yml).
+For more information, see [AMS deprecation FAQ](./retirement/ams-deprecation-faq.yml).
 
 ## May 2023
 
