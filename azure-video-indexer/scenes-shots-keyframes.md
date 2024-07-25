@@ -2,7 +2,7 @@
 title: Azure AI Video Indexer scenes, shots, and keyframes 
 description: This topic gives an overview of the Azure AI Video Indexer scenes, shots, and keyframes.
 ms.topic: how-to
-ms.date: 03/22/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer

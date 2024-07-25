@@ -3,7 +3,7 @@ title: How to enable network security
 description: This article gives an overview of the Azure AI Video Indexer  network security options.
 ms.topic: article
 ms.custom: devx-track-azurecli
-ms.date: 03/22/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer

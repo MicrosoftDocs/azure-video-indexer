@@ -2,7 +2,7 @@
 title: Generative AI with Azure AI Video Indexer
 description: This article discusses the use of generative AI with Azure AI Video Indexer.
 ms.topic: how-to
-ms.date: 06/18/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer

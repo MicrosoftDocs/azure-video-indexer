@@ -2,7 +2,7 @@
 title: Track observed people in a video
 description: This topic gives an overview of Track observed people in a video concept.
 ms.topic: how-to
-ms.date: 03/22/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer

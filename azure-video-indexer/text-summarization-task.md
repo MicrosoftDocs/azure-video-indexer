@@ -2,7 +2,7 @@
 title: Use Azure OpenAI text summarization
 description: This article shows you how to use Azure OpenAI text summarization with Azure AI Video Indexer. 
 ms.topic: how-to
-ms.date: 05/15/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer

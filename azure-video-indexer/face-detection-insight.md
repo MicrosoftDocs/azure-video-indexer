@@ -1,7 +1,7 @@
 ---
 title: Get face detection insights
 description: This article shows you how to get the Azure AI Video Indexer face detection insights.
-ms.date: 06/06/2024
+ms.date: 07/25/2024
 ms.topic: how-to
 ms.author: inhenkel
 author: IngridAtMicrosoft

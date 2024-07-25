@@ -2,7 +2,7 @@
 title: Things to consider when using Azure AI Video Indexer at scale - Azure
 description: This topic explains what things to consider when using Azure AI Video Indexer at scale.
 ms.topic: how-to
-ms.date: 03/22/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer

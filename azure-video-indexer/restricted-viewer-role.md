@@ -2,7 +2,7 @@
 title: Manage access to an Azure AI Video Indexer account
 description: This article talks about Video Indexer restricted viewer built-in role. This role is an account level permission, which allows users to grant restricted access to a specific user or security group. 
 ms.topic: how-to
-ms.date: 03/06/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer

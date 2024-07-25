@@ -1,7 +1,7 @@
 ---
 title: Use the Azure AI Video Indexer API
 description: This article describes how to get started with Azure AI Video Indexer API and a trial account.
-ms.date: 04/04/2024
+ms.date: 07/25/2024
 ms.topic: quickstart
 author: IngridAtMicrosoft
 ms.author: inhenkel

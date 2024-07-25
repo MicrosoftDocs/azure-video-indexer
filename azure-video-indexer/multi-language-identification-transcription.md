@@ -2,7 +2,7 @@
 title: Automatically identify and transcribe multi-language content with Azure AI Video Indexer
 description: This article demonstrates how to automatically identify and transcribe multi-language content with Azure AI Video Indexer.
 ms.topic: article
-ms.date: 10/30/2023
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer

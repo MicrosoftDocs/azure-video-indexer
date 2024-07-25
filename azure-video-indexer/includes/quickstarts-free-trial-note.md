@@ -6,7 +6,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: azure-video-indexer
 ms.topic: include 
-ms.date: 10/10/2022
+ms.date: 07/25/2024
 ---
 
 <!-- original metadata copied during repo migration
@@ -14,7 +14,7 @@ ms.date: 10/10/2022
 author: SyntaxC4
 ms.service: cloud-services
 ms.topic: include
-ms.date: 01/18/2022
+ms.date: 07/25/2024
 ms.author: cfowler
 ---
 -->

@@ -2,7 +2,7 @@
 title: Indexing configuration guide
 description: This article explains the configuration options of indexing process with Azure AI Video Indexer.
 ms.topic: conceptual
-ms.date: 07/09/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer

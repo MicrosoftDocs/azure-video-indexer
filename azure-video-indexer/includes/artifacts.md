@@ -2,7 +2,7 @@
 author: inhenkel
 ms.topic: include 
 ms.service: azure-video-indexer
-ms.date: 06/02/2022
+ms.date: 07/25/2024
 ms.author: inhenkel
 ---
 
