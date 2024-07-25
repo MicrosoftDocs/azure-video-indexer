@@ -1,5 +1,5 @@
 ---
-title: What is Azure AI Video Indexer enabled by Arc? (Preview)  
+title: What is Azure AI Video Indexer enabled by Arc?  
 description: Azure AI Video Indexer enabled by Arc an Azure Arc extension enabled service that runs video and audio analysis on edge devices. It's a hybrid video indexing solution that enables customers to index their video content anywhere it resides, on the cloud, the edge or multicloud.
 ms.topic: overview
 ms.service: azure-video-indexer
@@ -8,7 +8,7 @@ ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
-# What is Azure AI Video Indexer enabled by Arc? (Preview)
+# What is Azure AI Video Indexer enabled by Arc?
 
 [!INCLUDE [AMS VI retirement announcement](../includes/important-ams-retirement-avi-announcement.md)]
 
@@ -51,7 +51,7 @@ The Phi 3 language model is included and automatically connected with your VI ex
 
 - [Use textual summarization](../text-summarization-task.md)
 - [Use Azure AI Video Indexer to create prompt content](../prompt-task.md)
-- [Azure AI Video Indexer Bring Your Own (BYO) AI Model (Preview) overview](../azure-video-indexer-bring-your-own-model-overview.md)
+- [Azure AI Video Indexer Bring Your Own (BYO) AI model overview](../bring-your-own-model-overview.md)
 
 See also the [transparancy note for textual summarization with Vi enabled by Arc](/legal/azure-video-indexer/transparency-note?context=%2Fazure%2Fazure-video-indexer%2Fcontext%2Fcontext#textual-summarization-on-an-edge-device) for hardware requirements, limitations, and known issues.
 

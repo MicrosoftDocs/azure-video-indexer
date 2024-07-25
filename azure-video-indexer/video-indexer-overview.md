@@ -52,19 +52,19 @@ Unless specified otherwise, a model is generally available.
 * **Keyframe extraction**: Detects stable keyframes in a video.
 * **Rolling credits**: Identifies the beginning and end of the rolling credits in the end of TV shows and movies.
 * **Editorial shot type detection**: Tags shots based on their type (like wide shot, medium shot, close up, extreme close up, two shot, multiple people, outdoor and indoor, and so on). For more information, see [Editorial shot type detection](scenes-shots-keyframes.md#editorial-shot-type-detection).
-* **Observed people tracking** (preview): Detects observed people in videos and provides information such as the location of the person in the video frame (using bounding boxes) and the exact timestamp (start, end) and confidence when a person appears. For more information, see [Trace observed people in a video](observed-people-tracking.md).
-    * **People's detected clothing** (preview): Detects the clothing types of people appearing in the video and provides information such as long or short sleeves, long or short pants and skirt or dress. The detected clothing is associated with the people wearing it and the exact timestamp (start, end) along with a confidence level for the detection are provided. For more information, see [detected clothing](detected-clothing.md).
-    * **Featured clothing** (preview): Captures featured clothing images appearing in a video. You can improve your targeted ads by using the featured clothing insight. For information on how the featured clothing images are ranked and how to get the insights, see [featured clothing](observed-people-featured-clothing.md).
-* **Matched person** (preview): Matches people that were observed in the video with the corresponding faces detected. The matching between the observed people and the faces contain a confidence level.
+* **Observed people tracking**: Detects observed people in videos and provides information such as the location of the person in the video frame (using bounding boxes) and the exact timestamp (start, end) and confidence when a person appears. For more information, see [Trace observed people in a video](observed-people-tracking.md).
+    * **People's detected clothing**: Detects the clothing types of people appearing in the video and provides information such as long or short sleeves, long or short pants and skirt or dress. The detected clothing is associated with the people wearing it and the exact timestamp (start, end) along with a confidence level for the detection are provided. For more information, see [detected clothing](detected-clothing.md).
+    * **Featured clothing**: Captures featured clothing images appearing in a video. You can improve your targeted ads by using the featured clothing insight. For information on how the featured clothing images are ranked and how to get the insights, see [featured clothing](observed-people-featured-clothing.md).
+* **Matched person**: Matches people that were observed in the video with the corresponding faces detected. The matching between the observed people and the faces contain a confidence level.
 * **Object detection** Detects unique objects that are also tracked so that if they return to the frame they are recognized. See [Azure AI Video Indexer object detection](object-detection.md)
-* **Slate detection** (preview): Identifies the following movie post-production insights when indexing a video using the advanced indexing option:
+* **Slate detection**: Identifies the following movie post-production insights when indexing a video using the advanced indexing option:
     
     * Clapperboard detection with metadata extraction.
     * Digital patterns detection, including color bars.
     * Textless slate detection, including scene matching.
 
     For details, see [Slate detection](slate-detection-insight.md).
-* **Textual logo detection** (preview): Matches a specific predefined text using Azure AI Video Indexer OCR. For example, if a user created a textual logo: "Microsoft", different appearances of the word *Microsoft* will be detected as the "Microsoft" logo. For more information, see [Detect textual logo](detect-textual-logo.md).
+* **Textual logo detection**: Matches a specific predefined text using Azure AI Video Indexer OCR. For example, if a user created a textual logo: "Microsoft", different appearances of the word *Microsoft* will be detected as the "Microsoft" logo. For more information, see [Detect textual logo](detect-textual-logo.md).
 
 ### Audio models
 
@@ -80,7 +80,7 @@ Unless specified otherwise, a model is generally available.
 * **Textual content moderation**: Detects explicit text in the audio transcript.
 * **Text-based emotion detection**: Emotions such as joy, sadness, anger, and fear that were detected via transcript analysis.
 * **Translation**: Creates translations of the audio transcript to many different languages. For more information, see [Azure AI Video Indexer language support](language-support.md).
-* **Audio effects detection** (preview): Detects the following audio effects in the non-speech segments of the content: alarm or siren, dog barking, crowd reactions (cheering, clapping, and booing), gunshot or explosion, laughter, breaking glass, and silence.
+* **Audio effects detection**: Detects the following audio effects in the non-speech segments of the content: alarm or siren, dog barking, crowd reactions (cheering, clapping, and booing), gunshot or explosion, laughter, breaking glass, and silence.
 
     The detected acoustic events are in the closed captions file. The file can be downloaded from the Azure AI Video Indexer website. For more information, see [Audio effects detection](audio-effects-detection.md).
 
