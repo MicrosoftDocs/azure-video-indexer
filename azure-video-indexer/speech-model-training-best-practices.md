@@ -2,7 +2,7 @@
 title: Speech model training best practices  
 description: This article discusses the best ways to train a custom speech model for Azure AI Video Indexer. 
 ms.topic: conceptual
-ms.date: 07/11/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Speech model training best practices
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 [!INCLUDE [speech model](./includes/speech-model-note.md)]
 

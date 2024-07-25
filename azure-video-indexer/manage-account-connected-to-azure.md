@@ -2,7 +2,7 @@
 title: Repair the connection to Azure, check errors/warnings
 description: Learn how to manage an Azure AI Video Indexer account connected to Azure repair the connection, examine errors/warnings.
 ms.topic: how-to
-ms.date: 02/05/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Repair the connection to Azure, examine errors/warnings
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 This article demonstrates how to manage an Azure AI Video Indexer account that's connected to your Azure subscription and an Azure Media Services account.
 

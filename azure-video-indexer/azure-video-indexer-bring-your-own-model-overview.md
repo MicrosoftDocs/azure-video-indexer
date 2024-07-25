@@ -3,14 +3,14 @@ title: Azure AI Video Indexer Bring Your Own AI model (Preview) overview
 description: This article is an overview of Azure AI Video Indexer enabled by Arc bring your own model.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 06/18/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
 # Azure AI Video Indexer Bring Your Own (BYO) AI Model (Preview) overview
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 This article is an overview of Azure AI Video Indexer bring your own AI model.
 

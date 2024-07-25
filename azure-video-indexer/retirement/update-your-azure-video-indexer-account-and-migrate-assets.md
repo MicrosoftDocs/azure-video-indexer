@@ -3,14 +3,14 @@ title: Update your Azure AI Video Indexer account and migrate assets
 description: Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS. As described in the update and migration guide azure-video-indexer-retirement-guide.md, your Azure AI Video Indexer account needs to be updated. During the update, you'll have the opportunity to opt in to having the VI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
 ms.topic: conceptual
 ms.service: azure-video-indexer
-ms.date: 06/20/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
 
 # Update your Azure AI Video Indexer account and migrate assets
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](../includes/important-ams-retirement-avi-announcement.md)]
 
 Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS.
 
@@ -107,7 +107,7 @@ If the AMS linked storage account is behind a firewall, VI needs to be assigned 
 
 ### [Connect a classic account in the Azure portal](#tab/connectclassicportal)
 
-[!INCLUDE [migrate-important](includes/migrate-important.md)]
+[!INCLUDE [migrate-important](../includes/migrate-important.md)]
 
 1.  In the Azure portal, select **+ Create a resource.**
 1.  Search for and select *Azure AI Video Indexer.* The Create a Video Indexer resource page appears.

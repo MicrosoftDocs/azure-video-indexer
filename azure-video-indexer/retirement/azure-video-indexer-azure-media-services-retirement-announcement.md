@@ -2,7 +2,7 @@
 title: Azure AI Video Indexer (VI) changes related to Azure Media Service (AMS) retirement  
 description: This article explains the upcoming changes to Azure AI Video Indexer (VI) related to the retirement of Azure Media Services (AMS).
 ms.topic: conceptual
-ms.date: 06/10/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Changes related to Azure Media Service (AMS) retirement
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](../includes/important-ams-retirement-avi-announcement.md)]
 
 This article explains the upcoming changes to Azure AI Video Indexer (VI) resulting from the [retirement of Azure Media Services (AMS)](/azure/media-services/latest/azure-media-services-retirement).
 
@@ -53,13 +53,13 @@ See [Azure AI Video Indexer account types](/azure/azure-video-indexer/accounts-o
 
 To continue using the account beyond June 30, 2024, classic accounts will have to go through two steps:
 
-1. Connect the account as an ARM-based account. You can connect the accounts already. See [Azure AI Video Indexer accounts](accounts-overview.md) for instructions.
+1. Connect the account as an ARM-based account. You can connect the accounts already. See [Azure AI Video Indexer accounts](../accounts-overview.md) for instructions.
 1. Make the required changes to the VI account to remove the AMS dependency. If this isn’t done, you won't be able to access the account or use it beyond June 30, 2024.
 
 ### Existing trial accounts
 
 - As of February 15, 2024 Video Indexer trial accounts will continue to work as usual. However, when using them through the APIs, customers must use the updated APIs.
-- VI supports [importing content](import-content-from-trial.md) from a trial VI account to a paid VI account. This import option will be supported only until **February 15th, 2024**.
+- VI supports [importing content](../import-content-from-trial.md) from a trial VI account to a paid VI account. This import option will be supported only until **February 15th, 2024**.
 
 ## API changes
 
@@ -94,4 +94,4 @@ As of July 1, 2024, VI won’t use AMS for encoding or streaming. As a result, i
 - Encoding with adaptive bitrate will no longer be supported. Only single bitrate will be supported for new indexing jobs. Videos already encoded with adaptive bitrate will be playable in the VI player.
 - Video Indexer [dynamic encryption](/azure/media-services/latest/drm-content-protection-concept) of media files will no longer be supported.
 - Media files created by non-AMS dependent accounts won’t be playable by the [Azure Media Player](https://azure.microsoft.com/products/media-services/media-player).
-- Using a Cognitive Insights widget and playing the content with the Azure Media Player outlined [here](video-indexer-embed-widgets.md) will no longer be supported.
+- Using a Cognitive Insights widget and playing the content with the Azure Media Player outlined [here](../video-indexer-embed-widgets.md) will no longer be supported.

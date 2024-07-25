@@ -3,7 +3,7 @@ title:  Deploy Azure AI Video Indexer by using Bicep
 description: Learn how to create an Azure AI Video Indexer account by using a Bicep file.
 ms.topic: quickstart
 ms.custom: devx-track-bicep
-ms.date: 06/10/2024
+ms.date: 07/25/2024
 ms.author: jgao
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -11,7 +11,7 @@ ms.service: azure-video-indexer
 
 # Quickstart: Deploy Azure AI Video Indexer (VI) by using Bicep
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 Using this quickstart, you can create an Azure AI Video Indexer (VI) account by using [Bicep](/azure/azure-resource-manager/bicep/overview).
 

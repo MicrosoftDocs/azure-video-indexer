@@ -3,7 +3,7 @@ title: How to enable network security
 description: This article gives an overview of the Azure AI Video Indexer  network security options.
 ms.topic: article
 ms.custom: devx-track-azurecli
-ms.date: 03/22/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -11,7 +11,7 @@ ms.service: azure-video-indexer
 
 # NSG service tags for Azure AI Video Indexer
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 Azure AI Video Indexer is a service hosted on Azure. In some cases, the service must interact with other services to index video files (for example, a Storage account) or when you orchestrate indexing jobs against Azure AI Video Indexer API endpoint using your own service hosted on Azure (for example, AKS, Web Apps, Logic Apps, Functions).
 

@@ -3,7 +3,7 @@ title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
 ms.topic: article
 ms.custom: references_regions
-ms.date: 06/26/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -189,7 +189,7 @@ Video Indexer has increased the API request limit from 60 requests per minute to
 
 ### FAQ - following the Azure Media Services retirement announcement 
 
-For more information, see [AMS deprecation FAQ](ams-deprecation-faq.yml).
+For more information, see [AMS deprecation FAQ](./retirement/ams-deprecation-faq.yml).
 
 ## May 2023
 

@@ -2,7 +2,7 @@
 title: Named entities
 ms.service: azure-video-indexer
 ms.topic: include
-ms.date: 07/09/2024
+ms.date: 07/25/2024
 ms.author: inhenkel
 ---
 

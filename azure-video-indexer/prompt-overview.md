@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Azure AI Video Indexer with LLM prompts
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 ## Overview
 
