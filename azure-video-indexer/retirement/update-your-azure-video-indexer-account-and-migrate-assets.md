@@ -107,7 +107,7 @@ If the AMS linked storage account is behind a firewall, VI needs to be assigned 
 
 ### [Connect a classic account in the Azure portal](#tab/connectclassicportal)
 
-[!INCLUDE [migrate-important](includes/migrate-important.md)]
+[!INCLUDE [migrate-important](../includes/migrate-important.md)]
 
 1.  In the Azure portal, select **+ Create a resource.**
 1.  Search for and select *Azure AI Video Indexer.* The Create a Video Indexer resource page appears.

@@ -10,14 +10,14 @@ items:
   - name: What is Azure AI Video Indexer enabled by Arc?
     href: ./arc/azure-video-indexer-enabled-by-arc-overview.md
     displayName: Azure Arc, Kubernetes, extension
-  - name: Changes related to Azure Media Service (AMS) retirement
-    href: azure-video-indexer-azure-media-services-retirement-announcement.md
   - name: VI migration and updating guide
     items:
     - name: VI migration guide
       href: azure-video-indexer-ams-retirement-guide.md
     - name: Update your VI account
       href: update-your-azure-video-indexer-account-and-migrate-assets.md
+    - name: Changes related to Azure Media Service (AMS) retirement
+    href: azure-video-indexer-azure-media-services-retirement-announcement.md
 - name: Responsible use of AI
   items:
   - name: Limited access features
