@@ -22,8 +22,8 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 ## July 2024
 
-### Textual summarization on edge extension
-The textual summarization capability is now available on edge extension using the latest Phi 3 model. You can benefit from the same functionality as in the cloud, including customizing of the summary with several settings: Formal, Casual, Short and Long.
+### Textual summarization on VI enable by Arc
+The textual summarization capability is now available on the VI enabled by Arc extension using the latest Phi 3 model. You can benefit from the same functionality as in the cloud, including customizing of the summary with several settings: Formal, Casual, Short and Long.
 
 
 ## June 2024
@@ -101,7 +101,7 @@ You can now connect your video insights to Large Language Model (LLMs) for tasks
 
 ### New preset option - Basic Video
 
-Video Indexer has added a new indexing preset option, Basic Video. It's available when indexing in the cloud, or the edge with Video Indexers Azure Arc extension. It is a low-cost indexing option that includes many useful AI insights, including OCR, object detection, and visual labels. Basic Video can be used to generate insights together with Basic Audio (Basic Audio and Video) or on its own (Basic Video only). To learn more about your indexing options, see the [Indexing configuration guide](indexing-configuration-guide.md#indexing-options).
+Video Indexer has added a new indexing preset option, Basic Video. It's also available on the VI enabled by Arc extension. It is a low-cost indexing option that includes many useful AI insights, including OCR, object detection, and visual labels. Basic Video can be used to generate insights together with Basic Audio (Basic Audio and Video) or on its own (Basic Video only). To learn more about your indexing options, see the [Indexing configuration guide](indexing-configuration-guide.md#indexing-options).
 
 ### Get Frames API
 
