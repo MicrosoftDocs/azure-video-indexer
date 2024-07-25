@@ -17,7 +17,7 @@ Clapper board detection is most commonly used for post-production editing of vis
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
-### [Example responses](#tab/clapperboardresponse)
+## Example responses
 
 This response shows all of the data that come from detecting clapper boards. If you would like to learn more about how clapper boards are used in media production, check out the [video from Studio Binder](https://www.youtube.com/watch?v=Heg6kDxXZ8k) that was indexed for this example.
 
@@ -1587,11 +1587,11 @@ This response shows all of the data that come from detecting clapper boards. If 
 |`fields`|The fields found in the clapper board; also each field's name and value.|
 |`instances`|A list of time ranges where this element appeared.|
 
-### [Components](#tab/clapperboardcomponents)
+## Components
 
 No components are defined.
 
-### [Transparency notes](#tab/clappertransnote)
+## Transparency notes
 
 - The values might not be correctly identified by the detection algorithm.
 - The titles of the fields appearing on the clapper board are optimized to identify the most popular fields appearing on top of clapper boards.  
@@ -1600,8 +1600,6 @@ No components are defined.
 - The clapper board might not be detected if the frame is blurred or that the text written on it can't be read by the human eye.  
 - Empty fields’ values might lead to wrong fields categories.
 
-### [Sample code](#tab/clappersamplecode)
+## Sample code
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
-
----

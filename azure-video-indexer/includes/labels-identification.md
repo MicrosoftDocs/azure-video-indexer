@@ -20,7 +20,7 @@ ms.author: inhenkel
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
-### [Example response](#tab/labelsresponse)
+## Example response
 
 ```json
     "labels": [
@@ -69,7 +69,7 @@ ms.author: inhenkel
         },
 ``` 
 
-### [Components](#tab/labelscomponents) 
+## Components 
 
 During the Labels procedure, objects in a media file are processed, as follows:
 
@@ -80,7 +80,7 @@ During the Labels procedure, objects in a media file are processed, as follows:
 |Filtering and aggregation	|Tags are filtered according to their confidence level and aggregated according to their category.|
 |Confidence level|	The estimated confidence level of each label is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
 
-### [Transparency notes](#tab/labelstransnote)
+## Transparency notes
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
@@ -88,8 +88,6 @@ During the Labels procedure, objects in a media file are processed, as follows:
 - Carefully consider when using for law enforcement that Labels potentially can't detect parts of the video. To ensure fair and high-quality decisions, combine Labels with human oversight. 
 - Don't use labels identification for decisions that might have serious adverse impacts. Machine learning models can result in undetected or incorrect classification output. Decisions based on incorrect output could have serious adverse impacts. Additionally, it's advisable to include human review of decisions that have the potential for serious impacts on individuals. 
 
-### [Sample code](#tab/labelssamplecode)
+## Sample code
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
-
----

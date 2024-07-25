@@ -27,7 +27,7 @@ For more information about OCR, see [OCR technology](/azure/ai-services/comput
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
-### [Example response](#tab/ocrresponse)
+## Example response
 
 ```json
     "ocr": [
@@ -77,7 +77,7 @@ For more information about OCR, see [OCR technology](/azure/ai-services/comput
         }
 ``` 
 
-### [Components](#tab/ocrcomponents) 
+## Components 
 
 During the OCR procedure, text images in a media file are processed, as follows:  
 
@@ -88,7 +88,7 @@ During the OCR procedure, text images in a media file are processed, as follows:
 |Get read results model	|The output of the extracted text is displayed in a JSON file.|
 |Confidence value|	The estimated confidence level of each word is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty will be represented as an 0.82 score.|
 
-### [Transparency notes](#tab/ocrtransnote)
+## Transparency notes
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
@@ -98,8 +98,6 @@ During the OCR procedure, text images in a media file are processed, as follows:
 - When extracting handwritten text, avoid using the OCR results of signatures that are hard to read for both humans and machines. A better way to use OCR is to use it for detecting the presence of a signature for further analysis. 
 - Don't use OCR for decisions that may have serious adverse impacts. Machine learning models that extract text can result in undetected or incorrect text output. Decisions based on incorrect output could have serious adverse impacts. Additionally, it's advisable to include human review of decisions that have the potential for serious impacts on individuals. 
 
-### [Sample code](#tab/ocrsamplecode)
+## Sample code
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
-
----

@@ -93,7 +93,7 @@ ms.author: inhenkel
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
-### [Example response](#tab/objectdetectionresponse) 
+## Example response 
 
 Detected and tracked objects appear under "detected Objects" in the downloaded *insights.json* file. Every time a unique object is detected, it's given an ID. That object is also tracked, meaning that the model watches for the detected object to return to the frame. If it does, another instance is added to the instances for the object with different start and end times.
 
@@ -158,11 +158,11 @@ detectedObjects: [
 | end | the time that the object no longer appears in the frame |
 
 
-### [Components](#tab/objectdetectioncomponents)
+## Components
 
 No components are defined for object detection.
 
-### [Transparency notes](#tab/objectdetectiontransnote)
+## Transparency notes
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
@@ -174,8 +174,6 @@ No components are defined for object detection.
 - Azure AI Video Indexer supports only real world objects. There's no support for animation or CGI. Computer generated graphics (such as news-stickers) might produce strange results.
 - Binders, brochures, and other written materials tend to be detected as "book."
 
-### [Sample code](#tab/objectdetectionsamplecode)
+## Sample code
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
-
----

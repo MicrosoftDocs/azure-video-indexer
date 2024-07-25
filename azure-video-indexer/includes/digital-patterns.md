@@ -17,7 +17,7 @@ Digital patterns detection is most commonly used for color correction during pos
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
-### [Example responses](#tab/patternsresponse)
+## Example responses
 
 You can use digital patterns detection for detecting color bars and test cards.
 
@@ -51,19 +51,17 @@ You can use digital patterns detection for detecting color bars and test cards.
 |`thumbnailId`|The ID of the thumbnail.|
 |`instances`|A list of time ranges where this element appeared.|
 
-### [Components](#tab/patternscomponents)
+## Components
 
 No components defined.
 
-### [Transparency notes](#tab/patternstransnote)
+## Transparency notes
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
 - There can be a mismatch if the input video is of low quality (for example – old Analog recordings). 
 - The digital patterns will be identified over the 10 min of the beginning and 10 min of the ending part of the video.
 
-### [Sample code](#tab/patternssamplecode)
+## Sample code
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
-
----

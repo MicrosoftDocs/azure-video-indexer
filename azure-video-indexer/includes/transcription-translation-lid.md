@@ -29,7 +29,7 @@ When indexing media files with multiple speakers, Azure AI Video Indexer perform
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
-### [Example response](#tab/transcriptionresponse)
+## Example response
 
 ```json
     "insights": {
@@ -76,7 +76,7 @@ When indexing media files with multiple speakers, Azure AI Video Indexer perform
         },
 ```
 
-### [Components](#tab/transcriptioncomponents)  
+## Components  
 
 During the transcription, translation and language identification procedure, speech in a media file is processed, as follows: 
 
@@ -87,7 +87,7 @@ During the transcription, translation and language identification procedure, spe
 |Output unification	|The transcribed and translated files are unified into the same file. The outputted data includes the speaker ID of each extracted sentence together with its confidence level.|
 |Confidence value	|The estimated confidence level of each sentence is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.| 
 
-### [Transparency notes](#tab/transcriptiontransnote)
+## Transparency notes
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
@@ -105,8 +105,6 @@ When used responsibly and carefully, Azure AI Video Indexer is a valuable tool f
 
 For more information, see: guidelines and limitations in [language detection and transcription](/azure/azure-video-indexer/multi-language-identification-transcription).  
 
-### [Sample code](#tab/transcriptionsamplecode)
+## Sample code
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
-
----

@@ -44,7 +44,7 @@ The following table shows which categories are supported depending on **Preset N
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
-### [Example response](#tab/audioeffectsresponse)
+## Example response
 
 ```json
     "audioEffects": [
@@ -77,7 +77,7 @@ The following table shows which categories are supported depending on **Preset N
     ]
 ```
 
-### [Components](#tab/audioeffectscomponents)
+## Components
 
 During the audio effects detection procedure, audio in a media file is processed, as follows:
 
@@ -88,7 +88,7 @@ During the audio effects detection procedure, audio in a media file is processed
 |Classification| 	An AI process analyzes each segment and classifies its contents into event categories such as crowd reaction or laughter. A probability list is then created for each event category according to department-specific rules. |
 |Confidence level|	The estimated confidence level of each audio effect is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
 
-### [Transparency notes](#tab/audioeffectstransnote)
+## Transparency notes
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
@@ -106,7 +106,7 @@ During the audio effects detection procedure, audio in a media file is processed
     - A group of people laughing might be classified as both laughter and crowd. 
     - Natural and nonsynthetic gunshot and explosions sounds are supported.
 
-### [Sample code](#tab/audioeffectssamplecode)
+## Sample code
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
