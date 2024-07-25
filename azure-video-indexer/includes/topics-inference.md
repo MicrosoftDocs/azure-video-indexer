@@ -21,7 +21,7 @@ In the web portal, the extracted Topics and categories (when available) are list
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
-### [Example response](#tab/topicsinferenceresponse)
+## Example response
      
 ```json
     "topics": [
@@ -63,7 +63,7 @@ In the web portal, the extracted Topics and categories (when available) are list
       },
 ```
     
-### [Components](#tab/topicsinferencecomponents)
+## Components
  
 |Component|Definition|
 |---|---|
@@ -73,7 +73,7 @@ In the web portal, the extracted Topics and categories (when available) are list
 |Post-processing	|- Transcribed text, insights are extracted and tied to a Topic category together with the line number of the transcribed text. For example, Politics in line 7.<br/>- OCR and Facial Recognition, each insight is tied to a Topic category together with the time of the topic’s instance in the media file. For example, Freddie Mercury in the People and Music categories at 20.00. |
 |Confidence value	|The estimated confidence level of each topic is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
 
-### [Transparency notes](#tab/namedentitiestransnote)
+## Transparency notes
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
@@ -81,8 +81,6 @@ In the web portal, the extracted Topics and categories (when available) are list
 - When uploading a file always use high quality audio and video content. At least 1 minute of spontaneous conversational speech is required to perform analysis. Audio effects are detected in nonspeech segments only. The minimal duration of a nonspeech section is 2 seconds. Voice commands and singing aren't supported. 
 - Typically, small people or objects under 200 pixels and people who are seated might not be detected. People wearing similar clothes or uniforms might be detected as being the same person and are given the same ID number. People or objects that are obstructed might not be detected. Tracks of people with front and back poses might be split into different instances. 
 
-### [Sample code](#tab/namedentitiessamplecode)
+## Sample code
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
-
----

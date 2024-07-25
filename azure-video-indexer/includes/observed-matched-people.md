@@ -24,7 +24,7 @@ In the web portal, the resulting insights are displayed in a categorized list in
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
-### [Example response](#tab/observedpeopleresponse)
+## Example response
 
 ```json
     "observedPeople": [
@@ -168,7 +168,7 @@ In the web portal, the resulting insights are displayed in a categorized list in
     ]
 ```
 
-### [Components](#tab/observedpeoplecomponents)
+## Components
 
 |Component|Definition|
 |---|---|
@@ -178,7 +178,7 @@ In the web portal, the resulting insights are displayed in a categorized list in
 | Matching and classification    |The observed people instances are matched to faces. If there is a known celebrity, the observed person will be given their name. Any number of observed people instances can be matched to the same face.  |
 | Confidence value|    The estimated confidence level of each observed person is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
 
-### [Transparency notes](#tab/observedpeopletransnote)
+## Transparency notes
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
@@ -191,8 +191,6 @@ In the web portal, the resulting insights are displayed in a categorized list in
 - Obstruction – there maybe errors where there are obstructions (scene/self or obstructions by other people).
 - Pose: The tracks may be split due to different poses (back/front)
 
-### [Sample code](#tab/observedpeoplesamplecode)
+## Sample code
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
-
----

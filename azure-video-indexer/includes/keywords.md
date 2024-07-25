@@ -18,7 +18,7 @@ ms.author: inhenkel
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
-### [Example response](#tab/keywordsresponse)
+## Example response
 
 ```json
     "keywords": [
@@ -70,7 +70,7 @@ ms.author: inhenkel
       }
 ```
 
-### [Components](#tab/keywordscomponents)
+## Components
 
 During the Keywords procedure, audio and images in a media file are processed, as follows:
 
@@ -82,14 +82,12 @@ During the Keywords procedure, audio and images in a media file are processed, a
 |Keywords extraction	|An extraction algorithm processes the transcribed audio. The results are then combined with the insights detected in the video during the OCR process. The keywords and where they appear in the media and then detected and identified. |
 |Confidence level|	The estimated confidence level of each keyword is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score.|
 
-### [Transparency notes](#tab/keywordstransnote)
+## Transparency notes
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
 Always upload a high-quality audio and video content. The recommended maximum frame size is HD and frame rate is 30 FPS. A frame should contain no more than 10 people. When outputting frames from videos to AI models, only send around 2 or 3 frames per second. Processing 10 and more frames might delay the AI result. At least 1 minute of spontaneous conversational speech is required to perform analysis. Audio effects are detected in nonspeech segments only. The minimal duration of a nonspeech section is 2 seconds. Voice commands and singing aren't supported.
 
-### [Sample code](#tab/keywordssamplecode)
+## Sample code
 
 [Link to sample code that uses the insight](#)
-
----

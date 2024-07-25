@@ -28,7 +28,7 @@ ms.author: inhenkel
 
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
-### [Example response](#tab/emotionresponse) 
+## Example response 
 
 ```json
 "emotions": [ 
@@ -46,7 +46,7 @@ ms.author: inhenkel
 
 ```  
 
-### [Components](#tab/emotioncomponents) 
+## Components 
 
 During the emotions detection procedure, the transcript of the video is processed, as follows: 
 
@@ -57,7 +57,7 @@ During the emotions detection procedure, the transcript of the video is processe
 |Emotions detection  |Each sentence is sent to the emotions detection model. The model produces the confidence level of each emotion. If the confidence level exceeds a specific threshold, and there's no ambiguity between positive and negative emotions, the emotion is detected. In any other case, the sentence is labeled as neutral.|
 |Confidence level |The estimated confidence level of the detected emotions is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82% certainty is represented as an 0.82 score. |
 
-### [Transparency notes](#tab/emotiontransnote)
+## Transparency notes
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
@@ -72,8 +72,6 @@ During the emotions detection procedure, the transcript of the video is processe
 - The confidence of the model in its prediction should also be taken into account.
 - Non-english videos will produce less accurate results.
 
-### [Sample code](#tab/emotionsamplecode)
+## Sample code
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
-
----
