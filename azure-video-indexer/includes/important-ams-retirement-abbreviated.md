@@ -8,4 +8,4 @@ title: AMS VI retirement announcement
 ---
 
 > [!IMPORTANT]
-> The deadline for migrationg Azure Video Indexer (VI) content (July 15, 2024) has passed. See the [retirement guide](../retirement/azure-video-indexer-ams-retirement-guide) for more information.
+> The deadline for migrationg Azure Video Indexer (VI) content (July 15, 2024) has passed. See the [retirement guide](../retirement/azure-video-indexer-ams-retirement-guide.md) for more information.
