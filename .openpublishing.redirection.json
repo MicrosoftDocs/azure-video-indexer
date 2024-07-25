@@ -341,7 +341,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "/azure-video-indexer/azure-video-indexer/azure-video-indexer-bring-your-own-model-overview.md",
+            "source_path_from_root": "/azure-video-indexer/azure-video-indexer-bring-your-own-model-overview.md",
             "redirect_url": "/azure/azure-video-indexer/retirement/azure-video-indexer/bring-your-own-model-overview",
             "redirect_document_id": false
         }
