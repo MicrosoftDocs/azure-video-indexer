@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # View closed captions in the Azure AI Video Indexer website
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement--abbreviated.md)]
 
 This article shows how to view closed captions in the [Azure AI Video Indexer video player](https://www.videoindexer.ai).
 
