@@ -74,9 +74,9 @@ AI models are typically trained on a wide variety of speech, including different
 ### Videos containing harmful content
 Videos containing harmful or sensitive content may result in a partial summary as the parts containing sensitive or harmful content might be excluded.
 
-## Textual summarization on an Edge device 
+## Textual summarization on VI enabled by Arc 
 
-If you're using the Edge extension, you can generate a summary from the video page in the web portal and use the same functionality such as customizations but there's no option to change the model deployment. Instead, every new extension created will include a local [Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model that is developed by Microsoft. There's no charge for requests to the model.
+If you're using the VI enbabled by Arc extension, you can generate a summary from the video page in the web portal and use the same functionality such as customizations but there's no option to change the model deployment. Instead, every new extension created will include a local [Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model that is developed by Microsoft. There's no charge for requests to the model.
 
 ### Specifications
 

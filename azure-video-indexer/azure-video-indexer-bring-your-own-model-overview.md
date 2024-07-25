@@ -20,7 +20,7 @@ Azure AI Video Indexer offers a set of AIs optimized for video and audio content
 
 This capability is flexible enough to accommodate all forms and types of insights, including detection-oriented and classification-oriented AIs. You have the freedom to select the data that your external model operates upon, such as the video's frames, the entire video, or just the audio track. You can also use other insights already produced for the video, such as detected objects, faces, and labels. This allows you to run the external analysis on only the related section of the video, improving performance and reducing costs.
 
-The feature is available for both the cloud and edge use cases.
+The feature is also available for [VI enabled by Arc](./arc/azure-video-indexer-enabled-by-arc-overview.md).
 
 DISCLAIMER: Microsoft’s [Code of conduct for Azure OpenAI Service](/legal/cognitive-services/openai/code-of-conduct?context=%2Fazure%2Fai-services%2Fopenai%2Fcontext%2Fcontext) applies to your use of the Bring Your Own Model feature, which includes Microsoft’s right to discontinue your access and use of this feature for noncompliance.
 

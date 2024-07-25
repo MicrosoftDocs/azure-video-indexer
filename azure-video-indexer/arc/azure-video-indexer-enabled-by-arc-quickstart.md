@@ -96,7 +96,7 @@ During the deployment, the script asks for environment specific values. Have the
     1. Select the **Azure AI Video Indexer Account** that the extension will be connected to.
     1. Enter the **cluster endpoint**, either an IP or DNS Name to be used as the API endpoint.
     1. Provide the **storage class** you want to use for the extension that's supported by your Kubernetes distribution. For example, if you're using AKS, you could use `azurefile-cli`. For more information on predefined storage classes supported by AKS, see [Storage Classes in AKS](/azure/aks/concepts-storage#storage-classes). If you're using other Kubernetes distributions, see your Kubernetes distribution documentation for predefined storage classes supported or the way you can provide your own.
-    1. Select a generative AI model to apply AI capabilities such as textual summarization on edge. [Learn more about generative AI models](../generative_ai_with_vi.md).
+    1. Select a generative AI model to apply AI capabilities such as textual summarization on VI enabled by Arc. [Learn more about generative AI models](../generative_ai_with_vi.md).
 1. Select **Review + create** and then **Create**.
 
 ## Manual deployment
