@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Enable the matched person insight
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 [!INCLUDE [Gate notice](./includes/face-limited-access.md)]
 

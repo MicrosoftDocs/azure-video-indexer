@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Textual Video Summary with Azure OpenAI
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 This article is an overview of Azure OpenAI text summarization with Azure AI Video Indexer.
 

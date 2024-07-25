@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Speech model training best practices
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 [!INCLUDE [speech model](./includes/speech-model-note.md)]
 

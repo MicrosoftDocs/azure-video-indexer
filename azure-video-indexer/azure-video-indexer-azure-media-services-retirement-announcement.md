@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Changes related to Azure Media Service (AMS) retirement
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 This article explains the upcoming changes to Azure AI Video Indexer (VI) resulting from the [retirement of Azure Media Services (AMS)](/azure/media-services/latest/azure-media-services-retirement).
 

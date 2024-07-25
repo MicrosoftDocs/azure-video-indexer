@@ -11,7 +11,7 @@ ms.service: azure-video-indexer
 
 # Quickstart: Deploy Azure AI Video Indexer (VI) by using Bicep
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 Using this quickstart, you can create an Azure AI Video Indexer (VI) account by using [Bicep](/azure/azure-resource-manager/bicep/overview).
 

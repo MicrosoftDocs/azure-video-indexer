@@ -10,7 +10,7 @@ author: IngridAtMicrosoft
 
 # Azure AI Video Indexer support matrix and service limits
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 This article describes the supported formats and limitations of Azure AI Video Indexer.
 

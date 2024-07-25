@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Upload and index media
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 This article shows you how to upload and index media files (audio or video) with the [Azure AI Video Indexer website](https://aka.ms/vi-portal-link) using advanced settings. If you would like to try a basic upload, see the [quickstart](try-vi-web-portal-quickstart.md).
 

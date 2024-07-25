@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Azure AI Video Indexer account types
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 This article gives an overview of Azure AI Video Indexer accounts types.
 

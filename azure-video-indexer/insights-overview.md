@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Azure AI Video Indexer insights
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 When a video is indexed, Azure AI Video Indexer analyzes the video and audio content by running 30+ AI models, generating JSON containing the video insights including transcripts, optical character recognition elements (OCRs), face, topics, emotions, etc. Each insight type includes instances of time ranges that show when the insight appears in the video. 
 

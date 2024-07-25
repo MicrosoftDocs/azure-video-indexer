@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Generative AI with Azure AI Video Indexer
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 This article discusses the use of generative AI with Azure AI Video Indexer.
 

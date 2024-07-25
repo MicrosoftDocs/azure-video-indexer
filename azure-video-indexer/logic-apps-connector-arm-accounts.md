@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Logic Apps connector with ARM-based VI accounts
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 Azure AI Video Indexer (VI) [REST API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) supports both server-to-server and client-to-server communication. The API enables you to integrate video and audio insights into your application logic.
 

@@ -11,7 +11,7 @@ ms.service: azure-video-indexer
 
 # Monitor Azure AI Video Indexer
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 When you have critical applications and business processes relying on Azure resources, you want to monitor those resources for their availability, performance, and operation. 
 

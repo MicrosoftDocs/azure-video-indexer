@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Switch between multiple tenants
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 When working with multiple tenants/directories in the Azure environment user might need to switch between the different directories. 
 

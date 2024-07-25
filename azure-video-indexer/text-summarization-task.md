@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Use textual summarization
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 This article shows you how to use text summarization with Azure AI Video Indexer. This example uses Azure OpenAI deployments.
 

@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Things to consider when using Azure AI Video Indexer at scale
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 When using Azure AI Video Indexer to index videos and your archive of videos is growing, consider scaling.
 

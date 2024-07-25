@@ -10,6 +10,6 @@ ms.service: azure-video-indexer
 
 # Get keywords extraction insights
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 [!INCLUDE [Insight details](./includes/keywords.md)]

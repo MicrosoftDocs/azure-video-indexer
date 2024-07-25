@@ -9,6 +9,6 @@ ms.author: inhenkel
 
 # Get audio effects detection insights
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 [!INCLUDE [Audio effects detection insight](./includes/audio-effects-detection.md)]

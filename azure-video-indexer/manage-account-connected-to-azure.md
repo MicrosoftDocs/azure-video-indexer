@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Repair the connection to Azure, examine errors/warnings
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 This article demonstrates how to manage an Azure AI Video Indexer account that's connected to your Azure subscription and an Azure Media Services account.
 

@@ -10,7 +10,7 @@ ms.service: azure-video-indexer
 
 # Edit speakers with the Azure AI Video Indexer website
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 Azure AI Video Indexer identifies each speaker in a video and attributes each transcribed line to a speaker. The speakers are given a unique identity such as `Speaker #1` and `Speaker #2`. To provide clarity and enrich the transcript quality, you may want to replace the assigned identity with each speaker's actual name. To edit speakers' names, use the edit actions as described in the article. 
 

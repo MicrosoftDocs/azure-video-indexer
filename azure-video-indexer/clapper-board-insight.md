@@ -10,6 +10,6 @@ ms.service: azure-video-indexer
 
 # Clapper board detection insight overview
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-avi-announcement.md)]
+[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 [!INCLUDE [Audio effects detection description](./includes/clapperboard.md)]
