@@ -319,6 +319,21 @@
             "source_path_from_root": "/azure-video-indexer/customize-content-models-overview.md",
             "redirect_url": "/azure/azure-video-indexer/customize-brands-model-how-to",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/azure-video-indexer-ams-retirement-guide.md",
+            "redirect_url": "/azure/retirement/azure-video-indexer/azure-video-indexer-ams-retirement-guide",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/azure-video-indexer-azure-media-services-retirement-announcement.md",
+            "redirect_url": "/azure/azure-video-indexer/retirement/azure-video-indexer-azure-media-services-retirement-announcement",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/update-your-azure-video-indexer-account-and-migrate-assets.md",
+            "redirect_url": "/azure/azure-video-indexer/retirement/update-your-azure-video-indexer-account-and-migrate-assets",
+            "redirect_document_id": false
         }
     ]
 }
