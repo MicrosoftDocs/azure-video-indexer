@@ -75,7 +75,7 @@ This section shows a summary of the insights.
 | `faces` | Contains zero or more faces. For more information, see [faces](#faces). |
 | `keywords` | Contains zero or more keywords. For more information, see [keywords](#keywords). |
 | `sentiments` | Contains zero or more sentiments. For more information, see [sentiments](#sentiments). |
-| `audioEffects` | Contains zero or more audio effects. For more information, see [audioEffects](#audioeffects-preview). |
+| `audioEffects` | Contains zero or more audio effects. For more information, see [audioEffects](#audioeffects). |
 | `labels` | Contains zero or more labels. For more information, see [labels](#labels). |
 | `brands` | Contains zero or more brands. For more information, see [brands](#brands). |
 | `statistics` | For more information, see [statistics](#statistics). |
@@ -152,7 +152,7 @@ A face might have an ID, a name, a thumbnail, other metadata, and a list of its 
 | `labels` | The [labels](#labels) insight. |
 | `shots` | The [shots](#shots) insight. |
 | `brands` | The [brands](#brands) insight. |
-| `audioEffects` | The [audioEffects](#audioeffects-preview) insight. |
+| `audioEffects` | The [audioEffects](#audioeffects) insight. |
 | `sentiments` | The [sentiments](#sentiments) insight. |
 | `visualContentModeration` | The [visualContentModeration](#visualcontentmoderation) insight. |
 | `textualContentModeration` | The [textualContentModeration](#textualcontentmoderation) insight. |
@@ -554,7 +554,7 @@ Azure AI Video Indexer detects business and product brand names in the speech-to
 | `SpeakerLongestMonolog` | The speaker's longest monolog. If the speaker has silence inside the monolog, it's included. Silence at the beginning and the end of the monolog is removed. |
 | `SpeakerTalkToListenRatio` | The calculation is based on the time spent on the speaker's monolog (without the silence in between) divided by the total time of the video. The time is rounded to the third decimal point. |
 
-#### audioEffects (preview)
+#### audioEffects
 
 | Name | Description |
 |--|--|

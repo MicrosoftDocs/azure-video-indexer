@@ -13,7 +13,7 @@ ms.service: azure-video-indexer
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 > [!NOTE]
-> Textual logo detection (preview) creation process is currently available through API. The result can be viewed through the Azure AI Video Indexer [website](https://www.videoindexer.ai/). 
+> Textual logo detection creation process is currently available through API. The result can be viewed through the Azure AI Video Indexer [website](https://www.videoindexer.ai/). 
 
 **Textual logo detection** insights are based on the Optical Character Recognition (OCR) textual detection, which matches a specific predefined text.
 
