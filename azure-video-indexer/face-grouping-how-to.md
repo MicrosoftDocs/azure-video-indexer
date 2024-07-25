@@ -1,5 +1,5 @@
 ---
-title: How to use global face grouping (preview)
+title: How to use global face grouping
 description: With VI, scaling facial recognition of thousands of faces is easy if a labeled and tagged dataset already exists. However, what if the dataset doesn't exist yet or isn't available for detecting faces in your video collection? Global face grouping can help you find faces that are frequently detected in videos but aren’t yet labeled or tagged. By using global face grouping, you can enhance your account’s custom face identification database.
 ms.topic: how-to
 ms.date: 07/25/2024
@@ -8,7 +8,7 @@ author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-# How to use global face grouping (preview)
+# How to use global face grouping
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 

@@ -61,9 +61,9 @@ items:
     - name: VI with LLM prompts
       href: prompt-overview.md
       displayName: LLM, prompt, large language model
-    - name: Text summarization
+    - name: Textual summarization
       href: text-summarization-overview.md
-      displayName: text summarization
+      displayName: textual summarization
     - name: Bring your own model
       href: ./arc/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md
 - name: Samples
@@ -124,15 +124,15 @@ items:
     items:
       - name: Face redaction with API
         href: face-redaction-with-api.md
-      - name: Observed people (preview)
+      - name: Observed people
         href: observed-people-tracking.md
         displayName: dark lighting conditions, new advanced model, bounding box coordinates, following JSON response, Maximum frame size, Low quality video, Recommended video input, up to 10 people, minimum person height, Azure AI Video Indexer, Observed People tracking, same ID number, Advanced video, exact timestamp, Post-event analysis, bank robbery, raw data, content creators, sport games, red shirt, court evidence, shopping mall, checkout lines, detect operation, Standard indexing, false negatives, limited detail, static cameras, moving camera, mixed scenes, frame rate, single frame, highest confidence, similar clothes, different poses, video description, video concept, video frame, video advertising, video archive, long video, video player, video footage, detection confidence, detection result, detector results, people thumbnails, other people, audio indexing, person instance, specific person, same person, multiple instances, title, Trace, topic, overview, videos, information, location, API, pixels, scenarios, feature, movement, accident, crime, example, explosion, incident, efficiency, news, summary, appearance, trends, customers, aisles, functionality, path, file, image, people-tracking, screenshot, Insights, videoindexer, website, page, thumbnailId, Limitations, assumptions, effects, detections, 30 FPS, uniforms, players, Obstruction, errors, tracks
-      - name: Matched person (preview)
+      - name: Matched person
         href: matched-person.md
         displayName: same spatial position, JSON code sample, following JSON response, Azure AI Video Indexer, person insight description, Gate notice, bounding boxes, raw data, content creators, sport games, Post-event analysis, bank robbery, Standard indexing, advanced model, Custom View, search bar, short time, video advertising, video archive, long video, Advanced video, specific person, Mapped person, confidence level, matching algorithm, corresponding faces, different people, Matched person, People" insight, People insight, people feature, title, topic, API, scenarios, efficiency, news, example, appearances, movement, accident, crime, explosion, incident, summary, parts, file, image, media/matched, audio, videoindexer, ai, website, Insights, clothing, option, name, type, properties, pants, instances, end, Limitations, assumptions, effects, miss, matches, Precondition, tracks, front, Obstructions, frame, Trace
-      - name: Detected clothing (preview)
+      - name: Detected clothing
         href: detected-clothing.md
-      - name: Featured clothing (preview)
+      - name: Featured clothing
         href: observed-people-featured-clothing.md
         displayName: single featured clothing image, Azure AI Video Indexer, video contextual advertising, faces bounding box, relevant clothing ads, advanced video settings, low quality results, indexing video option, observed person description, important featured clothing, artifact zip file, featured clothing insight, Advanced option, Standard indexing, low relevancy, important clothing, key items, specific time, audio indexing, following factors, key moments, general emotions, id property, ranking index, right-upper corner, two objects, following properties, best frame, false detections, one outfit, best outfit, Wrong detections, intro video, short video, artifact file, audio preset, fileName property, blurred people, clothing images, people insight, Frames, title, information, individuals, timestamp, high-quality, article, screenshot, example, NOTE, instances, confidence, score, frameIndex, faceBoundingBox, width, height, opBoundingBox, folder, Limitations, assumptions, effects, Pre-condition, clothes, algorithm, tracks, front, people-tracking
   - name: Analyze Audio and language
@@ -149,7 +149,7 @@ items:
       - name: Automatically identify spoken languages
         href: language-identification-model.md
         displayName: Azure AI Video Indexer language identification model, Azure AI Video Indexer languages, automatic language identification, auto language identification, auto detect option, corresponding confidence score, high enough confidence, spontaneous conversational speech, spoken languages description, spoken language content, Model dominant language, mixed languages audio, Model output, model results, following languages, multi-language content, fallback language, home page, right-bottom corner, index button, Modern Standard, one minute, voice commands, sourceLanguage parameter, sourceLanguage attribute, media file, sourceLanguageConfidence attribute, Low-quality audio, title, article, LID, process, list, langues, limitations, guidelines, section, indexing, details, Operations, Re-Index-Video, API, portal, videoindexer, name, English, insights, JSON, root/videos, version, duration, FR, transcript, Arabic, Levantine, Hindi, Korean, support, singing, language-identification, 04
-      - name: Audio effects detection (preview)
+      - name: Audio effects detection
         href: audio-effects-detection.md
         displayName: Azure AI Video Indexer AI capabilities, video.ai website experience, various acoustics events, other public environments, Minimum timer duration, closed caption files, closed captions file, Audio effect detection, different acoustic categories, audio indexing** menu, audio effects detection, Index Audio Effects, 7 different categories, video archives, video transcription, Advance Video, audio categories, accurate detection, Public Safety, index process, Maximum duration, speech effects, different presets, Advanced indexing, Advance Audio, crowd reaction, dog barking, Entertainment domain, raw data, content creators, Important moments, Justice domain, glass shattering, smart-city system, violence incidents, next table, Breaking glass, specific timeframe, Advanced** presets, square brackets, following logic, includeAudioEffects` parameter, detection feature, Standard indexing, large set, insights pane, Indexing type, Preset Name, name` parameter, confidence score, category ID, title, description, example, gunshot, laugher, scenarios, Companies, accessibility, context, persons, hearing, non, Media, efficiency, promos, trailers, explosion, cameras, microphones, fast, information, microsoft, details, Silence, Alarm, siren, Laughter, formats, JSON, instances, language, start, end, CrowdReactions, order, image, audio-effect, structure, SRT, VTT, TTML, TXT, CSV, 5 seconds, 700 milliseconds, api-portal, videoindexer, Operations, 01
       - name: View closed captions
@@ -190,8 +190,8 @@ items:
     - name: Create LLM prompt content
       href: prompt-task.md
       displayName: LLM, large language model, LLama2, Phi2, GPT3_5Turbo, or GPT4
-    - name: Bring your own model
-      href: azure-video-indexer-bring-your-own-model-overview.md
+    - name: Bring your own model samples
+      href: https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples
   - name: Manage accounts
     items:
     - name: Manage access to your account

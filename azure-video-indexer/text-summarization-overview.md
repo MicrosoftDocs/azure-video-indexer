@@ -1,6 +1,6 @@
 ---
 title: Textual Video Summary with Azure OpenAI
-description: This article is an overview of Azure OpenAI text summarization with Azure AI Video Indexer. 
+description: This article is an overview of Azure OpenAI textual summarization with Azure AI Video Indexer. 
 ms.topic: overview
 ms.date: 07/25/2024
 ms.author: inhenkel
@@ -12,7 +12,7 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
-This article is an overview of Azure OpenAI text summarization with Azure AI Video Indexer.
+This article is an overview of Azure OpenAI textual summarization with Azure AI Video Indexer.
 
 ## What is textual video summarization with Azure AI Video Indexer? 
 
@@ -31,52 +31,25 @@ The system provides options for feedback, enabling it to learn and improve over 
 
 The intended uses of the AI-based video summarization system are to provide users with a quick and efficient way to understand the content of longer videos without having to watch them in their entirety. Here are some specific intended uses:
 
-### Educational 
-
-Students and educators can use the system to summarize lectures, seminars, or educational content, making study materials more accessible and easier to review and to focus on key learning points or definitions.
-
-### Corporate 
-
-Professionals can generate summaries of meetings, presentations, or training sessions that highlight decisions, action items, or key points from meetings. It provides quick recaps and ensures important information isn't missed.
-
-### Media
- 
-Journalists and the general public can use the system to get the essence of news reports, documentaries, or interviews, saving time while staying informed. It condenses news or documentaries into bite-sized pieces without losing the narrative. 
-
-## Output formats
-
-You can set summaries to use different styles of language: neutral, casual, or formal. You can also set the length of a summary to short or long.
+- **Education**. Students and educators can use the system to summarize lectures, seminars, or educational content, making study materials more accessible and easier to review and to focus on key learning points or definitions.
+- **Corporate**. Professionals can generate summaries of meetings, presentations, or training sessions that highlight decisions, action items, or key points from meetings. It provides quick recaps and ensures important information isn't missed.
+- **Media**. Journalists and the general public can use the system to get the essence of news reports, documentaries, or interviews, saving time while staying informed. It condenses news or documentaries into bite-sized pieces without losing the narrative. 
+- **Output formats** You can set summaries to use different styles of language: neutral, casual, or formal. You can also set the length of a summary to short or long.
 
 ## Limitations
 
-### Models
-
-Fine-tuned models aren't supported. A fine-tuned model in Azure OpenAI (AOAI) is a pretrained AI model that has been further optimized for a specific task by training it on a personalized dataset, thereby enhancing its performance and accuracy for that specific application.
-
-### Non-English languages
-The text summarization is optimized for the English language. However, it's compatible with all languages supported by the specific GenAI model being used, that is, GPT3.5 Turbo or GPT4.0. So, when applied to non-English languages, the accuracy and quality of the summaries might vary. To mitigate this limitation, be extra careful and verify the generated summaries for accuracy and completeness.  
-
-### Videos with multiple languages 
-If a video contains speech in multiple languages, the text summarization might struggle to accurately recognize all the languages featured in the video. Be aware of this potential limitation when utilizing the Textual Video Summarization feature for multilingual videos. 
-
-### Highly specialized or technical videos 
-Video summary AI models are typically trained on a wide variety of videos, including news, movies, and other general content. If the video is highly specialized or technical, the model might not be able to accurately extract the summary of the video.  
-
-### Videos with poor audio quality or Optical Character Recognition (OCR)
-Text summarization AI models also rely on audio (among other insights) to extract the summary from the video or on OCR to extract the text appearing on screen. If the audio quality is poor and there's no OCR identified, the model might not be able to accurately extract the summary from the video.  
-
-### Videos with low lighting or fast motion
-Videos that are shot in low lighting or have fast motion might be difficult for the model to process, resulting in poor performance.
-
-### Videos with uncommon accents or dialects
-AI models are typically trained on a wide variety of speech, including different accents and dialects. However, if the video contains speech with an accent or dialect that isn't well represented in the training data, the model might struggle to accurately extract the transcript from the video.
-
-### Videos containing harmful content
-Videos containing harmful or sensitive content may result in a partial summary as the parts containing sensitive or harmful content might be excluded.
+- **Models**. Fine-tuned models aren't supported. A fine-tuned model in Azure OpenAI (AOAI) is a pretrained AI model that has been further optimized for a specific task by training it on a personalized dataset, thereby enhancing its performance and accuracy for that specific application.
+- **Non-English languages**. The textual summarization is optimized for the English language. However, it's compatible with all languages supported by the specific GenAI model being used, that is, GPT3.5 Turbo or GPT4.0. So, when applied to non-English languages, the accuracy and quality of the summaries might vary. To mitigate this limitation, be extra careful and verify the generated summaries for accuracy and completeness.  
+- **Videos with multiple languages**. If a video contains speech in multiple languages, the textual summarization might struggle to accurately recognize all the languages featured in the video. Be aware of this potential limitation when utilizing the Textual Video Summarization feature for multilingual videos. 
+- **Highly specialized or technical videos**. Video summary AI models are typically trained on a wide variety of videos, including news, movies, and other general content. If the video is highly specialized or technical, the model might not be able to accurately extract the summary of the video.  
+- **Videos with poor audio quality or Optical Character Recognition (OCR)**. Textual summarization AI models also rely on audio (among other insights) to extract the summary from the video or on OCR to extract the text appearing on screen. If the audio quality is poor and there's no OCR identified, the model might not be able to accurately extract the summary from the video.  
+- **Videos with low lighting or fast motion**. Videos that are shot in low lighting or have fast motion might be difficult for the model to process, resulting in poor performance.
+- **Videos with uncommon accents or dialects**. AI models are typically trained on a wide variety of speech, including different accents and dialects. However, if the video contains speech with an accent or dialect that isn't well represented in the training data, the model might struggle to accurately extract the transcript from the video.
+- **Videos containing harmful content**. Videos containing harmful or sensitive content may result in a partial summary as the parts containing sensitive or harmful content might be excluded.
 
 ## Textual summarization on VI enabled by Arc 
 
-If you're using the VI enbabled by Arc extension, you can generate a summary from the video page in the web portal and use the same functionality such as customizations but there's no option to change the model deployment. Instead, every new extension created will include a local [Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model that is developed by Microsoft. There's no charge for requests to the model.
+If you're using the VI enbabled by Arc extension, you can generate a summary from the video page in the web portal and use the same functionality such as customizations but there's no option to change the model deployment. Instead, every new extension created includes a local [Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model that is developed by Microsoft. There's no charge for requests to the model.
 
 ### Specifications
 
@@ -87,10 +60,10 @@ If you're using the VI enbabled by Arc extension, you can generate a summary fro
 
 ### Known Limitations and Known Issues
 
-- CPU: Currently, running VI on AMD CPUs may lead to significantly longer runtimes and isn't supported at this time.
+- Currently, running VI on AMD CPUs may lead to significantly longer runtimes and isn't supported at this time.
 - The summarization feature is created by an AI language model and serves to provide a general overview. Although we aim for accuracy and reliability, the content may not fully encapsulate the essence of the original material. We recommend that a human reviews and edits the summary before use. It should **not** be viewed as professional or personalized advice.
 - The summary results are generally consistent within each summarization setting. However, editing the transcript or reindexing the video may lead to different output results.
-- Disclaimer for product documentation: When utilizing summarization settings, the Neutral style might occasionally resemble the Formal style. The Casual style might include content-related hashtags. Additionally, in some instances, a “Medium” length summary might be shorter than a “Short” summary. 
+- When utilizing summarization settings, the Neutral style might occasionally resemble the Formal style. The Casual style might include content-related hashtags. Additionally, in some instances, a “Medium” length summary might be shorter than a “Short” summary. 
 - Videos that have little content (such as very short videos) are typically not summarized to mitigate the potential model inaccuracies that can happen when dealing with short input.
 - The summary might occasionally include or reference internal instructions provided to it (referred to as “meta-prompt”). This could encompass directives to exclude harmful content.
 - The length of the summary might influence the level of detail extracted from the video summary. Longer summaries might result in less specific details being included.
@@ -99,7 +72,7 @@ If you're using the VI enbabled by Arc extension, you can generate a summary fro
 
 ## Additional information
 
-For more information about the way text summarization is used, see the [Transparency notes](/legal/azure-video-indexer/transparency-note#text-summarization) for text summarization.
+For more information about the way textual summarization is used, see the [Transparency notes](/legal/azure-video-indexer/transparency-note#text-summarization) for textual summarization.
 
 ## Try textual video summarization
 [Try using textual video summarization](text-summarization-task.md).

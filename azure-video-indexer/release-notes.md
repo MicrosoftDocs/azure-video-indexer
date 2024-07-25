@@ -39,7 +39,7 @@ All presets now support the indexing of files up to 6 hours in length (the previ
 
 ## May 2024
  
-### Text summarization
+### Textual summarization
 
 Azure AI Video Indexer now provides a brief summary of what a video is about without having to watch the entire video. It's designed to save you time by digesting long videos and giving you the gist in a shorter format. It distills lengthy videos into concise, digestible summaries.
 
@@ -47,7 +47,7 @@ It uses summarization algorithms to identify the most relevant insights for the 
 
 You can customize the summary by selecting Short, Longer, Formal, or Casual as well as specify the specific model deployment.
 
-For more information about text summarization, see [Text Summarization Overview](text-summarization-overview.md).
+For more information about textual summarization, see [Textual Summarization Overview](text-summarization-overview.md).
 
 ### Azure OpenAI integration
 
