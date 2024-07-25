@@ -22,14 +22,6 @@ items:
     displayName: Other Azure AI Video Indexer features, The Azure AI Video Indexer service, Azure AI Video Indexer description, Azure facial recognition service, Microsoft facial recognition services, The Face Identify, Celebrity Recognition operations, Limited Access features, Microsoft Azure Services, responsible AI practices, positive ways, police department, United States, Application process, intake form, sole discretion, eligibility criteria, vetting process, MicrosoftAzure/MCA#ServiceSpecificTerms, important conditions,  use cases, legal terms, Gate notice, cognitive-services, computer, vision, developers, organizations, society, rights, safety, individuals, order, misuse, accordance, issues, microsofts-facial-recognition-work, principles, registration, announcement, customers, partners, facerecognition, information, subscription, productoffering, obligations, access-account-types, Help, support, FAQ, options, abuse
   - name: Transparency note
     href: /legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context
-- name: VI enabled by Arc
-  items:
-  - name: What is Azure AI Video Indexer enabled by Arc?
-    href: ./arc/azure-video-indexer-enabled-by-arc-overview.md
-    displayName: Azure Arc, Kubernetes, extension
-  - name: Try VI enabled by Arc
-    href: ./arc/azure-video-indexer-enabled-by-arc-quickstart.md
-  
 - name: Quickstarts
   items:
   - name: Try the VI web portal 
@@ -62,6 +54,9 @@ items:
   - name: Insights
     displayName: optical character recognition elements, Azure AI Video Indexer account, Azure AI Video Indexer OCR, Azure AI Video Indexer insights, specific predefined text, Detect textual logo, timestamped transcript lines, Textual logo detection, Audio effects detection, insights output file, detailed JSON output, 30+ AI models, Azure portal, account types, audio content, audio cues, video insights, entire video, rich insights, aggregated view, time ranges, common insights, frame(s, representative frames, aesthetic properties, easier consumption, Faces detection, different appearances, Microsoft" logo, sentimentType` field, single audio-file, other insights, Insights tab, right-top corner, response status, response content, Operations&operation, JSON content, insight type, one insight, brief overview, Named entities, Sixteen speakers, Topics inference, title, description, article, data, transcripts, OCRs, emotions, details, example, instances, information, audio-effects-detection-transparency-note, Scenes, shots, keyframes, contrast, stableness, navigation, speech, azure-video-indexer, face-detection-transparency, user, word, Labels, entities-transparency, People, ocr-transparency-note, Sentiments, Transcription, translation, language, features, website, videoindexer, Screenshot, indexer-output, Press, artifacts, API
     href: insights-overview.md
+  - name: What is Azure AI Video Indexer enabled by Arc?
+    href: ./arc/azure-video-indexer-enabled-by-arc-overview.md
+    displayName: Azure Arc, Kubernetes, extension
   - name: VI with generative AI
     href: generative_ai_with_vi.md
     items:
@@ -197,8 +192,6 @@ items:
     - name: Create LLM prompt content
       href: prompt-task.md
       displayName: LLM, large language model, LLama2, Phi2, GPT3_5Turbo, or GPT4
-    - name: Use Phi 3 model with VI enabled by Arc
-      href: /azure/azure-video-indexer/arc/azure-video-indexer-enabled-by-arc-quickstart?branch=pr-en-us-267&tabs=portal#use-a-generative-ai-model
     - name: Bring your own model
       href: azure-video-indexer-bring-your-own-model-overview.md
   - name: Manage accounts
