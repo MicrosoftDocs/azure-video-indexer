@@ -61,9 +61,9 @@ items:
     - name: VI with LLM prompts
       href: prompt-overview.md
       displayName: LLM, prompt, large language model
-    - name: Text summarization
+    - name: Textual summarization
       href: text-summarization-overview.md
-      displayName: text summarization
+      displayName: textual summarization
     - name: Bring your own model
       href: ./arc/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md
 - name: Samples

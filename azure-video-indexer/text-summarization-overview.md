@@ -1,6 +1,6 @@
 ---
 title: Textual Video Summary with Azure OpenAI
-description: This article is an overview of Azure OpenAI text summarization with Azure AI Video Indexer. 
+description: This article is an overview of Azure OpenAI textual summarization with Azure AI Video Indexer. 
 ms.topic: overview
 ms.date: 07/25/2024
 ms.author: inhenkel
@@ -12,7 +12,7 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
-This article is an overview of Azure OpenAI text summarization with Azure AI Video Indexer.
+This article is an overview of Azure OpenAI textual summarization with Azure AI Video Indexer.
 
 ## What is textual video summarization with Azure AI Video Indexer? 
 
@@ -39,10 +39,10 @@ The intended uses of the AI-based video summarization system are to provide user
 ## Limitations
 
 - **Models**. Fine-tuned models aren't supported. A fine-tuned model in Azure OpenAI (AOAI) is a pretrained AI model that has been further optimized for a specific task by training it on a personalized dataset, thereby enhancing its performance and accuracy for that specific application.
-- **Non-English languages**. The text summarization is optimized for the English language. However, it's compatible with all languages supported by the specific GenAI model being used, that is, GPT3.5 Turbo or GPT4.0. So, when applied to non-English languages, the accuracy and quality of the summaries might vary. To mitigate this limitation, be extra careful and verify the generated summaries for accuracy and completeness.  
-- **Videos with multiple languages**. If a video contains speech in multiple languages, the text summarization might struggle to accurately recognize all the languages featured in the video. Be aware of this potential limitation when utilizing the Textual Video Summarization feature for multilingual videos. 
+- **Non-English languages**. The textual summarization is optimized for the English language. However, it's compatible with all languages supported by the specific GenAI model being used, that is, GPT3.5 Turbo or GPT4.0. So, when applied to non-English languages, the accuracy and quality of the summaries might vary. To mitigate this limitation, be extra careful and verify the generated summaries for accuracy and completeness.  
+- **Videos with multiple languages**. If a video contains speech in multiple languages, the textual summarization might struggle to accurately recognize all the languages featured in the video. Be aware of this potential limitation when utilizing the Textual Video Summarization feature for multilingual videos. 
 - **Highly specialized or technical videos**. Video summary AI models are typically trained on a wide variety of videos, including news, movies, and other general content. If the video is highly specialized or technical, the model might not be able to accurately extract the summary of the video.  
-- **Videos with poor audio quality or Optical Character Recognition (OCR)**. Text summarization AI models also rely on audio (among other insights) to extract the summary from the video or on OCR to extract the text appearing on screen. If the audio quality is poor and there's no OCR identified, the model might not be able to accurately extract the summary from the video.  
+- **Videos with poor audio quality or Optical Character Recognition (OCR)**. Textual summarization AI models also rely on audio (among other insights) to extract the summary from the video or on OCR to extract the text appearing on screen. If the audio quality is poor and there's no OCR identified, the model might not be able to accurately extract the summary from the video.  
 - **Videos with low lighting or fast motion**. Videos that are shot in low lighting or have fast motion might be difficult for the model to process, resulting in poor performance.
 - **Videos with uncommon accents or dialects**. AI models are typically trained on a wide variety of speech, including different accents and dialects. However, if the video contains speech with an accent or dialect that isn't well represented in the training data, the model might struggle to accurately extract the transcript from the video.
 - **Videos containing harmful content**. Videos containing harmful or sensitive content may result in a partial summary as the parts containing sensitive or harmful content might be excluded.
@@ -72,7 +72,7 @@ If you're using the VI enbabled by Arc extension, you can generate a summary fro
 
 ## Additional information
 
-For more information about the way textual summarization is used, see the [Transparency notes](/legal/azure-video-indexer/transparency-note#text-summarization) for text summarization.
+For more information about the way textual summarization is used, see the [Transparency notes](/legal/azure-video-indexer/transparency-note#text-summarization) for textual summarization.
 
 ## Try textual video summarization
 [Try using textual video summarization](text-summarization-task.md).
