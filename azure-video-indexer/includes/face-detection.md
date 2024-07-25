@@ -39,7 +39,7 @@ The following list describes examples of common use cases for face detection:
 > [!IMPORTANT]
 > When you review face detections in the UI, you might not see all faces that appear in the video. We expose only face groups that have a confidence of more than 0.5, and the face must appear for a minimum of 4 seconds or 10 percent of the value of `video_duration`. Only when these conditions are met do we show the face in the UI and in the *Insights.json* file. You can always retrieve all face instances from the face artifact file by using the API: `https://api.videoindexer.ai/{location}/Accounts/{accountId}/Videos/{videoId}/ArtifactUrl[?Faces][&accessToken]`.
 
-### [Example response](#tab/facedetectionresponse)
+## Example response
 
 ```json
     "faces": [
@@ -82,7 +82,7 @@ The following list describes examples of common use cases for face detection:
     ]
 ```
 
-### [Components](#tab/facedetactioncomponents)
+## Components
 
 The following table describes how images in a media file are processed during the face detection procedure:
 
@@ -94,7 +94,7 @@ The following table describes how images in a media file are processed during th
 | Confidence value | Where applicable for well-known faces or for faces that are identified in the customizable list, the estimated confidence level of each label is calculated as a range of 0 to 1. The confidence score represents the certainty in the accuracy of the result. For example, an 82 percent certainty is represented as an 0.82 score. |
 
 
-### [Transparency notes](#tab/facedetectiontransnote)
+## Transparency notes
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
@@ -104,8 +104,6 @@ Face detection is a valuable tool for many industries when it's used responsibly
 - Carefully review results if you use face detection for law enforcement. People might not be detected if they're small, sitting, crouching, or obstructed by objects or other people. To ensure fair and high-quality decisions, combine face detection-based automation with human oversight.
 - Don't use face detection for decisions that might have serious, adverse impacts. Decisions that are based on incorrect output can have serious, adverse impacts. It's advisable to include human review of decisions that have the potential for serious impacts on individuals.
 
-### [Sample code](#tab/facedetectionsamplecode)
+## Sample code
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
-
----

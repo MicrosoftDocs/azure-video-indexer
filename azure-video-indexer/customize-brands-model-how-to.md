@@ -237,5 +237,3 @@ The `useBuiltIn` flag set to true means that Bing brands are enabled. If `useBui
 ### Example response
 
 There's no returned content when the Brands model setting is updated successfully.
-
----
