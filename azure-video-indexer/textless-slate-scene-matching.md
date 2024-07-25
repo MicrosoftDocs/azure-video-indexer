@@ -12,7 +12,7 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
-This article shows how to enable and view  a textless slate with matching scene (preview).
+This article shows how to enable and view  a textless slate with matching scene.
 
 This insight is most useful to customers involved in the movie post-production process.
 

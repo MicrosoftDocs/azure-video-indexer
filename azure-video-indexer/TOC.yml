@@ -190,8 +190,8 @@ items:
     - name: Create LLM prompt content
       href: prompt-task.md
       displayName: LLM, large language model, LLama2, Phi2, GPT3_5Turbo, or GPT4
-    - name: Bring your own model
-      href: azure-video-indexer-bring-your-own-model-overview.md
+    - name: Bring your own model samples
+      href: https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples
   - name: Manage accounts
     items:
     - name: Manage access to your account
