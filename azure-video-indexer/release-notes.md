@@ -287,9 +287,10 @@ You can now switch Entra ID directories and manage Azure AI Video Indexer accoun
 
 For more information, see [supported languages](language-support.md).
 
+
 ### Face grouping
 
-Significantly reduced number of low-quality face detection occurrences in the UI and [insights.json](video-indexer-output-json-v2.md#insights). Enhancing the quality and usability through improved grouping algorithm.
+Significantly reduced number of low-quality face detection occurrences in the UI and insights.json. Enhancing the quality and usability through improved grouping algorithm.
 
 ## November 2022
 
