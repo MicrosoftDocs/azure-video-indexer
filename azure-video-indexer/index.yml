@@ -40,24 +40,16 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links: 
-          - text: Sign up and upload a video
-            url: video-indexer-get-started.md 
+          - text: Upload and index media
+            url: upload-index-media.md 
       - linkListType: how-to-guide
         links:
           - text: Create an account
-            url: create-account.md
-          - text: Connect an existing classic account to ARM
-            url: azure-video-indexer-ams-retirement-guide.md
-          - text: Import your content from the trial account
-            url: import-content-from-trial.md
-          - text: Use Azure AI Video Indexer API
-            url: video-indexer-use-apis.md 
+            url: create-account.md 
           - text: Try VI web portal
             url: try-vi-web-portal-quickstart.md
-          - text: Examine output produced by API
-            url: video-indexer-output-json-v2.md
-          - text: Embed Azure AI Video Indexer widgets into apps
-            url: video-indexer-embed-widgets.md
+          - text: Indexing configuration guide
+            url: indexing-configuration-guide.md
       - linkListType: sample
         links:
           - text: Code samples
