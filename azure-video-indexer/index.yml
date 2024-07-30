@@ -24,8 +24,12 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: What is Azure AI Video Indexer (VI)?
-          url: video-indexer-overview.md
+          - text: What is Azure AI Video Indexer?
+            url: video-indexer-overview.md
+          - text: Azure AI Video Indexer enabled by Arc
+            url: azure-video-indexer-enabled-by-arc-overview.md
+          - text: Frequently asked questions
+            url: faq.yml
       - linkListType: whats-new
         links:         
         - text: What's new in Azure AI Video Indexer?
@@ -35,27 +39,25 @@ landingContent:
   - title: Get started
     linkLists:
       - linkListType: quickstart
-      - text: Try the VI web portal 
-        url: try-vi-web-portal-quickstart.md
-      - text: Create an account
-        url: create-account.md
-      - text: Create an account connected to Azure OpenAI
-        url: connect-azure-open-ai-task.md
-      - text: Develop with API
-        url: video-indexer-use-apis.md
-      - text: Deploy using Bicep
-        url: deploy-with-bicep.md
-      - text: Deploy using ARM template
-        url: deploy-with-arm-template.md
-      - text: Try VI enabled by Arc
-        url: ./arc/azure-video-indexer-enabled-by-arc-quickstart.md
-       
+        links: 
+          - text: Sign up and upload a video
+            url: video-indexer-get-started.md 
       - linkListType: how-to-guide
         links:
-        - text: Upload and index media
-          url: upload-index-media.md
-        - text: Indexing configuration guide
-          url: indexing-configuration-guide.md
+          - text: Create an account
+            url: create-account.md
+          - text: Connect an existing classic account to ARM
+            url: azure-video-indexer-ams-retirement-guide.md
+          - text: Import your content from the trial account
+            url: import-content-from-trial.md
+          - text: Use Azure AI Video Indexer API
+            url: video-indexer-use-apis.md 
+          - text: Try VI web portal
+            url: try-vi-web-portal-quickstart.md
+          - text: Examine output produced by API
+            url: video-indexer-output-json-v2.md
+          - text: Embed Azure AI Video Indexer widgets into apps
+            url: video-indexer-embed-widgets.md
       - linkListType: sample
         links:
           - text: Code samples
