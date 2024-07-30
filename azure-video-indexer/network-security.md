@@ -1,5 +1,5 @@
 ---
-title: How to enable network security
+title: Use Network Security Groups with Service Tags
 description: This article gives an overview of the Azure AI Video Indexer  network security options.
 ms.topic: article
 ms.custom: devx-track-azurecli
@@ -9,7 +9,7 @@ author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-# NSG service tags for Azure AI Video Indexer
+# Use Network Security Groups with Service Tags
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
