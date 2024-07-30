@@ -23,7 +23,8 @@ This article shows you how to upload and index media files (audio or video) with
     - A SAS URL. If the file is hosted in an Azure storage account, [generate a SAS token URL](/azure/ai-services/document-intelligence/create-sas-tokens?view=form-recog-3.0.0&preserve-view=true) and paste it in the input box. 
 
 > [!NOTE]
-> You **can't** use URLs from streaming services such as YouTube.
+> - You **can't** use URLs from streaming services such as YouTube.
+> - File names must be 80 characters or less. See [Azure resource naming rules](/azure/azure-resource-manager/management/resource-name-rules).
 
 ## Upload the file
 
