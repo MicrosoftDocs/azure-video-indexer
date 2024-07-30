@@ -101,7 +101,7 @@ When indexing by one channel, partial results for those models are available.
 
 Learn how to [get started with Azure AI Video Indexer](video-indexer-get-started.md).
 
-Once you set up, start using [insights](video-indexer-output-json-v2.md) and check out other **How to guides**.
+Once you set up, start using insights and check out other **How to guides**.
 
 ## Compliance, privacy and security
 
