@@ -344,6 +344,16 @@
             "source_path_from_root": "/azure-video-indexer/azure-video-indexer-bring-your-own-model-overview.md",
             "redirect_url": "/azure/azure-video-indexer/retirement/azure-video-indexer/bring-your-own-model-overview",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/logic-apps-connector-tutorial.md",
+            "redirect_url": "/connectors/custom-connectors/create-logic-apps-connector",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/video-indexer-output-json-v2",
+            "redirect_url": "/azure/azure-video-indexer/insights-overview.md",
+            "redirect_document_id": false
         }
     ]
 }

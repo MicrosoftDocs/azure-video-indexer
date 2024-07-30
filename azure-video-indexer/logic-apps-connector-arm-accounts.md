@@ -21,12 +21,9 @@ To make the integration easier, we support [Logic Apps](https://azure.microsof
 
 You can use the connectors to set up custom workflows to effectively index and extract insights from a large amount of video and audio files, without writing a single line of code. Furthermore, using the connectors for the integration gives you better visibility on the health of your workflow and an easy way to debug it.
 
-> [!TIP]
-> If you are using a classic VI account, see [Logic Apps connector with classic-based VI accounts](logic-apps-connector-tutorial.md).
-
 ## Get started with the Azure AI Video Indexer connectors
 
-To help you get started quickly with the Azure AI Video Indexer connectors, the example in this article creates Logic App flows. The Logic App and Power Automate capabilities and their editors are almost identical, thus the diagrams and explanations are applicable to both. The example in this article is based on the ARM VI account. If you're working with a classic account, see [Logic App connectors with classic-based VI accounts](logic-apps-connector-tutorial.md).
+To help you get started quickly with the Azure AI Video Indexer connectors, the example in this article creates Logic App flows. The Logic App and Power Automate capabilities and their editors are almost identical, thus the diagrams and explanations are applicable to both. The example in this article is based on the ARM VI account.
 
 The "upload and index your video automatically" scenario covered in this article is composed of two different flows that work together. The "two flow" approach is used to support async upload and indexing of larger files effectively. 
 
