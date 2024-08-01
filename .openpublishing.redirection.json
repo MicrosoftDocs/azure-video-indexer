@@ -354,6 +354,11 @@
             "source_path_from_root": "/azure-video-indexer/video-indexer-output-json-v2.md",
             "redirect_url": "/azure/azure-video-indexer/insights-overview.md",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/emotions-detection-insight.md",
+            "redirect_url": "/azure/azure-video-indexer/text-based-emotions-detection-insight.md",
+            "redirect_document_id": false
         }
     ]
 }
