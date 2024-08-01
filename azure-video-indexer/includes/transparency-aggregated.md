@@ -4,7 +4,7 @@ ms.topic: include
 ms.service: azure-video-indexer
 ms.date: 07/25/2024
 ms.author: inhenkel
-title: transparency note
+title: Transparency note
 ---
 
 <!-- This include was created so that tranparency notes could be kept in one repo. Changes to this include update the page on the DocLegal repo. -->
@@ -46,7 +46,7 @@ title: transparency note
 
 ## Clapper board detection
 
-[Clapperboard detection](/azure/azure-video-indexer/clapper-board-insight)
+[Clapper board detection](/azure/azure-video-indexer/clapper-board-insight)
 [!INCLUDE [transparency-clapper-board-detection](transparency-transparency-clapper-board-detection.md)]
 
 ## Content moderation
@@ -78,7 +78,7 @@ title: transparency note
 [Observed people tracking and matched faces](/azure/azure-video-indexer/observed-matched-people)
 [!INCLUDE [transparency-observed-people-tracking-matched-faces](transparency-observed-people-tracking-matched-faces.md)]
 
-## Optical charactr recognition (OCR)
+## Optical character recognition (OCR)
 
 [OCR](/azure/azure-video-indexer/ocr)
 [!INCLUDE [transparency-ocr](transparency-ocr.md)]
@@ -90,7 +90,7 @@ title: transparency note
 
 ## Topics inference
 
-See [Topics inference](/azure/azure-video-indexer/topics-inference)
+See [topics inference](/azure/azure-video-indexer/topics-inference)
 [!INCLUDE [transparency-topics-inference](transparency-topics-inference.md)]
 
 ## Transcription, translation, and language identification
