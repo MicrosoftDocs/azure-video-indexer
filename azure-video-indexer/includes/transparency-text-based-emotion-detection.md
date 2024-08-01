@@ -4,21 +4,21 @@ ms.topic: include
 ms.service: azure-video-indexer
 ms.date: 07/25/2024
 ms.author: inhenkel
-title: transparency text-based emotion detection
+title: Transparency text-based emotion detection
 ---
 
 ## Text-based emotion detection transparency notes
 
 - This model is designed to help detect emotions in the transcript of a video. However, it isn't suitable for making assessments about an individual's emotional state, their ability, or their overall performance.  
-- This emotion detection model is intended to help determine the sentiment behind sentences in the video’s transcript. However, it only works on the text itself, and may not perform well for sarcastic input or in cases where input may be ambiguous or unclear. 
-- To increase the accuracy of this model, it is recommended that input data be in a clear and unambiguous format. Users should also note that this model does not have context about input data, which can impact its accuracy.  
-- This model can produce both false positives and false negatives. To reduce the likelihood of either, users are advised to follow best practices for input data and preprocessing, and to interpret outputs in the context of other relevant information. It's important to note that the system does not have any context of the input data. 
-- The outputs of this model should not be used to make assessments about an individual's emotional state or other human characteristics. This model is supported in English and may not function properly with non-English inputs. Not English inputs are being translated to English before entering the model, therefore may produce less accurate results. 
-- The model should not be used to evaluate employee performance and monitoring individuals.
-- The model should not be used for making assessments about a person, their emotional state, or their ability.
-- The results of the model can be inaccurate, as this is an AI system, and should be treated with caution.
+- This emotion detection model is intended to help determine the sentiment behind sentences in the video’s transcript. However, it only works on the text itself, and might not perform well for sarcastic input or in cases where input might be ambiguous or unclear. 
+- To increase the accuracy of this model, it's recommended that input data be in a clear and unambiguous format. Users should also note that this model doesn't have context about input data, which can affect its accuracy.  
+- This model can produce both false positives and false negatives. To reduce the likelihood of either, users are advised to follow best practices for input data and preprocessing, and to interpret outputs in the context of other relevant information. It's important to note that the system doesn't have any context of the input data. 
+- The outputs of this model shouldn't be used to make assessments about an individual's emotional state or other human characteristics. This model is supported in English and might not function properly with non-English inputs. Not English inputs are being translated to English before entering the model, therefore might produce less accurate results. 
+- The model shouldn't be used to evaluate employee performance and monitoring individuals.
+- The model shouldn't be used for making assessments about a person, their emotional state, or their ability.
+- The results of the model can be inaccurate and should be treated with caution.
 - The confidence of the model in its prediction should also be taken into account.
-- Non-english videos will produce less accurate results.
+- Nonenglish videos produce less accurate results.
 
 ## Text-based emotion detection components 
 
