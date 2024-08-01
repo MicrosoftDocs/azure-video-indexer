@@ -12,4 +12,4 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
-[!INCLUDE [Insight details](./includes/emotions-detection.md)]
+[!INCLUDE [Insight details](./includes/text-based-emotions-detection.md)]

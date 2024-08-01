@@ -30,5 +30,5 @@ Use the links in the insights table to learn how to get each insight JSON respon
 | [OCR](ocr-insight.md) | [!INCLUDE [ocr description](./includes/ocr-description.md)] |
 | [Post-production: clapper board detection](clapper-board-insight.md) | [!INCLUDE [clapper board description](./includes/clapperboard-description.md)] |
 | [Post-production: digital patterns](digital-patterns-color-bars-insight.md) | [!INCLUDE [digital patterns description](./includes/digital-patterns-description.md)] |
-| [Text-based emotion detection](emotions-detection-insight.md) | [!INCLUDE [Emotions detection description](./includes/emotions-detection-description.md)] |
+| [Text-based emotion detection](text-based-emotions-detection-insight.md) | [!INCLUDE [Emotions detection description](./includes/text-based-emotions-detection-description.md)] |
 | [Topics inference](topics-inference-insight.md) | [!INCLUDE [topics inference description](./includes/topics-inference-description.md)] |

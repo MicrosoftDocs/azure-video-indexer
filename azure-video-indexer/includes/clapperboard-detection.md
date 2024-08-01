@@ -1587,18 +1587,8 @@ This response shows all of the data that come from detecting clapper boards. If 
 |`fields`|The fields found in the clapper board; also each field's name and value.|
 |`instances`|A list of time ranges where this element appeared.|
 
-## Components
-
-No components are defined.
-
-## Transparency notes
-
-- The values might not be correctly identified by the detection algorithm.
-- The titles of the fields appearing on the clapper board are optimized to identify the most popular fields appearing on top of clapper boards.  
-- Handwritten text or digital digits might not be correctly identified by the fields detection algorithm.
-- The algorithm is optimized to identify fields' categories that appear horizontally.  
-- The clapper board might not be detected if the frame is blurred or that the text written on it can't be read by the human eye.  
-- Empty fields’ values might lead to wrong fields categories.
+[!INCLUDE [General transparency note](read-general-transparency-note.md)]
+[!INCLUDE [transparency-clapper-board-detection](transparency-clapper-board-detection.md)]
 
 ## Sample code
 

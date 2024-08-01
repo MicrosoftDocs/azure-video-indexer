@@ -12,4 +12,4 @@ ms.service: azure-video-indexer
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
-[!INCLUDE [Audio effects detection description](./includes/clapperboard.md)]
+[!INCLUDE [Audio effects detection description](./includes/clapperboard-detection.md)]
