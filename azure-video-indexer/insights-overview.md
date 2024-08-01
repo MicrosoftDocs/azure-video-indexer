@@ -22,7 +22,6 @@ Use the links in the insights table to learn how to get each insight JSON respon
 | ------- | ----------- |
 | [Face detection](face-detection-insight.md) | [!INCLUDE [Face detection description](./includes/face-detection-description.md)] |
 | [Scenes, shots and keyframes](scene-shot-keyframe-detection-insight.md) | [!INCLUDE [Scenes, shots detection and keyframes description](./includes/scene-shot-keyframe-detection-description.md)] |
-<!--
 | [Labels identification](labels-identification-insight.md) | [!INCLUDE [labels identification description](./includes/labels-identification-description.md)] |
 | [Object detection](object-detection-insight.md)| [!INCLUDE [object detection description](./includes/object-detection-description.md)] |
 | [OCR](ocr-insight.md) | [!INCLUDE [ocr description](./includes/ocr-description.md)] |
