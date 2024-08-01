@@ -4,14 +4,14 @@ ms.topic: include
 ms.service: azure-video-indexer
 ms.date: 07/25/2024
 ms.author: inhenkel
-title: transparency keywords extraction
+title: transparency Keywords extraction
 ---
 
-## Transparency notes
+## Keywords extraction transparency notes
 
 Always upload a high-quality audio and video content. The recommended maximum frame size is HD and frame rate is 30 FPS. A frame should contain no more than 10 people. When outputting frames from videos to AI models, only send around 2 or 3 frames per second. Processing 10 and more frames might delay the AI result. At least 1 minute of spontaneous conversational speech is required to perform analysis. Audio effects are detected in nonspeech segments only. The minimal duration of a nonspeech section is 2 seconds. Voice commands and singing aren't supported.
 
-## Components
+## Keywords extraction components
 
 During the Keywords procedure, audio and images in a media file are processed, as follows:
 
