@@ -7,7 +7,7 @@ ms.author: inhenkel
 title: transparency observed people tracking and matched faces
 ---
 
-## Transparency notes
+## Observed people tracking and matched faces transparency notes
 
 - People are generally not detected if they appear small (minimum person height is 100 pixels).
 - Maximum frame size is FHD
@@ -18,7 +18,7 @@ title: transparency observed people tracking and matched faces
 - Obstruction – there maybe errors where there are obstructions (scene/self or obstructions by other people).
 - Pose: The tracks may be split due to different poses (back/front)
 
-## Components
+## Observed people tracking and matched faces components
 
 |Component|Definition|
 |---|---|

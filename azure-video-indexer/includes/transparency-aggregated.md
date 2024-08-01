@@ -35,9 +35,9 @@ title: Transparency note
 
 [!INCLUDE [transparency-limitations-audio](transparency-limitations-audio.md)]
 
-[!INCLUDE [transparency-limitations-textual-summarization-cloud](transparency-limitations-textual-summarization-cloud.md)]
+[!INCLUDE [transparency-extual-summarization-cloud](transparency-textual-summarization-cloud.md)]
 
-[!INCLUDE [transparency-limitations-textual-summarization-edge](transparency-limitations-textual-summarization-edge.md)]
+[!INCLUDE [transparency-textual-summarization-edge](transparency-textual-summarization-edge.md)]
 
 ## Audio effects detection
 

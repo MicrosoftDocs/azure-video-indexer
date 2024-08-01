@@ -4,10 +4,10 @@ ms.topic: include
 ms.service: azure-video-indexer
 ms.date: 07/25/2024
 ms.author: inhenkel
-title: transparency named entities
+title: transparency Named entities
 ---
 
-## Transparency notes
+## Named entities transparency notes
 
 -	Carefully consider the accuracy of the results, to promote more accurate detections, check the quality of the audio and images, low quality audio and images might impact the detected insights. 
 -	Named entities only detect insights in audio and images. Logos in a brand name may not be detected.
