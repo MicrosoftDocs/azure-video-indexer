@@ -23,13 +23,13 @@ Use the links in the insights table to learn how to get each insight JSON respon
 | [Face detection](face-detection-insight.md) | [!INCLUDE [Face detection description](./includes/face-detection-description.md)] |
 | [Scenes, shots and keyframes](scene-shot-keyframe-detection-insight.md) | [!INCLUDE [Scenes, shots detection and keyframes description](./includes/scene-shot-keyframe-detection-description.md)] |
 | [Labels identification](labels-identification-insight.md) | [!INCLUDE [labels identification description](./includes/labels-identification-description.md)] |
-<!-- | [Matched person]() | [!INCLUDE [Matched person description]()] | -->
 | [Object detection](object-detection-insight.md)| [!INCLUDE [object detection description](./includes/object-detection-description.md)] |
 | [OCR](ocr-insight.md) | [!INCLUDE [ocr description](./includes/ocr-description.md)] |
 | [Post-production: clapper board detection](clapper-board-insight.md) | [!INCLUDE [clapper board description](./includes/clapperboard-description.md)] |
 | [Post-production: digital patterns](digital-patterns-color-bars-insight.md) | [!INCLUDE [digital patterns description](./includes/digital-patterns-description.md)] |
 
 <!--| [Featured clothing]() | [!INCLUDE [Featured clothing description]()] |-->
+<!-- | [Matched person]() | [!INCLUDE [Matched person description]()] | -->
 <!--| [Rolling credits]() | [!INCLUDE [Rolling credits description]()] |-->
 <!--| [Textual logos]() | [!INCLUDE [Textual logos description]()] | -->
 
