@@ -182,7 +182,7 @@ Additional characteristics:
 
 To download each keyframe, use the keyframe IDs with the [Get Thumbnails](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Thumbnail) request.
 
-[!INCLUDE [artifacts](./includes/artifacts.md)]
+[!INCLUDE [artifacts](artifacts.md)]
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 

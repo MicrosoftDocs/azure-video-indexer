@@ -47,7 +47,7 @@ Unless specified otherwise, a model is generally available.
 * **Visual content moderation**: Detects adult and/or racy visuals.
 * **Labels identification**: Identifies visual objects and actions displayed.
 * **Scene segmentation**: Determines when a scene changes in video based on visual cues. A scene depicts a single event and it's composed by a series of consecutive shots, which are semantically related.
-* **Shot detection**: Determines when a shot changes in video based on visual cues. A shot is a series of frames taken from the same motion-picture camera. For more information, see [Scenes, shots, and keyframes](scenes-shots-keyframes.md).
+* **Shot detection**: Determines when a shot changes in video based on visual cues. A shot is a series of frames taken from the same motion-picture camera. For more information, see [Scenes, shots, and keyframes](scene-shot-keyframe-detection-insight.md).
 * **Black frame detection**: Identifies black frames presented in the video.
 * **Keyframe extraction**: Detects stable keyframes in a video.
 * **Rolling credits**: Identifies the beginning and end of the rolling credits in the end of TV shows and movies.

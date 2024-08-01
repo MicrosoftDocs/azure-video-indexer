@@ -930,7 +930,7 @@ Multiple advancements announced at IBC 2019:
     Extracts brands, locations, and people from speech and visual text via natural language processing (NLP).
 * Editorial shot type classification
 
-    Tagging of shots with editorial types such as close up, medium shot, two shot, indoor, outdoor etc. For more information, see [Editorial shot type detection](scenes-shots-keyframes.md#editorial-shot-type-detection).
+    Tagging of shots with editorial types such as close up, medium shot, two shot, indoor, outdoor etc. For more information, see [Editorial shot type detection](scene-shot-keyframe-detection-insight#keyframe-editorial-shot-type-detection.md).
 * Topic inferencing enhancement - now covering level 2
 
     The topic inferencing model now supports deeper granularity of the IPTC taxonomy. Read full details at [Azure Media Services new AI-powered innovation](https://azure.microsoft.com/blog/azure-media-services-new-ai-powered-innovation/).
