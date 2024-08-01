@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 ## Text-based emotion detection
 
-[!INCLUDE [Emotions detection description](emotions-detection-description.md)]
+[!INCLUDE [Emotions detection description](text-based-emotions-detection-description.md)]
 
 > [!IMPORTANT]
 > The model works on text only (labeling emotions in video transcripts.) This model doesn't infer the emotional state of people, may not perform where input is ambiguous or unclear, like sarcastic remarks. **Thus, the model shouldn't be used for things like assessing employee performance or the emotional state of a person**. 

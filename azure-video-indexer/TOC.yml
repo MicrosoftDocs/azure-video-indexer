@@ -96,7 +96,7 @@ items:
     - name: Topics inference insights
       href: topics-inference-insight.md
     - name: Text-based emotion detection insights
-      href: emotions-detection-insight.md
+      href: text-based-emotions-detection-insight.md
     - name: Object detection insights
       href: object-detection-insight.md
     - name: Post-production insights

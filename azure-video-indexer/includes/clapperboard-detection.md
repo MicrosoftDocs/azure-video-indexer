@@ -1588,7 +1588,7 @@ This response shows all of the data that come from detecting clapper boards. If 
 |`instances`|A list of time ranges where this element appeared.|
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
-[!INCLUDE [transparency-clapper-board-detection](transparency-transparency-clapper-board-detection.md)]
+[!INCLUDE [transparency-clapper-board-detection](transparency-clapper-board-detection.md)]
 
 ## Sample code
 
