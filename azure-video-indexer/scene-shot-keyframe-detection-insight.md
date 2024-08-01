@@ -8,7 +8,7 @@ author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-# Text-based emotion detection insight overview
+# Scene, shot, keyframe detection insight overview
 
 [!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
