@@ -7,13 +7,13 @@ ms.author: inhenkel
 title: transparency topics inference
 ---
 
-## Transparency notes
+## Topics inference transparency notes
 
 - When uploading a file, always use high-quality video content. The recommended maximum frame size is HD and frame rate is 30 FPS. A frame should contain no more than 10 people. When outputting frames from videos to AI models, only send around two or three frames per second. Processing 10 and more frames might delay the AI result.  
 - When uploading a file always use high quality audio and video content. At least 1 minute of spontaneous conversational speech is required to perform analysis. Audio effects are detected in nonspeech segments only. The minimal duration of a nonspeech section is 2 seconds. Voice commands and singing aren't supported. 
 - Typically, small people or objects under 200 pixels and people who are seated might not be detected. People wearing similar clothes or uniforms might be detected as being the same person and are given the same ID number. People or objects that are obstructed might not be detected. Tracks of people with front and back poses might be split into different instances.
 
-## Components
+## Topics inference components
  
 |Component|Definition|
 |---|---|
