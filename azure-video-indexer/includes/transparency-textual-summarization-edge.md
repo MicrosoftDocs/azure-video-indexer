@@ -29,3 +29,5 @@ If you are using the Edge extension, you can generate a summary from the video p
 - The length of the summary might influence the level of detail extracted from the video summary. Longer summaries might result in less specific details being included.
 - The generated summary might contain inaccuracies, such as incorrect identification of gender, age, and other personal characteristics.
 - If the original video contains inappropriate content, the video summarization output might be affected in the following ways: it might be incomplete, contain disclaimers regarding the inappropriate content, and in certain instances, it might include the actual inappropriate quotes, which may be presented with or without a disclaimer.
+
+See also the transparency notes for textual summarization. 
