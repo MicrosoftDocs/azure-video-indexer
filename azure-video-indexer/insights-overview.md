@@ -27,7 +27,7 @@ Use the links in the insights table to learn how to get each insight JSON respon
 | [OCR](ocr-insight.md) | [!INCLUDE [ocr description](./includes/ocr-description.md)] |
 | [Post-production: clapper board detection](clapper-board-insight.md) | [!INCLUDE [clapper board description](./includes/clapperboard-description.md)] |
 | [Post-production: digital patterns](digital-patterns-color-bars-insight.md) | [!INCLUDE [digital patterns description](./includes/digital-patterns-description.md)] |
--->
+
 <!--| [Featured clothing]() | [!INCLUDE [Featured clothing description]()] |-->
 <!-- | [Matched person]() | [!INCLUDE [Matched person description]()] | -->
 <!--| [Rolling credits]() | [!INCLUDE [Rolling credits description]()] |-->
