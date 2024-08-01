@@ -20,11 +20,25 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Bug fixes
 * Deprecated functionality
 
+
 ## July 2024
 
 ### Textual summarization on VI enable by Arc
 The textual summarization capability is now available on the VI enabled by Arc extension using the latest Phi 3 model. You can benefit from the same functionality as in the cloud, including customizing of the summary with several settings: Formal, Casual, Short and Long.
 
+### Language identification improvments
+
+- Turnover time and quality of single language identification was improved. 
+- If there are multiple languages in the file (and you asked for a single language identification):
+    - The most dominant language, the language that appeared for the longest duration is returned.
+    - The artifact contains all the languages that were identified by speech in the original video.
+- The transcript includes only the lines of the most dominant language and excludes lines containing different languages.
+
+### Player and accessibility improvements
+
+The website player was updated to the latest version of the Shaka base. The player is also included in the widgets.
+
+Accessibility improvments were implemented for the website.
 
 ## June 2024
 
