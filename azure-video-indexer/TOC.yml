@@ -102,7 +102,7 @@ items:
         href: digital-patterns-color-bars-insight.md
         displayName: Slate detection insights description, following slate detection insights, movie post-production process, advanced indexing option, Digital patterns detection, The Timeline tab, The Insight tab, indexing process, post-production insights, slate insight, audio indexing, Advanced** presets, advanced setting, slate metadata, post-production checkmark, clapper board, color bars, metadata extraction, scene matching, clapperboard instances, title, topic, article, video, customers, wikipedia, org, information, example, SMPTE_color_bars, order, image, media/slate-detection-process, advanced-setting, file, list, post-production-checkmark, details, color-bars
     - name: Scene, shots, keyframes detection
-      href: scenes-shots-keyframe-detection-insight.md
+      href: scene-shot-keyframe-detection-insight.md
     - name: Topics inference insights
       href: topics-inference-insight.md
     - name: Text-based emotion detection insights
