@@ -47,6 +47,7 @@ title: Transparency note
 ## Clapper board detection
 
 [Clapper board detection](/azure/azure-video-indexer/clapper-board-insight)
+<!-- stuff -->
 [!INCLUDE [transparency-clapper-board-detection](transparency-clapper-board-detection.md)]
 
 ## Content moderation
