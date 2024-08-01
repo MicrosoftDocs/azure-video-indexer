@@ -2,7 +2,7 @@
 title:  Azure AI Video Indexer accounts  
 description: This article gives an overview of Azure AI Video Indexer accounts.
 ms.topic: conceptual
-ms.date: 07/25/2024
+ms.date: 08/01/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -22,7 +22,7 @@ This article gives an overview of Azure AI Video Indexer accounts types.
 
 Azure AI Video Indexer paid accounts are Azure Resource Manager (ARM) based and unlike trial accounts, are created with your Azure subscription. ARM-based accounts give you access to security and management capabilities, such as [Role Based Access Control (RBAC) user management](/azure/role-based-access-control/overview), [Azure Monitor integration](/azure/azure-monitor/overview), deployment through ARM templates, and more.
 
-A paid account that doesn't have minute, support, or SLA limitations. Accounts can be created with the Azure portal <!--(see [Create an account with the Azure portal](create-account-portal.md)) or API (see [Create accounts with API](/rest/api/videoindexer/stable/accounts)).-->
+A paid account that doesn't have minute, support, or SLA limitations. Accounts can be created with the Azure portal. <!--(see [Create an account with the Azure portal](create-account-portal.md)) or API (see [Create accounts with API](/rest/api/videoindexer/stable/accounts)).-->
 
 For more information about pricing, see [Azure AI Video Indexer pricing](https://azure.microsoft.com/pricing/details/video-indexer/).  
    

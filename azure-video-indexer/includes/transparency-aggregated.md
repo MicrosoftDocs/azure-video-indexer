@@ -2,7 +2,7 @@
 author: inhenkel
 ms.topic: include 
 ms.service: azure-video-indexer
-ms.date: 07/25/2024
+ms.date: 08/01/2024
 ms.author: inhenkel
 title: Transparency note
 ---
@@ -35,7 +35,7 @@ title: Transparency note
 
 [!INCLUDE [transparency-limitations-audio](transparency-limitations-audio.md)]
 
-[!INCLUDE [transparency-extual-summarization-cloud](transparency-textual-summarization-cloud.md)]
+[!INCLUDE [transparency-textual-summarization-cloud](transparency-textual-summarization-cloud.md)]
 
 [!INCLUDE [transparency-textual-summarization-edge](transparency-textual-summarization-edge.md)]
 
@@ -83,6 +83,11 @@ title: Transparency note
 
 [OCR](/azure/azure-video-indexer/ocr)
 [!INCLUDE [transparency-ocr](transparency-ocr.md)]
+
+## Scene, shot, and keyframe detection
+
+[Scene,shot and keyframe detection](/azure/azure-video-indexer/scene-shot-keyframe-detection-insight)
+[!INCLUDE [transparency-ocr](transparency-scene-shot-keyframe-detection.md)]
 
 ## Textual emotion detection
 

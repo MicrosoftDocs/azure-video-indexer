@@ -359,6 +359,11 @@
             "source_path_from_root": "/azure-video-indexer/emotions-detection-insight.md",
             "redirect_url": "/azure/azure-video-indexer/text-based-emotions-detection-insight.md",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/scenes-shots-keyframes.md",
+            "redirect_url": "/azure/azure-video-indexer/scene-shot-keyframe-detection-insight.md",
+            "redirect_document_id": false
         }
     ]
 }
