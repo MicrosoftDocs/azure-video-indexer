@@ -2,7 +2,7 @@
 title: Textual Video Summary with Azure OpenAI
 description: This article is an overview of Azure OpenAI textual summarization with Azure AI Video Indexer. 
 ms.topic: overview
-ms.date: 07/25/2024
+ms.date: 08/01/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -70,7 +70,7 @@ If you're using the VI enbabled by Arc extension, you can generate a summary fro
 - The generated summary might contain inaccuracies, such as incorrect identification of gender, age, and other personal characteristics.
 - If the original video contains inappropriate content, the video summarization output extract might be affected in the following ways: it might be incomplete, contain disclaimers regarding the inappropriate content, and in certain instances, it might include the actual inappropriate quotes, which may be presented with or without a disclaimer.
 
-## Additional information
+## Transparency notes
 
 For more information about the way textual summarization is used, see the [Transparency notes](/legal/azure-video-indexer/transparency-note#text-summarization) for textual summarization.
 
