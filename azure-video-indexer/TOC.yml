@@ -10,7 +10,7 @@ items:
   - name: VI migration and updating guide
     items:
     - name: VI migration guide
-      href: azure-video-indexer-ams-retirement-guide.md
+      href: retirement/azure-video-indexer-ams-retirement-guide.md
     - name: Update your VI account
       href: update-your-azure-video-indexer-account-and-migrate-assets.md
     - name: Changes related to Azure Media Service (AMS) retirement
