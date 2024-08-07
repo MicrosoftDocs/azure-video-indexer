@@ -2,7 +2,7 @@
 title: Switch between tenants on the Azure AI Video Indexer website
 description: This article shows how to switch between tenants in the Azure AI Video Indexer website. 
 ms.topic: how-to
-ms.date: 07/25/2024
+ms.date: 08/07/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -33,10 +33,7 @@ This article shows two options to solve the same problem - how to switch tenants
     > [!div class="mx-imgBorder"]
     > ![Screenshot of a user name.](./media/switch-directory/avi-user-switch.png)
 
-    Here user can view all detected directories listed. The current directory will be marked, once a different directory is selected the **Switch directory** button will be available. 
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of a tenant list.](./media/switch-directory/tenants.png)
+    Here user can view all detected directories listed. The current directory will be marked, once a different directory is selected the **Switch directory** button will be available.
 
     Once clicked, the authenticated credentials will be used to sign in again to the Azure AI Video Indexer website with the new directory.
 
