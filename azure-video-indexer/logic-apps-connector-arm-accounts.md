@@ -132,15 +132,13 @@ The flow steps are:
 ### Set up permissions
 
 1. Set up the permissions between the Logic app and the Azure AI Video Indexer account.    
-1. Set up system assigned managed identity for permission on Azure AI Video Indexer resource.
+1. Set up system assigned managed identity for permission on Azure AI Video Indexer resource. In the Azure portal, go to your Azure AI Video Indexer resource/account.
 
-        In the Azure portal, go to your Azure AI Video Indexer resource/account.
-
-        1. On the left side blade, and select **Access control**.
-        1. Select **Add** -> **Add role assignment** -> **Contributor** -> **Next** -> **User, group, or service principal** -> **+Select members**.
-        1. Under **Members**, search for the Logic Apps name you created (in this case, `UploadIndexVideosApp`).
-        1. Press **Select**.
-        1. Press **Review + assign**.
+    1. On the left side blade, and select **Access control**.
+    1. Select **Add** -> **Add role assignment** -> **Contributor** -> **Next** -> **User, group, or service principal** -> **+Select members**.
+    1. Under **Members**, search for the Logic Apps name you created (in this case, `UploadIndexVideosApp`).
+    1. Press **Select**.
+    1. Press **Review + assign**.
 
 ### Create an Upload video and index action
     
