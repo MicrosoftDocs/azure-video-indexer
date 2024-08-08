@@ -20,8 +20,21 @@ When used responsibly and carefully, Azure AI Video Indexer is a valuable tool f
 - Emotional Speech: Emotional variations in speech, such as shouting, crying, or extreme excitement, can affect the model's ability to accurately diarize speakers.
 - Speaker disguise or impersonation: If a speaker intentionally tries to imitate or disguise their voice, the model might misidentify the speaker.
 - Ambiguous speaker identification: Some segments of speech might not have enough unique characteristics for the model to confidently attribute to a specific speaker.
+- Audio that contains languages other than the ones you selected produces unexpected results.
+- The minimal segment length for detecting each language is 15 seconds.
+- The language detection offset is 3 seconds on average.
+- Speech is expected to be continuous. Frequent alternations between languages might affect the model's performance.
+- The speech of non-native speakers might affect the model's performance (for example, when speakers use their first language and they switch to another language).
+- The model is designed to recognize spontaneous conversational speech with reasonable audio acoustics (not voice commands, singing, etc.).
+- Project creation and editing are not available for multi-language videos.
+- Custom language models aren't available when using multi-language detection.
+- Adding keywords isn't supported.
+- The language indication isn't included in the exported closed caption file.
+- The update transcript in the API doesn't support multiple languages files.
+- The model is designed to recognize a spontaneous conversational speech (not voice commands, singing, and so on).
+- If Azure AI Video Indexer can't identify the language with a high enough confidence (greater than 0.6), the fallback language is English.
 
-For more information, see: guidelines and limitations in [language detection and transcription](/azure/azure-video-indexer/multi-language-identification-transcription).
+Here is a list of [supported languages](language-support.md).
 
 ## Transcription, translation and language identification components  
 

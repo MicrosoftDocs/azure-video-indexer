@@ -31,12 +31,15 @@ When indexing media files with multiple speakers, Azure AI Video Indexer perform
 
 ## Example response
 
+All the languages detected in the video are under sourceLanauge and each instance in the transcription sectin includes the trascribed language.
+
 ```json
     "insights": {
       "version": "1.0.0.0",
       "duration": "0:01:50.486",
       "sourceLanguage": "en-US",
       "sourceLanguages": [
+        "es-ES",
         "en-US"
       ],
       "language": "en-US",
