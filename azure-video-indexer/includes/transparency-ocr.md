@@ -7,7 +7,7 @@ ms.author: inhenkel
 title: Transparency optical character recognition
 ---
 
-## OCR transparency notes
+## Optical Character Recognition (OCR)
 
 - Video Indexer has an OCR limit of 50,000 words per indexed video. Once the limit is reached, no additional OCR results are generated.
 - Carefully consider the accuracy of the results, to promote more accurate detections, check the quality of the image, low quality images might affect the detected insights.  

@@ -7,7 +7,7 @@ ms.author: inhenkel
 title: Transparency text-based emotion detection
 ---
 
-## Text-based emotion detection transparency notes
+## Text-based emotion detection
 
 - This model is designed to help detect emotions in the transcript of a video. However, it isn't suitable for making assessments about an individual's emotional state, their ability, or their overall performance.  
 - This emotion detection model is intended to help determine the sentiment behind sentences in the video’s transcript. However, it only works on the text itself, and might not perform well for sarcastic input or in cases where input might be ambiguous or unclear. 
