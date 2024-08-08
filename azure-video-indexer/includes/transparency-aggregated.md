@@ -84,11 +84,6 @@ title: Transparency note
 [OCR](/azure/azure-video-indexer/ocr)
 [!INCLUDE [transparency-ocr](transparency-ocr.md)]
 
-## Scene, shot, and keyframe detection
-
-[Scene,shot and keyframe detection](/azure/azure-video-indexer/scene-shot-keyframe-detection-insight)
-[!INCLUDE [transparency-ocr](transparency-scene-shot-keyframe-detection.md)]
-
 ## Textual emotion detection
 
 [Textual emotion detection](/azure/azure-video-indexer/emotions-detection#considerations-and-limitations-when-choosing-a-use-case)
