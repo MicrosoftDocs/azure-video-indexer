@@ -2,12 +2,12 @@
 author: inhenkel
 ms.topic: include 
 ms.service: azure-video-indexer
-ms.date: 07/25/2024
+ms.date: 08/08/2024
 ms.author: inhenkel
 title: Transparency optical character recognition
 ---
 
-## OCR transparency notes
+## OCR notes
 
 - Video Indexer has an OCR limit of 50,000 words per indexed video. Once the limit is reached, no additional OCR results are generated.
 - Carefully consider the accuracy of the results, to promote more accurate detections, check the quality of the image, low quality images might affect the detected insights.  
