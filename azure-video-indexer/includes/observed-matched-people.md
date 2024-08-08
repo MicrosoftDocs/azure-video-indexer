@@ -23,7 +23,7 @@ In the web portal, the resulting insights are displayed in a categorized list in
 - Create a summary out of a long video, like court evidence of a specific person’s appearance in a video, using the same detected person’s ID.
 - Learn and analyze trends over time, for example—how customers move across aisles in a shopping mall or how much time they spend in checkout lines.
 
-The **Matched faces** and **Detected clothing** features are available when indexing your file by choosing the **Advanced** -> **Video + audio indexing** preset.
+The **matched faces** and **detected clothing** features are available when indexing your file by choosing the **Advanced** -> **Video + audio indexing** preset.
 
 
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]

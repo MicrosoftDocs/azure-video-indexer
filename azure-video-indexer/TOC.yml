@@ -112,24 +112,15 @@ items:
   - name: Indexing configuration guide
     href: indexing-configuration-guide.md
     displayName: Azure AI Video Indexer account, Indexing configuration guide description, video source language list, Azure AI Video Indexer insights, initial upload screen, new media file, other setting options, multi-language (MLID) detection, indexing type options, video indexing options, Auto-detect single language, private, Standard audio, single bitrate, indexing process, indexing objectives, video setting, default setting, configuration options, custom models, informed decisions, large volumes, video name, good fit, Advanced Video, encoding job, two points, higher quality, output captions, same options, Advanced options, Advanced settings, language identification, appropriate language, scale guide, privacy settings, associated cost, great option, following insights, multiple languages, audio effects, streaming settings, videos language, title, article, users, range, implications, performance, impact, videoindexer, ai, experience, jobs, API, considerations, image, Screenshot, advanced-configuration, English, topic, examples, people, person, transcription, translation, need, case, LID/MLID, supported, link, microsoft, video-indexer, Indexes, formatting, emotions, keywords, entities, brands, locations, sentiments, speakers, preview
-  - name: Detect features of videos
-    items:
-      - name: Find moments within videos
-        href: video-indexer-search.md
-        displayName: Azure AI Video Indexer REST API, Azure AI Video Indexer description, Azure AI Video Indexer widgets, Azure AI Video Indexer website, original search results, Video search result, visual widgets, exact moment, player/insights view, top-right corner, appropriate option, source video, specific lines, Process content, search keywords, screen text, deep insights, moments, title, videos, topic, videoindexer, ai, account, library, example, Microsoft, OCR, image, media/video, indexer-search, summarized, synchronization, information, transcripts, download, projects, application, clip, editor
-  - name: Detect faces and identify people
-    items:
-      - name: Face redaction with API
-        href: face-redaction-with-api.md
-      - name: Matched person
-        href: matched-person.md
-        displayName: same spatial position, JSON code sample, following JSON response, Azure AI Video Indexer, person insight description, Gate notice, bounding boxes, raw data, content creators, sport games, Post-event analysis, bank robbery, Standard indexing, advanced model, Custom View, search bar, short time, video advertising, video archive, long video, Advanced video, specific person, Mapped person, confidence level, matching algorithm, corresponding faces, different people, Matched person, People" insight, People insight, people feature, title, topic, API, scenarios, efficiency, news, example, appearances, movement, accident, crime, explosion, incident, summary, parts, file, image, media/matched, audio, videoindexer, ai, website, Insights, clothing, option, name, type, properties, pants, instances, end, Limitations, assumptions, effects, miss, matches, Precondition, tracks, front, Obstructions, frame, Trace
-      - name: Detected clothing
-        href: detected-clothing.md
-      - name: Featured clothing
-        href: observed-people-featured-clothing.md
-        displayName: single featured clothing image, Azure AI Video Indexer, video contextual advertising, faces bounding box, relevant clothing ads, advanced video settings, low quality results, indexing video option, observed person description, important featured clothing, artifact zip file, featured clothing insight, Advanced option, Standard indexing, low relevancy, important clothing, key items, specific time, audio indexing, following factors, key moments, general emotions, id property, ranking index, right-upper corner, two objects, following properties, best frame, false detections, one outfit, best outfit, Wrong detections, intro video, short video, artifact file, audio preset, fileName property, blurred people, clothing images, people insight, Frames, title, information, individuals, timestamp, high-quality, article, screenshot, example, NOTE, instances, confidence, score, frameIndex, faceBoundingBox, width, height, opBoundingBox, folder, Limitations, assumptions, effects, Pre-condition, clothes, algorithm, tracks, front, people-tracking
-  - name: Analyze Audio and language
+  - name: Search videos
+    href: video-indexer-search.md
+    displayName: Azure AI Video Indexer REST API, Azure AI Video Indexer description, Azure AI Video Indexer widgets, Azure AI Video Indexer website, original search results, Video search result, visual widgets, exact moment, player/insights view, top-right corner, appropriate option, source video, specific lines, Process content, search keywords, screen text, deep insights, moments, title, videos, topic, videoindexer, ai, account, library, example, Microsoft, OCR, image, media/video, indexer-search, summarized, synchronization, information, transcripts, download, projects, application, clip, editor
+  - name: Redact faces
+    href: face-redaction-with-api.md
+  - name: Find featured clothing
+    href: observed-people-featured-clothing.md
+    displayName: single featured clothing image, Azure AI Video Indexer, video contextual advertising, faces bounding box, relevant clothing ads, advanced video settings, low quality results, indexing video option, observed person description, important featured clothing, artifact zip file, featured clothing insight, Advanced option, Standard indexing, low relevancy, important clothing, key items, specific time, audio indexing, following factors, key moments, general emotions, id property, ranking index, right-upper corner, two objects, following properties, best frame, false detections, one outfit, best outfit, Wrong detections, intro video, short video, artifact file, audio preset, fileName property, blurred people, clothing images, people insight, Frames, title, information, individuals, timestamp, high-quality, article, screenshot, example, NOTE, instances, confidence, score, frameIndex, faceBoundingBox, width, height, opBoundingBox, folder, Limitations, assumptions, effects, Pre-condition, clothes, algorithm, tracks, front, people-tracking
+  - name: Analyze audio and language
     items:
       - name: View and update transcriptions
         href: edit-transcript-lines-portal.md
