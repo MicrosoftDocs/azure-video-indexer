@@ -2,12 +2,12 @@
 author: inhenkel
 ms.topic: include 
 ms.service: azure-video-indexer
-ms.date: 07/25/2024
+ms.date: 08/08/2024
 ms.author: inhenkel
 title: Transparency clapper board detection
 ---
 
-## Clapper board detection transparency notes
+## Clapper board detection notes
 
 - The detection algorithm might not correctly identify the values.
 - The titles of the fields appearing on the clapper board are optimized to identify the most popular fields appearing on top of clapper boards.  

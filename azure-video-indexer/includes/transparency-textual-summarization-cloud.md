@@ -2,12 +2,12 @@
 author: inhenkel
 ms.topic: include 
 ms.service: azure-video-indexer
-ms.date: 08/01/2024
+ms.date: 08/08/2024
 ms.author: inhenkel
 title: Transparency imitations - textual summarization cloud
 ---
 
-### Textual summarization
+### Textual summarization notes
 
 > [!IMPORTANT]
 > When using textual summarization, it's important to note that the system is not intended to replace the full viewing experience, especially for content where details and nuances are crucial. It's also not desinged for summarizing highly sensitive or confidential videos where context and privacy are paramount.
