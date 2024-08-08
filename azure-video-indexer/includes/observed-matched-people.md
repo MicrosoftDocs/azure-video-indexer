@@ -2,7 +2,7 @@
 title: Observed people tracking and matched faces
 ms.service: azure-video-indexer
 ms.topic: include
-ms.date: 07/25/2024
+ms.date: 08/08/2024
 ms.author: inhenkel
 ---
 
@@ -19,7 +19,9 @@ In the web portal, the resulting insights are displayed in a categorized list in
 
 - Tracking a person’s movement, for example,  in law enforcement for more efficiency when analyzing an accident or crime.
 - Improving efficiency by deep searching for matched people in organizational archives for insight on specific celebrities, for example when creating promos and trailers.
-- Improved efficiency when creating feature stories, for example, searching for people wearing a red shirt in the archives of a football game at a News or Sports agency.
+- Improved efficiency when creating feature stories, for example, searching for people wearing a red shirt in the archives of a football game at a News or Sports agency.  
+- Create a summary out of a long video, like court evidence of a specific person’s appearance in a video, using the same detected person’s ID.
+- Learn and analyze trends over time, for example—how customers move across aisles in a shopping mall or how much time they spend in checkout lines.
 
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
 [!INCLUDE [get insights with the API](get-insights-api.md)]
