@@ -7,7 +7,7 @@ ms.author: inhenkel
 title: Transparency Face detection
 ---
 
-## Face detection
+## Face detection notes
 
 Face detection is a valuable tool for many industries when it's used responsibly and carefully. To respect the privacy and safety of others, and to comply with local and global regulations, we recommend that you follow these use guidelines:
 

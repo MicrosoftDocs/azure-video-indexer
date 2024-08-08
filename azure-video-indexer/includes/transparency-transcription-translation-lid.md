@@ -7,7 +7,7 @@ ms.author: inhenkel
 title: transparency transcription and language identification
 ---
 
-## Transcription, translation and language identification
+## Transcription, translation and language identification notes
 
 When used responsibly and carefully, Azure AI Video Indexer is a valuable tool for many industries. To respect the privacy and safety of others, and to comply with local and global regulations, we recommend:   
 
