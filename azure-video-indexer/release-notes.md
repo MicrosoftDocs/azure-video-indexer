@@ -924,7 +924,7 @@ Multiple advancements announced at IBC 2019:
     Ability to detect group ad recognize characters in animated content, via integration with custom vision.
 * Multi-language identification (public preview)
 
-    Detect segments in multiple languages in the audio track and create a multilingual transcript based on them. Initial support: English, Spanish, German and French. For more information, see [Automatically identify and transcribe multi-language content](multi-language-identification-transcription.md).
+    Detect segments in multiple languages in the audio track and create a multilingual transcript based on them. Initial support: English, Spanish, German and French. For more information, see [Transcribe multi-language content](transcription-translation-lid-insight.md).
 * Named entity extraction for People and Location
 
     Extracts brands, locations, and people from speech and visual text via natural language processing (NLP).

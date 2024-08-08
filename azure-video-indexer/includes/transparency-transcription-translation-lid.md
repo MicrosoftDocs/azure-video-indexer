@@ -26,7 +26,7 @@ When used responsibly and carefully, Azure AI Video Indexer is a valuable tool f
 - Speech is expected to be continuous. Frequent alternations between languages might affect the model's performance.
 - The speech of non-native speakers might affect the model's performance (for example, when speakers use their first language and they switch to another language).
 - The model is designed to recognize spontaneous conversational speech with reasonable audio acoustics (not voice commands, singing, etc.).
-- Project creation and editing are not available for multi-language videos.
+- Project creation and editing aren't available for multi-language videos.
 - Custom language models aren't available when using multi-language detection.
 - Adding keywords isn't supported.
 - The language indication isn't included in the exported closed caption file.
@@ -34,9 +34,9 @@ When used responsibly and carefully, Azure AI Video Indexer is a valuable tool f
 - The model is designed to recognize a spontaneous conversational speech (not voice commands, singing, and so on).
 - If Azure AI Video Indexer can't identify the language with a high enough confidence (greater than 0.6), the fallback language is English.
 
-Here is a list of [supported languages](language-support.md).
+Here's a list of [supported languages](../language-support.md).
 
-## Transcription, translation and language identification components  
+## Transcription, translation, and language identification components  
 
 During the transcription, translation and language identification procedure, speech in a media file is processed, as follows: 
 

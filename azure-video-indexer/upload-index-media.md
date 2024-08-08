@@ -40,7 +40,7 @@ Use these steps to upload and index a video file.
 1. Configure the basic settings for indexing or use the default configuration. Specify the following settings for each file:
     - **Privacy**: Choose whether the video URL will be publicly available or private after indexing.
     - **Streaming quality**: Choose the streaming quality for the video. You can select **Single bitrate** or **No streaming** For more information, see [the streaming options](indexing-configuration-guide.md#streaming-quality-options).
-    - **Video source language**: Choose the spoken language of the video to ensure high quality transcript and insights extraction. If you don't know the language or there's more than one spoken language, select **Auto-detect single language** or **Auto-detect multi-language**. For more information, see  [Language detection](multi-language-identification-transcription.md).
+    - **Video source language**: Choose the spoken language of the video to ensure high quality transcript and insights extraction. If you don't know the language or there's more than one spoken language, select **Auto-detect single language** or **Auto-detect multi-language**.
 1. If it's the first time you're uploading a media file, check the consent checkbox to agree to the terms and conditions.
 1. Configure the *general settings* for indexing. You can rename the files.
 1. Configure the *advanced settings* for indexing. These settings are for all files in the batch:
