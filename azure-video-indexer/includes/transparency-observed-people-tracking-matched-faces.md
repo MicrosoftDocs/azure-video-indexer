@@ -17,6 +17,7 @@ title: transparency observed people tracking and matched faces
 - People with similar clothes: (for example, people wear uniforms, players in sport games) could be detected as the same person with the same ID number.
 - Obstruction – there maybe errors where there are obstructions (scene/self or obstructions by other people).
 - Pose: The tracks may be split due to different poses (back/front)
+- As clothing detection is dependent on the visibility of the person’s body, the accuracy is higher if a person is fully visible. There might be errors when a person is without clothing. In this scenario or others of poor visibility, results may be given such as long pants and skirt or dress.
 
 ## Observed people tracking and matched faces components
 
