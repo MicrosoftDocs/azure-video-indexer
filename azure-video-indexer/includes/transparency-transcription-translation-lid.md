@@ -4,14 +4,14 @@ ms.topic: include
 ms.service: azure-video-indexer
 ms.date: 08/08/2024
 ms.author: inhenkel
-title: transparency transcription and language identification
+title: Transparency transcription and language identification
 ---
 
-## Transcription, translation and language identification notes
+## Transcription, translation, and language identification notes
 
 When used responsibly and carefully, Azure AI Video Indexer is a valuable tool for many industries. To respect the privacy and safety of others, and to comply with local and global regulations, we recommend:   
 
-- Carefully consider the accuracy of the results, to promote more accurate data, check the quality of the audio, low quality audio might impact the detected insights.  
+- Carefully consider the accuracy of the results, to promote more accurate data, check the quality of the audio, low quality audio might affect the detected insights.  
 - Video Indexer doesn't perform speaker recognition so speakers aren't assigned an identifier across multiple files. You're unable to search for an individual speaker in multiple files or transcripts. 
 - Speaker identifiers are assigned randomly and can only be used to distinguish different speakers in a single file. 
 - Cross-talk and overlapping speech: When multiple speakers talk simultaneously or interrupt each other, it becomes challenging for the model to accurately distinguish and assign the correct text to the corresponding speakers.
