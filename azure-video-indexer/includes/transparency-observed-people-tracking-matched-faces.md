@@ -4,20 +4,20 @@ ms.topic: include
 ms.service: azure-video-indexer
 ms.date: 08/08/2024
 ms.author: inhenkel
-title: transparency observed people tracking and matched faces
+title: Transparency observed people tracking and matched faces
 ---
 
 ## Observed people tracking and matched faces notes
 
 - People are generally not detected if they appear small (minimum person height is 100 pixels).
-- Maximum frame size is FHD
-- Low quality video (for example, dark lighting conditions) may impact the detection results.
+- Maximum frame size is full high definition (FHD).
+- Low quality video (for example, dark lighting conditions) might affect the detection results.
 - The recommended frame rate at least 30 FPS.
 - Recommended video input should contain up to 10 people in a single frame. The feature could work with more people in a single frame, but the detection result retrieves up to 10 people in a frame with the detection highest confidence.
 - People with similar clothes: (for example, people wear uniforms, players in sport games) could be detected as the same person with the same ID number.
-- Obstruction – there maybe errors where there are obstructions (scene/self or obstructions by other people).
-- Pose: The tracks may be split due to different poses (back/front)
-- As clothing detection is dependent on the visibility of the person’s body, the accuracy is higher if a person is fully visible. There might be errors when a person is without clothing. In this scenario or others of poor visibility, results may be given such as long pants and skirt or dress.
+- Obstruction – there mightbe errors where there are obstructions (scene/self or obstructions by other people).
+- Pose: The tracks might be split due to different poses (back/front)
+- As clothing detection is dependent on the visibility of the person’s body, the accuracy is higher if a person is fully visible. There might be errors when a person is without clothing. In this scenario or others of poor visibility, results might be given such as long pants and skirt or dress.
 
 ## Observed people tracking and matched faces components
 
