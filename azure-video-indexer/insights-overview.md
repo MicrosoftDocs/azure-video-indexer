@@ -23,7 +23,7 @@ Use the links in the insights table to learn how to get each insight JSON respon
 | [Face detection](face-detection-insight.md) | [!INCLUDE [Face detection description](./includes/face-detection-description.md)] |
 | [Labels identification](labels-identification-insight.md) | [!INCLUDE [labels identification description](./includes/labels-identification-description.md)] |
 | [Object detection](object-detection-insight.md)| [!INCLUDE [object detection description](./includes/object-detection-description.md)] |
-|[Observed people tracking](azure-video-indexer/observed-matched-people-insight.md) | [!INCLUDE [observed matched people description](./includes/observed-matched-people-description.md)]) |
+|[Observed people tracking](observed-matched-people-insight.md) | [!INCLUDE [observed matched people description](./includes/observed-matched-people-description.md)]) |
 | [OCR](ocr-insight.md) | [!INCLUDE [ocr description](./includes/ocr-description.md)] |
 | [Post-production: clapper board detection](clapper-board-insight.md) | [!INCLUDE [clapper board description](./includes/clapperboard-description.md)] |
 | [Post-production: digital patterns](digital-patterns-color-bars-insight.md) | [!INCLUDE [digital patterns description](./includes/digital-patterns-description.md)] |
