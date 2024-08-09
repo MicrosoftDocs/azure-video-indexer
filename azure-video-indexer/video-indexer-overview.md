@@ -70,7 +70,7 @@ Unless specified otherwise, a model is generally available.
 
 * **Audio transcription**: Converts speech to text over 50 languages and allows extensions. For more information, see [Azure AI Video Indexer language support](language-support.md).
 * **Automatic language detection**: Identifies the dominant spoken language. For more information, see [Azure AI Video Indexer language support](language-support.md). If the language can't be identified with confidence, Azure AI Video Indexer assumes the spoken language is English.
-* **Multi-language speech identification and transcription**: Identifies the spoken language in different segments from audio. It sends each segment of the media file to be transcribed and then combines the transcription back to one unified transcription. For more information about transcription see [Transcription](transcription-translation-lid-insight)
+* **Multi-language speech identification and transcription**: Identifies the spoken language in different segments from audio. It sends each segment of the media file to be transcribed and then combines the transcription back to one unified transcription. For more information about transcription see [Transcription](transcription-translation-lid-insight.md)
 * **Closed captioning**: Creates closed captioning in three formats: VTT, TTML, SRT.
 * **Two channel processing**: Auto detects separate transcript and merges to single timeline.
 * **Noise reduction**: Clears up telephony audio or noisy recordings (based on Skype filters).
