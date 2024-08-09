@@ -2,7 +2,7 @@
 title: Language support in Azure AI Video Indexer
 description: This article provides a comprehensive list of language support by service features in Azure AI Video Indexer.
 ms.topic: conceptual
-ms.date: 07/25/2024
+ms.date: 08/08/2024
 ms.custom: ignite-2022
 ms.author: inhenkel
 author: IngridAtMicrosoft
@@ -25,7 +25,7 @@ This section explains the Video Indexer language options and has a table of the 
 ### Column explanations
 
 - **Supported source language** – The language spoken in the media file supported for transcription, translation, and search.
-- **Language identification** - Whether the language can be automatically detected by Video Indexer when language identification is used for indexing. To learn more, see [Use Azure AI Video Indexer to auto identify spoken languages](language-identification-model.md) and the **Language Identification** section.
+- **Language identification** - Whether the language can be automatically detected by Video Indexer when language identification is used for indexing. To learn more, see [Use Azure AI Video Indexer to auto identify spoken languages](transcription-translation-lid-insight.md) and the **Language Identification** section.
 - **Customization (language model)** - Whether the language can be used when customizing language models in Video Indexer. To learn more, see [Customize a language model in Azure AI Video Indexer](customize-language-model-overview.md).
 - **Pronunciation (language model)** - Whether the language can be used to create a pronunciation dataset as part of a custom speech model. To learn more, see [Customize a speech model with Azure AI Video Indexer](customize-speech-model-overview.md).
 - **Website Translation** – Whether the language is supported for translation when using the [Azure AI Video Indexer website](https://aka.ms/vi-portal-link). Select the translated language in the language drop-down menu.
@@ -157,7 +157,7 @@ The API returns a list of supported languages with the following values:
 
 When uploading a media file to Video Indexer, you can specify the media file's source language. If indexing a file through the Video Indexer website, this can be done by selecting a language during the file upload. If you're submitting the indexing job through the API, it's done by using the language parameter. The selected language is then used to generate the transcription of the file.
 
-If you aren't sure of the source language of the media file or it may contain multiple languages, Video Indexer can detect the spoken languages. If you select either Auto-detect single language (LID) or multi-language (MLID) for the media file’s source language, the detected language or languages will be used to transcribe the media file. To learn more about LID and MLID, see Use Azure AI Video Indexer to auto identify spoken languages, see [Automatically identify the spoken language with language identification model](language-identification-model.md) and [Automatically identify and transcribe multi-language content](multi-language-identification-transcription.md)
+If you aren't sure of the source language of the media file or it may contain multiple languages, Video Indexer can detect the spoken languages. If you select either Auto-detect single language (LID) or multi-language (MLID) for the media file’s source language, the detected language or languages will be used to transcribe the media file. To learn more about LID and MLID, see Use Azure AI Video Indexer to auto identify spoken languages, see [Automatically identify the spoken language with language identification model](transcription-translation-lid-insight.md) and [Automatically identify and transcribe multi-language content](transcription-translation-lid-insight.md)
 
 There's a limit of 10 languages allowed for identification during the indexing of a media file for both LID and MLID. The following are the 9 *default* languages of Language identification (LID) and Multi-language identification (MILD):
 

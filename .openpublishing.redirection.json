@@ -379,6 +379,16 @@
             "source_path_from_root": "/azure-video-indexer/detected-clothing.md",
             "redirect_url": "/azure/azure-video-indexer/observed-matched-people-insight",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/language-identification-model.md",
+            "redirect_url": "/azure/azure-video-indexer/transcription-translation-lid-insight",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/multi-language-identification-transcription.md",
+            "redirect_url": "/azure/azure-video-indexer/transcription-translation-lid-insight",
+            "redirect_document_id": false
         }
     ]
 }
