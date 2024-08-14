@@ -2,12 +2,12 @@
 author: inhenkel
 ms.topic: include 
 ms.service: azure-video-indexer
-ms.date: 08/08/2024
+ms.date: 08/13/2024
 ms.author: inhenkel
 title: Transparency note
 ---
 
-<!-- This include was created so that tranparency notes could be kept in one repo. Changes to this include update the page on the DocLegal repo. -->
+<!-- This include was created so that tranparency notes could be kept in one repo. Changes to this include update the page on the DocLegal repo. The date is the date that any of the includes were edited. -->
 
 [!INCLUDE [transparency-intro](transparency-intro.md)]
 
