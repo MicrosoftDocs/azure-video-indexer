@@ -86,7 +86,7 @@ title: Transparency note
 
 ## Textual emotion detection
 
-[Textual emotion detection](/azure/azure-video-indexer/emotions-detection#considerations-and-limitations-when-choosing-a-use-case)
+[Textual emotion detection](/azure/azure-video-indexer/emotions-detection)
 [!INCLUDE [transparency-text-based-emotion-detection](transparency-text-based-emotion-detection.md)]
 
 ## Topics inference
