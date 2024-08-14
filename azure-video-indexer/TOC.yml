@@ -162,7 +162,7 @@ items:
       href: face-grouping-how-to.md     
   - name: Use LLM and other models
     items:
-    - name: Summarize text
+    - name: Summarize videos
       href: text-summarization-task.md
       displayName: summarize text, summary, transcript, audio, large language model, LLM
     - name: Create LLM prompt content
