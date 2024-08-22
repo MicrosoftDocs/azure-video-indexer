@@ -2,7 +2,7 @@
 author: inhenkel
 ms.topic: include 
 ms.service: azure-video-indexer
-ms.date: 08/08/2024
+ms.date: 08/22/2024
 ms.author: inhenkel
 title: transparency Named entities
 ---
@@ -11,8 +11,8 @@ title: transparency Named entities
 
 -	Carefully consider the accuracy of the results, to promote more accurate detections, check the quality of the audio and images, low quality audio and images might impact the detected insights. 
 -	Named entities only detect insights in audio and images. Logos in a brand name may not be detected.
--	Carefully consider that when using for law enforcement named entities may not always detect parts of the audio. To ensure fair and high-quality decisions, combine named entities with human oversight. 
--	Don't use named entities for decisions that may have serious adverse impacts. Machine learning models that extract text can result in undetected or incorrect text output. Decisions based on incorrect output could have serious adverse impacts. Additionally, it's advisable to include human review of decisions that have the potential for serious impacts on individuals.
+-	Carefully consider that when using for law enforcement named entities may not always detect parts of the audio. To ensure fair and high-quality decisions, always combine named entities with human oversight. 
+-	Don't use named entities for decisions that may have serious adverse impacts on individuals and groups. Machine learning models that extract text can result in undetected or incorrect text output. Your decisions based on incorrect output could have serious adverse impacts that must be avoided. You should always include human review of determinations that have the potential for serious impacts on individuals.
 
 ## Components 
 

@@ -2,7 +2,7 @@
 title:  Azure AI Video Indexer insights overview
 description: This article gives a brief overview of Azure AI Video Indexer insights.
 ms.topic: conceptual
-ms.date: 08/01/2024
+ms.date: 08/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -23,7 +23,7 @@ Use the links in the insights table to learn how to get each insight JSON respon
 | [Face detection](face-detection-insight.md) | [!INCLUDE [Face detection description](./includes/face-detection-description.md)] |
 | [Labels identification](labels-identification-insight.md) | [!INCLUDE [labels identification description](./includes/labels-identification-description.md)] |
 | [Object detection](object-detection-insight.md)| [!INCLUDE [object detection description](./includes/object-detection-description.md)] |
-|[Observed people tracking](observed-matched-people-insight.md) | [!INCLUDE [observed matched people description](./includes/observed-matched-people-description.md)]) |
+|[Observed people detection](observed-matched-people-insight.md) | [!INCLUDE [observed matched people description](./includes/observed-matched-people-description.md)]) |
 | [OCR](ocr-insight.md) | [!INCLUDE [ocr description](./includes/ocr-description.md)] |
 | [Post-production: clapper board detection](clapper-board-insight.md) | [!INCLUDE [clapper board description](./includes/clapperboard-description.md)] |
 | [Post-production: digital patterns](digital-patterns-color-bars-insight.md) | [!INCLUDE [digital patterns description](./includes/digital-patterns-description.md)] |

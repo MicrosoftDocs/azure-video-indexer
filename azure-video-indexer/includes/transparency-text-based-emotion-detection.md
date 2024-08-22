@@ -2,7 +2,7 @@
 author: inhenkel
 ms.topic: include 
 ms.service: azure-video-indexer
-ms.date: 08/08/2024
+ms.date: 08/22/2024
 ms.author: inhenkel
 title: Transparency text-based emotion detection
 ---
@@ -13,12 +13,12 @@ title: Transparency text-based emotion detection
 - This emotion detection model is intended to help determine the sentiment behind sentences in the video’s transcript. However, it only works on the text itself, and might not perform well for sarcastic input or in cases where input might be ambiguous or unclear. 
 - To increase the accuracy of this model, it's recommended that input data be in a clear and unambiguous format. Users should also note that this model doesn't have context about input data, which can affect its accuracy.  
 - This model can produce both false positives and false negatives. To reduce the likelihood of either, users are advised to follow best practices for input data and preprocessing, and to interpret outputs in the context of other relevant information. It's important to note that the system doesn't have any context of the input data. 
-- The outputs of this model shouldn't be used to make assessments about an individual's emotional state or other human characteristics. This model is supported in English and might not function properly with non-English inputs. Not English inputs are being translated to English before entering the model, therefore might produce less accurate results. 
-- The model shouldn't be used to evaluate employee performance and monitoring individuals.
-- The model shouldn't be used for making assessments about a person, their emotional state, or their ability.
+- The outputs of this model should NOT be used to make assessments about an individual's emotional state or other human characteristics. This model is supported in English and might not function properly with non-English inputs. Not English inputs are being translated to English before entering the model, therefore might produce less accurate results. 
+- The model should never be used to evaluate employee performance or to monitor individuals.
+- The model should never be used for making assessments about a person, their emotional state, or their ability.
 - The results of the model can be inaccurate and should be treated with caution.
-- The confidence of the model in its prediction should also be taken into account.
-- Nonenglish videos produce less accurate results.
+- The confidence of the model in its prediction must also be taken into account.
+- Non-English videos produce less accurate results.
 
 ## Text-based emotion detection components 
 
