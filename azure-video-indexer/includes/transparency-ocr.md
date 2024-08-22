@@ -2,7 +2,7 @@
 author: inhenkel
 ms.topic: include 
 ms.service: azure-video-indexer
-ms.date: 08/08/2024
+ms.date: 08/22/2024
 ms.author: inhenkel
 title: Transparency optical character recognition
 ---
@@ -11,9 +11,9 @@ title: Transparency optical character recognition
 
 - Video Indexer has an OCR limit of 50,000 words per indexed video. Once the limit is reached, no additional OCR results are generated.
 - Carefully consider the accuracy of the results, to promote more accurate detections, check the quality of the image, low quality images might affect the detected insights.  
-- Carefully consider when using for law enforcement. OCR might misread or not detect parts of the text. To ensure fair and high-quality decisions, combine OCR-based automation with human oversight. 
+- Carefully consider when using for law enforcement. OCR might misread or not detect parts of the text. To ensure fair and high-quality VI determinations, combine OCR-based automation with human oversight. 
 - When extracting handwritten text, avoid using the OCR results of signatures that are hard to read for both humans and machines. A better way to use OCR is to use it for detecting the presence of a signature for further analysis. 
-- Don't use OCR for decisions that might have serious adverse impacts. Machine learning models that extract text can result in undetected or incorrect text output. Decisions based on incorrect output could have serious adverse impacts. Additionally, it's advisable to include human review of decisions that have the potential for serious impacts on individuals.
+- Don't use OCR for decisions that might have serious adverse impacts to individuals or groups. Machine learning models that extract text can result in undetected or incorrect text output. Decisions based on incorrect output could have serious adverse impacts that must be avoided. You should always to include human review of decisions that have the potential for serious impacts on individuals.
 
 ## OCR components 
 

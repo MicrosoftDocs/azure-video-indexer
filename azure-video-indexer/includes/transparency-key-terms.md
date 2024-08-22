@@ -2,7 +2,7 @@
 author: inhenkel
 ms.topic: include 
 ms.service: azure-video-indexer
-ms.date: 07/25/2024
+ms.date: 08/22/2024
 ms.author: inhenkel
 title: transparency key terms
 ---
@@ -17,7 +17,7 @@ title: transparency key terms
 | Facial detection | Finds human faces in an image and returns bounding boxes indicating their locations. Face detection models alone do not find individually identifying features, only a bounding box marking the entire face. Facial detection doesn't involve distinguishing one fact from another face, predicting or classifying facial attributes, or creating a Face template. |
 | Facial identification | "One-to-many" matching of a face in an unmanipulated image to a set of faces in a secure repository. An example is a touchless access control system in a building that replaces or augments physical cards and badges in which a smart camera captures the face of one person entering a secured door and attempts to find a match from a set of images of faces of individuals who are approved to access the building. This process is implemented by Azure AI Face service and involves the creation of Face templates. |
 | Face template | Unique set of numbers generated from an image or video that represents the distinctive features of a face. |
-| Observed people tracking and matched faces | Features that automatically detect and match people in media files. Observed people tracking and matched faces can be set to display insights on people, their clothing, and the exact time frame of their appearance. |
+| Observed people detection and matched faces | Features that automatically detect and match people in media files. Observed people detection and matched faces can be set to display insights on people, their clothing, and the exact time frame of their appearance. |
 | Keyword extraction | The process of automatically detecting insights on the different keywords discussed in media files. Keywords extraction can extract insights in both single language and multi-language media files. |
 | Deep search | The ability to retrieve only relevant video and audio files from a video library by searching for specific terms within the extracted insights. |
 | Labels | The identification of visual objects and actions appearing in a frame. For example, identifying an object such as a dog, or an action such as running. |

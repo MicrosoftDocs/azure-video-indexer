@@ -2,7 +2,7 @@
 author: inhenkel
 ms.topic: include 
 ms.service: azure-video-indexer
-ms.date: 08/08/2024
+ms.date: 08/22/2024
 ms.author: inhenkel
 title: Transparency note
 ---
@@ -74,10 +74,10 @@ title: Transparency note
 [Named entities](/azure/azure-video-indexer/named-entities)
 [!INCLUDE [transparency-named-entities](transparency-named-entities.md)]
 
-## Observed people tracking and matched faces
+## Observed people detection and matched faces
 
-[Observed people tracking and matched faces](/azure/azure-video-indexer/observed-matched-people)
-[!INCLUDE [transparency-observed-people-tracking-matched-faces](transparency-observed-people-tracking-matched-faces.md)]
+[Observed people detection and matched faces](/azure/azure-video-indexer/observed-matched-people)
+[!INCLUDE [transparency-observed-people-detection-matched-faces](transparency-observed-people-detection-matched-faces.md)]
 
 ## Optical character recognition (OCR)
 
