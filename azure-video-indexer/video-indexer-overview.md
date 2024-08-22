@@ -2,7 +2,7 @@
 title: What is Azure AI Video Indexer?
 description: This article gives an overview of the Azure AI Video Indexer service.
 ms.topic: overview
-ms.date: 08/08/2024
+ms.date: 08/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -33,7 +33,10 @@ Azure AI Video Indexer's insights can be applied to many scenarios:
 
 ## Video/audio AI features
 
-The following list shows the insights you can retrieve from your video/audio files using Azure AI Video Indexer video and audio AI features (models). 
+The following list shows the insights you can retrieve from your video/audio files using Azure AI Video Indexer video and audio AI features (models).
+
+> [!NOTE]
+> Given privacy and regulatory requirements, some of these features have restricted use and/or require authorization to full utilize.
 
 Unless specified otherwise, a model is generally available.
 
@@ -52,7 +55,7 @@ Unless specified otherwise, a model is generally available.
 * **Keyframe extraction**: Detects stable keyframes in a video.
 * **Rolling credits**: Identifies the beginning and end of the rolling credits in the end of TV shows and movies.
 * **Editorial shot type detection**: Tags shots based on their type (like wide shot, medium shot, close up, extreme close up, two shot, multiple people, outdoor and indoor, and so on). For more information, see [Editorial shot type detection](scene-shot-keyframe-detection-insight.md#keyframe-editorial-shot-type-detection).
-* **Observed people tracking**: Detects observed people in videos and provides information such as the location of the person in the video frame (using bounding boxes) and the exact timestamp (start, end) and confidence when a person appears. For more information, see [Trace observed people in a video](observed-matched-people-insight.md).
+* **Observed people detection**: Detects observed people in videos and provides information such as the location of the person in the video frame (using bounding boxes) and the exact timestamp (start, end) and confidence when a person appears. For more information, see [Trace observed people in a video](observed-matched-people-insight.md).
     * **Matched person**: Matches people that were observed in the video with the corresponding faces detected. The matching between the observed people and the faces contain a confidence level.
     * **Detected clothing**: Detects the clothing types of people appearing in the video and provides information such as long or short sleeves, long or short pants and skirt or dress. The detected clothing is associated with the people wearing it and the exact timestamp (start, end) along with a confidence level for the detection are provided.
     * **Featured clothing**: Captures featured clothing images appearing in a video. You can improve your targeted ads by using the featured clothing insight. For information on how the featured clothing images are ranked and how to get the insights, see [featured clothing](observed-people-featured-clothing.md).
@@ -109,8 +112,8 @@ Once you set up, start using insights and check out other **How to guides**.
 
 [!INCLUDE [Gate notice](./includes/face-limited-access.md)]
 
-As an important reminder, you must comply with all applicable laws in your use of Azure AI Video Indexer, and you may not use Azure AI Video Indexer or any Azure service in a manner that violates the rights of others, or that may be harmful to others.
+You must comply with all applicable laws in your use of Azure AI Video Indexer, and you may not use Azure AI Video Indexer or any Azure service in a manner that violates the rights of others, or that may be harmful to others.
 
-Before uploading any video/image to Azure AI Video Indexer, You must have all the proper rights to use the video/image, including, where required by law, all the necessary consents from individuals (if any) in the video/image, for the use, processing, and storage of their data in Azure AI Video Indexer and Azure. Some jurisdictions may impose special legal requirements for the collection, online processing and storage of certain categories of data, such as biometric data. Before using Azure AI Video Indexer and Azure for the processing and storage of any data subject to special legal requirements, You must ensure compliance with any such legal requirements that may apply to You.
+Before uploading any video/image to Azure AI Video Indexer, You must have all the appropriate and legal rights to use the video/image, including, where required by law, all the necessary consents from individuals (if any) in the video/image, for the use, processing, and storage of their data in Azure AI Video Indexer and Azure. Some jurisdictions may impose special legal requirements for the collection, online processing and storage of certain categories of data, such as biometric data. Before using Azure AI Video Indexer and Azure for the processing and storage of any data subject to special legal requirements, you must ensure your use complies with all such legal requirements that may apply to You and your intended use.
 
 To learn about compliance, privacy and security in Azure AI Video Indexer please visit the Microsoft [Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Azure/default.aspx). For Microsoft's privacy obligations, data handling and retention practices, including how to delete your data, please review Microsoft's [Privacy Statement](https://privacy.microsoft.com/PrivacyStatement), the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) ("OST") and [Data Processing Addendum](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67) ("DPA"). By using Azure AI Video Indexer, you agree to be bound by the OST, DPA and the Privacy Statement.

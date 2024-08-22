@@ -74,7 +74,7 @@ items:
   items:
   - name: Upload and index media
     href: upload-index-media.md
-    displayName: Azure AI Video Indexer API developer portal, external video content management, Azure AI Video Indexer description, Azure AI Video Indexer output, Azure AI Video Indexer website, optical character recognition, noise reduction algorithms, advanced video features, standard video analysis, basic audio features, advanced audio features, audio event detection, standard audio analysis, Supported file formats, Upload Video API, Azure Storage, short description, output captions, external ID, video files, two methods, Media Services, backup solution, Upload button, byte array, date info, VCM) system, indexing process, following values, DefaultWithNoiseReduction` value, audio files, audio stream, code sample, optional parameters, callback URL, existing parameters, original URL, default preset, people tracking, AI bundle, Operations&operation, =Operations, title, videos, uploading, topic, article, insights, list, codecs, media-encoder-standard-formats-reference, limits, 30 GB, size, 4 hours, length, metadata, persistence, videoindexer, image, Screenshot, progress, email, link, example, details, NOTE, apis, Configurations, section, externalID, integration, BasicAudio, transcription, translation, formatting, AdvancedAudio, addition, AdvancedVideo
+    displayName: Azure AI Video Indexer API developer portal, external video content management, Azure AI Video Indexer description, Azure AI Video Indexer output, Azure AI Video Indexer website, optical character recognition, noise reduction algorithms, advanced video features, standard video analysis, basic audio features, advanced audio features, audio event detection, standard audio analysis, Supported file formats, Upload Video API, Azure Storage, short description, output captions, external ID, video files, two methods, Media Services, backup solution, Upload button, byte array, date info, VCM) system, indexing process, following values, DefaultWithNoiseReduction` value, audio files, audio stream, code sample, optional parameters, callback URL, existing parameters, original URL, default preset, people detection, AI bundle, Operations&operation, =Operations, title, videos, uploading, topic, article, insights, list, codecs, media-encoder-standard-formats-reference, limits, 30 GB, size, 4 hours, length, metadata, persistence, videoindexer, image, Screenshot, progress, email, link, example, details, NOTE, apis, Configurations, section, externalID, integration, BasicAudio, transcription, translation, formatting, AdvancedAudio, addition, AdvancedVideo
   - name: Get insights
     items:
     - name: Audio insights
@@ -97,7 +97,7 @@ items:
         href: face-detection-insight.md
       - name: Labels identification insights
         href: labels-identification-insight.md
-      - name: Observed people tracking & matched faces insights
+      - name: Observed people detection & matched faces insights
         href: observed-matched-people-insight.md
       - name: Object detection insights
         href: object-detection-insight.md
@@ -123,7 +123,7 @@ items:
     href: face-redaction-with-api.md
   - name: Find featured clothing
     href: observed-people-featured-clothing.md
-    displayName: single featured clothing image, Azure AI Video Indexer, video contextual advertising, faces bounding box, relevant clothing ads, advanced video settings, low quality results, indexing video option, observed person description, important featured clothing, artifact zip file, featured clothing insight, Advanced option, Standard indexing, low relevancy, important clothing, key items, specific time, audio indexing, following factors, key moments, general emotions, id property, ranking index, right-upper corner, two objects, following properties, best frame, false detections, one outfit, best outfit, Wrong detections, intro video, short video, artifact file, audio preset, fileName property, blurred people, clothing images, people insight, Frames, title, information, individuals, timestamp, high-quality, article, screenshot, example, NOTE, instances, confidence, score, frameIndex, faceBoundingBox, width, height, opBoundingBox, folder, Limitations, assumptions, effects, Pre-condition, clothes, algorithm, tracks, front, people-tracking
+    displayName: single featured clothing image, Azure AI Video Indexer, video contextual advertising, faces bounding box, relevant clothing ads, advanced video settings, low quality results, indexing video option, observed person description, important featured clothing, artifact zip file, featured clothing insight, Advanced option, Standard indexing, low relevancy, important clothing, key items, specific time, audio indexing, following factors, key moments, general emotions, id property, ranking index, right-upper corner, two objects, following properties, best frame, false detections, one outfit, best outfit, Wrong detections, intro video, short video, artifact file, audio preset, fileName property, blurred people, clothing images, people insight, Frames, title, information, individuals, timestamp, high-quality, article, screenshot, example, NOTE, instances, confidence, score, frameIndex, faceBoundingBox, width, height, opBoundingBox, folder, Limitations, assumptions, effects, Pre-condition, clothes, algorithm, tracks, front, people-detection
   - name: View and update transcriptions
     href: edit-transcript-lines-portal.md
     displayName: Azure AI Video Indexer website description, same three dots icon, new transcript time stamp line, new transcription line** option, Content model customization, default time stamp, relevant transcript lines, two transcription lines, word-level transcription information, Delete line Lines, following transcript line, next transcript line, New lines, two lines, word-level information, transcript timeline, transcript edits, end/start time, existing line, desired place, editing options, top-right corner, unzipped files, PT0.28S, new text, edit mode, free text, Speaker name, title, transcriptions, article, View, update, section, videoindexer, gap, beginning, user, image, Screenshot, media, transcript-lines-portal, new-transcription-line, previous, NOTE, part, languages, API, example, accuracy, milliseconds, sentences, phrases, words, Confidence, Duration, ai, arrow, Artifacts, speechservices, json, NBest, RecognitionStatus, Success, Channel, Offset, ITN, Display, 3S, dev, 1.
@@ -162,7 +162,7 @@ items:
       href: face-grouping-how-to.md     
   - name: Use LLM and other models
     items:
-    - name: Summarize text
+    - name: Summarize videos
       href: text-summarization-task.md
       displayName: summarize text, summary, transcript, audio, large language model, LLM
     - name: Create LLM prompt content
