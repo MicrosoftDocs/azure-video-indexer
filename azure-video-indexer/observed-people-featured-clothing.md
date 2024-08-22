@@ -82,4 +82,4 @@ It's important to note the limitations of featured clothing to avoid or mitigate
 - Wrong detections may occur when people are overlapping.  
 - Frames containing blurred people are more prone to low quality results.   
 
-For more information, see the [limitations of observed people](observed-people-detection.md#limitations-and-assumptions). 
+For more information, see the [limitations of observed people](observed-matched-people-insight.md). 
