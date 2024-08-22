@@ -2,7 +2,7 @@
 author: inhenkel
 ms.topic: include 
 ms.service: azure-video-indexer
-ms.date: 08/08/2024
+ms.date: 08/22/2024
 ms.author: inhenkel
 title: transparency audio effects detection
 ---
@@ -11,8 +11,7 @@ title: transparency audio effects detection
 
 - Avoid use of short or low-quality audio, audio effects detection provides probabilistic and partial data on detected nonspeech audio events. For accuracy, audio effects detection requires at least 2 seconds of clear nonspeech audio. Voice commands or singing aren't supported.   
 - Avoid use of audio with loud background music or music with repetitive and/or linearly scanned frequency, audio effects detection is designed for nonspeech audio only and therefore can't classify events in loud music. Music with repetitive and/or linearly scanned frequency many be incorrectly classified as an alarm or siren. 
-- Carefully consider the methods of usage in law enforcement and similar institutions. To promote more accurate probabilistic data, ensure that: 
-
+- To promote more accurate probabilistic data, ensure that:
     - Audio effects can be detected in nonspeech segments only. 
     - The duration of a nonspeech section should be at least 2 seconds. 
     - Low quality audio might affect the detection results.  

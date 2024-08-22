@@ -2,12 +2,12 @@
 author: inhenkel
 ms.topic: include 
 ms.service: azure-video-indexer
-ms.date: 08/08/2024
+ms.date: 08/22/2024
 ms.author: inhenkel
-title: Transparency observed people tracking and matched faces
+title: Transparency observed people detectiom and matched faces
 ---
 
-## Observed people tracking and matched faces notes
+## Observed people detection and matched faces notes
 
 - People are generally not detected if they appear small (minimum person height is 100 pixels).
 - Maximum frame size is full high definition (FHD).
@@ -19,7 +19,7 @@ title: Transparency observed people tracking and matched faces
 - Pose: The tracks might be split due to different poses (back/front)
 - As clothing detection is dependent on the visibility of the person’s body, the accuracy is higher if a person is fully visible. There might be errors when a person is without clothing. In this scenario or others of poor visibility, results might be given such as long pants and skirt or dress.
 
-## Observed people tracking and matched faces components
+## Observed people detection and matched faces components
 
 |Component|Definition|
 |---|---|

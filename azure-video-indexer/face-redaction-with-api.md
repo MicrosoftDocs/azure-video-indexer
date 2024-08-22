@@ -2,7 +2,7 @@
 title: Redact faces by using Azure AI Video Indexer API 
 description: Learn how to use the Azure AI Video Indexer face redaction feature by using API.
 ms.topic: how-to
-ms.date: 07/25/2024
+ms.date: 08/22/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -196,7 +196,7 @@ This URL redirects to the .mp4 file that's stored in the Azure Storage account.
 | How do I delete a redacted video? | You can use the [Delete Video](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Video) API and provide the `Videoid` value for the redacted video. |
 | Do I need to pass facial identification gating to use face redaction? | Unless you represent a police department in the United States, no. Even if you’re gated, we continue to offer face detection. We don't offer face identification if you're gated. However, you can redact all faces in a video by using only face detection. |
 | Will face redaction overwrite my original video? | No. The face redaction job creates a new video output file. |
-| Not all faces are properly redacted. What can I do? | Redaction relies on the initial face detection and tracking output of the analysis pipeline. Although we detect all faces most of the time, there are circumstances in which we can't detect a face. Factors like face angle, the number of frames the face is present, and the quality of the source video affect the quality of face redaction. For more information, see [Face insights](face-detection.md). |
+| Not all faces are properly redacted. What can I do? | Redaction relies on the initial face detection and detection output of the analysis pipeline. Although we detect all faces most of the time, there are circumstances in which we can't detect a face. Factors like face angle, the number of frames the face is present, and the quality of the source video affect the quality of face redaction. For more information, see [Face insights](face-detection.md). |
 | Can I redact objects other than faces? | No. Currently, we offer only face redaction. If you have a need to redact other objects, you can provide feedback about our product in the [Azure User Voice](https://feedback.azure.com/d365community/forum/8952b9e3-e03b-ec11-8c62-00224825aadf) channel. |
 | How long is an SAS URL valid to download the redacted video? |<!--The SAS URL is valid for xxxx. --> To download the redacted video after the SAS URL expired, you need to call the initial job status URL. It's best to keep these `Jobstatus` URLs in a database in your back end for future reference. |
 
