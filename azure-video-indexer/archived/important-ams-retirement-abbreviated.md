@@ -7,5 +7,7 @@ ms.author: inhenkel
 title: AMS VI retirement announcement
 ---
 
+<!--
 > [!IMPORTANT]
 > The deadline for migrating Azure Video Indexer content due to the Azure Media Services retirement has passed. See the [retirement guide](../retirement/azure-video-indexer-ams-retirement-guide.md) for more information.
+-->

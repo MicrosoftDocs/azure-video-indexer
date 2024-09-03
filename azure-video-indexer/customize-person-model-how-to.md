@@ -2,15 +2,13 @@
 title: Customize a Person model in Azure AI Video Indexer  
 description: This article shows you how to customize a a Person model in Azure AI Video Indexer. 
 ms.topic: how-to
-ms.date: 07/25/2024
+ms.date: 09/03/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-# Customize a person model in Azure AI Video Indexer 
-
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
+# Customize a person model in Azure AI Video Indexer
 
 [!INCLUDE [Gate notice](./includes/face-limited-access.md)]
 
