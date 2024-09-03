@@ -4,7 +4,7 @@ description: Learn how to create an Azure AI Video Indexer account by using an A
 ms.topic: quickstart
 ms.date: 09/03/2024
 ms.author: Ika.BarMenachem
-author: IngridAtMicrosoft
+author: ika-microsoft
 ms.service: azure-video-indexer
 ---
 
