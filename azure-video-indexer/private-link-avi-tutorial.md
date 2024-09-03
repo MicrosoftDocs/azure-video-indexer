@@ -1,14 +1,18 @@
 ---
-title: Deploy Azure AI Video Indexer by using an ARM template
+title: Use private endpoints for Azure Video Indexer
 description: Learn how to create an Azure AI Video Indexer account by using an Azure Resource Manager (ARM) template.
 ms.topic: quickstart
-ms.date: 07/25/2024
-ms.author: 
-author: 
+ms.date: 09/03/2024
+ms.author: Ika.BarMenachem
+author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-## Use private endpoints for Azure Video Indexer
+<!-- Written by Ika Bar Menachem -->
+<!-- Published by IngridAtMicrosoft at PM urgent request -->
+<!-- Not edited or in MVC format. Only edited for Acrolinx score. -->
+
+# Use private endpoints for Azure Video Indexer
 
 You can use [private endpoints](/azure/private-link/private-endpoint-overview) for your Azure Video Indexer accounts to allow clients on a virtual network (VNet) to securely access data over a [Private Link](/azure/private-link/private-link-overview). The private endpoint uses a separate IP address from the VNet address space for each video indexer account service. Network traffic between the clients on the VNet and the Video Indexer account traverses over the VNet and a private link on the Microsoft backbone network, eliminating exposure from the public internet. 
 
