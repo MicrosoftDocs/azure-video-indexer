@@ -77,4 +77,4 @@ If you're already a contributor or an administrator of an existing Azure AI Vide
 
 You can no longer create a classic account.
 
-Classic accounts wereretired on June 30th, 2024.
+Classic accounts were retired on June 30th, 2024.

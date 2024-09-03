@@ -28,7 +28,7 @@ For more information about pricing, see [Azure AI Video Indexer pricing](https:/
 
 You can no longer create a classic account.
 
-Classic accounts wereretired on June 30th, 2024. 
+Classic accounts were retired on June 30th, 2024. 
  
 ## Limited access features
 
