@@ -34,9 +34,9 @@ Private endpoints can be created in subnets that use [Service Endpoints](/azure/
 
 When you create a private endpoint for a video indexer service in your VNet, a consent request is sent for approval to the video indexer account owner. If the user requesting the creation of the private endpoint is also an owner of the video indexer account, this consent request is automatically approved.
 
-:::image type="content" source="media/common/a74040a8ba61e11a1fe868516d60dcff.png" alt-text="screenshot of Azure portal a":::
+:::image type="content" source="./media/common/private-link-screenshot-a.png" alt-text="screenshot of Azure portal a":::
 
-:::image type="content" source="media/common/2b29f0369703b6494386e2f592e7db8a.png" alt-text="screenshot of Azure portal b":::
+:::image type="content" source="./media/common/private-link-screenshot-a.png" alt-text="screenshot of Azure portal b":::
 
 Video Indexer account owners can manage consent requests and the private endpoints through the '*Private endpoints*' tab for the Video Indexer account in the [Azure portal](https://portal.azure.com/).
 
