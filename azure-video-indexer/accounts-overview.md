@@ -2,15 +2,13 @@
 title:  Azure AI Video Indexer accounts  
 description: This article gives an overview of Azure AI Video Indexer accounts.
 ms.topic: conceptual
-ms.date: 08/01/2024
+ms.date: 09/03/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
 # Azure AI Video Indexer account types
-
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 This article gives an overview of Azure AI Video Indexer accounts types.
 
