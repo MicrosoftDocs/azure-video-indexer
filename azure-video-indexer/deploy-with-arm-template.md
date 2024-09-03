@@ -53,34 +53,6 @@ Run [az version](/cli/azure/reference-index?#az-version) to find the version and
 
 ---
 
-## Parameters
-
-### name
-
-- Type: string
-- Description: The name of the new Azure AI Video Indexer account.
-- Required: true
-
-### storageAccountName
-
-- Type: string 
-- Description: The Name of the storageAccount that will be used by Video Indexer Account. 
-- Required: true 
-
-### tags
-
-- Type: object
-- Description: The array of objects that represents custom user tags on the Azure AI Video Indexer account.
-- Required: false
-
-## Reference documentation
-
-If you're new to Azure AI Video Indexer, see:
-
-- [The Azure AI Video Indexer documentation](./index.yml)
-- [The Azure AI Video Indexer API developer portal](https://api-portal.videoindexer.ai/)
-- See other [Azure AI Video Indexer samples](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/README.md).
-
 If you're new to template deployment, see:
 
 - [Azure Resource Manager documentation](/azure/azure-resource-manager/)
