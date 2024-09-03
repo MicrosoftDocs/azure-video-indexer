@@ -22,13 +22,7 @@ This article walks you through the steps of creating the Azure AI Video Indexer 
 
 The trial account option isn't available on the Azure Government cloud. For other Azure Government limitations, see [Limitations of Azure AI Video Indexer on Azure Government](connect-to-azure.md#limitations-of-azure-ai-video-indexer-on-azure-government).
 
-## Classic account
-
-You can no longer create a classic account.
-
-Classic accounts will be retired on June 30th, 2024. If you currently have a classic account, see the [migration guide](azure-video-indexer-ams-retirement-guide.md).
-
-## Paid account
+## Create an account
 
 ### Prerequisites
 
@@ -78,3 +72,9 @@ To create a paid account in Azure Government, follow the instructions in [Create
 If you aren't an Owner or Contributor for any Azure AI Video Indexer accounts in Azure Government, you're'given an empty experience from which you can start creating your account.
 
 If you're already a contributor or an administrator of an existing Azure AI Video Indexer account in Azure Government, you're taken to that account and from there you can use the steps described in the [Paid account](#paid-account) section.
+
+## Classic account are deprecated
+
+You can no longer create a classic account.
+
+Classic accounts wereretired on June 30th, 2024.
