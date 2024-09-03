@@ -2,15 +2,13 @@
 title: Detect textual logo with Azure AI Video Indexer
 description: This article gives an overview of Azure AI Video Indexer textual logo detection.
 ms.topic: how-to
-ms.date: 07/25/2024
+ms.date: 09/03/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
 # How to detect textual logo
-
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 > [!NOTE]
 > Textual logo detection creation process is currently available through API. The result can be viewed through the Azure AI Video Indexer [website](https://www.videoindexer.ai/). 

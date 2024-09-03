@@ -2,15 +2,13 @@
 title: Limited Access features of Azure AI Video Indexer 
 description: This article talks about the limited access features of Azure AI Video Indexer.
 ms.topic: conceptual
-ms.date: 07/25/2024
+ms.date: 09/03/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
 # Limited Access features of Azure AI Video Indexer
-
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 <!-- possible cross repo dependency, copied to local, see metadata -->
 [!INCLUDE [Gate notice](./includes/identity-gate-notice.md)]

@@ -3,15 +3,13 @@ title: Monitor Azure AI Video Indexer
 description: Start here to learn how to monitor Azure AI Video Indexer
 ms.topic: how-to
 ms.custom: subject-monitoring
-ms.date: 07/25/2024
+ms.date: 09/03/2024
 ms.author: inhenkel
 author: itnorman
 ms.service: azure-video-indexer
 ---
 
 # Monitor Azure AI Video Indexer
-
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 When you have critical applications and business processes relying on Azure resources, you want to monitor those resources for their availability, performance, and operation. 
 

@@ -3,15 +3,13 @@ title: Monitoring Azure AI Video Indexer data reference
 description: Azure Monitor reference material for Azure AI Video Indexer 
 ms.topic: reference
 ms.custom: subject-monitoring
-ms.date: 07/25/2024
+ms.date: 09/03/2024
 ms.author: inhenkel
 author: itnorman
 ms.service: azure-video-indexer
 ---
 
 # Monitor Azure AI Video Indexer data reference
-
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 See [Monitoring Azure AI Video Indexer](monitor-video-indexer.md) for details on collecting and analyzing monitoring data for Azure AI Video Indexer.
 

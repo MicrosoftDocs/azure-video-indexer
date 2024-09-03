@@ -3,15 +3,13 @@ title: Deploy Azure AI Video Indexer by using an ARM template
 description: Learn how to create an Azure AI Video Indexer account by using an Azure Resource Manager (ARM) template.
 ms.topic: quickstart
 ms.custom: devx-track-arm-template
-ms.date: 07/25/2024
+ms.date: 09/03/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
 # Quickstart: Deploy Azure AI Video Indexer by using an ARM template
-
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
 
 [!INCLUDE [Gate notice](./includes/face-limited-access.md)]
 
@@ -54,34 +52,6 @@ Run [az version](/cli/azure/reference-index?#az-version) to find the version and
     `az deployment group create --resource-group myResourceGroup --template-file .\videoindexer.template.json --parameters=.\videoindexer.parameters.json`
 
 ---
-
-## Parameters
-
-### name
-
-- Type: string
-- Description: The name of the new Azure AI Video Indexer account.
-- Required: true
-
-### storageAccountName
-
-- Type: string 
-- Description: The Name of the storageAccount that will be used by Video Indexer Account. 
-- Required: true 
-
-### tags
-
-- Type: object
-- Description: The array of objects that represents custom user tags on the Azure AI Video Indexer account.
-- Required: false
-
-## Reference documentation
-
-If you're new to Azure AI Video Indexer, see:
-
-- [The Azure AI Video Indexer documentation](./index.yml)
-- [The Azure AI Video Indexer API developer portal](https://api-portal.videoindexer.ai/)
-- See other [Azure AI Video Indexer samples](https://github.com/Azure-Samples/media-services-video-indexer/blob/master/README.md).
 
 If you're new to template deployment, see:
 

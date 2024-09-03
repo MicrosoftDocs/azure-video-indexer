@@ -2,7 +2,7 @@
 title: Upload and index media with Azure AI Video Indexer (VI)
 description: This article shows you how to upload and index media files (audio or video) with the Azure AI Video Indexer website using advanced settings.
 ms.topic: article
-ms.date: 07/25/2024
+ms.date: 09/03/2024
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: azure-video-indexer
@@ -10,13 +10,11 @@ ms.service: azure-video-indexer
 
 # Upload and index media
 
-[!INCLUDE [AMS VI retirement announcement](./includes/important-ams-retirement-abbreviated.md)]
-
 This article shows you how to upload and index media files (audio or video) with the [Azure AI Video Indexer website](https://aka.ms/vi-portal-link) using advanced settings. If you would like to try a basic upload, see the [quickstart](try-vi-web-portal-quickstart.md).
 
 ## Prerequisites
 
-- An Azure AI Video Indexer account. You can [sign up](https://aka.ms/vi-portal-link) for a free trial account, or create a [paid account](accounts-overview.md#paid-account).
+- An Azure AI Video Indexer account. You can [sign up](https://aka.ms/vi-portal-link) for a free trial account, or create a [standard account](accounts-overview.md).
 - A media file. See [supported file formats](avi-support-matrix.md?branch=pr-en-us-272#supported-file-formats).
 - A publicly accessible URL, either:
     - A URL that you can use to view or listen to the file by pasting the URL in the browser location field.
