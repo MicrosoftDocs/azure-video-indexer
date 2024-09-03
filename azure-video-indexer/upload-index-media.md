@@ -14,7 +14,7 @@ This article shows you how to upload and index media files (audio or video) with
 
 ## Prerequisites
 
-- An Azure AI Video Indexer account. You can [sign up](https://aka.ms/vi-portal-link) for a free trial account, or create a [paid account](accounts-overview.md#paid-account).
+- An Azure AI Video Indexer account. You can [sign up](https://aka.ms/vi-portal-link) for a free trial account, or create a [standard account](accounts-overview.md).
 - A media file. See [supported file formats](avi-support-matrix.md?branch=pr-en-us-272#supported-file-formats).
 - A publicly accessible URL, either:
     - A URL that you can use to view or listen to the file by pasting the URL in the browser location field.
