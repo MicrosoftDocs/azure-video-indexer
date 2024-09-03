@@ -391,17 +391,17 @@
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "azure-video-indexer/retirement/azure-video-indexer-ams-retirement-guide.md",
+            "source_path_from_root": "/azure-video-indexer/retirement/azure-video-indexer-ams-retirement-guide.md",
             "redirect_url": "/azure/azure-video-indexer/",
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "azure-video-indexer/retirement/azure-video-indexer-azure-media-services-retirement-announcement.md",
+            "source_path_from_root": "/azure-video-indexer/retirement/azure-video-indexer-azure-media-services-retirement-announcement.md",
             "redirect_url": "/azure/azure-video-indexer/",
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "azure-video-indexer/retirement/update-your-azure-video-indexer-account-and-migrate-assets.md",
+            "source_path_from_root": "/azure-video-indexer/retirement/update-your-azure-video-indexer-account-and-migrate-assets.md",
             "redirect_url": "/azure/azure-video-indexer/",
             "redirect_document_id": false
         }
