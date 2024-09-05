@@ -409,6 +409,11 @@
             "source_path_from_root": "/azure-video-indexer/retirement/ams-deprecation-faq.yml",
             "redirect_url": "/azure/azure-video-indexer/",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/private-link-avi-tutorial.md",
+            "redirect_url": "/azure/azure-video-indexer/",
+            "redirect_document_id": false
         }
 
     ]
