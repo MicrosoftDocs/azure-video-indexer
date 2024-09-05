@@ -5,6 +5,7 @@ ms.date: 09/03/2024
 ms.topic: quickstart
 author: IngridAtMicrosoft
 ms.author: inhenkel
+ms.custom: "se-defect-target"
 ms.service: azure-video-indexer
 ---
 
