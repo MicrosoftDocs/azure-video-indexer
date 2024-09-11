@@ -24,12 +24,12 @@ This article shows you how to use the [Azure AI Video Indexer API](https://api-p
 
 1. **Sign in** to the [Azure AI Video Indexer API developer portal](https://api-portal.videoindexer.ai/) with the account you created.
 1. **Find, copy and save the primary and secondary keys**. You can find your subscription in your **[Profile](https://api-portal.videoindexer.ai/profile)**. The primary and secondary keys are in the **Subscriptions** section.
-1. Select the **Show** link for both the Primary key and the Secondary key. Copy and paste them to a text editor until you're ready to use them in your environment variables file. 
+1. Select the **Show** link for both the Primary key and the Secondary key. Copy and paste them to a text editor until you're ready to use them in your environment variables file.
 
 ## Authorization and samples
 
 For authorization examples specific to your development language, see the [Samples](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/API-Samples).
 
-## Try the API
+## Try the API in a web browser
 
 You can explore requests [with the API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Account-Access-Token) using the Try It button in the reference.
