@@ -198,9 +198,6 @@ items:
     displayName: single global Azure AI Video Indexer, Azure AI Video Indexer with storgae behind firewall
 - name: Troubleshooting
   items:
-  - name: Account connection issues
-    href: manage-account-connected-to-azure.md
-    displayName:  resource group name, Azure AI Video Indexer account owner, The Entra ID (Azure AD) application key, underlying  account, underlying Media Services account, Azure AI Video Indexer accounts, Event Grid resource provider, same Entra ID (Azure AD) user, ** dialog, Azure AD application ID, Media Services API, Media Service resource, Media reserved units, optimal indexing performance, 10 S3 Reserved Units, Videos Indexer account, default **Streaming Endpoint, Azure subscription ID, account configuration adjustments, app key, user icon, Manage application, trial account, app ID, Azure portal, indexing jobs, desired ID, service principal, account settings, top-right corner, following things, exact places, left panel, relevant parameters, relevant errors, Microsoft.EventGrid, pricing information, following settings, warning messages, FAQ section, errors/warnings description, title, connection, article, topic, number, type, links, changes, videoindexer, page, values, subscriptions, list, permissions, Certificates, secrets, details, couple, minutes, state, order, media-services, instructions
   - name: Resource health
     href: resource-health.md
   - name: Disaster recovery
