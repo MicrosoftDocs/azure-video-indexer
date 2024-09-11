@@ -3,7 +3,7 @@ title: Monitoring Azure AI Video Indexer data reference
 description: Azure Monitor reference material for Azure AI Video Indexer 
 ms.topic: reference
 ms.custom: subject-monitoring
-ms.date: 09/03/2024
+ms.date: 09/11/2024
 ms.author: inhenkel
 author: itnorman
 ms.service: azure-video-indexer
@@ -80,7 +80,7 @@ The following schemas are in use by Azure AI Video Indexer:
 ```json
 {
     "time": "2022-03-22T10:59:39.5596929Z",
-    "resourceId": "/SUBSCRIPTIONS/602a61eb-c111-43c0-8323-74825230a47d/RESOURCEGROUPS/VI-RESOURCEGROUP/PROVIDERS/MICROSOFT.VIDEOINDEXER/ACCOUNTS/VIDEOINDEXERACCOUNT",
+    "resourceId": "/SUBSCRIPTIONS/{SubscriptionId}/RESOURCEGROUPS/{ResourceGroup}/PROVIDERS/MICROSOFT.VIDEOINDEXER/ACCOUNTS/VIDEOINDEXERACCOUNT",
     "operationName": "Get-Video-Thumbnail",
     "category": "Audit",
     "location": "westus2",
@@ -88,18 +88,18 @@ The following schemas are in use by Azure AI Video Indexer:
     "resultSignature": "200",
     "resultType": "Success",
     "resultDescription": "Get Video Thumbnail",
-    "correlationId": "33473fc3-bcbc-4d47-84cc-9fba2f3e9faa",
+    "correlationId": "00000000-0000-0000-0000-000000000000",
     "callerIpAddress": "46.*****",
     "operationVersion": "Operations",
     "identity": {
-      "externalUserId": "4704F34286364F2*****",
+      "externalUserId": "0000000000*****",
       "upn": "alias@outlook.com",
       "claims": { "permission": "Reader", "scope": "Account" }
     },
     "properties": {
       "accountName": "videoIndexerAccoount",
-      "accountId": "8878b584-d8a0-4752-908c-00d6e5597f55",
-      "videoId": "1e2ddfdd77"
+      "accountId": "00000000-0000-0000-0000-000000000000",
+      "videoId": "0000000000"
     }
   }
   ```
@@ -112,7 +112,7 @@ The following schemas are in use by Azure AI Video Indexer:
     "resourceId": "/SUBSCRIPTIONS/{SubscriptionId}/RESOURCEGROUPS/{ResourceGroup}/PROVIDERS/MICROSOFT.VIDEOINDEXER/ACCOUNTS/MY-VI-ACCOUNT",
     "operationName": "UploadStarted",
     "category": "IndexingLogs",
-    "correlationId": "5cc9a3ea-126b-4f53-a4b5-24b1a5fb9736",
+    "correlationId": "00000000-0000-0000-0000-000000000000",
     "resultType": "Success",
     "location": "eastus",
     "operationVersion": "2.0",
@@ -123,8 +123,8 @@ The following schemas are in use by Azure AI Video Indexer:
     },
     "properties": {
         "accountName": "my-vi-account",
-        "accountId": "6961331d-16d3-413a-8f90-f86a5cabf3ef",
-        "videoId": "46b91bc012",
+        "accountId": "00000000-0000-0000-0000-000000000000",
+        "videoId": "0000000000",
         "indexing": {
             "Language": "en-US",
             "Privacy": "Private",
@@ -142,7 +142,7 @@ The following schemas are in use by Azure AI Video Indexer:
             "BrandsCategories": null,
             "CustomLanguages": "en-US,ar-BH,hi-IN,es-MX",
             "ExcludedAIs": "Faces",
-            "LogoGroupId": "ea9d154d-0845-456c-857e-1c9d5d925d95"
+            "LogoGroupId": "00000000-0000-0000-0000-000000000000"
         }
     }
 }
