@@ -3,7 +3,7 @@ title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
 ms.topic: article
 ms.custom: references_regions
-ms.date: 09/03/2024
+ms.date: 09/11/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -20,6 +20,15 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Bug fixes
 * Deprecated functionality
 
+## August 2024
+
+### Textual Video Summary on an edge device
+
+We released the blog post [Azure AI Video Indexer & Phi-3 introduce Textual Video Summary on Edge: Better Together story](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-video-indexer-amp-phi-3-introduce-textual-video-summary-on/ba-p/4190931)
+
+### Shot detection algorithm update
+
+We enhanced shot detection by integrating a neural network that significantly improves the service's ability to detect shot transitions, especially gradual ones. This update also has a positive impact on other features like scene detection and summarization.
 
 ## July 2024
 
