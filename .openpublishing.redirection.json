@@ -419,6 +419,11 @@
             "source_path_from_root": "/azure-video-indexer/manage-account-connected-to-azure.md",
             "redirect_url": "/azure/azure-video-indexer/",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/resource-health.md",
+            "redirect_url": "/azure/service-health/resource-health-overview",
+            "redirect_document_id": false
         }
     ]
 }
