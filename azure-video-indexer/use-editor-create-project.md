@@ -2,7 +2,7 @@
 title: Use the Azure AI Video Indexer editor to create projects and add video clips
 description: This topic demonstrates how to use the Azure AI Video Indexer editor to create projects and add video clips.
 ms.topic: article
-ms.date: 09/03/2024
+ms.date: 09/11/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -28,10 +28,10 @@ This article shows how to create a project and add selected clips from the video
 1. Select the **Projects** tab. If you have created projects before, you  will see all of your other projects here.
 1. Click **Create new project**.  
 
-    :::image type="content" source="./media/video-indexer-view-edit/new-project.png" alt-text="Create a new project":::
+    :::image type="content" source="./media/use-editor-create-project/new-project.png" alt-text="Create a new project":::
 1. Give your project a name by clicking on the pencil icon. Replace the text that says "Untitled project" with your project name and click on the check.
 
-    :::image type="content" source="./media/video-indexer-view-edit/new-project-edit-name.png" alt-text="A new project":::
+    :::image type="content" source="./media/use-editor-create-project/new-project-edit-name.png" alt-text="A new project":::
     
 ### Add videos to the project
 
@@ -44,7 +44,7 @@ This article shows how to create a project and add selected clips from the video
     
     For example, in the image below, we were looking for videos that mention "custom vision" in transcript only (use **Filter** if you want to filter your search results).
     
-    :::image type="content" source="./media/video-indexer-view-edit/custom-vision.png" alt-text="Screenshot shows searching for videos that mention custom vision":::
+    :::image type="content" source="./media/use-editor-create-project/custom-vision.png" alt-text="Screenshot shows searching for videos that mention custom vision":::
 1. Click **Add** to add videos to the project.
 1. Now, you will see all of the videos you chose. These are the videos from which you are going to select clips for your project.
 
@@ -59,7 +59,7 @@ If you click on the downward arrow on the right side of each video, you will ope
 1. To create queries for specific clips, use the search box that says "Search in transcript, visual text, people, and labels".
 1. Select **View Insights** to customize which insights you want to see and which you don't want to see. 
 
-    :::image type="content" source="./media/video-indexer-view-edit/search-try-cognitive-services.png" alt-text="Screenshot shows searching for videos that say Try Azure AI services":::
+    :::image type="content" source="./media/use-editor-create-project/search-try-cognitive-services.png" alt-text="Screenshot shows searching for videos that say Try Azure AI services":::
 1. Add filters to further specify details on what scenes you are looking for by selecting **Filter options**.
 
     You can add multiple filters. 
@@ -79,7 +79,7 @@ As you are selecting and ordering your clips, you can preview the video in the p
 
 1. Once you are done, make sure that your project has been saved. You can now render this project. Click **Render**, a popup dialog comes up that tells you that Azure AI Video Indexer will render a file and then the download link will be sent to your email. Select Proceed. 
 
-    :::image type="content" source="./media/video-indexer-view-edit/render-download.png" alt-text="Screenshot shows Azure AI Video Indexer with the option to Render and download your project":::
+    :::image type="content" source="./media/use-editor-create-project/render-download.png" alt-text="Screenshot shows Azure AI Video Indexer with the option to Render and download your project":::
     
     You will also see a notification that the project is being rendered on top of the page. Once it is done being rendered, you will see a new notification that the project has been successfully rendered. Click the notification to download the project. It will download the project in mp4 format.
 1. You can access saved projects from the **Projects** tab. 
