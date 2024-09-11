@@ -28,7 +28,7 @@ We released the blog post [Azure AI Video Indexer & Phi-3 introduce Textual Vide
 
 ### Shot detection algorithm update
 
-We have enhanced shot detection by integrating a neural network which significantly improves its ability to detect shot transitions, especially gradual ones. This update also has a positive impact on other features like scene detection and summarization.
+We enhanced shot detection by integrating a neural network that significantly improves the service's ability to detect shot transitions, especially gradual ones. This update also has a positive impact on other features like scene detection and summarization.
 
 ## July 2024
 
