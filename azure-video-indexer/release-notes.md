@@ -22,7 +22,7 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 ## August 2024
 
-### Enhanced Security for Textual Video Summarization
+### Enhanced security for Textual Video Summarization
 We are pleased to announce that Textual Video Summarization now includes support for preventing jailbreak attack risks. This new security filter must be added to your AOAI in order to benefit from the language model based Textual Video Summarization. For more information, see [Textual Video Summary with Azure OpenAI](text-summarization-overview.md).
 
 ### Textual Video Summary on an edge device
