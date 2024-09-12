@@ -3,7 +3,7 @@ title: Azure AI Video Indexer Bring Your Own AI model overview
 description: This article is an overview of Azure AI Video Indexer enabled by Arc bring your own model.
 ms.topic: overview
 ms.service: azure-video-indexer
-ms.date: 09/03/2024
+ms.date: 09/11/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ---
@@ -14,9 +14,7 @@ This article is an overview of Azure AI Video Indexer bring your own AI model.
 
 ## Introduction
 
-Azure AI Video Indexer offers a set of AIs optimized for video and audio content that can be applied to many content types. You can combine more insights from Microsoft sources, custom sources, or third party sources with the built-in Azure AI Video Indexer insights all in a seamless experience.
-
-This capability is flexible enough to accommodate all forms and types of insights, including detection-oriented and classification-oriented AIs. You have the freedom to select the data that your external model operates upon, such as the video's frames, the entire video, or just the audio track. You can also use other insights already produced for the video, such as detected objects, faces, and labels. This allows you to run the external analysis on only the related section of the video, improving performance and reducing costs.
+You can combine insights from other sources, including third-party, classification and detection models, to produce a detailed analysis of your media data. You can use one or more of any models offered by Microsoft, an external custom model, or a customized Person, Brand, Speech, or Language model offered by Azure Video Indexer.
 
 The feature is also available for [VI enabled by Arc](./arc/azure-video-indexer-enabled-by-arc-overview.md).
 
