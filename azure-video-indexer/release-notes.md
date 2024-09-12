@@ -485,8 +485,6 @@ Azure AI Video Indexer is now part of [Network Service Tags](network-security.md
 
 You can now enable or disable the celebrity recognition model on the account level (on classic account only). To turn on or off the model, go to the **Model customization** > toggle on/off the model. Once you disable the model, Video Indexer insights won't include the output of celebrity model and won't run the celebrity model pipeline.
 
-:::image type="content" source="./media/release-notes/celebrity-recognition.png" alt-text="Screenshot showing the celebrity recognition toggle.":::
-
 ### Azure AI Video Indexer repository name
 
 As of May 1st, our new updated repository of Azure AI Video Indexer widget was renamed. Use https://www.npmjs.com/package/@azure/video-indexer-widgets instead.
@@ -713,8 +711,6 @@ The **clapping** event type that was included in the previous audio effects mode
 
 When you choose to see **Insights** of your video on the [Azure AI Video Indexer](https://www.videoindexer.ai/) website, the Audio Effects show up on the page.
 
-:::image type="content" source="./media/release-notes/audio-detection.png" alt-text="Audio event detection":::
-
 ### Named entities enhancement
 
 The extracted list of people and location was extended and updated in general.
@@ -736,8 +732,6 @@ You can now create an Azure AI Video Indexer paid account in the India Central r
 
 The Azure AI Video Indexer website experience is now available in dark mode.
 To enable the dark mode open the settings panel and toggle on the **Dark Mode** option.
-
-:::image type="content" source="./media/release-notes/dark-mode.png" alt-text="Dark mode setting":::
 
 ## December 2020
 
