@@ -2,7 +2,7 @@
 title: Switch between tenants on the Azure AI Video Indexer website
 description: This article shows how to switch between tenants in the Azure AI Video Indexer website. 
 ms.topic: how-to
-ms.date: 09/03/2024
+ms.date: 09/11/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -53,24 +53,9 @@ If you want to see domains for all of your directories and switch between them, 
 ### Sign in with the correct domain name on the VI website
 
 1. Go to the [Azure AI Video Indexer](https://www.videoindexer.ai/) website.
-1. Press **Sign out** after pressing the button in the top-right corner.
+1. Select **Sign out** after pressing the button in the top-right corner.
 1. On the VI website, press **Sign in** and choose the Entra ID account.
-
-    > [!div class="mx-imgBorder"]
-    > ![Sign in with the AAD account.](./media/switch-directory/choose-account.png)
-1. Press **Use another account**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Choose another account.](./media/switch-directory/use-another-account.png)
+1. Select **Use another account**.
 1. Choose **Sign-in with other options**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Sign in with other options.](./media/switch-directory/sign-in-options.png)
-1. Press **Sign in to an organization**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Sign in to an organization.](./media/switch-directory/sign-in-organization.png)
+1. Select **Sign in to an organization**.
 1. Enter the domain name you copied in the [Get the domain name from the Azure portal](#get-the-domain-name) section.
-
-    > [!div class="mx-imgBorder"]
-    > ![Find the organization.](./media/switch-directory/find-your-organization.png)
