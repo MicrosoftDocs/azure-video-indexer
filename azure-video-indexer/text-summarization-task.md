@@ -1,8 +1,8 @@
 ---
-title: Use Azure OpenAI textual summarization
+title: Use textual summarization
 description: This article shows you how to use Azure OpenAI textual summarization with Azure AI Video Indexer. 
 ms.topic: how-to
-ms.date: 09/03/2024
+ms.date: 09/11/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -11,6 +11,9 @@ ms.service: azure-video-indexer
 # Use textual summarization
 
 This article shows you how to use textual summarization with Azure AI Video Indexer. This example uses Azure OpenAI deployments.
+
+> [!NOTE]
+> This feature only works with a standard account. Create a [standard account](create-account.md).
 
 ## Prerequisites
 
@@ -51,6 +54,9 @@ You can use the Azure AI Video Indexer web portal to summarize text.
 1. Upload a file and wait for it to index.
 1. Select the video to navigate to the media page.
 1. Select **Generate summary**. The textual summary is generated.
+
+> [!NOTE]
+> If you aren't seeing the Generate summary button, you may be using a trial account. Create a [standard account](create-account.md) to use this feature.
 
 ## Summary customizations
 
