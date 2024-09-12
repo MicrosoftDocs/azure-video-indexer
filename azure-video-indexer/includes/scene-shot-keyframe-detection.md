@@ -2,7 +2,7 @@
 title: Text-based emotion detection
 ms.service: azure-video-indexer
 ms.topic: include
-ms.date: 08/22/2024
+ms.date: 09/11/2024
 ms.author: inhenkel
 ---
 
@@ -27,7 +27,10 @@ Videos must contain at least three scenes.
 
 ## Shot detection
 
-Azure AI Video Indexer determines when a shot changes in the video based on visual cues, by detecting both abrupt and gradual transitions in the color scheme of adjacent frames. The shot's metadata includes a start and end time, as well as the list of keyframes included in that shot. The shots are consecutive frames taken from the same camera at the same time.
+Azure AI Video Indexer determines when a shot changes in the video based on visual cues, by detecting both abrupt and gradual transitions in the color scheme and other visual feature of adjacent frames. The shot's metadata includes a start and end time, as well as the list of keyframes included in that shot. The shots are consecutive frames taken from the same camera at the same time.
+
+> [!NOTE]
+> There might be a gap between shots which includes frames that are part of the transition. Thereofre, these frames are not considered part of the shot.
 
 ## Keyframe editorial shot type detection
 
