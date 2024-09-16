@@ -7,8 +7,7 @@ ms.author: inhenkel
 title: transparency Named entities
 ---
 
-## Named entities
-
+## Named entities notes
 -	Carefully consider the accuracy of the results, to promote more accurate detections, check the quality of the audio and images, low quality audio and images might impact the detected insights. 
 -	Named entities only detect insights in audio and images. Logos in a brand name may not be detected.
 -	Carefully consider that when using for law enforcement named entities may not always detect parts of the audio. To ensure fair and high-quality decisions, always combine named entities with human oversight. 
