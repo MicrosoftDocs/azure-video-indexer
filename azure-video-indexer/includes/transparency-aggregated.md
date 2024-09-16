@@ -7,7 +7,7 @@ ms.author: inhenkel
 title: Transparency note
 ---
 
-<!-- This include was created so that tranparency notes could be kept in one repo. Changes to this include update the page on the DocLegal repo. -->
+<!-- This include was created so that tranparency notes could be kept in one repo. Changes to this include update the page on the DocLegal repo. The date is the date that any of the includes were edited. -->
 
 [!INCLUDE [transparency-intro](transparency-intro.md)]
 
@@ -86,7 +86,7 @@ title: Transparency note
 
 ## Textual emotion detection
 
-[Textual emotion detection](/azure/azure-video-indexer/emotions-detection#considerations-and-limitations-when-choosing-a-use-case)
+[Textual emotion detection](/azure/azure-video-indexer/emotions-detection)
 [!INCLUDE [transparency-text-based-emotion-detection](transparency-text-based-emotion-detection.md)]
 
 ## Topics inference
