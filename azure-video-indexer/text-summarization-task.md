@@ -97,6 +97,16 @@ You might not have connected your Azure OpenAI account to the Azure AI Video Ind
 - You might not have created a deployment.
 - Someone may have changed or deleted the deployed model.
 
+### You receive the error "filter not found"
+
+1. Select **Go to Azure Open AI studio**.
+1. Select **Deployments**.
+1. Select the deployment you are working with. 
+1. Select **Edit**.
+1. Configure the filters to have at least Meduim for each category.
+1. Apply [prompt shields for jailbreak attacks](/azure/ai-services/openai/concepts/content-filter?tabs=warning%2Cuser-prompt%2Cpython#prompt-shield-content).
+1. Select **Create** filter.
+
 ### Throttling 
 
 There may be too many requests being sent to VI. Wait for a few minutes and try again.
