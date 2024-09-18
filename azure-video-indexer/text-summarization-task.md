@@ -2,7 +2,7 @@
 title: Use textual summarization
 description: This article shows you how to use Azure OpenAI textual summarization with Azure AI Video Indexer. 
 ms.topic: how-to
-ms.date: 09/11/2024
+ms.date: 09/18/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -20,6 +20,8 @@ This article shows you how to use textual summarization with Azure AI Video Inde
 - Review the overview of [texual summarization](text-summarization-overview.md).
 - An [Azure OpenAI *gpt-35-turbo* or *gpt-4* deployment](/azure/ai-services/openai/how-to/working-with-models?tabs=powershell).
 - Content filters at or above Medium set on the deployment. For more information about to use content filters, see [Content filtering](/azure/ai-services/openai/how-to/content-filters).
+    > [!IMPORTANT]
+    > It is mandatory that content filters you set “Violence”, “Hate”, “Sexual” and “Self-harm” to at least Medium level (which means everything with harmfulness of at least medium level is blocked. You can set it to be even more strict if you want) and save the content filter.   
 - An [Azure AI Video Indexer account](connect-azure-open-ai-task.md) connected to an Azure OpenAI account.
 - Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the [form](https://aka.ms/oai/access).
 - A video uploaded to your Azure AI Video Indexer library.
