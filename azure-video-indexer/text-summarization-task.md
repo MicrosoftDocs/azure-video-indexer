@@ -2,7 +2,7 @@
 title: Use textual summarization
 description: This article shows you how to use Azure OpenAI textual summarization with Azure AI Video Indexer. 
 ms.topic: how-to
-ms.date: 09/18/2024
+ms.date: 09/19/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -21,7 +21,9 @@ This article shows you how to use textual summarization with Azure AI Video Inde
 - An [Azure OpenAI *gpt-35-turbo* or *gpt-4* deployment](/azure/ai-services/openai/how-to/working-with-models?tabs=powershell).
 - Content filters at or above Medium set on the deployment. For more information about to use content filters, see [Content filtering](/azure/ai-services/openai/how-to/content-filters).
     > [!IMPORTANT]
-    > It is mandatory that content filters you set “Violence”, “Hate”, “Sexual” and “Self-harm” to at least Medium level (which means everything with harmfulness of at least medium level is blocked. You can set it to be even more strict if you want) and save the content filter.   
+    > For text based summaries and keyframes, it is mandatory that content filters you set “Violence”, “Hate”, “Sexual” and “Self-harm” to at least Medium level (which means everything with harmfulness of at least medium level is blocked. You can set it to be even more strict if you want) and save the content filter.
+    >
+    > For summaries based on keyframes it is also mandatory that you create a jailbreak filter.   
 - An [Azure AI Video Indexer account](connect-azure-open-ai-task.md) connected to an Azure OpenAI account.
 - Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the [form](https://aka.ms/oai/access).
 - A video uploaded to your Azure AI Video Indexer library.
@@ -97,7 +99,18 @@ You might not have connected your Azure OpenAI account to the Azure AI Video Ind
 - You might not have created a deployment.
 - Someone may have changed or deleted the deployed model.
 
+### Throttling 
+
+There may be too many requests being sent to VI. Wait for a few minutes and try again.
+
 ### You receive the error "filter not found"
+
+If you get a filter not found error, you will get a detailed error describing what is missing. The error is similar to this:
+
+```
+“{"ErrorType":"SUMMARY_FILTERS_NOT_FOUND","Message":"Couldn't generate a summary because the model needs to be set with the right content filters to avoid showing harmful content. Input filter 'Jailbreak' must be enabled with action set to 'Annotate and block'. Trace id: '00000000-0000-0000-0000-000000000000'."}”
+```
+To resolve the jailbreak issue:
 
 1. Select **Go to Azure Open AI studio**.
 1. Select **Deployments**.
@@ -106,10 +119,6 @@ You might not have connected your Azure OpenAI account to the Azure AI Video Ind
 1. Configure the filters to have at least Meduim for each category.
 1. Apply [prompt shields for jailbreak attacks](/azure/ai-services/openai/concepts/content-filter?tabs=warning%2Cuser-prompt%2Cpython#prompt-shield-content).
 1. Select **Create** filter.
-
-### Throttling 
-
-There may be too many requests being sent to VI. Wait for a few minutes and try again.
 
 ## [API](#tab/api)
 
