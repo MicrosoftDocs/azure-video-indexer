@@ -78,48 +78,6 @@ You can also customize the summary by selecting the **Customize summary** icon. 
 > [!NOTE]
 > Remember that the model deployment is a combination of the model and the filters. Additionally, every time you customize the text summary it represents an API PUT request.
 
-## Troubleshooting
-
-Before looking for specific solutions, be sure that you created the resources in the [Prerequisites](#prerequisites) section of the document.
-
-### Generate summary doesn't appear
-
-You might not have connected your Azure OpenAI account to the Azure AI Video Indexer account correctly.
-
-### Couldn't generate summary
-
-- You need to add content filters to the deployment to avoid showing harmful content. Go back to the Azure OpenAI studio and add filters to your deployment.
-- You might have created a permissive content filter for content that has sensitive or harmful content. The content filter needs to be at least Medium. If you set the content filter to Medium AND harmful content remains in the video, the filter is triggered. In this case, there's no solution. 
-- You might not have asked for a transcript or there might not be enough information generated during the indexing process.
-- You might be using an advanced preset.
-- The video might not have enough audio in it to create a transform.
-
-### Unable to use a model deployment or deployment missing
-
-- You might not have created a deployment.
-- Someone might have changed or deleted the deployed model.
-
-### Throttling 
-
-There might be too many requests being sent to VI. Wait for a few minutes and try again.
-
-### You receive the error "filter not found"
-
-If you get a filter not found error, you'll get a detailed error describing what is missing. The error looks similar to this, but might have details about other missing things:
-
-```
-“{"ErrorType":"SUMMARY_FILTERS_NOT_FOUND","Message":"Couldn't generate a summary because the model needs to be set with the right content filters to avoid showing harmful content. Input filter 'Jailbreak' must be enabled with action set to 'Annotate and block'. Trace id: '00000000-0000-0000-0000-000000000000'."}”
-```
-To resolve the jailbreak issue:
-
-1. Select **Go to Azure Open AI studio**.
-1. Select **Deployments**.
-1. Select the deployment you're working with. 
-1. Select **Edit**.
-1. Configure the filters to have at least Medium level for each category.
-1. Apply [prompt shields for jailbreak attacks](/azure/ai-services/openai/concepts/content-filter?tabs=warning%2Cuser-prompt%2Cpython#prompt-shield-content).
-1. Select **Create** filter.
-
 ## [API](#tab/api)
 
 ## Create a video summary
@@ -192,6 +150,48 @@ Deleting the video summary is as simple as selecting DEL Delete Video Summary, u
 | Get-Video-Summary |  |  |  | No role assignment |  |
 
 ---
+
+## Troubleshooting
+
+Before looking for specific solutions, be sure that you created the resources in the [Prerequisites](#prerequisites) section of the document.
+
+### Generate summary doesn't appear
+
+You might not have connected your Azure OpenAI account to the Azure AI Video Indexer account correctly.
+
+### Couldn't generate summary
+
+- You need to add content filters to the deployment to avoid showing harmful content. Go back to the Azure OpenAI studio and add filters to your deployment.
+- You might have created a permissive content filter for content that has sensitive or harmful content. The content filter needs to be at least Medium. If you set the content filter to Medium AND harmful content remains in the video, the filter is triggered. In this case, there's no solution. 
+- You might not have asked for a transcript or there might not be enough information generated during the indexing process.
+- You might be using an advanced preset.
+- The video might not have enough audio in it to create a transform.
+
+### Unable to use a model deployment or deployment missing
+
+- You might not have created a deployment.
+- Someone might have changed or deleted the deployed model.
+
+### Throttling 
+
+There might be too many requests being sent to VI. Wait for a few minutes and try again.
+
+### You receive the error "filter not found"
+
+If you get a filter not found error, you'll get a detailed error describing what is missing. The error looks similar to this, but might have details about other missing things:
+
+```
+“{"ErrorType":"SUMMARY_FILTERS_NOT_FOUND","Message":"Couldn't generate a summary because the model needs to be set with the right content filters to avoid showing harmful content. Input filter 'Jailbreak' must be enabled with action set to 'Annotate and block'. Trace id: '00000000-0000-0000-0000-000000000000'."}”
+```
+To resolve the jailbreak issue:
+
+1. Select **Go to Azure Open AI studio**.
+1. Select **Deployments**.
+1. Select the deployment you're working with. 
+1. Select **Edit**.
+1. Configure the filters to have at least Medium level for each category.
+1. Apply [prompt shields for jailbreak attacks](/azure/ai-services/openai/concepts/content-filter?tabs=warning%2Cuser-prompt%2Cpython#prompt-shield-content).
+1. Select **Create** filter.
 
 ## Other considerations
 
