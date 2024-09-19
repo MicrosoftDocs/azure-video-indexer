@@ -180,9 +180,8 @@ There might be too many requests being sent to VI. Wait for a few minutes and tr
 
 If you get a filter not found error, you'll get a detailed error describing what is missing. The error looks similar to this, but might have details about other missing things:
 
-```
-“{"ErrorType":"SUMMARY_FILTERS_NOT_FOUND","Message":"Couldn't generate a summary because the model needs to be set with the right content filters to avoid showing harmful content. Input filter 'Jailbreak' must be enabled with action set to 'Annotate and block'. Trace id: '00000000-0000-0000-0000-000000000000'."}”
-```
+    “{"ErrorType":"SUMMARY_FILTERS_NOT_FOUND","Message":"Couldn't generate a summary because the model needs to be set with the right content filters to avoid showing harmful content. Input filter 'Jailbreak' must be enabled with action set to 'Annotate and block'. Trace id: '00000000-0000-0000-0000-000000000000'."}”
+
 To resolve the jailbreak issue:
 
 1. Select **Go to Azure Open AI studio**.
