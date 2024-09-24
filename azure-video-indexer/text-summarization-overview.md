@@ -27,7 +27,7 @@ The system provides options for feedback, enabling it to learn and improve over 
 
 ## Textual summarizatin with keyframes
 
-Azure Video Indexer offers a Textual Video Summarization feature that incorporates keyframes from the video to generate a more comprehensive summary. This is particularly useful when there is limited audio content, such as transcription, or when a more holistic summary is desired. 
+Textual video summarization with keyframes uses keyframes from the video to generate a more comprehensive summary. This feature is particularly useful when there is limited audio content, such as transcription, or when a more holistic summary is desired. 
 
 ## Use cases 
 
