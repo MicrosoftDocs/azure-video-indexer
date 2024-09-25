@@ -25,7 +25,7 @@ The system provides options for feedback, enabling it to learn and improve over 
 > [!IMPORTANT]
 > The system isn't intended to replace complete viewing, especially for content where details and nuances are **critical for making responsible decisions**. Also, it isn't designed for summarizing highly sensitive or confidential videos where context and privacy are paramount.
 
-## Textual summarizatin with keyframes
+## Textual summarization with keyframes
 
 Textual video summarization with keyframes uses keyframes from the video to generate a more comprehensive summary. This feature is particularly useful when there is limited audio content, such as transcription, or when a more holistic summary is desired. 
 
