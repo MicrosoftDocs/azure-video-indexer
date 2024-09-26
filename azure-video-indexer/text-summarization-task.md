@@ -188,6 +188,9 @@ If you get a filter not found error, you'll get a detailed error describing what
 ErrorType":"SUMMARY_FILTERS_NOT_FOUND","Message":"Couldn't generate a summary because the model needs to be set with the right content filters to avoid showing harmful content. Input filter 'Jailbreak' must be enabled with action set to 'Annotate and block'. Trace id: '00000000-0000-0000-0000-000000000000'.
 </pre>
 
+> [!NOTE]
+> The jailbreak filter is only required when using a keyframes based summary or a regular summary, as of November 1st, 2024.
+
 To resolve the jailbreak issue:
 
 1. Select **Go to Azure Open AI studio**.
@@ -197,6 +200,7 @@ To resolve the jailbreak issue:
 1. Configure the filters to have at least Medium level for each category.
 1. Apply [prompt shields for jailbreak attacks](/azure/ai-services/openai/concepts/content-filter?tabs=warning%2Cuser-prompt%2Cpython#prompt-shield-content).
 1. Select **Create** filter.
+
 
 ## Other considerations
 
