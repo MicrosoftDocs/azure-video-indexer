@@ -16,25 +16,25 @@ This article explains each of the options and the impact of each option to enabl
 
 The initial upload screen presents options to define the video name, source language, and privacy settings.  
 
+<!--
 :::image type="content" source="./media/indexing-configuration-guide/configuration.png" alt-text="Screenshot shows options to define the video name, source language, and privacy settings.":::  
+-->
 
 All the other setting options appear if you select Advanced options. 
 
-:::image type="content" source="./media/indexing-configuration-guide/advanced-configuration.png" alt-text="Screenshot shows advanced options to define the video name, source language, and privacy settings."::: 
+<!--
+:::image type="content" source="./media/indexing-configuration-guide/advanced-configuration.png" alt-text="Screenshot shows advanced options to define the video name, source language, and privacy settings.":::
+--> 
 
 ## Default settings 
 
-By default, Azure AI Video Indexer is configured to a **Video source language** of English, **Privacy** of private, **Standard** audio and video setting, and **Streaming quality** of single bitrate. 
+By default, Azure AI Video Indexer is configured as:
 
-> [!TIP]
-> This topic describes each indexing option in detail.
-
-Below are a few examples of when using the default setting might not be a good fit: 
-
-- If you need insights observed people or matched person that is only available through Advanced Video. 
-- If you're only using Azure AI Video Indexer for transcription and translation, indexing of both audio and video isn’t required, **Basic** for audio should suffice. 
-- If you're consuming Azure AI Video Indexer insights but have no need to generate a new media file, streaming isn't necessary and **No streaming** should be selected to avoid the encoding job and its associated cost.  
-- If a video is primarily in a language that isn't English.  
+- Source language: English
+- Privacy: private
+- Audio and video setting: standard
+- Streaming quality: single bitrate
+  
 
 ### Video source language 
 
