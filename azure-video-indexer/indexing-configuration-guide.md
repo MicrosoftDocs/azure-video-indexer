@@ -2,7 +2,7 @@
 title: Indexing configuration guide
 description: This article explains the configuration options of indexing process with Azure AI Video Indexer.
 ms.topic: conceptual
-ms.date: 09/03/2024
+ms.date: 10/07/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -95,3 +95,23 @@ There are two options for streaming indexed videos:
 ### Customizing content models 
 
 Azure AI Video Indexer allows you to customize some of its models to be adapted to your specific use case. These models include brands, language, and person. If you have customized models, this section of the web portal enables you to configure if one of the created models should be used for the indexing. 
+
+## Insight and media storage
+
+### Insight storage
+
+All indexing insights and metadata are kept in storage accounts managed by VI and you are not charged for this storage.
+
+### Media storage
+Your VI account is connected to an Azure Storage account. You control and pay for the usage of this storage account. When indexing a video, the following files are stored in this account:
+
+- The source file. This is kept in case you want to re-index the video in the future.
+- A new encoded file when the streaming quality is set to single bitrate.
+
+### Deleting media
+
+Indexed media and all its associated files and insights can be deleted in 3 ways:
+
+1. Delete the files with the [Video Indexer portal](https://www.videoindexer.ai/).
+1. Use the [Delete Video](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Video) or [Delete Video Source File](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Video-Source-File) request. 
+1. If you don't need to keep the original media file in storage, when using the API, set the `retentionPeriod` parameter to between 1-7. This will delete the video 1-7 days after it was indexed.
