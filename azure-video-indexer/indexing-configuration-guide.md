@@ -77,7 +77,7 @@ There are two options for streaming indexed videos:
 
 ## Customizing content models 
 
-Azure AI Video Indexer allows you to customize some of its models to be adapted to your specific use case. These models include [brands](customize-brands-model-how-to.md), [language](customize-language-model-how-to.md), [person](customize-person-model-how-to) and [speech](customize-speech-model-how-to.md).
+Azure AI Video Indexer allows you to customize some of its models to be adapted to your specific use case. These models include [brands](customize-brands-model-how-to.md), [language](customize-language-model-how-to.md), [person](customize-person-model-how-to.md) and [speech](customize-speech-model-how-to.md).
 
 ## Insights and media storage
 
