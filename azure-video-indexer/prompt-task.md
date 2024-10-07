@@ -52,7 +52,7 @@ You should have all of the parameters needed to create a video summary ready to 
 1. Select the location from the **location** dropdown list.
 1. Copy and paste the VI account ID in the **accountId** field.
 1. Copy the video file ID and paste it into the **videoId** field.
-1. Choose the language model you want to use, *LLama2*, *Phi2*, *GPT3_5Turbo*, or *GPT4* from the **modelName** dropdown list.
+1. Choose the language model you want to use *Llama2*, *Phi2*, *Phi3*, *Phi3_5*, *GPT3_5Turbo*, *GPT4*, *GPT4O*, *GPT4OMini* from the **modelName** dropdown list.
 1. Choose the prompt style, *Full* or *Summarized*, from the **style** dropdown list.
 1. Paste the access token on your clipboard into the **accessToken** field.
 1. Select **Send**.
