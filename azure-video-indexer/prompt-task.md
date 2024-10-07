@@ -127,9 +127,9 @@ expires: Tue, 07 May 2024 04:57:23 GMT
 
 ```
 
-## Use keyframes for video with very little audio
+## Use keyframes to prompt a large language model visually
 
-Prompt content API supports visual language models. When selecting the GPT-4V model, you can include keyframes as part of the prompt provided to the model. This feature is recommended for videos with limited insights available is or when there is no transcript in the video.
+The Prompt content request supports language models that can use visual input in prompts. When selecting the GPT-4V model, you can include keyframes as part of the prompt provided to the model. The frames returned in the prompt content response represents the keyframes from the video. This feature is recommended for videos with limited insights available is or when there is no transcript in the video. 
 
 1. Create and send a Prompt Content request.
 1. As described above, textual content for the prompt is in the JSON response.
