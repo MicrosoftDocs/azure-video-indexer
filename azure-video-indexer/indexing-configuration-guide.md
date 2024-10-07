@@ -47,7 +47,8 @@ Each of the audio and video indexing options might be priced differently when yo
 
 The following are the indexing type options with details of their insights provided. To modify the indexing type, select **Advanced settings**.
 
-> [!NOTE] Optical Character Recognition (OCR) is used with several insight types.
+> [!NOTE] 
+> Optical Character Recognition (OCR) is used with several insight types.
 
 ## Advanced settings
 
