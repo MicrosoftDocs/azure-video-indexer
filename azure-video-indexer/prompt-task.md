@@ -64,7 +64,7 @@ If there aren't any issues with the request, the response shows *HTTP/1.1 202 Ac
 
 ### Check job status
 
-It takes a few minutes for the prompt job to complete. If you would like to check on the job status, you can use the [Job Status request](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Job-Status) and the job ID.
+It takes a few minutes for the prompt job to complete. If you would like to check on the job status, you can use the job ID with the [Job Status request](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Job-Status).
 
 ## Get prompt content
 
