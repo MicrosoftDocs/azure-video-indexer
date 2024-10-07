@@ -10,21 +10,9 @@ ms.service: azure-video-indexer
 
 # The indexing configuration guide
 
-It's important to understand the configuration options to index efficiently while ensuring you meet your indexing objectives. When indexing videos, users can use the default settings or adjust many of the settings. Azure AI Video Indexer allows you to choose between a range of language, indexing, custom models, and streaming settings that have implications on the insights generated, cost, and performance.  
+You can use the default indexing settings or adjust them. You can choose language, indexing, custom models, and streaming settings that have implications on the insights generated, cost, and performance.
 
-This article explains each of the options and the impact of each option to enable informed decisions when indexing. The article discusses the [Azure AI Video Indexer website](https://www.videoindexer.ai/) experience but the same options apply when submitting jobs through the API (see the [API guide](video-indexer-use-apis.md)). When indexing large volumes, follow the [at-scale guide](considerations-when-use-at-scale.md).  
-
-The initial upload screen presents options to define the video name, source language, and privacy settings.  
-
-<!--
-:::image type="content" source="./media/indexing-configuration-guide/configuration.png" alt-text="Screenshot shows options to define the video name, source language, and privacy settings.":::  
--->
-
-All the other setting options appear if you select Advanced options. 
-
-<!--
-:::image type="content" source="./media/indexing-configuration-guide/advanced-configuration.png" alt-text="Screenshot shows advanced options to define the video name, source language, and privacy settings.":::
---> 
+This article explains each of the options. The same options apply when using the [Azure AI Video Indexer website](https://www.videoindexer.ai/) as for using the API (see the [API guide](video-indexer-use-apis.md)). When indexing large volumes, follow the [at-scale guide](considerations-when-use-at-scale.md).
 
 ## Default settings 
 
@@ -36,11 +24,11 @@ By default, Azure AI Video Indexer is configured as:
 - Streaming quality: single bitrate
   
 
-### Video source language 
+## Video source language 
 
 If you're aware of the language spoken in the video, select the language from the video source language list. If you're unsure of the language of the video, choose **Auto-detect single language**. When uploading and indexing your video, Azure AI Video Indexer will use language identification (LID) to detect the videos language and generate transcription and insights with the detected language. 
 
-If the video may contain multiple languages and you aren't sure which ones, select **Auto-detect multi-language**. In this case, multi-language (MLID) detection will be applied when uploading and indexing your video. 
+If the video contains multiple languages and you aren't sure which ones, select **Auto-detect multi-language**. In this case, multi-language (MLID) detection will be applied when uploading and indexing your video. 
 
 While auto-detect is a great option when the language in your videos varies, there are two points to consider when using LID or MLID: 
 
@@ -49,21 +37,15 @@ While auto-detect is a great option when the language in your videos varies, the
 
 Learn more about [language support and supported languages](language-support.md). 
 
-### Privacy 
+## Privacy 
 
 This option allows you to determine if the insights should only be accessible to users in your Azure AI Video Indexer account or to anyone with a link. 
 
-### Indexing options 
+## Indexing options 
 
-When indexing a video with the default settings, beware each of the audio and video indexing options may be priced differently. See [Azure AI Video Indexer pricing](https://azure.microsoft.com/pricing/details/video-indexer/) for details. 
+When indexing a video with the default settings, be aware that each of the audio and video indexing options might be priced differently. See [Azure AI Video Indexer pricing](https://azure.microsoft.com/pricing/details/video-indexer/) for details. 
 
-Below are the indexing type options with details of their insights provided. To modify the indexing type, select **Advanced settings**. 
-
-|Audio only|Video only |Audio & Video |
-|---|---|---|
-|Basic | Basic | Basic |
-|Standard| Standard |Standard |
-|Advanced |Advanced|Advanced |
+Below are the indexing type options with details of their insights provided. To modify the indexing type, select **Advanced settings**.
 
 ## Advanced settings
 
@@ -92,11 +74,11 @@ There are two options for streaming indexed videos:
 - **Single bitrate**: If the video height is greater than or equal to 720p HD, Azure AI Video Indexer encodes it with a resolution of 1280 x 720. Otherwise, it's encoded as 640 x 468.
 - **No streaming**: Insights are generated but no streaming operation is performed and the video isn't available on the Azure AI Video Indexer website.  When No streaming is selected, you aren't billed for encoding.
 
-### Customizing content models 
+## Customizing content models 
 
-Azure AI Video Indexer allows you to customize some of its models to be adapted to your specific use case. These models include brands, language, and person. If you have customized models, this section of the web portal enables you to configure if one of the created models should be used for the indexing. 
+Azure AI Video Indexer allows you to customize some of its models to be adapted to your specific use case. These models include [brands](customize-brands-model-how-to.md), [language](customize-language-model-how-to.md), [person](customize-person-model-how-to) and [speech](customize-speech-model-how-to.md).
 
-## Insight and media storage
+## Insights and media storage
 
 ### Insight storage
 
