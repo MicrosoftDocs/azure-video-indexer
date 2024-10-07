@@ -2,15 +2,15 @@
 title: Use Azure AI Video Indexer to create prompt content 
 description: This article shows you how to use Azure AI Video Indexer to create prompt content. 
 ms.topic: how-to
-ms.date: 09/03/2024
+ms.date: 10/07/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
 ---
 
-# Use Azure AI Video Indexer to create prompt content
+# Use Azure AI Video Indexer to create language model prompt content
 
-This article shows you how to Use Azure AI Video Indexer to create prompt content.
+This article shows you how to Use Azure AI Video Indexer to create language model prompt content.
 
 ## Prerequisites
 
@@ -64,7 +64,7 @@ If there aren't any issues with the request, the response shows *HTTP/1.1 202 Ac
 
 ### Check job status
 
-It takes a few minutes for the prompt job to complete. If you would like to check on the job status, you can use the **Job Status** request by using all of the same parameters for the Create Prompt Content request. Find the Job Status request by using the search field as you did before.
+It takes a few minutes for the prompt job to complete. If you would like to check on the job status, you can use the job ID with the [Job Status request](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Job-Status).
 
 ## Get prompt content
 
