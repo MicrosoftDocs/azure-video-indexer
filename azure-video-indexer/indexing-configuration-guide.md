@@ -26,14 +26,14 @@ By default, Azure AI Video Indexer is configured as:
 
 ## Video source language 
 
-If you're aware of the language spoken in the video, select the language from the video source language list. If you're unsure of the language of the video, choose **Auto-detect single language**. When uploading and indexing your video, Azure AI Video Indexer will use language identification (LID) to detect the videos language and generate transcription and insights with the detected language. 
+If you're aware of the language spoken in the video, select the language from the video source language list. If you're unsure of the language of the video, choose **Auto-detect single language**. Azure AI Video Indexer uses language identification (LID) to detect the videos language and generate transcription and insights with the detected language. 
 
-If the video contains multiple languages and you aren't sure which ones, select **Auto-detect multi-language**. In this case, multi-language (MLID) detection will be applied when uploading and indexing your video. 
+If the video contains multiple languages and you aren't sure which ones, select **Auto-detect multi-language**. In this case, multi-language (MLID) detection is applied when uploading and indexing your video. 
 
-While auto-detect is a great option when the language in your videos varies, there are two points to consider when using LID or MLID: 
+While autodetect is a great option when the language in your videos varies, there are two points to consider when using LID or MLID: 
 
 - LID/MLID don't support all the languages supported by Azure AI Video Indexer.
-- The transcription is of a higher quality when you pre-select the video’s appropriate language.
+- The transcription is of a higher quality when you preselect the video’s appropriate language.
 
 Learn more about [language support and supported languages](language-support.md). 
 
@@ -43,9 +43,11 @@ This option allows you to determine if the insights should only be accessible to
 
 ## Indexing options 
 
-When indexing a video with the default settings, be aware that each of the audio and video indexing options might be priced differently. See [Azure AI Video Indexer pricing](https://azure.microsoft.com/pricing/details/video-indexer/) for details. 
+Each of the audio and video indexing options might be priced differently when you use the default indexing settings. See [Azure AI Video Indexer pricing](https://azure.microsoft.com/pricing/details/video-indexer/) for details. 
 
-Below are the indexing type options with details of their insights provided. To modify the indexing type, select **Advanced settings**.
+The following are the indexing type options with details of their insights provided. To modify the indexing type, select **Advanced settings**.
+
+> [!NOTE] Optical Character Recognition (OCR) is used with several insight types.
 
 ## Advanced settings
 
@@ -59,41 +61,41 @@ Below are the indexing type options with details of their insights provided. To 
 
 - **Basic**: Indexes and extract insights by using video only (ignoring audio) and provides the following insights: labels, object detection, OCR, scenes (keyframes and shots), and black frame detection.
 - **Standard**: Indexes and extract insights by using video only (ignoring audio) and provides the following insights: labels (OCR), named entities (OCR - brands, locations, people), OCR, people, scenes (keyframes and shots), black frames, visual content moderation, and topic extraction (OCR). 
-- **Advanced**: Indexes and extract insights by using video only (ignoring audio) and provides the following insights: labels (OCR), matched person, named entities (OCR - brands, locations, people), OCR, observed people, people, scenes (keyframes and shots), clapperboard detection, digital pattern detection, featured clothing insight, textless slate detection, textual logo detection, black frames, visual content moderation, and topic extraction (OCR). 
+- **Advanced**: Indexes and extract insights by using video only (ignoring audio) and provides the following insights: labels (OCR), matched person, named entities (OCR - brands, locations, people), OCR, observed people, people, scenes (keyframes and shots), clapper board detection, digital pattern detection, featured clothing insight, textless slate detection, textual logo detection, black frames, visual content moderation, and topic extraction (OCR). 
 
 ### Audio and Video   
 
 - **Basic**: Indexes and extract insights by using audio and video and provides the following insights: transcription, translation, formatting of output captions and subtitles (closed captions), object detection, OCR, scenes (keyframes and shots), and black frames.
 - **Standard**: Indexes and extract insights by using audio and video and provides the following insights: transcription, translation, formatting of output captions and subtitles (closed captions), automatic language detection, emotions, keywords, named entities (brands, locations, people), OCR, scenes (keyframes and shots), black frames, visual content moderation, people, sentiments, speakers, topic extraction, and textual content moderation.   
-- **Advanced**: Indexes and extract insights by using audio and video and provides the following insights: transcription, translation, formatting of output captions and subtitles (closed captions), automatic language detection, textual content moderation, audio event detection, emotions, keywords, matched person, named entities (brands, locations, people), OCR, observed people, people, clapperboard detection, digital pattern detection, featured clothing insight, textless slate detection, sentiments, speakers, scenes (keyframes and shots), textual logo detection, black frames, visual content moderation, and topic extraction.   
+- **Advanced**: Indexes and extract insights by using audio and video and provides the following insights: transcription, translation, formatting of output captions and subtitles (closed captions), automatic language detection, textual content moderation, audio event detection, emotions, keywords, matched person, named entities (brands, locations, people), OCR, observed people, people, clapper board detection, digital pattern detection, featured clothing insight, textless slate detection, sentiments, speakers, scenes (keyframes and shots), textual logo detection, black frames, visual content moderation, and topic extraction.   
 
 ### Streaming quality options 
 
 There are two options for streaming indexed videos: 
 
 - **Single bitrate**: If the video height is greater than or equal to 720p HD, Azure AI Video Indexer encodes it with a resolution of 1280 x 720. Otherwise, it's encoded as 640 x 468.
-- **No streaming**: Insights are generated but no streaming operation is performed and the video isn't available on the Azure AI Video Indexer website.  When No streaming is selected, you aren't billed for encoding.
+- **No streaming**: Insights are generated but no streaming operation is performed and the video isn't available on the Azure AI Video Indexer website. When No streaming is selected, you aren't billed for encoding.
 
 ## Customizing content models 
 
-Azure AI Video Indexer allows you to customize some of its models to be adapted to your specific use case. These models include [brands](customize-brands-model-how-to.md), [language](customize-language-model-how-to.md), [person](customize-person-model-how-to.md) and [speech](customize-speech-model-how-to.md).
+Azure AI Video Indexer allows you to customize some of its models to be adapted to your specific use case. These models include [brands](customize-brands-model-how-to.md), [language](customize-language-model-how-to.md), [person](customize-person-model-how-to.md), and [speech](customize-speech-model-how-to.md).
 
 ## Insights and media storage
 
 ### Insight storage
 
-All indexing insights and metadata are kept in storage accounts managed by VI and you are not charged for this storage.
+All indexing insights and metadata are kept in storage accounts managed by VI and you aren't charged for this storage.
 
 ### Media storage
-Your VI account is connected to an Azure Storage account. You control and pay for the usage of this storage account. When indexing a video, the following files are stored in this account:
+Your VI account is connected to an Azure Storage account. You control and pay for the usage of this storage account. The following files are stored in this account when a video is indexed:
 
-- The source file. This is kept in case you want to re-index the video in the future.
+- The source file. It's kept in case you want to reindex the video in the future.
 - A new encoded file when the streaming quality is set to single bitrate.
 
 ### Deleting media
 
-Indexed media and all its associated files and insights can be deleted in 3 ways:
+Indexed media and all its associated files and insights can be deleted in three ways:
 
 1. Delete the files with the [Video Indexer portal](https://www.videoindexer.ai/).
 1. Use the [Delete Video](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Video) or [Delete Video Source File](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Video-Source-File) request. 
-1. If you don't need to keep the original media file in storage, when using the API, set the `retentionPeriod` parameter to between 1-7. This will delete the video 1-7 days after it was indexed.
+1. If you don't need to keep the original media file in storage, when using the API, set the `retentionPeriod` parameter to between 1-7. The video is deleted 1-7 days after it was indexed.
