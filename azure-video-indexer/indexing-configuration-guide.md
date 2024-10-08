@@ -2,7 +2,7 @@
 title: Indexing configuration guide
 description: This article explains each of the indexing options. The same options apply when using the Azure AI Video Indexer website as for using the API.
 ms.topic: conceptual
-ms.date: 10/07/2024
+ms.date: 10/08/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
@@ -99,4 +99,4 @@ Indexed media and all its associated files and insights can be deleted in three 
 
 1. Delete the files with the [Video Indexer portal](https://www.videoindexer.ai/).
 1. Use the [Delete Video](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Video) or [Delete Video Source File](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Video-Source-File) request. 
-1. If you don't need to keep the original media file in storage, when using the API, set the `retentionPeriod` parameter to between 1-7. The video is deleted 1-7 days after it was indexed.
+1. If you don't need to keep the original media file in storage, when using the API, set the `retentionPeriod` parameter to between 1-7. The indexed video and everything related to it, the source file, insights, etc. are deleted 1-7 days after indexing.
