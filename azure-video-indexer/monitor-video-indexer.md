@@ -60,7 +60,9 @@ The [Activity log](/azure/azure-monitor/essentials/activity-log) is a type of pl
 
 For a list of the types of resource logs collected for Azure AI Video Indexer, see [Monitoring Azure AI Video Indexer data reference](monitor-video-indexer-data-reference.md#resource-logs)  
 
+<!--
 For a list of the tables used by Azure Monitor Logs and queryable by Log Analytics, see [Monitoring Azure AI Video Indexer data reference](monitor-video-indexer-data-reference.md#azure-monitor-logs-tables)
+-->
 
 ### Sample Kusto queries
 

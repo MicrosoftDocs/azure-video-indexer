@@ -51,12 +51,14 @@ This section refers to all of the Azure Monitor Logs Kusto tables relevant to Az
 | [Azure AI Video Indexer](/azure/azure-monitor/reference/tables/tables-resourcetype#azure-video-indexer) | |
 -->
 
+<!--
 ### Azure AI Video Indexer
 
 | Table |  Description | Additional information  |
 |:---------|:-------------|------------------|
 | [VIAudit](/azure/azure-monitor/reference/tables/tables-resourcetype#azure-video-indexer)   | Events produced using the Azure AI Video Indexer [website](https://aka.ms/VIportal) or the [REST API portal](https://aka.ms/vi-dev-portal). |  |
 |VIIndexing| Events produced using the Azure AI Video Indexer [upload](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) and [re-index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Re-Index-Video) APIs. |
+-->
 
 <!--
 For a reference of all Azure Monitor Logs / Log Analytics tables, see the [Azure Monitor Log Table Reference](/azure/azure-monitor/reference/tables/tables-resourcetype).
