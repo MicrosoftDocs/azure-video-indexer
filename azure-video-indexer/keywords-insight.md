@@ -1,11 +1,12 @@
 ---
 title: Get keywords extraction insights
 description: This article shows you how to get the Azure AI Video Indexer keywords extraction insights.
-ms.date: 09/03/2024
-ms.topic: article
-ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.author: inhenkel
+ms.collection: ce-skilling-ai-copilot
+ms.date: 10/09/2024
 ms.service: azure-video-indexer
+ms.topic: article
 ---
 
 # Get keywords extraction insights

@@ -1,12 +1,12 @@
 ---
 title: Language support in Azure AI Video Indexer
 description: This article provides a comprehensive list of language support by service features in Azure AI Video Indexer.
-ms.topic: conceptual
-ms.date: 09/03/2024
-ms.custom: ignite-2022
-ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.author: inhenkel
+ms.collection: ce-skilling-ai-copilot
+ms.date: 10/09/2024
 ms.service: azure-video-indexer
+ms.topic: conceptual
 ---
 
 # Language support in Azure AI Video Indexer

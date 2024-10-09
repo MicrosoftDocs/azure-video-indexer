@@ -1,12 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.date: 08/13/2024
-ms.author: inhenkel
-title: Transparency imitations - textual summarization cloud
----
-
 ### Textual summarization notes
 
 > [!IMPORTANT]

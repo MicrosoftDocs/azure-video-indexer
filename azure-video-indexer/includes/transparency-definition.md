@@ -1,12 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.date: 07/25/2024
-ms.author: inhenkel
-title: Transparency definition
----
-
 ## What is transparency?
 
 Microsoft’s Transparency Notes are intended to help you understand how our AI technology works, the choices system owners can make that influence system performance and behavior, and the importance of thinking about the whole system, including the technology, the people, and the environment. You can use Transparency Notes when developing or deploying your own system or share them with the people who use or are affected by your system.  

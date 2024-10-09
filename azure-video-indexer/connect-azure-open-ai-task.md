@@ -1,11 +1,12 @@
 ---
 title: Create an Azure AI Video Indexer account with an Azure OpenAI connection
 description: This article shows you how to create an Azure AI Video Indexer account with an Azure OpenAI connection. 
-ms.topic: how-to
-ms.date: 09/11/2024
-ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.author: inhenkel
+ms.collection: ce-skilling-ai-copilot
+ms.date: 10/09/2024
 ms.service: azure-video-indexer
+ms.topic: how-to
 ---
 
 # Create or update an Azure AI Video Indexer account with an Azure OpenAI connection

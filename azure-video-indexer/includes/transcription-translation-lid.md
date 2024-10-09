@@ -1,11 +1,3 @@
----
-title: Media transcription, translation, and language identification
-ms.service: azure-video-indexer
-ms.topic: include
-ms.date: 08/08/2024
-ms.author: inhenkel
----
-
 ## Media transcription, translation, and language identification
 
 [!INCLUDE [transcription description](transcription-translation-lid-description.md)]

@@ -1,12 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.date: 08/08/2024
-ms.author: inhenkel
-title: transparency topics inference
----
-
 ## Topics inference notes
 
 - When uploading a file, always use high-quality video content. The recommended maximum frame size is HD and frame rate is 30 FPS. A frame should contain no more than 10 people. When outputting frames from videos to AI models, only send around two or three frames per second. Processing 10 and more frames might delay the AI result.  

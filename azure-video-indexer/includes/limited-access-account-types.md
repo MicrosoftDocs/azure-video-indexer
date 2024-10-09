@@ -1,14 +1,3 @@
----
-title: Limited access
-titleSuffix: Azure AI Video Indexer
-services: azure-video-indexer
-manager: femila
-ms.service: azure-video-indexer
-ms.topic: include 
-ms.date: 07/25/2024
-ms.author: inhenkel
----
-
 This section talks about limited access features in Azure AI Video Indexer.
 
 |When did I create the account?|Trial account (free)|	Paid account <br/>(classic or ARM-based)|

@@ -1,11 +1,12 @@
 ---
 title: Azure AI Video Indexer support matrix and service limits  
 description: This article describes the supported formats and limitations of Azure AI Video Indexer.
-ms.topic: conceptual
-ms.service: azure-video-indexer
-ms.date: 09/03/2024
-ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.author: inhenkel
+ms.collection: ce-skilling-ai-copilot
+ms.date: 10/09/2024
+ms.service: azure-video-indexer
+ms.topic: conceptual
 ---
 
 # Azure AI Video Indexer support matrix and service limits

@@ -1,12 +1,3 @@
----
-title: Scene detection description
-services: azure-video-indexer
-ms.service: azure-video-indexer
-ms.topic: include
-ms.date: 07/25/2024
-ms.author: inhenkel
----
-
 Scene detection detects when a scene changes in a video based on visual cues. 
 
 A **scene** depicts a single event and is composed of a series of shots, which are related.

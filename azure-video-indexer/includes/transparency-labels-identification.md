@@ -1,12 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.date: 08/08/2024
-ms.author: inhenkel
-title: transparency Labels identification
----
-
 ## Labels identification notes
 
 - Carefully consider the accuracy of the results, to promote more accurate detections, check the quality of the video, low quality video might affect the detected insights. 
