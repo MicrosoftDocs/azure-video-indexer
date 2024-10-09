@@ -2,11 +2,10 @@
 title: Monitor Azure AI Video Indexer
 description: Start here to learn how to monitor Azure AI Video Indexer
 ms.topic: how-to
-ms.custom: subject-monitoring
+ms.custom: subject-monitoring, itnorman
 ms.date: 10/09/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
-ms.custom: itnorman 
 ms.service: azure-video-indexer
 ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
 ---
