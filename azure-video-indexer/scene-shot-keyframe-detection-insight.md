@@ -1,12 +1,12 @@
 ---
 title: Azure AI Video Indexer (VI) scene shot keyframe detection insight overview 
 description: This article describes the Azure AI Video Indexer scene, shot, keyframe detection insight.
-ms.date: 10/09/2024
-ms.topic: article
-ms.author: inhenkel
 author: IngridAtMicrosoft
-ms.service: azure-video-indexer
+ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
+ms.date: 10/09/2024
+ms.service: azure-video-indexer
+ms.topic: article
 ---
 
 # Scene, shot, keyframe detection insight overview

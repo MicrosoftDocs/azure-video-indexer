@@ -8,7 +8,6 @@ ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
 
-
 # Preparing for AMS retirement: VI migration and updating guide
 
 [!INCLUDE [AMS VI retirement announcement](../includes/important-ams-retirement-avi-announcement.md)]

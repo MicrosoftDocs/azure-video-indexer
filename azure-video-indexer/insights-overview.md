@@ -2,11 +2,11 @@
 title:  Azure AI Video Indexer insights overview
 description: This article gives a brief overview of Azure AI Video Indexer insights.
 ms.topic: conceptual
-ms.date: 10/09/2024
-ms.author: inhenkel
 author: IngridAtMicrosoft
-ms.service: azure-video-indexer
+ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
+ms.date: 10/09/2024
+ms.service: azure-video-indexer
 ---
 
 # Azure AI Video Indexer insights

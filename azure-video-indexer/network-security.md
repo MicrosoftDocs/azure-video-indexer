@@ -1,13 +1,12 @@
 ---
 title: Use Network Security Groups with Service Tags
 description: This article gives an overview of the Azure AI Video Indexer  network security options.
-ms.topic: article
-ms.custom: devx-track-azurecli
-ms.date: 10/09/2024
-ms.author: inhenkel
 author: IngridAtMicrosoft
-ms.service: azure-video-indexer
+ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
+ms.date: 10/09/2024
+ms.service: azure-video-indexer
+ms.topic: article
 ---
 
 # Use Network Security Groups with Service Tags

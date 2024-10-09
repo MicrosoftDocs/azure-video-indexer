@@ -1,12 +1,12 @@
 ---
 title: Transparency note CELA review build only  
 description: Transparency note CELA review build only.
-ms.date: 10/09/2024
-ms.topic: how-to
-ms.author: inhenkel
 author: IngridAtMicrosoft
-ms.service: azure-video-indexer
+ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
+ms.date: 10/09/2024
+ms.service: azure-video-indexer
+ms.topic: how-to
 ---
 
 # Transparency note CELA review build only

@@ -1,12 +1,12 @@
 ---
 title: Clapper board detection insight overview
 description: This article describes the Azure AI Video Indexer clapper board detection insight.
-ms.topic: article
-ms.date: 10/09/2024
-ms.author: inhenkel
 author: IngridAtMicrosoft
-ms.service: azure-video-indexer
+ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
+ms.date: 10/09/2024
+ms.service: azure-video-indexer
+ms.topic: article
 ---
 
 # Clapper board detection insight overview

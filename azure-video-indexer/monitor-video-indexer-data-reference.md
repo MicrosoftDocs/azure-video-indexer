@@ -1,13 +1,12 @@
 ---
 title: Monitoring Azure AI Video Indexer data reference
 description: Azure Monitor reference material for Azure AI Video Indexer 
-ms.topic: reference
+author: IngridAtMicrosoft
+ms.author: inhenkel
+ms.collection: ce-skilling-ai-copilot
 ms.custom: itnorman, subject-monitoring
 ms.date: 10/09/2024
-ms.author: inhenkel
-author: IngridAtMicrosoft
 ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot
 ---
 
 # Monitor Azure AI Video Indexer data reference

@@ -1,13 +1,15 @@
 ---
 title: Get labels identification insights
 description: This article shows you how to get the Azure AI Video Indexer labels identification detection insights.
-ms.date: 10/09/2024
-ms.topic: how-to
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: azure-video-indexer
 ms.collection: ce-skilling-ai-copilot
+ms.date: 10/09/2024
+ms.service: azure-video-indexer
+ms.topic: how-to
 ---
+
+
 
 # Get labels identification insights
 
