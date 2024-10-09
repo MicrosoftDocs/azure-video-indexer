@@ -2,10 +2,11 @@
 title: Textual Video Summary with Azure OpenAI
 description: This article is an overview of Azure OpenAI textual summarization with Azure AI Video Indexer. 
 ms.topic: overview
-ms.date: 09/24/2024
+ms.date: 10/09/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
+ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
 ---
 
 # Textual Video Summary with Azure OpenAI

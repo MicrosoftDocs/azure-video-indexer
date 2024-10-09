@@ -2,10 +2,11 @@
 title: Edit speakers in the Azure AI Video Indexer website
 description: The article demonstrates how to edit speakers with the Azure AI Video Indexer website.
 ms.topic: how-to
-ms.date: 09/03/2024
+ms.date: 10/09/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
+ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
 ---
 
 # Edit speakers with the Azure AI Video Indexer website

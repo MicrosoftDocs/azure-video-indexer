@@ -2,10 +2,11 @@
 title: Use the Azure AI Video Indexer editor to create projects and add video clips
 description: This article demonstrates how to use the Azure AI Video Indexer editor to create projects and add video clips.
 ms.topic: article
-ms.date: 09/11/2024
+ms.date: 10/09/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
+ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
 ---
 
 # Add video clips to your projects

@@ -2,7 +2,7 @@
 title: Observed matched people description
 ms.service: azure-video-indexer
 ms.topic: include
-ms.date: 08/22/2024
+ms.date: 10/09/2024
 ms.author: inhenkel
 ---
 

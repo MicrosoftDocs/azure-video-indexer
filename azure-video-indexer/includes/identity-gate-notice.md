@@ -6,8 +6,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: azure-video-indexer
 ms.topic: include 
-ms.date: 07/25/2024
----
+ms.date: 10/09/2024---
 
 <!-- original metadata copied during repo migration
 ---
@@ -18,8 +17,7 @@ author: PatrickFarley
 manager: nitinme
 ms.service: cognitive-services
 ms.topic: include 
-ms.date: 07/25/2024
-ms.author: pafarley
+ms.date: 10/09/2024ms.author: pafarley
 ---
 -->
 

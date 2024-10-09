@@ -2,10 +2,11 @@
 title: Enable and view a textless slate with matching scene
 description: Learn about how to enable and view a textless slate with matching scene.
 ms.topic: article
-ms.date: 09/03/2024
+ms.date: 10/09/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
+ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
 ---
 
 # Enable and view a textless slate with matching scene

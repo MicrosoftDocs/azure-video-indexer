@@ -1,8 +1,9 @@
 ---
 title: Clapper board detection description
 ms.service: azure-video-indexer
+ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
 ms.topic: include
-ms.date: 07/25/2024
+ms.date: 10/09/2024
 ms.author: inhenkel
 ---
 

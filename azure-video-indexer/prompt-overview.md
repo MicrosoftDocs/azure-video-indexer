@@ -2,10 +2,11 @@
 title:  Azure AI Video Indexer with LLM prompts  
 description: Azure AI Video Indexer integrates with Large Language Models (LLMs). LLMs are natural language AI models that you can use to ask questions about video content and much more. Extract Azure AI Video Indexer’s insights into a prompt ready format that can be easily used with LLMs. There's no need to reindex videos to create the prompt-ready format of the videos.
 ms.topic: conceptual
-ms.date: 09/03/2024
+ms.date: 10/09/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
+ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
 ---
 
 # Azure AI Video Indexer with LLM prompts

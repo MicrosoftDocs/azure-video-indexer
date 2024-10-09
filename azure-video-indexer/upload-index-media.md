@@ -2,10 +2,11 @@
 title: Upload and index media with Azure AI Video Indexer (VI)
 description: This article shows you how to upload and index media files (audio or video) with the Azure AI Video Indexer website using advanced settings.
 ms.topic: article
-ms.date: 09/03/2024
+ms.date: 10/09/2024
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: azure-video-indexer
+ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
 ---
 
 # Upload and index media

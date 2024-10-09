@@ -1,11 +1,8 @@
 ---
 title: Limited access
-titleSuffix: Azure AI Video Indexer
-services: azure-video-indexer
-manager: femila
 ms.service: azure-video-indexer
 ms.topic: include 
-ms.date: 07/25/2024
+ms.date: 10/09/2024
 ms.author: inhenkel
 ---
 

@@ -2,10 +2,11 @@
 title:  Quickstart - Try the Azure AI Video Indexer web portal
 description: This article shows you how to get started with Azure AI Video Indexer (VI) by using the web portal. You're encouraged to experience indexing a video with the web portal before trying the API.
 ms.topic: conceptual
-ms.date: 07/25/2024
+ms.date: 10/09/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
+ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
 ---
 
 # Quickstart: Try the Azure AI Video Indexer (VI) web portal
