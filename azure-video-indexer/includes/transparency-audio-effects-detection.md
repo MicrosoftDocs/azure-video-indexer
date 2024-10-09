@@ -1,13 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
-ms.date: 10/09/2024
-ms.author: inhenkel
-title: transparency audio effects detection
----
-
 ## Audio effects detection notes
 
 - Avoid use of short or low-quality audio, audio effects detection provides probabilistic and partial data on detected nonspeech audio events. For accuracy, audio effects detection requires at least 2 seconds of clear nonspeech audio. Voice commands or singing aren't supported.   

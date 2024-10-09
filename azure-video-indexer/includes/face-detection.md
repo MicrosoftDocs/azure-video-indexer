@@ -1,11 +1,3 @@
----
-title: Face detection
-ms.service: azure-video-indexer
-ms.topic: include
-ms.date: 10/09/2024
-ms.author: inhenkel
----
-
 ## Face detection
 
 [!INCLUDE [Face detection description](face-detection-description.md)]

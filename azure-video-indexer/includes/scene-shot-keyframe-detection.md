@@ -1,12 +1,3 @@
----
-title: Text-based emotion detection
-ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
-ms.topic: include
-ms.date: 10/09/2024
-ms.author: inhenkel
----
-
 ## Scene, shot, keyframe detection
 
 [!INCLUDE [Scene, shot, keyframe detection description](scene-shot-keyframe-detection-description.md)]

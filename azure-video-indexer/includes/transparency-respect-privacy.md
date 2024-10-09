@@ -1,13 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
-ms.date: 10/09/2024
-ms.author: inhenkel
-title: transparency imitations - respect privacy
----
-
 ## Respect privacy
 When used responsibly and carefully Azure AI Video Indexer is a valuable tool for many industries. To respect the privacy and safety of others, we recommend the following:  
 

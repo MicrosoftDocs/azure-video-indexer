@@ -1,12 +1,3 @@
----
-title: Quickstart free trial note
-author: IngridAtMicrosoft
-ms.author: inhenkel
-ms.service: azure-video-indexer
-ms.topic: include 
-ms.date: 10/09/2024
----
-
 <!-- original metadata copied during repo migration 
 author: SyntaxC4
 ms.service: cloud-services

@@ -1,13 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
-ms.date: 10/09/2024
-ms.author: inhenkel
-title: transparency Named entities
----
-
 ## Named entities notes
 -	Carefully consider the accuracy of the results, to promote more accurate detections, check the quality of the audio and images, low quality audio and images might impact the detected insights. 
 -	Named entities only detect insights in audio and images. Logos in a brand name may not be detected.

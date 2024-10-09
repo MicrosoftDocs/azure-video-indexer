@@ -1,13 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
-ms.date: 10/09/2024
-ms.author: inhenkel
-title: transparency introduction to vi
----
-
 ## Introduction to Azure AI Video Indexer
 
 Azure AI Video Indexer (VI) is a cloud-based tool that processes and analyzes uploaded video and audio files to generate different types of insights. These insights include detected objects, people, faces, key frames and translations or transcriptions in at least 60 languages. The insights and their time frames are displayed in a categorized list on the Azure AI Video Indexer website where each insight can be seen by pressing its Play button.

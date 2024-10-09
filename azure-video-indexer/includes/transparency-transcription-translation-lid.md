@@ -1,13 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
-ms.date: 10/09/2024
-ms.author: inhenkel
-title: Transparency transcription and language identification
----
-
 ## Transcription, translation, and language identification notes
 
 When used responsibly and carefully, Azure AI Video Indexer is a valuable tool for many industries. You must always respect the privacy and safety of others, and to comply with local and global regulations. We recommend:   

@@ -1,11 +1,3 @@
----
-title: Insights introductory paragraph
-ms.service: azure-video-indexer
-ms.topic: include
-ms.date: 10/09/2024
-ms.author: inhenkel
----
-
 ## View the insight JSON with the web portal
 
 Once you have uploaded and indexed a video, insights are available in JSON format for download using the web portal.

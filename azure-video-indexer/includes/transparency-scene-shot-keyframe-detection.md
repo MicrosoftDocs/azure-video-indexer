@@ -1,12 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
-ms.date: 10/09/2024
-ms.author: inhenkel
-title: Transparency scene shot keyframe detection
----
 <!-- 8/8/24 Removed from transparency note because not released due to a bug. -->
 
 ## Scene, shot, and keyframe detection notes

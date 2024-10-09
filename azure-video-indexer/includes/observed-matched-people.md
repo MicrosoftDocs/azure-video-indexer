@@ -1,11 +1,3 @@
----
-title: Observed people detection and matched faces
-ms.service: azure-video-indexer
-ms.topic: include
-ms.date: 10/09/2024
-ms.author: inhenkel
----
-
 ## Observed people detection, matched faces, detected clothing
 
 > [!IMPORTANT]

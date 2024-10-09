@@ -1,13 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
-ms.date: 10/09/2024
-ms.author: inhenkel
-title: transparency components
----
-
 ## Components of Azure AI Video Indexer
 
 During the Azure AI Video Indexer procedure, a media file is processed using Azure APIs to extract different types of insights, as follows:

@@ -1,13 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
-ms.date: 10/09/2024
-ms.author: inhenkel
-title: transparency limited access features
----
-
 ## Limited Access features of Azure AI Video Indexer
 
 Facial recognition features of Azure AI Video Indexer (including facial detection, facial identification, facial templates, observed people detection, and matched faces) are Limited Access and are only available to Microsoft managed customers and partners, and only for certain use cases selected at the time of registration. Access to the facial identification and celebrity recognition capabilities requires registration. Facial detection does not require registration. To learn more, visit [Microsoft’s Limited Access policy](https://aka.ms/limitedaccesscogservices).

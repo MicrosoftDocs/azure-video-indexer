@@ -1,12 +1,3 @@
----
-title: Azure AI Video Indexer optical character recognition (OCR)  
-ms.date: 10/09/2024
-ms.topic: include
-ms.author: inhenkel
-author: IngridAtMicrosoft
-ms.service: azure-video-indexer
----
-
 ## Optical character recognition (OCR)
 
 [!INCLUDE [ocr description](ocr-description.md)]

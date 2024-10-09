@@ -1,12 +1,3 @@
----
-title: Text-based emotion detection
-ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
-ms.topic: include
-ms.date: 10/09/2024
-ms.author: inhenkel
----
-
 ## Text-based emotion detection
 
 [!INCLUDE [Emotions detection description](text-based-emotions-detection-description.md)]

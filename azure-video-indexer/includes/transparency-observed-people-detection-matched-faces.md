@@ -1,13 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
-ms.date: 10/09/2024
-ms.author: inhenkel
-title: Transparency observed people detectiom and matched faces
----
-
 ## Observed people detection and matched faces notes
 
 - People are generally not detected if they appear small (minimum person height is 100 pixels).
