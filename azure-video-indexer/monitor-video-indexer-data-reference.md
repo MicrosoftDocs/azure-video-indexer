@@ -41,6 +41,7 @@ Resource Provider and Type: [Microsoft.VideoIndexer/accounts](/azure/azure-monit
 | VIAudit   | Azure AI Video Indexer Audit Logs | Logs are produced from both the [Azure AI Video Indexer website](https://www.videoindexer.ai/) and the REST API. |
 | IndexingLogs | Indexing Logs | Azure AI Video Indexer indexing logs to monitor all files uploads, indexing and reindexing jobs. |
 
+<!--
 ## Azure Monitor Logs tables
 
 This section refers to all of the Azure Monitor Logs Kusto tables relevant to Azure AI Video Indexer and available for query by Log Analytics.
@@ -48,6 +49,7 @@ This section refers to all of the Azure Monitor Logs Kusto tables relevant to Az
 |Resource Type | Notes |
 |-------|-----|
 | [Azure AI Video Indexer](/azure/azure-monitor/reference/tables/tables-resourcetype#azure-video-indexer) | |
+-->
 
 ### Azure AI Video Indexer
 
@@ -56,7 +58,9 @@ This section refers to all of the Azure Monitor Logs Kusto tables relevant to Az
 | [VIAudit](/azure/azure-monitor/reference/tables/tables-resourcetype#azure-video-indexer)   | Events produced using the Azure AI Video Indexer [website](https://aka.ms/VIportal) or the [REST API portal](https://aka.ms/vi-dev-portal). |  |
 |VIIndexing| Events produced using the Azure AI Video Indexer [upload](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) and [re-index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Re-Index-Video) APIs. |
 
+<!--
 For a reference of all Azure Monitor Logs / Log Analytics tables, see the [Azure Monitor Log Table Reference](/azure/azure-monitor/reference/tables/tables-resourcetype).
+-->
 
 ## Activity log
 
