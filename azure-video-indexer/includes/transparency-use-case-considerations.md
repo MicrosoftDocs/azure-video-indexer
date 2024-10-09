@@ -1,12 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.date: 07/25/2024
-ms.author: inhenkel
-title: transparency use case considerations
----
-
 ## Use case considerations
 
 - Avoid using Video Indexer for decisions that may have serious adverse impacts. Decisions based on incorrect output could have serious adverse impacts. Additionally, it is advisable to include human review of decisions that have the potential for serious impacts on individuals.

@@ -1,12 +1,3 @@
----
-title: Audio effects detection
-services: azure-video-indexer
-ms.service: azure-video-indexer
-ms.topic: include
-ms.date: 07/25/2024
-ms.author: inhenkel
----
-
 ## Audio effects detection
 
 [!INCLUDE [Audio effects detection description](audio-effects-detection-description.md)]

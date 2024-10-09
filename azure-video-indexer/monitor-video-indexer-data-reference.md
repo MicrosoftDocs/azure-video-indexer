@@ -1,12 +1,13 @@
 ---
 title: Monitoring Azure AI Video Indexer data reference
 description: Azure Monitor reference material for Azure AI Video Indexer 
-ms.topic: reference
-ms.custom: subject-monitoring
-ms.date: 09/11/2024
+author: IngridAtMicrosoft
 ms.author: inhenkel
-author: itnorman
+ms.collection: ce-skilling-ai-copilot
+ms.custom: itnorman, subject-monitoring
+ms.date: 10/09/2024
 ms.service: azure-video-indexer
+ms.topic: reference
 ---
 
 # Monitor Azure AI Video Indexer data reference
@@ -40,6 +41,7 @@ Resource Provider and Type: [Microsoft.VideoIndexer/accounts](/azure/azure-monit
 | VIAudit   | Azure AI Video Indexer Audit Logs | Logs are produced from both the [Azure AI Video Indexer website](https://www.videoindexer.ai/) and the REST API. |
 | IndexingLogs | Indexing Logs | Azure AI Video Indexer indexing logs to monitor all files uploads, indexing and reindexing jobs. |
 
+<!--
 ## Azure Monitor Logs tables
 
 This section refers to all of the Azure Monitor Logs Kusto tables relevant to Azure AI Video Indexer and available for query by Log Analytics.
@@ -47,27 +49,22 @@ This section refers to all of the Azure Monitor Logs Kusto tables relevant to Az
 |Resource Type | Notes |
 |-------|-----|
 | [Azure AI Video Indexer](/azure/azure-monitor/reference/tables/tables-resourcetype#azure-video-indexer) | |
+-->
 
+<!--
 ### Azure AI Video Indexer
 
 | Table |  Description | Additional information  |
 |:---------|:-------------|------------------|
-| [VIAudit](/azure/azure-monitor/reference/tables/tables-resourcetype#azure-video-indexer)<!-- (S/azure/azure-monitor/reference/tables/viaudit)-->   | <!-- description copied from previous link --> Events produced using the Azure AI Video Indexer [website](https://aka.ms/VIportal) or the [REST API portal](https://aka.ms/vi-dev-portal). |  |
+| [VIAudit](/azure/azure-monitor/reference/tables/tables-resourcetype#azure-video-indexer)   | Events produced using the Azure AI Video Indexer [website](https://aka.ms/VIportal) or the [REST API portal](https://aka.ms/vi-dev-portal). |  |
 |VIIndexing| Events produced using the Azure AI Video Indexer [upload](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) and [re-index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Re-Index-Video) APIs. |
+-->
 
+<!--
 For a reference of all Azure Monitor Logs / Log Analytics tables, see the [Azure Monitor Log Table Reference](/azure/azure-monitor/reference/tables/tables-resourcetype).
+-->
 
 ## Activity log
-
-The following table lists the operations related to Azure AI Video Indexer that may be created in the Activity log.
-
-| Operation | Description |
-|:---|:---|
-|Generate_AccessToken | |
-|Accounts_Update | |
-|Write tags | |
-|Create or update resource diagnostic setting| |
-|Delete resource diagnostic setting|
 
 For more information on the schema of Activity Log entries, see [Activity  Log schema](/azure/azure-monitor/essentials/activity-log-schema). 
 

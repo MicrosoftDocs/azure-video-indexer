@@ -1,11 +1,3 @@
----
-title: Labels identification
-ms.service: azure-video-indexer
-ms.topic: include
-ms.date: 07/25/2024
-ms.author: inhenkel
----
-
 ## Labels identification
 
 [!INCLUDE [labels identification description](labels-identification-description.md)]

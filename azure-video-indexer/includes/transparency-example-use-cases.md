@@ -1,12 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.date: 07/25/2024
-ms.author: inhenkel
-title: transparency example use cases
----
-
 ## Example use cases for Azure AI Video Indexer
 
 Azure AI Video Indexer can be used in multiple scenarios in a variety of industries, such as:  

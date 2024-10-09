@@ -1,12 +1,3 @@
----
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.date: 08/08/2024
-ms.author: inhenkel
-title: Transparency clapper board detection
----
-
 ## Clapper board detection notes
 
 - The detection algorithm might not correctly identify the values.

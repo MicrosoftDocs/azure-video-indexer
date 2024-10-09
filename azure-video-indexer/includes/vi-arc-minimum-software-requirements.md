@@ -1,10 +1,3 @@
----
-author: inhenkel
-ms.topic: include
-ms.date: 08/08/2024
-ms.author: inhenkel
----
-
 ## Minimum software requirements
 
 | Component |  Minimum Requirements |

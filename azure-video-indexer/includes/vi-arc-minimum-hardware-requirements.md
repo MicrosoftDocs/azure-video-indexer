@@ -1,10 +1,3 @@
----
-author: inhenkel
-ms.topic: include
-ms.date: 07/25/2024
-ms.author: inhenkel
----
-
 ## Minimum hardware requirements
 
 Video Indexer enabled by Arc is designed to run on any Arc enabled Kubernetes environment.

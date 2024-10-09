@@ -1,11 +1,3 @@
----
-title: Object detection
-ms.service: azure-video-indexer
-ms.topic: include
-ms.date: 07/25/2024
-ms.author: inhenkel
----
-
 ## Object detection
 
 [!INCLUDE [object detection description](object-detection-description.md)]

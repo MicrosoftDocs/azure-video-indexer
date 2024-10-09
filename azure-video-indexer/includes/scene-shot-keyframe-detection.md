@@ -1,11 +1,3 @@
----
-title: Text-based emotion detection
-ms.service: azure-video-indexer
-ms.topic: include
-ms.date: 09/11/2024
-ms.author: inhenkel
----
-
 ## Scene, shot, keyframe detection
 
 [!INCLUDE [Scene, shot, keyframe detection description](scene-shot-keyframe-detection-description.md)]

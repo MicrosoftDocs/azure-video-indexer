@@ -1,10 +1,12 @@
 ---
 title: Get audio effects detection insights 
 description: This article shows you how to get the Azure AI Video Indexer audio effects detection insights.
-ms.date: 09/03/2024
-ms.topic: how-to
 author: IngridAtMicrosoft
 ms.author: inhenkel
+ms.collection: ce-skilling-ai-copilot
+ms.date: 10/09/2024
+ms.service: azure-video-indexer
+ms.topic: how-to
 ---
 
 # Get audio effects detection insights

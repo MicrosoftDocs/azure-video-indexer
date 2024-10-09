@@ -1,11 +1,3 @@
----
-title: Digital patterns
-ms.service: azure-video-indexer
-ms.topic: include
-ms.date: 07/25/2024
-ms.author: inhenkel
----
-
 ## Post-production: digital patterns
 
 [!INCLUDE [digital patterns description](digital-patterns-description.md)]

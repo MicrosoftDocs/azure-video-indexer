@@ -1,10 +1,11 @@
 ---
-author: inhenkel
-ms.topic: include 
-ms.service: azure-video-indexer
-ms.date: 07/25/2024
-ms.author: inhenkel
 title: AMS VI retirement announcement
+description: AMS VI retirement announcement
+author: IngridAtMicrosoft
+ms.author: inhenkel
+ms.date: 10/09/2024
+ms.service: azure-video-indexer
+ms.topic: include
 ---
 
 <!--

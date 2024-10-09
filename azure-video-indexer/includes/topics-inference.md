@@ -1,11 +1,3 @@
----
-title: Topic inference
-ms.service: azure-video-indexer
-ms.topic: include
-ms.date: 07/25/2024
-ms.author: inhenkel
----
-
 ## Topics inference
 
 [!INCLUDE [topics inference description](topics-inference-description.md)] 

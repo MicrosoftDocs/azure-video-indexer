@@ -1,12 +1,12 @@
 ---
 title: Monitor Azure AI Video Indexer
 description: Start here to learn how to monitor Azure AI Video Indexer
-ms.topic: how-to
-ms.custom: subject-monitoring
-ms.date: 09/03/2024
+author: IngridAtMicrosoft
 ms.author: inhenkel
-author: itnorman
+ms.collection: ce-skilling-ai-copilot
+ms.date: 10/09/2024
 ms.service: azure-video-indexer
+ms.topic: how-to
 ---
 
 # Monitor Azure AI Video Indexer
@@ -59,7 +59,9 @@ The [Activity log](/azure/azure-monitor/essentials/activity-log) is a type of pl
 
 For a list of the types of resource logs collected for Azure AI Video Indexer, see [Monitoring Azure AI Video Indexer data reference](monitor-video-indexer-data-reference.md#resource-logs)  
 
+<!--
 For a list of the tables used by Azure Monitor Logs and queryable by Log Analytics, see [Monitoring Azure AI Video Indexer data reference](monitor-video-indexer-data-reference.md#azure-monitor-logs-tables)
+-->
 
 ### Sample Kusto queries
 

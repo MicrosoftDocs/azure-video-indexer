@@ -1,11 +1,3 @@
----
-title: Clapper board detection
-ms.service: azure-video-indexer
-ms.topic: include
-ms.date: 07/25/2024
-ms.author: inhenkel
----
-
 ## Post-production: clapper board detection
 
 [!INCLUDE [clapper board description](clapperboard-description.md)]
