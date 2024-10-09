@@ -11,4 +11,4 @@ ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
 
 # Clapper board detection insight overview
 
-[!INCLUDE [Audio effects detection description](./includes/clapperboard-detection.md)]
+[!INCLUDE [clapper board detection description](./includes/clapperboard-detection.md)]
