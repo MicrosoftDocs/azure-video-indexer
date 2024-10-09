@@ -1,10 +1,3 @@
----
-author: inhenkel
-ms.topic: include
-ms.date: 10/09/2024
-ms.author: inhenkel
----
-
 A callback URL is used to notify the customer (through a POST request) about the following events:
 
 - Indexing state change: 
