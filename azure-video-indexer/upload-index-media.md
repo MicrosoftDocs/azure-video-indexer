@@ -6,7 +6,7 @@ ms.date: 10/09/2024
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Upload and index media

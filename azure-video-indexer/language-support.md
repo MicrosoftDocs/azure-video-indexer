@@ -7,7 +7,7 @@ ms.custom: ignite-2022
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Language support in Azure AI Video Indexer

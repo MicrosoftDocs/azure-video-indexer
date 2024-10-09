@@ -7,7 +7,7 @@ ms.author: inhenkel
 ms.custom: ikbarmen
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Manage multiple tenants

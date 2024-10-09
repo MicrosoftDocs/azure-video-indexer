@@ -1,12 +1,11 @@
 ---
 title: Examine the Azure AI Video Indexer output
 description: This article examines the Azure AI Video Indexer output produced by the Get Video Index API.
-ms.topic: article
-ms.date: 10/09/2024
-ms.author: inhenkel
 author: IngridAtMicrosoft
+ms.author: inhenkel
+ms.date: 10/09/2024
 ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
+ms.topic: article
 ---
 
 # Examine the Azure AI Video Indexer output

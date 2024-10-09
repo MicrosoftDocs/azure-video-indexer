@@ -7,7 +7,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.custom: "se-defect-target"
 ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Quickstart: Use the API

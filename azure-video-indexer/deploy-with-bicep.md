@@ -7,7 +7,7 @@ ms.date: 10/09/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Quickstart: Deploy Azure AI Video Indexer (VI) by using Bicep

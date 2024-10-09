@@ -6,7 +6,7 @@ ms.date: 10/09/2024
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
+ms.collection: ce-skilling-ai-copilot
 #customer intent: As a developer, I want to learn how to embed Azure AI Video Indexer widgets in my apps so that I can enhance the functionality of my applications.
 ---
 

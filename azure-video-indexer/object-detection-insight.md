@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: azure-video-indexer
-ms.collection: ce-skilling-ai-copilot,rai-skilling-ai-copilot
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Get object detection insights
