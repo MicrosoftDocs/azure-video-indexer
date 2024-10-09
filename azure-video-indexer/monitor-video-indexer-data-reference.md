@@ -7,6 +7,7 @@ ms.collection: ce-skilling-ai-copilot
 ms.custom: itnorman, subject-monitoring
 ms.date: 10/09/2024
 ms.service: azure-video-indexer
+ms.topic: reference
 ---
 
 # Monitor Azure AI Video Indexer data reference
