@@ -1,6 +1,6 @@
 ## Textual summarization on an edge device notes
 
-AVI Textual Summarization on Edge utilizes the [Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model. The Phi-3.5 model has a context size of 128k and modest hardware requirements. There’s no charge for requests to change the model.
+Textual summarization on an edge device utilizes the [Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model. The Phi-3.5 model has a context size of 128k and modest hardware requirements. There’s no charge for requests to change the model.
 
 ### Specifications
 
@@ -10,7 +10,7 @@ AVI Textual Summarization on Edge utilizes the [Phi-3.5-mini-instruct](https://h
 
 ## Known limitations and known issues
 
-- an AI language model creates the summarization feature and serves to provide a general overview. The content might not fully encapsulate the essence of the original material. It's recommended that a human review and edit the summary before use. It shouldn’t be viewed as professional or personalized advice.
+- An AI language model creates the summarization feature and serves to provide a general overview. The content might not fully encapsulate the essence of the original material. It's recommended that a human review and edit the summary before use. It shouldn’t be viewed as professional or personalized advice.
 - The summary’s results are generally consistent within each flavor. However, editing the transcript or reindexing the video might lead to different results output.
 - When utilizing Flavors, the Neutral style might occasionally resemble the Formal style. The Casual style might include content-related hashtags. Additionally, a Medium length summary might be shorter than a Short summary.
 - Videos that have little content (such as very short videos) are typically not summarized to mitigate the potential model inaccuracies that can happen when the input is short.
@@ -21,11 +21,11 @@ AVI Textual Summarization on Edge utilizes the [Phi-3.5-mini-instruct](https://h
 
 ## Textual summarization with keyframes on an edge device
 
-Summarization with keyframes is based on [keyframes selection with shots detection](/azure/azure-video-indexer/scene-shot-keyframe-detection-insight). Therefore, any limitation that applies to shots detection applies to textual summarization with keyframes.
+Textual summarization with keyframes is based on [keyframes selection with shots detection](/azure/azure-video-indexer/scene-shot-keyframe-detection-insight). Therefore, any limitation that applies to shots detection applies to textual summarization with keyframes.
 
 ### Specifications
 
-- Language Model: [Phi-3.5-Vision-Instruct](https://huggingface.co/microsoft/Phi-3.5-vision-instruct) and [Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3.5-mini-instruct)
+- Language Model: [Phi-3.5-Vision-Instruct](https://huggingface.co/microsoft/Phi-3.5-vision-instruct) and [Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3.5-mini-instruct).
 - Tested [on Standard_NC24ads_A100_v4](/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic). For more support hardware support information, refer to the [official release](https://huggingface.co/microsoft/Phi-3.5-vision-instruct).
 - Average runtime on A100 was ~24% of the video duration. For short videos, the runtime can be a low as ~20%.
 
