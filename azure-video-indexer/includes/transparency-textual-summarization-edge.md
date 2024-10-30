@@ -26,12 +26,12 @@ Textual summarization with keyframes is based on [keyframes selection with shots
 ### Specifications
 
 - Hardware requirements: GPU A100 for vision, and CPU 24 cores for mini-instruct (can be either AMD or Intel).
-- Language Model: [Phi-3.5-Vision-Instruct](https://huggingface.co/microsoft/Phi-3.5-vision-instruct) and [Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3.5-mini-instruct).
+- Language models: [Phi-3.5-Vision-Instruct](https://huggingface.co/microsoft/Phi-3.5-vision-instruct) and [Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3.5-mini-instruct).
 - Tested [on Standard_NC24ads_A100_v4](/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic). For more support hardware support information, refer to the [official release](https://huggingface.co/microsoft/Phi-3.5-vision-instruct).
-- Average runtime on A100 was ~24% of the video duration. For short videos, the runtime can be a low as ~20%.
 
 ### Known limitations and known issues 
-Keyframe selection is based on a proprietary AI model that might make mistakes.
 
+- Keyframe selection is based on a proprietary AI model that might make mistakes.
+- Average runtime on A100 was ~24% of the video duration. For short videos, the runtime can be a low as ~20%.
 - Keyframe detection might not capture all the visual aspects of the video so they might be missed in the summary.
 - There's a varying limit to the number of frames that can be used for summarizing a section of a video, so frames in sections filtered by harmful content detection or other filters might be discarded. So, the summarization results might be incomplete or incorrect for some parts or sections of the video
