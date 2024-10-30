@@ -4,7 +4,7 @@ description: This article shows you how to use Azure OpenAI textual summarizatio
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 10/30/2024
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
@@ -201,7 +201,6 @@ To resolve the jailbreak issue:
 1. Configure the filters to have at least Medium level for each category.
 1. Apply [prompt shields for jailbreak attacks](/azure/ai-services/openai/concepts/content-filter?tabs=warning%2Cuser-prompt%2Cpython#prompt-shield-content).
 1. Select **Create** filter.
-
 
 ## Other considerations
 
