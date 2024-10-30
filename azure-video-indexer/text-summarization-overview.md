@@ -1,25 +1,25 @@
 ---
 title: Textual Video Summary with Azure OpenAI
-description: This article is an overview of Azure OpenAI textual summarization with Azure AI Video Indexer. 
+description: This article is an overview of textual summarization with Azure AI Video Indexer.
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 10/30/2024
 ms.service: azure-video-indexer
 ms.topic: overview
 ---
 
-# Textual Video Summary with Azure OpenAI
+# Textual summarization with Azure AI Video Indexer
 
-This article is an overview of Azure OpenAI textual summarization with Azure AI Video Indexer.
+This article is an overview of textual summarization with Azure AI Video Indexer.
 
 ## What is textual video summarization with Azure AI Video Indexer? 
 
-Azure AI Video Indexer provides a brief summary of what a video is about without having to watch the entire video. It's designed to save you time by digesting long videos and giving you the gist in a much shorter format. It’s like having a friend who watches all the episodes of a show and then catches you up on the plot in just a few minutes. 
+Azure AI Video Indexer provides a brief summary of what a video is about without having to watch the entire video. It's designed to save you time by digesting long videos and giving you the gist of a video in a short format. It’s like having a friend who watches all the episodes of a show and then catches you up on the plot in just a few minutes. 
 
 The system is intended to be a supportive tool that enhances productivity and learning by distilling lengthy videos into concise, digestible summaries.
 
-It uses summarization algorithms to identify the most relevant insights for the video. It involves scoring insights based on their importance and relevance to the overall theme. A user-friendly interface allows you to input videos and customize the type of summary you need.
+It uses summarization algorithms to identify the most relevant insights for the video, and scores insights based on their importance and relevance to the overall theme. A user-friendly interface allows you to input videos and customize the type of summary you need.
 
 The system provides options for feedback, enabling it to learn and improve over time based on user interactions.
 

@@ -1,10 +1,10 @@
-## Textual summarization on an edge device notes
+## Textual summarization using VI enabled by Arc notes
 
-Textual summarization on an edge device utilizes the [Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model. The Phi-3.5 model has a context size of 128k and modest hardware requirements. There’s no charge for requests to change the model.
+Textual summarization enabled by Arc (also known as using VI on an edge device) utilizes the [Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model. The Phi-3.5 model has a context size of 128k and modest hardware requirements. There’s no charge for requests to change the model.
 
 ### Specifications
 
-- Supports CPU and GPU, though CPU is very slow and not recommended.
+- Hardware requirements: GPU V100 or Intel CPU 32 cores. CPU is very slow and not recommended.
 - Tested [on Standard_NC24ads_A100_v4](/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic). For more support hardware support information, refer to the [official release](https://huggingface.co/microsoft/Phi-3.5-vision-instruct).
 - Average runtime on A100 was ~14.5% of the video duration. For short videos, the runtime can be as low as ~11.9%.
 
@@ -19,12 +19,13 @@ Textual summarization on an edge device utilizes the [Phi-3.5-mini-instruct](htt
 - The generated summary might contain inaccuracies, such as incorrect identification of gender, age, and other personal characteristics.
 - If the original video contains inappropriate content, the video summarization output extract might be incomplete, contain disclaimers regarding the inappropriate content, and include the actual inappropriate quotes, which might be presented with or without a disclaimer.
 
-## Textual summarization with keyframes on an edge device
+## Textual summarization with keyframes using VI enabled by Arc notes
 
 Textual summarization with keyframes is based on [keyframes selection with shots detection](/azure/azure-video-indexer/scene-shot-keyframe-detection-insight). Therefore, any limitation that applies to shots detection applies to textual summarization with keyframes.
 
 ### Specifications
 
+- Hardware requirements: GPU A100 for vision, and CPU 24 cores for mini-instruct (can be either AMD or Intel).
 - Language Model: [Phi-3.5-Vision-Instruct](https://huggingface.co/microsoft/Phi-3.5-vision-instruct) and [Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3.5-mini-instruct).
 - Tested [on Standard_NC24ads_A100_v4](/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic). For more support hardware support information, refer to the [official release](https://huggingface.co/microsoft/Phi-3.5-vision-instruct).
 - Average runtime on A100 was ~24% of the video duration. For short videos, the runtime can be a low as ~20%.
