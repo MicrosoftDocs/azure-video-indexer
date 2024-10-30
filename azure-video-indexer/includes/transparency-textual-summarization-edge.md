@@ -1,24 +1,36 @@
-### Textual summarization on an Edge device notes
+## Textual summarization on an edge device notes
 
-If you're using the Edge extension, you can generate a summary from the video page in the web portal and use the same functionality such as customizations but there's no option to change the model deployment. Instead, every new extension created includes a local [Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model that is developed by Microsoft. There's no charge for requests to the model.
+AVI Textual Summarization on Edge utilizes the [Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model. The Phi-3.5 model has a context size of 128k and modest hardware requirements. There’s no charge for requests to change the model.
 
-#### Specifications
+### Specifications
 
-- Supported hardware: currently supports only Intel CPU and Nvidia GPU. 
-    - CPU tested on: [Standard_F64s_v2](/azure/virtual-machines/fsv2-series) (utilization: ~30-32 cores) 
-    - GPU tested on: [Standard_NC6s_v3](/azure/virtual-machines/ncv3-series)
-- Average runtime ranges between 46-57% of video length on CPU, or 15-17% on GPU.
+- Supports CPU and GPU, though CPU is very slow and not recommended.
+- Tested [on Standard_NC24ads_A100_v4](/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic). For more support hardware support information, refer to the [official release](https://huggingface.co/microsoft/Phi-3.5-vision-instruct).
+- Average runtime on A100 was ~14.5% of the video duration. For short videos, the runtime can be as low as ~11.9%.
 
-#### Known Limitations and Known Issues
+## Known limitations and known issues
 
-- CPU: Currently, running VI on AMD CPUs might lead to significantly longer runtimes and isn't supported at this time.
-- The summarization feature is created by an AI language model and serves to provide a general overview. Although we aim for accuracy and reliability, the content might not fully encapsulate the essence of the original material. We recommend that a human review and edit the summary before using it. It should **not** be viewed as professional or personalized advice.
-- The summary results are generally consistent within each summarization setting. However, editing the transcript or reindexing the video might lead to different output results.
-- Disclaimer for product documentation: When utilizing summarization settings, the Neutral style might occasionally resemble the Formal style. The Casual style might include content-related hashtags. Additionally, in some instances, a Medium length summary might be shorter than a Short summary. 
-- Videos that have little content (such as very short videos) are typically not summarized to mitigate the potential model inaccuracies that can happen when dealing with short input.
-- The summary might occasionally include or reference internal instructions provided to it (referred to as “meta-prompt”), including directives to exclude harmful content.
-- The length of the summary might influence the level of detail extracted from the video summary. Longer summaries might result in less specific details being included.
+- an AI language model creates the summarization feature and serves to provide a general overview. The content might not fully encapsulate the essence of the original material. It's recommended that a human review and edit the summary before use. It shouldn’t be viewed as professional or personalized advice.
+- The summary’s results are generally consistent within each flavor. However, editing the transcript or reindexing the video might lead to different results output.
+- When utilizing Flavors, the Neutral style might occasionally resemble the Formal style. The Casual style might include content-related hashtags. Additionally, a Medium length summary might be shorter than a Short summary.
+- Videos that have little content (such as very short videos) are typically not summarized to mitigate the potential model inaccuracies that can happen when the input is short.
+- The summary might occasionally include, or reference internal instructions provided to it (referred to as “meta-prompt”). It could contain directives to exclude harmful content.
+- Longer videos might result in high-level summary, and less detailed.
 - The generated summary might contain inaccuracies, such as incorrect identification of gender, age, and other personal characteristics.
-- If the original video contains inappropriate content, the video summarization output might be affected in the following ways: it might be incomplete, contain disclaimers regarding the inappropriate content, and in certain instances, it might include the actual inappropriate quotes, which might be presented with or without a disclaimer.
+- If the original video contains inappropriate content, the video summarization output extract might be incomplete, contain disclaimers regarding the inappropriate content, and include the actual inappropriate quotes, which might be presented with or without a disclaimer.
 
-See also the transparency notes for textual summarization. 
+## Textual summarization with keyframes on an edge device
+
+Summarization with keyframes is based on [keyframes selection with shots detection](/azure/azure-video-indexer/scene-shot-keyframe-detection-insight). Therefore, any limitation that applies to shots detection applies to textual summarization with keyframes.
+
+### Specifications
+
+- Language Model: [Phi-3.5-Vision-Instruct](https://huggingface.co/microsoft/Phi-3.5-vision-instruct) and [Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3.5-mini-instruct)
+- Tested [on Standard_NC24ads_A100_v4](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic). For more support hardware support information, refer to the [official release](https://huggingface.co/microsoft/Phi-3.5-vision-instruct).
+- Average runtime on A100 was ~24% of the video duration. For short videos, the runtime can be a low as ~20%.
+
+### Known limitations and known issues 
+Keyframe selection is based on a proprietary AI model that might make mistakes.
+
+- Keyframe detection might not capture all the visual aspects of the video so they might be missed in the summary.
+- There's a varying limit to the number of frames that can be used for summarizing a section of a video, so frames in sections filtered by harmful content detection or other filters might be discarded. So, the summarization results might be incomplete or incorrect for some parts or sections of the video
