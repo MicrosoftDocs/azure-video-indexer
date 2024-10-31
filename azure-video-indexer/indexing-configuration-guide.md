@@ -4,7 +4,7 @@ description: This article explains each of the indexing options. The same option
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 10/30/2024
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
@@ -44,7 +44,7 @@ This option allows you to determine if the insights should only be accessible to
 
 ## Indexing options 
 
-Each of the audio and video indexing options might be priced differently when you use the default indexing settings. See [Azure AI Video Indexer pricing](https://azure.microsoft.com/pricing/details/video-indexer/) for details. 
+Each of the audio and video indexing options might be priced differently when you use the default indexing settings. See [Azure AI Video Indexer pricing](https://azure.microsoft.com/pricing/details/video-indexer/) for details.
 
 The following are the indexing type options with details of their insights provided. To modify the indexing type, select **Advanced settings**.
 
@@ -77,6 +77,10 @@ There are two options for streaming indexed videos:
 
 - **Single bitrate**: If the video height is greater than or equal to 720p HD, Azure AI Video Indexer encodes it with a resolution of 1280 x 720. Otherwise, it's encoded as 640 x 468.
 - **No streaming**: Insights are generated but no streaming operation is performed and the video isn't available on the Azure AI Video Indexer website. When No streaming is selected, you aren't billed for encoding.
+
+## Exclude models
+
+You can exclude models when indexing through both the VI Website and API. When uploading a video to index using the website, select **Advanced settings** > **Indexing presets** and then select the AI models to be excluded from the indexing results. This can enable more efficient indexing and VI results only containing the insights you are interested in.
 
 ## Customizing content models 
 
