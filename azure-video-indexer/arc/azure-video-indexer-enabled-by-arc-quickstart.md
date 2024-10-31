@@ -4,7 +4,7 @@ description: This article walks you through the steps required to enable Video I
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 10/30/2024
 ms.service: azure-video-indexer
 ms.topic: quickstart
 ---
@@ -50,6 +50,8 @@ This quickstart is designed to allow you to see the extension in action, so smal
 
 - CPU: 16 cores
 - Memory: 16 GB
+
+The CPU in the nodes should support [AVX2](https://en.m.wikipedia.org/wiki/Advanced_Vector_Extensions). It is supported by most newer CPU but might not be supported in some older virtualization environments.
 
 For the minimum hardware requirements in a *production* environment, see the [Minimum hardware requirements](/azure/azure-video-indexer/azure-video-indexer-enabled-by-arc-overview#minimum-hardware-requirements) in the overview article.
 
