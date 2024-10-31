@@ -4,7 +4,7 @@ description: Azure AI Video Indexer integrates with Large Language Models (LLMs)
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2024
+ms.date: 10/31/2024
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
@@ -91,6 +91,10 @@ index
     },
 }
 ```
+
+## Check job status
+It takes a few minutes for the prompt job to complete. If you would like to check on the job status, you can use the [Get Job Status](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Job-Status) request.
+ 
 
 ## Use keyframes to prompt a large language model visually
 
