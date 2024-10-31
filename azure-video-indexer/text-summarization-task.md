@@ -9,7 +9,7 @@ ms.service: azure-video-indexer
 ms.topic: how-to
 ---
 
-# Use textual summarization
+# Use textual summarization (preview)
 
 This article shows you how to use textual summarization with Azure AI Video Indexer. This example uses Azure OpenAI deployments.
 

@@ -9,7 +9,7 @@ ms.service: azure-video-indexer
 ms.topic: overview
 ---
 
-# Textual summarization with Azure AI Video Indexer
+# Textual summarization with Azure AI Video Indexer (preview)
 
 This article is an overview of textual summarization with Azure AI Video Indexer.
 
