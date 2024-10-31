@@ -49,7 +49,7 @@ The extension is supported in [direct connection mode](/azure/azure-arc/data/con
 The Phi 3 language model is included and automatically connected with your VI extension. You can start using it immediately. For more information about using language models with VI see:
 
 - [Use textual summarization](../text-summarization-task.md)
-- [Use Azure AI Video Indexer to create prompt content](../prompt-task.md)
+- [Use Azure AI Video Indexer to create prompt content](../prompt-overview.md)
 - [Azure AI Video Indexer Bring Your Own (BYO) AI model overview](../bring-your-own-model-overview.md)
 
 See also the [transparancy note for textual summarization with Vi enabled by Arc](/legal/azure-video-indexer/transparency-note?context=%2Fazure%2Fazure-video-indexer%2Fcontext%2Fcontext#textual-summarization-on-an-edge-device) for hardware requirements, limitations, and known issues.
