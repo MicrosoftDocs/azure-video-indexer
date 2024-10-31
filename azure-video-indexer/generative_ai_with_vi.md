@@ -24,7 +24,6 @@ See the following articles to learn more about VI and generative AI.
 - [Textual summarization with Azure OpenAI](text-summarization-overview.md)
 - [Use Azure OpenAI textual summarization](text-summarization-task.md)
 - [Prompt content](prompt-overview.md)
-- [Use Azure AI Video Indexer to create prompt content](prompt-task.md)
 - [Bring Your Own (BYO) model](bring-your-own-model-overview.md)
 - [Bring Your Own model samples](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples)
 
