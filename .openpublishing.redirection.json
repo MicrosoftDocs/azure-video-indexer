@@ -424,6 +424,11 @@
             "source_path_from_root": "/azure-video-indexer/resource-health.md",
             "redirect_url": "/azure/service-health/resource-health-overview",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/prompt-task.md",
+            "redirect_url": "/azure-video-indexer/prompt-overview.md",
+            "redirect_document_id": false
         }
     ]
 }

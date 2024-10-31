@@ -158,7 +158,7 @@ items:
       href: text-summarization-task.md
       displayName: summarize text, summary, transcript, audio, large language model, LLM
     - name: Create LLM prompt content
-      href: prompt-task.md
+      href: prompt-overview.md
       displayName: LLM, large language model, LLama2, Phi2, GPT3_5Turbo, or GPT4
     - name: Bring your own model samples
       href: https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples
