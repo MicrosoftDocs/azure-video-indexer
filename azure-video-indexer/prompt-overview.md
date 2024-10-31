@@ -4,12 +4,10 @@ description: Azure AI Video Indexer integrates with Large Language Models (LLMs)
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 10/30/2024
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
-
-
 
 # Azure AI Video Indexer with LLM prompts
 
@@ -93,6 +91,13 @@ index
     },
 }
 ```
+
+## Use keyframes to prompt a large language model visually
+
+The Prompt Content request supports language models that can use visual input in prompts. When selecting the GPT-4V model, you can include keyframes as part of the prompt provided to the model. The frames returned in the prompt content response represents the keyframes from the video. This feature is recommended for videos with limited or no transcript in the video or when want to provide more context to the language model to improve it results.
+
+### Create and send a Prompt Content request
+As described above, textual content for the prompt is in the JSON response. Each string in the "frames" part of the JSON response is the ID of the keyframe. Use [Get Video Thumbnail](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Thumbnail) The ThumbnailId is the FrameId from the prompt content. Once you have both the textual content and the keyframe artifacts, you can combine them as prompts for an AI model of your choice.
 
 ## Limitations
 
