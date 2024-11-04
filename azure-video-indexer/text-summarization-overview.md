@@ -1,25 +1,25 @@
 ---
 title: Textual Video Summary with Azure OpenAI
-description: This article is an overview of Azure OpenAI textual summarization with Azure AI Video Indexer. 
+description: This article is an overview of textual summarization with Azure AI Video Indexer.
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 10/30/2024
 ms.service: azure-video-indexer
 ms.topic: overview
 ---
 
-# Textual Video Summary with Azure OpenAI
+# Textual summarization with Azure AI Video Indexer (preview)
 
-This article is an overview of Azure OpenAI textual summarization with Azure AI Video Indexer.
+This article is an overview of textual summarization with Azure AI Video Indexer.
 
-## What is textual video summarization with Azure AI Video Indexer? 
+## What is textual video summarization? 
 
-Azure AI Video Indexer provides a brief summary of what a video is about without having to watch the entire video. It's designed to save you time by digesting long videos and giving you the gist in a much shorter format. It’s like having a friend who watches all the episodes of a show and then catches you up on the plot in just a few minutes. 
+Azure AI Video Indexer provides a brief summary of what a video is about without having to watch the entire video. It's designed to save you time by digesting long videos and giving you the gist of a video in a short format. It’s like having a friend who watches all the episodes of a show and then catches you up on the plot in just a few minutes. 
 
 The system is intended to be a supportive tool that enhances productivity and learning by distilling lengthy videos into concise, digestible summaries.
 
-It uses summarization algorithms to identify the most relevant insights for the video. It involves scoring insights based on their importance and relevance to the overall theme. A user-friendly interface allows you to input videos and customize the type of summary you need.
+It uses summarization algorithms to identify the most relevant insights for the video, and scores insights based on their importance and relevance to the overall theme. A user-friendly interface allows you to input videos and customize the type of summary you need.
 
 The system provides options for feedback, enabling it to learn and improve over time based on user interactions.
 
@@ -39,43 +39,13 @@ The intended uses of the AI-based video summarization system are to provide user
 - **Media**. Journalists and the general public can use the system to get the essence of news reports, documentaries, or interviews, saving time while staying informed. It condenses news or documentaries into bite-sized pieces without losing the narrative. 
 - **Output formats** You can set summaries to use different styles of language: neutral, casual, or formal. You can also set the length of a summary to short or long.
 
-## Limitations
-
-- **Models**. Fine-tuned models aren't supported. A fine-tuned model in Azure OpenAI (AOAI) is a pretrained AI model that has been further optimized for a specific task by training it on a personalized dataset, thereby enhancing its performance and accuracy for that specific application.
-- **Non-English languages**. The textual summarization is optimized for the English language. However, it's compatible with all languages supported by the specific GenAI model being used, that is, GPT3.5 Turbo or GPT4.0. So, when applied to non-English languages, the accuracy and quality of the summaries might vary. To mitigate this limitation, be extra careful and verify the generated summaries for accuracy and completeness.  
-- **Videos with multiple languages**. If a video contains speech in multiple languages, the textual summarization might struggle to accurately recognize all the languages featured in the video. Be aware of this potential limitation when utilizing the Textual Video Summarization feature for multilingual videos. 
-- **Highly specialized or technical videos**. Video summary AI models are typically trained on a wide variety of videos, including news, movies, and other general content. If the video is highly specialized or technical, the model might not be able to accurately extract the summary of the video.  
-- **Videos with poor audio quality or Optical Character Recognition (OCR)**. Textual summarization AI models also rely on audio (among other insights) to extract the summary from the video or on OCR to extract the text appearing on screen. If the audio quality is poor and there's no OCR identified, the model might not be able to accurately extract the summary from the video.  
-- **Videos with low lighting or fast motion**. Videos that are shot in low lighting or have fast motion might be difficult for the model to process, resulting in poor performance.
-- **Videos with uncommon accents or dialects**. AI models are typically trained on a wide variety of speech, including different accents and dialects. However, if the video contains speech with an accent or dialect that isn't well represented in the training data, the model might struggle to accurately extract the transcript from the video.
-- **Videos containing harmful content**. Videos containing harmful or sensitive content may result in a partial summary as the parts containing sensitive or harmful content might be excluded.
-
 ## Textual summarization on VI enabled by Arc 
 
 If you're using the VI enbabled by Arc extension, you can generate a summary from the video page in the web portal and use the same functionality such as customizations but there's no option to change the model deployment. Instead, every new extension created includes a local [Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model that is developed by Microsoft. There's no charge for requests to the model.
 
-### Specifications
-
-- Supported hardware: currently supports only Intel CPU and Nvidia GPU. 
-    - CPU tested on: [Standard_F64s_v2](/azure/virtual-machines/fsv2-series) (utilization: ~30-32 cores) 
-    - GPU tested on: [Standard_NC6s_v3](/azure/virtual-machines/ncv3-series)
-- Average runtime ranges between 46-57% of video length on CPU, or 15-17% on GPU.
-
-### Known Limitations and Known Issues
-
-- Currently, running VI on AMD CPUs may lead to significantly longer runtimes and isn't supported at this time.
-- The summarization feature is created by an AI language model and serves to provide a general overview. Although we aim for accuracy and reliability, the content may not fully encapsulate the essence of the original material. We recommend that a human reviews and edits the summary before use. It should **not** be viewed as professional or personalized advice.
-- The summary results are generally consistent within each summarization setting. However, editing the transcript or reindexing the video may lead to different output results.
-- When utilizing summarization settings, the Neutral style might occasionally resemble the Formal style. The Casual style might include content-related hashtags. Additionally, in some instances, a “Medium” length summary might be shorter than a “Short” summary. 
-- Videos that have little content (such as very short videos) are typically not summarized to mitigate the potential model inaccuracies that can happen when dealing with short input.
-- The summary might occasionally include or reference internal instructions provided to it (referred to as “meta-prompt”). This could encompass directives to exclude harmful content.
-- The length of the summary might influence the level of detail extracted from the video summary. Longer summaries might result in less specific details being included.
-- The generated summary might contain inaccuracies, such as incorrect identification of gender, age, and other personal characteristics.
-- If the original video contains inappropriate content, the video summarization output extract might be affected in the following ways: it might be incomplete, contain disclaimers regarding the inappropriate content, and in certain instances, it might include the actual inappropriate quotes, which may be presented with or without a disclaimer.
-
 ## Transparency notes
 
-For more information about the way textual summarization is used, see the [Transparency notes](/legal/azure-video-indexer/transparency-note#text-summarization) for textual summarization.
+For more information about specifications and limittions, see the [Textual summarization section of the transparency notes](/legal/azure-video-indexer/transparency-note#text-summarization).
 
 ## Try textual video summarization
 [Try using textual video summarization](text-summarization-task.md).
