@@ -29,7 +29,7 @@ This article shows you how to use textual summarization with Azure AI Video Inde
     >
     > To benefit from keyframes based summaries you must select an Azure Open AI model that accepts visual input.
    
-- An [Azure AI Video Indexer account](connect-azure-open-ai-task.md) connected to an Azure OpenAI account.
+- An [Azure AI Video Indexer account](thisfolderdoenotexist/connect-azure-open-ai-task.md) connected to an Azure OpenAI account.
 - Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the [form](https://aka.ms/oai/access).
 - A video uploaded to your Azure AI Video Indexer library.
 
