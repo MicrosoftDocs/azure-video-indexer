@@ -4,7 +4,7 @@ description: This article shows you how to use Azure OpenAI textual summarizatio
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2024
+ms.date: 11/05/2024
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
@@ -18,20 +18,13 @@ This article shows you how to use textual summarization with Azure AI Video Inde
 
 ## Prerequisites
 
-- Review the overview of [texual summarization](text-summarization-overview.md).
-- An [Azure OpenAI *gpt-35-turbo* or *gpt-4* deployment](/azure/ai-services/openai/how-to/working-with-models?tabs=powershell).
-- Content filters at or above Medium set on the deployment. For more information about to use content filters, see [Content filtering](/azure/ai-services/openai/how-to/content-filters).
-
-    > [!IMPORTANT]
-    > For summaries, including text based summaries and keyframes, it is mandatory that content filters you set “Violence”, “Hate”, “Sexual” and “Self-harm” to at least Medium level (which means everything with harmfulness of at least medium level is blocked. You can set it to be even more strict if you want) and save the content filter.
-    >
-    > For summaries based on keyframes it is also mandatory that you create a jailbreak filter. 
-    >
-    > To benefit from keyframes based summaries you must select an Azure Open AI model that accepts visual input.
-   
-- An [Azure AI Video Indexer account](connect-azure-open-ai-task.md) connected to an Azure OpenAI account.
-- Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the [form](https://aka.ms/oai/access).
-- A video uploaded to your Azure AI Video Indexer library.
+- Review the overview of texual summarization. 
+- An Azure OpenAI [gpt-35-turbo or gpt-4](/azure/ai-services/openai/how-to/working-with-models%3ftabs=powershell) deployment. To benefit from keyframes based summaries you must select an Azure Open AI model that accepts visual input.. Read more here:  [Azure OpenAI Service models](/azure/ai-services/openai/concepts/models?tabs=python-secure%2Cglobal-standard%2Cstandard-chat-completions). 
+- Prompt Shields for direct attacks (jailbreak) filter should be added to the deployment. Read more here: [Use content filters (preview) with Azure OpenAI Service](/azure/ai-services/openai/how-to/content-filters#understand-other-filters). 
+    - It is recommended to configure harmful content filters for categories such as “Violence,” “Hate,” “Sexual,” and “Self-harm.” While these filters are not mandatory, it is advised to set them to filter content of at least the Medium level harmfullness. This setting ensures that content with a harmfulness rating of medium or higher is blocked. For increased safety, you may opt for a stricter setting. Once configured, please save the content filter settings. 
+- An [Azure AI Video Indexer account](connect-azure-open-ai-task.md) connected to an Azure OpenAI account. 
+- Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing [the form](https://aka.ms/oai/access). 
+- A video uploaded to your Azure AI Video Indexer library. 
 
 > [!NOTE]
 > Azure AI Video Indexer is unable to connect to fine-tuned models.
