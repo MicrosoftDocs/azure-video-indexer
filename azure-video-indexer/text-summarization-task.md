@@ -19,7 +19,7 @@ This article shows you how to use textual summarization with Azure AI Video Inde
 ## Prerequisites
 
 - Review the overview of texual summarization. 
-- An Azure OpenAI [gpt-35-turbo or gpt-4](/azure/ai-services/openai/how-to/working-with-models%3ftabs=powershell) deployment. To benefit from keyframes based summaries you must select an Azure Open AI model that accepts visual input.. Read more here:  [Azure OpenAI Service models](/azure/ai-services/openai/concepts/models?tabs=python-secure%2Cglobal-standard%2Cstandard-chat-completions). 
+- An Azure OpenAI [gpt-35-turbo or gpt-4](/azure/ai-services/openai/how-to/working-with-models?tabs=powershell) deployment. To benefit from keyframes based summaries you must select an Azure Open AI model that accepts visual input.. Read more here:  [Azure OpenAI Service models](/azure/ai-services/openai/concepts/models?tabs=python-secure%2Cglobal-standard%2Cstandard-chat-completions). 
 - Prompt Shields for direct attacks (jailbreak) filter should be added to the deployment. Read more here: [Use content filters (preview) with Azure OpenAI Service](/azure/ai-services/openai/how-to/content-filters#understand-other-filters). 
     - It is recommended to configure harmful content filters for categories such as “Violence,” “Hate,” “Sexual,” and “Self-harm.” While these filters are not mandatory, it is advised to set them to filter content of at least the Medium level harmfullness. This setting ensures that content with a harmfulness rating of medium or higher is blocked. For increased safety, you may opt for a stricter setting. Once configured, please save the content filter settings. 
 - An [Azure AI Video Indexer account](connect-azure-open-ai-task.md) connected to an Azure OpenAI account. 
