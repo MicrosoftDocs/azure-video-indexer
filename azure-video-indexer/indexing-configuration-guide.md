@@ -4,7 +4,7 @@ description: This article explains each of the indexing options. The same option
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2024
+ms.date: 11/04/2024
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
