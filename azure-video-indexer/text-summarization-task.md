@@ -4,7 +4,7 @@ description: This article shows you how to use Azure OpenAI textual summarizatio
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 11/05/2024
+ms.date: 11/07/2024
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
