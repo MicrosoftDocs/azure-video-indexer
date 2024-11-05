@@ -1,6 +1,6 @@
 ## Face detection notes
 
-Face detection is a valuable tool for many industries when it's used responsibly and carefully. To respect the privacy and safety of others, and to comply with local and global regulations, we recommend that you follow these use guidelines:
+Face detection is a tool for many industries when it's used responsibly and carefully. To respect the privacy and safety of others, and to comply with local and global regulations, we recommend that you follow these use guidelines:
 
 - Carefully consider the accuracy of the results. To promote more accurate detection, check the quality of the video. Low-quality video might affect the insights that are presented.
 - Carefully review results if you use face detection for law enforcement. People might not be detected if they're small, sitting, crouching, or obstructed by objects or other people. To ensure fair and high-quality decisions, combine face detection-based automation with human oversight.
