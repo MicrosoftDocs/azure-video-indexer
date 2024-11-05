@@ -4,7 +4,7 @@ description: This article explains each of the indexing options. The same option
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2024
+ms.date: 11/04/2024
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 You can use the default indexing settings or adjust them. You can choose language, indexing, custom models, and streaming settings that have implications on the insights generated, cost, and performance.
 
-This article explains each of the options. The same options apply when using the [Azure AI Video Indexer website](https://www.videoindexer.ai/) as for using the API (see the [API guide](video-indexer-use-apis.md)). When indexing large volumes, follow the [at-scale guide](considerations-when-use-at-scale.md).
+This article explains each of the options. The same options apply when using the [Azure AI Video Indexer website](https://www.videoindexer.ai/) as for using the API (see the [API guide](/notafolder/video-indexer-use-apis.md)). When indexing large volumes, follow the [at-scale guide](considerations-when-use-at-scale.md).
 
 ## Default settings 
 
