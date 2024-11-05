@@ -4,14 +4,14 @@ description: This article shows you how to use Azure OpenAI textual summarizatio
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2024
+ms.date: 11/04/2024
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
 
 # Use textual summarization (preview)
 
-This article shows you how to use textual summarization with Azure AI Video Indexer. This example uses Azure OpenAI deployments.
+This article shows you how to use textual summarization with Azure AI Video Indexer. This example uses Azure OpenAI model deployments.
 
 > [!NOTE]
 > This feature only works with a standard account. Create a [standard account](create-account.md).
