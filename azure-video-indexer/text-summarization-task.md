@@ -4,7 +4,7 @@ description: This article shows you how to use Azure OpenAI textual summarizatio
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 11/05/2024
+ms.date: 11/06/2024
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
@@ -19,15 +19,28 @@ This article shows you how to use textual summarization with Azure AI Video Inde
 ## Prerequisites
 
 - Review the overview of texual summarization. 
+
+### Cloud
+
+- An [Azure AI Video Indexer account](connect-azure-open-ai-task.md) connected to an Azure OpenAI account.
+- Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing [the form](https://aka.ms/oai/access). 
 - An Azure OpenAI [gpt-35-turbo or gpt-4](/azure/ai-services/openai/how-to/working-with-models?tabs=powershell) deployment. To benefit from keyframes based summaries you must select an Azure Open AI model that accepts visual input.. Read more here:  [Azure OpenAI Service models](/azure/ai-services/openai/concepts/models?tabs=python-secure%2Cglobal-standard%2Cstandard-chat-completions). 
 - The Prompt Shields for direct attacks (jailbreak) filter should be added to the deployment. Read more here: [Use content filters (preview) with Azure OpenAI Service](/azure/ai-services/openai/how-to/content-filters#understand-other-filters). 
-    - It is recommended to configure harmful content filters for categories such as “Violence,” “Hate,” “Sexual,” and “Self-harm.” While these filters are not mandatory, it is advised to set them to filter content of at least the Medium level harmfullness. This setting ensures that content with a harmfulness rating of medium or higher is blocked. For increased safety, you may opt for a stricter setting. Once configured, please save the content filter settings. 
-- An [Azure AI Video Indexer account](connect-azure-open-ai-task.md) connected to an Azure OpenAI account. 
-- Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing [the form](https://aka.ms/oai/access). 
+- It is recommended that you configure harmful content filters for categories such as “Violence,” “Hate,” “Sexual,” and “Self-harm.” While these filters are not mandatory, you should set them to either "Medium" or "Low" to filter out content of at least the Medium level of harmfullness. This setting ensures that content with a harmfulness rating of medium or higher is blocked. For increased safety, you may opt for a stricter setting. Once configured, please save the content filter settings.  
+
 - A video uploaded to your Azure AI Video Indexer library. 
 
 > [!NOTE]
 > Azure AI Video Indexer is unable to connect to fine-tuned models.
+
+### Edge
+
+Azure AI Video Indexer enabled by Arc allows you to use Azure AI Video Indexer on edge devices. The following are the technical requirements for this use case:
+
+- Video Indexer Enabled by Arc of version number 1.1.23 or higher. 
+- Hardware requirements: GPU or Intel CPU. Running on CPU may be very slow and not recommended.We recommend using Nvidia V100 or higher. If there are multiple GPU nodes, you can add a node selector to select the desired node.
+- Using [keyframes](text-summarization-overview.md#textual-summarization-with-keyframes) as part of the summary requires Nvidia A100 or higher.
+- Textual Video Summarization on Edge uses the Phi3.5 model only. For more hardware information please refer to the Phi 3.5 official release information.
 
 ## Open web pages in your browser
 
@@ -48,13 +61,14 @@ It's easier to follow these instructions if you already have the needed web page
 
 ## [Web](#tab/web)
 
-## Generate a text summary
+## Generate a text summary with or without keyframes
 
 You can use the Azure AI Video Indexer web portal to summarize text.
 
 1. If you don't have the web portal open already, open the [Azure AI Video Indexer web portal](https://api-portal.videoindexer.ai/).
 1. Upload a file and wait for it to index.
 1. Select the video to navigate to the media page.
+1. If you want to use keyframes to produce the summary, select the Include visual keyframe insights to get better quality summary checkbox.
 1. Select **Generate summary**. The textual summary is generated.
 
 > [!NOTE]
