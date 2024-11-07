@@ -1,6 +1,6 @@
 ---
 title: How to use private endpoints with Azure AI Video Indexer
-description: This article is an overview of using Private Endpoints with Azure AI Video Indexer.
+description: This article shows you how to use private endpoints with Azure AI Video Indexer..
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
