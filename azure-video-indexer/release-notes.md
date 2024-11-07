@@ -4,7 +4,7 @@ description: To stay up-to-date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 11/07/2024
 ms.service: azure-video-indexer
 ms.topic: article
 ---
@@ -19,6 +19,12 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+## October 2024
+
+### New sample code
+
+There is [new sample code](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/ExportVideoDataToADX) for exporting Azure AI Video Indexer data to Azure Data Explorer using Logic Apps.
 
 ## August 2024
 
