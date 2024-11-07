@@ -4,9 +4,10 @@ description: This article describes how to get started with Azure AI Video Index
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 11/07/2024
 ms.service: azure-video-indexer
 ms.topic: quickstart
+ms.custom: se-defect-target
 ---
 
 # Quickstart: Use the API

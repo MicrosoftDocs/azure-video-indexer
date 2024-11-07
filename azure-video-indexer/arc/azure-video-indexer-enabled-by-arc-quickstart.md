@@ -4,12 +4,12 @@ description: This article walks you through the steps required to enable Video I
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2024
+ms.date: 11/07/2024
 ms.service: azure-video-indexer
 ms.topic: quickstart
 ---
 
-# Try Azure AI Video Indexer enabled by Arc
+# Try Azure AI Video Indexer enabled by Arc (preview)
 
 [!INCLUDE [Arc intro](../includes/arc-intro.md)]
 
