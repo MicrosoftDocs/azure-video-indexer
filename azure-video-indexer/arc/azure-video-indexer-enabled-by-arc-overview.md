@@ -4,12 +4,12 @@ description: Azure AI Video Indexer enabled by Arc an Azure Arc extension enable
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 11/07/2024
 ms.service: azure-video-indexer
 ms.topic: overview
 ---
 
-# What is Azure AI Video Indexer enabled by Arc?
+# Azure AI Video Indexer enabled by Arc (preview)
 
 [!INCLUDE [Arc intro](../includes/arc-intro.md)]
 
