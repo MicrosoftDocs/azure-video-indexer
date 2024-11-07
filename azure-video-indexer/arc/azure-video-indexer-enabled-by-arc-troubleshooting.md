@@ -4,12 +4,12 @@ description: Use this guide to troubleshoot issues with Azure AI Video Indexer e
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 11/07/2024
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
 
-# Azure AI Video Indexer enabled by Arc troubleshooting guide
+# Azure AI Video Indexer enabled by Arc (preview) troubleshooting guide
 
 Use this guide to troubleshoot issues with Azure AI Video Indexer enabled by Arc.
 
