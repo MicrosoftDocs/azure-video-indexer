@@ -39,6 +39,8 @@ Private endpoints can be created in subnets that use [Service Endpoints](/azure/
 
 When you create a private endpoint for an Azure AI Video Indexer account in your virtual network, a consent request is sent for approval to the Azure AI Video Indexer account owner. If the user requesting the creation of the private endpoint is also an owner of the Azure AI Video Indexer account, this consent request is automatically approved.
 
+:::image type="content" source="media/common/private-link-with-azure-video-indexer-diagram.jpg" alt-text="private endpoint diagram":::
+
 Azure AI Video Indexer account owners can manage consent requests and the private endpoints through the 'Private endpoints' tab for the Video Indexer account in the Azure portal.
 
 ## Creating a private endpoint
@@ -47,4 +49,4 @@ To understand more about creating a private endpoint in general, see [Create a p
 
 ## Try private endpoints with Azure AI Video Indexer
 
-To try private endpoints with your Azure AI Video Indexer account, see [How to use Private Endpoints with Azure AI Video Indexer](private-link-how-to.md). However, you must fill out [this form](https://aka.ms/vi-enable-private-endpoint) before attempting to use private endpoints.
+To try private endpoints with your Azure AI Video Indexer account, see [How to use Private Endpoints with Azure AI Video Indexer](private-endpoint-how-to.md). However, you must fill out [this form](https://aka.ms/vi-enable-private-endpoint) before attempting to use private endpoints.

@@ -11,7 +11,7 @@ ms.topic: article
 
 # How to use private endpoints with Azure AI Video Indexer (preview)
 
-This article shows you how to use private endpoints with Azure AI Video Indexer. See the [use cases for private endpoints with Azure AI Video Indexer](private-link-overview.md) for a quick overview.
+This article shows you how to use private endpoints with Azure AI Video Indexer. See the [use cases for private endpoints with Azure AI Video Indexer](private-endpoint-overview.md) for a quick overview.
 
 ## Prerequisites
 
