@@ -1,6 +1,6 @@
 ---
-title: Private Endpoints with Azure AI Video Indexer
-description: This article is an overview of using Private Endpoints with Azure AI Video Indexer.
+title: Private endpoints with Azure AI Video Indexer
+description: This article is an overview of using private endpoints with Azure AI Video Indexer.
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
@@ -9,9 +9,9 @@ ms.service: azure-video-indexer
 ms.topic: article
 ---
 
-# Private Endpoints with Azure AI Video Indexer (preview)
+# Private endpoints with Azure AI Video Indexer (preview)
 
-This article is an overview of using Azure Private Endpoints with Azure AI Video Indexer. 
+This article is an overview of using private endpoints with Azure AI Video Indexer. 
 
 > [!IMPORTANT] 
 > This feature is currently in preview. You must ask for access to try this feature by filling out [this form](https://aka.ms/vi-enable-private-endpoint). 
@@ -21,19 +21,19 @@ This article is an overview of using Azure Private Endpoints with Azure AI Video
 
 ## Use cases
 
-You can use private endpoints for your Azure Video Indexer accounts to allow clients on a virtual network (virtual network) to securely access data over a Private Link. The private endpoint uses a separate IP address from the virtual network address space for each video indexer account service. Network traffic between the clients on the virtual network and the Video Indexer account traverses over the virtual network and a private link on the Microsoft backbone network, eliminating exposure from the public internet.
+You can use private endpoints for your Azure AI Video Indexer accounts to allow clients on a virtual network to securely access data over a Private Link. The private endpoint uses a separate IP address from the virtual network address space for each Azure AI Video Indexer account. Network traffic between the clients on the virtual network and the Azure AI Video Indexer account traverses over the virtual network and a private link on the Microsoft backbone network, eliminating exposure from the public internet.
 
-Using private endpoints for your Video Indexer account enables you to:
+Using private endpoints for your Azure AI Video Indexer account enables you to:
 
-- Secure your video indexer account by configuring the video indexer firewall to block all connections on the public endpoint for the storage service.
-- Increase security for the virtual network (virtual network), by enabling you to block exfiltration of data from the virtual network.
-- Securely connect to Video Indexer accounts from on-premises networks that connect to the virtual network using [VPN](/azure/vpn-gateway/vpn-gateway-about-vpngateways) or [ExpressRoutes](/azure/expressroute/expressroute-locations) with private-peering.
+- Secure your Azure AI Video Indexer account by configuring the video indexer firewall to block all connections on the public endpoint for the storage service.
+- Increase security for the virtual network, by enabling you to block exfiltration of data from the virtual network.
+- Securely connect to Azure AI Video Indexer accounts from on-premises networks that connect to the virtual network using [VPN](/azure/vpn-gateway/vpn-gateway-about-vpngateways) or [ExpressRoutes](/azure/expressroute/expressroute-locations) with private-peering.
 
 ## Conceptual overview
 
-A private endpoint is a special network interface for an Azure service in your Virtual Network (virtual network). When you create a private endpoint for your Video Indexer account, it provides secure connectivity between clients on your virtual network and your Video Indexer instance. The private endpoint is assigned an IP address from the IP address range of your virtual network. The connection between the private endpoint and the Video Indexer service uses a secure private link.
+A private endpoint is a special network interface for an Azure service in your virtual network. When you create a private endpoint for your Video Indexer account, it provides secure connectivity between clients on your virtual network and your Video Indexer instance. The private endpoint is assigned an IP address from the IP address range of your virtual network. The connection between the private endpoint and the Azure AI Video Indexer service uses a secure private link.
 
-Applications in the virtual network can connect to the video indexer service over the private endpoint seamlessly, using the FQDN of their Video Indexer instance. 
+Applications in the virtual network can connect to the Azure AI Video Indexer service over the private endpoint seamlessly, using the FQDN of their Azure AI Video Indexer instance. 
 
 Private endpoints can be created in subnets that use [Service Endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview). Clients in a subnet can thus connect to one Azure AI Video Indexer account using private endpoint, while using service endpoints to access others.
 
