@@ -638,7 +638,7 @@ New theme is available: 'Azure' along with the 'light' and 'dark themes. To sele
 Three new Git-Hub projects are available at our [GitHub repository](https://github.com/Azure-Samples/media-services-video-indexer):
 
 * Code to help you leverage the newly added [widget customization](https://github.com/Azure-Samples/media-services-video-indexer/tree/master/Embedding%20widgets).
-* Solution to help you add [custom search](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoSearchWithAutoMLVision) to your video libraries.
+
 * Solution to help you add [de-duplication](https://github.com/Azure-Samples/azure-video-indexer-samples/commit/6b828f598f5bf61ce1b6dbcbea9e8b87ba11c7b1) to your video libraries.
 
 ### New option to toggle bounding boxes (for observed people) on the player
@@ -685,7 +685,7 @@ The newly added bundle is available when indexing or re-indexing your file by ch
 
 ### New developer portal
 
-Azure AI Video Indexer has a new [developer portal](https://api-portal.videoindexer.ai/). Try out the new Azure AI Video Indexer APIs and find all the relevant resources in one place: [GitHub repository](https://github.com/Azure-Samples/media-services-video-indexer), [Stack overflow](https://stackoverflow.com/questions/tagged/video-indexer), [Azure AI Video Indexer tech community](https://techcommunity.microsoft.com/t5/azure-media-services/bg-p/AzureMediaServices/label-name/Video%20Indexer) with relevant blog posts, [Azure AI Video Indexer FAQs](faq.yml), [User Voice](https://feedback.azure.com/d365community/forum/09041fae-0b25-ec11-b6e6-000d3a4f0858) to provide your feedback and suggest features, and  ['CodePen' link](https://codepen.io/videoindexer) with widgets code samples.
+Azure AI Video Indexer has a new [developer portal](https://api-portal.videoindexer.ai/). Try out the new Azure AI Video Indexer APIs and find all the relevant resources in one place: [GitHub repository](https://github.com/Azure-Samples/media-services-video-indexer), [Stack overflow](https://stackoverflow.com/questions/tagged/video-indexer), [Azure AI Video Indexer tech community](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/new-name-and-a-wealth-of-new-capabilities-in-video-indexer-now-ava-for-media/2305908) with relevant blog posts, [Azure AI Video Indexer FAQs](faq.yml), [User Voice](https://feedback.azure.com/d365community/forum/09041fae-0b25-ec11-b6e6-000d3a4f0858) to provide your feedback and suggest features, and  ['CodePen' link](https://codepen.io/videoindexer) with widgets code samples.
 
 ### Advanced customization capabilities for insight widget
 
