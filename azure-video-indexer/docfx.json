@@ -43,10 +43,15 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/azure/azure-video-indexer/breadcrumb/toc.json",
+      "breadcrumb_path": "/previous-versions/azure/azure-video-indexer/breadcrumb/toc.json",
       "feedback_system": "Standard",
       "permissioned-type": "public",
-      "uhfHeaderId": "Azure"
+      "uhfHeaderId": "Azure",
+      "ROBOTS": "NOINDEX,NOFOLLOW",
+      "is_archived": true,
+      "is_retired": true, 
+      "feedback_system": "None",
+      "learn_archive": "manual"
     },
     "fileMetadata": {},
     "template": [],
