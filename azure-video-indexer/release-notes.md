@@ -20,7 +20,7 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Bug fixes
 * Deprecated functionality
 
-## November 2004
+## November 2024
 
 ### Multimodal Video Summarization - Cloud and Edge
 
