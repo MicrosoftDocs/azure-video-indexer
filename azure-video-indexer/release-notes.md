@@ -24,11 +24,11 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 ### Multimodal Video Summarization - Cloud and Edge
 
-We have introduced Multimodal Video Summarization, which enhances our textual video summarization by analyzing keyframes along with audio and video insights. This feature is available both in the cloud, powered by Azure OpenAI, and on the Edge as part of VI enabled by ARC. It utilizes the latest Phi3.5 visual model, which can be configured to run with GPUs for improved performance.
+We're excited to introduce Multimodal Video Summarization, which enhances our textual video summarization by analyzing keyframes along with audio and video insights. This feature is available both in the cloud, powered by Azure OpenAI, and on the Edge as part of VI enabled by ARC. It utilizes the latest Phi3.5 visual model, which can be configured to run with GPUs for improved performance.
 
 ### Enhanced Prompt Content API
 
-Our Video-to-Text API, also known as the [Prompt Content](./prompt-overview.md) API, now supports additional models: Llama2, Phi3, Phi3.5, GPT-4O, and GPT-4O Mini. This enhancement provides you with greater flexibility when converting video content to text and opens up more opportunities for you when using Azure Video Indexer. You can gather information from Azure Video Indexer in a prompt format that can be customized by selecting the model name and adjusting the prompt style. The "Summarized" style is ideal for tasks like video summaries, naming videos, and describing main events, while the "Full" style is more suited for Q&A, RAG, and search use cases. For more information about this API, see [Azure Video Indexer Operations and Prompt Content](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Prompt-Content).
+Our Video-to-Text API, also known as the [Prompt Content](./prompt-overview.md) API, now supports more models: Llama2, Phi3, Phi3.5, GPT-4O, and GPT-4O Mini. This enhancement provides you with greater flexibility when converting video content to text and opens up more opportunities for you when using Azure Video Indexer. You can gather information from Azure Video Indexer in a prompt format that can be customized by selecting the model name and adjusting the prompt style. The "Summarized" style is ideal for tasks like video summaries, naming videos, and describing main events, while the "Full" style is more suited for Q&A, RAG, and search use cases. For more information about this API, see [Azure Video Indexer Operations and Prompt Content](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Prompt-Content).
 
 ## October 2024
 
@@ -177,7 +177,7 @@ You can use your own customized AI model and integrate the data with Video Index
 
 ### Custom tags and free text per video (Preview)
 
-You can add custom tags and free text as video metadata to any video in your Video Indexer account. This enables you to categorize and annotate your videos with any information that's relevant to you and your business. For example, you can add tags such as “product demo”, “customer testimonial”, or “internal training” or free text such as “This video shows how to use our new feature X” or “This video was recorded at our annual conference in Y”. They can be added to the area below the video once the video has been indexed.
+You can add custom tags and free text as video metadata to any video in your Video Indexer account. This enables you to categorize and annotate your videos with any information that's relevant to you and your business. For example, you can add tags such as "product demo", “customer testimonial”, or “internal training” or free text such as “This video shows how to use our new feature X” or “This video was recorded at our annual conference in Y”. They can be added to the area below the video once the video has been indexed.
 
 ### Search based on custom tags and free text (Preview)
 
