@@ -68,7 +68,7 @@ Government accounts have special requirements and limitations.
 
 ### Create new account via the Azure Government portal
 
-To create a paid account in Azure Government, follow the instructions in [Create-Paid-Account](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Paid-Account). This API end point only includes Government cloud regions.
+To create a paid account in Azure Government, go to [Create Account](https://portal.azure.us/#create/Microsoft.VideoIndexer).
 
 If you aren't an Owner or Contributor for any Azure AI Video Indexer accounts in Azure Government, you're'given an empty experience from which you can start creating your account.
 
