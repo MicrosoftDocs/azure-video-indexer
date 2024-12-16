@@ -11,10 +11,10 @@ ms.topic: article
 
 # Private endpoints with Azure AI Video Indexer (preview)
 
-This article is an overview of using private endpoints with Azure AI Video Indexer. 
+This article is an overview of using private endpoints with Azure AI Video Indexer.
 
 > [!IMPORTANT]
-> This feature is currently in preview. You must ask for access to try this feature by filling out [this form](https://aka.ms/vi-enable-private-endpoint). If you're already part of the preview, there's currently a pause in the ability to create new private endpoint connections. There's no workaround and we apologize for any inconvenience.
+> This feature is currently in preview. Sign up to request access to try this feature by filling out [this form](https://aka.ms/vi-enable-private-endpoint). If you're already part of the preview, there's currently a pause in the ability to create new private endpoint connections. This functionality is expected to be available again in early 2025.
 
 > [!NOTE]
 > This article is an abbreviated vesion of the concepts in [Use private endpoints with Azure Storage](/azure/storage/common/storage-private-endpoints), but is adjusted for use with Azure AI Video Indexer. For a complete understanding of private endpoints and private links, see [What is a private endpoint?](/azure/private-link/private-endpoint-overview).
