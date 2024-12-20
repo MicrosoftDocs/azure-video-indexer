@@ -19,7 +19,7 @@ This article discusses how to view the featured clothing insight and how the fea
 
 You can view the following short video that discusses how to view and use the featured clothing insight.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed//RE5b4JJ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f70b5aa6-b9e3-4773-ac90-e1817dc2b7d7]
 
 ## Viewing featured clothing
 

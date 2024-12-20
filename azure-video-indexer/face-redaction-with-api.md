@@ -19,7 +19,7 @@ This article shows you how to redact faces by using an API. Video Indexer API in
 
 The following video shows how to redact a video by using Azure AI Video Indexer API.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW16UBo]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f5cb4e00-aeea-4ad1-ae30-19b910e5ae68]
 
 ## Compliance, privacy, and security
 

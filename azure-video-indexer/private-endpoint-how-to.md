@@ -13,9 +13,8 @@ ms.topic: article
 
 This article shows you how to use private endpoints with Azure AI Video Indexer using the Azure portal. For an overview, see the [use cases for private endpoints with Azure AI Video Indexer](private-endpoint-overview.md).
 
-> [!IMPORTANT] 
-> This feature is currently in preview. You must ask for access to try this feature by filling out [this form](https://aka.ms/vi-enable-private-endpoint). 
-
+> [!IMPORTANT]
+> This feature is currently in preview. Sign up to request access to try this feature by filling out [this form](https://aka.ms/vi-enable-private-endpoint). If you're already part of the preview, there's currently a pause in the ability to create new private endpoint connections. This functionality is expected to be available again in early 2025.
 
 ## Prerequisites
 
