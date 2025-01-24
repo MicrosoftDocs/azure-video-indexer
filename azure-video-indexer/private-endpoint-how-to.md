@@ -18,7 +18,7 @@ This article shows you how to use private endpoints with Azure AI Video Indexer 
 
 ## Prerequisites
 
-- A [viirtual network and a subnet](/azure/virtual-network/quick-create-portal).
+- A [virtual network and a subnet](/azure/virtual-network/quick-create-portal).
 
 ## Enable the private endpoint on the Azure AI Video Indexer account
 
