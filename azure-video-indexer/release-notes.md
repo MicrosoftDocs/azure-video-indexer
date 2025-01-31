@@ -4,7 +4,7 @@ description: To stay up-to-date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 11/07/2024
+ms.date: 1/31/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
@@ -20,11 +20,39 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Bug fixes
 * Deprecated functionality
 
+## January 2025
+
+### Multimodal Video Summarization with GPT-4o
+
+Our Multimodal Video Summarization now supports GPT-4o, generating more accurate summaries. To use Multimodal Video Summarization, see [Use textual summarization](text-summarization-task.md).
+
+### Enhanced Multimodal Textual Video Summarization with Keyframes
+
+We added improvements to our Multimodal Textual Video Summarization feature. The updated logic now better captures video content by integrating more relevant keyframes, resulting in more accurate summaries.
+
+### Added Filipino as a source language
+
+We added support for videos using the Filipino source language. For a list of supported languages, see [Language support in Azure Video Indexer](language-support.md).
+
+### Added option to recognize spoken punctuation marks in audio
+
+We added a new optional parameter, PunctuationMode, to our Upload and Reindex APIs. This parameter controls whether to recognize explicitly spoken punctuation marks when transcribing audio. For example, a spoken "period" would be transcribed as a period ".", and "dot dot dot" as an ellipses "...". For details, see our [developer portal](https://api-portal.videoindexer.ai).
+
+## December 2024
+
+### Filters Policy updates to Multimodal Video Summarization with Azure Open AI
+
+We updated our policy for harmful content filters in Multimodal Textual Video Summarization. These filters are no longer mandatory, although we still recommend configuring them to help ensure that harmful content is blocked. If you want to completely disable the harmful content filters, sign up in the following form: [Azure OpenAI Limited Access Review: Modified Content Filtering](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUMlBQNkZMR0lFRldORTdVQzQ0TEI5Q1ExOSQlQCN0PWcu).
+
+Additionally, textual video summarization now supports the Prompt Shields for direct attacks (jailbreak) filter. We recommend adding this filter to your deployment.
+
+For details about the filters required to benefit from Multimodal Video Summarization with Azure Open AI, see [Use textual summarization](text-summarization-task.md).
+
 ## November 2024
 
-### Multimodal Video Summarization - Cloud and Edge
+### Multimodal Video Summarization - Cloud and edge
 
-We're excited to introduce Multimodal Video Summarization, which enhances our textual video summarization by analyzing keyframes along with audio and video insights. This feature is available both in the cloud, powered by Azure OpenAI, and on the Edge as part of VI enabled by ARC. It utilizes the latest Phi3.5 visual model, which can be configured to run with GPUs for improved performance.
+We're excited to introduce Multimodal Video Summarization, which enhances our textual video summarization by analyzing keyframes along with audio and video insights. This feature is available both in the cloud, powered by Azure OpenAI, and on the edge as part of VI enabled by ARC. It utilizes the latest Phi3.5 visual model, which can be configured to run with GPUs for improved performance.
 
 ### Enhanced Prompt Content API
 
@@ -34,16 +62,17 @@ Our Video-to-Text API, also known as the [Prompt Content](./prompt-overview.md) 
 
 ### New sample code
 
-There is [new sample code](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/ExportVideoDataToADX) for exporting Azure AI Video Indexer data to Azure Data Explorer using Logic Apps.
+We added [new sample code](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/ExportVideoDataToADX) for exporting Azure AI Video Indexer data to Azure Data Explorer using Logic Apps.
 
 ## August 2024
 
 ### Enhanced security for Textual Video Summarization
-We are pleased to announce that Textual Video Summarization now includes support for preventing jailbreak attack risks. This new security filter must be added to your AOAI in order to benefit from the language model based Textual Video Summarization. For more information, see [Textual Video Summary with Azure OpenAI](/azure/azure-video-indexer/text-summarization-task?tabs=web#prerequisites).
+
+Textual Video Summarization now includes support for preventing jailbreak attack risks. This new security filter must be added to your AOAI in order to benefit from the language model based Textual Video Summarization. For more information, see [Textual Video Summary with Azure OpenAI](/azure/azure-video-indexer/text-summarization-task?tabs=web#prerequisites).
 
 ### Textual Video Summary on an edge device
 
-We released the blog post [Azure AI Video Indexer & Phi-3 introduce Textual Video Summary on Edge: Better Together story](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-video-indexer-amp-phi-3-introduce-textual-video-summary-on/ba-p/4190931)
+We released the blog post [Azure AI Video Indexer & Phi-3 introduce Textual Video Summary on the edge: Better Together story](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-video-indexer-amp-phi-3-introduce-textual-video-summary-on/ba-p/4190931)
 
 <!-- Removed 9/25/24 not released
 ### Shot detection algorithm update
@@ -53,12 +82,13 @@ We enhanced shot detection by integrating a neural network that significantly im
 
 ## July 2024
 
-### Textual summarization on VI enable by Arc
-The textual summarization capability is now available on the VI enabled by Arc extension using the latest Phi 3 model. You can benefit from the same functionality as in the cloud, including customizing of the summary with several settings: Formal, Casual, Short and Long.
+### Textual summarization on VI enabled by Arc
 
-### Language identification improvments
+The textual summarization capability is now available on the VI enabled by Arc extension using the latest Phi 3 model. You can benefit from the same functionality as in the cloud, including customizing of the summary with several settings: Formal, Casual, Short, and Long.
 
-- Turnover time and quality of single language identification was improved. 
+### Language identification improvements
+
+- Turnover time and quality of single language identification was improved.
 - If there are multiple languages in the file (and you asked for a single language identification):
     - The most dominant language, the language that appeared for the longest duration is returned.
     - The artifact contains all the languages that were identified by speech in the original video.
@@ -68,34 +98,34 @@ The textual summarization capability is now available on the VI enabled by Arc e
 
 The website player was updated to the latest version of the Shaka base. The player is also included in the widgets.
 
-Accessibility improvments were implemented for the website.
+Accessibility improvements were implemented for the website.
 
 ## June 2024
 
 ### Code Samples
 
-- Use Azure AI Video indexer with Azure Open AI to make finding relevant video content easier for learners and trainers. See the blog post [Enhancing Training Search Experience using Azure AI Video Indexer](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/enhancing-training-search-experience-using-azure-ai-video/ba-p/4160409) and the [source code](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoQnA-Demo/README.md).
+- Use Azure AI Video indexer with Microsoft Azure OpenAI to make finding relevant video content easier for learners and trainers. See the blog post [Enhancing Training Search Experience using Azure AI Video Indexer](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/enhancing-training-search-experience-using-azure-ai-video/ba-p/4160409) and the [source code](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoQnA-Demo/README.md).
 - Use Azure LogicApps to classify cars detected in a video. The sample uses Video Indexer's Bring Your Own capability to detect objects and Azure OpenAI's GPT-4 for enhanced classification. See the [YouTube demo](https://www.youtube.com/watch?v=yMqJufR9Rfs) and the [sample code](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/LogicApp-Samples).
 
-### File Duration limit increase
+### Increased file duration limit
 
 All presets now support the indexing of files up to 6 hours in length (the previous limit was 4 hours) and the Basic Audio preset supports indexing of files up to 12 hours in length.
 
 ## May 2024
- 
+
 ### Textual summarization
 
-Azure AI Video Indexer now provides a brief summary of what a video is about without having to watch the entire video. It's designed to save you time by digesting long videos and giving you the gist in a shorter format. It distills lengthy videos into concise, digestible summaries.
+Azure AI Video Indexer now provides a brief summary of what a video is about without having to watch the entire video. It can save you time by digesting long videos and giving you the gist in a shorter format. It distills lengthy videos into concise, digestible summaries.
 
 It uses summarization algorithms to identify the most relevant insights for the video. It involves scoring insights based on their importance and relevance to the overall theme. A user-friendly interface allows you to input videos and customize the type of summary you need.
 
-You can customize the summary by selecting Short, Longer, Formal, or Casual as well as specify the specific model deployment.
+You can customize the summary by selecting Short, Longer, Formal, or Casual and specify the specific model deployment.
 
 For more information about textual summarization, see [Textual Summarization Overview](text-summarization-overview.md).
 
 ### Azure OpenAI integration
 
-Azure AI Video Indexer now offers an integration with Azure OpenAI. You can connect your Azure OpenAI resource when creating a new Azure Video Indexer account or add it to your existing Azure Video Indexer account. When you connect VI with Azure OpenAI, you can use the Textual summary capability, available from the API and from the portal. 
+Azure AI Video Indexer now offers an integration with Azure OpenAI. You can connect your Azure OpenAI resource when creating a new Azure Video Indexer account or add it to your existing Azure Video Indexer account. When you connect VI with Azure OpenAI, you can use the Textual summary capability, available from the API and from the portal.
 
 For more information about connecting Azure OpenAI to your VI account, see [Create or update an Azure AI Video Indexer account with an Azure OpenAI connection](connect-azure-open-ai-task.md).
 
@@ -107,7 +137,7 @@ Azure AI Video Indexer’s Prompt Content API now supports more language models:
 
 ### Exclude models
 
-You're now able to exclude models when indexing through both the VI Website and API. When uploading a video to index, select **Advanced settings** > **Indexing presets** and then select the AI models to be excluded from the indexing results. This can enable more efficient indexing and VI results only containing the insights you are interested in.
+You're now able to exclude models when indexing through both the VI Website and API. When uploading a video to index, select **Advanced settings** > **Indexing presets** and then select the AI models to be excluded from the indexing results. This can enable more efficient indexing and VI results only containing the insights you're interested in.
 
 ### New availability region
 
@@ -117,22 +147,22 @@ Azure AI Video Indexer is now available in Germany West Central region.
 
 ### AMS-less accounts and migration guidance
 
-- All new VI account video packaging, streaming, and encoding is performed by VI, and you will no longer be able to create AMS-based VI accounts. See the [new account create guide](create-account.md).
-- VI encoding/packaging is billed at a flat rate of 1 cent per minute with free streaming.
+- All new VI account video packaging, streaming, and encoding is performed by VI, and you'll no longer be able to create AMS-based VI accounts. See the [new account create guide](create-account.md).
+- VI encoding/packaging is billed at a flat rate of one cent per minute with free streaming.
 - You can update your VI accounts from AMS-based to the new AMS-less account type.
-- You can opt in to have your AMS VI assets reprocessed and migrated by VI, so you can continue to access your videos and insights. The migration will begin in late March.
+- You can opt in to have your AMS VI assets reprocessed and migrated by VI, so you can continue to access your videos and insights. The migration begins in late March.
 - Video Indexer webapp and widgets use a new media player that is highly performant and no longer use Azure Media Player.
 
 The following documentation guides you through the account and asset migration process:
 
-- See the [Preparing for AMS retirement: VI migration and updating guide](azure-video-indexer-ams-retirement-guide.md).
-- See the [Update your Azure AI Video Indexer account and migrate assets]().
 - See the new [API version](/rest/api/videoindexer/accounts?view=rest-videoindexer-2024-01-01&preserve-view=true).
 
-### TLS1.3 support 
-We support TLS 1.3, the latest version of the Transport Layer Security (TLS) protocol, which encrypts data to provide a secure communication channel between two endpoints. 
+### TLS1.3 support
 
-### Azure AI Video Indexer deployed in the Sweden Central and US West3 
+We support TLS 1.3, the latest version of the Transport Layer Security (TLS) protocol, which encrypts data to provide a secure communication channel between two endpoints.
+
+### Azure AI Video Indexer deployed in the Sweden Central and US West3
+
 You can now create an Azure AI Video Indexer paid account in the Sweden Central and US West3 regions.
 
 ## January 2024
@@ -145,14 +175,13 @@ You can now connect your video insights to Large Language Model (LLMs) for tasks
 
 ### New preset option - Basic Video
 
-Video Indexer has added a new indexing preset option, Basic Video. It's also available on the VI enabled by Arc extension. It is a low-cost indexing option that includes many useful AI insights, including OCR, object detection, and visual labels. Basic Video can be used to generate insights together with Basic Audio (Basic Audio and Video) or on its own (Basic Video only). To learn more about your indexing options, see the [Indexing configuration guide](indexing-configuration-guide.md#indexing-options).
+Video Indexer added a new indexing preset option, Basic Video. It's also available on the VI enabled by Arc extension. It's a low-cost indexing option that includes many useful AI insights, including OCR, object detection, and visual labels. Basic Video can be used to generate insights together with Basic Audio (Basic Audio and Video) or on its own (Basic Video only). To learn more about your indexing options, see the [Indexing configuration guide](indexing-configuration-guide.md#indexing-options).
 
 ### Get Frames API
 
-You can now extract frames from an indexed video for a selected video section by making a `FramesSasUrls` request.  For more information see [FrameSelection](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md#frame-selection).
+You can now extract frames from an indexed video for a selected video section by making a `FramesSasUrls` request.  For more information, see [FrameSelection](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md#frame-selection).
 
-
-### Bring Your Own Model (Preview)
+### Bring Your Own Model (Preview) updates
 
 - Added UI support for custom insights.
 - Added search support for custom insights.
@@ -165,7 +194,7 @@ You can now use the search feature to search for videos with specific objects (f
 
 ## November 2023
 
-Video indexer has released the following things in November:
+Video indexer released the following things in November:
 
 ### Azure AI Video Indexer enabled by Arc (Preview)
 
@@ -177,57 +206,59 @@ You can use your own customized AI model and integrate the data with Video Index
 
 ### Custom tags and free text per video (Preview)
 
-You can add custom tags and free text as video metadata to any video in your Video Indexer account. This enables you to categorize and annotate your videos with any information that's relevant to you and your business. For example, you can add tags such as "product demo", “customer testimonial”, or “internal training” or free text such as “This video shows how to use our new feature X” or “This video was recorded at our annual conference in Y”. They can be added to the area below the video once the video has been indexed.
+You can add custom tags and free text as video metadata to any video in your Video Indexer account. This enables you to categorize and annotate your videos with any information that's relevant to you and your business. For example, you can add tags such as "product demo", “customer testimonial”, or “internal training” or free text such as “This video shows how to use our new feature X” or “This video was recorded at our annual conference in Y”. They can be added to the area below the video once the video is indexed.
 
 ### Search based on custom tags and free text (Preview)
 
 You can search for videos based on their custom tags and free text. This will enable you to find the videos that match your criteria more easily and quickly. You can search based on custom tags and free text in all supported languages, and you can combine them with other search filters such as keywords, faces, labels, emotions, etc. You can also use the advanced search syntax to perform more complex queries. For example, you can search for videos that have the tag “product demo” and the free text “feature X”.
 
-We've added a number of improvements to the customized people model which improves the overall experience as well as the accuracy. People models are gated AI models that allow you to train your own model to recognize specific people in your videos. The new additions are:
+We added many improvements to the customized people model which improves the overall experience and accuracy. People models are gated AI models that allow you to train your own model to recognize specific people in your videos. The new additions are:
 
-### Indication on the quality of people model (Preview) 
+### Indication on the quality of people model (Preview)
 
-You can get an indication on the quality of your customized People model (poor, fair, good). The quality is determined by the the number of images used for labeling with the more images you use to label a person, the higher the probability to identify the person correctly. For example, the probability of identifying a person with 24 labeled images is higher than the probability of identifying a person with 2 labeled images. You can see the number of images used for labeling each person in your customized People model page.
+You can get an indication on the quality of your customized People model (poor, fair, good). The quality is determined by the number of images used for labeling; the more images you use to label a person, the higher the probability to identify the person correctly. For example, the probability of identifying a person with 24 labeled images is higher than the probability of identifying a person with 2 labeled images. You can see the number of images used for labeling each person in your customized People model page.
 
 ### Choose a custom people model as default (Preview)
 
-You can now choose a customized People model as default on the VI account user level, so you don't have to keep selecting the model name for every video upload. This will save you time and effort when you upload videos that need to be analyzed by your customized People model.
+You can now choose a customized People model as default on the VI account user level, so you don't have to keep selecting the model name for every video upload. This can save time and effort when you upload videos that need to be analyzed by your customized People model.
 
 ### Grouping of unknown people in the video (Preview)
 
-You can see the unknown people in your videos grouped by their appearance similarity. This will help you label the unknown people more easily and quickly, and to improve the accuracy of your customized People model. You can see the grouping of unknown people in your customization page > choose **people** and then navigate to the **unknown people** tab. This could, for example, help you to label a local celebrity or a local politician.
+You can see the unknown people in your videos grouped by their appearance similarity. This helps you label the unknown people more easily and quickly, and to improve the accuracy of your customized People model. You can see the grouping of unknown people in your customization page > choose **people** and then navigate to the **unknown people** tab. This could, for example, help you to label a local celebrity or a local politician.
 
 ### Search results with max confidence score for identified person name (Preview)
 
 You can search for the name of an identified person and get when the person appears in the video, with the maximum confidence score. This helps you decide what are the most relevant videos to explore. For example, you can search for “John Smith” and get the videos where John Smith is recognized by your customized People model, along with the confidence score for each video.
 
 ### Avoid duplicate indexing uploads
- 
-Occasionally you unintentionally submit the same indexing job multiple times. To avoid this, a new optional query parameter has been added, `preventDuplicates`. When set to `true`, the service will reject a file upload and return a conflict if it was already indexed.
 
-The Upload URL MD5 duplicate checks rely on the server response [Content-md5 header if exist RFC 1864: The Content-MD5 Header Field](https://www.rfc-editor.org/info/rfc1864) as it is commonly used by storage providers.
+Occasionally you unintentionally submit the same indexing job multiple times. To avoid this, a new optional query parameter has been added, `preventDuplicates`. When set to `true`, the service rejects a file upload and returns a conflict if it was already indexed.
+
+The Upload URL MD5 duplicate checks rely on the server response [Content-md5 header if exist RFC 1864: The Content-MD5 Header Field](https://www.rfc-editor.org/info/rfc1864) as it's commonly used by storage providers.
 
 If you want to upload the same video repeatedly, you can set the parameter to `false`.
 
 ## October 2023
 
 ### New insight - Object detection
+
 Video Indexer added a new insight, object detection, to both the standard and advanced video preset. It can be used to identify and track a wide range of objects that appear in your videos. To learn more, see [Azure AI Video Indexer object detection overview](object-detection.md).
 
 ## September 2023
 
 ### Changes related to AMS retirement
-As a result of the June 30th 2024 [retirement of Azure Media Services (AMS)](/azure/media-services/latest/azure-media-services-retirement), Video Indexer has announced a number of related retirements. They include the June 30th 2024 retirement of Video Indexer Classic accounts, API changes, and no longer supporting adaptive bitrate. For full details, see[Changes related to Azure Media Service (AMS) retirement](https://aka.ms/vi-ams-related-changes).
+
+As a result of the June 30th 2024 [retirement of Azure Media Services (AMS)](/azure/media-services/latest/azure-media-services-retirement), Video Indexer announced many related retirements. They include the June 30th 2024 retirement of Video Indexer Classic accounts, API changes, and no longer supporting adaptive bitrate. For full details, see[Changes related to Azure Media Service (AMS) retirement](https://aka.ms/vi-ams-related-changes).
 
 ## July 2023
 
 ### Redact faces with Azure AI Video Indexer API
 
-You can now redact faces with Azure AI Video Indexer API. For more information see [Redact faces with Azure AI Video Indexer API](face-redaction-with-api.md).
+You can now redact faces with Azure AI Video Indexer API. For more information, see [Redact faces with Azure AI Video Indexer API](face-redaction-with-api.md).
 
 ### API request limit increase
 
-Video Indexer has increased the API request limit from 60 requests per minute to 120.
+Video Indexer increased the API request limit from 60 requests per minute to 120.
 
 ## June 2023
 
@@ -243,8 +274,8 @@ For more information, see [AMS deprecation FAQ](./retirement/ams-deprecation-faq
 
 ### API updates
 
-We're introducing a change in behavior that may require a change to your existing query logic. The change is in the **List** and **Search** APIs, find a detailed change between the current and the new behavior in a table that follows. You may need to update your code to utilize the [new APIs](https://api-portal.videoindexer.ai/).
- 
+We're introducing a change in behavior that might require a change to your existing query logic. The change is in the **List** and **Search** APIs, find a detailed change between the current and the new behavior in a table that follows. You might need to update your code to utilize the [new APIs](https://api-portal.videoindexer.ai/).
+
 |API	|Current|New|The update|
 |---|---|---|---|
 |List Videos|•	List all videos/projects according to 'IsBase' boolean parameter. If 'IsBase' isn't defined, list both.<br/>•	Returns videos in all states (In progress/Proccessed/Failed).	|•	List Videos API will Return only videos (with paging) in all states.<br/>•	List Projects API returns only projects (with paging).|• List videos API was divided into two new API’s **List Videos** and **List Projects**<br/>•	The 'IsBase' parameter no longer has a meaning. |
@@ -254,9 +285,9 @@ We're introducing a change in behavior that may require a change to your existin
 
 Added support for HTTP/2 for our [Data Plane API](https://api-portal.videoindexer.ai/). [HTTP/2](https://en.wikipedia.org/wiki/HTTP/2) offers several benefits over HTTP/1.1, which continues to be supported for backwards compatibility. One of the main benefits of HTTP/2 is increased performance, better reliability and reduced system resource requirements over HTTP/1.1. With this change we now support HTTP/2 for both the Video Indexer [Portal](https://videoindexer.ai/) and our Data Plane API. We advise you to update your code to take advantage of this change.
 
-### Topics insight improvements 
+### Topics insight improvements
 
-We now support all five levels of IPTC ontology. 
+We now support all five levels of IPTC ontology.
 
 ## April 2023
 
@@ -286,7 +317,7 @@ It's good practice to lock storage accounts and disable public access to enhance
 
 ### New custom speech and pronunciation training
 
-Azure AI Video Indexer has added a new custom speech model experience. The experience includes ability to use custom pronunciation datasets to improve recognition of mispronounced words, phrases, or names. The custom models can be used to improve the transcription quality of content with industry specific terminology. To learn more, see [Customize speech model overview](customize-speech-model-overview.md).
+Azure AI Video Indexer added a new custom speech model experience. The experience includes ability to use custom pronunciation datasets to improve recognition of mispronounced words, phrases, or names. The custom models can be used to improve the transcription quality of content with industry specific terminology. To learn more, see [Customize speech model overview](customize-speech-model-overview.md).
 
 ### Observed people quality improvements
 
@@ -334,7 +365,6 @@ You can now switch Entra ID directories and manage Azure AI Video Indexer accoun
 * Use an API to get all supported languages: [Get Supported Languages](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Supported-Languages).
 
 For more information, see [supported languages](language-support.md).
-
 
 ### Face grouping
 
@@ -583,9 +613,9 @@ Azure AI Video Indexer introduces a public preview of Azure Resource Manager (AR
 > [!NOTE]
 > The Government cloud includes support for CRUD ARM based accounts from Azure AI Video Indexer API and from the Azure portal.
 >
-> There is currently no support from the Azure AI Video Indexer [website](https://www.videoindexer.ai).
+> There's currently no support from the Azure AI Video Indexer [website](https://www.videoindexer.ai).
 
-For more information go to [create an Azure AI Video Indexer account](https://techcommunity.microsoft.com/t5/azure-ai/azure-video-analyzer-for-media-is-now-available-as-an-azure/ba-p/2912422).
+For more information, go to [create an Azure AI Video Indexer account](https://techcommunity.microsoft.com/t5/azure-ai/azure-video-analyzer-for-media-is-now-available-as-an-azure/ba-p/2912422).
 
 ### People’s clothing detection
 
@@ -622,7 +652,7 @@ Fixed bugs related to CSS, theming and accessibility:
 
 ### Automatic Scaling of Media Reserved Units
 
-Starting August 1st 2021, Azure AI Video Indexer enabled [Media Reserved Units (MRUs)](/azure/media-services/latest/concept-media-reserved-units) auto scaling by [Azure Media Services](/azure/media-services/latest/media-services-overview), as a result you don't need to manage them through Azure AI Video Indexer. That will allow price optimization, for example price reduction in many cases, based on your business needs as it is being auto scaled.
+Starting August 1st 2021, Azure AI Video Indexer enabled [Media Reserved Units (MRUs)](/azure/media-services/latest/concept-media-reserved-units) auto scaling by [Azure Media Services](/azure/media-services/latest/media-services-overview), as a result you don't need to manage them through Azure AI Video Indexer. That will allow price optimization, for example price reduction in many cases, based on your business needs as it's being auto scaled.
 
 ## June 2021
 
@@ -743,7 +773,7 @@ In addition, the model now includes people and locations in-context which aren't
 ### Azure AI Video Indexer is deployed on US Government cloud
 
 You can now create an Azure AI Video Indexer paid account on US government cloud in Virginia and Arizona regions.
-Azure AI Video Indexer trial offering isn't available in the mentioned region. For more information go to Azure AI Video Indexer Documentation.
+Azure AI Video Indexer trial offering isn't available in the mentioned region. For more information, go to Azure AI Video Indexer Documentation.
 
 ### Azure AI Video Indexer deployed in the India Central region
 
@@ -771,7 +801,7 @@ You'll be able to sign up and sign in using one of these providers: Entra ID, Mi
 > [!NOTE]
 > The Azure AI Video Indexer accounts connected to LinkedIn and Facebook won't be accessible after March 1st 2021.
 >
-> You should [invite](restricted-viewer-role.md#share-the-account) an Entra ID, Microsoft, or Google email your own to the Azure AI Video Indexer account so you will still have access. You can add an additional owner of supported providers, as described in [invite](restricted-viewer-role.md#share-the-account). <br/>
+> You should [invite](restricted-viewer-role.md#share-the-account) an Entra ID, Microsoft, or Google email your own to the Azure AI Video Indexer account so you'll still have access. You can add an additional owner of supported providers, as described in [invite](restricted-viewer-role.md#share-the-account). <br/>
 > Alternatively, you can create a paid account and migrate the data.
 
 ## August 2020
@@ -802,9 +832,9 @@ New list view with ability to sort and manage video archive with multiple files.
 
 #### New panel for easy selection and configuration
 
-Side panel for easy selection and user configuration was added, allowing simple and quick account creation and sharing as well as setting configuration.
+We added a side panel for easy selection and user configuration, allowing simple and quick account creation and sharing, and configuring settings.
 
-Side panel is also used for user preferences and help.
+The side panel is also used for user preferences and help.
 
 ## June 2020
 
@@ -828,7 +858,7 @@ You can now create an Azure AI Video Indexer paid account in the East US region.
 
 Azure AI Video Indexer regional endpoints were all unified to start only with www. No action item is required.
 
-From now on, you reach www.videoindexer.ai whether it is for embedding widgets or logging into the [Azure AI Video Indexer](https://www.videoindexer.ai/) website.
+From now on, you reach www.videoindexer.ai whether it's for embedding widgets or logging into the [Azure AI Video Indexer](https://www.videoindexer.ai/) website.
 
 Also wus.videoindexer.ai would be redirected to www. More information is available in [Embed Azure AI Video Indexer widgets in your apps](video-indexer-embed-widgets.md).
 
@@ -986,7 +1016,7 @@ Keyframes extracted by Azure AI Video Indexer are available in the original reso
 Training faces from images moved from Preview mode to GA (available via API and in the portal).
 
 > [!NOTE]
-> There is no pricing impact related to the "Preview to GA" transition.
+> There's no pricing impact related to the "Preview to GA" transition.
 
 ### Hide gallery toggle option
 

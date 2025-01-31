@@ -4,7 +4,7 @@ description: This article provides a comprehensive list of language support by s
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 1/30/2025
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
@@ -77,7 +77,7 @@ This section explains the Video Indexer language options and has a table of the 
 | English United States | en-US | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Estonian | et-EE | ✔ | ✔ | ✔ | ✔ | ✔ |  |
 | Fijian | en-FJ |  |  |  |  | ✔ |  |
-| Filipino | fil-PH |  |  |  |  | ✔ |  |
+| Filipino | fil-PH |  ✔|  |  |  | ✔ |  |
 | Finnish | fi-FI | ✔ | ✔ | ✔ | ✔ | ✔ |  |
 | French | fr-FR | ✔ | ✔ | ✔ | ✔ | ✔ |  |
 | French (Canada) | fr-CA | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
