@@ -4,7 +4,7 @@ description: To stay up-to-date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 11/07/2024
+ms.date: 1/09/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
@@ -19,6 +19,16 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+## December 2024
+
+###  Filters Policy updates to Multimodal Video Summarization with Azure Open AI
+
+We updated our policy for harmful content filters in Multimodal Textual Video Summarization. These filters are no longer mandatory, although we still recommend configuring them to help ensure that harmful content is blocked. If you want to completely disable the harmful content filters, sign up in the following form: [Azure OpenAI Limited Access Review: Modified Content Filtering](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUMlBQNkZMR0lFRldORTdVQzQ0TEI5Q1ExOSQlQCN0PWcu).
+
+Additionally, textual video summarization now supports the Prompt Shields for direct attacks (jailbreak) filter. We recommend adding this filter to your deployment. 
+
+For details about the filters required to benefit from Multimodal Video Summarization with Azure Open AI, see [Use textual summarization](text-summarization-task.md).
 
 ## November 2024
 
@@ -125,8 +135,6 @@ Azure AI Video Indexer is now available in Germany West Central region.
 
 The following documentation guides you through the account and asset migration process:
 
-- See the [Preparing for AMS retirement: VI migration and updating guide](azure-video-indexer-ams-retirement-guide.md).
-- See the [Update your Azure AI Video Indexer account and migrate assets]().
 - See the new [API version](/rest/api/videoindexer/accounts?view=rest-videoindexer-2024-01-01&preserve-view=true).
 
 ### TLS1.3 support 
