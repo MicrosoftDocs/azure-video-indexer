@@ -4,7 +4,7 @@ description: This article shows you how to use Azure OpenAI textual summarizatio
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 11/06/2024
+ms.date: 1/30/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
@@ -18,29 +18,29 @@ This article shows you how to use textual summarization with Azure AI Video Inde
 
 ## Prerequisites
 
-- Review the overview of texual summarization. 
+Review the [overview of textual summarization](text-summarization-overview.md) and the following prerequisites.
 
 ### Cloud
 
 - An [Azure AI Video Indexer account](connect-azure-open-ai-task.md) connected to an Azure OpenAI account.
-- Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing [the form](https://aka.ms/oai/access). 
-- An Azure OpenAI [gpt-35-turbo or gpt-4](/azure/ai-services/openai/how-to/working-with-models?tabs=powershell) deployment. To benefit from keyframes based summaries you must select an Azure Open AI model that accepts visual input.. Read more here:  [Azure OpenAI Service models](/azure/ai-services/openai/concepts/models?tabs=python-secure%2Cglobal-standard%2Cstandard-chat-completions). 
-- The Prompt Shields for direct attacks (jailbreak) filter should be added to the deployment. Read more here: [Use content filters (preview) with Azure OpenAI Service](/azure/ai-services/openai/how-to/content-filters#understand-other-filters). 
-- It is recommended that you configure harmful content filters for categories such as “Violence,” “Hate,” “Sexual,” and “Self-harm.” While these filters are not mandatory, you should set them to either "Medium" or "Low" to filter out content of at least the Medium level of harmfullness. This setting ensures that content with a harmfulness rating of medium or higher is blocked. For increased safety, you may opt for a stricter setting. Once configured, please save the content filter settings.  
+- Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted by application. You can apply for access to Azure OpenAI by completing [the form](https://aka.ms/oai/access).
+- An Azure OpenAI [GPT-35-Turbo, GPT-4, or GPT-4o](/azure/ai-services/openai/how-to/working-with-models?tabs=powershell) deployment. To benefit from keyframes based summaries, you must select an Azure OpenAI model that accepts visual input. Read more here:  [Azure OpenAI Service models](/azure/ai-services/openai/concepts/models?tabs=python-secure%2Cglobal-standard%2Cstandard-chat-completions). 
+- The Prompt Shields for direct attacks (jailbreak) filter should be added to the deployment. Read more here: [Use content filters (preview) with Azure OpenAI Service](/azure/ai-services/openai/how-to/content-filters#understand-other-filters).
+- We recommended that you configure harmful content filters for categories such as “Violence,” “Hate,” “Sexual,” and “Self-harm.” While these filters aren't mandatory, you should set them to either "Medium" or "Low" to filter out content of at least the Medium level of harmfulness. This setting ensures that content with a harmfulness rating of medium or higher is blocked. For increased safety, you can opt for a stricter setting. Once configured, save the content filter settings.  
 
-- A video uploaded to your Azure AI Video Indexer library. 
+- A video uploaded to your Azure AI Video Indexer library.
 
 > [!NOTE]
 > Azure AI Video Indexer is unable to connect to fine-tuned models.
 
-### Edge
+### Edge devices
 
 Azure AI Video Indexer enabled by Arc allows you to use Azure AI Video Indexer on edge devices. The following are the technical requirements for this use case:
 
-- Video Indexer Enabled by Arc of version number 1.1.23 or higher. 
-- Hardware requirements: GPU or Intel CPU. Running on CPU may be very slow and not recommended.We recommend using Nvidia V100 or higher. If there are multiple GPU nodes, you can add a node selector to select the desired node.
+- Video Indexer Enabled by Arc of version number 1.1.23 or higher.
+- Hardware requirements: GPU or Intel CPUs. We don't recommend running on CPUs due to slow speed. We recommend using Nvidia V100 or higher GPUs. If there are multiple GPU nodes, you can add a node selector to select the desired node.
 - Using [keyframes](text-summarization-overview.md#textual-summarization-with-keyframes) as part of the summary requires Nvidia A100 or higher.
-- Textual Video Summarization on Edge uses the Phi3.5 model only. For more hardware information please refer to the Phi 3.5 official release information.
+- Textual Video Summarization on the edge uses the Phi3.5 model only. For more hardware information, refer to the Phi 3.5 official release information.
 
 ## Open web pages in your browser
 
@@ -68,11 +68,11 @@ You can use the Azure AI Video Indexer web portal to summarize text.
 1. If you don't have the web portal open already, open the [Azure AI Video Indexer web portal](https://api-portal.videoindexer.ai/).
 1. Upload a file and wait for it to index.
 1. Select the video to navigate to the media page.
-1. If you want to use keyframes to produce the summary, select the Include visual keyframe insights to get better quality summary checkbox.
+1. If you want to use keyframes to produce the summary, select the **Include visual keyframe insights to get better quality summary** checkbox.
 1. Select **Generate summary**. The textual summary is generated.
 
 > [!NOTE]
-> If you aren't seeing the Generate summary button, you may be using a trial account. Create a [standard account](create-account.md) to use this feature.
+> If you aren't seeing the **Generate summary** button, you might be using a trial account. Create a [standard account](create-account.md) to use this feature.
 
 ## Summary customizations
 
@@ -128,7 +128,7 @@ First, check on the summary status. Until the summary job is finished, the state
 1. Select **Send**.
 
 > [!NOTE]
-> There is always a disclaimer available in the response about the summary. Also, there is a link to the job status API in the *Location* header.
+> There's always a disclaimer available in the response about the summary. Also, there's a link to the job status API in the *Location* header.
 
 ## List video summaries
 
@@ -190,7 +190,7 @@ There might be too many requests being sent to VI. Wait for a few minutes and tr
 
 ### You receive the error "filter not found"
 
-If you get a filter not found error, you'll get a detailed error describing what is missing. The error looks similar to this, but might have details about other missing things:
+If you get a filter not found error, you get a detailed error describing what is missing. The error looks similar to this, but might have details about other missing things:
 
 <pre>
 ErrorType":"SUMMARY_FILTERS_NOT_FOUND","Message":"Couldn't generate a summary because the model needs to be set with the right content filters to avoid showing harmful content. Input filter 'Jailbreak' must be enabled with action set to 'Annotate and block'. Trace id: '00000000-0000-0000-0000-000000000000'.
@@ -211,4 +211,4 @@ To resolve the jailbreak issue:
 
 ## Other considerations
 
-It's recommended to create the Azure AI Video Indexer and Azure OpenAI accounts in the same region or you might experience performance issues.
+We recommend creating the Azure AI Video Indexer and Azure OpenAI accounts in the same region or you might experience performance issues.
