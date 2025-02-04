@@ -4,7 +4,7 @@ description: Embed Azure AI Video Indexer widgets in your apps. Azure AI Video I
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 2/04/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
@@ -17,7 +17,7 @@ This article shows how you can embed Azure AI Video Indexer widgets in your apps
 
 ### Insights widget
 
-A Insights widget includes all visual insights that were extracted from your video indexing process. The Insights widget supports the following optional URL parameters:
+An Insights widget includes all visual insights that were extracted from your video indexing process. The Insights widget supports the following optional URL parameters:
 
 |Name|Definition|Description|
 |---|---|---|
@@ -27,8 +27,8 @@ A Insights widget includes all visual insights that were extracted from your vid
 |`locale` | A short language code | Controls the language of the UI. The default value is `en`. <br/>Example: `locale=de`.|
 |`tab` | The default selected tab | Controls the **Insights** tab that's rendered by default. <br/>Example: `tab=timeline` renders the insights with the **Timeline** tab selected.|
 |`search` | String | Allows you to control the initial search term.<br/>Example: `https://www.videoindexer.ai/embed/insights/<accountId>/<videoId>/?search=azure` renders the insights filtered by the word "Azure". | 
-|`sort` | Strings separated by comma | Allows you to control the sorting of an insight.<br/>Each sort consists of 3 values: widget name, property and order, connected with '_' `sort=name_property_order`<br/>Available options:<br/>widgets: `keywords`, `audioEffects`, `labels`, `sentiments`, `emotions`, `keyframes`, `scenes`, `namedEntities` and `spokenLanguage`.<br/>property: `startTime`, `endTime`, `seenDuration`, `name` and `ID`.<br/>order: asc and desc.<br/>Example: `https://www.videoindexer.ai/embed/insights/<accountId>/<videoId>/?sort=labels_id_asc,keywords_name_desc` renders the labels sorted by ID in ascending order and keywords sorted by name in descending order.| 
-|`location` ||The `location` parameter must be included in the embedded links, see [how to get the name of your region](regions.md). If your account is in preview, the `trial` should be used for the location value. `trial` is the default value for the `location` parameter.| 
+|`sort` | Strings separated by comma | Allows you to control the sorting of an insight.<br/>Each sort consists of three values: widget name, property, and order, connected with '_' `sort=name_property_order`<br/>Available options:<br/>widgets: `keywords`, `audioEffects`, `labels`, `sentiments`, `emotions`, `keyframes`, `scenes`, `namedEntities`, and `spokenLanguage`.<br/>property: `startTime`, `endTime`, `seenDuration`, `name`, and `ID`.<br/>order: asc and desc.<br/>Example: `https://www.videoindexer.ai/embed/insights/<accountId>/<videoId>/?sort=labels_id_asc,keywords_name_desc` renders the labels sorted by ID in ascending order and keywords sorted by name in descending order.| 
+|`location` ||The `location` parameter must be included in the embedded links; see [how to get the name of your region](regions.md). If your account is in preview, the `trial` should be used for the location value. `trial` is the default value for the `location` parameter.| 
 
 ### Player widget
 
@@ -40,9 +40,9 @@ You can use the Player widget to stream video by using adaptive bit rate. The Pl
 |`captions` | A language code / A language code array | Fetches the caption in the specified language during the widget loading to be available on the **Captions** menu.<br/> Example: `captions=en-US`, `captions=en-US,es-ES` |
 |`showCaptions` | A Boolean value | Makes the player load with the captions already enabled.<br/> Example: `showCaptions=true`. |
 |`type`| | Activates an audio player skin (the video part is removed).<br/> Example: `type=audio`. |
-|`autoplay` | A Boolean value | Indicates if the player should start playing the video when loaded. The default value is `true`.<br/> Example: `autoplay=false`. |
+|`autoplay` | A Boolean value | Indicates if the player should start playing the video when loaded. The default value is `true`.<br/> Example: `autoplay=false`. The ability to use autoplay is subject to the policy of the web browser being used: [Firefox](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide#autoplay_availability), [Google Chrome](https://developer.chrome.com/blog/autoplay/), [MacOS Webkit](https://webkit.org/blog/7734/auto-play-policy-changes-for-macos/) |
 |`language`/`locale` | A language code | Controls the player language. The default value is `en-US`.<br/>Example: `language=de-DE`.|
-|`location` ||The `location` parameter must be included in the embedded links, see [how to get the name of your region](regions.md). If your account is in preview, the `trial` should be used for the location value. `trial` is the default value for the `location` parameter.| 
+|`location` ||The `location` parameter must be included in the embedded links; see [how to get the name of your region](regions.md). If your account is in preview, the `trial` should be used for the location value. `trial` is the default value for the `location` parameter.| 
 |`boundingBoxes`|Array of bounding boxes. Options: people (faces), observed people and detected objects. <br/>Values should be separated by a comma (",").|Controls the option to set bounding boxes on/off when embedding the player.<br/>All mentioned option will be turned on.<br/><br/>Example: `boundingBoxes=observedPeople,people,detectedObjects`<br/>Default value is `boundingBoxes=observedPeople,detectedObjects` (only observed people and detected objects bounding box are turned on).|
 
 ### Editor widget
@@ -126,8 +126,8 @@ This section shows how to achieve interaction between two Azure AI Video Indexer
 
 1. Copy the Player widget embed code.
 2. Copy the Insights embed code.
-3. Add the [Mediator file](https://breakdown.blob.core.windows.net/public/vb.widgets.mediator.js) to handle the communication between the two widgets:<br/> 
-`<script src="https://breakdown.blob.core.windows.net/public/vb.widgets.mediator.js"></script>`
+3. Add the [Mediator file](https://vi-static-prod-gdh6d4ggexcmgua5.b01.azurefd.net/public/vb.widgets.mediator.js) to handle the communication between the two widgets:<br/> 
+`<script src="https://vi-static-prod-gdh6d4ggexcmgua5.b01.azurefd.net/public/vb.widgets.mediator.js"></script>`
 
 Now when a user selects the insight control on your app, the player jumps to the relevant moment.
 
