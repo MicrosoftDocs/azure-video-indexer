@@ -4,7 +4,7 @@ description: Embed Azure AI Video Indexer widgets in your apps. Azure AI Video I
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 2/04/2025
+ms.date: 2/05/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
@@ -127,7 +127,7 @@ This section shows how to achieve interaction between two Azure AI Video Indexer
 1. Copy the Player widget embed code.
 2. Copy the Insights embed code.
 3. Add the [Mediator file](https://vi-static-prod-gdh6d4ggexcmgua5.b01.azurefd.net/public/vb.widgets.mediator.js) to handle the communication between the two widgets:<br/> 
-`<script src="https://vi-static-prod-gdh6d4ggexcmgua5.b01.azurefd.net/public/vb.widgets.mediator.js"></script>`
+`<script src="https://aka.ms/vi-mediator-file"></script>`
 
 Now when a user selects the insight control on your app, the player jumps to the relevant moment.
 
@@ -143,7 +143,7 @@ If you use a video player other than Video Indexer Player, you must manually man
 
     ```html
     <video id="vid1" width="640" height="360" controls autoplay preload>
-       <source src="//breakdown.blob.core.windows.net/public/Microsoft%20HoloLens-%20RoboRaid.mp4" type="video/mp4" /> 
+       <source src="//vi-static-prod-gdh6d4ggexcmgua5.b01.azurefd.net/public/Microsoft%20HoloLens-%20RoboRaid.mp4" type="video/mp4" /> 
        Your browser does not support the video tag.
     </video>
     ```
