@@ -4,7 +4,7 @@ description: To stay up-to-date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 1/31/2025
+ms.date: 2/6/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
@@ -19,6 +19,18 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+## February 2025
+
+### URL change for widget mediator.js file
+
+Azure AI Video Indexer changed the URL to access the mediator.js file, which enables the embedded video player and insight widgets to interact. If your website uses the mediator.js file, we recommend that you update the URL prior to May 1st. The old URL stops working on May 1st, after which the player and insight widgets won't be able to interact.
+
+Old mediator.js URL: ```https://breakdown.blob.core.windows.net/public/vb.widgets.mediator.js```
+
+New mediator.js URL: ```https://aka.ms/vi-mediator-file```
+
+For more info, see [Embed widgets in your app or blog](video-indexer-embed-widgets.md#embed-widgets-in-your-app-or-blog-recommended).
 
 ## January 2025
 
