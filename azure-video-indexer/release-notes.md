@@ -4,7 +4,7 @@ description: To stay up-to-date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 2/6/2025
+ms.date: 2/13/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
@@ -21,6 +21,10 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Deprecated functionality
 
 ## February 2025
+
+### Added Indonesian and Lithuanian as source languages
+
+We added support for videos using the Indonesian and Lithuanian source languages. For a list of supported languages, see [Language support in Azure Video Indexer](language-support.md).
 
 ### URL change for widget mediator.js file
 
