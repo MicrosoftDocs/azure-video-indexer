@@ -4,7 +4,7 @@ description: This article provides a comprehensive list of language support by s
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 1/30/2025
+ms.date: 2/13/2025
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
@@ -89,7 +89,7 @@ This section explains the Video Indexer language options and has a table of the 
 | Hindi | hi-IN | ✔ | ✔ | ✔ |  | ✔ | ✔ |
 | Hungarian | hu-HU |  | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Icelandic | is-IS | ✔ |  |  |  |  |  |
-| Indonesian | id-ID |  |  | ✔ | ✔ | ✔ |  |
+| Indonesian | id-ID | ✔ |  | ✔ | ✔ | ✔ |  |
 | Irish | ga-IE | ✔ | ✔ | ✔ | ✔ |  |  |
 | Italian | it-IT | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Japanese | ja-JP | ✔ | ✔ | ✔ |  | ✔ | ✔ |
@@ -97,7 +97,7 @@ This section explains the Video Indexer language options and has a table of the 
 | Kiswahili | sw-KE |  |  |  |  | ✔ |  |
 | Korean | ko-KR | ✔ | ✔ | ✔ |  | ✔ | ✔ |
 | Latvian | lv-LV | ✔ | ✔ | ✔ | ✔ | ✔ |  |
-| Lithuanian | lt-LT |  |  | ✔ | ✔ | ✔ |  |
+| Lithuanian | lt-LT | ✔ |  | ✔ | ✔ | ✔ |  |
 | Malagasy | mg-MG |  |  |  |  | ✔ |  |
 | Malay | ms-MY | ✔ |  |  |  | ✔ |  |
 | Malayalam | ml-IN | ✔ | ✔ |  |  |  |  |
