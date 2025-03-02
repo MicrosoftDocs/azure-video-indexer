@@ -23,7 +23,7 @@ You can use private endpoints for your Azure AI Video Indexer accounts to allow 
 Using private endpoints for your Azure AI Video Indexer account enables you to:
 
 - Secure your Azure AI Video Indexer account by using a private link. You can manually configure the video indexer firewall to block all connections to the Video Indexer account coming from the public Video Indexer endpoint.
-- Securely connect to Azure AI Video Indexer accounts from on-premises networks that connect to the virtual network using [VPN](/azure/vpn-gateway/vpn-gateway-about-vpngateways) or [ExpressRoutes](/azure/expressroute/expressroute-locations) with private-peering.
+- Securely connect to Azure AI Video Indexer accounts from on-premises networks that connect to the virtual network using [VPN](/azure/vpn-gateway/vpn-gateway-about-vpngateways) or [ExpressRoutes](/azure/expressroute/expressroute-locations) with private peering.
 
 > [!IMPORTANT]
 >  - Video Indexer accounts are connected to an Azure Storage account. See [this article](storage-behind-firewall.md) to learn how to configure your Video Indexer account to connect to a storage account behind a firewall through trusted storage.
@@ -44,9 +44,11 @@ Azure AI Video Indexer account owners can manage consent requests and the privat
 >[!NOTE]
 > For details on how to configure your DNS settings for private endpoints, see Azure Private Endpoint DNS configuration.
 
-When you create a private endpoint, two DNS CNAME records for the Video Indexer account are created. The first is <`account name`>.api.videoindexer.ai, and the second is <`account name`>.privatelink.api.videoindexer.ai. By default, we also create a [private DNS zone](/azure/dns/private-dns-overview), corresponding to the private link subdomain (privatelink.api.videoindexer.ai), with the DNS record mapping <`account name`>.privatelink.api.videoindexer.ai to the private endpoint IP address.
+When you create a private endpoint, two DNS CNAME records for the Video Indexer account are created. The first is `<account name>.api.videoindexer.ai`, and the second is `<account name>.privatelink.api.videoindexer.ai`. 
 
-When you make a REST call to the FQDN endpoint URL from outside the virtual network with the private endpoint, the FQDN is resolved to the public endpoint of Video Indexer (api.videoindexer.ai). 
+By default, we also create a [private DNS zone](/azure/dns/private-dns-overview), corresponding to the private link subdomain `privatelink.api.videoindexer.ai`, with the DNS record mapping `<account name>.privatelink.api.videoindexer.ai` to the private endpoint IP address.
+
+When you make a REST request to the FQDN endpoint URL from outside the virtual network with the private endpoint, the FQDN is resolved to the public endpoint of Video Indexer (`api.videoindexer.ai`). 
 
 When the virtual network hosting the private endpoint resolves it, it resolves to the private endpoint's IP address.
 
