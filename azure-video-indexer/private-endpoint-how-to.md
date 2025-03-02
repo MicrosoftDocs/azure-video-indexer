@@ -4,17 +4,14 @@ description: This article shows you how to use private endpoints with Azure AI V
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 11/07/2024
+ms.date: 03/01/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
 
-# How to use private endpoints with Azure AI Video Indexer (preview)
+# How to use private endpoints with Azure AI Video Indexer
 
 This article shows you how to use private endpoints with Azure AI Video Indexer using the Azure portal. For an overview, see the [use cases for private endpoints with Azure AI Video Indexer](private-endpoint-overview.md).
-
-> [!IMPORTANT]
-> This feature is currently in preview. Sign up to request access to try this feature by filling out [this form](https://aka.ms/vi-enable-private-endpoint).
 
 ## Prerequisites
 
