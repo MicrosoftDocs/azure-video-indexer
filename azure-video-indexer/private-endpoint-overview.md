@@ -44,9 +44,9 @@ Azure AI Video Indexer account owners can manage consent requests and the privat
 >[!NOTE]
 > For details on how to configure your DNS settings for private endpoints, see Azure Private Endpoint DNS configuration.
 
-When you create a private endpoint, two DNS CNAME records for the Video Indexer account are created. The first is `<account name>.api.videoindexer.ai`, and the second is `<account name>.privatelink.api.videoindexer.ai`. 
+When you create a private endpoint, two DNS CNAME records for the Video Indexer account are created, `<account name>.api.videoindexer.ai` and `<account name>.privatelink.api.videoindexer.ai`.
 
-By default, we also create a [private DNS zone](/azure/dns/private-dns-overview), corresponding to the private link subdomain `privatelink.api.videoindexer.ai`, with the DNS record mapping `<account name>.privatelink.api.videoindexer.ai` to the private endpoint IP address.
+By default, we also create a [private DNS zone](/azure/dns/private-dns-overview) that corresponds to the private link subdomain `privatelink.api.videoindexer.ai`. The DNS record `<account name>.privatelink.api.videoindexer.ai` maps to the private endpoint IP address.
 
 When you make a REST request to the FQDN endpoint URL from outside the virtual network with the private endpoint, the FQDN is resolved to the public endpoint of Video Indexer (`api.videoindexer.ai`). 
 
