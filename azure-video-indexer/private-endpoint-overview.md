@@ -78,4 +78,4 @@ To understand more about creating a private endpoint in general, see [Create a p
 
 ## Try private endpoints with Azure AI Video Indexer
 
-To try private endpoints with your Azure AI Video Indexer account, see [How to use Private Endpoints with Azure AI Video Indexer](private-endpoint-how-to.md). However, you must fill out [this form](https://aka.ms/vi-enable-private-endpoint) before attempting to use private endpoints.
+To try private endpoints with your Azure AI Video Indexer account, see [How to use Private Endpoints with Azure AI Video Indexer](private-endpoint-how-to.md).
