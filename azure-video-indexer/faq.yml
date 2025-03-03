@@ -222,9 +222,9 @@ sections:
         answer: |
            There are no additional charges from Azure AI Video Indexer for calling the API.
       
-      - question: What is the approximate ingestion throughput in MBs per second? How many requests per minute are allowed? 
+      - question: What is the indexing upload limit? 
         answer: |
-           120 requests per minute are standard but can go up to 600 requests per minute. 
+           There is an upload API request limit of 10 requests per second and up to 120 requests per minute. 
         
   - name: Billing questions
     questions:
