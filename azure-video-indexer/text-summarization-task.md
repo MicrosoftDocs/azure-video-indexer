@@ -4,17 +4,17 @@ description: This article shows you how to use Azure OpenAI textual summarizatio
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 1/30/2025
+ms.date: 3/02/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
 
-# Use textual summarization (preview)
+# Use textual summarization
 
 This article shows you how to use textual summarization with Azure AI Video Indexer. This example uses Azure OpenAI model deployments.
 
 > [!NOTE]
-> This feature only works with a standard account. Create a [standard account](create-account.md).
+> This feature only works with a paid account. Create a [paid account](create-account.md).
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ Review the [overview of textual summarization](text-summarization-overview.md) a
 
 ### Cloud
 
-- An [Azure AI Video Indexer account](connect-azure-open-ai-task.md) connected to an Azure OpenAI account.
+- An [Azure AI Video Indexer paid account](connect-azure-open-ai-task.md) connected to an Azure OpenAI account.
 - Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted by application. You can apply for access to Azure OpenAI by completing [the form](https://aka.ms/oai/access).
 - An Azure OpenAI [GPT-35-Turbo, GPT-4, or GPT-4o](/azure/ai-services/openai/how-to/working-with-models?tabs=powershell) deployment. To benefit from keyframes based summaries, you must select an Azure OpenAI model that accepts visual input. Read more here:  [Azure OpenAI Service models](/azure/ai-services/openai/concepts/models?tabs=python-secure%2Cglobal-standard%2Cstandard-chat-completions). 
 - The Prompt Shields for direct attacks (jailbreak) filter should be added to the deployment. Read more here: [Use content filters (preview) with Azure OpenAI Service](/azure/ai-services/openai/how-to/content-filters#understand-other-filters).
