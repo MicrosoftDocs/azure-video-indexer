@@ -88,12 +88,6 @@ Azure AI Video Indexer supports the following file formats:
 | MPEG-4 Part 2                                                            |
 | Theora                                                                   |
 | YUV420 uncompressed, or mezzanine                                        |
-| Apple ProRes 422                                                         |
-| Apple ProRes 422 LT                                                      |
-| Apple ProRes 422 HQ                                                      |
-| Apple ProRes Proxy                                                       |
-| Apple ProRes 4444                                                        |
-| Apple ProRes 4444 XQ                                                     |
 | HEVC/H.265 Main Profile                                                  |
 
 ## Supported input audio codecs
