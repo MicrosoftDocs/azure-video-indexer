@@ -4,7 +4,7 @@ description: This article describes the supported formats and limitations of Azu
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 03/02/2025
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
@@ -23,7 +23,10 @@ If the video is uploaded from a URL, the file size limit is 30 GB. The URL must 
 
 ### File duration limit
 
-The file duration limit is 6 hours for all presets with the exclusion of the Basic Audio preset which has a file duration limit of 12 hours.
+The file duration limit is 6 hours for all presets with the exclusion of the Basic Audio preset which has a file duration limit of 12 hours. 
+
+> [!NOTE]
+> Recordings that are less than 2 seconds in duration could fail to index.
 
 ## Index request limit
 
