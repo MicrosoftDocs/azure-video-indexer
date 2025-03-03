@@ -4,7 +4,7 @@ description: This article is an overview of using private endpoints with Azure A
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 03/01/2025
+ms.date: 03/02/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
@@ -25,9 +25,7 @@ Using private endpoints for your Azure AI Video Indexer account enables you to:
 - Secure your Azure AI Video Indexer account by using a private link. You can manually configure the video indexer firewall to block all connections to the Video Indexer account coming from the public Video Indexer endpoint.
 - Securely connect to Azure AI Video Indexer accounts from on-premises networks that connect to the virtual network using [VPN](/azure/vpn-gateway/vpn-gateway-about-vpngateways) or [ExpressRoutes](/azure/expressroute/expressroute-locations) with private peering.
 
-> [!IMPORTANT]
->  - Video Indexer accounts are connected to an Azure Storage account. See [this article](storage-behind-firewall.md) to learn how to configure your Video Indexer account to connect to a storage account behind a firewall through trusted storage.
-> - Private Endpoints are supported for operations using the Video Indexer API. It isn't supported when using the Video Indexer [web app](https://www.videoindexer.ai/).
+[!INCLUDE [important-private-endpoint-storage-portal](includes/important-private-endpoint-storage-portal.md)]
 
 ## Conceptual overview
 

@@ -4,7 +4,7 @@ description: This article shows you how to use private endpoints with Azure AI V
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 03/01/2025
+ms.date: 03/02/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
@@ -15,7 +15,9 @@ This article shows you how to use private endpoints with Azure AI Video Indexer 
 
 ## Prerequisites
 
-- A [viirtual network and a subnet](/azure/virtual-network/quick-create-portal).
+- A [virtual network and a subnet](/azure/virtual-network/quick-create-portal).
+
+[!INCLUDE [important-private-endpoint-storage-portal](includes/important-private-endpoint-storage-portal.md)]
 
 ## Enable the private endpoint on the Azure AI Video Indexer account
 
@@ -23,7 +25,6 @@ When you [create the Azure AI Video Indexer account](create-account.md), you mig
 
 1. Sign in to the Azure portal.
 1. Navigate to the Azure AI Video Indexer account you want to work with and select **Settings**, then **Networking**. The Public access screen appears.
-1. If you haven't completed the form for accessing this feature, the Disabled radio button is disabled, and the message "The private endpoints feature is currently in preview. If you'd like to disable public access, fill out [the form](https://aka.ms/vi-enable-private-endpoint).
 1. Once you have access, select the **Disable** radio button.
 1. Select **+ Create a private endpoint**. The Create private endpoint screen appears.
 1. Select the subscription you want to work with.
@@ -35,6 +36,6 @@ When you [create the Azure AI Video Indexer account](create-account.md), you mig
 1. Select **Review + create**.
 1. Wait for the validation.
 1. Select **Create**.
-    1. If you're creating the private endpoint at the same time you're creating an Azure AI Video Indexer account, Wait for another validation.
+    1. If you're creating the private endpoint at the same time you're creating an Azure AI Video Indexer account, wait for another validation.
     1. Select **Create** again.
 1. Wait for the deployment.
