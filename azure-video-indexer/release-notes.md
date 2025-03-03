@@ -4,7 +4,7 @@ description: To stay up-to-date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.collection: ce-skilling-ai-copilot
-ms.date: 3/1/2025
+ms.date: 3/2/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
@@ -39,6 +39,10 @@ Old mediator.js URL: ```https://breakdown.blob.core.windows.net/public/vb.widget
 New mediator.js URL: ```https://aka.ms/vi-mediator-file```
 
 For more info, see [Embed widgets in your app or blog](video-indexer-embed-widgets.md#embed-widgets-in-your-app-or-blog-recommended).
+
+## Multi-modal video summarization now generally available
+
+Multi-Modal Video Summarization is now generally available for Azure Video Indexer. This feature uses the latest LLM and SLM technology such as Azure Open AI and Phi models to provide comprehensive summaries of video content by combining insights from multiple modalities, including audio, visual and text.
 
 ## January 2025
 
