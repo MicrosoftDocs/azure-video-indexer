@@ -22,6 +22,8 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 ## March 2025
 
+### Azure AI Video Indexer support for private endpoints
+
 Azure AI Video Indexer support for private endpoints is now generally available. With this, organizations can enhance security by using private endpoints to allow clients on a virtual network to securely access data over a Private Link. This ensures data traffic travels privately via Microsoft's backbone network, instead if using public endpoints.  To learn more, see [Private endpoints with Azure AI Video Indexer](private-endpoint-overview.md).
 
 ## February 2025
