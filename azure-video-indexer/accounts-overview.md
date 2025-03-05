@@ -1,8 +1,8 @@
 ---
 title:  Azure AI Video Indexer accounts  
-description: This article gives an overview of Azure AI Video Indexer accounts.
-author: IngridAtMicrosoft
-ms.author: inhenkel
+description: This article provides an overview of Azure AI Video Indexer accounts, including trial, paid, and deprecated classic accounts.
+author: bandersmsft
+ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/09/2024
 ms.service: azure-video-indexer
