@@ -4,7 +4,7 @@ description: This article provides an overview of Azure AI Video Indexer account
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 03/05/2025
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
