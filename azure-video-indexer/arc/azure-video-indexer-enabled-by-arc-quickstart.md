@@ -133,6 +133,8 @@ Deploy with an ARM template or Bicep:
 
 > [!div class="nextstepaction"]
 > [ARM template](../deploy-with-arm-template.md)
-> [Bicep](../deploy-with-bicep.md). 
+
+> [!div class="nextstepaction"]
+> [Bicep](../deploy-with-bicep.md)
 
 For more detailed instructions, see the [Samples repo README](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks).
