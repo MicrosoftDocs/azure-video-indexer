@@ -10,7 +10,7 @@ ms.topic: quickstart
 #customer intent: As a video content manager, I want to enable Azure AI Video Indexer as an Arc extension in my infrastructure to analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
 ---
 
-# Try Azure AI Video Indexer enabled by Arc (preview)
+# Try Azure AI Video Indexer enabled by Arc
 
 [!INCLUDE [Arc intro](../includes/arc-intro.md)]
 
