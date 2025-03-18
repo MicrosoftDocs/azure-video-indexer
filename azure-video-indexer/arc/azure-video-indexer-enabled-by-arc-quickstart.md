@@ -126,7 +126,6 @@ The extension default settings are set to handle the common workloads, for speci
 | storage.useExternalPvc | false | Determines whether an external PVC is used. When true, the VideoIndexer PVC isn't installed. |
 | scaling.ai.maxReplicaCount | 20 | Sets the AI workload max pod scale (not including summarization)|
 
-
 ## Next steps
 
 Deploy with an ARM template or Bicep:
