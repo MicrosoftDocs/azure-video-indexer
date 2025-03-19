@@ -1,12 +1,13 @@
 ---
 title: Private endpoints with Azure AI Video Indexer
-description: This article is an overview of using private endpoints with Azure AI Video Indexer.
-author: IngridAtMicrosoft
-ms.author: inhenkel
+description: This article provides an overview of using private endpoints with Azure AI Video Indexer to ensure secure and private connectivity within your virtual network.
+author: bandersmsft
+ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 03/02/2025
+ms.date: 03/19/2025
 ms.service: azure-video-indexer
-ms.topic: article
+ms.topic: concept-article
+#customer intent: As a network administrator, I want to understand and implement private endpoints for Azure AI Video Indexer to ensure secure and private connectivity within my virtual network.
 ---
 
 # Private endpoints with Azure AI Video Indexer
@@ -31,16 +32,16 @@ Using private endpoints for your Azure AI Video Indexer account enables you to:
 
 A private endpoint is a special network interface for an Azure service in your virtual network. When you create a private endpoint for your Video Indexer account, it provides secure connectivity between clients on your virtual network and your Video Indexer instance. The private endpoint is assigned an IP address from the IP address range of your virtual network. The connection between the private endpoint and the Azure AI Video Indexer service uses a secure private link.
 
-Applications in the virtual network can connect to the Azure AI Video Indexer service over the private endpoint seamlessly by making requests with the Video Indexer REST API, using the FQDN of their Azure AI Video Indexer instance. The connection uses the same authorization.
+Applications in the virtual network can connect to the Azure AI Video Indexer service over the private endpoint seamlessly. They can make requests with the Video Indexer REST API, using the fully qualified domain name (FQDN) of their Azure AI Video Indexer instance. The connection uses the same authorization.
 
 When you create a private endpoint for an Azure AI Video Indexer account in your virtual network, a consent request is sent for approval to the Azure AI Video Indexer account owner. If the user requesting the creation of the private endpoint is also an owner of the Azure AI Video Indexer account, this consent request is automatically approved.
 
-Azure AI Video Indexer account owners can manage consent requests and the private endpoints through the 'Private endpoints' tab for the Video Indexer account in the Azure portal.
+Azure AI Video Indexer account owners can manage consent requests and the private endpoints through the **Private endpoints** tab for the Video Indexer account in the Azure portal.
 
 ## DNS changes for private endpoints
 
 >[!NOTE]
-> For details on how to configure your DNS settings for private endpoints, see Azure Private Endpoint DNS configuration.
+> For details about how to configure your DNS settings for private endpoints, see [Azure Private Endpoint DNS integration](/azure/private-link/private-endpoint-dns-integration).
 
 When you create a private endpoint, two DNS CNAME records for the Video Indexer account are created, `<account name>.api.videoindexer.ai` and `<account name>.privatelink.api.videoindexer.ai`.
 
