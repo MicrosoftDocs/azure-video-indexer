@@ -1,12 +1,13 @@
 ---
 title: How to use private endpoints with Azure AI Video Indexer
-description: This article shows you how to use private endpoints with Azure AI Video Indexer..
-author: IngridAtMicrosoft
-ms.author: inhenkel
+description: Learn how to configure private endpoints for Azure AI Video Indexer to ensure secure and private connectivity within your virtual network.
+author: bandersmsft
+ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 03/02/2025
+ms.date: 03/19/2025
 ms.service: azure-video-indexer
-ms.topic: article
+ms.topic: how-to
+#customer intent: As a network administrator, I want to configure private endpoints for Azure AI Video Indexer to ensure secure and private connectivity within my virtual network.
 ---
 
 # How to use private endpoints with Azure AI Video Indexer
@@ -21,9 +22,9 @@ This article shows you how to use private endpoints with Azure AI Video Indexer 
 
 ## Enable the private endpoint on the Azure AI Video Indexer account
 
-When you [create the Azure AI Video Indexer account](create-account.md), you might not have configured networking. This is fine. You can configure networking after the account is created:
+When you [create the Azure AI Video Indexer account](create-account.md), networking might not be configured. This situation is fine. You can configure networking after the account is created:
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 1. Navigate to the Azure AI Video Indexer account you want to work with and select **Settings**, then **Networking**. The Public access screen appears.
 1. Once you have access, select the **Disable** radio button.
 1. Select **+ Create a private endpoint**. The Create private endpoint screen appears.
