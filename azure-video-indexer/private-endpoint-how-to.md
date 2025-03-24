@@ -4,7 +4,7 @@ description: Learn how to configure private endpoints for Azure AI Video Indexer
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 03/19/2025
+ms.date: 03/24/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 #customer intent: As a network administrator, I want to configure private endpoints for Azure AI Video Indexer to ensure secure and private connectivity within my virtual network.
@@ -13,6 +13,8 @@ ms.topic: how-to
 # How to use private endpoints with Azure AI Video Indexer
 
 This article shows you how to use private endpoints with Azure AI Video Indexer using the Azure portal. For an overview, see the [use cases for private endpoints with Azure AI Video Indexer](private-endpoint-overview.md).
+
+Private endpoints are supported in all public regions supported by Azure AI Video Indexer. They are not supported in sovereign cloud regions, such as Azure in China and Azure for US Government.
 
 ## Prerequisites
 

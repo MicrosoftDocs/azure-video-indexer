@@ -1,10 +1,10 @@
 ---
 title: Use textual summarization
-description: This article shows you how to use Azure OpenAI textual summarization with Azure AI Video Indexer. 
-author: IngridAtMicrosoft
-ms.author: inhenkel
+description: This article explains how to use Azure OpenAI textual summarization with Azure AI Video Indexer.
+author: bandersmsft
+ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 3/02/2025
+ms.date: 3/24/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
@@ -23,8 +23,8 @@ Review the [overview of textual summarization](text-summarization-overview.md) a
 ### Cloud
 
 - An [Azure AI Video Indexer paid account](connect-azure-open-ai-task.md) connected to an Azure OpenAI account.
-- Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted by application. You can apply for access to Azure OpenAI by completing [the form](https://aka.ms/oai/access).
-- An Azure OpenAI [GPT-35-Turbo, GPT-4, or GPT-4o](/azure/ai-services/openai/how-to/working-with-models?tabs=powershell) deployment. To benefit from keyframes based summaries, you must select an Azure OpenAI model that accepts visual input. Read more here:  [Azure OpenAI Service models](/azure/ai-services/openai/concepts/models?tabs=python-secure%2Cglobal-standard%2Cstandard-chat-completions). 
+- Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service gets granted by application. For more information about how to apply for access to Azure OpenAI, see [Limited access for Azure OpenAI Service](https://aka.ms/oai/access).
+- An Azure OpenAI [GPT-35-Turbo, GPT-4, GPT-4o, or GPT-4O-mini](/azure/ai-services/openai/how-to/working-with-models?tabs=powershell) deployment. To benefit from keyframes based summaries, you must select an Azure OpenAI model that accepts visual input. For more information, see [Azure OpenAI Service models](/azure/ai-services/openai/concepts/models?tabs=python-secure%2Cglobal-standard%2Cstandard-chat-completions). 
 - The Prompt Shields for direct attacks (jailbreak) filter should be added to the deployment. Read more here: [Use content filters (preview) with Azure OpenAI Service](/azure/ai-services/openai/how-to/content-filters#understand-other-filters).
 - We recommended that you configure harmful content filters for categories such as “Violence,” “Hate,” “Sexual,” and “Self-harm.” While these filters aren't mandatory, you should set them to either "Medium" or "Low" to filter out content of at least the Medium level of harmfulness. This setting ensures that content with a harmfulness rating of medium or higher is blocked. For increased safety, you can opt for a stricter setting. Once configured, save the content filter settings.  
 
@@ -47,14 +47,14 @@ Azure AI Video Indexer enabled by Arc allows you to use Azure AI Video Indexer o
 It's easier to follow these instructions if you already have the needed web pages open. Copy and paste the following parameters to your favorite text editor. Here's a list to get you started:
 
 - VI account ID:
-- video file ID: 
+- video file ID:
 - deployment name:
 - access token:
 
 1. Open the [Azure portal](https://portal.azure.com) in one tab or window, and sign in.
     1. Navigate to the Azure AI Video Indexer account page for the account ID.
     1. Navigate to the Azure OpenAI account page
-        1. From the menu, select Model deployments, then select Manage deployments. The Azure OpenAI Studio opens. Copy the Deployment Name you want to use. 
+        1. From the menu, select Model deployments, then select Manage deployments. The Azure OpenAI Studio opens. Copy the Deployment Name you want to use.
 1. Open the [Azure AI Video Indexer web portal](https://www.videoindexer.ai) in another tab or window and sign in.
     1. Navigate to the library page, choose a video, then right-click on it for the video file ID.
 1. Open the [Azure AI Video Indexer API](https://api-portal.videoindexer.ai/) in another tab or window and sign in.
@@ -68,11 +68,11 @@ You can use the Azure AI Video Indexer web portal to summarize text.
 1. If you don't have the web portal open already, open the [Azure AI Video Indexer web portal](https://api-portal.videoindexer.ai/).
 1. Upload a file and wait for it to index.
 1. Select the video to navigate to the media page.
-1. If you want to use keyframes to produce the summary, select the **Include visual keyframe insights to get better quality summary** checkbox.
+1. If you want to use keyframes to produce the summary, select the **Include visual keyframe insights to get better quality summary** option.
 1. Select **Generate summary**. The textual summary is generated.
 
 > [!NOTE]
-> If you aren't seeing the **Generate summary** button, you might be using a trial account. Create a [standard account](create-account.md) to use this feature.
+> If you aren't seeing the **Generate summary** button, you might be using a trial account. To use this feature, create a [standard account](create-account.md).
 
 ## Summary customizations
 
@@ -153,7 +153,7 @@ Deleting the video summary is as simple as selecting DEL Delete Video Summary, u
 | Create-Video-Summary | 400 | Invalid summary style value '{style} | INVALID_INPUT |  |  |
 | Get-Video-Summary | 200 | NA | NA |  |  |
 | Get-Video-Summary | 404 | Summary '{summaryId}' not found for video '{videoId}' | NOT_FOUND |  |  |
-| Get-Video-Summary | 200 | Couldn’t generate a summary because the video content was flagged as harmful. For details, see [Content filters](/azure/ai-services/openai/concepts/content-filter) | NA | All sections in the video have triggered the content filter. | There's no solution for the specific video. |
+| Get-Video-Summary | 200 | Couldn’t generate a summary because the video content was flagged as harmful. For details, see [Content filters](/azure/ai-services/openai/concepts/content-filter). | NA | All sections in the video have triggered the content filter. | There's no solution for the specific video. |
 | Get-Video-Summary | 200 | Not enough information in order to generate summary. | NA | The video insights don't contain enough information in order to create prompts for Azure OpenAI | If the preset of the video doesn't contain all the models, then reindexing with a more advanced preset that contains audio might help. |
 | Get-Video-Summary | 200 | Couldn't get Azure OpenAI deployments for resource {_resourceName} |  |  |  |
 | Get-Video-Summary | 200 | Deployment {DeploymentName} doesn't exist |  |  |  |
@@ -169,41 +169,41 @@ Before looking for specific solutions, be sure that you created the resources in
 
 ### Generate summary doesn't appear
 
-You might not have connected your Azure OpenAI account to the Azure AI Video Indexer account correctly.
+Your Azure OpenAI account might be connected to your Azure AI Video Indexer account incorrectly.
 
 ### Couldn't generate summary
 
 - You need to add content filters to the deployment to avoid showing harmful content. Go back to the Azure OpenAI studio and add filters to your deployment.
-- You might have created a permissive content filter for content that has sensitive or harmful content. The content filter needs to be at least Medium. If you set the content filter to Medium AND harmful content remains in the video, the filter is triggered. In this case, there's no solution. 
-- You might not have asked for a transcript or there might not be enough information generated during the indexing process.
+- You created a permissive content filter for content that has sensitive or harmful content. The content filter needs to be at least Medium. If you set the content filter to Medium AND harmful content remains in the video, the filter is triggered. In this case, there's no solution.
+- You didn't request a transcript or there might not be enough information generated during the indexing process.
 - You might be using an advanced preset.
 - The video might not have enough audio in it to create a transform.
 
 ### Unable to use a model deployment or deployment missing
 
-- You might not have created a deployment.
-- Someone might have changed or deleted the deployed model.
+- You didn't create a deployment.
+- Someone changed or deleted the deployed model.
 
-### Throttling 
+### Throttling
 
 There might be too many requests being sent to VI. Wait for a few minutes and try again.
 
 ### You receive the error "filter not found"
 
-If you get a filter not found error, you get a detailed error describing what is missing. The error looks similar to this, but might have details about other missing things:
+If you get a filter not found error, you get a detailed error describing what is missing. The error might resemble the following example, but might have details about other missing things:
 
 <pre>
 ErrorType":"SUMMARY_FILTERS_NOT_FOUND","Message":"Couldn't generate a summary because the model needs to be set with the right content filters to avoid showing harmful content. Input filter 'Jailbreak' must be enabled with action set to 'Annotate and block'. Trace id: '00000000-0000-0000-0000-000000000000'.
 </pre>
 
 > [!NOTE]
-> The jailbreak filter is only required when using a keyframes based summary or a regular summary, as of November 1st, 2024.
+> The jailbreak filter is only required when using a keyframes based summary or a regular summary, as of November 1, 2024.
 
 To resolve the jailbreak issue:
 
 1. Select **Go to Azure Open AI studio**.
 1. Select **Deployments**.
-1. Select the deployment you're working with. 
+1. Select the deployment you're working with.
 1. Select **Edit**.
 1. Configure the filters to have at least Medium level for each category.
 1. Apply [prompt shields for jailbreak attacks](/azure/ai-services/openai/concepts/content-filter?tabs=warning%2Cuser-prompt%2Cpython#prompt-shield-content).
