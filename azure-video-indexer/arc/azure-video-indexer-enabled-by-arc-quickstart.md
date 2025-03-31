@@ -4,7 +4,7 @@ description: This article walks you through the steps required to enable Video I
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 03/18/2025
+ms.date: 03/31/2025
 ms.service: azure-video-indexer
 ms.topic: quickstart
 #customer intent: As a video content manager, I want to enable Azure AI Video Indexer as an Arc extension in my infrastructure to analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
@@ -61,17 +61,17 @@ To view minimum hardware requirements in a *production* environment, see the [Mi
 
 Here's a table of the parameters used to configure the extension.
 
-| Parameter | Default value | Description |
-| --------- | ------- | ----------- |
-| release-namespace | yes | The Kubernetes namespace that the extension is installed into |
-| cluster-name |  | The Kubernetes Azure Arc instance name
-| resource-group |  | The Kubernetes Azure Arc resource group name
-| version | yes | Video Indexer Extension version, leave empty for latest |
-| videoIndexer.accountId |  | Video Indexer account ID |
-| videoIndexer.endpointUri |  | DNS name or IP address to be used as the extension external endpoint.|
-| ViAi.gpu.enabled | false |  Enable GPU usage for summarization |
-| ViAi.gpu.tolerations.key | | Maps the nodes where summarization runs with GPU. Convention is to set to `nvidia.com/gpu` |
-| ViAi.gpu.nodeSelector.workload | | Identifies the node selected for summarization. Set to `summarization`.|
+| Parameter | Description |
+| --- |--- |
+| release-namespace | The Kubernetes namespace that the extension is installed into |
+| cluster-name | The Kubernetes Azure Arc instance name
+| resource-group | The Kubernetes Azure Arc resource group name
+| version | Video Indexer Extension version, leave empty for latest |
+| videoIndexer.accountId | Video Indexer account ID |
+| videoIndexer.endpointUri | URL containing a DNS name or IP address to be used as the extension external endpoint|
+| ViAi.gpu.enabled | Enable GPU usage for summarization |
+| ViAi.gpu.tolerations.key | Maps the nodes where summarization runs with GPU. Convention is to set to `nvidia.com/gpu` |
+| ViAi.gpu.nodeSelector.workload | Identifies the node selected for summarization. Set to `summarization`.|
 
 
 ## Prepare for deployment
@@ -128,12 +128,4 @@ The extension default settings are set to handle the common workloads, for speci
 
 ## Next steps
 
-Deploy with an ARM template or Bicep:
-
-> [!div class="nextstepaction"]
-> [ARM template](../deploy-with-arm-template.md)
-
-> [!div class="nextstepaction"]
-> [Bicep](../deploy-with-bicep.md)
-
-For more detailed instructions, see the [Samples repo README](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks).
+Review the [Azure AI Video Indexer enabled by Arc samples](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc).

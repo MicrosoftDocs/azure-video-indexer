@@ -4,7 +4,7 @@ description: Azure AI Video Indexer enabled by Arc performs video and audio anal
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 03/18/2025
+ms.date: 03/31/2025
 ms.service: azure-video-indexer
 ms.topic: overview
 #customer intent: As a video content manager, I want to use Azure AI Video Indexer analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
@@ -45,7 +45,7 @@ The extension is supported in [direct connection mode](/azure/azure-arc/data/con
 
 ## Language models
 
-The Phi 3 language model is included and automatically connected with your VI extension. You can start using it immediately. For more information about using language models with VI, see:
+The Phi language model is included and automatically connected with your VI extension. You can start using it immediately. For more information about using language models with VI, see:
 
 - [Use textual summarization](../text-summarization-task.md)
 - [Use Azure AI Video Indexer to create prompt content](../prompt-overview.md)
@@ -87,7 +87,7 @@ Azure AI Video Indexer enabled by Arc supports the following indexing presets:
 | [Object detection](/azure/azure-video-indexer/object-detection) | ✔ |  | ✔ |
 | [Scene detection](/azure/azure-video-indexer/scenes-shots-keyframes) | ✔ |  | ✔ |
 | [Shot detection](/azure/azure-video-indexer/scenes-shots-keyframes) | ✔ |  | ✔ |
-| [Summarization](/azure/azure-video-indexer/text-summarization-overview) | ✔ | ✔ |  |
+| [Summarization](/azure/azure-video-indexer/text-summarization-overview) | ✔ | ✔ | ✔ |
 
 <!--
 :::image type="content" source="../media/common/avi-flow-edge.svg" lightbox="../media/common/avi-flow-edge.svg" alt-text="Graphic Azure AI Video Indexer enabled by Arc available presets already listed":::
@@ -150,8 +150,15 @@ Azure AI Video Indexer enabled by Arc also supports bringing your own model. For
 - After extension installation or upgrade, expect the *first* index\translation process duration to be longer than normal. The longer duration is due to AI model image download. The duration varies depending on network speed.
 - Only one Video Indexer extension can be deployed per Arc enabled Kubernetes cluster.
 - The cluster's volume performance (based on storage class) has significant influence on the turnover duration of the indexing job especially since the frame extraction is writing all frames into the volume.
-- You can use only cloud account access tokens obtained in the Azure portal. Cloud video access tokens aren't supported. When you use the API, extension access tokens are available and we support all types.
+- Only extension access tokens are supported. You can obtain extension access tokens with from API/CLI. For samples to get-access-token, see [How to access the extension](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks#how-to-acccess-the-extension-).
 -   Video error messages aren't stored due to memory limitations.
+
+## Use Azure Container Storage enabed by Arc
+
+We recommend that you use Azure Container Storage enabled by Azure Arc for storage. For more information, see the following articles:
+
+- [What is Azure Container Storage enabled by Azure Arc?](/azure/azure-arc/container-storage/overview)
+- [Prepare Linux for Edge Volumes](/azure/azure-arc/container-storage/prepare-linux-edge-volumes)
 
 ## Related content
 
