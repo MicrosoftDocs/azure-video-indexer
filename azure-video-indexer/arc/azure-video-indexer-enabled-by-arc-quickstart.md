@@ -64,14 +64,14 @@ Here's a table of the parameters used to configure the extension.
 | Parameter | Description |
 | --- |--- |
 | release-namespace | The Kubernetes namespace that the extension is installed into |
-| cluster-name | The Kubernetes Azure Arc instance name
-| resource-group | The Kubernetes Azure Arc resource group name
-| version | Video Indexer Extension version, leave empty for latest |
+| cluster-name | The Kubernetes Azure Arc instance name |
+| resource-group | The Kubernetes Azure Arc resource group name |
+| version | Video Indexer Extension version, leave empty for latest |
 | videoIndexer.accountId | Video Indexer account ID |
-| videoIndexer.endpointUri | URL containing a DNS name or IP address to be used as the extension external endpoint|
+| videoIndexer.endpointUri | URL containing a DNS name or IP address to be used as the extension external endpoint |
 | ViAi.gpu.enabled | Enable GPU usage for summarization |
 | ViAi.gpu.tolerations.key | Maps the nodes where summarization runs with GPU. Convention is to set to `nvidia.com/gpu` |
-| ViAi.gpu.nodeSelector.workload | Identifies the node selected for summarization. Set to `summarization`.|
+| ViAi.gpu.nodeSelector.workload | Identifies the node selected for summarization. Set to `summarization`. |
 
 
 ## Prepare for deployment

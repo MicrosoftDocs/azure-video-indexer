@@ -150,10 +150,10 @@ Azure AI Video Indexer enabled by Arc also supports bringing your own model. For
 - After extension installation or upgrade, expect the *first* index\translation process duration to be longer than normal. The longer duration is due to AI model image download. The duration varies depending on network speed.
 - Only one Video Indexer extension can be deployed per Arc enabled Kubernetes cluster.
 - The cluster's volume performance (based on storage class) has significant influence on the turnover duration of the indexing job especially since the frame extraction is writing all frames into the volume.
-- Only extension access tokens are supported. You can obtain extension access tokens with from API/CLI. For samples to get-access-token, see [How to access the extension](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks#how-to-acccess-the-extension-).
+- Only extension access tokens are supported. You can obtain extension access tokens from API/CLI. For samples to get-access-token, see [How to access the extension](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks#how-to-acccess-the-extension-).
 -   Video error messages aren't stored due to memory limitations.
 
-## Use Azure Container Storage enabed by Arc
+## Azure Container Storage enabled by Arc
 
 We recommend that you use Azure Container Storage enabled by Azure Arc for storage. For more information, see the following articles:
 
