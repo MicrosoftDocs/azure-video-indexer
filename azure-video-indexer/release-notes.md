@@ -24,7 +24,7 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 ### General Availability of Azure AI Video Indexer enabled by Arc
 
-Azure AI Video Indexer enabled by Arc is now generally available. With it you can run Video Indexer in your edge environment to generate audio and video insights and textual summaries on videos in more than 30 source languages. For more information, see [Azure AI Video Indexer enabled by Arc](/arc/azure-video-indexer-enabled-by-arc-overview.md).
+Azure AI Video Indexer enabled by Arc is now generally available. With it you can run Video Indexer in your edge environment to generate audio and video insights and textual summaries on videos in more than 30 source languages. For more information, see [Azure AI Video Indexer enabled by Arc](arc/azure-video-indexer-enabled-by-arc-overview.md).
 
 ### Azure AI Video Indexer support for private endpoints
 
