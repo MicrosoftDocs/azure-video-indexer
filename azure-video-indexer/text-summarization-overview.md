@@ -1,15 +1,15 @@
 ---
 title: Textual Video Summary with Azure OpenAI
 description: This article is an overview of textual summarization with Azure AI Video Indexer.
-author: IngridAtMicrosoft
-ms.author: inhenkel
+author: bandersmsft
+ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2024
+ms.date: 03/31/2025
 ms.service: azure-video-indexer
 ms.topic: overview
 ---
 
-# Textual summarization with Azure AI Video Indexer (preview)
+# Textual summarization with Azure AI Video Indexer
 
 This article is an overview of textual summarization with Azure AI Video Indexer.
 
@@ -28,7 +28,7 @@ The system provides options for feedback, enabling it to learn and improve over 
 
 ## Textual summarization with keyframes
 
-Textual video summarization with keyframes uses keyframes from the video to generate a more comprehensive summary. This feature is particularly useful when there is limited audio content, such as transcription, or when a more holistic summary is desired. 
+Textual video summarization with keyframes uses keyframes from the video to generate a more comprehensive summary. This feature is useful when there's limited audio content, such as transcription, or when a more holistic summary is desired. 
 
 ## Use cases 
 
@@ -41,11 +41,11 @@ The intended uses of the AI-based video summarization system are to provide user
 
 ## Textual summarization on VI enabled by Arc 
 
-If you're using the VI enbabled by Arc extension, you can generate a summary from the video page in the web portal and use the same functionality such as customizations but there's no option to change the model deployment. Instead, every new extension created includes a local [Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model that is developed by Microsoft. There's no charge for requests to the model.
+If you're using the VI enabled by Arc extension, you can generate a summary from the video page in the web portal and use the same functionality such as customizations but there's no option to change the model deployment. Instead, every new extension created includes a local [Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model that is developed by Microsoft. There's no charge for requests to the model.
 
 ## Transparency notes
 
-For more information about specifications and limittions, see the [Textual summarization section of the transparency notes](/legal/azure-video-indexer/transparency-note#text-summarization).
+For more information about specifications and limitations, see the [Textual summarization section of the transparency notes](/legal/azure-video-indexer/transparency-note#text-summarization).
 
 ## Try textual video summarization
 [Try using textual video summarization](text-summarization-task.md).
