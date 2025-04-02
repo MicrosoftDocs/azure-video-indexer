@@ -1,10 +1,10 @@
 ---
 title: Azure AI Video Indexer release notes | Microsoft Docs
 description: To stay up-to-date with the most recent developments, this article provides you with the latest updates on Azure AI Video Indexer.
-author: IngridAtMicrosoft
-ms.author: inhenkel
+author: bandersmsft
+ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 3/2/2025
+ms.date: 04/01/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
@@ -21,6 +21,10 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Deprecated functionality
 
 ## March 2025
+
+### General Availability of Azure AI Video Indexer enabled by Arc
+
+Azure AI Video Indexer enabled by Arc is now generally available. With it you can run Video Indexer in your edge environment to generate audio and video insights and textual summaries on videos in more than 30 source languages. For more information, see [Azure AI Video Indexer enabled by Arc](arc/azure-video-indexer-enabled-by-arc-overview.md).
 
 ### Azure AI Video Indexer support for private endpoints
 
