@@ -24,7 +24,7 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 ## Improved error messaging
 
-When you attempt to index an unsupported file type, the response returns an `UnsupportedFileType` error. For more information about supported file types, see [Supported file formats](vi-support-matrix.md#supported-file-formats).
+When you attempt to index an unsupported file type, the response returns an `UnsupportedFileType` error. For more information about supported file types, see [Supported file formats](avi-support-matrix.md#supported-file-formats).
 
 ## March 2025
 
