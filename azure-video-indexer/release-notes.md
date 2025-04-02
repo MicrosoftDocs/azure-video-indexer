@@ -4,7 +4,7 @@ description: To stay up-to-date with the most recent developments, this article 
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 04/01/2025
+ms.date: 04/02/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
@@ -19,6 +19,12 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+## April 2025
+
+## Improved error messaging
+
+When you attempt to index an unsupported file type, the response returns an `UnsupportedFileType` error. For more information about supported file types, see [Supported file formats](avi-support-matrix.md#supported-file-formats).
 
 ## March 2025
 
@@ -46,7 +52,7 @@ New mediator.js URL: ```https://aka.ms/vi-mediator-file```
 
 For more info, see [Embed widgets in your app or blog](video-indexer-embed-widgets.md#embed-widgets-in-your-app-or-blog-recommended).
 
-## Multi-modal video summarization now generally available
+### Multi-modal video summarization now generally available
 
 Multi-Modal Video Summarization is now generally available for Azure Video Indexer. This feature uses the latest LLM and SLM technology such as Azure Open AI and Phi models to provide comprehensive summaries of video content by combining insights from multiple modalities, including audio, visual and text.
 
