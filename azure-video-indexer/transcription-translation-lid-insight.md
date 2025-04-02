@@ -1,8 +1,8 @@
 ---
 title: Get media transcription, translation, and language identification insights  
 description: This article shows you how to get Azure AI Video Indexer Media transcription, translation, and language identification insights.
-author: IngridAtMicrosoft
-ms.author: inhenkel
+author: bandersmsft
+ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/09/2024
 ms.service: azure-video-indexer

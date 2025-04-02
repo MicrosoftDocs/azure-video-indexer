@@ -1,8 +1,8 @@
 ---
 title: Embed Azure AI Video Indexer widgets in your apps
 description: Embed Azure AI Video Indexer widgets in your apps. Azure AI Video Indexer supports embedding three types of widgets into your apps.
-author: IngridAtMicrosoft
-ms.author: inhenkel
+author: bandersmsft
+ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 2/05/2025
 ms.service: azure-video-indexer
