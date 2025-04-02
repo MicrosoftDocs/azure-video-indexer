@@ -1,8 +1,8 @@
 ---
 title: AMS VI retirement announcement
 description: AMS VI retirement announcement
-author: IngridAtMicrosoft
-ms.author: inhenkel
+author: bandersmsft
+ms.author: banders
 ms.date: 10/09/2024
 ms.service: azure-video-indexer
 ms.topic: include

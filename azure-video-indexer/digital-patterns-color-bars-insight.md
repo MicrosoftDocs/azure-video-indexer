@@ -1,8 +1,8 @@
 ---
 title: Enable and view digital patterns with color bars
 description: Learn about how to enable and view digital patterns with color bars.
-author: IngridAtMicrosoft
-ms.author: inhenkel
+author: bandersmsft
+ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/09/2024
 ms.service: azure-video-indexer
