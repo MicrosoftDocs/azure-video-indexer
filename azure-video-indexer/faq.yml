@@ -118,7 +118,7 @@ sections:
       answer: Yes. The Video Indexer extension's API is available via the frontend extension. You can restrict access to either an IP address or an FQDN. All communication occurs over secure traffic protocols, using a valid CA certificate. We recommend setting a security layer such as NSG or firewall to limit the access to the endpoint.
     - question: How can I troubleshoot my Azure AI Video Indexer enabled by Arc installation?
       answer: Consult the [troubleshooting guide](azure-video-indexer-enabled-by-arc-troubleshooting.md).
-  - name: Privacy Questions
+  - name: Privacy questions
     questions:
       - question: How is network traffic encrypted by Azure AI Video Indexer?
         answer: Communication between a client application and an Azure AI Video Indexer account is encrypted using Transport Layer Security (TLS). TLS is a standard cryptographic protocol that ensures privacy and data integrity between clients and services over the Internet. For more information about TLS, see [Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security). Video Indexer enforces a minimum of TLS v1.2. Customers can't control the cipher suits. Azure AI Video Indexer picks the first match between the client and server going from strong to weaker.
@@ -127,7 +127,7 @@ sections:
         answer: Yes, your video and audio files get stored. You can delete them from Azure AI Video Indexer using the Azure AI Video Indexer website or with APIs. For the trial, the video and audio files that you index are stored in the Azure region East US. Otherwise, your video and audio files are stored in the storage account of your Azure subscription.
 
       - question: Where does Azure AI Video Indexer store customer data?
-        answer: By default, your data is replicated to the paired region into which you deployed the Azure AI Video Indexer instance. For region with data residency requirements, your data is always kept within the same region. For more related information, check out other **Privacy Questions** in this section.
+        answer: By default, your data is replicated to the paired region into which you deployed the Azure AI Video Indexer instance. For region with data residency requirements, your data is always kept within the same region. For more related information, check out other **Privacy questions** in this section.
       
       - question: Can I delete my files that are stored in the Azure AI Video Indexer website?
         answer: Yes, you can always delete your video and audio files as well as any metadata and insights extracted from them by Azure AI Video Indexer. Once you delete a file from Azure AI Video Indexer, the file and its metadata and insights are permanently removed from Azure AI Video Indexer. However, if you implemented your own backup solution in Azure storage, the file remains in your Azure storage.
@@ -177,7 +177,7 @@ sections:
 
               This option can be explored if the Azure AI Video Indexer website is used directly by your users as the interface layer, and for public (unauthenticated) viewing.
 
-  - name: API Questions
+  - name: API questions
     questions:
       - question: What APIs does Azure AI Video Indexer offer?
         answer: |
@@ -238,11 +238,11 @@ sections:
       - question: Does Azure AI Video Indexer offer a trial account?
         answer: Yes, Azure AI Video Indexer offers a trial account that that provides you with 2,400 free indexing minutes. You use the time with [Azure AI Video Indexer](https://www.videoindexer.ai/) website or the Azure AI Video Indexer API. For more information, the [developer portal](https://api-portal.videoindexer.ai/).
 
-  - name: How to opt out results for specific AI models 
+  - name: Opt out questions
     questions:
       - question: How to opt out a specific result from a public AI model?
         answer: |
           Send a detailed explanation of your request to "Video Indexer Customer Support" <visupport@microsoft.com>. Include the following details: AI model you're referring to, the result you want opted out, the reason we should opt out the results, and an explanation of your request.
 
       - question: How long does it take?
-        answer: Processing the request might take few weeks.
+        answer: Processing the request might take a few weeks.
