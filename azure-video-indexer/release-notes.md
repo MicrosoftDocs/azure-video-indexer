@@ -22,7 +22,7 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 ## April 2025
 
-## Improved error messaging
+### Improved error messaging
 
 When you attempt to index an unsupported file type, the response returns an `UnsupportedFileType` error. For more information about supported file types, see [Supported file formats](avi-support-matrix.md#supported-file-formats).
 
@@ -1115,7 +1115,7 @@ Multiple advancements announced at IBC 2019:
 
     The topic inferencing model now supports deeper granularity of the IPTC taxonomy. Read full details at [Azure Media Services new AI-powered innovation](https://azure.microsoft.com/blog/azure-media-services-new-ai-powered-innovation/).
 
-## August 2019 updates
+## August 2019
 
 ### Azure AI Video Indexer deployed in UK South
 
