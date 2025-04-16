@@ -16,13 +16,13 @@ See [Monitoring Azure AI Video Indexer](monitor-video-indexer.md) for details on
 
 ## Metrics
 
-Azure AI Video Indexer currently does not support any metrics monitoring.
+Azure AI Video Indexer currently doesn't support any metrics monitoring.
 
 For more information, see a list of [all platform metrics supported in Azure Monitor](/azure/azure-monitor/platform/metrics-supported).
 
 ## Metric dimensions
 
-Azure AI Video Indexer currently does not support any metrics monitoring.
+Azure AI Video Indexer currently doesn't support any metrics monitoring.
 
 Azure AI Video Indexer has the following dimensions associated with its metrics.
 
@@ -39,7 +39,7 @@ Resource Provider and Type: [Microsoft.VideoIndexer/accounts](/azure/azure-monit
 | Category | Display Name | Additional information |
 |:---------|:-------------|------------------|
 | VIAudit   | Azure AI Video Indexer Audit Logs | Logs are produced from both the [Azure AI Video Indexer website](https://www.videoindexer.ai/) and the REST API. |
-| IndexingLogs | Indexing Logs | Azure AI Video Indexer indexing logs to monitor all files uploads, indexing and reindexing jobs. |
+| IndexingLogs | Indexing Logs | Azure AI Video Indexer indexing logs to monitor all files uploads, indexing, and reindexing jobs. |
 
 <!--
 ## Azure Monitor Logs tables

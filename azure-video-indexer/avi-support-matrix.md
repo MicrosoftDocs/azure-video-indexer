@@ -30,17 +30,17 @@ The file duration limit is 6 hours for all presets with the exclusion of the Bas
 
 ## Index request limit
 
-When uploading and indexing through the VI website, up to 10 videos can be indexed in a single request. When submitting requests through the API, there's an API request limit of 10 requests per second and up to 120 requests per minute.
+When you upload and index through the VI website, you can index up to 10 videos in a single request. When you submit requests through the API, there's an API request limit of 10 requests per second and up to 120 requests per minute.
 
 ## Languages
 
 See our [Language support article](language-support.md) for the list of languages supported.
 
-When using single or multi language detection, there's a limit of 10 languages allowed for identification during the indexing of a media file. You can select the 10 languages.
+When you use single or multi language detection, there's a limit of 10 languages allowed for identification during the indexing of a media file. You can select the 10 languages.
 
 ## OCR
 
-Video Indexer has an OCR limit of 50,000 words per indexed video. Once the limit has been reached, no additional OCR results are generated.
+Video Indexer has an OCR limit of 50,000 words per indexed video. Once the limit is reached, no more OCR results are generated.
 
 ## Projects
 

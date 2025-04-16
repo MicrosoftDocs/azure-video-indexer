@@ -11,24 +11,24 @@ ms.topic: article
 
 # Use Network Security Groups with Service Tags
 
-Azure AI Video Indexer is a service hosted on Azure. In some cases, the service must interact with other services to index video files (for example, a Storage account) or when you orchestrate indexing jobs against Azure AI Video Indexer API endpoint using your own service hosted on Azure (for example, AKS, Web Apps, Logic Apps, Functions).
+Azure AI Video Indexer is a service hosted on Azure. In some cases, the service must interact with other services to index video files. For example, a Storage account. In other cases, the service interacts with services when you orchestrate indexing jobs against Azure AI Video Indexer API endpoint when using your own service hosted on Azure. For example, Azure Kubernetes Service (AKS), Web Apps, Logic Apps, and Functions.
 
 > [!NOTE]
-> If you are already using "AzureVideoAnalyzerForMedia" Network Service Tag you may experience issues with your networking security group starting 9 January 2023. This is because we are moving to a new Security Tag label "VideoIndexer". The mitigatation is to remove the old "AzureVideoAnalyzerForMedia" tag from your configuration and deployment scripts and start using the "VideoIndexer" tag going forward.
+> If you're already using `AzureVideoAnalyzerForMedia` Network Service Tag, you might experience issues with your networking security group starting January 9, 2023. This situation occurs because we're moving to a new Security Tag label `VideoIndexer`. To mitigate the problem, remove the old `AzureVideoAnalyzerForMedia` tag from your configuration and deployment scripts. Then, use the `VideoIndexer` tag afterward.
 
-Use [Network Security Groups with Service Tags](/azure/virtual-network/service-tags-overview) to limit access to your resources on a network level. A service tag represents a group of IP address prefixes from a given Azure service, in this case Azure AI Video Indexer. Microsoft manages the address prefixes grouped by the service tag and automatically updates the service tag as addresses change. This management minimizes the complexity of frequent updates to network security rules by the customer.
+To limit access to your resources on a network level, use [Network Security Groups with Service Tags](/azure/virtual-network/service-tags-overview). A service tag represents a group of IP address prefixes from a given Azure service, in this case Azure AI Video Indexer. Microsoft manages the address prefixes grouped by the service tag and automatically updates the service tag as addresses change. This management minimizes the complexity of frequent updates to network security rules by the customer.
 
 > [!NOTE]
-> The NSG service tags feature is not available for trial accounts. To update to an ARM account, see the [Update your Azure AI Video Indexer account](update-your-azure-video-indexer-account-and-migrate-assets.md) or [Import content from a trial account](import-content-from-trial.md).
+> The NSG service tags feature isn't available for trial accounts. To update to an Azure Resource Manager account, see the [Update your Azure AI Video Indexer account](update-your-azure-video-indexer-account-and-migrate-assets.md) or [Import content from a trial account](import-content-from-trial.md).
 
 ## Get started with service tags
 
 Currently we support the global service tag option for using service tags in your network security groups:
 
-**Use a single global VideoIndexer service tag**: This option opens your virtual network to all IP addresses that the Azure AI Video Indexer service uses across all regions we offer our service. This method allows for all IP addresses owned and used by Azure AI Video Indexer to reach your network resources behind the NSG.
+**Use a single global VideoIndexer service tag**: This option opens your virtual network to all IP addresses that the Azure AI Video Indexer service uses across all regions we offer our service. This method allows for all IP addresses owned and used by Azure AI Video Indexer to reach your network resources behind the network security group (NSG).
 
 > [!NOTE]
-> Currently we do not support IPs allocated to our services in the Switzerland North Region. These will be added soon. If your account is located in this region you cannot use Service Tags in your NSG today since these IPs are not in the Service Tag list and will be rejected by the NSG rule.
+> Currently we don't support IPs allocated to our services in the Switzerland North Region. We plan to add support soon. If your account is located in this region, you can't use Service Tags in your NSG today since these IPs aren't in the Service Tag list. They get rejected by the NSG rule.
 
 ## Use a single global Azure AI Video Indexer service tag
 

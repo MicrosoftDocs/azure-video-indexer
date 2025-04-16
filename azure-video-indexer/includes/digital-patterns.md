@@ -38,7 +38,7 @@ You can use digital patterns detection for detecting color bars and test cards.
 |`id`|The digital pattern ID.|
 |`patternType`|The following types are supported: ColorBars, TestCards.|
 |`confidence`|The confidence level for color bar accuracy.|
-|`name`|The name of the element. For example, "SMPTE color bars".|
+|`name`|The name of the element. For example, `SMPTE color bars`.|
 |`displayName`| The friendly/display name.
 |`thumbnailId`|The ID of the thumbnail.|
 |`instances`|A list of time ranges where this element appeared.|
@@ -52,7 +52,7 @@ No components defined.
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 
 - There can be a mismatch if the input video is of low quality (for example – old Analog recordings). 
-- The digital patterns will be identified over the 10 min of the beginning and 10 min of the ending part of the video.
+- The digital patterns are identified over the 10 min of the beginning and 10 min of the ending part of the video.
 
 ## Sample code
 

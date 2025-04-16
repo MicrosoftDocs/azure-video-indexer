@@ -11,7 +11,7 @@ ms.topic: article
 
 # Enable and view a textless slate with matching scene
 
-This article shows how to enable and view  a textless slate with matching scene.
+This article explains how to enable and view a textless slate with matching scene.
 
 This insight is most useful to customers involved in the movie post-production process.
 
@@ -24,4 +24,4 @@ In order to set the indexing process to include the slate metadata, select the *
 
 ### Insight
 
-This insight can only be viewed in the form of the downloaded json file.
+This insight can only be viewed in the form of the downloaded JSON file.

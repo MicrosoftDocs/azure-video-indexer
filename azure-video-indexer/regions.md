@@ -11,11 +11,12 @@ ms.topic: article
 
 # Azure regions in which Azure AI Video Indexer exists
 
-Azure AI Video Indexer APIs contain a **location** parameter that you should set to the Azure region to which the call should be routed. This must be an [Azure region in which Azure AI Video Indexer is available](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services&regions=all).
+Azure AI Video Indexer APIs contain a **location** parameter that you should set to the Azure region to which the call should be routed. It must be an [Azure region in which Azure AI Video Indexer is available](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services&regions=all).
 
 ## Locations
 
-The `location` parameter must be given the Azure region code name as its value. If you are using Azure AI Video Indexer in preview mode, you should put `"trial"` as the value. `trial` is the default value for the `location` parameter. Otherwise, to get the code name of the Azure region that your account is in and that your call should be routed to, you can use the Azure portal or run a [Azure CLI](/cli/azure) command.
+The `location` parameter must be given the Azure region code name as its value. If you're using Azure AI Video Indexer in preview mode, you should put `"trial"` as the value. `trial` is the default value for the `location` parameter. To find the Azure region code for your account and route your calls correctly, use the Azure portal or run an [Azure CLI](/cli/azure) command.
+
 
 ### Azure portal
 
@@ -32,9 +33,9 @@ The `location` parameter must be given the Azure region code name as its value. 
 az account list-locations
 ```
 
-Once you run the line shown above, you get a list of all Azure regions. Navigate to the Azure region that has the *displayName* you are looking for, and use its *name* value for the **location** parameter.
+Once you run the line shown previously, you get a list of all Azure regions. Navigate to the Azure region that has the *displayName* you're looking for, and use its *name* value for the **location** parameter.
 
-For example, for the Azure region West US 2 (displayed below), you will use "westus2" for the **location** parameter.
+For example, for the Azure region West US 2 (the following example), you use `westus2` for the **location** parameter.
 
 ```json
    {

@@ -8,13 +8,14 @@ For more information about OCR, see [OCR technology](/azure/ai-services/comput
 
 ## OCR use cases
 
-- Deep searching media footage for images with signposts, street names or car license plates, for example, in law enforcement. 
+- Deep searching media footage for images with signposts, street names, or car license plates, for example, in law enforcement. 
 - Extracting text from images in media files and then translating it into multiple languages in labels for accessibility, for example in media or entertainment. 
 - Detecting brand names in images and tagging them for translation purposes, for example in advertising and branding. 
 - Extracting text in images that is then automatically tagged and categorized for accessibility and future usage, for example to generate content at a news agency. 
 - Extracting text in warnings in online instructions and then translating the text to comply with local standards, for example, e-learning instructions for using equipment.
 
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
+
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
 ## Example response
@@ -68,6 +69,7 @@ For more information about OCR, see [OCR technology](/azure/ai-services/comput
 ``` 
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
+
 [!INCLUDE [transparency-ocr](transparency-ocr.md)]
 
 ## Sample code

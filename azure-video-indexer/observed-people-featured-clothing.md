@@ -11,7 +11,7 @@ ms.topic: how-to
 
 # Enable featured clothing of an observed person
 
-When indexing a video using Azure AI Video Indexer advanced video settings, you can view the featured clothing of an observed person. The insight provides moments within the video where key people are prominently featured and clearly visible, including the coordinates of the people, timestamp, and the frame of the shot. This insight allows high-quality in-video contextual advertising, where relevant clothing ads are matched with the specific time within the video in which they're viewed.
+When indexing a video using Azure AI Video Indexer advanced video settings, you can view the featured clothing of an observed person. The insight provides moments within the video where key people are prominently featured and clearly visible. They include the coordinates of the people, timestamp, and the frame of the shot. This insight allows high-quality in-video contextual advertising. For example, where relevant clothing ads are matched with the specific time within the video in which they're viewed.
 
 This article discusses how to view the featured clothing insight and how the featured clothing images are ranked.
 
@@ -27,10 +27,10 @@ The featured clothing insight is available when indexing your file by choosing t
 
 :::image type="content" source="./media/detected-clothing/index-video.png" alt-text="This screenshot represents an indexing video option.":::
 
-The featured clothing images are ranked based on some of the following factors: key moments of the video, duration the person appears, text-based emotions, and audio events. The insights privates the highest ranking frame per scene, which enables you to produce contextual advertisements per scene throughout the video. The JSON file is ranked by the sequence of scenes in the video, with each scene having the top rated frame as the result.
+The featured clothing images are ranked based on some of the following factors: key moments of the video, duration the person appears, text-based emotions, and audio events. The insights privates the highest ranking frame per scene, which enables you to produce contextual advertisements per scene throughout the video. The JSON file gets ranked by the sequence of scenes in the video, with each scene having the top rated frame as the result.
 
 > [!NOTE]
-> The featured clothing insight can only be viewed from the artifact file, and the insight is not in the Azure AI Video Indexer website. 
+> The featured clothing insight can only be viewed from the artifact file, and the insight isn't in the Azure AI Video Indexer website. 
 
 1. In the right-upper corner, select to download the artifact zip file: **Download** -> **Artifact (ZIP)**
 1. Open `featuredclothing.zip`. 
@@ -78,7 +78,7 @@ It's important to note the limitations of featured clothing to avoid or mitigate
 - If the face of a person wearing the featured clothing isn't detected, the results don't include the faces bounding box.
 - If a person in a video wears more than one outfit, the algorithm selects its best outfit as a single featured clothing image. 
 - When posed, the tracks are optimized to handle observed people who most often appear on the front. 
-- Wrong detections may occur when people are overlapping.  
+- Wrong detections might occur when people are overlapping.  
 - Frames containing blurred people are more prone to low quality results.   
 
 For more information, see the [limitations of observed people](observed-matched-people-insight.md). 
