@@ -14,7 +14,7 @@ ms.topic: how-to
 
 This article shows you how to use private endpoints with Azure AI Video Indexer using the Azure portal. For an overview, see the [use cases for private endpoints with Azure AI Video Indexer](private-endpoint-overview.md).
 
-Private endpoints are supported in all public regions supported by Azure AI Video Indexer. They are not supported in sovereign cloud regions, such as Azure in China and Azure for US Government.
+Private endpoints are supported in all public regions supported by Azure AI Video Indexer. They aren't supported in sovereign cloud regions, such as Microsoft Azure operated by 21Vianet (Azure in China) and Azure for US Government.
 
 ## Prerequisites
 

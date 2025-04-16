@@ -17,7 +17,7 @@ This article shows you how to get started with Azure AI Video Indexer by using t
 
 Create or find an MP4 video.
 
-The video should be about 5 minutes in duration. It's suggested that they contain:
+The video should be about 5 minutes in duration. We suggest it contains:
 
 -   People speaking
 -   Some nonspeaking noises
@@ -28,7 +28,7 @@ These suggestions are so that you can see a varied set of results after the vide
 
 ## Get a trial account
 
-Go to the [web portal](https://www.videoindexer.ai/) and sign in with an Entra account, a personal Microsoft account, or a Google account. You're automatically assigned a trial account.
+Go to the [web portal](https://www.videoindexer.ai/) and sign in with a Microsoft Entra ID account, a personal Microsoft account, or a Google account. You're automatically assigned a trial account.
 
 ## Upload a video
 
@@ -68,7 +68,7 @@ While your video is uploading, view some of the sample videos.
 
 ## View your video timeline and insights
 
-1.  Select **Library.** Your indexed videos are located here. If your video is still uploading, it's represented by a thumbnail with the percentage of the video upload indicated.
+1.  Select **Library.** Your indexed videos are located here. If your video is still uploading, it gets represented by a thumbnail with the percentage of the video upload indicated.
 2.  If the video indexing is complete, select **your video** to see the insights.
 3.  Compare the insights you received to the ones that you viewed in the Samples library.
 

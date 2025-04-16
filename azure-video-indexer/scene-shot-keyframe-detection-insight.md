@@ -9,6 +9,6 @@ ms.service: azure-video-indexer
 ms.topic: article
 ---
 
-# Scene, shot, keyframe detection insight overview
+# Scene, shot, and keyframe detection insight overview
 
 [!INCLUDE [Insight details](./includes/scene-shot-keyframe-detection.md)]

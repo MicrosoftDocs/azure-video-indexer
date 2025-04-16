@@ -1,6 +1,6 @@
 ---
 title: Update your Azure AI Video Indexer account and migrate assets  
-description: Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS. As described in the update and migration guide azure-video-indexer-retirement-guide.md, your Azure AI Video Indexer account needs to be updated. During the update, you'll have the opportunity to opt in to having the VI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
+description: Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS. As described in the update and migration guide azure-video-indexer-retirement-guide.md, your Azure AI Video Indexer account needs to be updated. During the update, you have the opportunity to opt in to having the VI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
 author: bandersmsft
 ms.author: banders
 ms.date: 10/09/2024
@@ -12,14 +12,14 @@ ms.topic: conceptual
 
 [!INCLUDE [AMS VI retirement announcement](../includes/important-ams-retirement-avi-announcement.md)]
 
-Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS.
+Azure AI Video Indexer (VI) used Azure Media Services (AMS) for encoding, packaging, and streaming of media assets. AMS announced that it's retiring on June 30, 2024. Therefore, VI is removing the dependency on AMS.
 
-As described in the [VI update and migration guide](azure-video-indexer-ams-retirement-guide.md), your Azure AI Video Indexer account needs to be updated. During the update, you'll have the opportunity to opt in to having the VI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
+As described in the [VI update and migration guide](azure-video-indexer-ams-retirement-guide.md), your Azure AI Video Indexer account needs to be updated. During the update, you have the opportunity to opt in to having the VI product team migrate your assets for you. If you don’t opt in during the update process, your assets won’t be migrated.
 
 You can opt in to VI migration using either the Azure portal or the API during the account update process.
 
 > [!IMPORTANT] 
-> Until June 30 you can still opt in to migration performed by VI or choose not to migrate your assets. After June 30th, there will be no option to migrate your assets at all.
+> Until June 30 you can still opt in to migration performed by VI or choose not to migrate your assets. After June 30, there will be no option to migrate your assets at all.
 
 ## Update an existing ARM account
 
@@ -41,7 +41,7 @@ If the AMS linked storage account is behind a firewall, VI needs to be assigned 
 1.  Select **Update account**. The Update account pane appears.
 1.  Connect the account to storage. Either…
     1.  Select an existing storage account from the **Storage account** dropdown or
-    1.  Create a new storage account. *Storage accounts linked to VI must be a Standard general-purpose v2 storage account or Standard general-purpose v1 storage account. It cannot be a Premium block blob, Premium file share, or Premium page blob account.*. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). 
+    1.  Create a new storage account. *Storage accounts linked to VI must be a Standard general-purpose v2 storage account or Standard general-purpose v1 storage account. It can't be a Premium block blob, Premium file share, or Premium page blob account*. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). 
 1.  Select the **Request to migrate** checkbox.
 1.  Once the storage is created, a notification appears that says that you must select a managed identity role assignment. Select the **Assign role** button.
 1.  If you didn’t opt in to the migration process during storage creation, you can opt in by selecting the **Migrate content** tab. The migration prompt appears.
@@ -68,7 +68,7 @@ If the AMS linked storage account is behind a firewall, VI needs to be assigned 
 
 ## Connect a classic account to a new ARM based account
 
-If your account is a classic account, you are required to connect the classic account to an ARM account before the classic account is retired. Doing so creates the VI account as an ARM resource and the ARM VI resource must be in the same Azure subscription as the VI Classic account and its AMS asset.
+If your account is a classic account, you're required to connect the classic account to an ARM account before the classic account is retired. Doing so creates the VI account as an ARM resource and the ARM VI resource must be in the same Azure subscription as the VI Classic account and its AMS asset.
 
 ### Transition state
 
@@ -83,7 +83,7 @@ The invite users feature in the Azure AI Video Indexer website gets disabled. Th
 
 Only the account owner, who performed the connect action, is automatically assigned as the owner on the connected account. When [Azure policies](/azure/governance/policy/overview) are enforced, they override the settings on the account.
 
-If users aren't added through Azure RBAC to the account after 30 days, they'll lose access through API as well as the Azure AI Video Indexer website.
+If users aren't added through Azure RBAC to the account after 30 days, they'll lose access through API and the Azure AI Video Indexer website.
 
 After the transition state ends, users will only be able to generate a valid access token through ARM, making Azure RBAC the exclusive way to manage role-based access control on the account.
 
@@ -96,7 +96,7 @@ The following steps walk you through creating a new ARM based account.
 
 ### Permissions
 
-You must have the following permissions to update an existing ARM account as well as to opt in and complete the VI AMS resource migration:
+You must have the following permissions to update an existing ARM account and to opt in and complete the VI AMS resource migration:
 
 - **Owner** permission on the classic account
 - **Contributor** permission on the subscription
@@ -111,7 +111,7 @@ If the AMS linked storage account is behind a firewall, VI needs to be assigned 
 
 1.  In the Azure portal, select **+ Create a resource.**
 1.  Search for and select *Azure AI Video Indexer.* The Create a Video Indexer resource page appears.
-1.  **Skip** creating a resource group and selecting the region sections. The are auto populated by the following steps.
+1.  **Skip** creating a resource group and selecting the region sections. They're auto populated by the following steps.
 1.  Select the Connect all content from an existing classic account button.
 1.  Select the classic account from the **Available classic accounts dropdown** list.
 1.  Give the account a name in the **Resource name** field.
@@ -120,7 +120,7 @@ If the AMS linked storage account is behind a firewall, VI needs to be assigned 
     1.  Create a new storage account. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal).
 
 > [!NOTE]
-> If you attempt to link the account to the storage account that is associated with an AMS account, you will receive an error.
+> If you attempt to link the account to the storage account that is associated with an AMS account, you'll receive an error.
 
 1.  Select or create a **user assigned managed identity**. (If you forget, a prompt in the storage overview page appears later in the process.)
 1.  Select **Review + create**. Validation of the configuration starts.

@@ -11,12 +11,12 @@ ms.topic: how-to
 
 # Edit speakers with the Azure AI Video Indexer website
 
-Azure AI Video Indexer identifies each speaker in a video and attributes each transcribed line to a speaker. The speakers are given a unique identity such as `Speaker #1` and `Speaker #2`. To provide clarity and enrich the transcript quality, you may want to replace the assigned identity with each speaker's actual name. To edit speakers' names, use the edit actions as described in the article. 
+Azure AI Video Indexer identifies each speaker in a video and attributes each transcribed line to a speaker. The speakers are given a unique identity such as `Speaker #1` and `Speaker #2`. To provide clarity and enrich the transcript quality, you might want to replace the assigned identity with each speaker's actual name. To edit speakers' names, use the edit actions as described in the article. 
 
 The article demonstrates how to edit speakers with the [Azure AI Video Indexer website](https://www.videoindexer.ai/). The same editing operations are possible with an API. To use API, call [update video index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Video-Index).
 
 > [!NOTE]
-> The addition or editing of a speaker name is applied throughout the transcript of the video but is not applied to other videos in your Azure AI Video Indexer account.
+> The addition or editing of a speaker name is applied throughout the transcript of the video but isn't applied to other videos in your Azure AI Video Indexer account.
 
 ## Start editing
 
@@ -29,7 +29,7 @@ The article demonstrates how to edit speakers with the [Azure AI Video Indexer w
 
 ## Add a new speaker
 
-This action allows adding new speakers that were not identified by Azure AI Video Indexer. To add a new speaker from the website for the selected video, do the following: 
+This action allows you to add new speakers that Azure AI Video Indexer didn't identify. To add a new speaker from the website for the selected video, do the following steps: 
 
 1. Select the edit mode.
 
@@ -46,9 +46,9 @@ This action allows adding new speakers that were not identified by Azure AI Vide
  
 ## Rename an existing speaker
 
-This action allows renaming an existing speaker that was identified by Azure AI Video Indexer. The update applies to all speakers identified by this name.
+This action allows renaming an existing speaker that Azure AI Video Indexer identified. The update applies to all speakers identified by this name.
  
-To rename a speaker from the website for the selected video, do the following: 
+To rename a speaker from the website for the selected video, do the following steps: 
 
 1. Select the edit mode.
 1. Go to the transcript line where the speaker you wish to rename appears.
@@ -56,20 +56,20 @@ To rename a speaker from the website for the selected video, do the following:
 
     :::image type="content" alt-text="Screenshot of how to rename a speaker." source="./media/edit-speakers-website/rename.png":::
 
-   This action will update speakers by this name.
+   This action updates speakers by this name.
 1. Press a checkmark to save.
 
 ## Assign a speaker to a transcript line
 
-This action allows assigning a speaker to a specific transcript line with a wrong assignment. To assign a speaker to a transcript line from the website, do the following: 
+This action allows assigning a speaker to a specific transcript line with a wrong assignment. To assign a speaker to a transcript line from the website, do the following steps: 
 
 1. Go to the transcript line you want to assign a different speaker to. 
-1. Select a speaker from the speakers drop down menu above that you wish to assign.
+1. Above what you want to assign, select a speaker from the speakers list.
  
     The update only applies to the currently selected transcript line.
 
-If the speaker you wish to assign doesn't appear on the list you can either **Assign a new speaker** or **Rename an existing speaker** as described above.
+If the speaker you wish to assign doesn't appear on the list, you can either **Assign a new speaker** or **Rename an existing speaker** as described previously.
 
 ## Limitations
 
-When adding a new speaker or renaming a speaker, the new name should be unique.
+When you add a new speaker or renaming a speaker, the new name should be unique.

@@ -10,8 +10,6 @@ ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
 
-
-
 # Manage multiple tenants
 
 This article discusses different options for managing multiple tenants with Azure AI Video Indexer. Choose a method that is most suitable for your scenario:
@@ -33,7 +31,7 @@ An Azure AI Video Indexer account is created for each tenant. The tenants have f
 * You can easily remove a tenant from the system by deleting the Azure AI Video Indexer account.
 * There's no ability to share custom models between tenants.
 
-    Make sure there's no business requirement to share custom models.
+    Make sure there's no business requirement for sharing custom models.
 * Harder to manage due to multiple Azure AI Video Indexer accounts per tenant.
 
 > [!TIP]
@@ -41,7 +39,7 @@ An Azure AI Video Indexer account is created for each tenant. The tenants have f
 
 ## Single Azure AI Video Indexer account for all users
 
-The customer is responsible for tenants isolation when using a single VI account for all users. All tenants have to use a single Azure AI Video Indexer account. The customer needs to filter the proper results for that tenant when uploading, searching, or deleting content, .
+The customer is responsible for tenants isolation when using a single VI account for all users. All tenants have to use a single Azure AI Video Indexer account. The customer needs to filter the proper results for that tenant when uploading, searching, or deleting content.
 
 ![Single Azure AI Video Indexer account for all users](./media/manage-multiple-tenants/single-video-indexer-account-for-all-users.png)
 
@@ -67,4 +65,4 @@ Each tenant has their own Azure subscription when using an Azure subscription pe
 ### Considerations
 
 * This configuration is the only option that enables billing separation.
-* This integration has more management overhead than Azure AI Video Indexer account per tenant. If billing isn't a requirement, it's recommended to use one of the other options described in this article.
+* This integration has more management overhead than Azure AI Video Indexer account per tenant. If billing isn't a requirement, we recommended that you use one of the other options described in this article.

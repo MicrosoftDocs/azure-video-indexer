@@ -30,7 +30,7 @@ The trial account option isn't available on the Azure Government cloud. For othe
 - An Azure subscription
 - At the subscription level, either the **Owner** role, or both **Contributor** and **User Access Administrator** roles
 
-To determine what roles have currently been assigned, see [View the access a user has to Azure resources](/azure/role-based-access-control/check-access).
+To determine what roles are currently assigned, see [View the access a user has to Azure resources](/azure/role-based-access-control/check-access).
 
 ### [Azure portal](#tab/portal)
 
@@ -48,7 +48,7 @@ To determine what roles have currently been assigned, see [View the access a use
 1.  If you assigned a system assigned managed identity during the storage creation process, a notification on the page says that you must select a managed identity role assignment. Select the **Assign role** button.
 
 ### [API](#tab/api)
-[Create accounts with API](/rest/api/videoindexer/stable/accounts)
+To create an account, see [Create accounts with API](/rest/api/videoindexer/stable/accounts).
 
 ---
 
@@ -78,4 +78,4 @@ If you're already a contributor or an administrator of an existing Azure AI Vide
 
 You can no longer create a classic account.
 
-Classic accounts were retired on June 30th, 2024.
+Classic accounts retired on June 30, 2024.

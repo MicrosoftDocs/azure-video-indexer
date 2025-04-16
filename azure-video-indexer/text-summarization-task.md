@@ -79,7 +79,7 @@ You can use the Azure AI Video Indexer web portal to summarize text.
 Once the summary is generated, you can make adjustments to it by customizing the summary style or changing the model deployment.
 
 ### Customize summary style
-You can also customize the summary by selecting the **Customize summary** icon. You can choose from **Short**, **Medium, or **Long** summary lengths, and you can choose **Neutral**, **Casual**, or **Formal** as a summary style. Once you make your choices, select **Generate again**.
+You can also customize the summary by selecting the **Customize summary** icon. You can choose from **Short**, **Medium**, or **Long** summary lengths, and you can choose **Neutral**, **Casual**, or **Formal** as a summary style. Once you make your choices, select **Generate again**.
 
 ### Change model deployment
 

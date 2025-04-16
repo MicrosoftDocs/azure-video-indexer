@@ -2,14 +2,14 @@
 
 [!INCLUDE [Scene, shot, keyframe detection description](scene-shot-keyframe-detection-description.md)]
 
-### Scene, shot and keyframe detection use cases
+### Scene, shot, and keyframe detection use cases
 
 - Easily browse, manage, and edit your video content based on varying granularities.
 - Use editorial shot type detection for editing videos into clips, trailers, or when searching for a specific style of keyframe.
 
 ## Scene detection
 
-Azure AI Video Indexer determines when a scene changes in video based on visual cues. A scene depicts a single event and it is composed of a series of consecutive shots, which are semantically related. 
+Azure AI Video Indexer determines when a scene changes in video based on visual cues. A scene depicts a single event composed of a series of consecutive shots, which are semantically related. 
 
 A scene thumbnail is the first keyframe of its underlying shot. 
 
@@ -19,16 +19,16 @@ Videos must contain at least three scenes.
 
 ## Shot detection
 
-Azure AI Video Indexer determines when a shot changes in the video based on visual cues, by detecting both abrupt and gradual transitions in the color scheme and other visual feature of adjacent frames. The shot's metadata includes a start and end time, as well as the list of keyframes included in that shot. The shots are consecutive frames taken from the same camera at the same time.
+Azure AI Video Indexer determines when a shot changes in the video based on visual cues. It does so by detecting both abrupt and gradual transitions in the color scheme and other visual feature of adjacent frames. The shot's metadata includes a start and end time, and the list of keyframes included in that shot. The shots are consecutive frames taken from the same camera at the same time.
 
 > [!NOTE]
-> There might be a gap between shots which includes frames that are part of the transition. Thereofre, these frames are not considered part of the shot.
+> There might be a gap between shots which includes frames that are part of the transition. Therefore, these frames aren't considered part of the shot.
 
 ## Keyframe editorial shot type detection
 
-The shot type is determined based on analysis of the first keyframe of each shot. Shots are identified by the scale, size, and location of the faces appearing in their first keyframe.
+The shot type is determined based on analysis of the first keyframe of each shot. Shots get identified by the scale, size, and location of the faces appearing in their first keyframe.
 
-The shot size and scale are determined based on the distance between the camera and the faces appearing in the frame. Using these properties, Azure AI Video Indexer detects the following shot types:
+The shot size and scale are determined based on the distance between the camera and the faces appearing in the frame. Azure AI Video Indexer detects the following shot types using these properties:
 
 - Wide: shows an entire person’s body.
 - Medium: shows a person's upper-body and face.
@@ -43,7 +43,7 @@ Shot types can also be determined by location of the subject characters with res
 - Outdoor: a person appears in an outdoor setting.
 - Indoor: a person appears in an indoor setting.
 
-Additional characteristics:
+Other characteristics:
 
 - Two shots: shows two persons’ faces of medium size.
 - Multiple faces: more than two persons.
@@ -175,7 +175,7 @@ Additional characteristics:
 
 ## Download the keyframes with the API
 
-To download each keyframe, use the keyframe IDs with the [Get Thumbnails](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Thumbnail) request.
+To download each keyframe, use the keyframe IDs with a [Get Thumbnails](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Thumbnail) API request.
 
 [!INCLUDE [artifacts](artifacts.md)]
 

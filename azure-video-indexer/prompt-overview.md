@@ -19,11 +19,11 @@ You can use LLM prompts with Azure AI Video Indexer in the cloud, or in your dat
 
 ## Use Cases
 
-**Generate a Video Summarization:** You can ask the LLM model to generate summaries of whole videos or video segments. Those segments can be combined to create several types of summaries like an informative summary, a teaser or other summary depending on your needs.
+**Generate a Video Summarization:** You can ask the LLM model to generate summaries of whole videos or video segments. Those segments can be combined to create several types of summaries like an informative summary, a teaser, or other summary depending on your needs.
 
-**Searchability:** By converting video content into a text-based, prompt-ready format, you can perform detailed, natural language searches within your video content. This can significantly improve discoverability within large video libraries based on specific queries.
+**Searchability:** By converting video content into a text-based, prompt-ready format, you can perform detailed, natural language searches within your video content. It can significantly improve discoverability within large video libraries based on specific queries.
 
-**Content Creation**: You can query your video library for specific moments in your videos associated with certain emotions or events. For example, you can retrieve ‘funny’ or ‘sad’ moments from a video series and use that to create a promo or highlight. Similarly, you can retrieve moments related to specific events of interest such as “past earthquakes during the last decade.”
+**Content Creation**: You can query your video library for specific moments in your videos associated with certain emotions or events. For example, you can retrieve *funny* or *sad* moments from a video series and use that to create a promo or highlight. Similarly, you can retrieve moments related to specific events of interest such as “past earthquakes during the last decade.”
 
 **Educational Purposes**: Create summaries from lecture videos to make it easier for students to review and understand the material. Students can also ask specific questions related to the lecture material. You can refer to the exact part of the video where the article is discussed making the learning experience more efficient.
 
@@ -55,8 +55,8 @@ Use the Prompt Content API on your indexed video in order to get Prompt-Ready fo
 > [!Note]
 > The prompt content insights are subjected to the specific preset being used to index the video.
 
-- To generate the Prompt Content API, use the [POST Create Prompt Content](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Prompt-Content) request.
-- To view the prompt content, use the [Get PromptContent](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-PromptContent) request.
+- To generate the Prompt Content API, use a [POST Create Prompt Content](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Prompt-Content) API request.
+- To view the prompt content, use a [Get PromptContent](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-PromptContent) API request.
 
 ### Example request
 
@@ -95,15 +95,15 @@ index
 ```
 
 ## Check job status
-It takes a few minutes for the prompt job to complete. If you would like to check on the job status, you can use the [Get Job Status](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Job-Status) request.
+It takes a few minutes for the prompt job to complete. If you would like to check on the job status, you can use a [Get Job Status](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Job-Status) API request.
  
 
 ## Use keyframes to prompt a large language model visually
 
-The Prompt Content request supports language models that can use visual input in prompts. When selecting the GPT-4V model, you can include keyframes as part of the prompt provided to the model. The frames returned in the prompt content response represents the keyframes from the video. This feature is recommended for videos with limited or no transcript in the video or when want to provide more context to the language model to improve it results.
+The Prompt Content request supports language models that can use visual input in prompts. When selecting the GPT-4V model, you can include keyframes as part of the prompt provided to the model. The frames returned in the prompt content response represent the keyframes from the video. This feature is recommended for videos with limited or no transcript in the video or when want to provide more context to the language model to improve it results.
 
 ### Create and send a Prompt Content request
-As described above, textual content for the prompt is in the JSON response. Each string in the "frames" part of the JSON response is the ID of the keyframe. Use [Get Video Thumbnail](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Thumbnail) The ThumbnailId is the FrameId from the prompt content. Once you have both the textual content and the keyframe artifacts, you can combine them as prompts for an AI model of your choice.
+As described previously, textual content for the prompt is in the JSON response. Each string in the "frames" part of the JSON response is the ID of the keyframe. Use [Get Video Thumbnail](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Thumbnail) The ThumbnailId is the FrameId from the prompt content. Once you have both the textual content and the keyframe artifacts, you can combine them as prompts for an AI model of your choice.
 
 ## Limitations
 

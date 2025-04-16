@@ -15,14 +15,14 @@ This article is an overview of Azure AI Video Indexer bring your own AI model.
 
 ## Introduction
 
-You can combine insights from other sources, including third-party, classification and detection models, to produce a detailed analysis of your media data. You can use one or more of any models offered by Microsoft, an external custom model, or a customized Person, Brand, Speech, or Language model offered by Azure Video Indexer.
+You can combine insights from other sources, including third-party, classification, and detection models, to produce a detailed analysis of your media data. You can use one or more of any models offered by Microsoft, an external custom model, or a customized Person, Brand, Speech, or Language model offered by Azure Video Indexer.
 
 The feature is also available for [VI enabled by Arc](./arc/azure-video-indexer-enabled-by-arc-overview.md).
 
 DISCLAIMER: Microsoft’s [Code of conduct for Azure OpenAI Service](/legal/cognitive-services/openai/code-of-conduct?context=%2Fazure%2Fai-services%2Fopenai%2Fcontext%2Fcontext) applies to your use of the Bring Your Own Model feature, which includes Microsoft’s right to discontinue your access and use of this feature for noncompliance.
 
 ## Pricing
-With the Video Indexer BYO model, users can add custom insights to video insight objects without incurring any additional costs beyond the listed cost of the indexing process. However, any costs related to the external environment and model shouldn't be considered part of Video Indexer's billing price. We strongly recommend reviewing our best practices section to optimize the external logic and reduce costs.
+With the Video Indexer BYO model, users can add custom insights to video insight objects without incurring any extra costs beyond the listed cost of the indexing process. However, any costs related to the external environment and model shouldn't be considered part of Video Indexer's billing price. We strongly recommend reviewing our best practices section to optimize the external logic and reduce costs.
 
 ### General workflow
 
@@ -42,7 +42,7 @@ Before you can start using the BYO model feature with Azure AI Video Indexer, yo
 
 1. Train or bring an external AI model that receives video assets and return an insight.   
 1. Create custom code that:
-    1. Listens for Event Hubss events. 
+    1. Listens for Event Hubs events. 
     1. Extracts the `video id` from the events. 
     1. Retrieves the relevant assets by calling VI APIs. In this scenario, request *Get Video Index* and *Get frames SAS URLs*.
     1. Sends the assets to the external AI model. 
@@ -57,11 +57,11 @@ The values for populating the custom data are as follows:
 |--|--|--|
 | **name** | External AI model name | true |
 | **displayName** | Insight group name to be displayed in Video Indexer | true |
-| **displayType** | Defines the type of UI representation for this specific insight group. **Default value**: Capsules<br/>**Possible types**:<br/>*Capsule* – One level text only <br/>*CapsuleAndTags* -Two levels text only more will be added in the future.  | false |
+| **displayType** | Defines the type of UI representation for this specific insight group. **Default value**: Capsules<br/>**Possible types**:<br/>*Capsule* – One level text only <br/>*CapsuleAndTags* -Two levels text only more will be added in the future. | false |
 | **results** | Array of objects that represent the insights detected by the external AI model | true |
 | **results.id** | User provided ID of the result object, should be unique within the results scope | true |
-| **results.type** | This field represents the type of insight that was categorized by the external AI model.  It's used to represent a general insight category, which means that there could be multiple insights of this type identified in a specific frame. Examples of insight types include: "basketball", "crowd clapping", "white shirt". | true |
-| **results.subType** | This field represents the type of insight that was categorized by the external AI model. It's used to represent a specific insight category, which means that there could be only a single insight of this type identified in a specific frame. Examples of insight types include: "basketball \#23", "John clapping", "Dana’s white shirt". | false |
+| **results.type** | This field represents the type of insight that was categorized by the external AI model. It's used to represent a general insight category, which means that there could be multiple insights of this type identified in a specific frame. Examples of insight types include: `basketball`, `crowd clapping`, `white shirt`. | true |
+| **results.subType** | This field represents the type of insight that was categorized by the external AI model. It's used to represent a specific insight category, which means that there could be only a single insight of this type identified in a specific frame. Examples of insight types include: `basketball #23`, `John clapping`, `Dana’s white shirt`. | false |
 | **results.metaData** | More data on the insight | false |
 | **results.instances** | Array that represents the time windows the insight was detected in. | true |
 | **results.instances.confidence** | Set with the confidence score returned from the external model | false |
@@ -88,9 +88,9 @@ You can use the skip frames and page size parameters for time selection. The for
 | Name | **Description** | **Required** |
 |--|--|--|
 | **videoId** | ID of the video | true |
-| **urlsLifetimeSeconds** | lifetime of the urls in seconds | true |
-| **pageSize** | Max number of frames to return every call | false |
-| **skip** | Frames to skip | false |
+| **urlsLifetimeSeconds** | Lifetime of the URLs, in seconds | true |
+| **pageSize** | Maximum number of frames to return for each call | false |
+| **skip** | Number of frames to skip | false |
 | **accessToken** | Should be given as parameter in URL query string or in Authorization header as Bearer token. Access token scope should be Account and permission should be Reader. | true |
 
 **Response:** `FrameFilePathsResult`

@@ -20,7 +20,7 @@ You can use this feature by selecting the **group faces** button located in the 
 ## Limitations and requirements
 
 -   **Minimum Requirements**: For effective processing, accounts must have a minimum of 50 high-quality, indexed, unknown face detections.
--   **Maximum Threshold**: Accounts are allowed 500,000 unknown faces. After the 500,000 unknown faces threshold is reached, the oldest videos' unidentified faces won’t be used or presented for grouping.
+-   **Maximum Threshold**: Accounts are allowed 500,000 unknown faces. After the 500,000 unknown faces threshold is reached, the oldest videos' unidentified faces don't get used or presented for grouping.
 -   **Quality Control**: Duplicate detections, and detections that are smaller than 50 pixels in width or height, or having significant occlusions or blurriness, are excluded from the process.
 
 ## Use global face grouping
@@ -31,9 +31,9 @@ You can use this feature by selecting the **group faces** button located in the 
 4.  Label the person.
 
 > [!IMPORTANT]
-> It is crucial to ensure accuracy in naming and to eliminate any erroneous face examples to prevent future duplication. You can delete irrelevant groups or false detections within groups before finalizing the naming process.
+> It's crucial to ensure accuracy in naming and to eliminate any erroneous face examples to prevent future duplication. You can delete irrelevant groups or false detections within groups before finalizing the naming process.
 
-Once a person is labeled, the videos in which this person appears get sampled and assigned to the designated person catalog. There's no need to reindex the videos.
+Once a person is labeled, the videos in which this person appears are sampled and assigned to the designated person catalog. There's no need to reindex the videos.
 
 ### Find all the videos where the person is detected
 

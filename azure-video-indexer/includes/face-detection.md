@@ -7,7 +7,7 @@
 The celebrities recognition model covers approximately 1 million faces and is based on commonly requested data sources. Faces that Video Indexer doesn't recognize as celebrities are detected but left unnamed. You can build your own custom [person model](/azure/azure-video-indexer/customize-person-model-overview) to train Video Indexer to recognize faces that aren't recognized by default.
 
 > [!IMPORTANT]
-> To support Microsoft Responsible AI principles, access to face identification, customization, and celebrity recognition features is limited and based on eligibility and usage criteria. Face identification, customization, and celebrity recognition features are available to Microsoft managed customers and partners. To apply for access, use the [facial recognition intake form](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUQjA5SkYzNDM4TkcwQzNEOE1NVEdKUUlRRCQlQCN0PWcu).
+> To support Microsoft Responsible AI principles, access to face identification, customization, and celebrity recognition features are limited and based on eligibility and usage criteria. Face identification, customization, and celebrity recognition features are available to Microsoft managed customers and partners. To apply for access, use the [facial recognition intake form](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUQjA5SkYzNDM4TkcwQzNEOE1NVEdKUUlRRCQlQCN0PWcu).
 
 ## Face detection use cases
 
@@ -15,15 +15,15 @@ The following list describes examples of common use cases for face detection:
 
 - Summarize where an actor appears in a movie or reuse footage by deep searching specific faces in organizational archives for insight about a specific celebrity.
 - Get improved efficiency when you create feature stories at a news agency or sports agency. Examples include deep searching a celebrity or a football player in organizational archives.
-- Use faces that appear in a video to create promos, trailers, or highlights. Video Indexer can assist by adding keyframes, scene markers, time stamps, and labeling so that content editors invest less time reviewing numerous files.
+- You can use faces that appear in a video to create promos, trailers, or highlights. Video Indexer can assist by adding keyframes, scene markers, time stamps, and labeling so that content editors invest less time reviewing numerous files.
 
 ## Key terms  
 
 | Term | Definition |
 |---|---|
 | **Face recognition**  | Analyzing images to identify the faces that appear in the images. This process is implemented via the Azure AI Face API. |
-| **Enrollment** | The process of enrolling images of individuals for template creation so that they can be recognized. When a person is enrolled to a verification system that's used for authentication, their template is also associated with a primary identifier that's used to determine which template to compare against the probe template. High-quality images and images that represent natural variations in how a person looks (for instance, wearing glasses and not wearing glasses) generate high-quality enrollment templates. |
-| **Template** | Enrolled images of people are converted to templates, which are then used for facial recognition. Machine-interpretable features are extracted from one or more images of an individual to create that individual’s template. The enrollment or probe images aren't stored by the Face API, and the original images can't be reconstructed based on a template. Template quality is a key determinant for accuracy in your results. |
+| **Enrollment** | The process of enrolling images of individuals for template creation so that they can be recognized. When a person is enrolled to a verification system that's used for authentication, their template is also associated with a primary identifier. The identifier is used to determine which template to compare against the probe template. High-quality images and images that represent natural variations in how a person looks (for instance, wearing glasses and not wearing glasses) generate high-quality enrollment templates. |
+| **Template** | Enrolled images of people are converted to templates, which are then used for facial recognition. Machine-interpretable features are extracted from one or more images of an individual to create that individual’s template. The Face API doesn't store the enrollment or probe images. The original images can't be reconstructed based on a template. Template quality is a key determinant for accuracy in your results. |
 
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
 [!INCLUDE [get insights with the API](get-insights-api.md)]

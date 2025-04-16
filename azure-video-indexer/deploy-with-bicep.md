@@ -35,7 +35,7 @@ The `main.bicep` file orchestrates the installation of two modules:
 - The Role Permission module that grants the VI identity the Azure Blob Storage Data Owner permission on the storage account.
 
 > [!NOTE]
-> It is a good practice to separate Azure resources to multiple Bicep modules.  For a comprehensive understanding of how Bicep modules work, see [Bicep modules - Azure Resource Manager](/azure/azure-resource-manager/bicep/modules).
+> It's a good practice to separate Azure resources to multiple Bicep modules. For a comprehensive understanding of how Bicep modules work, see [Bicep modules - Azure Resource Manager](/azure/azure-resource-manager/bicep/modules).
 
 ## Create the Bicep file
 
@@ -126,7 +126,7 @@ output servicePrincipalId string = videoIndexer.identity.principalId
 
 ## Create a role assignment Bicep module
 
-Copy and paste the following content to a file called *role-assignment.bicep* in your working directory. The module grants the system assigned identity the role of Storage Blob Data Contributor on the storage account of the VI account.
+Copy and paste the following content to a file called `role-assignment.bicep` in your working directory. The module grants the system assigned identity the role of Storage Blob Data Contributor on the storage account of the VI account.
 
 ```cli
 

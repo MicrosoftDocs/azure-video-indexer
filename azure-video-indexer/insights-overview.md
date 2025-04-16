@@ -11,7 +11,7 @@ ms.service: azure-video-indexer
 
 # Azure AI Video Indexer insights
 
-When a video is indexed, Azure AI Video Indexer analyzes the video and audio content by running 30+ AI models, generating JSON containing the video insights including transcripts, optical character recognition elements (OCRs), face, topics, emotions, etc. Each insight type includes instances of time ranges that show when the insight appears in the video. 
+When a video is indexed, Azure AI Video Indexer analyzes the video and audio content by running 30+ AI models. It generates JSON containing the video insights including transcripts, optical character recognition elements (OCRs), face, topics, emotions, and so on. Each insight type includes instances of time ranges that show when the insight appears in the video. 
 
 Use the links in the insights table to learn how to get each insight JSON response in the web portal and using the API.
 
@@ -26,7 +26,7 @@ Use the links in the insights table to learn how to get each insight JSON respon
 | [OCR](ocr-insight.md) | [!INCLUDE [ocr description](./includes/ocr-description.md)] |
 | [Post-production: clapper board detection](clapper-board-insight.md) | [!INCLUDE [clapper board description](./includes/clapperboard-description.md)] |
 | [Post-production: digital patterns](digital-patterns-color-bars-insight.md) | [!INCLUDE [digital patterns description](./includes/digital-patterns-description.md)] |
-| [Scenes, shots and keyframes](scene-shot-keyframe-detection-insight.md) | [!INCLUDE [Scenes, shots detection and keyframes description](./includes/scene-shot-keyframe-detection-description.md)] |
+| [Scenes, shots, and keyframes](scene-shot-keyframe-detection-insight.md) | [!INCLUDE [Scenes, shots detection and keyframes description](./includes/scene-shot-keyframe-detection-description.md)] |
 
 ## Audio insights
 | Insight | Description |

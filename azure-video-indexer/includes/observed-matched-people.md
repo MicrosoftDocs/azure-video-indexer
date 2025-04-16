@@ -1,13 +1,13 @@
 ## Observed people detection, matched faces, detected clothing
 
 > [!IMPORTANT]
-> Face identification, customization and celebrity recognition features access is limited based on eligibility and usage criteria in order to support our Responsible AI principles. Face identification, customization and celebrity recognition features are only available to Microsoft managed customers and partners. Use the [Face Recognition intake form](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUQjA5SkYzNDM4TkcwQzNEOE1NVEdKUUlRRCQlQCN0PWcu) to apply for access.
+> Face identification, customization, and celebrity recognition features access is limited based on eligibility and usage criteria in order to support our Responsible AI principles. Face identification, customization, and celebrity recognition features are only available to Microsoft managed customers and partners. Use the [Face Recognition intake form](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUQjA5SkYzNDM4TkcwQzNEOE1NVEdKUUlRRCQlQCN0PWcu) to apply for access.
 
 Observed people detection and matched faces automatically detect and match people in media files. Observed people detection and matched faces can be set to display insights on people, their clothing, and the exact timeframe of their appearance.
 
-In the web portal, the resulting insights are displayed in a categorized list in the Insights tab, the tab includes a thumbnail of each person and their ID. Clicking the thumbnail of a person displays the matched person (the corresponding face in the People insight). Insights are also generated in a categorized list in a JSON file that includes the thumbnail ID of the person, the percentage of time appearing in the file, Wiki link (if they're a celebrity) and confidence level.
+In the web portal, the resulting insights are displayed in a categorized list in the Insights tab. The tab includes a thumbnail of each person and their ID. Clicking the thumbnail of a person displays the matched person (the corresponding face in the People insight). Insights are also generated in a categorized list in a JSON file. The file includes the thumbnail ID of the person, the percentage of time appearing in the file, a Wiki link (if they're a celebrity), and confidence level.
 
-## Observed people detection, detected clothing and matched faces use cases
+## Observed people detection, detected clothing, and matched faces use cases
 
 - Improving efficiency by deep searching for matched people in organizational archives for insight on specific celebrities, for example when creating promos and trailers.
 - Improved efficiency when creating feature stories, for example, searching for people wearing a red shirt in the archives of a football game at a News or Sports agency.  
@@ -16,8 +16,8 @@ In the web portal, the resulting insights are displayed in a categorized list in
 
 The **matched faces** and **detected clothing** features are available when indexing your file by choosing the **Advanced** -> **Video + audio indexing** preset.
 
-
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
+
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
 ## Example response
@@ -72,6 +72,7 @@ The **matched faces** and **detected clothing** features are available when inde
 ```
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
+
 [!INCLUDE [transparency-observed-people-detection-matched-faces](transparency-observed-people-detection-matched-faces.md)]
 
 ## Sample code
