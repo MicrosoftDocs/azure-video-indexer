@@ -68,7 +68,7 @@ User management of trial accounts, including the creation of new users, is perfo
 ### Share the account
 
 1. In the **Account setting** section, select **Manage Roles** to view all the account users and people with pending invites. 
-1. To add users, select **Invite more people to this account**. Users can receive an invitation but you also copy the invite link to share it directly. Once the invitation is accepted, you can define their role as either **Owner** or **Contributor**. See the [ARM Account user management](#user-management-of-arm-accounts) section for a description of the **Owner** and **Contributor** roles.
+1. To add users, select **Invite more people to this account**. Users can receive an invitation but you also copy the invite link to share it directly. Once the invitation is accepted, you can define their role as either **Owner** or **Contributor**. See the [ARM Account user management](#user-management-for-azure-resource-manager-accounts) section for a description of the **Owner** and **Contributor** roles.
 
 ## Troubleshooting
 
