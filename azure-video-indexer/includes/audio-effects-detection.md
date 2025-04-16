@@ -5,7 +5,7 @@
 ### Audio effects use cases
 
 - Improve accessibility by offering more context for a hearing- impaired audience by transcription of nonspeech effects. 
-- Improving efficiency when creating raw data for content creators. Important moments in promos and trailers such as laughter, crowd reactions, gunshots, or explosions can be identified, for example,  in Media and Entertainment. 
+- Improving efficiency when creating raw data for content creators. Important moments in promos and trailers such as laughter, crowd reactions, gunshots, or explosions can be identified, for example, in Media and Entertainment. 
 - Detect and classify gunshots, explosions, and glass shattering in a smart-city system or in other public environments that include cameras and microphones.
 
 ## Supported audio categories  
@@ -90,7 +90,7 @@ Audio effects in closed caption files appear as square brackets:
 |CSV |0.9047,00:00:00.000,00:00:03.671, [Gunshot or explosion]|
 
 > [!NOTE]
-> - `Silence` event type won't be added to the closed captions.
+> - `Silence` event type isn't added to the closed captions.
 > - Minimum timer duration to show an event is 700 milliseconds.
 
 ## Add audio effects to closed caption files
@@ -99,7 +99,7 @@ Audio effects in closed caption files appear as square brackets:
 You can add audio effects to closed captions files with the [Get video captions](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Captions) request and by choosing *true* for the `includeAudioEffects` parameter. 
 
 > [!NOTE]
-> When using [update transcript](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Video-Transcript) from closed caption files or [update custom language model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Language-Model) from closed caption files, audio effects included in those files are ignored.
+> When you use the [update transcript](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Video-Transcript) from closed caption files or [update custom language model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Language-Model) from closed caption files, audio effects included in those files are ignored.
 
 ### Web portal
 You can also use the web portal by selecting **Download** -> **Closed Captions** -> **Include Audio Effects**.

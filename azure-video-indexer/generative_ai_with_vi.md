@@ -17,7 +17,7 @@ This article discusses the use of generative AI with Azure AI Video Indexer.
 
 Azure Video Indexer is capable of connecting to other AI models offered by Azure OpenAI. You can also [bring your own model](azure-video-indexer-enabled-by-arc-bring-your-own-model-overview.md). 
 
-You can use VI insights to create prompts for LLMs, or you can create a question and answer interface to find the exact video content you are looking for.
+You can use VI insights to create prompts for large language models (LLMs), or you can create a question and answer interface to find the exact video content you're looking for.
 
 See the following articles to learn more about VI and generative AI.
 

@@ -31,7 +31,7 @@ Face service access is limited based on eligibility and usage criteria to suppor
 
 Face redaction in Video Indexer relies on the output of existing Video Indexer face detection results that we provide in our Video Standard and Advanced Analysis presets.
 
-To redact a video, you must first upload a video to Video Indexer and complete an analysis by using the **Standard** or **Advanced** video presets. You can do this by using the [Azure AI Video Indexer website](https://www.videoindexer.ai/media/library) or [API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video). You can then use face redaction API to reference this video by using the `videoId` value. We create a new video in which the indicated faces are redacted. Both the video analysis and face redaction are separate billable jobs. For more information, see our [pricing page](https://azure.microsoft.com/pricing/details/video-indexer/).
+To redact a video, you must first upload a video to Video Indexer and complete an analysis by using the **Standard** or **Advanced** video presets. You can do it by using the [Azure AI Video Indexer website](https://www.videoindexer.ai/media/library) or [API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video). You can then use face redaction API to reference this video by using the `videoId` value. We create a new video in which the indicated faces are redacted. Both the video analysis and face redaction are separate billable jobs. For more information, see our [pricing page](https://azure.microsoft.com/pricing/details/video-indexer/).
 
 ## Types of blurring
 
@@ -57,7 +57,7 @@ Here's an example:
 }
 ```
 
-Or, use a number that represents the type of blurring that's described in the preceding table:
+Or, use a number that represents the type of blurring as described in the preceding table:
 
 ```json
 {
@@ -183,7 +183,7 @@ If you call the same URL when the redaction job is completed, in the `Location` 
 https://api.videoindexer.ai/westeurope/Accounts/<id>/Videos/<id>/SourceFile/DownloadUrl 
 ```
 
-This URL redirects to the .mp4 file that's stored in the Azure Storage account.
+This URL redirects to the .mp4 file that gets stored in the Azure Storage account.
 
 ## FAQs
 
@@ -192,9 +192,9 @@ This URL redirects to the .mp4 file that's stored in the Azure Storage account.
 | Can I upload a video and redact in one operation? | No. You need to first upload and analyze a video by using Video Indexer API. Then, reference the indexed video in your redaction job. |
 | Can I use the [Azure AI Video Indexer website](https://www.videoindexer.ai/) to redact a video? | No. Currently you can use only the API to create a redaction job.|
 | Can I play back the redacted video by using the Video Indexer [website](https://www.videoindexer.ai/)?| Yes. The redacted video is visible on the Video Indexer website like any other indexed video, but it doesn't contain any insights. |
-| How do I delete a redacted video? | You can use the [Delete Video](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Video) API and provide the `Videoid` value for the redacted video. |
+| How do I delete a redacted video? | You can use a [Delete Video](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Video) API request and provide the `Videoid` value for the redacted video. |
 | Do I need to pass facial identification gating to use face redaction? | Unless you represent a police department in the United States, no. Even if you’re gated, we continue to offer face detection. We don't offer face identification if you're gated. However, you can redact all faces in a video by using only face detection. |
-| Will face redaction overwrite my original video? | No. The face redaction job creates a new video output file. |
+| Does face redaction overwrite my original video? | No. The face redaction job creates a new video output file. |
 | Not all faces are properly redacted. What can I do? | Redaction relies on the initial face detection and detection output of the analysis pipeline. Although we detect all faces most of the time, there are circumstances in which we can't detect a face. Factors like face angle, the number of frames the face is present, and the quality of the source video affect the quality of face redaction. For more information, see [Face insights](face-detection.md). |
 | Can I redact objects other than faces? | No. Currently, we offer only face redaction. If you have a need to redact other objects, you can provide feedback about our product in the [Azure User Voice](https://feedback.azure.com/d365community/forum/8952b9e3-e03b-ec11-8c62-00224825aadf) channel. |
 | How long is an SAS URL valid to download the redacted video? |<!--The SAS URL is valid for xxxx. --> To download the redacted video after the SAS URL expired, you need to call the initial job status URL. It's best to keep these `Jobstatus` URLs in a database in your back end for future reference. |
@@ -205,13 +205,13 @@ The following sections describe errors that might occur when you use face redact
 
 ### Response: 404 Not Found  
 
-The account wasn't found or the video wasn't found.  
+The account wasn't found or the video wasn't found.
 
 #### Response headers
 
 | Name | Required | Type | Description |  
 | ---- | ---- | ---- | ---- |
-| `x-ms-request-id` | false | string | A globally unique identifier (GUID) for the request is assigned by the server for instrumentation purposes. The server makes sure that all logs that are associated with handling the request can be linked to the server request ID. A client can provide this request ID in a support ticket so that support engineers can find the logs that are linked to this specific request. The server makes sure that the request ID is unique for each job. |
+| `x-ms-request-id` | false | string | A globally unique identifier (GUID) for the request gets assigned by the server for instrumentation purposes. The server makes sure that all logs that are associated with handling the request can be linked to the server request ID. A client can provide this request ID in a support ticket so that support engineers can find the logs that are linked to this specific request. The server makes sure that the request ID is unique for each job. |
 
 #### Response body
 
@@ -231,7 +231,7 @@ The account wasn't found or the video wasn't found.
 
 ### Response: 400 Bad Request
 
-Invalid input or can't redact the video since its original upload failed. Please upload the video again.
+Invalid input or can't redact the video since its original upload failed. Upload the video again.
 
 Invalid input or can't redact the video because its original upload failed. Upload the video again.
 
@@ -239,7 +239,7 @@ Invalid input or can't redact the video because its original upload failed. Uplo
 
 | Name | Required | Type | Description |  
 | ---- | ---- | ---- | ---- |
-| `x-ms-request-id` | false | string | A GUID for the request is assigned by the server for instrumentation purposes. The server makes sure that all logs that are associated with handling the request can be linked to the server request ID. A client can provide this request ID in a support ticket so that support engineers can find the logs that are linked to this specific request. The server makes sure that the request ID is unique for each job. |
+| `x-ms-request-id` | false | string | A GUID for the request gets assigned by the server for instrumentation purposes. The server makes sure that all logs that are associated with handling the request can be linked to the server request ID. A client can provide this request ID in a support ticket so that support engineers can find the logs that are linked to this specific request. The server makes sure that the request ID is unique for each job. |
 
 #### Response body
 
@@ -265,7 +265,7 @@ The video is already being indexed.
 
 | Name | Required | Type | Description |  
 | ---- | ---- | ---- | ---- |
-| `x-ms-request-id` | false | string | A GUID for the request is assigned by the server for instrumentation purposes. The server makes sure that all logs that are associated with handling the request can be linked to the server request ID. A client can provide this request ID in a support ticket so that support engineers can find the logs that are linked to this specific request. The server makes sure that the request ID is unique for each job.|
+| `x-ms-request-id` | false | string | A GUID for the request gets assigned by the server for instrumentation purposes. The server makes sure that all logs that are associated with handling the request can be linked to the server request ID. A client can provide this request ID in a support ticket so that support engineers can find the logs that are linked to this specific request. The server makes sure that the request ID is unique for each job.|
 
 #### Response body
 
@@ -291,7 +291,7 @@ The access token isn't authorized to access the account.
 
 | Name | Required | Type | Description |  
 | ---- | ---- | ---- | ---- |
-| `x-ms-request-id` | false | string | A GUID for the request is assigned by the server for instrumentation purposes. The server makes sure that all logs that are associated with handling the request can be linked to the server request ID. A client can provide this request ID in a support ticket so that support engineers can find the logs that are linked to this specific request. The server makes sure that the request ID is unique for each job. |
+| `x-ms-request-id` | false | string | A GUID for the request gets assigned by the server for instrumentation purposes. The server makes sure that all logs that are associated with handling the request can be linked to the server request ID. A client can provide this request ID in a support ticket so that support engineers can find the logs that are linked to this specific request. The server makes sure that the request ID is unique for each job. |
 
 #### Response body
 
@@ -317,7 +317,7 @@ An error occurred on the server.
 
 | Name | Required | Type | Description |  
 | ---- | ---- | ---- | ---- |
-| `x-ms-request-id` | false | string | A GUID for the request is assigned by the server for instrumentation purposes. The server makes sure that all logs that are associated with handling the request can be linked to the server request ID. A client can provide this request ID in a support ticket so that support engineers can find the logs that are linked to this specific request. The server makes sure that the request ID is unique for each job. |
+| `x-ms-request-id` | false | string | A GUID for the request gets assigned by the server for instrumentation purposes. The server makes sure that all logs that are associated with handling the request can be linked to the server request ID. A client can provide this request ID in a support ticket so that support engineers can find the logs that are linked to this specific request. The server makes sure that the request ID is unique for each job. |
 
 #### Response body
 
@@ -353,7 +353,7 @@ The server didn't respond to the gateway within the expected time.
 
 | Name | Required | Type | Description |  
 | ---- | ---- | ---- | ---- |
-| `x-ms-request-id` | false | string | A GUID for the request is assigned by the server for instrumentation purposes. The server makes sure that all logs that are associated with handling the request can be linked to the server request ID. A client can provide this request ID in a support ticket so that support engineers can find the logs that are linked to this specific request. The server makes sure that the request ID is unique for each job. |
+| `x-ms-request-id` | false | string | A GUID for the request gets assigned by the server for instrumentation purposes. The server makes sure that all logs that are associated with handling the request can be linked to the server request ID. A client can provide this request ID in a support ticket so that support engineers can find the logs that are linked to this specific request. The server makes sure that the request ID is unique for each job. |
 
 #### Default JSON
 

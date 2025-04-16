@@ -11,33 +11,33 @@ ms.topic: how-to
 
 # Create or update an Azure AI Video Indexer account with an Azure OpenAI connection
 
-You can use Azure AI Video Indexer with Azure OpenAI deployments by creating or updating an Azure AI Video Indexer account to connect with an Azure OpenAI in the Azure portal. This article shows you how to connect Azure OpenAI to Azure AI Video Indexer, but doesn't cover use cases for Azure OpenAI or combining the two services. To learn more about what can be done with Azure OpenAI deployments, see the [Azure OpenAI Service documentation](/azure/ai-services/openai/).
+You can use Azure AI Video Indexer with Azure OpenAI deployments by creating or updating an Azure AI Video Indexer account to connect with an Azure OpenAI in the Azure portal. This article shows you how to connect Azure OpenAI to Azure AI Video Indexer, but doesn't cover use cases for Azure OpenAI or combining the two services. For more information about Azure OpenAI deployments, see the [Azure OpenAI Service documentation](/azure/ai-services/openai/).
 
 ## Prerequisites
 
 - An Azure subscription
 
 > [!NOTE]
-> It is recommended that you create resources in the same region to avoid performance issues.
+> We recommended that you create resources in the same region to avoid performance issues.
 
 ## Create an Azure OpenAI account
 
 1. From the Azure portal home page, select **Create a resource**.
 1. Enter *OpenAI* in the search bar.
 1. Select the Azure OpenAI card or **Create** and then **Azure OpenAI**.
-1. Select the resource group you want to use from the **Resource group** drowpdown list or create a new one.
-1. Select the region (location) from the **Region** dropdown** list.
+1. Select the resource group you want to use from the **Resource group** list or create a new one.
+1. Select the region (location) from the **Region** list.
 1. Give the Azure OpenAI resource a name.
-1. Select a tier from the **Pricing tier** dropdown list.
+1. Select a tier from the **Pricing tier** list.
 1. Select **Next**.
-1. Select the **Disabled, no networks can access this resource. You could configure private endpoint connections that will be the exclusive way to access this resource** button unless you want to configure network access. Additionally, you can configure a private endpoint.
+1. Select **Disabled, no networks can access this resource. You could configure private endpoint connections that will be the exclusive way to access this resource** unless you want to configure network access. Additionally, you can configure a private endpoint.
 1. Select **Next**.
 1. Select **Create**.
 1. Wait for the deployment to finish.
 
 ## Create an Azure AI Video Indexer account with a connection to Azure OpenAI
 
-1. Navigate to the resource group you are currently working with. 
+1. Navigate to the resource group you're currently working with. 
 1. Select **Create**.
 1. Search for and select *Azure AI Video Indexer.* The Create a Video Indexer resource page appears.
 1. Create a resource group and selecting the region.

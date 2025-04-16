@@ -11,9 +11,9 @@ ms.topic: how-to
 
 # Switch between multiple tenants
 
-When working with multiple tenants/directories in the Azure environment user might need to switch between the different directories. 
+When working with multiple tenants/directories in the Azure environment, you might need to switch between the different directories. 
 
-When logging in the Azure AI Video Indexer website, a default directory will load and the relevant accounts and list them in the **Account list**.
+When logging in the Azure AI Video Indexer website, a default directory loads the relevant accounts and lists them in the **Account list**.
 
 > [!Note]
 > Trial accounts are global and not tenant-specific. Hence, the tenant switching described in this article only applies to your ARM accounts.
@@ -32,9 +32,9 @@ This article shows two options to solve the same problem - how to switch tenants
     > [!div class="mx-imgBorder"]
     > ![Screenshot of a user name.](./media/switch-directory/avi-user-switch.png)
 
-    Here user can view all detected directories listed. The current directory will be marked, once a different directory is selected the **Switch directory** button will be available.
+    There you can view all detected directories listed. The current directory is marked. When you select a different directory, **Switch directory** becomes available.
 
-    Once clicked, the authenticated credentials will be used to sign in again to the Azure AI Video Indexer website with the new directory.
+    When selected, the authenticated credentials get used to sign in again to the Azure AI Video Indexer website with the new directory.
 
 ## Switch tenants from outside the Azure AI Video Indexer website
 
@@ -47,7 +47,7 @@ This section shows how to get the domain name from the Azure portal. You can the
 
     > [!div class="mx-imgBorder"]
     > ![Hover over your account name.](./media/switch-directory/account-attributes.png)
-1. Get the domain name of the current Azure subscription, you'll need it for the last step of the following section. 
+2. Get the domain name of the current Azure subscription. You need it for the last step in the next.
 
 If you want to see domains for all of your directories and switch between them, see [Switch and manage directories with the Azure portal](/azure/azure-portal/set-preferences#switch-and-manage-directories).
 
@@ -55,7 +55,7 @@ If you want to see domains for all of your directories and switch between them, 
 
 1. Go to the [Azure AI Video Indexer](https://www.videoindexer.ai/) website.
 1. Select **Sign out** after pressing the button in the top-right corner.
-1. On the VI website, press **Sign in** and choose the Entra ID account.
+1. On the VI website, press **Sign in** and choose the Microsoft Entra ID account.
 1. Select **Use another account**.
 1. Choose **Sign-in with other options**.
 1. Select **Sign in to an organization**.

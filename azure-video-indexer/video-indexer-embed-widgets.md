@@ -26,7 +26,7 @@ An Insights widget includes all visual insights that were extracted from your vi
 |`language`|A short language code (language name)|Controls insights language.<br/>Example: `https://www.videoindexer.ai/embed/insights/<accountId>/<videoId>/?language=es-es` <br/>or `https://www.videoindexer.ai/embed/insights/<accountId>/<videoId>/?language=spanish`|
 |`locale` | A short language code | Controls the language of the UI. The default value is `en`. <br/>Example: `locale=de`.|
 |`tab` | The default selected tab | Controls the **Insights** tab that's rendered by default. <br/>Example: `tab=timeline` renders the insights with the **Timeline** tab selected.|
-|`search` | String | Allows you to control the initial search term.<br/>Example: `https://www.videoindexer.ai/embed/insights/<accountId>/<videoId>/?search=azure` renders the insights filtered by the word "Azure". | 
+|`search` | String | Allows you to control the initial search term.<br/>Example: `https://www.videoindexer.ai/embed/insights/<accountId>/<videoId>/?search=azure` renders the insights filtered by the word *Azure*. | 
 |`sort` | Strings separated by comma | Allows you to control the sorting of an insight.<br/>Each sort consists of three values: widget name, property, and order, connected with '_' `sort=name_property_order`<br/>Available options:<br/>widgets: `keywords`, `audioEffects`, `labels`, `sentiments`, `emotions`, `keyframes`, `scenes`, `namedEntities`, and `spokenLanguage`.<br/>property: `startTime`, `endTime`, `seenDuration`, `name`, and `ID`.<br/>order: asc and desc.<br/>Example: `https://www.videoindexer.ai/embed/insights/<accountId>/<videoId>/?sort=labels_id_asc,keywords_name_desc` renders the labels sorted by ID in ascending order and keywords sorted by name in descending order.| 
 |`location` ||The `location` parameter must be included in the embedded links; see [how to get the name of your region](regions.md). If your account is in preview, the `trial` should be used for the location value. `trial` is the default value for the `location` parameter.| 
 
@@ -40,10 +40,10 @@ You can use the Player widget to stream video by using adaptive bit rate. The Pl
 |`captions` | A language code / A language code array | Fetches the caption in the specified language during the widget loading to be available on the **Captions** menu.<br/> Example: `captions=en-US`, `captions=en-US,es-ES` |
 |`showCaptions` | A Boolean value | Makes the player load with the captions already enabled.<br/> Example: `showCaptions=true`. |
 |`type`| | Activates an audio player skin (the video part is removed).<br/> Example: `type=audio`. |
-|`autoplay` | A Boolean value | Indicates if the player should start playing the video when loaded. The default value is `true`.<br/> Example: `autoplay=false`. The ability to use autoplay is subject to the policy of the web browser being used: [Firefox](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide#autoplay_availability), [Google Chrome](https://developer.chrome.com/blog/autoplay/), [MacOS Webkit](https://webkit.org/blog/7734/auto-play-policy-changes-for-macos/) |
+|`autoplay` | A Boolean value | Indicates if the player should start playing the video when loaded. The default value is `true`.<br/> Example: `autoplay=false`. The ability to use autoplay is subject to the policy of the web browser being used: [Firefox](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide#autoplay_availability), [Google Chrome](https://developer.chrome.com/blog/autoplay/), [macOS WebKit](https://webkit.org/blog/7734/auto-play-policy-changes-for-macos/) |
 |`language`/`locale` | A language code | Controls the player language. The default value is `en-US`.<br/>Example: `language=de-DE`.|
 |`location` ||The `location` parameter must be included in the embedded links; see [how to get the name of your region](regions.md). If your account is in preview, the `trial` should be used for the location value. `trial` is the default value for the `location` parameter.| 
-|`boundingBoxes`|Array of bounding boxes. Options: people (faces), observed people and detected objects. <br/>Values should be separated by a comma (",").|Controls the option to set bounding boxes on/off when embedding the player.<br/>All mentioned option will be turned on.<br/><br/>Example: `boundingBoxes=observedPeople,people,detectedObjects`<br/>Default value is `boundingBoxes=observedPeople,detectedObjects` (only observed people and detected objects bounding box are turned on).|
+|`boundingBoxes`|Array of bounding boxes. Options: people (faces), observed people and detected objects. <br/>Separate values with a comma (*,*).|Controls the option to set bounding boxes on/off when embedding the player.<br/>All mentioned options are turned on.<br/><br/>Example: `boundingBoxes=observedPeople,people,detectedObjects`<br/>Default value is `boundingBoxes=observedPeople,detectedObjects` (only observed people and detected objects bounding box are turned on).|
 
 ### Editor widget
 
@@ -54,7 +54,7 @@ You can use the Editor widget to create new projects and manage a video's insigh
 |`accessToken`<sup>*</sup> | String | Provides access to videos that are only in the account that's used to embed the widget.<br> The Editor widget requires the `accessToken` parameter. |
 |`language` | A language code | Controls the player language. The default value is `en-US`.<br/>Example: `language=de-DE`. |
 |`locale` | A short language code | Controls the insights language. The default value is `en`.<br/>Example: `language=de`. |
-|`location` ||The `location` parameter must be included in the embedded links, see [how to get the name of your region](regions.md). If your account is in preview, the `trial` should be used for the location value. `trial` is the default value for the `location` parameter.| 
+|`location` ||The `location` parameter must be included in the embedded links. See [how to get the name of your region](regions.md). If your account is in preview, the `trial` should be used for the location value. `trial` is the default value for the `location` parameter.| 
 
 <sup>*</sup>The owner should provide `accessToken` with caution.
 
@@ -62,21 +62,21 @@ You can use the Editor widget to create new projects and manage a video's insigh
 
 This section discusses embedding videos by [using the website](#the-website-experience) or by [assembling the URL manually](#assemble-the-url-manually) into apps. 
 
-The `location` parameter must be included in the embedded links, see [how to get the name of your region](regions.md). If your account is in preview, the `trial` should be used for the location value. `trial` is the default value for the `location` parameter. For example: `https://www.videoindexer.ai/accounts/00000000-0000-0000-0000-000000000000/videos/b2b2c74b8e/?location=trial`.
+The `location` parameter must be included in the embedded links. See [how to get the name of your region](regions.md). If your account is in preview, the `trial` should be used for the location value. `trial` is the default value for the `location` parameter. For example: `https://www.videoindexer.ai/accounts/00000000-0000-0000-0000-000000000000/videos/b2b2c74b8e/?location=trial`.
 
 ### The website experience
 
-To embed a video, use the website as described below:
+To embed a video, use the website with the following steps.
 
 1. Sign in to the [Azure AI Video Indexer](https://www.videoindexer.ai/) website.
 1. Select the video that you want to work with and press **Play**.
 1. Select the type of widget that you want (**Insights**, **Player**, or **Editor**).
-1. Click **&lt;/&gt; Embed**.
-5. Copy the embed code (appears in **Copy the embedded code** in the **Share & Embed** dialog).
+1. Select **&lt;/&gt; Embed**.
+5. Copy the embed code (it appears in **Copy the embedded code** in the **Share & Embed** dialog).
 6. Add the code to your app.
 
 > [!NOTE]
-> Sharing a link for the **Player** or **Insights** widget will include the access token and grant the read-only permissions to your account.
+> Sharing a link for the **Player** or **Insights** widget includes the access token and grants the read-only permissions to your account.
 
 ### Assemble the URL manually
 
@@ -94,7 +94,7 @@ To embed a private video, you must pass an access token (use [Get Video Access T
   
 ### Provide editing insights capabilities
 
-To provide editing insights capabilities in your embedded widget, you must pass an access token that includes editing permissions. Use [Get Video Access Token](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Access-Token) with `&allowEdit=true`.
+To provide editing insights capabilities in your embedded widget, you must pass an access token that includes editing permissions. Use a [Get Video Access Token](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Access-Token) API request with `&allowEdit=true`.
 
 ## Widgets interaction
 
@@ -108,8 +108,8 @@ When you edit the transcripts, the following flow occurs:
 1. Azure AI Video Indexer gets these updates and saves them in the from transcript edits in the language model.
 1. The captions are updated:
 
-    * If you are using Azure AI Video Indexer's player widget - it’s automatically updated.
-    * If you are using an external player - you get a new captions file user the **Get video captions** call.
+    * If you're using Azure AI Video Indexer's player widget - it automatically gets updated.
+    * If you're using an external player - you get a new captions file user from a **Get video captions** API call.
 
 ### Cross-origin communications
 
@@ -118,11 +118,11 @@ To get Azure AI Video Indexer widgets to communicate with other components:
 - Uses the cross-origin communication HTML5 method `postMessage`.
 - Validates the message across VideoIndexer.ai origin.
 
-If you implement your own player code and integrate with Insights widgets, it's your responsibility to validate the origin of the message that comes from VideoIndexer.ai.
+It's your responsibility to validate the origin of the message that comes from VideoIndexer.ai if you implement your own player code and integrate with Insights widgets.
 
 ### Embed widgets in your app or blog (recommended)
 
-This section shows how to achieve interaction between two Azure AI Video Indexer widgets so that when a user selects the insight control on your app, the player jumps to the relevant moment.
+This section shows how to achieve interaction between two Azure AI Video Indexer widgets. When a user selects the insight control on your app, the player jumps to the relevant moment.
 
 1. Copy the Player widget embed code.
 2. Copy the Insights embed code.
@@ -188,17 +188,17 @@ For more information, see the [Video Indexer Player + VI Insights demo](https://
 
 ### Insights widget
 
-You can choose the types of insights that you want. To do this, specify them as a value to the following URL parameter that's added to the embed code that you get (from the [API](https://aka.ms/avam-dev-portal) or from the [Azure AI Video Indexer](https://www.videoindexer.ai/) website): `&widgets=<list of wanted widgets>`.
+You can choose the types of insights that you want. To do so, specify them as a value to the following URL parameter. It gets added to the embed code that you get (from the [API](https://aka.ms/avam-dev-portal) or from the [Azure AI Video Indexer](https://www.videoindexer.ai/) website): `&widgets=<list of wanted widgets>`.
 
 The possible values are listed [here](#insights-widget).
 
-For example, if you want to embed a widget that contains only people and keywords insights, the iframe embed URL will look like this:
+For example, if you want to embed a widget that contains only people and keywords insights, the iframe embed URL resembles:
 
 `https://www.videoindexer.ai/embed/insights/<accountId>/<videoId>/?widgets=people,keywords`
 
 The title of the iframe window can also be customized by providing `&title=<YourTitle>` to the iframe URL. (It customizes the HTML `<title>` value).
    
-For example, if you want to give your iframe window the title "MyInsights", the URL will look like this:
+For example, if you want to give your iframe window the title `MyInsights`, the URL resembles:
 
 `https://www.videoindexer.ai/embed/insights/<accountId>/<videoId>/?title=MyInsights`
 
@@ -212,17 +212,17 @@ For example:
 
 `> [!VIDEO https://www.videoindexer.ai/embed/player/<accountId>/<videoId>/]>/<videoId>/" frameborder="0" allowfullscreen />`
 
-By default, Azure AI Video Indexer player has autogenerated closed captions that are based on the transcript of the video. The transcript is extracted from the video with the source language that was selected when the video was uploaded.
+By default, Azure AI Video Indexer player autogenerates closed captions that are based on the transcript of the video. The transcript is extracted from the video with the source language that was selected when the video was uploaded.
 
 If you want to embed with a different language, you can add `&captions=<Language Code>` to the embed player URL. If you want the captions to be displayed by default, you can pass &showCaptions=true.
 
-The embed URL then will look like this:
+The embed URL then resembles:
 
 `https://www.videoindexer.ai/embed/player/<accountId>/<videoId>/?captions=en-us`
 
 #### Autoplay
 
-By default, the player will start playing the video. you can choose not to by passing `&autoplay=false` to the preceding embed URL.
+By default, the player starts playing the video. You can choose not to by passing `&autoplay=false` to the preceding embed URL.
 
 ## Code samples
 

@@ -24,7 +24,7 @@ Customizing the brands model allows you to:
 - Include brands that should be part of your model that might not be in Bing's brands database (approved brands).
 
 > [!NOTE]
-> If your video was indexed prior to adding a brand, you need to reindex it. You will find **Re-index** item in the drop-down menu associated with the video. Select **Advanced options** -> **Brand categories** and check **All brands**.
+> If your video was indexed before adding a brand, you need to reindex it. You can find the **Re-index** item in the drop-down menu associated with the video. Select **Advanced options** -> **Brand categories** and check **All brands**.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ The **Include brands** section represents custom brands that you want Azure AI V
 
 1. Select **+ Create new brand**.
 1. Provide a name (required), category (optional), description (optional), and reference URL (optional). 
-  1. The category field is meant to help you tag your brands. This field shows up as the brand's *tags* when using the Azure AI Video Indexer APIs. For example, the brand "Azure" can be tagged or categorized as "Cloud". 
+  1. The category field is meant to help you tag your brands. This field shows up as the brand's *tags* when using the Azure AI Video Indexer APIs. For example, the brand `Azure` can be tagged or categorized as `Cloud`. 
   1. The reference URL field can be any reference website for the brand (like a link to its Wikipedia page).
 1. Select **Save**. The brand is added to the **Include brands** list.
 
@@ -74,7 +74,7 @@ The **Exclude brands** section represents the brands that you don't want Azure A
 
 1. Select **+ Create new brand.**
 1. Provide a name (required), category (optional).
-1. Select **Save**. The brand is added to the *Exclude brands* list.
+1. Select **Save**. The brand is added to the **Exclude brands** list.
 
 ### Edit a brand on the exclude list
 
@@ -92,16 +92,16 @@ You can only update the category of a brand. You can't change the name of a bran
 
 > [!NOTE]
 > For all requests, setting `enabled` to `true` puts the brand in the *Include* list for Azure AI Video Indexer to detect.
-> Setting `enabled` to `false` puts the brand in the *Exclude* list, so Azure AI Video Indexer *won't* detect it.
+> Setting `enabled` to `false` puts the brand in the *Exclude* list, so Azure AI Video Indexer *can't* detect it.
 
-## Create a Brand
+## Create a brand
 
-The [Create Brand](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Brand) request creates a new custom brand and adds it to the custom brands model for the specified account.
+You can use a [Create Brand](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Brand) API request to create a new custom brand and adds it to the custom brands model for the specified account.
 
 Some other parameters that you can set in the body:
 
 * The `referenceUrl` value can be any reference websites for the brand, such as a link to its Wikipedia page.
-* The `tags` value is a list of tags for the brand. This tag shows up in the brand's *Category* field in the Azure AI Video Indexer website. For example, the brand "Azure" can be tagged or categorized as "Cloud".
+* The `tags` value is a list of tags for the brand. This tag shows up in the brand's *Category* field in the Azure AI Video Indexer website. For example, the brand `Azure` can be tagged or categorized as `Cloud`.
 
 ### Example response
 
@@ -125,7 +125,7 @@ Some other parameters that you can set in the body:
 
 ## Delete a Brand
 
-The [Delete Brand](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Brand) request removes a brand from the custom Brands model for the specified account. The account is specified in the `accountId` parameter. The brand is no longer in the *Include* or *Exclude* brands lists.
+You can use a [Delete Brand](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Brand) API request to remove a brand from the custom Brands model for the specified account. The account is specified in the `accountId` parameter. The brand is no longer in the *Include* or *Exclude* brands lists.
 
 ### Example response
 
@@ -133,7 +133,7 @@ There's no returned content when the brand is deleted successfully.
 
 ## Get a specific Brand
 
-The [Get Brand](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Brand) request lets you search for the details of a brand in the custom brands model for the specified account using the brand ID.
+Use a [Get Brand](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Brand) API request to search for the details of a brand in the custom brands model for the specified account using the brand ID.
 
 ### Example response
 
@@ -181,7 +181,7 @@ The [Update Brand](https://api-portal.videoindexer.ai/api-details#api=Operations
 
 ## Get all of the Brands
 
-The [Get Brands](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Brands) request returns all of the brands in the custom brands, included and excluded, for the account.
+You can use a [Get Brands](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Brands) API request to return all of the brands in the custom brands, included and excluded, for the account.
 
 ### Example response
 
@@ -216,7 +216,7 @@ The [Get Brands](https://api-portal.videoindexer.ai/api-details#api=Operations&o
 
 ## Get Brands model settings
 
-The [Get Brands](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Brands) request returns the Brands model settings in the specified account. The Brands model settings represent whether detection from the Bing brands database is enabled or not. If Bing brands aren't enabled, Azure AI Video Indexer only detects brands from the custom Brands model of the specified account.
+You can use a [Get Brands](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Brands) API request to return the Brands model settings in the specified account. The Brands model settings represent whether detection from the Bing brands database is enabled or not. If Bing brands aren't enabled, Azure AI Video Indexer only detects brands from the custom Brands model of the specified account.
 
 ### Example response
 

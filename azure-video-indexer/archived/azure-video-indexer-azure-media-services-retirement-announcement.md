@@ -14,13 +14,13 @@ ms.topic: conceptual
 
 This article explains the upcoming changes to Azure AI Video Indexer (VI) resulting from the [retirement of Azure Media Services (AMS)](/azure/media-services/latest/azure-media-services-retirement).
 
-Currently, VI requires the creation of an AMS account. Additionally, VI uses AMS for video encoding and streaming operations. The required changes will affect all VI customers. See the official AI VI announcement [here](https://azure.microsoft.com/updates/videoindexer-2/).
+Currently, VI requires the creation of an AMS account. Additionally, VI uses AMS for video encoding and streaming operations. The required changes affect all VI customers. See the official AI VI announcement [here](https://azure.microsoft.com/updates/videoindexer-2/).
 
 To continue using VI beyond June 30, 2024, all customers **must** make changes to their VI accounts to remove the AMS dependency. Detailed guidance for converting VI accounts will be provided in February 2024 when the new account type is released.
 
 ## Pricing and billing
 
-Currently, VI uses AMS for encoding and streaming for the VI player. AMS charges you for both encoding and streaming. In the future, VI will encode media and you'll be billed using the updated VI accounts. Pricing details will be shared in February 2024. There will be no charge for the VI video player.
+Currently, VI uses AMS for encoding and streaming for the VI player. AMS charges you for both encoding and streaming. In the future, VI will encode media and you'll get billed using the updated VI accounts. Pricing details will be shared in February 2024. There will be no charge for the VI video player.
 
 ## VI changes
 
@@ -63,9 +63,9 @@ To continue using the account beyond June 30, 2024, classic accounts will have t
 
 ## API changes
 
-**Between February 15 to June 30, 2024**, VI will support both existing data and control plane APIs as well as the updated APIs that exclude all AMS related parameters.
+**Between February 15 to June 30, 2024**, VI will support both existing data and control plane APIs and the updated APIs that exclude all AMS related parameters.
 
-New VI accounts as well as existing VI accounts that have completed the steps to remove all AMS dependencies will only use the updated APIs that will exclude all AMS related parameters.
+New VI accounts and existing VI accounts that have completed the steps to remove all AMS dependencies will only use the updated APIs that exclude all AMS related parameters.
 
 **On July 1, 2024**, code using APIs with AMS parameters will no longer be supported. This applies to both control plane and data plane operations.
 
@@ -83,7 +83,7 @@ There will be breaking API changes. The following table describes the changes fo
 | **Data plane** | Upload | Upload will no longer accept the `assetId` parameter. |
 | **Data plane** | Upload<br/>ReIndex<br/>Redact | `AdaptiveBitrate` will no longer be supported for new uploads. |
 | **Data plane** | GetVideoIndex | `PublishedUrl` property will always be null. |
-| **Data plane** | GetVideoStreamingURL | The streaming URL will return references to VI account endpoints rather than AMS account endpoints. |
+| **Data plane** | GetVideoStreamingURL | The streaming URL returns references to VI account endpoints rather than AMS account endpoints. |
 
 Full details of the API changes and alternatives will be provided when the updated APIs are released.
 

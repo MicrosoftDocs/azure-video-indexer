@@ -26,7 +26,7 @@ For a detailed overview and best practices for custom speech models, see [Cust
 
 ## Create a dataset 
 
-As all custom models must contain a dataset, we'll start with the process of how to create and manage datasets. 
+As all custom models must contain a dataset, start with the process of how to create and manage datasets. 
  
 1. Select the **Model customization** button. 
 1. Select the **Speech (new)** tab.
@@ -34,7 +34,7 @@ As all custom models must contain a dataset, we'll start with the process of how
 1. Select either *Plain text* or *Pronunciation* from the **Dataset type** dropdown menu. Every speech model must have a plain text dataset and can optionally have a pronunciation dataset.
 1. Select **Browse** and select the dataset file. You can choose only one. 
 1. Select a **Language** for the model. Choose the language that is spoken in the media files you plan on indexing with this model. The Dataset name is prepopulated with the name of the file but you can modify the name. 
-1. You can optionally add a description of the dataset. This could be helpful to distinguish each dataset if you expect to have multiple datasets.
+1. You can optionally add a description of the dataset. It could be helpful to distinguish each dataset if you expect to have multiple datasets.
 1. Select **Upload**. When the dataset creation is complete, you can use it for training and creation of new models.
 
 ## Review and update a dataset 
@@ -49,11 +49,11 @@ Then, select **View Dataset**.
 
 You can then view the name, description, language, and status of the dataset plus the following properties: 
 
-**Number of lines**: indicates the number of lines successfully loaded out of the total number of lines in the file. If the entire file is loaded successfully the numbers will match (for example, 10 of 10 normalized). If the numbers don't match (for example, 7 of 10 normalized), this means that only some of the lines successfully loaded and the rest had errors. Common causes of errors are formatting issues with a line, such as not spacing a tab between each word in a pronunciation file. Reviewing the plain text and pronunciation data for training articles should be helpful in finding the issue. To troubleshoot the cause, review the error details, which are contained in the report. Select **View report** to view the error details regarding the lines that didn't load successfully (errorKind). This can also be viewed by selecting the **Report** tab.
+**Number of lines**: indicates the number of lines successfully loaded out of the total number of lines in the file. If the entire file is loaded successfully the numbers match (for example, 10 of 10 normalized). If the numbers don't match (for example, 7 of 10 normalized), it means that only some of the lines successfully loaded and the rest had errors. Common causes of errors are formatting issues with a line, such as not spacing a tab between each word in a pronunciation file. Reviewing the plain text and pronunciation data for training articles should be helpful in finding the issue. To troubleshoot the cause, review the error details, which are contained in the report. Select **View report** to view the error details regarding the lines that didn't load successfully (errorKind). You can also view it selecting the **Report** tab.
 
 **Dataset ID**: Each dataset has a unique GUID, which is needed when using the API for operations that reference the dataset. 
 
-**Plain text (normalized)**: This contains the normalized text of the loaded dataset file. Normalized text is the recognized text in plain form without formatting. 
+**Plain text (normalized)**: It contains the normalized text of the loaded dataset file. Normalized text is the recognized text in plain form without formatting. 
 
 **Edit Details**: To edit a dataset's name or description, when hovering over the dataset, select on the ellipsis and then select Edit details. You're then able to edit the dataset name and description. 
 
@@ -66,16 +66,16 @@ You can then view the name, description, language, and status of the dataset plu
 
 ## Create a custom speech model 
 
-Datasets are used in the creation and training of models. Once you have created a plain text dataset, you can create and start using a custom speech model.  
+Datasets are used in the creation and training of models. After you create a plain text dataset, you can create and start using a custom speech model.  
 
-Keep in mind the following when creating and using custom speech models: 
+Keep the following points in mind when you create and use custom speech models: 
 
 * A new model must include at least one plain text dataset and can have multiple plain text datasets.  
-* It's optional to include a pronunciation dataset and no more than one can be included.   
-* Once a model is created, you can't add additional datasets to it or perform any modifications to its datasets. If you need to add or modify datasets, create a new model. 
-* If you have indexed a video using a custom speech model and then delete the model, the transcript isn't impacted unless you perform a reindex.  
-* If you deleted a dataset that was used to train a custom model, as the speech model was already trained by the dataset, it continues to use it until the speech model is deleted. 
-* If you delete a custom model, it has no impact of the transcription of videos that were already indexed using the model. 
+* It's optional to include a pronunciation dataset and no more than one can be included.
+* Once a model is created, you can't add more datasets to it or perform any modifications to its datasets. If you need to add or modify datasets, create a new model. 
+* If you index a video using a custom speech model and then delete the model, the transcript isn't impacted unless you perform a reindex.  
+* If you deleted a dataset used to train a custom model, it continues to use it until the speech model is deleted. The reason is because the speech model got trained by the dataset.
+* If you delete a custom model, it doesn't affect video transcription for videos that were already indexed using the model.
 
 ## Train a model
 
@@ -88,7 +88,7 @@ There are two ways to train a model – through the dataset tab and through the 
 ## Train a model through the Datasets tab 
 
 1. View the list of datasets.
-1. Select a plain text dataset. The **Train new model** icon above can then be selected. 
+1. Select a plain text dataset. Then select the **Train new model** symbol.
 1. Select **Train new model**.
 1. Enter a name for the model, a language, and optionally add a description.
 1. Select the **Datasets** tab
@@ -107,9 +107,9 @@ There are two ways to train a model – through the dataset tab and through the 
 
 ## Review and update a model 
 
-**View Model**: You can view a model and its properties by either clicking on the model’s name or when hovering over the model, clicking on the ellipsis and then selecting View Model.
+**View Model**: You can view a model and its properties by either selecting the model’s name or when you hover over the model. Then select the ellipsis (**...**) and then select **View Model**.
     
-You'll then see in the Details tab the name, description, language, and status of the model plus the following properties: 
+Then you see in the Details tab the name, description, language, and status of the model plus the following properties: 
 
 **Model ID**: Each model has a unique GUID, which is needed when using the API for operations that reference the model. 
 
@@ -137,7 +137,7 @@ The same steps apply when you want to reindex a video with a custom model.
 
 [!INCLUDE [speech model](./includes/speech-model-note.md)] 
 
-The following is a table of descriptions of some of the parameters used with the speech model requests: 
+The following table provides descriptions for some of the parameters used with the speech model requests: 
 
 |Name   | Type |  Description |  
 |---|---|---|
@@ -150,9 +150,9 @@ The following is a table of descriptions of some of the parameters used with the
 
 ## Create a speech dataset 
 
-The [Create Speech Dataset](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Speech-Dataset) request creates a dataset for training a speech model. Upload a file that is used to create a dataset with this request. The content of a dataset can't be modified after it's created. 
+You can make a [Create Speech Dataset](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Speech-Dataset) API request to create a dataset to train a speech model. Upload a file that is used to create a dataset with this request. The content of a dataset can't be modified after you create it.
 
-Define the parameters in the request body, including a URL to the text file to be uploaded. The description and custom properties fields are  optional. This is an example of a request body:
+Define the parameters in the request body, including a URL to the text file to be uploaded. The description and custom properties fields are  optional. Here's an example of a request body:
 
 ```json
 {
@@ -191,9 +191,9 @@ Define the parameters in the request body, including a URL to the text file to b
 
 ## Create a speech model 
 
-The [Create Speech Model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Speech-Model) request creates and trains a custom speech model that can be used to improve the transcription accuracy of your videos. It must contain at least one plain text dataset. It can optionally have pronunciation datasets. Create it with all of the relevant dataset files as a model’s datasets can't be added or updated after its creation.
+You can make a [Create Speech Model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Speech-Model) API request to create and train a custom speech model. Use it to improve the transcription accuracy of your videos. It must contain at least one plain text dataset. It can optionally have pronunciation datasets. Create it with all of the relevant dataset files as a model’s datasets can't be added or updated after its creation.
 
-Define the parameters in the request body, including a list of strings that the dataset or datasets for the model to include. The description and custom properties fields are optional. This is a sample of a request body:
+Define the parameters in the request body, including a list of strings that the dataset or datasets for the model to include. The description and custom properties fields are optional. Here's a sample request body:
 
 ```json
 {
@@ -232,7 +232,7 @@ Define the parameters in the request body, including a list of strings that the 
 
 ## Get speech dataset 
 
-The [Get Speech Dataset](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Speech-Dataset) API returns information on the specified dataset.  
+You can use a [Get Speech Dataset](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Speech-Dataset) API call to return information for the specified dataset.
 
 ### Example response
 
@@ -298,7 +298,7 @@ The [Get Speech Dataset Files](https://api-portal.videoindexer.ai/api-details#
 
 ## Get the specified account datasets
 
-The [Get Speech Datasets](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Speech-Datasets) request returns information on all of the specified accounts datasets.
+You can use a [Get Speech Datasets](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Speech-Datasets) API request to return information for all of the specified accounts datasets.
 
 ### Example response 
 
@@ -324,7 +324,7 @@ The [Get Speech Datasets](https://api-portal.videoindexer.ai/api-details#api=O
 
 ## Get the specified speech model 
 
-The [Get Speech Model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Speech-Model) API returns information on the specified model.  
+You can use a [Get Speech Model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Speech-Model) API request to return information for the specified model.
 
 ### Example response 
 
@@ -351,7 +351,7 @@ The [Get Speech Model](https://api-portal.videoindexer.ai/api-details#api=Oper
 
 ## Get the specified account speech models 
 
-The [Get Speech Models](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Speech-Models) API returns information on all of the models in the specified account.  
+You can use a [Get Speech Models](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Speech-Models) API request to return information for all of the models in the specified account.
 
 ### Example response 
 
@@ -378,7 +378,7 @@ The [Get Speech Models](https://api-portal.videoindexer.ai/api-details#api=Ope
 
 ## Delete speech dataset 
 
-The [Delete Speech Dataset](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Speech-Dataset) API deletes the specified dataset. Any model that was trained with the deleted dataset continues to be available until the model is deleted. You can't delete a dataset while it is in use for indexing or training.
+You can use a [Delete Speech Dataset](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Speech-Dataset) API request to delete the specified dataset. Any model that was trained with the deleted dataset continues to be available until the model is deleted. You can't delete a dataset while it is in use for indexing or training.
 
 ### Example response 
 
@@ -386,7 +386,7 @@ There's no returned content when the dataset is deleted successfully.
 
 ## Delete a speech model 
 
-The [Delete Speech Model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Speech-Model) API deletes the specified speech model. You can't delete a model while it is in use for indexing or training. 
+You can use a [Delete Speech Model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Speech-Model) API request to delete the specified speech model. You can't delete a model while it is in use for indexing or training. 
 
 ### Response 
 

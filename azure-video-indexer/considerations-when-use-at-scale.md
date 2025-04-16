@@ -1,6 +1,6 @@
 ---
 title: Things to consider when using Azure AI Video Indexer at scale - Azure
-description: This topic explains what things to consider when using Azure AI Video Indexer at scale.
+description: This article explains what things to consider when using Azure AI Video Indexer at scale.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
@@ -21,7 +21,7 @@ This article answers questions like:
 
 The article provides six best practices of how to use Azure AI Video Indexer at scale.
 
-## When uploading videos consider using a URL over byte array
+## Consider using a URL over byte array when you upload videos
 
 Azure AI Video Indexer gives you the choice to upload videos from a URL or directly by sending the file as a byte array, the latter comes with some constraints.
 
@@ -44,19 +44,20 @@ When you upload videos using URL, you just need to provide a path to the locatio
 
 ## Respect throttling
 
-Azure AI Video Indexer is built to deal with indexing at scale, and when you want to get the most out of it you should also be aware of the system's capabilities and design your integration accordingly. You don't want to send an upload request for a batch of videos just to discover that some of the movies didn't upload and you are receiving an HTTP 429 response code (too many requests). There is an API request limit of 10 requests per second and up to 120 requests per minute.
+Azure AI Video Indexer is built to deal with indexing at scale. When you want to get the most out of it, you should also be aware of the system's capabilities and design your integration accordingly. You don't want to send an upload request for a batch of videos just to discover that some of the movies didn't upload and you're receiving an HTTP 429 response code (too many requests). There's an API request limit of 10 requests per second and up to 120 requests per minute.
 
-Azure AI Video Indexer adds a `retry-after` header in the HTTP response, the header specifies when you should attempt your next retry. Make sure you respect it before trying your next request.
+Azure AI Video Indexer adds a `retry-after` header in the HTTP response. The header specifies when you should attempt your next retry. Make sure you respect it before trying your next request.
 
 :::image type="content" source="./media/considerations-when-use-at-scale/respect-throttling.jpg" alt-text="Design your integration well, respect throttling":::
 
 ## Use callback URL
 
-We recommend that instead of polling the status of your request constantly from the second you sent the upload request, you can add a callback URL and wait for Azure AI Video Indexer to update you. As soon as there is any status change in your upload request, you get a POST notification to the URL you specified.
+Instead of repeatedly polling the status of your request upload request, you can add a callback URL and wait for Azure AI Video Indexer to update you. When there's a status change in your upload request, you get a POST notification to the URL you specified.
+
 
 You can add a callback URL as one of the parameters of the [upload video API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video). Check out the code samples in [GitHub repo](https://github.com/Azure-Samples/media-services-video-indexer/tree/master/).
 
-For callback URL you can also use Azure Functions, a serverless event-driven platform that can be triggered by HTTP and implement a following flow.
+For callback URL, you can also use Azure Functions. It's a serverless event-driven platform that can get triggered by HTTP and implement a following flow.
 
 ### callBack URL definition
 
@@ -70,8 +71,8 @@ When making decisions related to using Azure AI Video Indexer at scale, look at 
 
 You might be asking, what video quality do you need for indexing your videos?
 
-In many cases, indexing performance has almost no difference between HD (720P) videos and 4K videos. Eventually, you’ll get almost the same insights with the same confidence. The higher the quality of the movie you upload means the higher the file size, and this leads to higher computing power and time needed to upload the video.
+In many cases, indexing performance has almost no difference between HD (720p) videos and 4K videos. Eventually, you get almost the same insights with the same confidence. The higher the quality of the movie you upload means the higher the file size, and it leads to higher computing power and time needed to upload the video.
 
-For example, for the face detection feature, a higher resolution can help with the scenario where there are many small but contextually important faces. However, this comes with a quadratic increase in runtime and an increased risk of false positives.
+For example, for the face detection feature, a higher resolution can help with the scenario where there are many small but contextually important faces. However, it comes with a quadratic increase in runtime and an increased risk of false positives.
 
-Therefore, we recommend you to verify that you get the right results for your use case and to first test it locally. Upload the same video in 720P and in 4K and compare the insights you get.
+Therefore, we recommend you to verify that you get the right results for your use case and to first test it locally. Upload the same video in 720p and in 4K and compare the insights you get.
