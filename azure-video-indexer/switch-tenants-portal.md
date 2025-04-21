@@ -28,9 +28,7 @@ This article shows two options to solve the same problem - how to switch tenants
 ## Switch tenants from within the Azure AI Video Indexer website
 
 1. To switch between directories in the [Azure AI Video Indexer](https://www.videoindexer.ai/), open the **User menu** > select **Switch directory**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of a user name.](./media/switch-directory/avi-user-switch.png)
+    :::image type="content" source="./media/switch-directory/avi-user-switch.png" border="true" alt-text="Screenshot showing how to switch directory." lightbox="./media/switch-directory/avi-user-switch.png" :::
 
     There you can view all detected directories listed. The current directory is marked. When you select a different directory, **Switch directory** becomes available.
 
@@ -44,9 +42,7 @@ This section shows how to get the domain name from the Azure portal. You can the
 
 1. Sign in to the [Azure portal](https://portal.azure.com) using the same subscription tenant in which your Azure AI Video Indexer Azure Resource Manager (ARM) account was created. 
 1. Hover over your account name (in the right-top corner). 
-
-    > [!div class="mx-imgBorder"]
-    > ![Hover over your account name.](./media/switch-directory/account-attributes.png)
+    :::image type="content" source="./media//switch-directory/account-attributes.png" border="true" alt-text="Screenshot showing where to select account." lightbox="./media//switch-directory/account-attributes.png" :::
 2. Get the domain name of the current Azure subscription. You need it for the last step in the next.
 
 If you want to see domains for all of your directories and switch between them, see [Switch and manage directories with the Azure portal](/azure/azure-portal/set-preferences#switch-and-manage-directories).

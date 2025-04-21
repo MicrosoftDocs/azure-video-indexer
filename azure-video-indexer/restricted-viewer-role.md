@@ -74,4 +74,4 @@ User management of trial accounts, including the creation of new users, is perfo
 
 If you see the following error message when you sign in to the Azure portal, you must ask for a **Contributor** or **Restricted Viewer** role from the account owner to get access.
 
-:::image type="content" source="media/common/you-need-permission-to-view-content.png" alt-text="An error message that states that you don't have permission to access the account."::: 
+:::image type="content" source="media/common/you-need-permission-to-view-content.png" alt-text="Screenshot showing an error message that states that you don't have permission to access the account."::: 

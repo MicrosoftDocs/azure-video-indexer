@@ -25,19 +25,18 @@ The article demonstrates how to edit speakers with the [Azure AI Video Indexer w
 3. Select the **Timeline** tab.
 4. Choose to view speakers.
 
-:::image type="content" alt-text="Screenshot of how to view speakers." source="./media/edit-speakers-website/view-speakers.png":::
+
+:::image type="content" source="./media/edit-speakers-website/view-speakers.png" border="true" alt-text="Screenshot showing how to view speakers on the Timeline tab." lightbox="./media/edit-speakers-website/view-speakers.png" :::
 
 ## Add a new speaker
 
 This action allows you to add new speakers that Azure AI Video Indexer didn't identify. To add a new speaker from the website for the selected video, do the following steps: 
 
 1. Select the edit mode.
-
-    :::image type="content" alt-text="Screenshot of how to edit speakers." source="./media/edit-speakers-website/edit.png":::
+    :::image type="content" alt-text="Screenshot showing where to select the the Edit symbol." source="./media/edit-speakers-website/edit.png":::
 1. Go to the speakers drop down menu above the transcript line you wish to assign a new speaker to.
 1. Select **Assign a new speaker**.
-
-    :::image type="content" alt-text="Screenshot of how to add a new speaker." source="./media/edit-speakers-website/assign-new.png":::
+    :::image type="content" source="./media/edit-speakers-website/assign-new.png" border="true" alt-text="Screenshot showing how to assign a new speaker." lightbox="./media/edit-speakers-website/assign-new.png" :::
 1. Add the name of the speaker you would like to assign.
 1. Press a checkmark to save.
 
@@ -52,12 +51,10 @@ To rename a speaker from the website for the selected video, do the following st
 
 1. Select the edit mode.
 1. Go to the transcript line where the speaker you wish to rename appears.
-1. Select **Rename selected speaker**. 
-
-    :::image type="content" alt-text="Screenshot of how to rename a speaker." source="./media/edit-speakers-website/rename.png":::
-
+1. Select **Rename selected speaker**.
+    :::image type="content" source="./media/edit-speakers-website/rename.png" border="true" alt-text="Screenshot showing how to rename a selected speaker." lightbox="./media/edit-speakers-website/rename.png" :::
    This action updates speakers by this name.
-1. Press a checkmark to save.
+1. Select the checkmark symbol to save.
 
 ## Assign a speaker to a transcript line
 

@@ -627,7 +627,7 @@ As of May 1, our new updated repository of Azure AI Video Indexer widget was ren
 
 As of today, Azure Video analyzer for Media product name is **Azure AI Video Indexer** and all product related assets (web portal, marketing materials). It's a backward compatible change that has no implication on APIs and links. **Azure AI Video Indexer**'s new logo:
 
-:::image type="content" source="./media/video-indexer.svg" alt-text="New logo":::
+:::image type="content" source="./media/video-indexer.svg" alt-text="Symbol that represents Azure AI Video Indexer.":::
 
 ## March 2022
 
