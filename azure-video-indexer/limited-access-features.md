@@ -12,7 +12,22 @@ ms.topic: conceptual
 # Limited Access features of Azure AI Video Indexer
 
 <!-- possible cross repo dependency, copied to local, see metadata -->
-[!INCLUDE [Gate notice](./includes/identity-gate-notice.md)]
+<!-- original metadata copied during repo migration
+---
+title: Face gate notice
+titleSuffix: Azure AI services
+services: cognitive-services
+author: PatrickFarley
+manager: nitinme
+ms.service: cognitive-services
+ms.topic: include 
+ms.date: 10/09/2024ms.author: pafarley
+---
+-->
+
+
+> [!CAUTION]
+> Face service access is limited based on eligibility and usage criteria in order to support our Responsible AI principles. Face service is only available to Microsoft managed customers and partners. Use the [Face Recognition intake form](https://aka.ms/facerecognition) to apply for access. For more information, see the [Face limited access](/legal/cognitive-services/computer-vision/limited-access-identity?context=%2Fazure%2Fcognitive-services%2Fcomputer-vision%2Fcontext%2Fcontext) page.
 
 Our vision is to empower developers and organizations to use AI to transform society in positive ways. We encourage responsible AI practices to protect the rights and safety of individuals. Microsoft facial recognition services are Limited Access to help prevent the misuse of the services in accordance with our [AI Principles](https://www.microsoft.com/ai/responsible-ai?SilentAuth=1&wa=wsignin1.0&activetab=pivot1%3aprimaryr6) and [facial recognition](https://blogs.microsoft.com/on-the-issues/2018/12/17/six-principles-to-guide-microsofts-facial-recognition-work/) principles. The Face Identify and Celebrity Recognition operations in Azure AI Video Indexer are Limited Access features that require registration.  
 
