@@ -39,7 +39,7 @@ The easiest way to begin using service tags with your Azure AI Video Indexer acc
 1. From the **Source** drop-down list, select **Service Tag**.
 1. From the **Source service tag** drop-down list, select **VideoIndexer**.
 
-:::image type="content" source="./media/network-security/nsg-service-tag-videoindexer.png" alt-text="Add a service tag from the Azure portal":::
+:::image type="content" source="./media/network-security/nsg-service-tag-videoindexer.png" alt-text="Screenshot showing how to add a service tag in the Azure portal.":::
 
 This tag contains the IP addresses of Azure AI Video Indexer services for all regions where available. The tag ensures that your resource can communicate with the Azure AI Video Indexer services.
 

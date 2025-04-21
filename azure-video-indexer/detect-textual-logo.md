@@ -32,8 +32,7 @@ For example, if you created the textual logo `Microsoft`, appearances of the wor
 }
 ```
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="./media/textual-logo-detection/microsoft-example.png" alt-text="Diagram of logo detection.":::
+:::image type="content" source="./media/textual-logo-detection/microsoft-example.png" border="true" alt-text="Screenshot Azure AI Video Indexer textual logo detection." lightbox="./media/textual-logo-detection/microsoft-example.png" :::
 
 ## Prerequisite
 
@@ -55,9 +54,8 @@ In order to use textual logo detection, follow these steps, described in this ar
 
 Use a [Create logo](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Logo) API request to create your logo. You can use the **try it** button.
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="./media/textual-logo-detection/logo-api.png" alt-text="Diagram of logo API.":::
- 
+:::image type="content" source="./media/textual-logo-detection/logo-api.png" border="true" alt-text="Screenshot showing an example of a Create logo API request." lightbox="./media/textual-logo-detection/logo-api.png" :::
+
 In this example, we use the example supplied as default: 
 
 Insert the following parameters:
@@ -127,8 +125,7 @@ Insert the following parameters:
 * `Account ID`: The ID of the Azure AI Video Indexer account.
 * `Access token`: The token, at least at a contributor level permission. 
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="./media/textual-logo-detection/logo-group-api.png" alt-text="Diagram of logo group API.":::
+:::image type="content" source="./media/textual-logo-detection/logo-group-api.png" border="true" alt-text="Screenshot showing an example of the Create Logo Group API request." lightbox="./media/textual-logo-detection/logo-group-api.png" :::
 
 In the **Body** paste the logo ID from the previous step.
 
@@ -188,15 +185,13 @@ Assuming the textual logo model finds a match, you're able to view the result in
 
 A new section would appear in the insights panel showing the number of custom logos that were detected. One representative thumbnail is displayed representing the new logo. 
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="./media/textual-logo-detection/logo-insight.png" alt-text="Diagram of logo insight.":::
+:::image type="content" source="./media/textual-logo-detection/logo-insight.png" border="true" alt-text="Screenshot showing a detected custom logo using Insights." lightbox="./media/textual-logo-detection/logo-insight.png" :::
 
 ### Timeline 
 
 When switching to the Timeline view, under the **View**, mark the **Logos** checkbox. All detected thumbnails are displayed according to their time stamp.
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="./media/textual-logo-detection/logo-timeline.png" alt-text="Diagram of logo timeline.":::
+:::image type="content" source="./media/textual-logo-detection/logo-timeline.png" border="true" alt-text="Screenshot showing the logo timeline." lightbox="./media/textual-logo-detection/logo-timeline.png" :::
 
 All logo instances that were recognized with a certainty above 80% present are displayed. The extended list of detections, including low certainty detection, are available in the [Artifacts](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Artifact-Download-Url) file.
 

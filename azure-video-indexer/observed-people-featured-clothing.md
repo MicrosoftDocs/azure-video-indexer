@@ -25,7 +25,7 @@ You can view the following short video that discusses how to view and use the fe
 
 The featured clothing insight is available when indexing your file by choosing the Advanced option -> Advanced video or Advanced video + audio preset (under Video + audio indexing). Standard indexing doesn't include this insight.
 
-:::image type="content" source="./media/detected-clothing/index-video.png" alt-text="This screenshot represents an indexing video option.":::
+:::image type="content" source="./media/detected-clothing/index-video.png" alt-text="Screenshot showing indexing video options for featured clothing.":::
 
 The featured clothing images are ranked based on some of the following factors: key moments of the video, duration the person appears, text-based emotions, and audio events. The insights privates the highest ranking frame per scene, which enables you to produce contextual advertisements per scene throughout the video. The JSON file gets ranked by the sequence of scenes in the video, with each scene having the top rated frame as the result.
 
