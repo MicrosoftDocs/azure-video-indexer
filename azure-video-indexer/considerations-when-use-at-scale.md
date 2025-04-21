@@ -48,7 +48,7 @@ Azure AI Video Indexer is built to deal with indexing at scale. When you want to
 
 Azure AI Video Indexer adds a `retry-after` header in the HTTP response. The header specifies when you should attempt your next retry. Make sure you respect it before trying your next request.
 
-:::image type="content" source="./media/considerations-when-use-at-scale/respect-throttling.png" alt-text="Screenshot showing the Too many requests options." border="true" lightbox="./media/considerations-when-use-at-scale/respect-throttling.png:::
+:::image type="content" source="./media/considerations-when-use-at-scale/respect-throttling.png" alt-text="Screenshot showing the Too many requests options." border="true" lightbox="./media/considerations-when-use-at-scale/respect-throttling.png":::
 
 ## Use callback URL
 
