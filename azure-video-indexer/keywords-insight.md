@@ -13,16 +13,16 @@ ms.topic: article
 
 ## Keywords extraction
 
-[!INCLUDE [keywords-descritpion](keywords-description.md)]
+[!INCLUDE [keywords-description](includes/keywords-description.md)]
 
 ### Keywords extraction use cases
 
 - Personalization of keywords to match customer interests, for example websites about England posting promotions about English movies or festivals. 
 - Deep-searching archives for insights on specific keywords to create feature stories about companies, personas, or technologies, for example by a news agency.
 
-[!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
+[!INCLUDE [get insights with the web portal](includes/get-insights-web-portal.md)]
 
-[!INCLUDE [get insights with the API](get-insights-api.md)]
+[!INCLUDE [get insights with the API](includes/get-insights-api.md)]
 
 ## Example response
 
@@ -76,9 +76,9 @@ ms.topic: article
       }
 ```
 
-[!INCLUDE [General transparency note](read-general-transparency-note.md)]
+[!INCLUDE [General transparency note](includes/read-general-transparency-note.md)]
 
-[!INCLUDE [transparency-keywords-extraction](transparency-keywords-extraction.md)]
+[!INCLUDE [transparency-keywords-extraction](includes/transparency-keywords-extraction.md)]
 
 ## Sample code
 

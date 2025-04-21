@@ -13,7 +13,7 @@ ms.topic: article
 
 ## Text-based emotion detection
 
-[!INCLUDE [Emotions detection description](text-based-emotions-detection-description.md)]
+[!INCLUDE [Emotions detection description](includes/text-based-emotions-detection-description.md)]
 
 > [!IMPORTANT]
 > The model works on text only (labeling emotions in video transcripts.) This model doesn't infer the emotional state of people. So, it might not perform where input is ambiguous or unclear, like sarcastic remarks. **Thus, the model shouldn't be used for things like assessing employee performance or the emotional state of a person**. 
@@ -29,9 +29,9 @@ ms.topic: article
 > [!NOTE]
 > Text-based emotion detection is language independent. However, if the transcript isn't in English, it's first being translated to English. Only then the model is applied. It might cause a reduced accuracy in emotions detection for non English languages.
 
-[!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
+[!INCLUDE [get insights with the web portal](includes/get-insights-web-portal.md)]
 
-[!INCLUDE [get insights with the API](get-insights-api.md)]
+[!INCLUDE [get insights with the API](includes/get-insights-api.md)]
 
 ## Example response 
 
@@ -51,9 +51,9 @@ ms.topic: article
 
 ```
 
-[!INCLUDE [General transparency note](read-general-transparency-note.md)]
+[!INCLUDE [General transparency note](includes/read-general-transparency-note.md)]
 
-[!INCLUDE [transparency-text-based-emotion-detection](transparency-text-based-emotion-detection.md)]
+[!INCLUDE [transparency-text-based-emotion-detection](includes/transparency-text-based-emotion-detection.md)]
 
 ## Sample code
 
