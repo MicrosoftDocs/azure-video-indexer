@@ -13,15 +13,15 @@ ms.topic: article
 
 ## Post-production: clapper board detection
 
-[!INCLUDE [clapper board description](/includes/clapperboard-description.md)]
+[!INCLUDE [clapper board description](includes/clapperboard-description.md)]
 
 ## Clapper board use cases
 
 Clapper board detection is most commonly used for post-production editing of visual media.
 
-[!INCLUDE [get insights with the web portal](/includes/get-insights-web-portal.md)]
+[!INCLUDE [get insights with the web portal](includes/get-insights-web-portal.md)]
 
-[!INCLUDE [get insights with the API](/includes/get-insights-api.md)]
+[!INCLUDE [get insights with the API](includes/get-insights-api.md)]
 
 ## Example responses
 
@@ -1593,9 +1593,9 @@ This response shows all of the data that come from detecting clapper boards. If 
 |`fields`|The fields found in the clapper board; also each field's name and value.|
 |`instances`|A list of time ranges where this element appeared.|
 
-[!INCLUDE [General transparency note](/includes/read-general-transparency-note.md)]
+[!INCLUDE [General transparency note](includes/read-general-transparency-note.md)]
 
-[!INCLUDE [transparency-clapper-board-detection](/includes/transparency-clapper-board-detection.md)]
+[!INCLUDE [transparency-clapper-board-detection](includes/transparency-clapper-board-detection.md)]
 
 ## Sample code
 
