@@ -107,7 +107,8 @@ Once you set up, start using insights and check out other **How to guides**.
 
 ## Compliance, privacy, and security
 
-[!INCLUDE [regulation](./includes/regulation.md)]
+> [!NOTE]
+> On June 11, 2020, Microsoft announced that it will not sell facial recognition technology to police departments in the United States until strong regulation, grounded in human rights, is enacted. As such, customers can't use facial recognition features or functionality included in Azure AI services, such as Face or Video Indexer, if a customer is, or is allowing use of such services by or for, a police department in the United States.
 
 [!INCLUDE [Gate notice](./includes/face-limited-access.md)]
 
