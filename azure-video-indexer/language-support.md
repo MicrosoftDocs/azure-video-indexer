@@ -42,7 +42,7 @@ This section explains the Video Indexer language options and has a table of the 
     All other insights appear in English when using translation.
 - **Website Language** - Whether the language can be selected for use on the [Azure AI Video Indexer website](https://aka.ms/vi-portal-link). Select the **Settings icon** then select the language in the **Language settings** dropdown.
 
-    :::image type="content" source="media/language-support/website-language.jpg" alt-text="Screenshot showing a menu with user settings show them all toggled to on." lightbox="media/language-support/website-language.jpg":::
+    :::image type="content" source="media/language-support/website-language.png" alt-text="Screenshot showing a menu with user settings show them all toggled to on." lightbox="media/language-support/website-language.png":::
 
 | **Language** | **Code**&nbsp;&nbsp; | **Supported<br/>source language** | **Supported<br> source language (Arc)** |**Language<br/>identification** | **Customization<br/>(language model)** | **Pronunciation<br>(language model)** | **Website<br/>Translation** | **Website<br/>Language** |
 |---|---|---|---|---|---|---|---|---|

@@ -23,10 +23,8 @@ The `location` parameter must be given the Azure region code name as its value. 
 1. Sign in on the [Azure AI Video Indexer](https://www.videoindexer.ai/) website.
 1. Select **User accounts** from the top-right corner of the page.
 1. Find the location of your account in the top-right corner.  
+    :::image type="content" source="./media/location/location1.png" border="true" alt-text="Screenshot showing the location of your Azure AI Video Indexer account." lightbox="./media/location/location1.png" :::
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="./media/location/location1.png" alt-text="Location":::
-    
 ###  CLI command
 
 ```azurecli-interactive

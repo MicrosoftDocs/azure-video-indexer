@@ -22,7 +22,7 @@ This article discusses different options for managing multiple tenants with Azur
 
 An Azure AI Video Indexer account is created for each tenant. The tenants have full isolation in the persistent and compute layer.  
 
-![Azure AI Video Indexer account per tenant](./media/manage-multiple-tenants/video-indexer-account-per-tenant.png)
+:::image type="content" source="./media/manage-multiple-tenants/video-indexer-account-per-tenant.png" border="false" alt-text="Diagram showing the relationship between an Azure AI Video Indexer account, resources, and a shared Azure subscription." lightbox="./media/manage-multiple-tenants/video-indexer-account-per-tenant.png" :::
 
 ### Considerations
 
@@ -41,7 +41,7 @@ An Azure AI Video Indexer account is created for each tenant. The tenants have f
 
 The customer is responsible for tenants isolation when using a single VI account for all users. All tenants have to use a single Azure AI Video Indexer account. The customer needs to filter the proper results for that tenant when uploading, searching, or deleting content.
 
-![Single Azure AI Video Indexer account for all users](./media/manage-multiple-tenants/single-video-indexer-account-for-all-users.png)
+:::image type="content" source="./media/manage-multiple-tenants/single-video-indexer-account-for-all-users.png" border="true" alt-text="Diagram showing the relationship between all users in tenants, an Azure Video Indexer account, and a single resource group in one subscription." lightbox="./media/manage-multiple-tenants/single-video-indexer-account-for-all-users.png" :::
 
 With this option, customization models (Person, Language, and Brands) can be shared or isolated between tenants by filtering the models by tenant.
 
@@ -60,7 +60,7 @@ When [uploading videos](https://api-portal.videoindexer.ai/api-details#api=Opera
 
 Each tenant has their own Azure subscription when using an Azure subscription per tenant. For each user, you create a new Azure AI Video Indexer account in the tenant subscription.
 
-![Azure subscription per tenant](./media/manage-multiple-tenants/azure-subscription-per-tenant.png)
+:::image type="content" source="./media/manage-multiple-tenants/azure-subscription-per-tenant.png" border="true" alt-text="Diagram showing the relationship between tenants where each user has their own Azure Video Indexer account and their own Azure subscription." lightbox="./media/manage-multiple-tenants/azure-subscription-per-tenant.png" :::
 
 ### Considerations
 

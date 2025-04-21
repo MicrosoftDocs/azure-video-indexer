@@ -35,7 +35,7 @@ Second, consider just some of the issues that can affect your performance and he
 * upload speed,
 * lost packets somewhere in the world wide web.
 
-:::image type="content" source="./media/considerations-when-use-at-scale/first-consideration.png" alt-text="First consideration for using Azure AI Video Indexer at scale":::
+:::image type="content" source="./media/considerations-when-use-at-scale/first-consideration.png" alt-text="Diagram for the First consideration for using Azure AI Video Indexer at scale." border="false" lightbox="./media/considerations-when-use-at-scale/first-consideration.png":::
 
 When you upload videos using URL, you just need to provide a path to the location of a media file and Video Indexer takes care of the rest (see the `videoUrl` field in the [upload video](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) API).
 
@@ -48,7 +48,7 @@ Azure AI Video Indexer is built to deal with indexing at scale. When you want to
 
 Azure AI Video Indexer adds a `retry-after` header in the HTTP response. The header specifies when you should attempt your next retry. Make sure you respect it before trying your next request.
 
-:::image type="content" source="./media/considerations-when-use-at-scale/respect-throttling.jpg" alt-text="Design your integration well, respect throttling":::
+:::image type="content" source="./media/considerations-when-use-at-scale/respect-throttling.png" alt-text="Screenshot showing the Too many requests options." border="true" lightbox="./media/considerations-when-use-at-scale/respect-throttling.png:::
 
 ## Use callback URL
 

@@ -19,8 +19,7 @@ This insight is most useful to customers involved in the movie post-production p
 
 In order to set the indexing process to include the slate metadata, select the **Video + audio indexing** -> **Advanced** presets.
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="./media/slate-detection-process/advanced-setting.png" alt-text="This image shows the advanced setting in order to view post-production clapperboards insights.":::
+:::image type="content" source="./media/slate-detection-process/advanced-setting.png" border="true" alt-text="Screenshot showing the advanced settings to view post-production clapperboards insights." lightbox="./media/slate-detection-process/advanced-setting.png" :::
 
 ### Insight
 
