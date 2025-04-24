@@ -4,7 +4,7 @@ description: This article describes the supported formats and limitations of Azu
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 03/02/2025
+ms.date: 04/24/2025
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
@@ -68,7 +68,6 @@ Azure AI Video Indexer supports the following file formats:
 | AVI (Uncompressed 8bit/10bit) (.avi)                  |
 | MP4 (.mp4, .m4a, .m4v)/ISMV (.isma, .ismv)            |
 | Microsoft Digital Video Recording (DVR-MS) (.dvr-ms)  |
-| Matroska/WebM (.mkv)                                  |
 | WAVE/WAV (.wav)                                       |
 | QuickTime (.mov)                                      |
 
