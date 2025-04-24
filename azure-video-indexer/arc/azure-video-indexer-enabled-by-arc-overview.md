@@ -118,13 +118,11 @@ The following section lists the supported input formats and codecs for Azure AI 
 - AVI (.avi)
 - FLV (with H.264 and AAC codecs) (.flv)
 - ISMV (.isma, .ismv)
-- Matroska/WebM (.mkv)
 - MP4 (.mp4, .m4a, .m4v)
 - MXF (.mxf)
 - MPEG2-TS
 - QuickTime (.mov)
 - WAVE/WAV (.wav)
-- WebM
 - Windows Media Video (WMV)/ASF (.wmv, .asf)
 
 ### Video codecs
