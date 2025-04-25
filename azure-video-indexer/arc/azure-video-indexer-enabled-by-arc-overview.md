@@ -4,7 +4,7 @@ description: Azure AI Video Indexer enabled by Arc performs video and audio anal
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 03/31/2025
+ms.date: 04/25/2025
 ms.service: azure-video-indexer
 ms.topic: overview
 #customer intent: As a video content manager, I want to use Azure AI Video Indexer analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
@@ -118,6 +118,7 @@ The following section lists the supported input formats and codecs for Azure AI 
 - AVI (.avi)
 - FLV (with H.264 and AAC codecs) (.flv)
 - ISMV (.isma, .ismv)
+- Matroska (.mkv)
 - MP4 (.mp4, .m4a, .m4v)
 - MXF (.mxf)
 - MPEG2-TS
