@@ -119,7 +119,7 @@ You should have all of the parameters needed to create a video summary ready to 
 
 In the response, there's a summary ID. Copy that ID to your clipboard.
 
-### Customize a textual video summary
+## Customize a textual video summary
 
 Customize textual summarization with the optional `addToEndOfSummaryInstructions` parameter to the [Create Video Summary API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Video-Summary). Use this parameter to enhance the textual summary of your video by including additional information in natural language. For example, you can use it to include information about the people appearing, general topics discussed, and brands mentioned in the video.
 
