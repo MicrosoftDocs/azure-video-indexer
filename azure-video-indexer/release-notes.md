@@ -4,7 +4,7 @@ description: To stay up-to-date with the most recent developments, this article 
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 04/09/2025
+ms.date: 05/13/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
@@ -19,6 +19,14 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+## May 2025
+
+### Added support to customize textual summarization
+
+Added support to customize textual summarization with the optional `addToEndOfSummaryInstructions` parameter to the [Create Video Summary API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Video-Summary). This parameter lets you enhance the textual summary of your video by including additional information using natural language. For example, you can use it to include information about the people appearing, general topics discussed, and brands mentioned in the video.
+
+For more information, see [Customize a textual video summary](text-summarization-task.md#customize-a-textual-video-summary).
 
 ## April 2025
 

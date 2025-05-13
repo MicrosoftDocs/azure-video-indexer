@@ -119,6 +119,33 @@ You should have all of the parameters needed to create a video summary ready to 
 
 In the response, there's a summary ID. Copy that ID to your clipboard.
 
+### Customize a textual video summary
+
+Customize textual summarization with the optional `addToEndOfSummaryInstructions` parameter to the [Create Video Summary API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Video-Summary). Use this parameter to enhance the textual summary of your video by including additional information in natural language. For example, you can use it to include information about the people appearing, general topics discussed, and brands mentioned in the video.
+
+Customizing your summary ensures that your video summary is comprehensive and tailored to your needs.
+
+To customize a summary:
+
+1. Access the Video Indexer API. You need to make a POST call to the [Create Video Summary API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Video-Summary).
+2. Add the `addToEndOfSummaryInstructions` parameter. Include the `&addToEndOfSummaryInstructions=["Your prompt"]` parameter in the URL when making the POST call. This parameter is optional and can be used to add additional information to the summary. "Your prompt" is the additional information you want to include in the summary.
+3.	URL encode the parameter. Make sure the additional information is URL encoded. For example, if you want to add "the known people or celebrities appearing in the video, the general topics of the video, and all of the brands mentioned in it", use: `&addToEndOfSummaryInstructions=the+known+people+or+celebrities+appearing+in+the+video,+the+general+topics+of+the+video+and+all+of+the+brands+mentioned+in+it`.
+
+Here's an example of how to use the `addToEndOfSummaryInstructions` parameter:
+
+```http
+POST
+https://api.videoindexer.ai/{location}/Accounts/{accountId}/Videos/{videoId}/Summaries/Textual?deploymentName={deploymentName}&includedFrames={None/Keyframes}&addToEndOfSummaryInstructions=the+known+people+or+celebrities+appearing+in+the+video,+the+general+topics+of+the+video+and+all+of+the+brands+mentioned+in+it
+```
+
+The example post call results in a summary that ends with content like:
+
+```
+Known people or celebrities appearing in the video: Satya Nadella
+General topics: Technology, Microsoft Build Keynotes, AI, GenAI
+Brands mentioned: Microsoft, Phi Models.
+```
+
 ## Get a video summary
 
 First, check on the summary status. Until the summary job is finished, the state value shows "Processing," but there's no summary in the response. When the summary job is finished, the summary is displayed in the response.
