@@ -26,7 +26,7 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 Added support to customize textual summarization with the optional `addToEndOfSummaryInstructions` parameter to the [Create Video Summary API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Video-Summary). This parameter lets you enhance the textual summary of your video by including additional information using natural language. For example, you can use it to include information about the people appearing, general topics discussed, and brands mentioned in the video.
 
-For more information, see [Customize a textual video summary](text-summarization-task.md#customize-a-textual-video-summary).
+For more information, see [Customize a textual video summary](text-summarization-task.md&tabs=api#customize-a-textual-video-summary).
 
 ## April 2025
 
