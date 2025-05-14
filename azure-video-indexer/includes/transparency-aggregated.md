@@ -281,7 +281,7 @@ Textual summarization with keyframes is based on [keyframes selection with shots
 
 ## Textual emotion detection
 
-[Textual emotion detection](/azure/azure-video-indexer/emotions-detection)
+[Textual emotion detection](/azure/azure-video-indexer/text-based-emotions-detection-insight)
 
 [!INCLUDE [transparency-text-based-emotion-detection](transparency-text-based-emotion-detection.md)]
 
