@@ -129,13 +129,13 @@ To customize a summary:
 
 1. Access the Video Indexer API. You need to make a POST call to the [Create Video Summary API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Video-Summary).
 2. Add the `addToEndOfSummaryInstructions` parameter. Include the `&addToEndOfSummaryInstructions=["Your prompt"]` parameter in the URL when making the POST call. This parameter is optional and can be used to add additional information to the summary. "Your prompt" is the additional information you want to include in the summary.
-3.	URL encode the parameter. Make sure the additional information is URL encoded. For example, if you want to add "the known people or celebrities appearing in the video, the general topics of the video, and all of the brands mentioned in it", use: `&addToEndOfSummaryInstructions=the+known+people+or+celebrities+appearing+in+the+video,+the+general+topics+of+the+video+and+all+of+the+brands+mentioned+in+it`.
+3.	URL encode the parameter. Make sure the additional information is URL encoded. For example, if you want to add "the known people or celebrities appearing in the video, the general topics of the video, and all of the brands mentioned in it", use: `&addToEndOfSummaryInstructions=the+known+people+or+celebrities+appearing+in+the+video+the+general+topics+of+the+video+and+all+of+the+brands+mentioned+in+it`.
 
 Here's an example of how to use the `addToEndOfSummaryInstructions` parameter:
 
 ```http
 POST
-https://api.videoindexer.ai/{location}/Accounts/{accountId}/Videos/{videoId}/Summaries/Textual?deploymentName={deploymentName}&includedFrames={None/Keyframes}&addToEndOfSummaryInstructions=the+known+people+or+celebrities+appearing+in+the+video,+the+general+topics+of+the+video+and+all+of+the+brands+mentioned+in+it
+https://api.videoindexer.ai/{location}/Accounts/{accountId}/Videos/{videoId}/Summaries/Textual?deploymentName={deploymentName}&includedFrames={None/Keyframes}&addToEndOfSummaryInstructions=the+known+people+or+celebrities+appearing+in+the+video+the+general+topics+of+the+video+and+all+of+the+brands+mentioned+in+it
 ```
 
 The example post call results in a summary that ends with content like:
