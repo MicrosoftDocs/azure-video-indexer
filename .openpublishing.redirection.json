@@ -107,7 +107,7 @@
         },
         {
             "source_path_from_root": "/azure-video-indexer/emotions-detection.md",
-            "redirect_url": "/azure/azure-video-indexer/emotions-detection-overview",
+            "redirect_url": "/azure/azure-video-indexer/text-based-emotions-detection-insight",
             "redirect_document_id": false
         },
         {
