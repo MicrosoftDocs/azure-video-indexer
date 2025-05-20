@@ -25,7 +25,7 @@ When used responsibly and carefully, Azure AI Video Indexer is a valuable tool f
 - The model is designed to recognize a spontaneous conversational speech (not voice commands, singing, and so on).
 - If Azure AI Video Indexer can't identify the language with a high enough confidence (greater than 0.6), the fallback language is English.
 
-Here's a list of [supported languages](../language-support.md).
+Here's a list of [supported languages](/azure/azure-video-indexer/language-support).
 
 ## Transcription, translation, and language identification components  
 
