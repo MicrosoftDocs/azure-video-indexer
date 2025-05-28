@@ -15,7 +15,7 @@ Azure AI Video Indexer integrates with Large Language Models (LLMs). LLMs are na
 
 You can use LLM prompts with Azure AI Video Indexer in the cloud, or in your datacenter by using [Azure AI Video Indexer enabled by Arc](arc/azure-video-indexer-enabled-by-arc-overview.md).
 
-## Use Cases
+## Use cases
 
 **Generate a Video Summarization:** You can ask the LLM model to generate summaries of whole videos or video segments. Those segments can be combined to create several types of summaries like an informative summary, a teaser, or other summary depending on your needs.
 
