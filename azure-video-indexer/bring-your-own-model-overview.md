@@ -4,7 +4,7 @@ description: This article is an overview of Azure AI Video Indexer enabled by Ar
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/28/2025
 ms.service: azure-video-indexer
 ms.topic: overview
 ---
@@ -19,10 +19,12 @@ You can combine insights from other sources, including third-party, classificati
 
 The feature is also available for [VI enabled by Arc](./arc/azure-video-indexer-enabled-by-arc-overview.md).
 
-DISCLAIMER: Microsoft’s [Code of conduct for Azure OpenAI Service](/legal/cognitive-services/openai/code-of-conduct?context=%2Fazure%2Fai-services%2Fopenai%2Fcontext%2Fcontext) applies to your use of the Bring Your Own Model feature, which includes Microsoft’s right to discontinue your access and use of this feature for noncompliance.
+> [!NOTE]
+> DISCLAIMER: Microsoft's [Code of conduct for Azure OpenAI Service](/legal/cognitive-services/openai/code-of-conduct?context=%2Fazure%2Fai-services%2Fopenai%2Fcontext%2Fcontext) applies to your use of the Bring Your Own Model feature, which includes Microsoft's right to discontinue your access and use of this feature for noncompliance.
 
 ## Pricing
-With the Video Indexer BYO model, users can add custom insights to video insight objects without incurring any extra costs beyond the listed cost of the indexing process. However, any costs related to the external environment and model shouldn't be considered part of Video Indexer's billing price. We strongly recommend reviewing our best practices section to optimize the external logic and reduce costs.
+
+With the Video Indexer BYO model, you can add custom insights to video insight objects without incurring any extra costs beyond the listed cost of the indexing process. However, any costs related to the external environment and model shouldn't be considered part of Video Indexer's billing price. We strongly recommend reviewing our best practices section to optimize the external logic and reduce costs.
 
 ### General workflow
 
@@ -32,9 +34,8 @@ With the Video Indexer BYO model, users can add custom insights to video insight
     1. Get insights extracted by Video Indexer.
     1. Get keyframe for a video section.
     1. Send the keyframe to the custom AI model. 
-    1. Patch the custom insights back to Video Indexer.
-
-    :::image type="content" source="./media/common/general-byo-workflow.svg" border="true" alt-text="Diagram of the general bring your own workflow process." lightbox="./media/common/general-byo-workflow.svg" :::
+    1. Patch the custom insights back to Video Indexer.  
+        :::image type="content" source="./media/common/general-byo-workflow.svg" border="true" alt-text="Diagram of the general bring your own workflow process." lightbox="./media/common/general-byo-workflow.svg" :::
 
 ## Prerequisites
 
@@ -139,7 +140,9 @@ You can use the skip frames and page size parameters for time selection. The for
 ```
 
 ## Bring Your Own model samples
-[BYO samples](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples)
+
+- [BYO samples](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples)
 
 ## Related content
-[Use the Azure AI Video Indexer API](/azure/azure-video-indexer/video-indexer-use-apis)
+
+- [Use the Azure AI Video Indexer API](/azure/azure-video-indexer/video-indexer-use-apis)

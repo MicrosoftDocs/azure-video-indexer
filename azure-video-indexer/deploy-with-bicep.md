@@ -4,7 +4,7 @@ description: Learn how to create an Azure AI Video Indexer account by using a Bi
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/28/2025
 ms.service: azure-video-indexer
 ms.topic: quickstart
 ---

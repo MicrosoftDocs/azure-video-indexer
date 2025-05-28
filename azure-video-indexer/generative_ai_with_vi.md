@@ -4,7 +4,7 @@ description: This article discusses the use of generative AI with Azure AI Video
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/28/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
@@ -32,10 +32,12 @@ See the following articles to learn more about VI and generative AI.
 Azure AI Video Indexer supports the following models.
 
 ### Cloud
+
 - Llama 2
 - Phi 2
 - GPT3-5 Turbo
 - GPT4
 
 ### VI enabled by Arc
+
 - Phi 3
