@@ -4,7 +4,7 @@ description: Learn how to create an Azure AI Video Indexer account by using an A
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/28/2025
 ms.service: azure-video-indexer
 ms.topic: quickstart
 ---
@@ -15,10 +15,9 @@ ms.topic: quickstart
 
 Using this quickstart, you can create an Azure AI Video Indexer account by using an Azure Resource Manager template.
 
-A [Azure Resource Manager template](/azure/azure-resource-manager/templates/overview) is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration using declarative syntax. You describe your intended deployment without writing the sequence of programming commands to create the deployment.
+An [Azure Resource Manager template](/azure/azure-resource-manager/templates/overview) is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration using declarative syntax. You describe your intended deployment without writing the sequence of programming commands to create the deployment.
 
 Once the account is created, you can use the Video Indexer API to interact with the account, upload videos, and get AI Insights. To get started, see [Use Azure AI Video Indexer REST API](/azure/azure-video-indexer/video-indexer-use-apis).
-
 
 ## Deploy the sample
 
@@ -26,10 +25,9 @@ You have two deployment options:
 
 ### [Deploy button](#tab/deplybutton)
 
-Select the button for deploying to Azure, and fill in the missing parameters.
+Select the button to deploy to Azure, and fill in the missing parameters.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fazure-video-indexer-samples%2Fmaster%2FDeploy-Samples%2FArm%2Fvideoindexer.template.json)
-
 
 ### [Deploy with CLI](#tab/deplycli)
 

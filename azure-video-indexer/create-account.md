@@ -4,7 +4,7 @@ description: This article explains how to create an account for Azure AI Video I
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/28/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
@@ -13,17 +13,19 @@ ms.topic: how-to
 
 [!INCLUDE [Gate notice](./includes/face-limited-access.md)]
 
-To start using Azure AI Video Indexer, create an Azure AI Video Indexer account. 
+To start using Azure AI Video Indexer, create an Azure AI Video Indexer account.
 
-This article walks you through the steps of creating the Azure AI Video Indexer account and its accompanying resources. The account that gets created is Azure Resource Manager (ARM) account. For information about different account types, see [Overview of account types](accounts-overview.md).
+This article walks you through the steps of creating the Azure AI Video Indexer account and its accompanying resources. The account that gets created is an Azure Resource Manager (ARM) account. For more information about different account types, see [Overview of account types](accounts-overview.md).
 
 ## Trial account
 
 [!INCLUDE [trial-account](includes/trial-account.md)]
 
-The trial account option isn't available on the Azure Government cloud. For other Azure Government limitations, see [Limitations of Azure AI Video Indexer on Azure Government](connect-to-azure.md#limitations-of-azure-ai-video-indexer-on-azure-government).
+The trial account option isn't available for the Azure Government cloud. For other Azure Government limitations, see [Limitations of Azure AI Video Indexer on Azure Government](connect-to-azure.md#limitations-of-azure-ai-video-indexer-on-azure-government).
 
 ## Create an account
+
+To create an Azure AI Video Indexer account, you can use the Azure portal or the API. The following sections describe how to create an account using each method.
 
 ### Prerequisites
 
@@ -34,18 +36,20 @@ To determine what roles are currently assigned, see [View the access a user has 
 
 ### [Azure portal](#tab/portal)
 
-1.  In the Azure portal, select **+ Create a resource.**
-1.  Search for and select *Azure AI Video Indexer.* The Create a Video Indexer resource page appears.
-1.  Create a resource group and selecting the region.
-1.  Give the account a name in the **Resource name** field.
-1.  Connect the account to storage. Either…
-    1.  Select an existing storage account from the **Storage account** dropdown or
-    1.  Create a new storage account. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). *Storage accounts for VI must be a Standard general-purpose v2 storage account*.
-1.  Select or create a **user assigned managed identity**. (If you forget, a prompt in the storage overview page appears later in the process.)
-1.  Select **Review + create**. Validation of the configuration starts.
-1.  When validation is complete, select **Create**.
-1.  When the deployment is complete, select **Go to resource**. The storage resource overview page appears.
-1.  If you assigned a system assigned managed identity during the storage creation process, a notification on the page says that you must select a managed identity role assignment. Select the **Assign role** button.
+1. In the Azure portal, select **+ Create a resource**.
+1. Search for and select *Azure AI Video Indexer*.
+1. On the Marketplace page, select **Create** and then select **Azure AI Video Indexer**. The Create a Video Indexer resource page appears.
+1. Create a resource group (or select an existing one) and select a **Region**.
+1. Enter an account a name in the **Resource name** field.
+1. Connect the account to a Storage account. Either:
+    - Select an existing storage account from the **Storage account** dropdown or
+    - Create a new storage account. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). *Storage accounts for VI must be a Standard StorageV2 (general-purpose v2) storage account*.
+1. Select or create a **User-assigned managed identity**. If you don't create one, you're prompted later.
+1. Agree to the terms and conditions by selecting the agreement box.
+1. Select **Review + create**. Validation for the configuration starts.
+1. When validation completes, select **Create**.
+1. When the deployment completes, select **Go to resource**. The Azure AI Video Indexer resource overview page appears.
+1. If you assigned a system-assigned managed identity during the storage creation process, a notification on the page says that you must select a managed identity role assignment to connect to the Storage account. Select **Assign a role** to assign your managed identity to the Storage account.
 
 ### [API](#tab/api)
 To create an account, see [Create accounts with API](/rest/api/videoindexer/stable/accounts).
@@ -54,10 +58,10 @@ To create an account, see [Create accounts with API](/rest/api/videoindexer/stab
 
 ## Government account
 
-Government accounts have special requirements and limitations. 
+Government accounts have special requirements and limitations.
 
-- Only paid accounts are available on Azure Government.
-- No manual content moderation available in Azure Government. In the public cloud, when content is deemed offensive based on a content moderation, the customer can ask for a human to look at that content and potentially revert that decision.
+- Only paid accounts are available with Azure Government.
+- No manual content moderation is available in Azure Government. In the public cloud, when content is deemed offensive based on a content moderation, you can ask for a human to review the content and potentially revert that decision.
 - For Azure Government, a Bing description of celebrities and named entities identified isn't presented. It's a UI capability only.
 
 ### Prerequisites for connecting to Azure Government
@@ -66,16 +70,14 @@ Government accounts have special requirements and limitations.
 - A Microsoft Entra ID account in Azure Government.
 - Prerequisites for permissions and resources as described in the standard account section.
 
-### Create new account via the Azure Government portal
+### Create a new account in the Azure Government portal
 
 To create a paid account in Azure Government, go to [Create Account](https://portal.azure.us/#create/Microsoft.VideoIndexer).
 
-If you aren't an Owner or Contributor for any Azure AI Video Indexer accounts in Azure Government, you're'given an empty experience from which you can start creating your account.
+If you aren't an Owner or Contributor for any Azure AI Video Indexer accounts in Azure Government, you're given an empty experience where you can start creating your account.
 
 If you're already a contributor or an administrator of an existing Azure AI Video Indexer account in Azure Government, you're taken to that account and from there you can use the steps described in the standard account section.
 
 ## Classic accounts are deprecated
 
-You can no longer create a classic account.
-
-Classic accounts retired on June 30, 2024.
+You can't create a classic account. Classic accounts retired on June 30, 2024.

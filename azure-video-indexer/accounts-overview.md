@@ -4,7 +4,7 @@ description: This article provides an overview of Azure AI Video Indexer account
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 03/05/2025
+ms.date: 05/28/2025
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
@@ -27,9 +27,7 @@ For more information about pricing, see [Azure AI Video Indexer pricing](https:/
    
 ## Classic accounts are deprecated
 
-You can no longer create a classic account.
-
-Classic accounts were retired on June 30, 2024. 
+You can't create a classic account. Classic accounts retired on June 30, 2024. 
  
 ## Limited access features
 
@@ -39,4 +37,4 @@ For more information, see [Azure AI Video Indexer limited access features](limit
 
 ## Create an account
 
-To create an account, see [Create an Azure AI Video Indexer account](create-account.md)
+To create an account, see [Create an Azure AI Video Indexer account](create-account.md).

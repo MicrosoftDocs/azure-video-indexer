@@ -4,7 +4,7 @@ description: This article walks you through the steps required to enable Video I
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 03/31/2025
+ms.date: 05/28/2025
 ms.service: azure-video-indexer
 ms.topic: quickstart
 #customer intent: As a video content manager, I want to enable Azure AI Video Indexer as an Arc extension in my infrastructure to analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
