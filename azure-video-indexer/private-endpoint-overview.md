@@ -1,10 +1,10 @@
 ---
 title: Private endpoints with Azure AI Video Indexer
-description: This article provides an overview of using private endpoints with Azure AI Video Indexer to ensure secure and private connectivity within your virtual network.
+description: This article provides an overview of using private endpoints with Azure AI Video Indexer to ensure secure and private connectivity in your virtual network.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 03/19/2025
+ms.date: 05/28/2025
 ms.service: azure-video-indexer
 ms.topic: concept-article
 #customer intent: As a network administrator, I want to understand and implement private endpoints for Azure AI Video Indexer to ensure secure and private connectivity within my virtual network.
@@ -12,7 +12,7 @@ ms.topic: concept-article
 
 # Private endpoints with Azure AI Video Indexer
 
-This article is an overview of using private endpoints with Azure AI Video Indexer.
+This article provides an overview of using private endpoints with Azure AI Video Indexer to ensure secure and private connectivity in your virtual network.
 
 > [!NOTE]
 > For a complete understanding of private endpoints and private links, see [What is a private endpoint?](/azure/private-link/private-endpoint-overview).
@@ -51,7 +51,7 @@ When you make a REST request to the FQDN endpoint URL from outside the virtual n
 
 When the virtual network hosting the private endpoint resolves it, it resolves to the private endpoint's IP address.
 
-For example, the DNS resource record for the Video Indexer account 'VIAccountA,' when resolved from *outside* the virtual network hosting the private endpoint, would be:
+For example, the DNS resource record for the Video Indexer account `VIAccountA`, when resolved from *outside* the virtual network hosting the private endpoint, would be:
 
 | Name | Type | Value |
 | ---- | ---- | ----- |
@@ -60,7 +60,7 @@ For example, the DNS resource record for the Video Indexer account 'VIAccountA,'
  
 As previously mentioned, you can deny or control access for clients outside the virtual network through the public endpoint using the Video Indexer firewall.
 
-The DNS resource records for VIAccountA, when resolved by a client in the virtual network hosting, the private endpoint, would be:
+The DNS resource records for `VIAccountA`, when resolved by a client in the virtual network hosting, the private endpoint, would be:
 
 | Name | Type | Value |
 | ---- | ---- | ----- |
@@ -69,9 +69,9 @@ The DNS resource records for VIAccountA, when resolved by a client in the virtua
  
 This approach enables access to the Video Indexer account using the same access token for clients on the virtual network hosting the private endpoints, and clients outside the virtual network.
 
-If you're using a custom DNS server on your network, clients must be able to resolve the FQDN for the Video Indexer account endpoint to the private endpoint IP address. You should configure your DNS server to delegate your private link subdomain to the private DNS zone for the virtual network, or configure the A records for VIAccountA.privatelink.api.videoindexer.ai with the private endpoint IP address.
+If you're using a custom DNS server on your network, clients must be able to resolve the FQDN for the Video Indexer account endpoint to the private endpoint IP address. You should configure your DNS server to delegate your private link subdomain to the private DNS zone for the virtual network, or configure the A records for `VIAccountA.privatelink.api.videoindexer.ai` with the private endpoint IP address.
 
-## Creating a private endpoint
+## Create a private endpoint
 
 To understand more about creating a private endpoint in general, see [Create a private endpoint in the Azure portal](/azure/private-link/create-private-endpoint-portal?tabs=dynamic-ip).
 

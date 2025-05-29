@@ -5,7 +5,7 @@ ms.topic: conceptual
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/28/2025
 ms.service: azure-video-indexer
 ---
 
@@ -13,7 +13,7 @@ ms.service: azure-video-indexer
 
 When a video is indexed, Azure AI Video Indexer analyzes the video and audio content by running 30+ AI models. It generates JSON containing the video insights including transcripts, optical character recognition elements (OCRs), face, topics, emotions, and so on. Each insight type includes instances of time ranges that show when the insight appears in the video. 
 
-Use the links in the insights table to learn how to get each insight JSON response in the web portal and using the API.
+Follow the links in the insights table to learn how to get each insight JSON response in the web portal and using the API.
 
 ## Insights
 
