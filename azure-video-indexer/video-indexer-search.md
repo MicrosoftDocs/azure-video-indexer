@@ -4,7 +4,7 @@ description: Learn how to search for exact moments in videos using Azure AI Vide
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/30/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---

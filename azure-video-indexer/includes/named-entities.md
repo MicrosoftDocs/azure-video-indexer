@@ -2,11 +2,11 @@
 
 [!INCLUDE [Named entities description](named-entities-description.md)]
 
-## Named entities use cases 
+## Named entities use cases
 
-- Contextual advertising, for example, placing an ad for a Pizza chain following footage on Italy.
+- Contextual advertising, for example, placing an ad for a pizza chain following footage on Italy.
 - Deep searching media archives for insights on people or locations to create feature stories for the news.
-- Creating a verbal description of footage using optical character recognition (OCR) processing to enhance accessibility for the visually impaired, for example a background storyteller in movies. 
+- Creating a verbal description of footage using optical character recognition (OCR) processing to enhance accessibility for the visually impaired, for example a background storyteller in movies.
 - Extracting insights on brand names.
 
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
@@ -14,7 +14,7 @@
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
 ## Example response
-    
+
 ```json
     namedPeople: [
     {
@@ -38,7 +38,7 @@
     startSeconds: 91.8,
     endSeconds: 97.1
     },
-``` 
+```
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 

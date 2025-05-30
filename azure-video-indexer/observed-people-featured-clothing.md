@@ -4,7 +4,7 @@ description: When indexing a video using Azure AI Video Indexer advanced video s
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/30/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
