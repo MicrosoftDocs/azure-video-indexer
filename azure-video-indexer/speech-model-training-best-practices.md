@@ -4,7 +4,7 @@ description: This article discusses the best ways to train a custom speech model
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/30/2025
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
