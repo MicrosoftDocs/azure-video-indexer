@@ -4,7 +4,7 @@ description: Start here to learn how to monitor Azure AI Video Indexer
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/30/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
@@ -64,6 +64,8 @@ For a list of the tables used by Azure Monitor Logs and queryable by Log Analyti
 -->
 
 ### Sample Kusto queries
+
+The following sections provide sample queries that you can use to analyze the data collected by Azure AI Video Indexer. You can run these queries in the Log Analytics workspace associated with your Azure AI Video Indexer account.
 
 #### Audit related sample queries
 
@@ -134,7 +136,7 @@ VIAudit
 | summarize count() by bin(TimeGenerated, 1h)
 ```
 
-## Related articles
+## Related content
 
 - See [Monitoring Azure AI Video Indexer data reference](monitor-video-indexer-data-reference.md) for a reference of the metrics, logs, and other important values created by Azure AI Video Indexer account.
 - See [Monitoring Azure resources with Azure Monitor](/azure/azure-monitor/essentials/monitor-azure-resource) for details on monitoring Azure resources.

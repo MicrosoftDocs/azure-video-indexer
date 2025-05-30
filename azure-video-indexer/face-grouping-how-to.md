@@ -1,10 +1,10 @@
 ---
 title: How to use global face grouping
-description: With VI, scaling facial recognition of thousands of faces is easy if a labeled and tagged dataset already exists. However, what if the dataset doesn't exist yet or isn't available for detecting faces in your video collection? Global face grouping can help you find faces that are frequently detected in videos but aren’t yet labeled or tagged. By using global face grouping, you can enhance your account’s custom face identification database.
+description: Learn how to use global face grouping  to organize and label frequently detected but unidentified faces in your video collection.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/30/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
