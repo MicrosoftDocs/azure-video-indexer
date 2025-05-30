@@ -4,14 +4,14 @@ description: This article demonstrates how to use the Azure AI Video Indexer edi
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/30/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
 
 # Add video clips to your projects
 
-The [Azure AI Video Indexer](https://www.videoindexer.ai/) website enables you to use your video's deep insights to: find the right media content, locate the parts that you’re interested in, and use the results to create an entirely new project. 
+The [Azure AI Video Indexer](https://www.videoindexer.ai/) website enables you to use your video's deep insights to find the right media content, locate the parts that you’re interested in, and use the results to create an entirely new project. 
 
 Once created, the project can be rendered and downloaded from Azure AI Video Indexer and be used in your own editing applications or downstream workflows.
 
@@ -94,7 +94,6 @@ You can create a new project directly from a video in your account.
 
     It takes you to the same page that you used to create a new project. Unlike the new project, you see the timestamped insights segments of the video, that you started editing previously.
 
-## See also
+## Related content
 
-[Azure AI Video Indexer overview](video-indexer-overview.md)
-
+- [Azure AI Video Indexer overview](video-indexer-overview.md)

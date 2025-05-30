@@ -4,7 +4,7 @@ description: This article gives an overview of Azure AI Video Indexer textual lo
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/30/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
@@ -84,12 +84,12 @@ The default body is:
 |---|---|
 |Name|Name of the logo used in the Azure AI Video Indexer website.|
 |wikipediaSearchTerm|Term used to create a description in the Video Indexer website.|
-|text|The text the model uses for comparison. Make sure to add the obvious name as part of the variations. (e.g Microsoft)|
+|text|The text the model uses for comparison. Make sure to add the obvious name as part of the variations. For example, Microsoft.|
 |caseSensitive| Determines whether the text is case sensitive. Set to true/false according to the variation.|
 
 The response should return **201 Created**.
 
-```
+```json
 HTTP/1.1 201 Created
 
 content-type: application/json; charset=utf-8

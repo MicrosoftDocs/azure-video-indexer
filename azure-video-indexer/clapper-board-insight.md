@@ -4,14 +4,12 @@ description: This article describes the Azure AI Video Indexer clapper board det
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/30/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
 
 # Clapper board detection insight overview
-
-## Post-production: clapper board detection
 
 [!INCLUDE [clapper board description](includes/clapperboard-description.md)]
 
@@ -27,7 +25,7 @@ Clapper board detection is most commonly used for post-production editing of vis
 
 This response shows all of the data that come from detecting clapper boards. If you would like to learn more about how clapper boards are used in media production, check out the [video from Studio Binder](https://www.youtube.com/watch?v=Heg6kDxXZ8k) that was indexed for this example.
 
-#### Clapper board detection
+### Clapper board detection
 
 ```json
 "clapperboards": [

@@ -4,7 +4,7 @@ description: Learn about how to enable and view digital patterns with color bars
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/30/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
