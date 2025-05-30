@@ -4,7 +4,7 @@ description: This article describes the Azure AI Video Indexer scene, shot, keyf
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 05/30/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---

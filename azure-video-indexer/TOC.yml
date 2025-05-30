@@ -196,15 +196,9 @@ items:
     - name: Manage access to your account
       href: restricted-viewer-role.md
       displayName: Azure AI Video Indexer restricted viewer, access control, user roles
-    - name: Use a Private endpoint
+    - name: Use a private endpoint
       href: private-endpoint-how-to.md
       displayName: private endpoint, private link
-    - name: Connect an existing account to ARM
-      href: connect-classic-account-to-arm.md
-      displayName: Azure AI Video Indexer connect classic account, ARM migration, account upgrade
-    - name: Import content from the trial account
-      href: import-content-from-trial.md
-      displayName: Azure AI Video Indexer import content, trial account, migrate content
     - name: Manage multiple tenants
       href: manage-multiple-tenants.md
       displayName: Azure AI Video Indexer multiple tenants, tenant management, multi-tenant setup

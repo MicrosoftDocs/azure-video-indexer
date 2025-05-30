@@ -4,7 +4,7 @@ description: This article gives an overview how to configure Azure AI Video Inde
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 04/03/2025
+ms.date: 05/30/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
