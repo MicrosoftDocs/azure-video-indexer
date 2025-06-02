@@ -4,7 +4,7 @@ description: Azure AI Video Indexer enabled by Arc performs video and audio anal
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 05/28/2025
+ms.date: 06/02/2025
 ms.service: azure-video-indexer
 ms.topic: overview
 #customer intent: As a video content manager, I want to use Azure AI Video Indexer analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
@@ -12,7 +12,9 @@ ms.topic: overview
 
 # Azure AI Video Indexer enabled by Arc
 
-[!INCLUDE [Arc intro](../includes/arc-intro.md)]
+[Azure AI Video Indexer enabled by Arc](../azure-video-indexer-enabled-by-arc-overview.md) is an Azure Arc extension enabled service that runs video and audio analysis and [generative AI](../generative_ai_with_vi.md) on edge devices. The solution runs on [Azure Arc enabled Kubernetes](/azure/azure-arc/kubernetes/), supports many video formats, and assumes that one Video Indexer resource maps to one extension. It transcribes spoken content in more than 35 source languages and translates them to English. For a full list of supported languages, see [Supported languages per scenario](../language-support.md#supported-languages-per-scenario).
+
+<!-- Para above is duplicated in azure-video-indexer-enabled-by-arc-quickstart.md so sync any changes-->
 
 If you aren't already familiar with [Azure AI Video Indexer](/azure/azure-video-indexer/), we recommend that you familiarize yourself with the cloud service first.
 
