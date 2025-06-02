@@ -5,7 +5,7 @@ ms.topic: conceptual
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 05/28/2025
+ms.date: 06/02/2025
 ms.service: azure-video-indexer
 ---
 
@@ -31,7 +31,7 @@ Follow the links in the insights table to learn how to get each insight JSON res
 ## Audio insights
 | Insight | Description |
 | ------- | ----------- |
-| [Audio effects detection](audio-effects-detection-insight.md) | [!INCLUDE [Audio effects detection description](./includes/audio-effects-detection-description.md)] |
+| [Audio effects detection](audio-effects-detection-insight.md) | Audio effects detection detects acoustic events and classifies them into categories like laughter, crowd reactions, alarms, or sirens. |
 | [Keywords extraction](keywords-insight.md) | [!INCLUDE [keywords-descritpion](./includes/keywords-description.md)] |
 | [Named entities](named-entities-insight.md) | [!INCLUDE [Named entities description](./includes/named-entities-description.md)] |
 | [Text-based emotion detection](text-based-emotions-detection-insight.md) | [!INCLUDE [Emotions detection description](./includes/text-based-emotions-detection-description.md)] |

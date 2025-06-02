@@ -177,7 +177,10 @@ Other characteristics:
 
 To download each keyframe, use the keyframe IDs with a [Get Thumbnails](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Thumbnail) API request.
 
-[!INCLUDE [artifacts](artifacts.md)]
+> [!WARNING]
+> Don't use data directly from the artifacts folder for production purposes. Artifacts are intermediate outputs of the indexing process and are raw outputs of different AI engines that analyze videos. The artifacts schema might change over time.
+
+<!-- The warning text is duplicated in faq.yml. Sync any changes  -->
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
 

@@ -1,6 +1,6 @@
 ## Audio effects detection
 
-[!INCLUDE [Audio effects detection description](audio-effects-detection-description.md)]
+Audio effects detection detects acoustic events and classifies them into categories like laughter, crowd reactions, alarms, or sirens.
 
 ### Audio effects use cases
 
