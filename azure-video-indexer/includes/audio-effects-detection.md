@@ -33,6 +33,7 @@ The following table shows which categories are supported depending on **Preset N
 | Thunderstorm || :heavy_check_mark:|
 
 [!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
+
 [!INCLUDE [get insights with the API](get-insights-api.md)]
 
 ## Example response
@@ -69,6 +70,7 @@ The following table shows which categories are supported depending on **Preset N
 ```
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
+
 [!INCLUDE [transparency-audio-effects-detection](transparency-audio-effects-detection.md)]
 
 ## Sample code
