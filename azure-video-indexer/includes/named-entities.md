@@ -9,9 +9,19 @@
 - Creating a verbal description of footage using optical character recognition (OCR) processing to enhance accessibility for the visually impaired, for example a background storyteller in movies.
 - Extracting insights on brand names.
 
-[!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
+## View the insight JSON with the web portal
 
-[!INCLUDE [get insights with the API](get-insights-api.md)]
+After you upload and index a video, download insights in JSON format from the web portal.
+
+1. Select the **Library** tab.
+1. Select the media you want.
+1. Select **Download**, and then select **Insights (JSON)**. The JSON file opens in a new browser tab.
+1. Find the key pair described in the example response.
+
+## Use the API
+
+1. Use a [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index) request. Pass `&includeSummarizedInsights=false`.
+2. Find the key pairs described in the example response.
 
 ## Example response
 

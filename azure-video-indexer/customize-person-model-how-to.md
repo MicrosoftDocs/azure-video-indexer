@@ -4,14 +4,15 @@ description: This article shows you how to customize a Person model in Azure AI 
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 05/30/2025
+ms.date: 06/03/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
 
 # Customize a person model in Azure AI Video Indexer
 
-[!INCLUDE [Gate notice](./includes/face-limited-access.md)]
+> [!NOTE]
+> Face identification, customization, and celebrity recognition features access is limited based on eligibility and usage criteria in order to support our Responsible AI principles. Face identification, customization, and celebrity recognition features are only available to Microsoft managed customers and partners. Use the [Face Recognition intake form](https://aka.ms/facerecognition) to apply for access.
 
 Faces that Azure AI Video Indexer doesn't recognize are still detected, but are left unnamed. You can build custom person models and enable Azure AI Video Indexer to recognize faces that don't get recognized by default. You can build them by pairing a person's name with image files of the person's face.
 
@@ -30,8 +31,6 @@ If you don't need the multiple person model support, don't assign a person model
 - An Azure AI Video Indexer account
 
 ## [Web portal](#tab/customizewebportal)
-
-[!INCLUDE [Gate notice](./includes/face-limited-access.md)]
 
 ## Create a new Person model
 

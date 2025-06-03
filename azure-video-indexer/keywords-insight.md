@@ -4,7 +4,7 @@ description: This article shows you how to get the Azure AI Video Indexer keywor
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 05/30/2025
+ms.date: 06/03/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
@@ -13,16 +13,26 @@ ms.topic: article
 
 ## Keywords extraction
 
-[!INCLUDE [keywords-description](includes/keywords-description.md)]
+Keyword extraction finds important keywords in media files and provides insights in both single-language and multi-language media files.
 
 ### Keywords extraction use cases
 
 - Personalization of keywords to match customer interests, for example websites about England posting promotions about English movies or festivals. 
 - Deep-searching archives for insights on specific keywords to create feature stories about companies, personas, or technologies, for example by a news agency.
 
-[!INCLUDE [get insights with the web portal](includes/get-insights-web-portal.md)]
+## View the insight JSON with the web portal
 
-[!INCLUDE [get insights with the API](includes/get-insights-api.md)]
+After you upload and index a video, download insights in JSON format from the web portal.
+
+1. Select the **Library** tab.
+1. Select the media you want.
+1. Select **Download**, and then select **Insights (JSON)**. The JSON file opens in a new browser tab.
+1. Find the key pair described in the example response.
+
+## Use the API
+
+1. Use a [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index) request. Pass `&includeSummarizedInsights=false`.
+2. Find the key pairs described in the example response.
 
 ## Example response
 

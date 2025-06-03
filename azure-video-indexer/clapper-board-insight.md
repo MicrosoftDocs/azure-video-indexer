@@ -4,22 +4,32 @@ description: This article describes the Azure AI Video Indexer clapper board det
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 05/30/2025
+ms.date: 06/03/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
 
 # Clapper board detection insight overview
 
-[!INCLUDE [clapper board description](includes/clapperboard-description.md)]
+Clapper board detection finds clapper boards used during filming and gives you the information on the clapper board as metadata, like *production*, *roll*, *scene*, and *take*. Clapper board is part of post-production insights that you select in the web portal [advanced settings](../indexing-configuration-guide.md?#advanced-settings) when you upload and index the file.
 
 ## Clapper board use cases
 
 Clapper board detection is most commonly used for post-production editing of visual media.
 
-[!INCLUDE [get insights with the web portal](includes/get-insights-web-portal.md)]
+## View the insight JSON with the web portal
 
-[!INCLUDE [get insights with the API](includes/get-insights-api.md)]
+After you upload and index a video, download insights in JSON format from the web portal.
+
+1. Select the **Library** tab.
+1. Select the media you want.
+1. Select **Download**, and then select **Insights (JSON)**. The JSON file opens in a new browser tab.
+1. Find the key pair described in the example response.
+
+## Use the API
+
+1. Use a [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index) request. Pass `&includeSummarizedInsights=false`.
+2. Find the key pairs described in the example response.
 
 ## Example responses
 
