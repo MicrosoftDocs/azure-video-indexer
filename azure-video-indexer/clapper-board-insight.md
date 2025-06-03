@@ -11,7 +11,7 @@ ms.topic: article
 
 # Clapper board detection insight overview
 
-Clapper board detection finds clapper boards used during filming and gives you the information on the clapper board as metadata, like *production*, *roll*, *scene*, and *take*. Clapper board is part of post-production insights that you select in the web portal [advanced settings](../indexing-configuration-guide.md?#advanced-settings) when you upload and index the file.
+Clapper board detection finds clapper boards used during filming and gives you the information on the clapper board as metadata, like *production*, *roll*, *scene*, and *take*. Clapper board is part of post-production insights that you select in the web portal [advanced settings](indexing-configuration-guide.md?#advanced-settings) when you upload and index the file.
 
 ## Clapper board use cases
 

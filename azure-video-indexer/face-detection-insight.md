@@ -96,9 +96,9 @@ After you upload and index a video, download insights in JSON format from the we
     ]
 ```
 
-[!INCLUDE [General transparency note](read-general-transparency-note.md)]
+[!INCLUDE [General transparency note](./includes/read-general-transparency-note.md)]
 
-[!INCLUDE [transparency-named-entities](transparency-face-detection.md)]
+[!INCLUDE [transparency-named-entities](./includes/transparency-face-detection.md)]
 
 ## Sample code
 

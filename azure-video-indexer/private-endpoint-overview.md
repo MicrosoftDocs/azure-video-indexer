@@ -28,7 +28,7 @@ Using private endpoints for your Azure AI Video Indexer account enables you to:
 
 > [!IMPORTANT]
 > - Private endpoints support operations that use the Video Indexer API. If you disable public access for your Video Indexer account, you can't use the account through the [Video Indexer web app](https://www.videoindexer.ai/).
-> - Video Indexer accounts connect to an Azure Storage account. To learn how to set up your Video Indexer account to connect to a storage account behind a firewall using trusted storage, see [Configure Video Indexer to work with storage accounts behind firewall](../storage-behind-firewall.md).
+> - Video Indexer accounts connect to an Azure Storage account. To learn how to set up your Video Indexer account to connect to a storage account behind a firewall using trusted storage, see [Configure Video Indexer to work with storage accounts behind firewall](storage-behind-firewall.md).
 
 ## Conceptual overview
 
