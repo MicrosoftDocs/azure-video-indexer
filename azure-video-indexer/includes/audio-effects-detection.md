@@ -1,6 +1,6 @@
 ## Audio effects detection
 
-[!INCLUDE [Audio effects detection description](audio-effects-detection-description.md)]
+Audio effects detection detects acoustic events and classifies them into categories like laughter, crowd reactions, alarms, or sirens.
 
 ### Audio effects use cases
 
@@ -32,8 +32,19 @@ The following table shows which categories are supported depending on **Preset N
 | Screaming|| :heavy_check_mark:|
 | Thunderstorm || :heavy_check_mark:|
 
-[!INCLUDE [get insights with the web portal](get-insights-web-portal.md)]
-[!INCLUDE [get insights with the API](get-insights-api.md)]
+## View the insight JSON with the web portal
+
+After you upload and index a video, download insights in JSON format from the web portal.
+
+1. Select the **Library** tab.
+1. Select the media you want.
+1. Select **Download**, and then select **Insights (JSON)**. The JSON file opens in a new browser tab.
+1. Find the key pair described in the example response.
+
+## Use the API
+
+1. Use a [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index) request. Pass `&includeSummarizedInsights=false`.
+2. Find the key pairs described in the example response.
 
 ## Example response
 
@@ -69,6 +80,7 @@ The following table shows which categories are supported depending on **Preset N
 ```
 
 [!INCLUDE [General transparency note](read-general-transparency-note.md)]
+
 [!INCLUDE [transparency-audio-effects-detection](transparency-audio-effects-detection.md)]
 
 ## Sample code

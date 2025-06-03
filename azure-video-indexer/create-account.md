@@ -4,14 +4,15 @@ description: This article explains how to create an account for Azure AI Video I
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 05/28/2025
+ms.date: 06/03/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
 
 # Create an Azure AI Video Indexer (VI) account
 
-[!INCLUDE [Gate notice](./includes/face-limited-access.md)]
+> [!NOTE]
+> Face identification, customization, and celebrity recognition features access is limited based on eligibility and usage criteria in order to support our Responsible AI principles. Face identification, customization, and celebrity recognition features are only available to Microsoft managed customers and partners. Use the [Face Recognition intake form](https://aka.ms/facerecognition) to apply for access.
 
 To start using Azure AI Video Indexer, create an Azure AI Video Indexer account.
 

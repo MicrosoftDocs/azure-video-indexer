@@ -4,7 +4,7 @@ description: This article talks about the limited access features of Azure AI Vi
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 05/29/2025
+ms.date: 06/03/2025
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
@@ -28,7 +28,14 @@ The Azure AI Video Indexer service is made available to customers and partners u
 
 ## Limited access features
 
-[!INCLUDE [limited access](./includes/limited-access-account-types.md)]
+This section covers limited access features in Azure AI Video Indexer.
+
+|When did I create the account?|Trial account (free)|	Paid account <br/>(classic or ARM-based)|
+|---|---|---|
+|Existing VI accounts <br/><br/>created before June 21, 2022|You could use face identification, customization, and celebrity recognition until June 2023. <br/><br/>**Recommended**: Move to a paid account then complete the [intake form](https://aka.ms/facerecognition). If you meet the eligibility criteria, we'll enable the features also after the grace period. |You could access face identification, customization, and celebrity recognition until June 2023 ¹.<br/><br/>**Recommended**: Complete the [intake form](https://aka.ms/facerecognition). If you meet eligibility criteria, we'll enable the features also after the grace period.|
+|New VI accounts <br/><br/>created after June 21, 2022	| You can't use face identification, customization, and celebrity recognition right now. <br/><br/>**Recommended**: Move to a paid account then complete the [intake form](https://aka.ms/facerecognition). If you meet the eligibility criteria, we'll enable the features (within 10 days).|Azure AI Video Indexer disables the access to face identification, customization, and celebrity recognition today by default, but gives the option to enable it. <br/><br/>**Recommended**: Complete the [intake form](https://aka.ms/facerecognition). If you meet the eligibility criteria, we'll enable the features (within 10 days).|
+
+¹ In Brazil South, face detection isn't available.
 
 ## Help and support 
 

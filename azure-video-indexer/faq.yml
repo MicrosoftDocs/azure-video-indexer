@@ -5,7 +5,7 @@ metadata:
   ms.service: azure-video-indexer
   author: bandersmsft
   ms.topic: faq
-  ms.date: 04/03/2025
+  ms.date: 06/02/2025
   ms.author: banders
 title: Azure AI Video Indexer frequently asked questions
 summary: This article answers frequently asked questions about Azure AI Video Indexer.
@@ -168,7 +168,10 @@ sections:
         answer: |
           When you upload a video to Azure AI Video Indexer, an automatic content analysis is done by algorithms and models in order to make sure no inappropriate content is publicly presented. If a video is found to be suspicious as containing explicit content, you can't set it as public. However, the account members can still access it as a private video (view it, download the insights and extracted artifacts, and perform other operations available to account members).
 
-          [!INCLUDE [artifacts](./includes/artifacts.md)]
+          > [!WARNING]
+          > Don't use data directly from the artifacts folder for production purposes. Artifacts are intermediate outputs of the indexing process and are raw outputs of different AI engines that analyze videos. The artifacts schema might change over time.
+
+          <!-- The warning text is duplicated in includes\scene-shot-keyframe-detection. Sync any changes  -->
 
           In order to set the video for public access, you can either:
 
