@@ -4,7 +4,7 @@ description: This article shows you how to get the Azure AI Video Indexer keywor
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/03/2025
+ms.date: 06/04/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
@@ -86,7 +86,8 @@ After you upload and index a video, download insights in JSON format from the we
       }
 ```
 
-[!INCLUDE [General transparency note](includes/read-general-transparency-note.md)]
+> [!IMPORTANT]
+> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
 
 [!INCLUDE [transparency-keywords-extraction](includes/transparency-keywords-extraction.md)]
 

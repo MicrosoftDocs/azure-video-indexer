@@ -1,1 +1,0 @@
-Named entities extraction uses Natural Language Processing (NLP) to extract insights on the locations, people, and brands appearing in audio and images in media files. The named entities extraction insight uses transcription and optical character recognition (OCR).

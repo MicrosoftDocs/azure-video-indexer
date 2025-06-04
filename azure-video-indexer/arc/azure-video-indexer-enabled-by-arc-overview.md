@@ -4,7 +4,7 @@ description: Azure AI Video Indexer enabled by Arc performs video and audio anal
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/02/2025
+ms.date: 06/04/2025
 ms.service: azure-video-indexer
 ms.topic: overview
 #customer intent: As a video content manager, I want to use Azure AI Video Indexer analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
@@ -109,7 +109,15 @@ Video Indexer enabled by Arc is designed to run on any Arc enabled Kubernetes en
 | Recommended | Two | 48-64 Cores | 256 GB | 100 GB | Storage needs to support `ReadWriteMany` Storage Class |
 
 
-[!INCLUDE [minimum-hardware-requirements](../includes/vi-arc-minimum-software-requirements.md)]
+## Minimum software requirements
+
+| Component |  Minimum requirements |
+| --- | --- |
+| Operating system | Ubuntu 22.04 LTS or any Linux Compatible OS |
+| Kubernetes | 1.29 |
+| Azure CLI | 2.64.0 |
+
+<!-- section duplicated to azure-video-indexer-enabled-by-arc-quickstart-->
 
 ## Supported input formats and codecs
 

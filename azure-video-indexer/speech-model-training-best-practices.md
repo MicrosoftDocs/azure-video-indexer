@@ -4,14 +4,15 @@ description: This article discusses the best ways to train a custom speech model
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 05/30/2025
+ms.date: 06/04/2025
 ms.service: azure-video-indexer
 ms.topic: conceptual
 ---
 
 # Speech model training best practices
 
-[!INCLUDE [speech model](./includes/speech-model-note.md)]
+> [!NOTE]
+> Speech model customization, including pronunciation training, is available in Video Indexer Azure trial accounts and Resource Manager accounts. Classic accounts don't support this feature. To learn how to use the custom language experience, see [Customize a language model](../customize-language-model-overview.md).
 
 Through Azure AI Video Indexer integration with [Azure AI Speech services](/azure/ai-services/speech-service/captioning-concepts), a Universal Language Model is utilized as a base model that is trained with Microsoft-owned data and reflects commonly used spoken language. The base model is pretrained with dialects and phonetics representing various common domains. The base model works well in most speech recognition scenarios. 
 

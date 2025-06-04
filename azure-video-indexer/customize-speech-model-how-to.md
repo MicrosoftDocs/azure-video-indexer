@@ -4,15 +4,16 @@ description: This article shows you how to customize a speech model with Azure A
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 05/30/2025
+ms.date: 06/04/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
 
 # Customize a speech model
  
-[!INCLUDE [speech model](./includes/speech-model-note.md)]
- 
+> [!NOTE]
+> Speech model customization, including pronunciation training, is available in Video Indexer Azure trial accounts and Resource Manager accounts. Classic accounts don't support this feature. To learn how to use the custom language experience, see [Customize a language model](../customize-language-model-overview.md).
+
 Azure AI Video Indexer lets you create custom speech models to customize speech recognition by uploading datasets that are used to create a speech model. This article goes through the steps to do so through the Video Indexer website. You can also use the API, as described in [Customize speech model using API](customize-speech-model-with-api.md). 
 
 For a detailed overview and best practices for custom speech models, see [Customize a speech model with Azure AI Video Indexer](customize-speech-model-overview.md).
@@ -134,8 +135,6 @@ A custom language model isn't used by default for indexing jobs, so must be sele
 The same steps apply when you want to reindex a video with a custom model.
 
 ## [API](#tab/customizeapi)
-
-[!INCLUDE [speech model](./includes/speech-model-note.md)] 
 
 The following table provides descriptions for some of the parameters used with the speech model requests: 
 

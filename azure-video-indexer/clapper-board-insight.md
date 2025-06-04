@@ -4,7 +4,7 @@ description: This article describes the Azure AI Video Indexer clapper board det
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/03/2025
+ms.date: 06/04/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
@@ -1601,7 +1601,8 @@ This response shows all of the data that come from detecting clapper boards. If 
 |`fields`|The fields found in the clapper board; also each field's name and value.|
 |`instances`|A list of time ranges where this element appeared.|
 
-[!INCLUDE [General transparency note](includes/read-general-transparency-note.md)]
+> [!IMPORTANT]
+> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
 
 [!INCLUDE [transparency-clapper-board-detection](includes/transparency-clapper-board-detection.md)]
 

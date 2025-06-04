@@ -4,14 +4,14 @@ description: This article describes the Azure AI Video Indexer text-based emotio
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/03/2025
+ms.date: 06/04/2025
 ms.service: azure-video-indexer
 ms.topic: article
 ---
 
 # Text-based emotion detection
 
-[!INCLUDE [Emotions detection description](includes/text-based-emotions-detection-description.md)]
+Emotion detection finds emotions in a video's transcript lines. Each sentence is detected as *anger*, *fear*, *joy*, *sad*, or *none* if no other emotion is found.
 
 > [!IMPORTANT]
 > The model works on text only (labeling emotions in video transcripts.) This model doesn't infer the emotional state of people. So, it might not perform where input is ambiguous or unclear, like sarcastic remarks. **So, the model shouldn't be used for things like assessing employee performance or the emotional state of a person**.
@@ -58,7 +58,8 @@ After you upload and index a video, download insights in JSON format from the we
       }
 ```
 
-[!INCLUDE [General transparency note](includes/read-general-transparency-note.md)]
+> [!IMPORTANT]
+> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
 
 [!INCLUDE [transparency-text-based-emotion-detection](includes/transparency-text-based-emotion-detection.md)]
 
