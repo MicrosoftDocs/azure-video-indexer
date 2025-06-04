@@ -1,2 +1,0 @@
-> [!NOTE]
-> Face identification, customization, and celebrity recognition features access is limited based on eligibility and usage criteria in order to support our Responsible AI principles. Face identification, customization, and celebrity recognition features are only available to Microsoft managed customers and partners. Use the [Face Recognition intake form](https://aka.ms/facerecognition) to apply for access.

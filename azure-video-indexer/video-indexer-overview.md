@@ -4,7 +4,7 @@ description: This article gives an overview of the Azure AI Video Indexer servic
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 05/28/2025
+ms.date: 06/03/2025
 ms.service: azure-video-indexer
 ms.topic: overview
 ---
@@ -110,7 +110,8 @@ Once you set up, start using insights and check out other **How to guides**.
 > [!NOTE]
 > On June 11, 2020, Microsoft announced that it will not sell facial recognition technology to police departments in the United States until strong regulation, grounded in human rights, is enacted. As such, customers can't use facial recognition features or functionality included in Azure AI services, such as Face or Video Indexer, if a customer is, or is allowing use of such services by or for, a police department in the United States.
 
-[!INCLUDE [Gate notice](./includes/face-limited-access.md)]
+> [!NOTE]
+> Face identification, customization, and celebrity recognition features access is limited based on eligibility and usage criteria in order to support our Responsible AI principles. Face identification, customization, and celebrity recognition features are only available to Microsoft managed customers and partners. Use the [Face Recognition intake form](https://aka.ms/facerecognition) to apply for access.
 
 You must comply with all applicable laws in your use of Azure AI Video Indexer, and you can't use Azure AI Video Indexer or any Azure service in a manner that violates the rights of others, or that could be harmful to others.
 
