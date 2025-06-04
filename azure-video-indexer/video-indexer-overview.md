@@ -66,7 +66,7 @@ Unless specified otherwise, a model is generally available.
     * Textless slate detection, including scene matching.
 
     For details, see [Slate detection](slate-detection-insight.md).
-* **Textual logo detection**: Matches a specific predefined text using Azure AI Video Indexer OCR. For example, if a user created a textual logo: `Microsoft`, different appearances of the word `Microsoft` is detected as the `Microsoft` logo. For more information, see [Detect textual logo](detect-textual-logo.md).
+* **Textual logo detection**: Matches a specific predefined text using Azure AI Video Indexer OCR. For example, if a user created a textual logo: `Microsoft`, different appearances of the word `Microsoft` are detected as the `Microsoft` logo. For more information, see [Detect textual logo](detect-textual-logo.md).
 
 ### Audio models
 
