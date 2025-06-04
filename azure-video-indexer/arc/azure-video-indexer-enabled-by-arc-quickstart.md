@@ -4,7 +4,7 @@ description: This article walks you through the steps required to enable Video I
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/02/2025
+ms.date: 06/04/2025
 ms.service: azure-video-indexer
 ms.topic: quickstart
 #customer intent: As a video content manager, I want to enable Azure AI Video Indexer as an Arc extension in my infrastructure to analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
@@ -57,7 +57,15 @@ The CPU in the nodes should support [AVX2](https://wikipedia.org/wiki/Advanced_V
 
 To view minimum hardware requirements in a *production* environment, see the [Minimum hardware requirements](/azure/azure-video-indexer/azure-video-indexer-enabled-by-arc-overview#minimum-hardware-requirements) in the overview article.
 
-[!INCLUDE [minimum-software-requirements](../includes/vi-arc-minimum-software-requirements.md)]
+## Minimum software requirements
+
+| Component |  Minimum requirements |
+| --- | --- |
+| Operating system | Ubuntu 22.04 LTS or any Linux Compatible OS |
+| Kubernetes | 1.29 |
+| Azure CLI | 2.64.0 |
+
+<!-- section duplicated to azure-video-indexer-enabled-by-arc-overview-->
 
 ## Parameter definitions
 

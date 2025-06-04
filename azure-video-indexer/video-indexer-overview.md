@@ -66,7 +66,7 @@ Unless specified otherwise, a model is generally available.
     * Textless slate detection, including scene matching.
 
     For details, see [Slate detection](slate-detection-insight.md).
-* **Textual logo detection**: Matches a specific predefined text using Azure AI Video Indexer OCR. For example, if a user created a textual logo: `Microsoft`, different appearances of the word `Microsoft` is detected as the `Microsoft` logo. For more information, see [Detect textual logo](detect-textual-logo.md).
+* **Textual logo detection**: Matches a specific predefined text using Azure AI Video Indexer OCR. For example, if a user created a textual logo: `Microsoft`, different appearances of the word `Microsoft` are detected as the `Microsoft` logo. For more information, see [Detect textual logo](detect-textual-logo.md).
 
 ### Audio models
 
@@ -84,7 +84,7 @@ Unless specified otherwise, a model is generally available.
 * **Translation**: Creates translations of the audio transcript in many different languages. For more information, see [Azure AI Video Indexer language support](language-support.md).
 * **Audio effects detection**: Detects the following audio effects in the nonspeech segments of the content: alarm or siren, dog barking, crowd reactions (cheering, clapping, and booing), gunshot or explosion, laughter, breaking glass, and silence.
 
-    The detected acoustic events are in the closed captions file. The file can be downloaded from the Azure AI Video Indexer website. For more information, see [Audio effects detection](audio-effects-detection.md).
+    The detected acoustic events are in the closed captions file. The file can be downloaded from the Azure AI Video Indexer website. For more information, see [Audio effects detection](audio-effects-detection-insight.md).
 
     > [!NOTE]
     > The full set of events is available only when you choose **Advanced Audio Analysis** when uploading a file, in upload preset. By default, only silence is detected.
