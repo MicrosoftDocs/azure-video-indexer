@@ -93,7 +93,7 @@ After you upload and index a video, download insights in JSON format from the we
 > [!IMPORTANT]
 > Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
 
-[!INCLUDE [transparency-audio-effects-detection](transparency-audio-effects-detection.md)]
+[!INCLUDE [transparency-audio-effects-detection](./includes/transparency-audio-effects-detection.md)]
 
 ## Sample code
 

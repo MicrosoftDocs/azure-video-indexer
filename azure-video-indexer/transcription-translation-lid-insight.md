@@ -96,7 +96,7 @@ All the languages detected in the video are under `sourceLanguage` and each inst
 > [!IMPORTANT]
 > Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
 
-[!INCLUDE [transparency-transcription-translation-lid](transparency-transcription-translation-lid.md)]
+[!INCLUDE [transparency-transcription-translation-lid](./includes/transparency-transcription-translation-lid.md)]
 
 ## Sample code
 

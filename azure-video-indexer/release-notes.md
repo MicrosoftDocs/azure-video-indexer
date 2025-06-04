@@ -356,7 +356,7 @@ This feature is currently available through the API, and is available in all pre
 
 ### Observed people detection improvements  
 
-For more information, see [Considerations and limitations when choosing a use case](observed-matched-people-insight.md#considerations-and-limitations-when-choosing-a-use-case).
+For more information, see [Get observed people detection and matched faces insights](observed-matched-people-insight.md).
 
 ## March 2023
 
