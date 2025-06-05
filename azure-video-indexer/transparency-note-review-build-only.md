@@ -1,6 +1,6 @@
 ---
-title: Transparency note CELA review build only  
-description: Transparency note CELA review build only.
+title: Transparency note for Microsoft Corporate, External, and Legal Affairs review build
+description: Transparency note for Microsoft Corporate, External, and Legal Affairs review build.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
@@ -10,9 +10,9 @@ ms.topic: reference
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
-# Transparency note CELA review build only
+# Transparency note for Microsoft Corporate, External, and Legal Affairs review build
 
 > [!IMPORTANT] 
-> This page is to build the transparency note as it would appear on the CELA pages.  It is purposefully not included in the TOC.
+> This page is to build the transparency note as it would appear on the Microsoft Corporate, External, and Legal Affairs pages. Not included in the TOC.
 
 [!INCLUDE [transparency note include](./includes/transparency-aggregated.md)]
