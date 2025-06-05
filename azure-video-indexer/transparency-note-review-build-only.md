@@ -4,9 +4,10 @@ description: Transparency note CELA review build only.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/09/2024
+ms.date: 06/05/2025
 ms.service: azure-video-indexer
-ms.topic: how-to
+ms.topic: reference
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Transparency note CELA review build only

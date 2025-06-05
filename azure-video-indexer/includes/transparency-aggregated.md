@@ -1,6 +1,6 @@
 <!-- This include was created so that tranparency notes could be kept in one repo. Changes to this include update the page on the DocLegal repo. The date is the date that any of the includes were edited. -->
 
-[!INCLUDE [transparency-intro](transparency-intro.md)]
+An AI system includes not only the technology, but also the people who use it, the people affected by it, and the environment in which it's deployed. Creating a system that is fit for its intended purpose requires an understanding of how the technology works, its capabilities and limitations, and how to achieve the best performance.
 
 ## What is transparency?
 
@@ -15,8 +15,6 @@ You can use Transparency Notes when developing or deploying your own system or s
 Microsoft’s Transparency Notes are part of a broader effort at Microsoft to put our AI principles into practice.
 
 To find out more, see [Microsoft AI principles](https://www.microsoft.com/ai/responsible-ai?rtc=1&activetab=pivot1%3aprimaryr6).
-
-[!INCLUDE [transparency-intro](transparency-intro.md)]
 
 ## Introduction to Azure AI Video Indexer
 
