@@ -247,7 +247,7 @@ items:
 - name: Resources
   items:
   - name: Azure Roadmap
-    href: https://azure.microsoft.com/roadmap/?category=web-mobile
+    href: https://azure.microsoft.com/updates/?searchterms=web-mobile
   - name: Pricing
     href: https://azure.microsoft.com/pricing/details/video-indexer/
   - name: Regional availability
