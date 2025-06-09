@@ -1,12 +1,13 @@
 ---
 title:  Quickstart - Try the Azure AI Video Indexer web portal
-description: This article shows you how to get started with Azure AI Video Indexer (VI) by using the web portal. You're encouraged to experience indexing a video with the web portal before trying the API.
+description: Learn how to use the web portal to upload, index, and explore video insights before trying the API. Try it now.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 05/19/2025
+ms.date: 06/09/2025
 ms.service: azure-video-indexer
-ms.topic: conceptual
+ms.topic: quickstart
+#customer intent: As an Azure user, I want to try the Azure AI Video Indexer web portal so that I can index a video before using the API.
 ---
 
 # Quickstart: Try the Azure AI Video Indexer (VI) web portal
@@ -81,3 +82,7 @@ Access the API JSON response for your indexing job.
 1. In the upper right, select the **Download** symbol.
 2. Select **Insights (JSON)**. The JSON file opens in a new browser window or tab.  
   :::image type="content" source="./media/try-vi-web-portal-quickstart/download-insights-json.png" border="true" alt-text="Screenshot showing where to download JSON insights." lightbox="./media/try-vi-web-portal-quickstart/download-insights-json.png" :::
+
+## Related content
+
+- [Azure AI Video Indexer documentation](index.yml)

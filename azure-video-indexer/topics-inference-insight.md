@@ -1,12 +1,13 @@
 ---
 title: Get topics inference insights
-description: This article shows you how to get the Azure AI Video Indexer topics inference insights.
+description: Get topics inference insights from Azure AI Video Indexer to enhance personalization, deep search, and monetization. See steps and sample code.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/04/2025
+ms.date: 06/09/2025
 ms.service: azure-video-indexer
-ms.topic: article
+ms.topic: how-to
+#customer intent: As an Azure user, I want to get topics inference insights from Azure AI Video Indexer to enhance personalization, deep search, and monetization.
 ---
 
 # Get topics inference insights
@@ -15,7 +16,7 @@ Topics inference creates inferred insights from transcribed audio, OCR content i
 
 In the web portal, the extracted Topics and categories (when available) are listed in the Insights tab. To jump to the topic in the media file, select a Topic -> Play Previous or Play Next.
 
-## Topics inference use cases 
+## Topics inference use cases
 
 - Personalization using topics inference to match customer interests, for example websites about England posting promotions about English movies or festivals.
 - Deep-searching archives for insights on specific topics to create feature stories about companies, personas, or technologies, for example by a news agency. 
@@ -33,10 +34,10 @@ After you upload and index a video, download insights in JSON format from the we
 ## Use the API
 
 1. Use a [Get Video Index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Index) request. Pass `&includeSummarizedInsights=false`.
-2. Find the key pairs described in the example response.
+2. Find the key pairs described in the following example response.
 
 ## Example response
-     
+
 ```json
     "topics": [
       {
@@ -86,3 +87,6 @@ After you upload and index a video, download insights in JSON format from the we
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
+## Related content
+
+- [Azure AI Video Indexer documentation](index.yml)

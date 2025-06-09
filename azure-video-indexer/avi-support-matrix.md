@@ -1,19 +1,22 @@
 ---
-title: Azure AI Video Indexer support matrix and service limits  
-description: This article describes the supported formats and limitations of Azure AI Video Indexer.
+title: Azure AI Video Indexer support matrix and service limits
+description: Learn about supported formats, file size and duration limits, languages, optical character recognition, projects, person models, and codecs in Azure AI Video Indexer.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 04/25/2025
+ms.date: 06/09/2025
 ms.service: azure-video-indexer
-ms.topic: conceptual
+ms.topic: concept-article
+# customer intent: As a user of Azure AI Video Indexer, I want to understand the supported formats and limitations of the service, so that I can effectively use it for my video indexing needs.
 ---
 
 # Azure AI Video Indexer support matrix and service limits
 
 This article describes the supported formats and limitations of Azure AI Video Indexer.
 
-## Upload file size and video duration 
+## Upload file size and video duration
+
+When you upload a video to Azure AI Video Indexer, there are limits on the file size and video duration based on the preset you choose. The following sections explain the limits:
 
 ### File size limits
 
@@ -38,7 +41,7 @@ See our [Language support article](language-support.md) for the list of language
 
 When you use single or multi language detection, there's a limit of 10 languages allowed for identification during the indexing of a media file. You can select the 10 languages.
 
-## OCR
+## Optical character recognition (OCR)
 
 Video Indexer has an OCR limit of 50,000 words per indexed video. Once the limit is reached, no more OCR results are generated.
 
@@ -107,3 +110,7 @@ Azure AI Video Indexer supports the following file formats:
 ## Output format
 
 Videos are transcoded to a single format and resolution (720p), mp4 H254 for video and AAC for audio.
+
+## Related content
+
+- [Azure AI Video Indexer documentation](index.yml).

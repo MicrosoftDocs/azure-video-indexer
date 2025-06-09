@@ -1,15 +1,16 @@
 ---
-title: Clapper board detection insight overview
-description: This article describes the Azure AI Video Indexer clapper board detection insight.
+title: Get clapper board detection insights
+description: This article describes the Azure AI Video Indexer clapper board detection insight, how to view it in the web portal, and how to get it with the API.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 06/04/2025
 ms.service: azure-video-indexer
-ms.topic: article
+ms.topic: how-to
+# customer intent: As a user of Azure AI Video Indexer, I want to understand how to get clapper board detection insights, so that I can use the metadata for post-production editing.
 ---
 
-# Clapper board detection insight overview
+# Get clapper board detection insights
 
 Clapper board detection finds clapper boards used during filming and gives you the information on the clapper board as metadata, like *production*, *roll*, *scene*, and *take*. Clapper board is part of post-production insights that you select in the web portal [advanced settings](indexing-configuration-guide.md?#advanced-settings) when you upload and index the file.
 
@@ -33,7 +34,7 @@ After you upload and index a video, download insights in JSON format from the we
 
 ## Example responses
 
-This response shows all of the data that come from detecting clapper boards. If you would like to learn more about how clapper boards are used in media production, check out the [video from Studio Binder](https://www.youtube.com/watch?v=Heg6kDxXZ8k) that was indexed for this example.
+This response shows all of the data that come from detecting clapper boards. For more information about how clapper boards are used in media production, see the [video from Studio Binder](https://www.youtube.com/watch?v=Heg6kDxXZ8k) that was indexed for this example.
 
 ### Clapper board detection
 
@@ -1610,3 +1611,6 @@ This response shows all of the data that come from detecting clapper boards. If 
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
+## Related content
+
+- [Azure AI Video Indexer documentation](index.yml)

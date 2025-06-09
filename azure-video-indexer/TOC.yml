@@ -48,6 +48,9 @@ items:
   - name: Insights
     displayName: Azure AI Video Indexer insights, video analysis, audio analysis, AI models
     href: insights-overview.md
+  - name: Indexing configuration options
+    href: indexing-configuration-guide.md
+    displayName: Azure AI Video Indexer indexing configuration, setup guide, language detection
   - name: Bring Your Own AI model
     displayName: Azure AI Video Indexer bring your own model, custom AI models, model integration, video analysis customization, BYOM
     href: bring-your-own-model-overview.md
@@ -125,9 +128,6 @@ items:
       - name: Scene, shots, keyframes detection
         href: scene-shot-keyframe-detection-insight.md
         displayName: Azure AI Video Indexer scene detection, shots, keyframes, video segmentation
-  - name: Indexing configuration guide
-    href: indexing-configuration-guide.md
-    displayName: Azure AI Video Indexer indexing configuration, setup guide, language detection
   - name: Search videos
     href: video-indexer-search.md
     displayName: Azure AI Video Indexer search, video search, transcript search, search API
@@ -208,6 +208,12 @@ items:
     - name: Use at scale
       href: considerations-when-use-at-scale.md
       displayName: Azure AI Video Indexer scale, best practices, large scale usage, performance
+  - name: Find and set your Azure region
+    href: regions.md
+    displayName: Azure AI Video Indexer regions, regional availability, supported regions, region codes
+  - name: Configure failover for disaster recovery
+    href: video-indexer-disaster-recovery.md
+    displayName: Azure AI Video Indexer disaster recovery, failover, business continuity
 - name: Monitor Video Indexer
   href: monitor-video-indexer.md
   displayName: Azure AI Video Indexer monitoring, monitor setup, performance monitoring
@@ -216,16 +222,13 @@ items:
   - name: Use Network Security Groups
     href: network-security.md
     displayName: Azure AI Video Indexer network security, NSG, service tags, secure network
-  - name: Storage behind a firewall
+  - name: Set up firewall-protected storage
     href: storage-behind-firewall.md
     displayName: Azure AI Video Indexer storage firewall, secure storage, firewall setup
 - name: Troubleshooting
   items:
   - name: Resource health
     href: /azure/service-health/resource-health-overview
-  - name: Disaster recovery
-    href: video-indexer-disaster-recovery.md
-    displayName: Azure AI Video Indexer disaster recovery, failover, business continuity
   - name: VI enabled by Arc troubleshooting
     href: arc/azure-video-indexer-enabled-by-arc-troubleshooting.md
     displayName: Azure AI Video Indexer Arc troubleshooting, Arc issues, troubleshooting guide
@@ -252,9 +255,6 @@ items:
     href: https://azure.microsoft.com/pricing/details/video-indexer/
   - name: Regional availability
     href: https://azure.microsoft.com/global-infrastructure/services/
-  - name: Regions
-    href: regions.md
-    displayName: Azure AI Video Indexer regions, regional availability, supported regions, region codes
   - name: Microsoft Q&A
     href: /answers/topics/azure-video-indexer.html
   - name: FAQ

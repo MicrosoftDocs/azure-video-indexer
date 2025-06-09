@@ -1,19 +1,20 @@
 ---
-title: Azure AI Video Indexer (VI) scene shot keyframe detection insight overview 
-description: This article describes the Azure AI Video Indexer scene, shot, keyframe detection insight.
+title: Get scene, shot, and keyframe detection insights
+description: Get scene, shot, and keyframe detection insights with Azure AI Video Indexer. Improve your video editing and management with automated visual analysis.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/04/2025
+ms.date: 06/09/2025
 ms.service: azure-video-indexer
-ms.topic: article
+ms.topic: how-to
+#customer intent: As a video content creator, I want to understand how Azure AI Video Indexer detects scenes, shots, and keyframes so that I can better manage and edit my videos.
 ---
 
-# Scene, shot, and keyframe detection insight overview
+# Get scene, shot, and keyframe detection insights
 
 Scene detection finds when a scene changes in a video based on visual cues. A **scene** shows a single event and has a series of related shots. **Shots** are a series of frames that differ by visual cues, like abrupt or gradual changes in the color scheme of adjacent frames. Shot metadata includes the start time, end time, and a list of keyframes in the shot. A **keyframe** is a frame from a shot that best represents the shot.
 
-### Scene, shot, and keyframe detection use cases
+## Scene, shot, and keyframe detection use cases
 
 - Easily browse, manage, and edit your video content based on varying granularities.
 - Use editorial shot type detection for editing videos into clips, trailers, or when searching for a specific style of keyframe.
@@ -224,3 +225,6 @@ No components defined.
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
+## Related content
+
+- [Azure AI Video Indexer documentation](index.yml)

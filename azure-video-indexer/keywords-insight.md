@@ -1,23 +1,22 @@
 ---
 title: Get keywords extraction insights
-description: This article shows you how to get the Azure AI Video Indexer keywords extraction insights.
+description: Learn how to get Azure AI Video Indexer keywords extraction insights, view results in the portal or API, and see example JSON output.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/04/2025
+ms.date: 06/09/2025
 ms.service: azure-video-indexer
-ms.topic: article
+ms.topic: how-to
+# customer intent: As a user of Azure AI Video Indexer, I want to extract keywords from my media files and view the insights in the portal or API, so that I can analyze important keywords and their occurrences.
 ---
 
 # Get keywords extraction insights
 
-## Keywords extraction
+This article explains how to get keywords extraction insights from Azure AI Video Indexer (VI). Keywords extraction finds important keywords in media files and provides insights in both single-language and multi-language media files.
 
-Keyword extraction finds important keywords in media files and provides insights in both single-language and multi-language media files.
+## Keywords extraction use cases
 
-### Keywords extraction use cases
-
-- Personalization of keywords to match customer interests, for example websites about England posting promotions about English movies or festivals. 
+- Personalization of keywords to match customer interests. For example, websites about England posting promotions about English movies or festivals.
 - Deep-searching archives for insights on specific keywords to create feature stories about companies, personas, or technologies, for example by a news agency.
 
 ## View the insight JSON with the web portal
@@ -95,3 +94,6 @@ After you upload and index a video, download insights in JSON format from the we
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
+## Related content
+
+- [Azure AI Video Indexer documentation](index.yml)

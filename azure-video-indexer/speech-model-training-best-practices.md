@@ -1,12 +1,13 @@
 ---
-title: Speech model training best practices  
-description: This article discusses the best ways to train a custom speech model for Azure AI Video Indexer. 
+title: Speech model training best practices
+description:  Learn best practices for training a custom speech model in Azure AI Video Indexer to boost transcription accuracy for your content.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/04/2025
+ms.date: 06/09/2025
 ms.service: azure-video-indexer
-ms.topic: conceptual
+ms.topic: concept-article
+# customer intent: As an Azure user, I want to learn how to train a custom speech model for Azure AI Video Indexer so that I can improve transcription accuracy for my content.
 ---
 
 # Speech model training best practices
@@ -14,11 +15,11 @@ ms.topic: conceptual
 > [!NOTE]
 > Speech model customization, including pronunciation training, is available in Video Indexer Azure trial accounts and Resource Manager accounts. Classic accounts don't support this feature. To learn how to use the custom language experience, see [Customize a language model](customize-language-model-how-to.md).
 
-Through Azure AI Video Indexer integration with [Azure AI Speech services](/azure/ai-services/speech-service/captioning-concepts), a Universal Language Model is utilized as a base model that is trained with Microsoft-owned data and reflects commonly used spoken language. The base model is pretrained with dialects and phonetics representing various common domains. The base model works well in most speech recognition scenarios. 
+Through Azure AI Video Indexer integration with [Azure AI Speech services](/azure/ai-services/speech-service/captioning-concepts), a Universal Language Model is utilized as a base model that is trained with Microsoft-owned data and reflects commonly used spoken language. The base model is pretrained with dialects and phonetics representing various common domains. The base model works well in most speech recognition scenarios.
 
-However, sometimes the base model’s transcription doesn't accurately handle some content. In these situations, a customized speech model can be used to improve recognition of domain-specific vocabulary or pronunciation that is specific to your content by providing text data to train the model. Through the process of creating and adapting speech customization models, your content can be properly transcribed. There's no extra charge for using Video Indexers speech customization. 
+However, sometimes the base model’s transcription doesn't accurately handle some content. In these situations, a customized speech model can be used to improve recognition of domain-specific vocabulary or pronunciation that is specific to your content by providing text data to train the model. Through the process of creating and adapting speech customization models, your content can be properly transcribed. There's no extra charge to use Azure AI Video Indexer's speech customization.
 
-## When to use a customized speech model  
+## When to use a customized speech model
 
 If your content contains industry specific terminology or when transcription results have inaccuracies, you can create and train a custom speech model. It can recognize the terms and improve the transcription quality. It might only be worthwhile to create a custom model if the relevant words and names are expected to appear repeatedly in the content you plan to index. Training a model is sometimes an iterative process. You might find that after the initial training, results could use improvement and need more training, see the [Improve your custom model](#improve-your-custom-models) section for guidance.
 
@@ -135,3 +136,7 @@ Assume you plan on indexing sports content and anticipate transcript accuracy is
 4. Create a new speech model and add the original plain text dataset and the new pronunciation dataset file. 
 5. Reindex the video with the new speech model. 
 6. If needed, repeat steps 1-5 until the results are satisfactory. 
+
+## Related content
+
+- [Customize a language model](customize-language-model-how-to.md)
