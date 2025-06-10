@@ -4,7 +4,7 @@ description: This article explains how to create an account for Azure AI Video I
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/03/2025
+ms.date: 06/10/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 ---
@@ -50,7 +50,8 @@ To determine what roles are currently assigned, see [View the access a user has 
     - Create a new storage account. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). *Storage accounts for VI must be a Standard StorageV2 (general-purpose v2) storage account*.
 1. Select or create a **User-assigned managed identity**. If you don't create one, you're prompted later.
 1. Agree to the terms and conditions by selecting the agreement box.
-1. Select **Review + create**. Validation for the configuration starts.
+1. Select **Review + create**. Validation for the configuration starts.  
+    :::image type="content" source="./media/create-account/resource-create-portal.png" border="true" alt-text="Screenshot showing the Create a Video Indexer resource page." lightbox="./media/create-account/resource-create-portal.png" :::
 1. When validation completes, select **Create**.
 1. When the deployment completes, select **Go to resource**. The Azure AI Video Indexer resource overview page appears.
 1. If you assigned a system-assigned managed identity during the storage creation process, a notification on the page says that you must select a managed identity role assignment to connect to the Storage account. Select **Assign a role** to assign your managed identity to the Storage account.
