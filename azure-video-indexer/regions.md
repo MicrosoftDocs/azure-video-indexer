@@ -1,5 +1,5 @@
 ---
-title: Find and set your Azure region for API use
+title: Find and set your Azure region for API use with Azure AI Video Indexer
 description: Learn how to find supported Azure regions for Azure AI Video Indexer and set the correct location for your API calls. Learn more now.
 author: bandersmsft
 ms.author: banders

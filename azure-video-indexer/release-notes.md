@@ -1207,4 +1207,4 @@ In addition to the closed captioning format already supported (SRT, VTT, and TTM
 
 ## Related content
 
--[Azure AI Video Indexer documentation](index.yml)
+- [Azure AI Video Indexer documentation](index.yml)

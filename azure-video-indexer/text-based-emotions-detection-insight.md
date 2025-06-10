@@ -1,5 +1,5 @@
 ---
-title: Get text-based emotion detection insights
+title: Get text-based emotion detection insights in Azure AI Video Indexer
 description: Text-based emotion detection helps you analyze the emotional tone of video transcripts in Azure AI Video Indexer. Learn how to get insights now.
 author: bandersmsft
 ms.author: banders

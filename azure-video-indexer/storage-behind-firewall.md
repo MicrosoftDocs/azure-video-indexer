@@ -1,5 +1,5 @@
 ---
-title: Set up Video Indexer with firewall-protected storage
+title: Set up Azure AI Video Indexer with firewall-protected storage
 description: Learn how to configure Azure AI Video Indexer with firewall-protected storage accounts to secure your data. Get started now.
 author: bandersmsft
 ms.author: banders

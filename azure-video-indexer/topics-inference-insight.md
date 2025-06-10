@@ -1,5 +1,5 @@
 ---
-title: Get topics inference insights
+title: Get topics inference insights in Azure AI Video Indexer
 description: Get topics inference insights from Azure AI Video Indexer to enhance personalization, deep search, and monetization. See steps and sample code.
 author: bandersmsft
 ms.author: banders

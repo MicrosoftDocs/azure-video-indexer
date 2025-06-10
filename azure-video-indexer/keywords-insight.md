@@ -1,5 +1,5 @@
 ---
-title: Get keywords extraction insights
+title: Get keywords extraction insights in Azure AI Video Indexer
 description: Learn how to get Azure AI Video Indexer keywords extraction insights, view results in the portal or API, and see example JSON output.
 author: bandersmsft
 ms.author: banders

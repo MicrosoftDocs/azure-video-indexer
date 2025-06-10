@@ -1,5 +1,5 @@
 ---
-title: Get digital patterns with color bars insights
+title: Get digital patterns with color bars insights in Azure AI Video Indexer
 description: Learn how to get digital patterns with color bars insights with Azure AI Video Indexer.
 author: bandersmsft
 ms.author: banders
