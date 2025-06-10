@@ -1,12 +1,13 @@
 ---
 title:  Azure AI Video Indexer with LLM prompts
-description: Azure AI Video Indexer integrates with Large Language Models (LLMs). LLMs are natural language AI models that you can use to ask questions about video content and much more. Extract Azure AI Video Indexer’s insights into a prompt ready format that can be easily used with LLMs. There's no need to reindex videos to create the prompt-ready format of the videos.
+description: Azure AI Video Indexer lets you create prompt-ready video insights for LLMs. Ask questions, generate summaries, and search video content easily. Try it now.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 05/28/2025
+ms.date: 06/09/2025
 ms.service: azure-video-indexer
-ms.topic: conceptual
+ms.topic: concept-article
+#customer intent: As a video content manager, I want to generate prompt-ready insights from my videos so that I can use LLMs to summarize and search video content easily.
 ---
 
 # Azure AI Video Indexer with LLM prompts
@@ -46,7 +47,7 @@ The following table contains the insights used for prompt generation.
 |  Audio effects (AED)                  |  [Audio effects] \< effect 1\>, \<effect 2\>, ... |
 |  Segment’s position within the video  |  [Tags] [Beginning, Middle, End, Rolling credits] |
 
-## Create Prompt content for a video
+## Create prompt content for a video
 
 Use the Prompt Content API on your indexed video in order to get Prompt-Ready format per each segment.
 
@@ -99,10 +100,14 @@ It takes a few minutes for the prompt job to complete. If you would like to chec
 
 The Prompt Content request supports language models that can use visual input in prompts. When selecting the GPT-4V model, you can include keyframes as part of the prompt provided to the model. The frames returned in the prompt content response represent the keyframes from the video. This feature is recommended for videos with limited or no transcript in the video or when want to provide more context to the language model to improve it results.
 
-### Create and send a Prompt Content request
+### Create and send a prompt content request
 
 As described previously, textual content for the prompt is in the JSON response. Each string in the "frames" part of the JSON response is the ID of the keyframe. Use [Get Video Thumbnail](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Thumbnail) The `ThumbnailId` is the `FrameId` from the prompt content. Once you have both the textual content and the keyframe artifacts, you can combine them as prompts for an AI model of your choice.
 
 ## Limitations
 
 The prompt feature is optimized for videos that contain as many insights as possible.
+
+## Related content
+
+- [Azure AI Video Indexer documentation](index.yml)

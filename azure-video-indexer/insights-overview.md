@@ -1,12 +1,13 @@
 ---
 title:  Azure AI Video Indexer insights overview
-description: This article gives a brief overview of Azure AI Video Indexer insights.
-ms.topic: conceptual
+description: This article gives a brief overview of Azure AI Video Indexer insights. It includes links to articles that describe how to get each insight in the web portal and using the API.
+ms.topic: concept-article
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/04/2025
+ms.date: 06/09/2025
 ms.service: azure-video-indexer
+# customer intent: As a user of Azure AI Video Indexer, I want to understand the different insights that can be generated from my video content, so that I can use the insights for better content analysis and decision-making.
 ---
 
 # Azure AI Video Indexer insights
@@ -29,6 +30,7 @@ Follow the links in the insights table to learn how to get each insight JSON res
 | [Scenes, shots, and keyframes](scene-shot-keyframe-detection-insight.md) | Scene detection finds when a scene changes in a video based on visual cues. A **scene** shows a single event and has a series of related shots. **Shots** are a series of frames that differ by visual cues, like abrupt or gradual changes in the color scheme of adjacent frames. Shot metadata includes the start time, end time, and a list of keyframes in the shot. A **keyframe** is a frame from a shot that best represents the shot. |
 
 ## Audio insights
+
 | Insight | Description |
 | ------- | ----------- |
 | [Audio effects detection](audio-effects-detection-insight.md) | Audio effects detection detects acoustic events and classifies them into categories like laughter, crowd reactions, alarms, or sirens. |
@@ -37,3 +39,7 @@ Follow the links in the insights table to learn how to get each insight JSON res
 | [Text-based emotion detection](text-based-emotions-detection-insight.md) | Emotion detection finds emotions in a video's transcript lines. Each sentence is detected as *anger*, *fear*, *joy*, *sad*, or *none* if no other emotion is found. |
 | [Topics inference](topics-inference-insight.md) | Topics inference creates inferred insights from transcribed audio, OCR content in visual text, and celebrities the Video Indexer facial recognition model recognizes in the video. |
 | [Transcription, translation, and language identification](transcription-translation-lid-insight.md) | The transcription, translation, and language identification features detect, transcribe, and translate speech in media files into more than 50 languages. |
+
+## Related content
+
+- [Azure AI Video Indexer documentation](index.yml)

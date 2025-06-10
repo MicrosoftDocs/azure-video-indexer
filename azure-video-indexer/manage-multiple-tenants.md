@@ -1,13 +1,14 @@
 ---
 title: Manage multiple tenants with Azure AI Video Indexer
-description: This article suggests different integration options for managing multiple tenants with Azure AI Video Indexer.
+description: Learn about integration options for managing multiple tenants with Azure AI Video Indexer, including account and subscription strategies.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.custom: ikbarmen
-ms.date: 05/30/2025
+ms.date: 06/09/2025
 ms.service: azure-video-indexer
-ms.topic: conceptual
+ms.topic: concept-article
+## customer intent: As a developer or administrator, I want to understand the different options for managing multiple tenants with Azure AI Video Indexer, so that I can choose the best integration strategy for my application.
 ---
 
 # Manage multiple tenants
@@ -30,8 +31,7 @@ An Azure AI Video Indexer account is created for each tenant. The tenants have f
 * Customers don't share compute (reserved units) and don't affect processing jobs times of one another.
 * You can easily remove a tenant from the system by deleting the Azure AI Video Indexer account.
 * There's no ability to share custom models between tenants.
-
-    Make sure there's no business requirement for sharing custom models.
+    * Check that there's no business requirement to share custom models.
 * Harder to manage due to multiple Azure AI Video Indexer accounts per tenant.
 
 > [!TIP]
@@ -66,3 +66,8 @@ Each tenant has their own Azure subscription when using an Azure subscription pe
 
 * This configuration is the only option that enables billing separation.
 * This integration has more management overhead than Azure AI Video Indexer account per tenant. If billing isn't a requirement, we recommended that you use one of the other options described in this article.
+
+## Related content
+
+* [Create an Azure AI Video Indexer account](create-account.md)
+* [Azure AI Video Indexer documentation](index.yml)
