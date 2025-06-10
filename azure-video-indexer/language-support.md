@@ -1,12 +1,13 @@
 ---
 title: Language support in Azure AI Video Indexer
-description: This article provides a comprehensive list of language support by service features in Azure AI Video Indexer.
+description: This article provides a comprehensive list of language support by service features in Azure AI Video Indexer, including transcription, translation, language identification, customization, and website settings.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 04/01/2025
+ms.date: 06/09/2025
 ms.service: azure-video-indexer
-ms.topic: conceptual
+ms.topic: concept-article
+# customer intent: As a user of Azure AI Video Indexer, I want to know which languages are supported for transcription, translation, identification, and customization so I can work with media in my preferred language.
 ---
 
 # Language support in Azure AI Video Indexer
@@ -37,7 +38,7 @@ This section explains the Video Indexer language options and has a table of the 
     - Keywords
     - Topics
     - Labels
-    - Frame patterns (Only to Hebrew as of now)
+    - Frame patterns (Currently, only to Hebrew)
 
     All other insights appear in English when using translation.
 - **Website Language** - Whether the language can be selected for use on the [Azure AI Video Indexer website](https://aka.ms/vi-portal-link). Select the **Settings icon** then select the language in the **Language settings** dropdown.
@@ -186,3 +187,7 @@ If you need to use languages for identification that aren't used by default, you
 When you upload a file, the Video Indexer language model cross references nine languages by default. If there's a match, the model generates the transcription for the file with the detected language.
 
 Use the language parameter to specify `multi` (MLID) or `auto` (LID) parameters. Use the `customLanguages` parameter to specify up to 10 languages. (The parameter is used only when the language parameter is set to `multi` or `auto`.) To learn more about using the API, see [Use the Azure AI Video Indexer API](video-indexer-use-apis.md).
+
+## Related content
+
+- [Azure AI Video Indexer documentation](index.yml)

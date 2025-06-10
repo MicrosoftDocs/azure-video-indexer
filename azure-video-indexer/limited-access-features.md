@@ -1,12 +1,13 @@
 ---
-title: Limited Access features of Azure AI Video Indexer 
-description: This article talks about the limited access features of Azure AI Video Indexer.
+title: Limited Access features of Azure AI Video Indexer
+description: This article explains limited access features of Azure AI Video Indexer, the application process, and how to apply for them.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/03/2025
+ms.date: 06/09/2025
 ms.service: azure-video-indexer
-ms.topic: conceptual
+ms.topic: concept-article
+# customer intent: As a user of Azure AI Video Indexer, I want to understand the limited access features and how to apply for them so that I can use face identification, customization, and celebrity recognition responsibly.
 ---
 
 # Limited Access features of Azure AI Video Indexer
@@ -39,9 +40,13 @@ This section covers limited access features in Azure AI Video Indexer.
 
 ## Help and support 
 
-FAQ about Limited Access can be found [here](https://aka.ms/limitedaccesscogservices).
+For more information about limited access features, see [hLimited Access features for Azure AI services](https://aka.ms/limitedaccesscogservices).
 
 <!-- relative URL link -->
-If you need help with Azure AI Video Indexer, find support [here](/azure/ai-services/cognitive-services-support-options). 
+If you need help with Azure AI Video Indexer, see [Azure AI services support and help options](/azure/ai-services/cognitive-services-support-options).
 
 [Report Abuse](https://msrc.microsoft.com/report/abuse) of Azure AI Video Indexer. 
+
+## Related content
+
+- [Azure AI Video Indexer documentation](index.yml)

@@ -1,12 +1,13 @@
 ---
-title: Get observed people detection and matched faces insights
-description: This article shows you how to get the Azure AI Video Indexer observed people detection and matched faces insights.
+title: Get observed people detection and matched faces insights in Azure AI Video Indexer
+description: Observed people detection and matched faces help you find, analyze, and summarize people in videos. Learn how to get insights and download results.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/04/2025
+ms.date: 06/10/2025
 ms.service: azure-video-indexer
-ms.topic: article
+ms.topic: how-to
+# customer intent: As a video analyst, I want to detect and identify people in videos so that I can quickly find and analyze specific individuals.
 ---
 
 # Get observed people detection and matched faces insights
@@ -101,3 +102,6 @@ After you upload and index a video, download insights in JSON format from the we
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
+## Related content
+
+- [Azure AI Video Indexer documentation](index.yml)

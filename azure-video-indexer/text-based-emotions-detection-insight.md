@@ -1,15 +1,16 @@
 ---
-title: Azure AI Video Indexer (VI) text-based emotion detection insight overview
-description: This article describes the Azure AI Video Indexer text-based emotion detection insight.
+title: Get text-based emotion detection insights in Azure AI Video Indexer
+description: Text-based emotion detection helps you analyze the emotional tone of video transcripts in Azure AI Video Indexer. Learn how to get insights now.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/04/2025
+ms.date: 06/09/2025
 ms.service: azure-video-indexer
-ms.topic: article
+ms.topic: how-to
+#customer intent: As an Azure user, I want to use text-based emotion detection in Azure AI Video Indexer so that I can analyze the emotional tone of video transcripts.
 ---
 
-# Text-based emotion detection
+# Get text-based emotion detection insights
 
 Emotion detection finds emotions in a video's transcript lines. Each sentence is detected as *anger*, *fear*, *joy*, *sad*, or *none* if no other emotion is found.
 
@@ -66,3 +67,7 @@ After you upload and index a video, download insights in JSON format from the we
 ## Sample code
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
+
+## Related content
+
+- [Azure AI Video Indexer documentation](index.yml)

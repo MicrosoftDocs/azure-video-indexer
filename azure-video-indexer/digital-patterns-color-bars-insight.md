@@ -1,21 +1,22 @@
 ---
-title: Enable and view digital patterns with color bars
-description: Learn about how to enable and view digital patterns with color bars.
+title: Get digital patterns with color bars insights in Azure AI Video Indexer
+description: Learn how to get digital patterns with color bars insights with Azure AI Video Indexer.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 06/03/2025
 ms.service: azure-video-indexer
-ms.topic: article
+ms.topic: how-to
+#customer intent: As an Azure AI Video Indexer user, I want to learn how get color bar insights with Azure AI Video Indexer.
 ---
 
-# Digital patterns with color bars insight overview
+# Get digital patterns with color bars insights
 
-This article describes how to enable and view digital patterns with color bars in Azure AI Video Indexer. Digital patterns detection is a post-production insight that identifies color bars used during filming, which can be useful for color correction and other post-production tasks.
+This article describes how to get insights for view digital patterns with color bars in Azure AI Video Indexer. Digital patterns detection is a post-production insight that identifies color bars used during filming, which can be useful for color correction and other post-production tasks.
 
 ## Post-production: digital patterns
 
-Digital patterns detection finds [color bars](https://en.wikipedia.org/wiki/SMPTE_color_bars) used during filming. Digital patterns are part of post-production insights that you select in the web portal [advanced settings](indexing-configuration-guide.md?#advanced-settings) when you upload and index the file.
+Digital patterns detection finds [color bars](https://en.wikipedia.org/wiki/SMPTE_color_bars) used during filming. Digital patterns are part of post-production insights that you select in the web portal using **Slate detection** in [advanced settings](indexing-configuration-guide.md?#advanced-settings) when you upload and index the file.
 
 ## Digital patterns use cases
 
@@ -85,3 +86,6 @@ No components defined.
 
 [See all samples for VI](https://github.com/Azure-Samples/azure-video-indexer-samples)
 
+## Related content
+
+- [Azure AI Video Indexer documentation](index.yml)
