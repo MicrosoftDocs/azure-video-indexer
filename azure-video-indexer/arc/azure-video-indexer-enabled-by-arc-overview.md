@@ -123,7 +123,7 @@ Use the following information to configure firewall settings.
 
 ### Firewall requirements
 
-Follow the instructions at [Azure Arc-enabled Kubernetes network requirements](https://learn.microsoft.com/azure/azure-arc/kubernetes/network-requirements).
+Follow the instructions at [Azure Arc-enabled Kubernetes network requirements](/azure/azure-arc/kubernetes/network-requirements).
 
 In addition, add *.azureedge.net and *.data.microsoft.com.
 
