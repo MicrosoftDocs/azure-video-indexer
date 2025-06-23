@@ -4,7 +4,7 @@ description: Azure AI Video Indexer enabled by Arc performs video and audio anal
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/19/2025
+ms.date: 06/23/2025
 ms.service: azure-video-indexer
 ms.topic: overview
 #customer intent: As a video content manager, I want to use Azure AI Video Indexer analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
@@ -135,7 +135,7 @@ For the Video Indexer enabled by Arc extension, add these endpoints:
 | *.monitoring.core.windows.net, *.microsoftmetrics.com, *.table.core.windows.net | Used for telemetry |
 | api.videoindexer.ai | Used for access token validation |
 
-### Endpoints and ports
+### Summary of required endpoints and ports
 
 Enable the following endpoints and ports.
 
@@ -167,8 +167,8 @@ Enable the following endpoints and ports.
 
 - STORAGE_ACCOUNT_NAME.file.core.windows.net:139,445
 
-> [!TIP]
-> For file storage in AKS, also open ports 139 and 445 for the specific file share.
+> [!NOTE]
+> When you use AKS with the Azure Files CSI driver to mount shares as persistent volumes, open ports 139 and 445 for the specific file share.
 
 #### Telemetry (HTTPS)
 
