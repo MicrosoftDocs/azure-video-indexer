@@ -4,7 +4,7 @@ description: Azure AI Video Indexer enabled by Arc performs video and audio anal
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/04/2025
+ms.date: 06/23/2025
 ms.service: azure-video-indexer
 ms.topic: overview
 #customer intent: As a video content manager, I want to use Azure AI Video Indexer analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
@@ -102,12 +102,10 @@ Video Indexer enabled by Arc is designed to run on any Arc enabled Kubernetes en
 >[!NOTE]
 > The following table covers minimum requirements for a *production* environment. We recommend at least a two-node cluster for high availability and scalability. The recommended settings refer to cluster-wide settings. So for example, if you have two nodes, each node should have 16 cores and 32 GB of RAM. We recommend creating a dedicated node-pool or autoscaling groups to host the VI solution.
 
-
 | Configuration | Virtual machine count | Node CPU cores count  | Node RAM | Node storage | Remarks
 | --- | --- | --- | --- | --- | --- |
 | Minimum | One | 32 Cores | 64 GB | 50 GB | Storage needs to support `ReadWriteMany` Storage Class |
 | Recommended | Two | 48-64 Cores | 256 GB | 100 GB | Storage needs to support `ReadWriteMany` Storage Class |
-
 
 ## Minimum software requirements
 
@@ -118,6 +116,73 @@ Video Indexer enabled by Arc is designed to run on any Arc enabled Kubernetes en
 | Azure CLI | 2.64.0 |
 
 <!-- section duplicated to azure-video-indexer-enabled-by-arc-quickstart-->
+
+## Network requirements
+
+Use the following information to configure firewall settings.
+
+### Firewall requirements
+
+Follow the instructions at [Azure Arc-enabled Kubernetes network requirements](/azure/azure-arc/kubernetes/network-requirements).
+
+In addition, add *.azureedge.net and *.data.microsoft.com.
+
+For the Video Indexer enabled by Arc extension, add these endpoints:
+
+| Endpoint (DNS) | Description |
+|---|---|
+| linuxgeneva-microsoft.azurecr.io, *.blob.core.windows.net | Used for container registry for telemetry containers |
+| *.monitoring.core.windows.net, *.microsoftmetrics.com, *.table.core.windows.net | Used for telemetry |
+| api.videoindexer.ai | Used for access token validation |
+
+### Summary of required endpoints and ports
+
+Enable the following endpoints and ports.
+
+#### Azure Arc Services (HTTPS)
+
+- management.azure.com:443
+- *.dp.kubernetesconfiguration.azure.com:443
+- login.microsoftonline.com:443
+- *.login.microsoft.com:443
+- login.windows.net:443
+- mcr.microsoft.com:443
+- *.data.mcr.microsoft.com:443
+- dl.k8s.io:443
+- gbl.his.arc.azure.com:443
+- *.his.arc.azure.com:443
+- guestnotificationservice.azure.com:443
+- *.guestnotificationservice.azure.com:443
+- sts.windows.net:443
+- *.servicebus.windows.net:443
+- graph.microsoft.com:443
+- *.arc.azure.net:443
+- linuxgeneva-microsoft.azurecr.io:443
+
+#### Azure Arc OBO Services (custom HTTPS port)
+
+- *.obo.arc.azure.com:8084
+
+#### Azure File Storage (SMB)
+
+- STORAGE_ACCOUNT_NAME.file.core.windows.net:139,445
+
+> [!NOTE]
+> When you use AKS with the Azure Files CSI driver to mount shares as persistent volumes, open ports 139 and 445 for the specific file share.
+
+#### Telemetry (HTTPS)
+
+- linuxgeneva-microsoft.azurecr.io:443
+- *.blob.core.windows.net:443
+- gcs.prod.monitoring.core.windows.net:443
+- *.microsoftmetrics.com:443
+- *.table.core.windows.net:443
+- *.azureedge.net:443
+- *.data.microsoft.com:443
+
+#### VideoIndexer (HTTPS)
+
+- api.videoindexer.ai:443
 
 ## Supported input formats and codecs
 
