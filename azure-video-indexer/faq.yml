@@ -5,7 +5,7 @@ metadata:
   ms.service: azure-video-indexer
   author: bandersmsft
   ms.topic: faq
-  ms.date: 06/02/2025
+  ms.date: 07/07/2025
   ms.author: banders
 title: Azure AI Video Indexer frequently asked questions
 summary: This article answers frequently asked questions about Azure AI Video Indexer.
@@ -126,9 +126,6 @@ sections:
       - question: Are video and audio files indexed by Azure AI Video Indexer stored?
         answer: Yes, your video and audio files get stored. You can delete them from Azure AI Video Indexer using the Azure AI Video Indexer website or with APIs. For the trial, the video and audio files that you index are stored in the Azure region East US. Otherwise, your video and audio files are stored in the storage account of your Azure subscription.
 
-      - question: Where does Azure AI Video Indexer store customer data?
-        answer: By default, your data is replicated to the paired region into which you deployed the Azure AI Video Indexer instance. For region with data residency requirements, your data is always kept within the same region. For more related information, check out other **Privacy questions** in this section.
-      
       - question: Can I delete my files that are stored in the Azure AI Video Indexer website?
         answer: Yes, you can always delete your video and audio files as well as any metadata and insights extracted from them by Azure AI Video Indexer. Once you delete a file from Azure AI Video Indexer, the file and its metadata and insights are permanently removed from Azure AI Video Indexer. However, if you implemented your own backup solution in Azure storage, the file remains in your Azure storage.
 
