@@ -4,7 +4,7 @@ description: Azure AI Video Indexer enabled by Arc performs video and audio anal
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/23/2025
+ms.date: 07/15/2025
 ms.service: azure-video-indexer
 ms.topic: overview
 #customer intent: As a video content manager, I want to use Azure AI Video Indexer analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
@@ -229,6 +229,7 @@ Azure AI Video Indexer enabled by Arc also supports bringing your own model. For
 ## Limitations
 
 - The supported file size for indexing is up to 2 GB.
+- Azure AI Video Indexer enabled by Arc doesn't support uploading and indexing videos with a resolution of 1920x1080 or greater.
 - Upgrading the extension:
     - Extension support applies to the latest version only.
     - We recommend setting the `auto-upgrade` property to `true`. The setting keeps the extension up to date.
