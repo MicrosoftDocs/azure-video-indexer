@@ -6,6 +6,7 @@ ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.custom: itnorman, subject-monitoring
 ms.date: 05/30/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: reference
 ---

@@ -5,6 +5,7 @@ author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 06/09/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: troubleshooting-general
 # customer intent: As a user of Azure AI Video Indexer enabled by Arc, I want to troubleshoot common issues related to connectivity, streaming, and encoding so that I can resolve them quickly.
