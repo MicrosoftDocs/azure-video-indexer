@@ -1,6 +1,6 @@
 ## OCR notes
 
-- Video Indexer has an OCR limit of 50,000 words per indexed video. Once the limit is reached, no additional OCR results are generated.
+- Video Indexer has an OCR limit of 50,000 words per indexed video. Once the limit is reached, no additional OCR results are generated. In some languages, such as Japanese, the limit is applied based on characters instead of words.
 - Carefully consider the accuracy of the results, to promote more accurate detections, check the quality of the image, low quality images might affect the detected insights.  
 - Carefully consider when using for law enforcement. OCR might misread or not detect parts of the text. To ensure fair and high-quality VI determinations, combine OCR-based automation with human oversight. 
 - When extracting handwritten text, avoid using the OCR results of signatures that are hard to read for both humans and machines. A better way to use OCR is to use it for detecting the presence of a signature for further analysis. 
