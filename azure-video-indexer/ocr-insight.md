@@ -4,7 +4,7 @@ description: This article shows you how to get the Azure AI Video Indexer optica
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/04/2025
+ms.date: 07/16/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
