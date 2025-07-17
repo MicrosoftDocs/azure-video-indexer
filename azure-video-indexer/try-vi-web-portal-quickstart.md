@@ -5,6 +5,7 @@ author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 06/09/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: quickstart
 #customer intent: As an Azure user, I want to try the Azure AI Video Indexer web portal so that I can index a video before using the API.

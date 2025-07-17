@@ -5,6 +5,7 @@ author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 06/09/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article
 # customer intent: As a user of Azure AI Video Indexer, I want to know which languages are supported for transcription, translation, identification, and customization so I can work with media in my preferred language.

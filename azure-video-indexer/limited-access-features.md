@@ -5,6 +5,7 @@ author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 06/09/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article
 # customer intent: As a user of Azure AI Video Indexer, I want to understand the limited access features and how to apply for them so that I can use face identification, customization, and celebrity recognition responsibly.
