@@ -5,6 +5,7 @@ author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 06/09/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
 # customer intent: As a user of Azure AI Video Indexer, I want to extract keywords from my media files and view the insights in the portal or API, so that I can analyze important keywords and their occurrences.

@@ -5,6 +5,7 @@ author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 06/09/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
 # customer intent: As an Azure user, I want to configure Video Indexer to work with storage accounts behind firewall so that I can secure my data.

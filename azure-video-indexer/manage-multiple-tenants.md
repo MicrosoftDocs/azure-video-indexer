@@ -6,6 +6,7 @@ ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.custom: ikbarmen
 ms.date: 06/09/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article
 ## customer intent: As a developer or administrator, I want to understand the different options for managing multiple tenants with Azure AI Video Indexer, so that I can choose the best integration strategy for my application.

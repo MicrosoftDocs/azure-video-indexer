@@ -5,6 +5,7 @@ author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 06/09/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: release-notes
 #customer intent: As a video content manager, I want to track the latest Azure AI Video Indexer features and updates so that I can use new capabilities and plan my workflows.

@@ -5,6 +5,7 @@ author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 06/10/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
 # customer intent: As a video analyst, I want to detect and identify people in videos so that I can quickly find and analyze specific individuals.
