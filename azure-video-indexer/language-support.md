@@ -69,7 +69,6 @@ This section explains the Video Indexer language options and has a table of the 
 | Catalan | ca-ES | ✔ | ✔ |✔ | ✔ | ✔ | ✔ |  |
 | Chinese (Cantonese Traditional) | zh-HK | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |  |
 | Chinese (Simplified) | zh-Hans | ✔ | ✔ | ✔ |  |  | ✔ | ✔ |
-| Chinese (Simplified) | zh-CK | ✔ | ✔ | ✔ |  |  | ✔ | ✔ |
 | Chinese (Traditional) | zh-Hant |  | ✔ |  |  |  | ✔ |  |
 | Croatian | hr-HR | ✔ | ✔ | ✔ |  | ✔ | ✔ |  |
 | Czech | cs-CZ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
