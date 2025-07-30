@@ -4,7 +4,7 @@ description: This article provides a comprehensive list of language support by s
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/09/2025
+ms.date: 07/30/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article
@@ -69,7 +69,6 @@ This section explains the Video Indexer language options and has a table of the 
 | Catalan | ca-ES | ✔ | ✔ |✔ | ✔ | ✔ | ✔ |  |
 | Chinese (Cantonese Traditional) | zh-HK | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |  |
 | Chinese (Simplified) | zh-Hans | ✔ | ✔ | ✔ |  |  | ✔ | ✔ |
-| Chinese (Simplified) | zh-CK | ✔ | ✔ | ✔ |  |  | ✔ | ✔ |
 | Chinese (Traditional) | zh-Hant |  | ✔ |  |  |  | ✔ |  |
 | Croatian | hr-HR | ✔ | ✔ | ✔ |  | ✔ | ✔ |  |
 | Czech | cs-CZ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
