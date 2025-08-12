@@ -8,6 +8,7 @@ ms.date: 05/30/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+ms.custom: sfi-image-nochange
 ---
 
 # Search for exact moments in videos with Azure AI Video Indexer
