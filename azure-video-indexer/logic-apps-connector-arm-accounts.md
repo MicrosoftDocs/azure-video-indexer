@@ -8,6 +8,7 @@ ms.date: 06/04/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+ms.custom: sfi-image-nochange
 ---
 
 # Use with a Logic Apps connector
