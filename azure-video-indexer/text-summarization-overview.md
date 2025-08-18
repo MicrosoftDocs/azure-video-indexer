@@ -4,7 +4,7 @@ description: Learn how Azure AI Video Indexer generates concise, customizable su
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 05/28/2025
+ms.date: 08/18/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article
