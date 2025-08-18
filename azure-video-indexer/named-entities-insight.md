@@ -4,7 +4,7 @@ description: Azure AI Video Indexer named entities extraction finds people, plac
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/09/2025
+ms.date: 08/18/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to

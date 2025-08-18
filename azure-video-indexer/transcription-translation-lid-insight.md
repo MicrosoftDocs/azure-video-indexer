@@ -4,7 +4,7 @@ description: This article shows you how to get Azure AI Video Indexer Media tran
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/04/2025
+ms.date: 08/18/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
