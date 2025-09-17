@@ -219,6 +219,8 @@ items:
   displayName: Azure AI Video Indexer monitoring, monitor setup, performance monitoring
 - name: Security
   items:
+  - name: Security baseline
+    href: security-baseline-video-indexer.md
   - name: Use Network Security Groups
     href: network-security.md
     displayName: Azure AI Video Indexer network security, NSG, service tags, secure network
