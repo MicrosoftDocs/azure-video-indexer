@@ -40,7 +40,7 @@ The following sections describe how you can protect your data in Azure AI Video 
 
 - **Govern access to resources with Azure Role-Based Access Control (RBAC)**, ensuring least-privilege access. See [Manage access to an Azure AI Video Indexer account](restricted-viewer-role.md).
 
-- **Assign managed identities to secure access to Azure resources without storing credentials**. See [Set up Video Indexer with managed identities](security-best-practices.md#use-managed-identities).
+- **Assign managed identities to secure access to Azure resources without storing credentials**. See [Set up Video Indexer with managed identities](storage-behind-firewall.md#assign-the-managed-identity-and-role).
 
 - You can’t manually delete a trial account. Unused trial accounts get deleted after 12 months of inactivity.
 
