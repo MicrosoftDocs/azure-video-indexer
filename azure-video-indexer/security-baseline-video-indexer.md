@@ -90,7 +90,7 @@ Azure AI Video Indexer inherits compliance from the Azure platform, which includ
 
 - HIPAA (when configured appropriately)
 
-For the latest certifications, refer to the [Microsoft Trust Center](https://www.microsoft.com/trust-center). For compliance information, see [Microsoft Compliance](/compliance/)
+For the latest certifications, refer to the [Microsoft Trust Center](https://www.microsoft.com/trust-center). For compliance information, see [Microsoft Compliance](/compliance/).
 
 ## Related content
 
