@@ -4,7 +4,7 @@ description: Azure AI Video Indexer enabled by Arc performs video and audio anal
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 08/18/2025
+ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: overview
@@ -246,7 +246,7 @@ Azure AI Video Indexer enabled by Arc also supports bringing your own model. For
 We recommend that you use Azure Container Storage enabled by Azure Arc for storage. For more information, see the following articles:
 
 - [What is Azure Container Storage enabled by Azure Arc?](/azure/azure-arc/container-storage/overview)
-- [Prepare Linux for Edge Volumes](/azure/azure-arc/container-storage/prepare-linux-edge-volumes)
+- [Prepare Linux for Edge Volumes](/azure/azure-arc/container-storage/howto-prepare-linux-edge-volumes)
 
 ## Related content
 
