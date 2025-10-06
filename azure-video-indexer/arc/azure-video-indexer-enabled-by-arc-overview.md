@@ -246,7 +246,7 @@ Azure AI Video Indexer enabled by Arc also supports bringing your own model. For
 We recommend that you use Azure Container Storage enabled by Azure Arc for storage. For more information, see the following articles:
 
 - [What is Azure Container Storage enabled by Azure Arc?](/azure/azure-arc/container-storage/overview)
-- [Prepare Linux for Edge Volumes](/azure/azure-arc/container-storage/prepare-linux-edge-volumes)
+- [Prepare Linux for Edge Volumes](/azure/azure-arc/container-storage/howto-prepare-linux-edge-volumes)
 
 ## Related content
 
