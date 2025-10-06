@@ -7,7 +7,7 @@ ms.service: azure-video-indexer
 ms.topic: conceptual
 ms.collection: ce-skilling-ai-copilot
 ms.custom: horz-security
-ms.date: 09/17/2025
+ms.date: 10/06/2025
 ---
 
 # Secure Azure AI Video Indexer

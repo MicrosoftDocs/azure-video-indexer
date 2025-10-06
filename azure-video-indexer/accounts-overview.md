@@ -4,7 +4,7 @@ description: Learn about the different types of Azure AI Video Indexer accounts,
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 08/18/2025
+ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article

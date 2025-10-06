@@ -4,7 +4,7 @@ description: Embed Azure AI Video Indexer widgets in your apps. Azure AI Video I
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 08/18/2025
+ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
