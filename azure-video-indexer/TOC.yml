@@ -59,14 +59,15 @@ items:
     displayName: Azure AI Video Indexer Arc, hybrid deployment, Kubernetes, edge AI
   - name: VI with generative AI
     href: generative_ai_with_vi.md
-    dispalyName: Azure AI Video Indexer generative AI, LLM, video summarization, AI prompts
-    items:
-    - name: VI with LLM prompts
-      href: prompt-overview.md
-      displayName: Azure AI Video Indexer LLM prompts, large language model, prompt engineering
-    - name: Textual summarization
-      href: text-summarization-overview.md
-      displayName: Azure AI Video Indexer text summarization, video summary, transcript summary
+    displayName: Azure AI Video Indexer generative AI, LLM, video summarization, AI prompts
+  - name: VI with LLM prompts
+    href: prompt-overview.md
+    displayName: Azure AI Video Indexer LLM prompts, large language model, prompt engineering
+  - name: Textual summarization
+    href: text-summarization-overview.md
+    displayName: Azure AI Video Indexer text summarization, video summary, transcript summary
+  - name: Live analysis
+    href: live-analysis.md
 - name: Samples
   items:
   - name: Azure AI Video Indexer samples
@@ -158,6 +159,24 @@ items:
   - name: Enable and view textless slate with matching scene
     href: textless-slate-scene-matching.md
     displayName: Azure AI Video Indexer textless slate, scene matching, video post-production, slate detection, video editing, scene identification
+  - name: Live analysis
+    items:
+    - name: Manage live analysis extensions
+      href: live-extension.md
+    - name: Add or remove cameras
+      href: live-add-remove-camera.md
+    - name: Manage cameras
+      href: live-manage-camera.md
+    - name: Create custom insights
+      href: live-ai-insights-catalog.md
+    - name: Create event summary
+      href: live-event-summary.md
+    - name: Watch live video recordings
+      href: live-watch-recordings.md
+    - name: Mark an area of interest
+      href: live-area-interest.md
+    - name: Search using Edge RAG
+      href: live-search-edge-rag.md
   - name: Customize content models
     items:
     - name: Customize brands model

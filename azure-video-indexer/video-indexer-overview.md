@@ -4,13 +4,36 @@ description: This article gives an overview of the Azure AI Video Indexer servic
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/06/2025
+ms.date: 09/15/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: overview
 ---
 
 # Azure AI Video Indexer overview
+
+Azure AI Video Indexer is a comprehensive AI solution that enables organizations to extract deep insights from video (live and uploaded) and audio content. It uses advanced machine learning and generative AI models and it supports a wide range of capabilities including transcription, translation, object detection, and video summarization. It's designed for flexibility, Video Indexer can be used in cloud or deployed to edge locations via Azure Arc, allowing users to choose the model that best fits their operational and compliance needs.
+
+**Video Indexer offers two usage options**: as an **Azure Arc extension** or as a **cloud-based web application**. These offerings aren't identical—they differ in capabilities, supported video sources, and the AI models available.
+
+Keep reading to find the option that best fits your needs.
+
+:::image type="content" source="./media/video-indexer-overview/diagram-usage-options.png" border="false" alt-text="Diagram of Azure AI Video Indexer options." lightbox="./media/video-indexer-overview/diagram-usage-options.png" :::
+
+## Video Indexer Enabled by Azure Arc
+
+[Azure AI Video Indexer enabled by Arc](arc/azure-video-indexer-enabled-by-arc-overview.md)is an Azure Arc extension enabled service that runs video and audio analysis and [generative AI](generative_ai_with_vi.md) on edge devices. This hybrid deployment model extends VI’s capabilities to edge environments via Azure Arc-enabled Kubernetes clusters. It supports both uploaded and live video streams, enabling real-time analysis directly at the data source. This model is particularly suited for industries with strict data residency requirements or low-latency operational needs.
+
+### Uploaded videos
+
+Azure AI Video Indexer enables you to analyze video and audio content and extract meaningful insights. It uses multimodal generative AI models and it can generate rich textual summaries of video content, enhancing discoverability. The service analyzes the video and audio content by running AI models such as transcription, translation, object detection, and scene segmentation.
+
+### Live video stream
+
+Enables you to extract real time insights from your live video footage, allowing immediate detection and action. VI Live Video Analysis offers out-of-the-box insights for your live stream, and the ability to create custom object detection insights using open vocabulary technology. You can view live insights directly on top of your video stream, with bounding boxes highlighting detected objects. You can also save streams and insights as files, upload, and index external media files. With Azure AI Video Indexer, you can generate concise summaries for segments of your recorded video footage, helping you quickly catch up on key events without watching the entire video.
+To start extracting insights with Azure AI Video Indexer enabled by Arc, sign up at [Application for Azure AI Video Indexer enabled by Arc](https://aka.ms/vi-live-register). For more information, see [What is Azure AI Video Indexer enabled by Arc?](arc/azure-video-indexer-enabled-by-arc-overview.md).
+
+## Cloud-based Video Indexer
 
 Azure AI Video Indexer is a cloud application, part of Azure AI services, built on Azure AI services (such as the Face, Translator, Azure AI Vision, and Speech). It enables you to extract the insights from your videos using Azure AI Video Indexer video and audio models.
 
@@ -22,16 +45,63 @@ To start extracting insights with Azure AI Video Indexer, see the [how can I get
 
 ## What can I do with Azure AI Video Indexer?
 
+Both Video Indexer enabled by Azure Arc and cloud-based Video Indexer can be used in various scenarios. The following sections describe the scenarios for each option.
+
+### Video Indexer Enabled by Azure Arc
+
+**Uploaded videos**
+
+- **Data governance** – You can bring the AI to the content instead of vice versa. Use Azure AI Video Indexer enabled by Arc when you can’t move indexed content from on-premises to the cloud due to:
+  - Regulations.
+  - Architecture decisions.
+  - Data store being too large, making lift and shift a significant effort.
+- **On-premises workflow** – Your indexing process is part of an on-premises workflow, and you want to lower the indexing duration latency affecting the flow.
+- **Pre-indexing** – You want to index before uploading the content to the cloud. To create clarity, you can presort your on-premises video or audio archive, and then only upload it for standard or advanced indexing in the cloud.
+
+**Live video streams**
+
+You can Integrate the Live Analysis central video AI service with camera live streaming to use AI-based detection from different locations. This service analyzes live and recorded videos, turning raw footage into actionable insights.
+
+- **Retail** - You can use Live Analysis to analyze video footage to help optimize store layouts and improve customer experience and safety. With Live Analysis you can monitor the number of customers in checkout lines in real time, helping retailers to act immediately to optimize staffing and reduce wait times.
+- **Manufacturing** - You can use Live Analysis to help ensure quality control and worker safety through video analysis. For example, workers who aren’t wearing protective gear, which requires real-time detection of critical events and locating specific moments in video streams.
+- **Modern Safety** - You can use Azure AI Video Indexer to detect and identify security and safety issues before they cause a risk.
+
+### Cloud-based Video Indexer
+
 Azure AI Video Indexer's insights can be applied to many scenarios:
 
 * Deep search: To enhance the search experience across a video library, use the insights extracted from the video. For example, indexing spoken words and faces can enable the search experience of finding moments in a video where a person spoke certain words or when two people were seen together. Search based on such insights from videos is applicable to news agencies, educational institutes, broadcasters, entertainment content owners, enterprise LOB apps, and in general to any industry that has a video library that users need to search against.
 * Content creation: Create trailers, highlight reels, social media content, or news clips based on the insights Azure AI Video Indexer extracts from your content. Keyframes, scenes markers, and timestamps of the people and label appearances make the creation process smoother and easier, enabling you to easily get to the parts of the video you need when creating content.
-* Accessibility: Whether you want to make your content available for people with disabilities or if you want your content to be distributed to different regions using different languages, you can use the transcription and  translation provided by Azure AI Video Indexer in multiple languages. 
-* Monetization: Azure AI Video Indexer can help increase the value of videos. For example, industries that rely on ad revenue (news media, social media, and so on) can deliver relevant ads by using the extracted insights as additional signals to the ad server.
+* Accessibility: Whether you want to make your content available for people with disabilities or if you want your content to be distributed to different regions using different languages, you can use the transcription and  translation provided by Azure AI Video Indexer in multiple languages.
+* Monetization: Azure AI Video Indexer can help increase the value of videos. For example, industries that rely on ad revenue (news media, social media, and so on) can deliver relevant ads by using the extracted insights as other signals to the ad server.
 * Content moderation: Use textual and visual content moderation models to keep your users safe from inappropriate content and validate that the content you publish matches your organization's values. You can automatically block certain videos or alert your users about the content.
 * Recommendations: Video insights can be used to improve user engagement by highlighting the relevant video moments to users. By tagging each video with more metadata, you can recommend to users the most relevant videos and highlight the parts of the video that matches their needs.
 
-## Video/audio AI features
+## AI features
+
+You can use different AI features (models) to extract insights from your video and audio files. The following sections describe the AI features available in each option.
+
+### Video Indexer Enabled by Azure Arc
+
+Azure AI Video Indexer enabled by Arc supports the following indexing presets for uploaded video files:
+
+| **Model** | **Basic video** | **Basic audio** | **Basic video and audio** |
+|-----------|-----------------|-----------------|---------------------------|
+| Transcription | | ✔ | ✔ |
+| Translation | | ✔ | ✔ |
+| Captioning | | ✔ | ✔ |
+| Key frame detection | ✔ | | ✔ |
+| Object detection | ✔ | | ✔ |
+| Scene detection | ✔ | | ✔ |
+| Shot detection | ✔ | | ✔ |
+| Summarization | ✔ | ✔ | ✔ |
+
+For live video streams you can create your own presets that can include:
+
+- First-party detections (people, vehicles)
+- Custom AI insights – create a new object detection using natural language or an image. For more information, see (link to the new page).
+
+### Cloud-based Video Indexer
 
 The following list shows the insights you can retrieve from your video/audio files using Azure AI Video Indexer video and audio AI features (models).
 
@@ -101,6 +171,8 @@ When you index by one channel, partial results for those models are available.
 * **Sentiment analysis**: Identifies positive, negative, and neutral sentiments from speech and visual text.
 
 ## How can I get started with Azure AI Video Indexer?
+
+Learn how to get started with [Azure AI Video Indexer enabled by Azure Arc](arc/azure-video-indexer-enabled-by-arc-quickstart.md).
 
 Learn how to [get started with Azure AI Video Indexer](video-indexer-get-started.md).
 

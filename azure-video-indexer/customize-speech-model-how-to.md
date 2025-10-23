@@ -4,7 +4,7 @@ description: This article shows you how to customize a speech model with Azure A
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/06/2025
+ms.date: 08/18/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
@@ -274,7 +274,7 @@ The [Get Speech Dataset Files](https://api-portal.videoindexer.ai/api-details#
         "size": 1517 
     } 
 }, { 
-    "datasetId": "00000000-0000-0000-0000-f58ac72” 
+    "datasetId": "00000000-0000-0000-0000-f58ac72" 
     "fileId": "00000000-0000-0000-0000-2369192e", 
     "name": "normalized.txt", 
     "contentUrl": "", 
