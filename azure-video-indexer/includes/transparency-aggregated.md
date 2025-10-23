@@ -200,7 +200,7 @@ Textual summarization enabled by Arc (also known as using VI on an edge device) 
 - The summary’s results are consistent within each flavor. However, editing the transcript or reindexing the video might lead to different results output.
 - When utilizing Flavors, the Neutral style might occasionally resemble the Formal style. The Casual style might include content-related hashtags. Additionally, a Medium length summary might be shorter than a Short summary.
 - Videos that have little content (such as short videos) are typically not summarized to mitigate the potential model inaccuracies that can happen when the input is short.
-- The summary might occasionally include, or reference internal instructions provided to it (referred to as “meta-prompt”). It could contain directives to exclude harmful content.
+- The summary might occasionally include, or reference internal instructions provided to it (referred to as "meta-prompt"). It could contain directives to exclude harmful content.
 - Longer videos might result in high-level summary, and less detailed.
 - The generated summary might contain inaccuracies, such as incorrect identification of gender, age, and other personal characteristics.
 - If the original video contains inappropriate content:
