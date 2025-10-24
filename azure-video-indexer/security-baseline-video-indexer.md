@@ -19,7 +19,7 @@ This security baseline outlines the key security features, configurations, and b
 ## Azure AI Video Indexer-specific security
 
 - **Use content filtering and moderation options**. See [Content moderation](faq.yml#i-tried-to-upload-a-video-as-public-and-it-was-flagged-for-inappropriate-or-offensive-content--what-does-that-mean).
-- Use responsible AI practices and understand biometric data considerations. See [Limited Access features of Azure AI Video Indexer](limited-access-features.md) and [Transparency note for Azure Video Indexer](transparency-note.md).
+- Use responsible AI practices and understand biometric data considerations. See [Limited Access features of Azure AI Video Indexer](limited-access-features.md) and [Transparency note for Azure Video Indexer](/legal/azure-video-indexer/transparency-note).
 - Understand API access limitations when using private endpoints. See [Private endpoints with Azure AI Video Indexer](private-endpoint-overview.md).
 - You can't convert an Azure AI Video Indexer trial account to an Azure subscription. Instead, you can create a new Azure subscription and then create a new Azure AI Video Indexer resource. See [Create an account](create-account.md).
 
