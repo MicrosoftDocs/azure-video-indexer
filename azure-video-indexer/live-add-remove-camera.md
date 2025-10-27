@@ -240,24 +240,24 @@ To delete a camera, use the following steps:
 
 1. Get the camera ID
 
-   ```bash
-   ./vi_cli.sh show cameras -y \
-   --clusterName "<cluster-name>" \
-   --clusterResourceGroup "<cluster-resource-group>" \
-   --accountName "<account-name>" \
-   --accountResourceGroup "<account-resource-group>"
-   ```
+  ```bash
+  ./vi_cli.sh show cameras -y \
+  --clusterName "<cluster-name>" \
+  --clusterResourceGroup "<cluster-resource-group>" \
+  --accountName "<account-name>" \
+  --accountResourceGroup "<account-resource-group>"
+  ```
 
 2. Delete using the camera ID
 
-```bash
-./vi_cli.sh delete camera -y \
---cameraId "<camera-id>" \
---clusterName "<cluster-name>" \
---clusterResourceGroup "<cluster-resource-group>" \
---accountName "<account-name>" \
---accountResourceGroup "<account-resource-group>"
-```
+  ```bash
+  ./vi_cli.sh delete camera -y \
+  --cameraId "<camera-id>" \
+  --clusterName "<cluster-name>" \
+  --clusterResourceGroup "<cluster-resource-group>" \
+  --accountName "<account-name>" \
+  --accountResourceGroup "<account-resource-group>"
+  ```
 
 ## Remove a camera with AIO integration
 
