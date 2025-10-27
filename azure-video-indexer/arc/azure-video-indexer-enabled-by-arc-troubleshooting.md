@@ -64,7 +64,6 @@ You can monitor camera health in two ways:
     :::image type="content" source="./media/azure-video-indexer-enabled-by-arc-troubleshooting/camera-management-tab-details.png" alt-text="Screenshot showing details on the Camera management tab.":::
 - Use the **List-Cameras API** – Retrieve detailed information about each camera programmatically, including status and error messages.  
     :::image type="content" source="./media/azure-video-indexer-enabled-by-arc-troubleshooting/camera-management-api-details.png" alt-text="Screenshot showing details from the List-Cameras API.":::
-    In the example, there are five cameras configured. Four cameras are listed as `Online` and one camera is in a `Failed` state.
 
 #### Key fields for troubleshooting
 
