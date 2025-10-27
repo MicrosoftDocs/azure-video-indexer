@@ -47,8 +47,9 @@ Use the following sections to troubleshoot issues with Azure AI Video Indexer en
 If you get an error saying `Couldn't reach the Arc extension`:
 
 - In your browser's URL bar, enter `https://{cluster endpoint URL}/info`
-- Select **Advanced** and then select **Continue to {cluster endpoint URL} (unsafe)**.
+- Select **Advanced** and then select **Continue to {cluster endpoint URL} (unsafe)**.  
     :::image type="content" source="./media/azure-video-indexer-enabled-by-arc-troubleshooting/error-connection-not-private-general.png" alt-text="Screenshot showing the connection not private error (general).":::  
+
     :::image type="content" source="./media/azure-video-indexer-enabled-by-arc-troubleshooting/error-connection-not-private-details.png" alt-text="Screenshot showing the connection not private error (details).":::
 
 ### Error connecting to camera
@@ -88,16 +89,16 @@ Use the following sections to troubleshoot common camera failure situations.
 
 - **Error message:** `PGIE/Recording/Live Streaming heartbeat not received`
 - **Cause:** No video frames were processed for more than 2 minutes. It might happen due to:  
-  1. **Stream interruption** – The camera stopped sending frames, possibly due to network instability or camera crash.
-  2. **Insufficient space on File Share / Disk** – The disk might be full, preventing new files from being created and frames from being processed.  
-  3. **Internal DeepStream error** – Rare, but possible due to system issues.
+  - **Stream interruption** – The camera stopped sending frames, possibly due to network instability or camera crash.
+  - **Insufficient space on File Share / Disk** – The disk might be full, preventing new files from being created and frames from being processed.  
+  - **Internal DeepStream error** – Rare, but possible due to system issues.
 - **Resolution:**
   1. Confirm that the RTSP stream is still active and frames are being transmitted.
   2. In the logs, look for the `gst-resource-error-quark; Could not open resource for writing.` message:  
   3. Next, check the properties field. If it contains `No space left on device`, the information indicates that the file share or disk is full, and you need to increase its volume. You can do so with the following command:  
-    ```azurecli
-    az k8s-extension update -n $EXTENSION_NAME -g $RESOURCE_GROUP --cluster-name $CLUSTER_NAME --cluster-type $CLUSTER_TYPE --config storage.indexing.size=$STORAGE_SIZE --yes
-    ```
+      ```azurecli
+      az k8s-extension update -n $EXTENSION_NAME -g $RESOURCE_GROUP --cluster-name $CLUSTER_NAME --cluster-type $CLUSTER_TYPE --config storage.indexing.size=$STORAGE_SIZE --yes
+      ```
   4. Apply a configuration change and then restore it. For example:
     1. Disable **Streaming** for the affected camera.
     2. Re-enable **Streaming**.

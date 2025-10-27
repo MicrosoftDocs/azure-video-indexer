@@ -95,22 +95,22 @@ export VI_CLUSTER_NAME="<cluster-name>"
 | `-aio`, `--aio-enabled`      | Enable Azure IoT Operations integration         | No |
 | `-live`, `--live-enabled`    | Enable live stream capability                   | No |
 | `-media`, `--media-enabled`  | Enable media files capability                   | No |
-| `--clusterName`              | Name of the cluster                             | Yes* |
-| `--clusterResourceGroup`     | Resource group of the cluster                   | Yes* |
-| `--accountName`              | Name of the Video Indexer account               | Yes* |
-| `--accountResourceGroup`     | Resource group of the Video Indexer account     | Yes* |
-| `--cameraName`               | Name of the camera                              | Yes* |
-| `--cameraAddress`            | RTSP address of the camera                      | Yes* |
+| `--clusterName`              | Name of the cluster                             | Yes ¹ |
+| `--clusterResourceGroup`     | Resource group of the cluster                   | Yes ¹ |
+| `--accountName`              | Name of the Video Indexer account               | Yes ¹ |
+| `--accountResourceGroup`     | Resource group of the Video Indexer account     | Yes ¹ |
+| `--cameraName`               | Name of the camera                              | Yes ¹ |
+| `--cameraAddress`            | RTSP address of the camera                      | Yes ¹ |
 | `--presetName`               | Name of the preset                              | No |
-| `--presetId`                 | ID of the preset                                | Yes* |
-| `--cameraId`                 | ID of the camera                                | Yes* |
+| `--presetId`                 | ID of the preset                                | Yes ¹ |
+| `--cameraId`                 | ID of the camera                                | Yes ¹ |
 | `--cameraDescription`        | Description of the camera                       | No |
 | `--cameraStreamingEnabled`   | Enable streaming for the camera                 | No |
 | `--cameraRecordingEnabled`   | Enable recording for the camera                 | No |
 | `--cameraUsername`           | Username for camera authentication (AIO only)   | No |
 | `--cameraPassword`           | Password for camera authentication (AIO only)   | No |
 
-\* Required for most commands unless using interactive mode (`-it`)  
+¹ Required for most commands unless using interactive mode (`-it`)  
 
 >[!NOTE]
 > To enter interactive mode, use the `-it` flag with any command, which prompts you for required parameters.
@@ -210,7 +210,7 @@ There are two recommended ways to create a camera:
    ```
    Interactive mode is the simplest option. The script guides you through entering all required parameters.
 
-2. Use prefilled parameters
+- Use prefilled parameters
 
    ```bash
    ./vi_cli.sh create camera --cameraName "<camera-name>" --clusterName "<cluster-name>"

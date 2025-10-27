@@ -18,11 +18,11 @@ Search in Azure AI Video Indexer (VI) supports natural language queries, allowin
 
 Here's an example showing where to search. The search text used is *Find all the people that appeared in the last day in camera "cctv"*.
 
-:::image type="content" source="./media/live-search-edge-rag/search-example-text.png" alt-text="Screenshot showing the search interface with plain text.":::
+:::image type="content" source="./media/live-search-edge-rag/search-example-text.png" alt-text="Screenshot showing the search interface with plain text." lightbox="./media/live-search-edge-rag/search-example-text.png":::
 
 You can also use slash (`/`) to trigger inline filters (for example, `/source`, `/tag`, `/created/`, and `/insight`) to narrow down results. It enhances precision and speeds up query formulation. For example, you can search for `/suitcase` appeared yesterday in `/camera A`.
 
-:::image type="content" source="./media/live-search-edge-rag/search-example-slash-filter.png" alt-text="Screenshot showing a search example with slash filters.":::
+:::image type="content" source="./media/live-search-edge-rag/search-example-slash-filter.png" alt-text="Screenshot showing a search example with slash filters." lightbox="./media/live-search-edge-rag/search-example-slash-filter.png":::
 
 > [!NOTE]
 > To start using this capability, you need to create an **Edge RAG resource** and connect it to **Video Indexer (VI)**. For more information, see [Edge RAG documentation](/azure/azure-arc/edge-rag/overview).

@@ -54,7 +54,7 @@ The preset insights run on the camera even when it's not streaming or recording.
 
 1. Go to the live extension > **Pinned cameras** tab.
 1. Select the ellipsis (**…**) located in the bottom right corner of the camera view > **+ Apply preset**.
-`. The **Apply preset on camera** window opens. Select a preset from the list and then select **Apply preset**.
+1. The **Apply preset on camera** window opens. Select a preset from the list and then select **Apply preset**.
 
 ### Apply from the camera live player
 

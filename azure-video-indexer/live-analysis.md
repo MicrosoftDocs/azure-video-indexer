@@ -71,12 +71,12 @@ Before you begin, review the following prerequisites to ensure that you meet the
   - The cluster has the following requirements:
     - Read-write-many (RWX) storage class.
     - The ingress controller must allow outside clients to connect to the application.
-    - At least one NVIDIA GPU enabled node in the cluster
+    - At least one NVIDIA GPU enabled node in the cluster.
   - Requirements for supported Kubernetes (K8s) distributions include:
-    - AKS on Azure Local enabled by Arc
-    - K8s on a Linux machine
-    - AKS on cloud
-- Make sure you have a valid **RTSP stream.** You need the RTSP URL.
+    - AKS on Azure Local enabled by Arc.
+    - K8s on a Linux machine.
+    - AKS on cloud.
+- Make sure you have a valid **RTSP stream**. You need the RTSP URL.
 - Optionally, you can have an **Azure IoT for Operations extension** deployed to an Azure Arc Kubernetes cluster. The installation of both AIO and VI extensions must be in the same cluster.
 - You must have the latest version of Azure CLI. However, you can skip if you're using Azure cloud shell.
 - As noted previously, your **Azure subscription ID** must already be approved. If not already approved, you can sign up at [Application for Azure AI Video Indexer Enabled by Arc - Live Video Analysis](https://aka.ms/vi-live-register).
