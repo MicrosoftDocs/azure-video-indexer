@@ -59,4 +59,3 @@ For more information about the presets available for uploaded videos, see [Suppo
 
 - [Live video analysis in Azure AI Video Indexer](live-analysis.md)
 - [Manage live analysis cameras](live-manage-camera.md)
-- [Search using Edge RAG](live-search-edge-rag.md)
