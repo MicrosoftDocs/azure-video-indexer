@@ -80,7 +80,7 @@ To generate a summary, add a customized "Focus on" prompt. It ensures the summar
 ## Generate a summary
 
 1. Select a specific video on demand (VOD) recorded file.
-2. Select the **Configure and generate** button under the player.
+2. Select **Configure and generate** under the player.
 3. Write a **Focus on prompt** to specify interesting or unusual events happening in the video to highlight in the summary.
 4. Choose the **time range** to summarize from the video. Longer ranges can take several hours to process.
 5. Review and then select **Generate summary** to start generating the summary.

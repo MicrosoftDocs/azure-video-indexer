@@ -175,8 +175,6 @@ items:
       href: live-watch-recordings.md
     - name: Mark an area of interest
       href: live-area-interest.md
-    - name: Search using Edge RAG
-      href: live-search-edge-rag.md
   - name: Customize content models
     items:
     - name: Customize brands model
