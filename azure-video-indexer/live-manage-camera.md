@@ -4,7 +4,7 @@ description: Learn how to manage cameras for use with the Azure AI Video Indexer
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 09/29/2025
+ms.date: 10/30/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 #customer intent: As a user of Azure AI Video Indexer, I want to manage live analysis cameras so that I can enable live video analysis capabilities.

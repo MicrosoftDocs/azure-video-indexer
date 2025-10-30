@@ -4,7 +4,7 @@ description: Learn how to create, update, or delete cameras for use with the Azu
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 09/29/2025
+ms.date: 10/30/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 #customer intent: As a user of Azure AI Video Indexer, I want to add or remove cameras for use with the live extension so that I can enable live video analysis capabilities.

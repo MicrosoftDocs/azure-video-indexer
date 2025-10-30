@@ -4,7 +4,7 @@ description: Learn how to mark an area of interest in live camera footage using 
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 09/29/2025
+ms.date: 10/30/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 # customer intent: As an Azure Video Indexer user, I want to mark an area of interest in live camera footage to focus on specific regions for analysis.

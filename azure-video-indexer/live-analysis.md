@@ -4,7 +4,7 @@ description: Overview of live analysis capabilities in Azure AI Video Indexer, i
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 09/29/2025
+ms.date: 10/30/2025
 ms.service: azure-video-indexer
 ms.topic: concept-article
 # customer intent: As a user of Azure AI Video Indexer, I want to understand the live analysis capabilities, including real-time video indexing and insights, so that I can utilize these features for live events and broadcasts.

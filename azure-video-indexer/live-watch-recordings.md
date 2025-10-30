@@ -4,7 +4,7 @@ description: Learn how to watch live video recordings from your cameras using Az
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 09/29/2025
+ms.date: 10/30/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 # customer intent: As an Azure Video Indexer user, I want to watch live video recordings from my cameras so that I can monitor activities that happened in real-time.

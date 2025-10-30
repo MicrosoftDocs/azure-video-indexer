@@ -4,7 +4,7 @@ description: Troubleshoot common issues with Azure AI Video Indexer enabled by A
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/06/2025
+ms.date: 10/30/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: troubleshooting-general
@@ -42,15 +42,15 @@ Use the following sections to troubleshoot issues with Azure AI Video Indexer en
 
 ### Error connecting to the extension
 
-:::image type="content" source="./media/azure-video-indexer-enabled-by-arc-troubleshooting/error-reach-arc-extension.png" alt-text="Screenshot showing the Couldn't reach the Arc extension error.":::
+:::image type="content" source="./media/azure-video-indexer-enabled-by-arc-troubleshooting/error-reach-arc-extension.png" alt-text="Screenshot showing the Couldn't reach the Arc extension error." lightbox="./media/azure-video-indexer-enabled-by-arc-troubleshooting/error-reach-arc-extension.png":::
 
 If you get an error saying `Couldn't reach the Arc extension`:
 
 - In your browser's URL bar, enter `https://{cluster endpoint URL}/info`
 - Select **Advanced** and then select **Continue to {cluster endpoint URL} (unsafe)**.  
-    :::image type="content" source="./media/azure-video-indexer-enabled-by-arc-troubleshooting/error-connection-not-private-general.png" alt-text="Screenshot showing the connection not private error (general).":::  
+    :::image type="content" source="./media/azure-video-indexer-enabled-by-arc-troubleshooting/error-connection-not-private-general.png" alt-text="Screenshot showing the connection not private error (general)." lightbox="./media/azure-video-indexer-enabled-by-arc-troubleshooting/error-connection-not-private-general.png":::  
 
-    :::image type="content" source="./media/azure-video-indexer-enabled-by-arc-troubleshooting/error-connection-not-private-details.png" alt-text="Screenshot showing the connection not private error (details).":::
+    :::image type="content" source="./media/azure-video-indexer-enabled-by-arc-troubleshooting/error-connection-not-private-details.png" alt-text="Screenshot showing the connection not private error (details)." lightbox="./media/azure-video-indexer-enabled-by-arc-troubleshooting/error-connection-not-private-details.png":::
 
 ### Error connecting to camera
 
@@ -61,9 +61,58 @@ When a camera fails to connect, it's important to identify the root cause quickl
 You can monitor camera health in two ways:
 
 - Use the **Camera Management tab** – View the status of all connected cameras in the dashboard.  
-    :::image type="content" source="./media/azure-video-indexer-enabled-by-arc-troubleshooting/camera-management-tab-details.png" alt-text="Screenshot showing details on the Camera management tab.":::
+    :::image type="content" source="./media/azure-video-indexer-enabled-by-arc-troubleshooting/camera-management-tab-details.png" alt-text="Screenshot showing details on the Camera management tab." lightbox="./media/azure-video-indexer-enabled-by-arc-troubleshooting/camera-management-tab-details.png":::
 - Use the **List-Cameras API** – Retrieve detailed information about each camera programmatically, including status and error messages.  
-    :::image type="content" source="./media/azure-video-indexer-enabled-by-arc-troubleshooting/camera-management-api-details.png" alt-text="Screenshot showing details from the List-Cameras API.":::
+    Here's an example of the API output showing camera status:
+
+    ```json
+    {
+    "results": [
+        {
+            "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+            "name": "Factory",
+            "description": "Factory",
+            "status": "Offline",
+            "errorInfo": {
+                "errorType": "CAMERA_FATAL_ERROR",
+                "errorMessage": "PGIE heartbeat not received, Live streaming heartbeat not received, Recording heartbeat not received"
+            },
+            "rtspUrl": "rtsp://media-server.video-indexer:8554/Factory",
+            "presetId": "bbbbbbbb-1111-2222-3333-cccccccccccc",
+            "isPinned": true,
+            "liveStreamingEnabled": true,
+            "recordingEnabled": true,
+            "recordingsRetentionInHours": 72,
+            "insightsRetentionInHours": 4320,
+            "deletionTime": null,
+            "createTime": "2025-10-28T09:11:12.0933333+00:00",
+            "lastUpdateTime": "2025-10-28T23:25:00.49+00:00"
+        },
+        {
+            "id": "cccccccc-2222-3333-4444-dddddddddddd",
+            "name": "Supermarket",
+            "description": "Supermarket",
+            "status": "Online",
+            "rtspUrl": "rtsp://media-server.video-indexer:8554/Supermarket",
+            "presetId": "67280024-1f2f-4034-b19b-bed53bd020cb",
+            "isPinned": true,
+            "liveStreamingEnabled": true,
+            "recordingEnabled": false,
+            "recordingsRetentionInHours": 72,
+            "insightsRetentionInHours": 72,
+            "deletionTime": null,
+            "createTime": "2025-10-27T18:44:27.9033333+00:00",
+            "lastUpdateTime": "2025-10-28T08:44:13.9766667+00:00"
+        }
+    ],
+    "nextPage": {
+        "pageSize": 100,
+        "skip": 0,
+        "done": true,
+        "totalCount": 2
+     }
+    }
+    ```
 
 #### Key fields for troubleshooting
 
