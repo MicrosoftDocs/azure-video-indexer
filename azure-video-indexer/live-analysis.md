@@ -4,7 +4,7 @@ description: Overview of live analysis capabilities in Azure AI Video Indexer, i
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2025
+ms.date: 11/05/2025
 ms.service: azure-video-indexer
 ms.topic: concept-article
 # customer intent: As a user of Azure AI Video Indexer, I want to understand the live analysis capabilities, including real-time video indexing and insights, so that I can utilize these features for live events and broadcasts.
@@ -12,36 +12,36 @@ ms.topic: concept-article
 
 # Live video analysis in Azure AI Video Indexer - Preview
 
-Azure AI Video Indexer enabled by Arc (VI), as part of an adaptive cloud approach, introduces live video analysis. It enables you to extract real time insights from your live video footage, allowing immediate detection and action. VI Live Video Analysis offers out-of-the-box insights for your live stream, and the ability to create custom object detection insights using open vocabulary technology. You can view live insights directly on top of your video stream, with bounding boxes highlighting detected objects. You can also save streams and insights as files, upload, and index external media files. With Azure AI Video Indexer, you can generate concise summaries for segments of your recorded video footage, helping you quickly catch up on key
+Azure AI Video Indexer enabled by Arc (VI), as part of an adaptive cloud approach, introduces live video analysis. It enables you to extract real time insights from your live video footage, allowing immediate detection and action. VI live video analysis offers out-of-the-box insights for your live stream, and the ability to create custom object detection insights using open vocabulary technology. You can view live insights directly on top of your video stream, with bounding boxes highlighting detected objects. You can also save streams and insights as files, upload, and index external media files. With Azure AI Video Indexer, you can generate concise summaries for segments of your recorded video footage, helping you quickly catch up on key
 events without watching the entire video.
 
 The service is easy to evaluate and integrate. Use the web portal or REST API to add Azure AI Video Indexer to your workflows and systems.
 
 > [!IMPORTANT]
-> To deploy the Azure AI Live Video Indexer extension, get your Azure subscription ID approved in advance. You can sign up at [Azure AI Video Indexer Enabled by Arc - Live Analysis Early Access Program](https://aka.ms/vi-live-register).
+> To deploy the Azure AI live video indexer extension, get your Azure subscription ID approved in advance. You can sign up at [Azure AI Video Indexer Enabled by Arc - live analysis early access program](https://aka.ms/vi-live-register).
 
 > [!NOTE]
-> You don't pay extra for Live Video Analysis while it’s in preview.
+> You don't pay extra for live video analysis while it’s in preview.
 
-## What can I do with Live Analysis?
+## What can I do with live analysis?
 
-You can integrate the VI Live Analysis with camera live streaming to use AI-based detection from different locations. This service analyzes live videos, turning raw footage into actionable insights.
+You can integrate the VI live analysis with camera live streaming to use AI-based detection from different locations. This service analyzes live videos, turning raw footage into actionable insights.
 
-Here's a diagram showing the Live Analysis workflow.
+Here's a diagram showing the live analysis workflow.
 
-:::image type="content" source="./media/live-analysis/workflow-diagram.svg" alt-text="Diagram showing the Live Analysis workflow." border="false" lightbox="./media/live-analysis/workflow-diagram.svg":::
+:::image type="content" source="./media/live-analysis/workflow-diagram.svg" alt-text="Diagram showing the live analysis workflow." border="false" lightbox="./media/live-analysis/workflow-diagram.svg":::
 
 ## Customer scenarios and use cases
 
-- **Retail** - You can use Live Analysis to analyze video footage to help optimize store layouts and improve customer experience and safety. With Live Analysis you can monitor the number of customers in checkout lines in real time, helping retailers to act immediately to optimize staffing and reduce wait times.
+- **Retail** - You can use live analysis to analyze video footage to help optimize store layouts and improve customer experience and safety. With live analysis you can monitor the number of customers in checkout lines in real time, helping retailers to act immediately to optimize staffing and reduce wait times.
 
-- **Manufacturing -** You can use Live Analysis to help ensure quality control and worker safety through video analysis. For example, workers who aren’t wearing protective gear, which requires real-time detection of critical events and locating specific moments in video streams.
+- **Manufacturing -** You can use live analysis to help ensure quality control and worker safety through video analysis. For example, workers who aren’t wearing protective gear, which requires real-time detection of critical events and locating specific moments in video streams.
 
 - **Modern Safety -** You can use Azure AI Video Indexer to detect and identify security and safety issues before they cause a risk.
 
 ## Limitations
 
-The following limitations apply to the Live Analysis feature:
+The following limitations apply to the live analysis feature:
 
 ### Camera limitations
 
@@ -79,7 +79,7 @@ Before you begin, review the following prerequisites to ensure that you meet the
 - Make sure you have a valid **RTSP stream**. You need the RTSP URL.
 - Optionally, you can have an **Azure IoT for Operations extension** deployed to an Azure Arc Kubernetes cluster. The installation of both AIO and VI extensions must be in the same cluster.
 - You must have the latest version of Azure CLI. However, you can skip if you're using Azure cloud shell.
-- As noted previously, your **Azure subscription ID** must already be approved. If not already approved, you can sign up at [Application for Azure AI Video Indexer Enabled by Arc - Live Video Analysis](https://aka.ms/vi-live-register).
+- As noted previously, your **Azure subscription ID** must already be approved. If not already approved, you can sign up at [Application for Azure AI Video Indexer Enabled by Arc - live video analysis](https://aka.ms/vi-live-register).
 
 > [!NOTE]
 > We recommend enabling automatic version upgrade for your Arc-enabled Kubernetes cluster extension, so that you always have the latest security patches and new capabilities. For more information, see [Deploy and manage an Azure Arc-enabled Kubernetes cluster extension](/azure/azure-arc/kubernetes/extensions#optional-parameters).
@@ -116,7 +116,7 @@ Recommended
 - Supported GPUs are NVIDIA A2, A10, V100, A100, H100.
 - The minimum required shared storage is 50 GB for one camera per day. This estimation is based on the scenario where both recordings and insights are saved.
 - We recommend using NVIDIA H100 GPU in your virtual machines (VM).
-- To upload video media files to the Live extension, add another virtual machine (VM) without a GPU, as specified in [Minimum hardware requirements for VI enabled by Arc](arc/azure-video-indexer-enabled-by-arc-overview.md#minimum-hardware-requirements).
+- To upload video media files to the live extension, add another virtual machine (VM) without a GPU, as specified in [Minimum hardware requirements for VI enabled by Arc](arc/azure-video-indexer-enabled-by-arc-overview.md#minimum-hardware-requirements).
 - Using event summary for recorded media files requires an extra VM with GPU.
 
 ### Minimum software requirements

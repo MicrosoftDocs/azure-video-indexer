@@ -4,7 +4,7 @@ description: Learn how to watch live video recordings from your cameras using Az
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2025
+ms.date: 11/05/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 # customer intent: As an Azure Video Indexer user, I want to watch live video recordings from my cameras so that I can monitor activities that happened in real-time.
@@ -24,7 +24,7 @@ The live video player allows you to watch live video recordings from your camera
 ## Video on demand (VOD) recordings considerations
 
 - Understand the retention policy of your camera. It can set your recorded files to get automatically deleted. You can adjust the detections retention policy separately from the video in the API if you want to keep insights longer.
-- VOD only reflects the AIs that run on the Live camera during the recording time. Currently, you can't apply presets on VOD data retroactively.
+- VOD only reflects the AIs that run on the live camera during the recording time. Currently, you can't apply presets on VOD data retroactively.
 - You can tag a video file.
 - You can see in the VOD gallery if the file includes detection.
 - The time of the video is UTC. Each video is from UTC 12 AM until 12 AM the next day. The created VOD files are 24 hours duration.

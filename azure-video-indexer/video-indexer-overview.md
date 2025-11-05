@@ -4,7 +4,7 @@ description: This article gives an overview of the Azure AI Video Indexer servic
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 09/15/2025
+ms.date: 11/05/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: overview
@@ -30,7 +30,7 @@ Azure AI Video Indexer enables you to analyze video and audio content and extrac
 
 ### Live video stream
 
-Enables you to extract real time insights from your live video footage, allowing immediate detection and action. VI Live Video Analysis offers out-of-the-box insights for your live stream, and the ability to create custom object detection insights using open vocabulary technology. You can view live insights directly on top of your video stream, with bounding boxes highlighting detected objects. You can also save streams and insights as files, upload, and index external media files. With Azure AI Video Indexer, you can generate concise summaries for segments of your recorded video footage, helping you quickly catch up on key events without watching the entire video.
+Enables you to extract real time insights from your live video footage, allowing immediate detection and action. VI live video analysis offers out-of-the-box insights for your live stream, and the ability to create custom object detection insights using open vocabulary technology. You can view live insights directly on top of your video stream, with bounding boxes highlighting detected objects. You can also save streams and insights as files, upload, and index external media files. With Azure AI Video Indexer, you can generate concise summaries for segments of your recorded video footage, helping you quickly catch up on key events without watching the entire video.
 To start extracting insights with Azure AI Video Indexer enabled by Arc, sign up at [Application for Azure AI Video Indexer enabled by Arc](https://aka.ms/vi-live-register). For more information, see [What is Azure AI Video Indexer enabled by Arc?](arc/azure-video-indexer-enabled-by-arc-overview.md).
 
 ## Cloud-based Video Indexer
@@ -60,10 +60,10 @@ Both Video Indexer enabled by Azure Arc and cloud-based Video Indexer can be use
 
 **Live video streams**
 
-You can Integrate the Live Analysis central video AI service with camera live streaming to use AI-based detection from different locations. This service analyzes live and recorded videos, turning raw footage into actionable insights.
+You can integrate the live analysis central video AI service with camera live streaming to use AI-based detection from different locations. This service analyzes live and recorded videos, turning raw footage into actionable insights.
 
-- **Retail** - You can use Live Analysis to analyze video footage to help optimize store layouts and improve customer experience and safety. With Live Analysis you can monitor the number of customers in checkout lines in real time, helping retailers to act immediately to optimize staffing and reduce wait times.
-- **Manufacturing** - You can use Live Analysis to help ensure quality control and worker safety through video analysis. For example, workers who aren’t wearing protective gear, which requires real-time detection of critical events and locating specific moments in video streams.
+- **Retail** - You can use live analysis to analyze video footage to help optimize store layouts and improve customer experience and safety. With live analysis you can monitor the number of customers in checkout lines in real time, helping retailers to act immediately to optimize staffing and reduce wait times.
+- **Manufacturing** - You can use live analysis to help ensure quality control and worker safety through video analysis. For example, workers who aren’t wearing protective gear, which requires real-time detection of critical events and locating specific moments in video streams.
 - **Modern Safety** - You can use Azure AI Video Indexer to detect and identify security and safety issues before they cause a risk.
 
 ### Cloud-based Video Indexer

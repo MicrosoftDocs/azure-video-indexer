@@ -4,7 +4,7 @@ description: Learn how to create, update, or delete an Azure AI Video Indexer ex
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2025
+ms.date: 11/05/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 #customer intent: As a user of Azure AI Video Indexer, I want to manage live analysis extensions so that I can enable live video analysis capabilities.
@@ -16,7 +16,7 @@ To use live analysis, you must create and manage Azure AI Video Indexer extensio
 
 >[!IMPORTANT]
 > - Before you begin, ensure that you meet all prerequisites documented in the [Live video analysis in Azure AI Video Indexer](live-analysis.md) article.
-> - After you create the extension using the information in this article, you connect cameras to it for live video analysis. For more information, see [Manage cameras with the Azure AI Video Indexer Live extension](live-add-remove-camera.md).
+> - After you create the extension using the information in this article, you connect cameras to it for live video analysis. For more information, see [Manage cameras with the Azure AI Video Indexer live extension](live-add-remove-camera.md).
 
 ## [Create in Azure portal](#tab/portal)
 
@@ -144,7 +144,7 @@ Use the following parameters as input for the extension creation command:
 
 ### Create the extension
 
-To create a VI Live extension, run the following command with your parameters:
+To create a VI live extension, run the following command with your parameters:
 
 ```azurecli
 az deployment group create -g \<resource group\> --template-file \<template file\>
@@ -156,12 +156,12 @@ Use the Azure CLI to create a Video Indexer extension that supports live analysi
 
 | **Parameter**                                    | **Type** | **Default value** | **Description**                                             |
 |--------------------------------------------------|----------|-------------------|-------------------------------------------------------------|
-| \<extension_name\>                               | String   |                   | Give a name to your VI Live extension                       |
+| \<extension_name\>                               | String   |                   | Give a name to your VI live extension                       |
 | \<release-namespace\>                            | String   | default           | The Kubernetes namespace where the extension gets installed |
 | \<cluster-name\>                                 | String   |                   | The Kubernetes Azure arc instance name                      |
 | \<resource-group\>                               | String   |                   | The Kubernetes Azure arc resource group name                |
 | \<account_Id\>                                   | String   |                   | Video Indexer Account ID                                    |
-| \<endpoint\>                                     | String   |                   | Video Indexer DNS Name to be used as the Portal endpoint    |
+| \<endpoint\>                                     | String   |                   | Video Indexer DNS Name to be used as the portal endpoint    |
 | ViAi.gpu.tolerations.key                         | String   |                   | the default toleration in which GPU                         |
 | videoIndexer.mediaFilesEnabled                   | Boolean  | true              | Enable media files upload                                   |
 | ViAi.gpu.nodeSelector.workload                   | String   |                   | The GPU for media files summarization                       |
@@ -169,7 +169,7 @@ Use the Azure CLI to create a Video Indexer extension that supports live analysi
 | ViAi.LiveSummarization.enabled                   | Boolean  | false             | Enable live summarization on the recordings                 |
 | ViAi.LiveSummarization.gpu.nodeSelector.workload | String   |                   | The node selector for live summarization                    |
 
-To create a VI Live extension, run the following command with your parameters as explained in the previous table.
+To create a VI live extension, run the following command with your parameters as explained in the previous table.
 
 ```azurecli
 az k8s-extension create
@@ -262,7 +262,7 @@ az k8s-extension list --cluster-name <cluster-name>
  --cluster-type connectedClusters --resource-group  <resource-group> --query "[?extensionType == 'microsoft.videoindexer'] | [0]"
 ```
 
-Run the following command to delete a VI Live extension:
+Run the following command to delete a VI live extension:
 
 ```azurecli
 az k8s-extension delete --cluster-name <cluster-name> --cluster-type connectedclusters --resource-group <resource-group> --name <extension-name> --yes
@@ -273,4 +273,4 @@ az k8s-extension delete --cluster-name <cluster-name> --cluster-type connectedcl
 ## Related content
 
 - [Live video analysis in Azure AI Video Indexer](live-analysis.md)
-- [Add or remove cameras with the Azure AI Video Indexer Live extension](live-add-remove-camera.md)
+- [Add or remove cameras with the Azure AI Video Indexer live extension](live-add-remove-camera.md)
