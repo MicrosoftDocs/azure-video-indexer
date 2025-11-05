@@ -1,10 +1,10 @@
 ---
-title: Add or remove cameras for use with the Azure AI Video Indexer live extension
+title: Add or remove cameras for use with the Azure AI Video Indexer live extension - Preview
 description: Learn how to create, update, or delete cameras for use with the Azure AI Video Indexer live extension.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2025
+ms.date: 11/05/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 #customer intent: As a user of Azure AI Video Indexer, I want to add or remove cameras for use with the live extension so that I can enable live video analysis capabilities.
@@ -157,7 +157,7 @@ Update extension settings (enable both Media Files and Live modes):
 
 ## Connect cameras to the live extension
 
-To connect a camera to the Azure AI Video Indexer (VI) Live extension, you need to download the vi_cli.sh script file, and then run it with the required parameters. The script allows you to connect cameras to the VI Live extension, enabling live video analysis capabilities.
+To connect a camera to the Azure AI Video Indexer (VI) live extension, you need to download the vi_cli.sh script file, and then run it with the required parameters. The script allows you to connect cameras to the VI live extension, enabling live video analysis capabilities.
 
 Then choose one of the options to connect the cameras, select the method you prefer:
 

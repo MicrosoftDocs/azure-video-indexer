@@ -4,7 +4,7 @@ description: Troubleshoot common issues with Azure AI Video Indexer enabled by A
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2025
+ms.date: 11/05/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: troubleshooting-general
@@ -38,7 +38,7 @@ For example, you could use [ffmpeg](https://ffmpeg.org/) and [Shaka Packager](ht
 
 ## Troubleshoot live analysis issues
 
-Use the following sections to troubleshoot issues with Azure AI Video Indexer enabled by Arc for Live video analysis.
+Use the following sections to troubleshoot issues with Azure AI Video Indexer enabled by Arc for live video analysis.
 
 ### Error connecting to the extension
 

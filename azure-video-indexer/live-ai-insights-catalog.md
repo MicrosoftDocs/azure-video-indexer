@@ -1,13 +1,13 @@
 ---
-title: Create custom insights in the Live AI Insights catalog using Azure AI Video Indexer
-description: Learn how to create custom insights in the Live AI Insights catalog using Azure AI Video Indexer.
+title: Create custom insights in the live AI Insights catalog using Azure AI Video Indexer
+description: Learn how to create custom insights in the live AI Insights catalog using Azure AI Video Indexer.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2025
+ms.date: 11/05/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
-# customer intent: As an Azure user, I want to create custom insights in the Live AI Insights catalog using Azure AI Video Indexer.
+# customer intent: As an Azure user, I want to create custom insights in the live AI Insights catalog using Azure AI Video Indexer.
 ---
 
 # Live AI Insights catalog - Preview
@@ -28,15 +28,16 @@ Here's an example of a live stream with people and vehicle detection:
 
 ## Custom insights
 
-Customize object detection to meet your requirements without coding skills or training over large datasets. Use open vocabulary (OV) technology to define custom insights for object detection, then apply them to different cameras using presets.
+Customize AI insight detection to meet your requirements without coding skills or training over large datasets. Use open vocabulary (OV) technology to define custom insights for object detection and situation detection, then apply them to different cameras using presets.
 
-### Create a custom insight to detect objects
+### Create a custom AI insight to detect objects
 
 To create a new custom AI live insight in the VI portal:
 
 1. Go to your live extension -\> **Manage AI insight**.
 2. Move to **AI insights** tab.
 3. Select **Create custom insight**.
+1. Choose the type of AI insight you want to create: **Object** or **Situation**.
 4. Enter a name for the insight in the **AI insight name** field. The name isn't part of the training data.
 5. Choose the **Training data** of the model.  
     For **Text**: Add words that describe the object. Use only nouns like `dog` and `shopping cart`. Don't use adjectives and descriptive words like `big` or `empty`. For more examples, see the following [**Best Practices**](#best-practices-to-create-a-custom-insight) section.  

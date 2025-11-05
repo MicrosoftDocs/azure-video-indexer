@@ -4,7 +4,7 @@ description: Learn how to manage cameras for use with the Azure AI Video Indexer
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2025
+ms.date: 11/05/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 #customer intent: As a user of Azure AI Video Indexer, I want to manage live analysis cameras so that I can enable live video analysis capabilities.
@@ -14,18 +14,18 @@ ms.topic: how-to
 
 The Camera management page shows all cameras linked to your extension. For each camera, you can view and edit the following information:
 
-- **Streaming** - Shows streaming status. If the camera is streaming, you can view the stream in the VI Live player. It might take a few minutes for the stream to appear in the live player.
+- **Streaming** - Shows streaming status. If the camera is streaming, you can view the stream in the VI live player. It might take a few minutes for the stream to appear in the live player.
 - **Recording** - Shows recording status. When it’s recording, the camera stream is stored and playable in the VI video on demand (VOD) player.
 - **Retention policy** – Choose how long you want to keep the camera’s recording files. The default setting is 100 days. You can change it to any value between 1 to 999 days. To retain indefinitely, select **never delete my files**.
-  - If only streaming is selected, the video won't be retained and won't be playable after an hour. You can select Live and VOD streaming for a camera. In this scenario, you can play the camera in Live and VOD players.
+  - If only streaming is selected, the video won't be retained and won't be playable after an hour. You can select live and VOD streaming for a camera. In this scenario, you can play the camera in live and VOD players.
 - **Applied preset** - If you apply an AI preset to the camera, it displays the preset name. Otherwise, the **Add preset** option with a dropdown list of available presets is shown, where you can select one.
-  - In the portal, you can’t apply an AI preset when both VOD and Live streaming are set to **off**. Configure it using the Live Video Analysis API.
+  - In the portal, you can't apply an AI preset when both VOD and live streaming are set to **off**. Configure it using the Live Video Analysis API.
 - **Pin camera** – Indicates whether the camera appears on the gallery page. You can only select **Yes** for cameras with live streaming.
 - **Status** – The camera displays **Updating** when camera management tasks such as preset changes, streaming modifications, and recording adjustments are in progress.
 
 ## Create a preset
 
-To use Azure AI Video Indexer Live, create a preset and then apply it to your camera. A preset is a set of AI insights, either VI 1P insights or custom insights. For more information, see [Live AI insights catalog](live-ai-insights-catalog.md).
+To use Azure AI Video Indexer live, create a preset and then apply it to your camera. A preset is a set of AI insights, either VI 1P insights or custom insights. For more information, see [Live AI insights catalog](live-ai-insights-catalog.md).
 
 To create a preset in the VI portal:
 

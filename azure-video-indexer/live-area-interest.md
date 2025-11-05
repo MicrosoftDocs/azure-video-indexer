@@ -4,7 +4,7 @@ description: Learn how to mark an area of interest in live camera footage using 
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/30/2025
+ms.date: 11/05/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
 # customer intent: As an Azure Video Indexer user, I want to mark an area of interest in live camera footage to focus on specific regions for analysis.
@@ -78,7 +78,7 @@ The system defines *inside polygon* when the middle point of the bottom edge of 
 ## Limitations
 
 - You can add up to 10 shapes (lines or polygons) in one camera. Once you reach 10 shapes, the tool selector in the header becomes gray and disabled.
-- The shapes displayed on the spatial analysis tab in the Live Stream page are the ones that were applied on the camera when the page was loaded. When changes are made by another user after the page gets loaded, there could be a mismatch between the shapes shown on the player and the shapes visible in the tab. When this situation occurs, you see the change in the player. To view it in the tab, you need to refresh the page.
+- The shapes displayed on the spatial analysis tab in the live stream page are the ones that were applied on the camera when the page was loaded. When changes are made by another user after the page gets loaded, there could be a mismatch between the shapes shown on the player and the shapes visible in the tab. When this situation occurs, you see the change in the player. To view it in the tab, you need to refresh the page.
 - It might take a while for the shape to become visible on the player after its creation.
 
 ## Related content
