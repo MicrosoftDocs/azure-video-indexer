@@ -4,7 +4,7 @@ description: This article explains how to use Azure OpenAI textual summarization
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/06/2025
+ms.date: 08/18/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
@@ -27,7 +27,7 @@ Review the [overview of textual summarization](text-summarization-overview.md) a
 - Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service gets granted by application. For more information about how to apply for access to Azure OpenAI, see [Limited access for Azure OpenAI Service](https://aka.ms/oai/access).
 - An Azure OpenAI [GPT-35-Turbo, GPT-4, GPT-4o, or GPT-4O-mini](/azure/ai-services/openai/how-to/working-with-models?tabs=powershell) deployment. To benefit from keyframes based summaries, you must select an Azure OpenAI model that accepts visual input. For more information, see [Azure OpenAI Service models](/azure/ai-services/openai/concepts/models?tabs=python-secure%2Cglobal-standard%2Cstandard-chat-completions). 
 - The Prompt Shields for direct attacks (jailbreak) filter should be added to the deployment. Read more here: [Use content filters (preview) with Azure OpenAI Service](/azure/ai-services/openai/how-to/content-filters#understand-other-filters).
-- We recommended that you configure harmful content filters for categories such as “Violence,” “Hate,” “Sexual,” and “Self-harm.” While these filters aren't mandatory, you should set them to either "Medium" or "Low" to filter out content of at least the Medium level of harmfulness. This setting ensures that content with a harmfulness rating of medium or higher is blocked. For increased safety, you can opt for a stricter setting. Once configured, save the content filter settings.  
+- We recommended that you configure harmful content filters for categories such as "Violence," "Hate," "Sexual," and "Self-harm." While these filters aren't mandatory, you should set them to either "Medium" or "Low" to filter out content of at least the Medium level of harmfulness. This setting ensures that content with a harmfulness rating of medium or higher is blocked. For increased safety, you can opt for a stricter setting. Once configured, save the content filter settings.  
 
 - A video uploaded to your Azure AI Video Indexer library.
 
