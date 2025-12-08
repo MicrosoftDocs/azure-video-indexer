@@ -1,10 +1,11 @@
 ---
 title: Create custom insights in the live AI Insights catalog using Azure AI Video Indexer
 description: Learn how to create custom insights in the live AI Insights catalog using Azure AI Video Indexer.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 11/05/2025
+ms.date: 12/08/2025
+ai-usage: ai-assisted
 ms.service: azure-video-indexer
 ms.topic: how-to
 # customer intent: As an Azure user, I want to create custom insights in the live AI Insights catalog using Azure AI Video Indexer.
@@ -28,24 +29,32 @@ Here's an example of a live stream with people and vehicle detection:
 
 ## Custom insights
 
-Customize AI insight detection to meet your requirements without coding skills or training over large datasets. Use open vocabulary (OV) technology to define custom insights for object detection and situation detection, then apply them to different cameras using presets.
 
-### Create a custom AI insight to detect objects
+Customize AI insight detection to meet your requirements without coding skills or large datasets. Use open vocabulary (OV) technology to define custom insights for object or situation detection, then apply them to different cameras using presets.
 
-To create a new custom AI live insight in the VI portal:
+### Create a custom AI insight
 
-1. Go to your live extension -\> **Manage AI insight**.
-2. Move to **AI insights** tab.
-3. Select **Create custom insight**.
+You can create a custom AI live insight in the VI portal to detect either objects or situations. The steps are mostly the same for both types, with a few differences noted below.
+
+To create a new custom AI live insight:
+
+1. Go to your live extension → **Manage AI insight**.
+1. Move to the **AI insights** tab.
+1. Select **Create custom insight**.
 1. Choose the type of AI insight you want to create: **Object** or **Situation**.
-4. Enter a name for the insight in the **AI insight name** field. The name isn't part of the training data.
-5. Choose the **Training data** of the model.  
-    For **Text**: Add words that describe the object. Use only nouns like `dog` and `shopping cart`. Don't use adjectives and descriptive words like `big` or `empty`. For more examples, see the following [**Best Practices**](#best-practices-to-create-a-custom-insight) section.  
-    \- Or-  
-    For **Image**: Upload one image of the object.
-6.  Optionally, add a **description** to the insight. It isn't part of training data.
-7.  Review and then select **Create insight**.  
-    :::image type="content" source="./media/live-ai-insights-catalog/create-custom-ai-insight.png" border="true" alt-text="Screenshot of the Create a custom AI insight page." lightbox="./media/live-ai-insights-catalog/create-custom-ai-insight.png" :::
+1. Enter a name for the insight in the **AI insight name** field. The name isn't part of the training data.
+1. Choose the **Training data** for the model:
+     - **For Object detection**:
+         - **Text**: Add words that describe the object. Use only nouns like `dog` or `shopping cart`. Don’t use adjectives or descriptive words like `big` or `empty`. For more examples, see [Best Practices](#best-practices-to-create-a-custom-insight).
+         - **Image**: Upload one image of the object.
+
+        :::image type="content" source="./media/live-ai-insights-catalog/create-custom-ai-insight.png" border="true" alt-text="Screenshot of the Create a custom AI insight page." lightbox="./media/live-ai-insights-catalog/create-custom-ai-insight.png" :::
+
+     - **For Situation detection**:
+         - **Text**: Describe the situation you want to detect, such as `A long queue in a store`.
+         - Optionally, add negative examples in the fine-tune tab. Describe situations you don’t want to detect. Separate examples with commas.
+1. Optionally, add a **description** to the insight. It isn't part of the training data.
+1. Review and select **Create insight**.
 
 ## Best practices to create a custom insight
 
