@@ -8,7 +8,8 @@ ms.date: 12/08/2025
 ai-usage: ai-assisted
 ms.service: azure-video-indexer
 ms.topic: how-to
-appliesto: Azure AI Video Indexer enabled by Azure Arc
+appliesto: 
+- Azure AI Video Indexer enabled by Azure Arc
 # customer intent: As an Azure user, I want to create custom insights in the live AI Insights catalog using Azure AI Video Indexer.
 ---
 
