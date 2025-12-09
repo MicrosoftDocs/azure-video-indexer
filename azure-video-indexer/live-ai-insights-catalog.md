@@ -53,7 +53,6 @@ To create a new custom AI live insight:
      - **For Situation detection**:
          - **Text**: Describe the situation you want to detect, such as `A long queue in a store`.
          - Optionally, add negative examples in the fine-tune tab. Describe situations you don’t want to detect. Separate examples with commas.
-1. Optionally, add a **description** to the insight. It isn't part of the training data.
 1. Review and select **Create insight**.
 
 ## Best practices to create a custom insight
