@@ -14,7 +14,6 @@ ms.topic: release-notes
 
 # Azure AI Video Indexer release notes
 
-
 Revisit this page to view the latest updates.
 
 To stay up-to-date with the most recent Azure AI Video Indexer developments, this article provides you with information about:
@@ -26,13 +25,13 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 ## November 2025
 
-### Live video analysis (Preview) for Azure AI Video Indexer enabled by Azure Arc
+### Real-time analysis (Preview) for Azure AI Video Indexer enabled by Azure Arc
 
-Azure AI Video Indexer enabled by Azure Arc introduces live analysis, enabling real-time video intelligence at the edge. Extract actionable insights from live video streams with ultra-low latency and complete data privacy, keeping all video data on-premises. Azure Arc provides centralized management and scalability.
+Azure AI Video Indexer enabled by Azure Arc introduces real-time analysis, enabling real-time video intelligence at the edge. Extract actionable insights from live video streams with ultra-low latency and complete data privacy, keeping all video data on-premises. Azure Arc provides centralized management and scalability.
 
 For more information, see [Live video analysis overview](live-analysis.md).
 
-New capabilities in live analysis:
+New capabilities in real-time analysis:
 
 - **Agentic intelligence:** Modular, agent-based architecture with specialized AI agents for targeted insights. Prebuilt agents support tasks such as safety monitoring, anomaly detection, queue tracking, store management, and event investigation. The AI Video Assistant routes operational and investigative queries to the appropriate agent.
 - **Custom AI models with natural language:** Define custom detection logic using natural language to monitor specific objects or conditions. No technical expertise required. Describe what you want to detect and upload supporting images or negative examples to fine-tune detection. Available through both API and portal.
@@ -41,8 +40,8 @@ New capabilities in live analysis:
 
 For more information, see the following articles:
 
-- [Live video analysis overview](https://aka.ms/VI-LiveAnalysis-Overview)
-- [Manage live analysis extensions](https://aka.ms/VI-LiveAnalysis-QuickStart)
+- [Real-time video analysis overview](https://aka.ms/VI-LiveAnalysis-Overview)
+- [Manage real-time analysis extensions](https://aka.ms/VI-LiveAnalysis-QuickStart)
 - [Create custom insights](live-ai-insights-catalog.md)
 - [Create an event summary for camera footage](live-event-summary.md)
 

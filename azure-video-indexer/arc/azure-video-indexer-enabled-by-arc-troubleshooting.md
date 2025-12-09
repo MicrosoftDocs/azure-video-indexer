@@ -36,9 +36,9 @@ This behavior is expected. Media is streamed from the virtual machine (VM) using
 
 For example, you could use [ffmpeg](https://ffmpeg.org/) and [Shaka Packager](https://github.com/shaka-project/shaka-packager) to do the encoding preprocessing and the packaging of the encoded file that allows streaming of HLS/DASH protocols. When you use this method, the streamable files can be placed in the storage and the streaming endpoint just serve the files.
 
-## Troubleshoot live analysis issues
+## Troubleshoot real-time analysis issues
 
-Use the following sections to troubleshoot issues with Azure AI Video Indexer enabled by Arc for live video analysis.
+Use the following sections to troubleshoot issues with Azure AI Video Indexer enabled by Arc for real-time video analysis.
 
 ### Error connecting to the extension
 

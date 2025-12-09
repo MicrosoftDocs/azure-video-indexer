@@ -1,5 +1,5 @@
 ---
-title: Manage live analysis cameras in Azure AI Video Indexer
+title: Manage real-time analysis cameras in Azure AI Video Indexer
 description: Learn how to manage cameras for use with the Azure AI Video Indexer live extension.
 author: bandersmsft
 ms.author: banders
@@ -7,10 +7,10 @@ ms.collection: ce-skilling-ai-copilot
 ms.date: 11/05/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
-#customer intent: As a user of Azure AI Video Indexer, I want to manage live analysis cameras so that I can enable live video analysis capabilities.
+#customer intent: As a user of Azure AI Video Indexer, I want to manage real-time analysis cameras so that I can enable real-time video analysis capabilities.
 ---
 
-# Manage live analysis cameras - Preview
+# Manage real-time analysis cameras - Preview
 
 The Camera management page shows all cameras linked to your extension. For each camera, you can view and edit the following information:
 
@@ -25,7 +25,7 @@ The Camera management page shows all cameras linked to your extension. For each 
 
 ## Create a preset
 
-To use Azure AI Video Indexer live, create a preset and then apply it to your camera. A preset is a set of AI insights, either VI 1P insights or custom insights. For more information, see [Live AI insights catalog](live-ai-insights-catalog.md).
+To use Azure AI Video Indexer live, create a preset and then apply it to your camera. A preset is a set of AI insights, either VI 1P insights or custom insights. For more information, see [Real-time AI insights catalog](live-ai-insights-catalog.md).
 
 To create a preset in the VI portal:
 

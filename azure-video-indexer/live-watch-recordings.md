@@ -57,5 +57,5 @@ For more information about the presets available for uploaded videos, see [Suppo
 
 ## Related content
 
-- [Live video analysis in Azure AI Video Indexer](live-analysis.md)
-- [Manage live analysis cameras](live-manage-camera.md)
+- [Real-time video analysis in Azure AI Video Indexer](live-analysis.md)
+- [Manage real-time analysis cameras](live-manage-camera.md)

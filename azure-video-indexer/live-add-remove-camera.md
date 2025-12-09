@@ -7,17 +7,17 @@ ms.collection: ce-skilling-ai-copilot
 ms.date: 11/05/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
-#customer intent: As a user of Azure AI Video Indexer, I want to add or remove cameras for use with the live extension so that I can enable live video analysis capabilities.
+#customer intent: As a user of Azure AI Video Indexer, I want to add or remove cameras for use with the live extension so that I can enable real-time video analysis capabilities.
 ---
 
 # Add or remove cameras for use with the Azure AI Video Indexer live extension - Preview
 
-The Azure AI Video Indexer live extension allows you to connect cameras for live video analysis. This guide provides instructions about how to connect and remove cameras to the Azure AI Video Indexer live extension.
+The Azure AI Video Indexer live extension allows you to connect cameras for real-time video analysis. This guide provides instructions about how to connect and remove cameras to the Azure AI Video Indexer live extension.
 
 > [!IMPORTANT]
-> Before you begin, you must already have the Azure AI Video Indexer live extension deployed in your Azure environment. If you didn't deploy it, see the [Manage live analysis extensions](live-extension.md) article for instructions on creating and managing the extension.
+> Before you begin, you must already have the Azure AI Video Indexer live extension deployed in your Azure environment. If you didn't deploy it, see the [Manage real-time analysis extensions](live-extension.md) article for instructions on creating and managing the extension.
 
-Video Indexer live analysis can operate with or without the **Azure IoT Operations** (AIO) extension. For more information about AIO, see [Deploy Azure IoT Operations to an Arc-enabled Kubernetes cluster](/azure/iot-operations/deploy-iot-ops/howto-deploy-iot-operations).
+Video Indexer real-time analysis can operate with or without the **Azure IoT Operations** (AIO) extension. For more information about AIO, see [Deploy Azure IoT Operations to an Arc-enabled Kubernetes cluster](/azure/iot-operations/deploy-iot-ops/howto-deploy-iot-operations).
 
 ## Download the vi_cli.sh script file
 
@@ -325,5 +325,5 @@ Here are some other commands you can use with the vi_cli.sh script:
 ## Related content
 
 - [Live video analysis in Azure AI Video Indexer](live-analysis.md)
-- [Manage live analysis extensions](live-extension.md)
-- [Manage live analysis cameras](live-manage-camera.md)
+- [Manage real-time analysis extensions](live-extension.md)
+- [Manage real-time analysis cameras](live-manage-camera.md)

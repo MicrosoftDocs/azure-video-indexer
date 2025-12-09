@@ -1,26 +1,26 @@
 ---
-title: Manage live analysis extensions for Azure AI Video Indexer
-description: Learn how to create, update, or delete an Azure AI Video Indexer extension that supports live analysis.
+title: Manage real-time analysis extensions for Azure AI Video Indexer
+description: Learn how to create, update, or delete an Azure AI Video Indexer extension that supports real-time analysis.
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
 ms.date: 11/05/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
-#customer intent: As a user of Azure AI Video Indexer, I want to manage live analysis extensions so that I can enable live video analysis capabilities.
+#customer intent: As a user of Azure AI Video Indexer, I want to manage real-time analysis extensions so that I can enable real-time video analysis capabilities.
 ---
 
-# Manage live analysis extensions - Preview
+# Manage real-time analysis extensions - Preview
 
-To use live analysis, you must create and manage Azure AI Video Indexer extensions that support it. Use the following instructions to create, update, or delete a Video Indexer extension for live analysis.
+To use real-time analysis, you must create and manage Azure AI Video Indexer extensions that support it. Use the following instructions to create, update, or delete a Video Indexer extension for real-time analysis.
 
 >[!IMPORTANT]
-> - Before you begin, ensure that you meet all prerequisites documented in the [Live video analysis in Azure AI Video Indexer](live-analysis.md) article.
-> - After you create the extension using the information in this article, you connect cameras to it for live video analysis. For more information, see [Manage cameras with the Azure AI Video Indexer live extension](live-add-remove-camera.md).
+> - Before you begin, ensure that you meet all prerequisites documented in the [Real-time video analysis in Azure AI Video Indexer](live-analysis.md) article.
+> - After you create the extension using the information in this article, you connect cameras to it for real-time video analysis. For more information, see [Manage cameras with the Azure AI Video Indexer live extension](live-add-remove-camera.md).
 
 ## [Create in Azure portal](#tab/portal)
 
-To create a Video Indexer extension that supports live analysis in the Azure portal, follow these steps:
+To create a Video Indexer extension that supports real-time analysis in the Azure portal, follow these steps:
 
 1.  In the Azure portal, navigate to your Azure Arc-connected cluster.
 2.  From the menu, select **Extensions** > **+ Add** > **Azure AI Video Indexer Arc Extension**.
@@ -46,7 +46,7 @@ To create a Video Indexer extension that supports live analysis in the Azure por
 
 ## [Create with Bicep](#tab/bicep)
 
-Use the following Bicep template to create a Video Indexer extension that supports live analysis. The template includes all the necessary parameters and configurations to deploy the extension on your Azure Arc connected Kubernetes cluster. Name the file `vi.arcextension.template.bicep`.
+Use the following Bicep template to create a Video Indexer extension that supports real-time analysis. The template includes all the necessary parameters and configurations to deploy the extension on your Azure Arc connected Kubernetes cluster. Name the file `vi.arcextension.template.bicep`.
 
 ```bicep
 param accountId string = '<enter_vi_account_id>'
@@ -152,7 +152,7 @@ az deployment group create -g \<resource group\> --template-file \<template file
 
 ## [Create with CLI](#tab/cli)
 
-Use the Azure CLI to create a Video Indexer extension that supports live analysis. The following parameters are used as input to the extension creation command:
+Use the Azure CLI to create a Video Indexer extension that supports real-time analysis. The following parameters are used as input to the extension creation command:
 
 | **Parameter**                                    | **Type** | **Default value** | **Description**                                             |
 |--------------------------------------------------|----------|-------------------|-------------------------------------------------------------|
@@ -272,5 +272,5 @@ az k8s-extension delete --cluster-name <cluster-name> --cluster-type connectedcl
 
 ## Related content
 
-- [Live video analysis in Azure AI Video Indexer](live-analysis.md)
+- [Real-time video analysis in Azure AI Video Indexer](live-analysis.md)
 - [Add or remove cameras with the Azure AI Video Indexer live extension](live-add-remove-camera.md)

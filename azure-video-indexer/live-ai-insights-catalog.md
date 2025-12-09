@@ -8,12 +8,13 @@ ms.date: 12/08/2025
 ai-usage: ai-assisted
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto: Azure AI Video Indexer enabled by Azure Arc
 # customer intent: As an Azure user, I want to create custom insights in the live AI Insights catalog using Azure AI Video Indexer.
 ---
 
-# Live AI Insights catalog - Preview
+# Create custom insights in the live AI Insights catalog - Preview
 
-Azure AI Video Indexer enables live streaming with first party AI models that can detect vehicles and people as they appear. You can also create your own custom insights using natural language to detect any object that interests you in real time. To benefit from live detection, create a preset with the AI models you need and then apply it on the camera. For more information, see [Create a preset](live-manage-camera.md#create-a-preset) and [Apply a preset to a camera](live-manage-camera.md#apply-a-preset-to-a-camera) sections.
+Azure AI Video Indexer enables real-time streaming with first party AI models that can detect vehicles and people as they appear. You can also create your own custom insights using natural language to detect any object that interests you in real time. To benefit from real-time detection, create a preset with the AI models you need and then apply it on the camera. For more information, see [Create a preset](live-manage-camera.md#create-a-preset) and [Apply a preset to a camera](live-manage-camera.md#apply-a-preset-to-a-camera) sections.
 
 In the [Azure AI Video Indexer](https://www.videoindexer.ai/) website, you can view the AI insights catalog page to see all available insights.
 
@@ -21,9 +22,9 @@ In the [Azure AI Video Indexer](https://www.videoindexer.ai/) website, you can v
 
 ## People and vehicle detection
 
-Azure AI Video Indexer can detect people and vehicles in live video streams. It displays a bounding box around the detections and shows a real-time count of people and vehicles in the frame. Also, Azure AI Video Indexer can track objects within the camera and maintain a unique ID for each track. The ID is tracked through visual embeddings and location rather than with any personal biometric information. So, when an object leaves the frame and enters it again, it gets a new ID.
+Azure AI Video Indexer can detect people and vehicles in real-time video streams. It displays a bounding box around the detections and shows a real-time count of people and vehicles in the frame. Also, Azure AI Video Indexer can track objects within the camera and maintain a unique ID for each track. The ID is tracked through visual embeddings and location rather than with any personal biometric information. So, when an object leaves the frame and enters it again, it gets a new ID.
 
-Here's an example of a live stream with people and vehicle detection:
+Here's an example of a real-time stream with people and vehicle detection:
 
 :::image type="content" source="./media/live-ai-insights-catalog/people-vehicle-detection.png" border="true" alt-text="Screenshot of a live stream with people and vehicle detection." lightbox="./media/live-ai-insights-catalog/people-vehicle-detection.png" :::
 
@@ -34,9 +35,9 @@ Customize AI insight detection to meet your requirements without coding skills o
 
 ### Create a custom AI insight
 
-You can create a custom AI live insight in the VI portal to detect either objects or situations. The steps are mostly the same for both types, with a few differences noted below.
+You can create a custom AI real-time insight in the VI portal to detect either objects or situations. The steps are mostly the same for both types, with a few differences noted below.
 
-To create a new custom AI live insight:
+To create a new custom AI real-time insight:
 
 1. Go to your live extension → **Manage AI insight**.
 1. Move to the **AI insights** tab.
@@ -74,7 +75,7 @@ To create a new custom AI live insight:
 
 ## Limitations
 
-The following limitations apply to all live AI insights (people, vehicle, and custom):
+The following limitations apply to all real-time AI insights (people, vehicle, and custom):
 
 - The object tracker is limited to 150 concurrent tracks per stream.
 - The confidence of the track as shown in the UI reflects the first occurrence of the track.
