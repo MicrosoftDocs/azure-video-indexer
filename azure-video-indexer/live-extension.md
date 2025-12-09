@@ -36,6 +36,8 @@ Before you begin, review the following prerequisites to ensure that you meet the
 
 We recommend enabling automatic version upgrade for your Arc-enabled Kubernetes cluster extension, so that you always have the latest security patches and new capabilities. For more information, see [Deploy and manage an Azure Arc-enabled Kubernetes cluster extension](/azure/azure-arc/kubernetes/extensions#optional-parameters).
 
+## Deploy the Azure AI Video Indexer extension
+
 ## [Create in Azure portal](#tab/portal)
 
 To create a Video Indexer extension that supports real-time analysis in the Azure portal, follow these steps:
@@ -244,7 +246,7 @@ az k8s-extension create --name videoindexer \
     --config "storage.storageClass=azurefile-csi" 
 ```
 
-## [Update with CLI](#tab/updatecli)
+---
 
 ### Update Azure Arc Video Indexer extension using CLI
 
@@ -263,7 +265,7 @@ az k8s-extension update --name $extension_name --extension-type "Microsoft.video
   --config "videoIndexer.endpointUri=$endpoint"
 ```
 
-## [Delete with CLI](#tab/deletecli)
+## [Delete Azure Arc Video Indexer extension using CLI
 
 Use the following parameters as input to the extension delete command:
 
@@ -285,8 +287,6 @@ Run the following command to delete a VI live extension:
 ```azurecli
 az k8s-extension delete --cluster-name <cluster-name> --cluster-type connectedclusters --resource-group <resource-group> --name <extension-name> --yes
 ```
-
----
 
 ## Related content
 
