@@ -1,10 +1,10 @@
 ---
 title: Azure AI Video Indexer real-time analysis overview - Preview
 description: Overview of real-time analysis capabilities in Azure AI Video Indexer, including real-time video indexing and insights.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 11/06/2025
+ms.date: 12/09/2025
 ms.service: azure-video-indexer
 ms.topic: concept-article
 # customer intent: As a user of Azure AI Video Indexer, I want to understand the real-time analysis capabilities, including real-time video indexing and insights, so that I can utilize these features for live events and broadcasts.
@@ -16,12 +16,11 @@ Azure AI Video Indexer enabled by Arc (VI), as part of an adaptive cloud approac
 
 The service is easy to evaluate and integrate. Use the web portal or REST API to add Azure AI Video Indexer to your workflows and systems.
 
+- You don't pay extra for real-time video analysis while it's in preview.
+- Real-time analysis was validated on Azure Local but is compatible with any Kubernetes infrastructure.
+
 > [!IMPORTANT]
 > To deploy the Azure AI real-time video indexer extension, get your Azure subscription ID approved in advance. You can sign up at [Azure AI Video Indexer Enabled by Arc - real-time analysis early access program](https://aka.ms/vi-live-register).
-
-> [!NOTE]
-> - You don't pay extra for real-time video analysis while it's in preview.
-> - Real-time analysis was validated on Azure Local but is compatible with any Kubernetes infrastructure.
 
 ## What can I do with real-time analysis?
 
@@ -57,27 +56,6 @@ The following limitations apply to the real-time analysis feature:
 - Occlusions might reduce results quality and cause fragmentation in object tracking.
 - The detector can miss or misclassify objects when viewed from an unusual point of view or extreme angles.
 - The confidence score of the detection as appears in the UI represents its first appearance. Along the track, the confidence can change, and is only shown in the API.
-
-## Prerequisites
-
-Before you begin, review the following prerequisites to ensure that you meet them.
-
-- You must have an **Azure AI Video Indexer** account. For more information, see the [Create Video Indexer account](create-account.md) tutorial.
-- You must have a running **Kubernetes (K8s) cluster connected to Azure Arc**. For more information, see [Connect an existing Kubernetes cluster](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli#connect-an-existing-kubernetes-cluster). Real-time analysis was validated on Azure Local but is compatible with any Kubernetes infrastructure that supports the following requirements.
-  - Read-write-many (RWX) storage class.
-  - The ingress controller must allow outside clients to connect to the application.
-  - At least one NVIDIA GPU enabled node in the cluster.
-  - Requirements for supported Kubernetes (K8s) distributions include:
-    - [AKS on Azure Local enabled by Arc](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/AzureLocal)
-    - [K8s on a Linux machine](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc)
-    - [AKS on cloud](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks)
-- Make sure you have a valid **RTSP stream**. You need the RTSP URL.
-- Optionally, you can have an **Azure IoT for Operations extension** deployed to an Azure Arc Kubernetes cluster. The installation of both AIO and VI extensions must be in the same cluster.
-- You must have the latest version of Azure CLI. However, you can skip if you're using Azure cloud shell.
-- As noted previously, your **Azure subscription ID** must already be approved. If not already approved, you can sign up at [Application for Azure AI Video Indexer Enabled by Arc - real-time video analysis](https://aka.ms/vi-live-register).
-
-> [!NOTE]
-> We recommend enabling automatic version upgrade for your Arc-enabled Kubernetes cluster extension, so that you always have the latest security patches and new capabilities. For more information, see [Deploy and manage an Azure Arc-enabled Kubernetes cluster extension](/azure/azure-arc/kubernetes/extensions#optional-parameters).
 
 ## Hardware requirements
 
