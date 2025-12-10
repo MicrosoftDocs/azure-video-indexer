@@ -38,6 +38,8 @@ We recommend enabling automatic version upgrade for your Arc-enabled Kubernetes 
 
 ## Deploy the Azure AI Video Indexer extension
 
+Choose the method you want to use to create the Azure AI Video Indexer extension. Create the extension by using the Azure portal, with Azure CLI, or by using a Bicep template, depending on your preference and environment.
+
 ## [Create in Azure portal](#tab/portal)
 
 To create a Video Indexer extension that supports real-time analysis in the Azure portal, follow these steps:
@@ -248,7 +250,7 @@ az k8s-extension create --name videoindexer \
 
 ---
 
-### Update Azure Arc Video Indexer extension using CLI
+## Update Azure Arc Video Indexer extension using CLI
 
 To update your extension, add any of the parameters from the **Create with CLI** tab with their new values if you want to change them in the following example.
 
@@ -265,7 +267,7 @@ az k8s-extension update --name $extension_name --extension-type "Microsoft.video
   --config "videoIndexer.endpointUri=$endpoint"
 ```
 
-## [Delete Azure Arc Video Indexer extension using CLI
+## Delete Azure Arc Video Indexer extension using CLI
 
 Use the following parameters as input to the extension delete command:
 
