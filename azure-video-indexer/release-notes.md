@@ -4,7 +4,7 @@ description: Stay updated on the latest features, bug fixes, and known issues. E
 author: cwatson-cat
 ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 12/09/2025
+ms.date: 12/10/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ai-usage: ai-assisted
@@ -35,7 +35,6 @@ New capabilities in real-time analysis:
 
 - **Agentic intelligence:** Modular, agent-based architecture with specialized AI agents for targeted insights. Prebuilt agents support tasks such as safety monitoring, anomaly detection, queue tracking, store management, and event investigation. The AI Video Assistant routes operational and investigative queries to the appropriate agent.
 - **Custom AI models with natural language:** Define custom detection logic using natural language to monitor specific objects or conditions. No technical expertise required. Describe what you want to detect and upload supporting images or negative examples to fine-tune detection. Available through both API and portal.
-- **Conversational chat interface:** The new AI Video Assistant lets you interact with live video data using natural language queries. Ask operational or security-related questions and receive clear, context-aware responses from specialized agents. No need to sift through hours of footage or write complex queries.
 - **Automated video summarization:** Automatically generate end-of-shift or event summaries with focused insights, to help teams quickly review key events and operational outcomes.
 
 For more information, see the following articles:
