@@ -1,6 +1,6 @@
 ---
 title: Manage real-time analysis cameras in Azure AI Video Indexer
-description: Learn how to manage cameras for use with the Azure AI Video Indexer live extension.
+description: Learn how to manage cameras for use with the Azure AI Video Indexer extension for real-time analysis.
 author: cwatson-cat
 ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
@@ -25,11 +25,11 @@ The Camera management page shows all cameras linked to your extension. For each 
 
 ## Create a preset
 
-To use Azure AI Video Indexer live, create a preset and then apply it to your camera. A preset is a set of AI insights, either VI 1P insights or custom insights. For more information, see [Real-time AI insights catalog](live-ai-insights-catalog.md).
+To use Azure AI Video Indexer real-time, create a preset and then apply it to your camera. A preset is a set of AI insights, either VI 1P insights or custom insights. For more information, see [Real-time AI insights catalog](live-ai-insights-catalog.md).
 
 To create a preset in the VI portal:
 
-1. Go to your live extension > **Manage AI insights**.
+1. Go to your VI extension > **Manage AI insights**.
 1. Select the **Presets** tab.
 1. Select **+ Create preset**.
 1. Enter the preset name.
@@ -46,13 +46,13 @@ View all created presets in your Arc extension by selecting **Manage AI insights
 
 ## Apply a preset to a camera
 
-After you create a preset, apply it to the camera to get live insights. A camera can have only one preset applied at a time, which you can change instantly. Applying a preset can take a few minutes.
+After you create a preset, apply it to the camera to get real-time insights. A camera can have only one preset applied at a time, which you can change instantly. Applying a preset can take a few minutes.
 
 The preset insights run on the camera even when it's not streaming or recording. To access insights, see the Get Live Insights by DateTime API.
 
 ### Apply from the pinned cameras tab
 
-1. Go to the live extension > **Pinned cameras** tab.
+1. Go to the VI extension > **Pinned cameras** tab.
 1. Select the ellipsis (**…**) located in the bottom right corner of the camera view > **+ Apply preset**.
 1. The **Apply preset on camera** window opens. Select a preset from the list and then select **Apply preset**.
 
@@ -64,7 +64,7 @@ The preset insights run on the camera even when it's not streaming or recording.
 
 ### Apply from the camera management tab
 
-1. Go to the live extension > **Camera management** tab.
+1. Go to the VI extension > **Camera management** tab.
 2. Refer to the **Applied preset** column > select **+ Apply preset**.  
   If no preset is applied to the camera, you see the **+ Apply preset** button. Otherwise, you see the name of the applied preset.
 3. The **Apply preset on camera** window opens. Select a preset from the list and then select **Apply preset**.  
@@ -76,7 +76,7 @@ If a preset was applied to the camera, you can update it as needed. Changing the
 
 ### Change from the pinned cameras tab
 
-1. Go to your live extension > **Pinned cameras** tab.
+1. Go to your VI extension > **Pinned cameras** tab.
 2. Select **change preset** in the bottom of the camera view.
 3. The **Change preset** window opens. Select a preset from the list and then select **Apply preset**.
 
@@ -88,7 +88,7 @@ If a preset was applied to the camera, you can update it as needed. Changing the
 
 ### Change from the camera management tab
 
-1. Go to the live extension > **Camera management** tab.
+1. Go to the VI extension > **Camera management** tab.
 2. Refer to the **Applied preset** column > select **view preset**.
 3. The **Change preset** window opens. Select a preset from the list and then select **Apply preset**.
 

@@ -40,7 +40,7 @@ You can create a custom AI real-time insight in the VI portal to detect either o
 
 To create a new custom AI real-time insight:
 
-1. Go to your live extension → **Manage AI insight**.
+1. Go to your VI extension → **Manage AI insight**.
 1. Move to the **AI insights** tab.
 1. Select **Create custom insight**.
 1. Choose the type of AI insight you want to create: **Object** or **Situation**.
