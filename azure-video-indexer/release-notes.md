@@ -33,10 +33,13 @@ For more information, see [Live video analysis overview](live-analysis.md).
 
 New capabilities in real-time analysis:
 
-- **Agentic intelligence:** Modular, agent-based architecture with specialized AI agents for targeted insights. Prebuilt agents support tasks such as safety monitoring, anomaly detection, queue tracking, store management, and event investigation. The AI Video Assistant routes operational and investigative queries to the appropriate agent.
-- **Custom AI models with natural language:** Define custom detection logic using natural language to monitor specific objects or conditions. No technical expertise required. Describe what you want to detect and upload supporting images or negative examples to fine-tune detection. Available through both API and portal.
-- **Conversational chat interface:** The new AI Video Assistant lets you interact with live video data using natural language queries. Ask operational or security-related questions and receive clear, context-aware responses from specialized agents. No need to sift through hours of footage or write complex queries.
-- **Automated video summarization:** Automatically generate end-of-shift or event summaries with focused insights, to help teams quickly review key events and operational outcomes.
+- **Agentic intelligence:** Modular, agent-based architecture with specialized AI agents trained to detect specific events. Prebuilt agents support detections such as safety hazards, customer experience issues, or operational anomalies. Use the API to trigger an agent and provide instructions for the events you want to detect. You don’t need to know which agent is best for the task - VI routes the queries to the appropriate agent. 
+
+- **Custom AI insights with natural language:** Define custom detection logic using natural language to monitor specific objects or situations. No technical expertise required. Describe what you want to detect and upload supporting images or negative examples to fine-tune detection. Available through both API and portal.
+
+- **Event summarization:** Generate end-of-shift summaries with your own focus, to get a textual summary from your video footage. Help teams quickly review key events and operational outcomes.
+
+- **Area of interest:** Define specific regions within the video frame where you want to focus on the analysis.
 
 For more information, see the following articles:
 
@@ -44,6 +47,8 @@ For more information, see the following articles:
 - [Manage real-time analysis extensions](https://aka.ms/VI-LiveAnalysis-QuickStart)
 - [Create custom insights](live-ai-insights-catalog.md)
 - [Create an event summary for camera footage](live-event-summary.md)
+
+- [https://review.learn.microsoft.com/en-us/azure/azure-video-indexer/live-area-interest?branch=main](/azure/azure-video-indexer/live-area-interest?branch=main)
 
 ## May 2025
 
