@@ -49,7 +49,7 @@ To create a new custom AI real-time insight:
 1. Enter a name for the insight in the **AI insight name** field. The name isn't part of the training data.
 1. For object detection:
    - **Detected object**: Describe the object to detect. Use only nouns like `dog` or `shopping cart`. Don’t use adjectives or descriptive words like `big` or `empty`. For more examples, see [Best Practices](#best-practices-to-create-a-custom-insight).
-   - **Image**: Upload up to 10 images of the object.
+   - **Object example images**: Upload up to 10 images of the object.
    :::image type="content" source="./media/live-ai-insights-catalog/create-custom-ai-insight.png" border="true" alt-text="Screenshot of the create custom AI insight page for object detection where you add a name, describe the object, and upload images."  :::
    - Select the **Fine-tune (optional)** tab to add negative examples.
       - Add words to name objects you don't want to detect. Separate the words by commas.
@@ -103,7 +103,7 @@ Use these guidelines to define situation detection insights that help the model 
 
 ### Custom insight limitations
 
-Be aware of these limitations when you create custom insights to set the right expectations for detection results:
+Be aware of these limitations when you create custom insights:
 
 - If you create a custom insights from an image, the detection doesn't identify objects by their color. For example, an image of a yellow vest results in detection for all vests, without specifying the yellow vest.
 - To define a situation insight, you cannot use images. 
