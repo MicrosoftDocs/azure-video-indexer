@@ -47,8 +47,7 @@ For more information, see the following articles:
 - [Manage real-time analysis extensions](https://aka.ms/VI-LiveAnalysis-QuickStart)
 - [Create custom insights](live-ai-insights-catalog.md)
 - [Create an event summary for camera footage](live-event-summary.md)
-
-- [https://review.learn.microsoft.com/en-us/azure/azure-video-indexer/live-area-interest?branch=main](/azure/azure-video-indexer/live-area-interest?branch=main)
+- [Mark an area of interest](live-area-interest.md)
 
 ## May 2025
 
