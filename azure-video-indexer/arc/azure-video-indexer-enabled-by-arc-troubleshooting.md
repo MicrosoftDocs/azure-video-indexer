@@ -162,7 +162,7 @@ Use the following sections to troubleshoot common camera failure situations.
 
 #### Too many cameras
 
-Each GPU type supports a different number of cameras. If too many cameras are connected, the GPU might not be able to handle the extra streams. For more information about the limits of each GPU, see [Connect cameras to the VI extension](../live-add-remove-camera.md#connect-cameras-to-the-live-extension).
+Each GPU type supports a different number of cameras. If too many cameras are connected, the GPU might not be able to handle the extra streams. For more information about the limits of each GPU, see [Connect cameras to the VI extension](../live-add-remove-camera.md#connect-cameras-to-the-vi-extension).
 
 ### When all cameras are in a failed state
 

@@ -49,10 +49,9 @@ To create a new custom AI real-time insight:
    - **For Object detection**:
          - **Text**: Add words that describe the object. Use only nouns like `dog` or `shopping cart`. Don’t use adjectives or descriptive words like `big` or `empty`. For more examples, see [Best Practices](#best-practices-to-create-a-custom-insight).
       - **Image**: Upload up to 10 images of the object.
-            
       - Optionally, add negative examples in the fine-tune tab. **Text**: Add words to name objects you don't want to detect. Separate the words by commas. **Image**: Upload up to 10 images that represent objects you do not want to detect.
             
-              :::image type="content" source="./media/live-ai-insights-catalog/create-custom-ai-insight.png" border="true" alt-text="Screenshot of the Create a custom AI insight page." lightbox="./media/live-ai-insights-catalog/create-custom-ai-insight.png" :::
+         :::image type="content" source="./media/live-ai-insights-catalog/create-custom-ai-insight.png" border="true" alt-text="Screenshot of the Create a custom AI insight page." lightbox="./media/live-ai-insights-catalog/create-custom-ai-insight.png" :::
 
      - **For Situation detection**:
          - **Text**: Describe the situation you want to detect, such as `A long queue in a store`.
@@ -61,7 +60,11 @@ To create a new custom AI real-time insight:
 
 ## Best practices to create a custom insight
 
-**Object:**
+Use the following best practices to help you define custom AI insights that deliver accurate, reliable detection results. The tips below cover how to choose effective training data, avoid common mistakes, and get the most from object and situation detection.
+
+### Object detection
+
+Follow these tips to define object detection insights that help the model accurately identify and track specific items in your video streams:
 
 - Use only nouns like `dog` or `shopping cart`.
 - Don't use adjectives or descriptive words like `big` or `empty`.
@@ -80,7 +83,9 @@ To create a new custom AI real-time insight:
 
 - Use good quality images (i.e., avoid using low quality, pixelated, or blurry images).
 
-**Situation:**
+### Situation detection
+
+Use these guidelines to define situation detection insights that help the model recognize specific scenarios or conditions in your video streams:
 
 - Use this type of insight to describe the situation of the frame. For example, “A messy store”, “a fire in the apartment”. 
 
@@ -96,7 +101,9 @@ To create a new custom AI real-time insight:
 
 ### Custom insight limitations
 
-- Creating custom insights from an image doesn't identify objects by their color. For example, an image of a yellow vest results in detection for all vests, without specifying the yellow vest.
+Be aware of these limitations when you create custom insights to set the right expectations for detection results:
+
+- If you create a custom insights from an image, the detection doesn't identify objects by their color. For example, an image of a yellow vest results in detection for all vests, without specifying the yellow vest.
 - To define a situation insight, you cannot use images. 
 
 ## Limitations
