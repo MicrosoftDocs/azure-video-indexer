@@ -44,18 +44,20 @@ To create a new custom AI real-time insight:
 1. Move to the **AI insights** tab.
 1. Select **Create custom insight**.
 1. Choose the type of AI insight you want to create: **Object** or **Situation**.
-1. Enter a name for the insight in the **AI insight name** field. The name isn't part of the training data.
-1. Choose the **Training data** for the model:
-   - **For Object detection**:
-         - **Text**: Add words that describe the object. Use only nouns like `dog` or `shopping cart`. Don’t use adjectives or descriptive words like `big` or `empty`. For more examples, see [Best Practices](#best-practices-to-create-a-custom-insight).
-      - **Image**: Upload up to 10 images of the object.
-      - Optionally, add negative examples in the fine-tune tab. **Text**: Add words to name objects you don't want to detect. Separate the words by commas. **Image**: Upload up to 10 images that represent objects you do not want to detect.
-            
-         :::image type="content" source="./media/live-ai-insights-catalog/create-custom-ai-insight.png" border="true" alt-text="Screenshot of the Create a custom AI insight page." lightbox="./media/live-ai-insights-catalog/create-custom-ai-insight.png" :::
 
-     - **For Situation detection**:
-         - **Text**: Describe the situation you want to detect, such as `A long queue in a store`.
-         - Optionally, add negative examples in the fine-tune tab. Describe situations you don’t want to detect. Separate examples with commas.
+   :::image type="content" source="media/live-ai-insights-catalog/choose-custom-ai-insight-type.png" alt-text="Screenshot of create a custom AI insight page with option to select object or situation detection.":::
+1. Enter a name for the insight in the **AI insight name** field. The name isn't part of the training data.
+1. For object detection:
+   - **Detected object**: Describe the object to detect. Use only nouns like `dog` or `shopping cart`. Don’t use adjectives or descriptive words like `big` or `empty`. For more examples, see [Best Practices](#best-practices-to-create-a-custom-insight).
+   - **Image**: Upload up to 10 images of the object.
+   :::image type="content" source="./media/live-ai-insights-catalog/create-custom-ai-insight.png" border="true" alt-text="Screenshot of the create custom AI insight page for object detection where you add a name, describe the object, and upload images."  :::
+   - Select the **Fine-tune (optional)** tab to add negative examples.
+      - Add words to name objects you don't want to detect. Separate the words by commas.
+      - Upload up to 10 images that represent objects you do not want to detect.
+1. For situation detection:
+   - **Detected situation**: Describe the situation you want to detect, such as `A long queue in a store`.
+      :::image type="content" source="media/live-ai-insights-catalog/create-custom-ai-insight-situation.png" alt-text="Screenshot of the basic settings tab for situation type custom insight where you describe what you want to detect.":::
+   - Select the **Fine-tune (optional)** tab to add negative examples. Describe situations you don’t want to detect. Separate examples with commas.
 1. Review and select **Create insight**.
 
 ## Best practices to create a custom insight
