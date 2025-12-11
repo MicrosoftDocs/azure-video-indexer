@@ -250,7 +250,7 @@ az k8s-extension create --name videoindexer \
 
 ---
 
-## Update Azure Arc Video Indexer extension using CLI
+## Update VI extension using CLI
 
 To update your extension, add any of the parameters from the **Create with CLI** tab with their new values if you want to change them in the following example.
 
@@ -267,7 +267,7 @@ az k8s-extension update --name $extension_name --extension-type "Microsoft.video
   --config "videoIndexer.endpointUri=$endpoint"
 ```
 
-## Delete Azure Arc Video Indexer extension using CLI
+## Delete VI extension using CLI
 
 Use the following parameters as input to the extension delete command:
 
