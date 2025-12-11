@@ -4,7 +4,7 @@ description: Stay updated on the latest features, bug fixes, and known issues. E
 author: cwatson-cat
 ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 12/10/2025
+ms.date: 12/11/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ai-usage: ai-assisted
@@ -14,8 +14,6 @@ ms.topic: release-notes
 
 # Azure AI Video Indexer release notes
 
-Revisit this page to view the latest updates.
-
 To stay up-to-date with the most recent Azure AI Video Indexer developments, this article provides you with information about:
 
 * The latest releases
@@ -23,9 +21,11 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Bug fixes
 * Deprecated functionality
 
+Revisit this page to view the latest updates.
+
 ## November 2025
 
-### Real-time analysis (Preview) for Azure AI Video Indexer enabled by Azure Arc
+### Real-time analysis (preview) for Azure AI Video Indexer enabled by Azure Arc
 
 Azure AI Video Indexer enabled by Azure Arc introduces real-time analysis, enabling real-time video intelligence at the edge. Extract actionable insights from live video streams with ultra-low latency and complete data privacy, keeping all video data on-premises. Azure Arc provides centralized management and scalability.
 
@@ -33,7 +33,7 @@ For more information, see [Live video analysis overview](live-analysis.md).
 
 New capabilities in real-time analysis:
 
-- **Agentic intelligence:** Modular, agent-based architecture with specialized AI agents trained to detect specific events. Prebuilt agents support detections such as safety hazards, customer experience issues, or operational anomalies. Use the API to trigger an agent and provide instructions for the events you want to detect. You don’t need to know which agent is best for the task - VI routes the queries to the appropriate agent. 
+- **Agentic intelligence:** Modular, agent-based architecture with specialized AI agents trained to detect specific events. Prebuilt agents support detections such as safety hazards, customer experience issues, or operational anomalies. Use the API to trigger an agent and provide instructions for the events you want to detect. You don’t need to know which agent is best for the task. Azure AI Video Indexer routes the queries to the appropriate agent.
 
 - **Custom AI insights with natural language:** Define custom detection logic using natural language to monitor specific objects or situations. No technical expertise required. Describe what you want to detect and upload supporting images or negative examples to fine-tune detection. Available through both API and portal.
 
@@ -43,8 +43,8 @@ New capabilities in real-time analysis:
 
 For more information, see the following articles:
 
-- [Real-time video analysis overview](https://aka.ms/VI-LiveAnalysis-Overview)
-- [Manage real-time analysis extensions](https://aka.ms/VI-LiveAnalysis-QuickStart)
+- [Real-time video analysis overview](live-analysis.md)
+- [Manage real-time analysis extensions](live-extension.md)
 - [Create custom insights](live-ai-insights-catalog.md)
 - [Create an event summary for camera footage](live-event-summary.md)
 - [Mark an area of interest](live-area-interest.md)
