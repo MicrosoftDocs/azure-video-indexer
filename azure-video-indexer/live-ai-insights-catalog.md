@@ -46,11 +46,13 @@ To create a new custom AI real-time insight:
 1. Choose the type of AI insight you want to create: **Object** or **Situation**.
 1. Enter a name for the insight in the **AI insight name** field. The name isn't part of the training data.
 1. Choose the **Training data** for the model:
-     - **For Object detection**:
+   - **For Object detection**:
          - **Text**: Add words that describe the object. Use only nouns like `dog` or `shopping cart`. Don’t use adjectives or descriptive words like `big` or `empty`. For more examples, see [Best Practices](#best-practices-to-create-a-custom-insight).
-         - **Image**: Upload one image of the object.
-
-        :::image type="content" source="./media/live-ai-insights-catalog/create-custom-ai-insight.png" border="true" alt-text="Screenshot of the Create a custom AI insight page." lightbox="./media/live-ai-insights-catalog/create-custom-ai-insight.png" :::
+      - **Image**: Upload up to 10 images of the object.
+            
+      - Optionally, add negative examples in the fine-tune tab. **Text**: Add words to name objects you don't want to detect. Separate the words by commas. **Image**: Upload up to 10 images that represent objects you do not want to detect.
+            
+              :::image type="content" source="./media/live-ai-insights-catalog/create-custom-ai-insight.png" border="true" alt-text="Screenshot of the Create a custom AI insight page." lightbox="./media/live-ai-insights-catalog/create-custom-ai-insight.png" :::
 
      - **For Situation detection**:
          - **Text**: Describe the situation you want to detect, such as `A long queue in a store`.
@@ -59,20 +61,43 @@ To create a new custom AI real-time insight:
 
 ## Best practices to create a custom insight
 
+**Object:**
+
 - Use only nouns like `dog` or `shopping cart`.
 - Don't use adjectives or descriptive words like `big` or `empty`.
 - You can include up to 10 words for a single custom insight. They're added in the **Training data**" section – **Text**. Use these words to represent various terms for the same object to ensure comprehensive detection. For example, to detect computers, use terms such as `computer`, `laptop`, and `PC`. All the terms create one class of detection and tracking. They're called by the value specified in **AI Insight Name**.
+- If using as a training data a high-level category word such as “vehicle”, it is useful to add to the training data more specific words, such as “car”, “automobile”, etc. 
+
+- You can include up to 10 images for a single custom insight in addition or instead of the text section. They’re added to the Training data section – Images. Use these images to represent various visual features of the same object to ensure comprehensive detection. 
+
+- Optionally, use negative examples (text and/or images) to improve the detection results or get finer results. For example, if you’d like to detect all vehicles that are not SUVs, use the positive example “vehicle” and the negative example “SUV”. 
+
 - The AI Insight Name isn't automatically added to the training data. For example, if you called the insight `computer`, you should also add that word to the training data section – **Text**.
 - Create separate insights for different objects. For example, don't create a single "Animal detection" insight and then attempt to include 10 different animals that you want to detect. Instead, create a different insight for each animal. For example: Cow detection - `cow`, Cat detection - `cat`, Elephant detection - `elephant`, and Giraffe detection - `giraffe`.
 - Avoid using words that can refer to two different objects like `bat` or `nail`.
 - Avoid using logical words like `and`, `or`, and `not`. Enter each word separately, unless the object itself includes two words. For example, `shopping cart`.
-- Use an image that includes only the object you would like to detect.
-- Use a good quality image.
+- Use images that include only the object you would like to detect.
+
+- Use good quality images (i.e., avoid using low quality, pixelated, or blurry images).
+
+**Situation:**
+
+- Use this type of insight to describe the situation of the frame. For example, “A messy store”, “a fire in the apartment”. 
+
+- Use concise descriptions. 
+
+- Avoid using logical words like and, or, and not. 
+
+- Consider starting the text description with “a photo of a...”, if you don’t get the desired results. 
+
+- Use environmental details to enrich your description. For example, use “a photo of a shop with customers reaching for a product from a high shelf” instead of just “a customer reaching for a product from a shelf”. 
+
+- Optionally, use negative text examples to improve or get finer results. For example, if you’d like to detect a non-empty shop, use the positive example “a photo of a shop with customers”, and the negative example “a photo of an empty shop”. 
 
 ### Custom insight limitations
 
 - Creating custom insights from an image doesn't identify objects by their color. For example, an image of a yellow vest results in detection for all vests, without specifying the yellow vest.
-- You can't add an image and text as training data for the same insight.
+- To define a situation insight, you cannot use images. 
 
 ## Limitations
 
