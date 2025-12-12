@@ -66,7 +66,7 @@ Minimum:
 | **VM count** | **CPU (per node)** | **RAM (per node)** | **Storage** | **GPU**    |
 |--------------|-----------------------|-----------------------|-------------|------------|
 | 1            | 32 cores              | 64 GB                 | 200 GB      |            |
-| 1            | 16 cores              | 64 GB                 | 200 GB      | NVIDIA A10 |
+| 1            | 16 cores              | 64 GB                 | 200 GB      | NVIDIA A2 |
 
 Recommended
 
@@ -88,8 +88,7 @@ Recommended
 
 - Supported GPUs are NVIDIA A2, A10, V100, A100, and H100.
 - The minimum required shared storage is 50 GB for one camera per day. This estimation is based on the scenario where both recordings and insights are saved.
-- Use NVIDIA H100 GPU in your virtual machines (VM).
-- To upload video media files to the VI extension, add another virtual machine (VM) without a GPU, as specified in [Minimum hardware requirements for VI enabled by Arc](arc/azure-video-indexer-enabled-by-arc-overview.md#minimum-hardware-requirements).
+- To upload video media files to the live extension, add another virtual machine (VM) without a GPU, as specified in [Minimum hardware requirements for VI enabled by Arc](arc/azure-video-indexer-enabled-by-arc-overview.md#minimum-hardware-requirements).
 - Using event summary for recorded media files requires an extra VM with GPU.
 
 ### Minimum software requirements
