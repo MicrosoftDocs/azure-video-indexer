@@ -54,9 +54,9 @@ You can use both Video Indexer enabled by Azure Arc and cloud-based Video Indexe
 
 **Live video streams**
 
-You can integrate the live analysis central video AI service with camera live streaming to use AI-based detection from different locations. This service analyzes live and recorded videos, turning raw footage into actionable insights.
+You can integrate the real-time analysis central video AI service with camera live streaming to use AI-based detection from different locations. This service analyzes live and recorded videos, turning raw footage into actionable insights.
 
-- **Retail** - Optimize store layouts and improve customer experience and safety. With live analysis, you can monitor the number of customers in checkout lines in real time, helping retailers to act immediately to optimize staffing and reduce wait times.
+- **Retail** - Optimize store layouts and improve customer experience and safety. With real-time analysis, you can monitor the number of customers in checkout lines in real time, helping retailers to act immediately to optimize staffing and reduce wait times.
 - **Manufacturing** - Ensure quality control and worker safety through video analysis. For example, workers who aren't wearing protective gear, which requires real-time detection of critical events and locating specific moments in video streams.
 - **Modern Safety** - Detect and identify security and safety issues before they cause a risk.
 

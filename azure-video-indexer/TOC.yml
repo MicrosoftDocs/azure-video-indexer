@@ -66,7 +66,7 @@ items:
   - name: Textual summarization
     href: text-summarization-overview.md
     displayName: Azure AI Video Indexer text summarization, video summary, transcript summary
-  - name: Live analysis
+  - name: Real-time analysis
     href: live-analysis.md
 - name: Samples
   items:
@@ -159,9 +159,9 @@ items:
   - name: Enable and view textless slate with matching scene
     href: textless-slate-scene-matching.md
     displayName: Azure AI Video Indexer textless slate, scene matching, video post-production, slate detection, video editing, scene identification
-  - name: Live analysis
+  - name: Real-time analysis
     items:
-    - name: Manage live analysis extensions
+    - name: Manage real-time analysis extensions
       href: live-extension.md
     - name: Add or remove cameras
       href: live-add-remove-camera.md
