@@ -1,23 +1,23 @@
 ---
-title: Add or remove cameras for use with the Azure AI Video Indexer live extension - Preview
-description: Learn how to create, update, or delete cameras for use with the Azure AI Video Indexer live extension.
-author: bandersmsft
-ms.author: banders
+title: Add or Remove Cameras for Use with the Azure AI Video Indexer Extension for Real-Time Analysis - Preview
+description: Learn how to create, update, or delete cameras for use with the VI extension for real-time analysis.
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 11/05/2025
+ms.date: 12/11/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
-#customer intent: As a user of Azure AI Video Indexer, I want to add or remove cameras for use with the live extension so that I can enable live video analysis capabilities.
+#customer intent: As a user of Azure AI Video Indexer, I want to add or remove cameras for use with the VI extension so that I can enable real-time video analysis capabilities.
 ---
 
-# Add or remove cameras for use with the Azure AI Video Indexer live extension - Preview
+# Add or remove cameras for use with the Azure AI Video Indexer extension for real-time analysis - Preview
 
-The Azure AI Video Indexer live extension allows you to connect cameras for live video analysis. This guide provides instructions about how to connect and remove cameras to the Azure AI Video Indexer live extension.
+The Azure AI Video Indexer extension for real-time analysis lets you connect cameras for live video insights. This guide explains how to connect and remove cameras using the extension.
 
 > [!IMPORTANT]
-> Before you begin, you must already have the Azure AI Video Indexer live extension deployed in your Azure environment. If you didn't deploy it, see the [Manage live analysis extensions](live-extension.md) article for instructions on creating and managing the extension.
+> Before you begin, you must already have the Azure AI Video Indexer extension for real-time analysis deployed in your Azure environment. If you didn't deploy it, see the [Manage Azure AI Video Indexer extensions for real-time analysis](live-extension.md) article for instructions on creating and managing the extension.
 
-Video Indexer live analysis can operate with or without the **Azure IoT Operations** (AIO) extension. For more information about AIO, see [Deploy Azure IoT Operations to an Arc-enabled Kubernetes cluster](/azure/iot-operations/deploy-iot-ops/howto-deploy-iot-operations).
+Video Indexer real-time analysis can operate with or without the **Azure IoT Operations** (AIO) extension. For more information about AIO, see [Deploy Azure IoT Operations to an Arc-enabled Kubernetes cluster](/azure/iot-operations/deploy-iot-ops/howto-deploy-iot-operations).
 
 ## Download the vi_cli.sh script file
 
@@ -155,9 +155,9 @@ Update extension settings (enable both Media Files and Live modes):
 --media-enabled
 ```
 
-## Connect cameras to the live extension
+## Connect cameras to the VI extension
 
-To connect a camera to the Azure AI Video Indexer (VI) live extension, you need to download the vi_cli.sh script file, and then run it with the required parameters. The script allows you to connect cameras to the VI live extension, enabling live video analysis capabilities.
+To connect a camera to the Azure AI Video Indexer (VI) extension for real-time analysis, you need to download the vi_cli.sh script file, and then run it with the required parameters. The script allows you to connect cameras to the VI extension, enabling real-time video analysis capabilities.
 
 Then choose one of the options to connect the cameras, select the method you prefer:
 
@@ -325,5 +325,5 @@ Here are some other commands you can use with the vi_cli.sh script:
 ## Related content
 
 - [Live video analysis in Azure AI Video Indexer](live-analysis.md)
-- [Manage live analysis extensions](live-extension.md)
-- [Manage live analysis cameras](live-manage-camera.md)
+- [Manage real-time analysis extensions](live-extension.md)
+- [Manage real-time analysis cameras](live-manage-camera.md)

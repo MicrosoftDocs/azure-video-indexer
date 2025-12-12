@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot Azure AI Video Indexer enabled by Arc
 description: Troubleshoot common issues with Azure AI Video Indexer enabled by Arc, including connectivity, streaming, and encoding problems.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 11/05/2025
 ms.update-cycle: 180-days
@@ -36,9 +36,9 @@ This behavior is expected. Media is streamed from the virtual machine (VM) using
 
 For example, you could use [ffmpeg](https://ffmpeg.org/) and [Shaka Packager](https://github.com/shaka-project/shaka-packager) to do the encoding preprocessing and the packaging of the encoded file that allows streaming of HLS/DASH protocols. When you use this method, the streamable files can be placed in the storage and the streaming endpoint just serve the files.
 
-## Troubleshoot live analysis issues
+## Troubleshoot real-time analysis issues
 
-Use the following sections to troubleshoot issues with Azure AI Video Indexer enabled by Arc for live video analysis.
+Use the following sections to troubleshoot issues with Azure AI Video Indexer enabled by Arc for real-time video analysis.
 
 ### Error connecting to the extension
 
@@ -162,7 +162,7 @@ Use the following sections to troubleshoot common camera failure situations.
 
 #### Too many cameras
 
-Each GPU type supports a different number of cameras. If too many cameras are connected, the GPU might not be able to handle the extra streams. For more information about the limits of each GPU, see [Connect cameras to the live extension](../live-add-remove-camera.md#connect-cameras-to-the-live-extension).
+Each GPU type supports a different number of cameras. If too many cameras are connected, the GPU might not be able to handle the extra streams. For more information about the limits of each GPU, see [Connect cameras to the VI extension](../live-add-remove-camera.md#connect-cameras-to-the-vi-extension).
 
 ### When all cameras are in a failed state
 
