@@ -1,8 +1,8 @@
 ---
 title: Watch live video recordings in Azure AI Video Indexer
 description: Learn how to watch live video recordings from your cameras using Azure AI Video Indexer.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 11/05/2025
 ms.service: azure-video-indexer
@@ -57,5 +57,5 @@ For more information about the presets available for uploaded videos, see [Suppo
 
 ## Related content
 
-- [Live video analysis in Azure AI Video Indexer](live-analysis.md)
-- [Manage live analysis cameras](live-manage-camera.md)
+- [Real-time video analysis in Azure AI Video Indexer](live-analysis.md)
+- [Manage real-time analysis cameras](live-manage-camera.md)
