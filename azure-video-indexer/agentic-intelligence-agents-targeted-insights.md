@@ -8,6 +8,7 @@ ms.reviewer: cwatson
 ms.date: 12/12/2025
 ms.topic: concept-article
 ms.collection: ce-skilling-ai-copilot
+ms.service: azure-video-indexer
 appliesto: 
 - Azure AI Video Indexer enabled by Azure Arc
 - ai-usage: ai-assisted
