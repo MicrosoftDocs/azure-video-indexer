@@ -68,8 +68,8 @@ items:
     displayName: Azure AI Video Indexer text summarization, video summary, transcript summary
   - name: Real-time analysis
     href: live-analysis.md
-  - name: Specialized agents for insights
-    href: agentic-intelligence-agents-targeted-insights.md
+  - name: AI Agents for detection
+    href: agents-overview.md
 - name: Samples
   items:
   - name: Azure AI Video Indexer samples
