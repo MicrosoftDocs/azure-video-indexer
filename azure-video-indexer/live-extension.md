@@ -4,9 +4,12 @@ description: Learn how to create, update, or delete an Azure AI Video Indexer ex
 author: cwatson-cat
 ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 12/09/2025
+ms.date: 12/16/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
+ai-usage: ai-assisted
+appliesto: 
+- Azure AI Video Indexer enabled by Azure Arc
 #customer intent: As a user of Azure AI Video Indexer, I want to manage real-time analysis extensions so that I can enable real-time video analysis capabilities.
 ---
 
@@ -14,7 +17,7 @@ ms.topic: how-to
 
 To use real-time analysis, you must create and manage Azure AI Video Indexer (VI) extensions that support it. Use the following instructions to create, update, or delete a Video Indexer extension for real-time analysis.
 
-After you create the extension using the information in this article, connect cameras to it for real-time video analysis. For more information, see [Add or remove cameras for use with the VI extension for real-time analysis](live-add-remove-camera.md).
+After you create the extension by using the information in this article, connect cameras to it for real-time video analysis. For more information, see [Add or remove cameras for use with the VI extension for real-time analysis](live-add-remove-camera.md).
 
 ## Prerequisites
 
@@ -31,7 +34,7 @@ Before you begin, review the following prerequisites to ensure that you meet the
     - [AKS on cloud](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks)
 - Make sure you have a valid **RTSP stream**. You need the RTSP URL.
 - Optionally, you can have an **Azure IoT for Operations extension** deployed to an Azure Arc Kubernetes cluster. The installation of both AIO and VI extensions must be in the same cluster.
-- You must have the latest version of Azure CLI. However, you can skip if you're using Azure cloud shell.
+- You must have the latest version of Azure CLI. However, you can skip this requirement if you're using Azure cloud shell.
 - As noted previously, your **Azure subscription ID** must already be approved. If not already approved, you can sign up at [Application for Azure AI Video Indexer Enabled by Arc - real-time video analysis](https://aka.ms/vi-live-register).
 
 We recommend enabling automatic version upgrade for your Arc-enabled Kubernetes cluster extension, so that you always have the latest security patches and new capabilities. For more information, see [Deploy and manage an Azure Arc-enabled Kubernetes cluster extension](/azure/azure-arc/kubernetes/extensions#optional-parameters).
@@ -42,29 +45,42 @@ Choose the method you want to use to create the Azure AI Video Indexer extension
 
 ## [Create in Azure portal](#tab/portal)
 
-To create a Video Indexer extension that supports real-time analysis in the Azure portal, follow these steps:
+To create a Video Indexer extension that supports real-time analysis in the Azure portal, complete the following steps:
 
-1.  In the Azure portal, navigate to your Azure Arc-connected cluster.
-2.  From the menu, select **Extensions** > **+ Add** > **Azure AI Video Indexer Arc Extension**.
-3.  Select **Create**. The *Create an AI Video Indexer extension* page appears.
-4.  Configure the extension in the **Basics** area:
-    1.  Select the **subscription** for your extension.
-    2.  Select the **region and connected** k8 cluster.
-    3.  Enter a **name** for your extension.
-    4.  Select the **Azure AI Video Indexer Account** that the extension connects to.
-    5.  Enter the **Ingress endpoint**, either an IP address or DNS name to use as the API endpoint.
-    6.  Provide the **storage class name** as configured in the cluster. If you're using AKS, you could use the predefined storage class named `azurefile-cli`. For more information about predefined storage classes supported by AKS, see [Storage Classes in AKS](/azure/aks/concepts-storage#storage-classes). If you're using other Kubernetes distributions, see your Kubernetes distribution documentation about supported predefined storage classes or for the way you can provide your own.
-    7.  Select the **Live video stream** option in the **Content type** field. You can choose to mark also:
-        - **Media uploads** – to allow upload media files to the extension.
-        - **Include event summary** – to allow generating textual summaries for recording files. For more information, see [Event summary for media files](live-event-summary.md).
-5.  Continue to configure the extension *Generative AI:*
-    1.  Select the **Processor type (CPU or GPU)** to run the AI features you selected in the previous step.
-      - For **Live video stream**, **GPU** is mandatory (there's no option to choose).
-      - For **Media uploads** choose **GPU** or **CPU**.
-    2.  Enter the **Toleration Key for GPU**.
-    3.  Optionally, fill **Node selector**. Use if there are multiple GPUs nodes in the cluster. You can add a node selector to select the desired node for media uploads, live video, and event summary.
-6.  Select **Review + create** and then select **Create**.  
-    :::image type="content" source="./media/live-extension/create-video-indexer-extension.png" border="true" alt-text="Screenshot of the Create an AI Video Indexer extension Basics page." lightbox="./media/live-extension/create-video-indexer-extension.png" :::
+1. In the [Azure portal](https://portal.azure.com/), go to your Azure Arc-connected Kubernetes cluster.
+1. On the Kubernetes cluster, under **Settings**, select **Extensions**.
+1. Select **Add** > **Azure AI Video Indexer Arc Extension**.
+1. Select **Create**.
+1. On the **Basic** tab, provide the following information:
+
+    | Field | Value     |
+    |------------------------|--------|
+    | Subscription     | Select the subscription for your extension.    |
+    | Resource group         | Select the resource group for your extension.                                                      |
+    | Region    | Select the region to create the extension.   |
+    | Connected K8S cluster     | Select the Azure Arc connected Kubernetes cluster.   |
+    | Extension name                   | Enter a name for your extension.  |
+    | Video indexer account ID | Select the Azure AI Video Indexer account that the extension connects to.   |
+    | Ingress endpoint       | Enter the cluster endpoint, either an IP address or DNS name, to use as the API endpoint.                                               |
+    | Storage class name | Provide the storage class supported by your Kubernetes distribution. For example, use `azurefile-cli` for AKS. See [Storage Classes in AKS](/azure/aks/concepts-storage#storage-classes) for more info. For other distributions, see your Kubernetes documentation. |
+    | Content type | Select the following options: </br>•  **Live video** to enable real-time analysis<br>•  **Media uploads** to allow upload media files to the extension |
+
+   :::image type="content" source="media/live-extension/create-video-indexer-extension-basics.png" alt-text="Screenshot of the basics tab for the Azure AI Video Indexer extension that shows fields in sections for project details, instance details, and additional settings." lightbox="media/live-extension/create-video-indexer-extension-basics.png":::
+
+1. Select **Next**.
+1. On the **Processing + AI** tab, provide the following information:
+
+   | Field                        | Description |
+   |------------------------------|-------------|
+   | Agentic capabilities         | Includes advanced video investigation capabilities. Requires two dedicated H100 GPUs. Toggle to enable or disable. |
+   | Summarization capabilities   | Includes advanced vision event summary capabilities. Requires a dedicated H100 GPU. Toggle to enable or disable. |
+   | Processing                   | <ul><li>**Live video** requires four GPU units: one dedicated to live streaming, two for agentic capabilities, and one for summarization capabilities.</li><li>**Media uploads** requires one GPU unit for summarization capabilities.</li></ul> |
+   | Toleration Key for GPU       | Enter the toleration key for GPU nodes (for example, `nvidia.com/gpu`). Required for GPU workloads. |
+   | Node selector (optional)     | If there are multiple GPU node types, you can add a node selector to select the desired node. Specify the node name and value for each of the following (optional): <ul><li>Live video stream</li><li>Agentic capabilities</li><li>Summarization capabilities</li></ul> |
+
+   :::image type="content" source="./media/live-extension/create-video-indexer-extension-processing.png" border="true" alt-text="Screenshot of the Create an AI Video Indexer extension generative AI page." lightbox="./media/live-extension/create-video-indexer-extension-processing.png" :::
+
+1. Select **Review + create** > **Create**.
 
 ## [Create with Bicep](#tab/bicep)
 
@@ -174,24 +190,24 @@ az deployment group create -g \<resource group\> --template-file \<template file
 
 ## [Create with CLI](#tab/cli)
 
-Use the Azure CLI to create a Video Indexer extension that supports real-time analysis. The following parameters are used as input to the extension creation command:
+Use the Azure CLI to create a Video Indexer extension that supports real-time analysis. The following parameters are input to the extension creation command:
 
 | **Parameter**                                    | **Type** | **Default value** | **Description**                                             |
 |--------------------------------------------------|----------|-------------------|-------------------------------------------------------------|
-| \<extension_name\>                               | String   |                   | Give a name to your VI extension                       |
-| \<release-namespace\>                            | String   | default           | The Kubernetes namespace where the extension gets installed |
-| \<cluster-name\>                                 | String   |                   | The Kubernetes Azure arc instance name                      |
-| \<resource-group\>                               | String   |                   | The Kubernetes Azure arc resource group name                |
+| \<extension_name\>                               | String   |                   | Name for your Video Indexer extension                        |
+| \<release-namespace\>                            | String   | default           | The Kubernetes namespace where the extension is installed   |
+| \<cluster-name\>                                 | String   |                   | The Kubernetes Azure Arc instance name                       |
+| \<resource-group\>                               | String   |                   | The Kubernetes Azure Arc resource group name                 |
 | \<account_Id\>                                   | String   |                   | Video Indexer Account ID                                    |
 | \<endpoint\>                                     | String   |                   | Video Indexer DNS Name to be used as the portal endpoint    |
-| ViAi.gpu.tolerations.key                         | String   |                   | the default toleration in which GPU                         |
+| ViAi.gpu.tolerations.key                         | String   |                   | The default toleration for GPU                               |
 | videoIndexer.mediaFilesEnabled                   | Boolean  | true              | Enable media files upload                                   |
 | ViAi.gpu.nodeSelector.workload                   | String   |                   | The GPU for media files summarization                       |
 | videoIndexer.liveStreamEnabled                   | Boolean  | false             | Enable live streaming                                       |
 | ViAi.LiveSummarization.enabled                   | Boolean  | false             | Enable live summarization on the recordings                 |
 | ViAi.LiveSummarization.gpu.nodeSelector.workload | String   |                   | The node selector for live summarization                    |
 
-To create a VI extension for real-time analysis, run the following command with your parameters as explained in the previous table.
+To create a Video Indexer extension for real-time analysis, run the following command with your parameters as explained in the previous table.
 
 ```azurecli
 az k8s-extension create
