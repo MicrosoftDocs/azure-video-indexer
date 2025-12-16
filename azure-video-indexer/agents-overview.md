@@ -22,21 +22,21 @@ Azure AI Video Indexer (VI) uses specialized AI agents to deliver targeted, real
 
 Live Video Analysis uses a modular, agent-based architecture. Each agent performs a specific task. The agents act like AI analysts that look over the video stream and search for specific events in the video. The available agents are:
 
-- **RetailOps Agent** monitors the physical condition of retail spaces. It identifies messy shelves, missing stock, and safety hazards like spilled liquids. It helps ensure stores remain safe, clean, and well-stocked throughout the day.
-- **Customer Service Agent** enhances customer experience by detecting forgotten personal items, such as wallets and phones. It measures wait times and flags accessibility problems, such as products placed too high. It supports staff in maintaining a responsive and inclusive environment.
-- **Sales Recommendations Agent** analyzes customer engagement with products and correlates it with real-time sales data. It identifies items that attract attention but don't convert into purchases. It offers actionable insights on placement, pricing, and visual appeal to boost performance.
-- **Security Agent** safeguards individuals by proactively detecting potential hazards and unsafe conditions. This detection includes identifying signs of smoke or fire, detecting falls, and recognizing risky activities, such as employees in construction areas not following safety protocols.
-- **Event Investigation Agent** supports incident analysis by mapping interactions between people and objects over time. It helps reconstruct event sequences and understand causality. For example, operators can ask: *“Show me what happened before this machine stopped working.”* 
+- **RetailOps agent** monitors the physical condition of retail spaces. It identifies messy shelves, missing stock, and safety hazards like spilled liquids. It helps ensure stores remain safe, clean, and well-stocked throughout the day.
+- **Customer service agent** enhances customer experience by detecting forgotten personal items, such as wallets and phones. It measures wait times and flags accessibility problems, such as products placed too high. It supports staff in maintaining a responsive and inclusive environment.
+- **Sales recommendations agent** analyzes customer engagement with products and correlates it with real-time sales data. It identifies items that attract attention but don't convert into purchases. It offers actionable insights on placement, pricing, and visual appeal to boost performance.
+- **Security agent** safeguards individuals by proactively detecting potential hazards and unsafe conditions. This detection includes identifying signs of smoke or fire, detecting falls, and recognizing risky activities, such as employees in construction areas not following safety protocols.
+- **Event investigation agent** supports incident analysis by mapping interactions between people and objects over time. It helps reconstruct event sequences and understand causality. For example, operators can ask: *“Show me what happened before this machine stopped working.”*
 
-The following example image shows... 
-:::image type="content" source="media/agentic-intelligence-agents-targeted-insights/hazard-detection.png" alt-text="Screenshot of the Agentic Intelligence agents targeted insights dashboard." lightbox="media/agentic-intelligence-agents-targeted-insights/hazard-detection.png"  :::
+The following example image shows the security agent detecting a safety hazard.
+
+:::image type="content" source="media/agents-overview/hazard-detection.png" alt-text="Screenshot of the Video Indexer portal with a live stream from a factory production area. The video displays two workers in safety gear near industrial machinery with smoke or steam present. The right panel lists detected safety hazards and recommendations." lightbox="media/agents-overview/hazard-detection.png" :::
 
 ## Agent requirements
 
 To use agents, make sure your VI extension and environment meet the following requirements:
 
-
-## Managing the agents by using the API
+## Managing the agents
 
 You can only activate agents by using the API. This section explains how to update, view, and delete agent jobs by using the Azure AI Video Indexer API. It provides the endpoints and methods you need to manage your agents effectively.
 
@@ -46,7 +46,7 @@ The API endpoints use the following placeholders:
 
 | Placeholder      | Description                                                                 |
 |------------------|-----------------------------------------------------------------------------|
-| `{location}`     | The Azure region where your Video Indexer account is located (e.g., `westeurope`, `westus`). |
+|`{extension base url}` ||
 | `{accountId}`    | The unique ID of your Azure AI Video Indexer account.                       |
 | `{agentId}`      | The unique ID of the agent you want to activate.                            |
 | `{agentJobId}`   | The unique ID of the agent job created for your request.                    |
@@ -64,7 +64,7 @@ To activate an agent, use the Azure AI Video Indexer API to find the agent ID, c
 Find the agent ID by making the following request:
 
 ```http
-GET https://api.videoindexer.ai/{location}/Accounts/{accountId}/agents
+GET {extension base url}/{accountId}/agents
 ```
 
 Save the ID of the agent you want to use.
@@ -72,7 +72,7 @@ Save the ID of the agent you want to use.
 To create an agent job, make the following request:
 
 ```http
-POST https://api.videoindexer.ai/{location}/Accounts/{accountId}/agentJobs
+POST {extension base url}/accounts/{accountId}/agentJobs
 ```
   Request body example:
 
@@ -100,8 +100,7 @@ You can get the agent insights in two ways:
 
 - Automate the receiving of the agent insights by using the callback. The body the callback receives is similar to the following example.
 
-
-   Example callback response:
+  Example callback response:
 
    ```json
    {
@@ -125,7 +124,7 @@ You can get the agent insights in two ways:
 - Poll the chat ID by running the following API call, replacing the placeholders with your values:
 
   ```http
-  GET https://api.videoindexer.ai/{location}/Accounts/{accountId}/chats/{chatId}/messages
+  GET {extension base url}/{accountId}/chats/{chatId}/messages
   ```
 
 ### Editing and deleting an agent
@@ -135,10 +134,10 @@ Use these API calls to update, view, and delete an agent:
 
 | Method  | Endpoint                                                                 | Description          |
 |---------|--------------------------------------------------------------------------|----------------------|
-| PUT     | `https://api.videoindexer.ai/{location}/Accounts/{accountId}/agentJobs/{agentJobId}`   | Update an agent job |
-| DELETE  | `https://api.videoindexer.ai/{location}/Accounts/{accountId}/agentJobs/{agentJobId}`   | Delete an agent job |
-| GET     | `https://api.videoindexer.ai/{location}/Accounts/{accountId}/agentJobs/{agentJobId}`   | View an agent job   |
-| GET     | `https://api.videoindexer.ai/{location}/Accounts/{accountId}/agentJobs`                | List agent jobs     |
+| PUT     | `{extension base url}/accounts/{accountId}/agentJobs/{agentJobId}`   | Update an agent job |
+| DELETE  | `{extension base url}/accounts/{accountId}/agentJobs/{agentJobId}`   | Delete an agent job |
+| GET     | `{extension base url}/accounts/{accountId}/agentJobs/{agentJobId}`   | View an agent job   |
+| GET     | `{extension base url}/accounts/{accountId}/agentJobs`                | List agent jobs     |
 
 ## Best practices
 
