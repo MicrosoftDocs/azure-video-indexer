@@ -9,6 +9,8 @@ ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
 ms.custom: sfi-image-nochange
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Switch between multiple tenants

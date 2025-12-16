@@ -8,6 +8,8 @@ ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 # customer intent: As a post-production professional, I want to enable and view a textless slate with matching scene in Azure AI Video Indexer so that I can streamline my video editing process.
 ---
 

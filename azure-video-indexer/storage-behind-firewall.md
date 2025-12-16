@@ -8,6 +8,8 @@ ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 # customer intent: As an Azure user, I want to configure Video Indexer to work with storage accounts behind firewall so that I can secure my data.
 ---
 

@@ -9,6 +9,8 @@ ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
 ms.custom: references_regions
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 #customer intent: As a developer, I want to know which Azure regions support Azure AI Video Indexer so that I can route my API calls correctly.
 ---
 

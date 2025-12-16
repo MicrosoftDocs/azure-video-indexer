@@ -9,6 +9,8 @@ ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: quickstart
 ms.custom: se-defect-target
+appliesto:
+    - Cloud-based Azure AI Video Indexer
 ---
 
 # Quickstart: Use the API

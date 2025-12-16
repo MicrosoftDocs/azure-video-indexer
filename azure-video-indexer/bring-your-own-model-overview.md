@@ -1,8 +1,6 @@
 ---
 title: Azure AI Video Indexer Bring Your Own AI model overview  
 description: This article is an overview of Azure AI Video Indexer enabled by Arc bring your own model.
-appliesto:
-- Azure AI Video Indexer enabled by Azure Arc
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot
@@ -10,6 +8,8 @@ ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: overview
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Azure AI Video Indexer Bring Your Own (BYO) AI Model overview
@@ -133,11 +133,11 @@ You can use the skip frames and page size parameters for time selection. The for
                         "Confidence": 0.49,
                         "AdjustedStart": "0:00:32.72", 
                         "AdjustedEnd": "0:00:42.72",
-                        "start": "0:00:32.72",
-                        "end": "0:00:42.72",
-                    }
-                ]
-            }
+              ‾         "start": "0:00:32.72",
+              ‾         "end": "0:00:42.72",
+              ‾     }
+            ‾   ]
+          ‾ }
         ]
     }... 
 ```

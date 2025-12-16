@@ -9,8 +9,8 @@ ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
 appliesto:
-- Azure AI Video Indexer enabled by Azure Arc
-- Cloud-based Azure AI Video Indexer
+    - Azure AI Video Indexer enabled by Azure Arc
+    - Cloud-based Azure AI Video Indexer
 ---
 
 # Create an Azure AI Video Indexer (VI) account

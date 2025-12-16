@@ -2,7 +2,7 @@
 title: Try Azure AI Video Indexer enabled by Arc
 description: This article walks you through the steps required to enable Video Indexer as an Arc extension on your current infrastructure.
 appliesto:
-- Azure AI Video Indexer enabled by Azure Arc
+  - Azure AI Video Indexer enabled by Azure Arc
 author: bandersmsft
 ms.author: banders
 ms.collection: ce-skilling-ai-copilot

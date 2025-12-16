@@ -8,6 +8,8 @@ ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: quickstart
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Quickstart: Deploy Azure AI Video Indexer (VI) by using Bicep

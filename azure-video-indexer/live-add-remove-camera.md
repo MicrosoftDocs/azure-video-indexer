@@ -7,6 +7,8 @@ ms.collection: ce-skilling-ai-copilot
 ms.date: 12/11/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Azure AI Video Indexer enabled by Azure Arc
 #customer intent: As a user of Azure AI Video Indexer, I want to add or remove cameras for use with the VI extension so that I can enable real-time video analysis capabilities.
 ---
 

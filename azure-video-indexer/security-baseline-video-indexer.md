@@ -8,6 +8,8 @@ ms.topic: conceptual
 ms.collection: ce-skilling-ai-copilot
 ms.custom: horz-security
 ms.date: 10/24/2025
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Secure Azure AI Video Indexer
