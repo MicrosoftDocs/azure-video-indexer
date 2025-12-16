@@ -1,9 +1,6 @@
 ---
 title: Azure AI Video Indexer release notes and updates
 description: Stay updated on the latest features, bug fixes, and known issues. Explore new capabilities and enhancements now.
-appliesto:
-- Azure AI Video Indexer enabled by Azure Arc
-- Cloud-based Azure AI Video Indexer
 author: cwatson-cat
 ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot

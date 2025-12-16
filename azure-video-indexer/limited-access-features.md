@@ -10,8 +10,8 @@ ms.service: azure-video-indexer
 ms.topic: concept-article
 # customer intent: As a user of Azure AI Video Indexer, I want to understand the limited access features and how to apply for them so that I can use face identification, customization, and celebrity recognition responsibly.
 appliesto:
-	- Azure AI Video Indexer enabled by Azure Arc
-	- Cloud-based Azure AI Video Indexer
+  - Azure AI Video Indexer enabled by Azure Arc
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Limited Access features of Azure AI Video Indexer
