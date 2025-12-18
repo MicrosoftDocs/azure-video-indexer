@@ -1,8 +1,8 @@
 ---
 title: Secure Azure AI Video Indexer
 description: Learn how to secure Azure AI Video Indexer, with best practices for protecting sensitive media data.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.service: azure-video-indexer
 ms.topic: concept-article
 ms.collection: ce-skilling-ai-copilot

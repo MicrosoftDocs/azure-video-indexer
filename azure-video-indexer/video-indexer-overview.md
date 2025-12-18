@@ -4,8 +4,8 @@ description: This article gives an overview of the Azure AI Video Indexer servic
 appliesto:
 - Azure AI Video Indexer enabled by Azure Arc
 - Cloud-based Azure AI Video Indexer
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 11/06/2025
 ms.update-cycle: 180-days

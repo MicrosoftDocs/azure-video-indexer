@@ -1,8 +1,8 @@
 ---
 title: Textual Video Summary with Azure OpenAI
 description: Learn how Azure AI Video Indexer generates concise, customizable summaries of video content to save time and boost productivity.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days

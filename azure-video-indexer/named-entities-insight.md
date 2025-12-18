@@ -1,8 +1,8 @@
 ---
 title: Get named entities extraction insights in Azure AI Video Indexer
 description: Azure AI Video Indexer named entities extraction finds people, places, and brands in your videos. Discover how to access and use these insights.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days

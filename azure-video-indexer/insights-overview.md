@@ -2,8 +2,8 @@
 title:  Azure AI Video Indexer insights overview
 description: This article gives a brief overview of Azure AI Video Indexer insights. It includes links to articles that describe how to get each insight in the web portal and using the API.
 ms.topic: concept-article
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days

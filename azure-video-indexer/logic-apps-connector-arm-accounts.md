@@ -1,8 +1,8 @@
 ---
 title: Use Azure Video Indexer with a Logic Apps connector
 description: This article shows how to unlock new experiences and monetization opportunities Azure AI Video Indexer connectors with Logic App and Power Automate with VI Azure Resource Manager accounts.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days

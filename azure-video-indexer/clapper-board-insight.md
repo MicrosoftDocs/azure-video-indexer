@@ -1,8 +1,8 @@
 ---
 title: Get clapper board detection insights in Azure AI Video Indexer
 description: This article describes the Azure AI Video Indexer clapper board detection insight, how to view it in the web portal, and how to get it with the API.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days

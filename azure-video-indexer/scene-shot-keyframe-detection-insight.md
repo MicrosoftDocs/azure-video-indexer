@@ -1,8 +1,8 @@
 ---
 title: Get scene, shot, and keyframe detection insights in Azure AI Video Indexer
 description: Get scene, shot, and keyframe detection insights with Azure AI Video Indexer. Improve your video editing and management with automated visual analysis.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days

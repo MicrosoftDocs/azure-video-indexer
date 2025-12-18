@@ -3,10 +3,10 @@ metadata:
   title: Frequently asked questions about Azure AI Video Indexer - Azure
   description: This article gives answers to frequently asked questions about Azure AI Video Indexer.
   ms.service: azure-video-indexer
-  author: bandersmsft
+  author: cwatson-cat
   ms.topic: faq
   ms.date: 10/06/2025
-  ms.author: banders
+  ms.author: cwatson
 title: Azure AI Video Indexer frequently asked questions
 summary: This article answers frequently asked questions about Azure AI Video Indexer.
 sections:

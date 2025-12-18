@@ -1,8 +1,8 @@
 ---
 title: Configure failover for disaster recovery for Azure AI Video Indexer
 description: Learn how to configure failover for Azure AI Video Indexer and maintain app availability during outages. Get started today.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days

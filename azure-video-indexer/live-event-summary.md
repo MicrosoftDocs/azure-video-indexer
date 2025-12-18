@@ -1,8 +1,8 @@
 ---
 title: Create an event summary for camera footage using Azure AI Video Indexer
 description: Learn how to create an event summary for camera footage using Azure AI Video Indexer.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 11/05/2025
 ms.service: azure-video-indexer

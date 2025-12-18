@@ -1,8 +1,8 @@
 ---
 title: Manage multiple tenants with Azure AI Video Indexer
 description: Learn about integration options for managing multiple tenants with Azure AI Video Indexer, including account and subscription strategies.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.custom: ikbarmen
 ms.date: 10/06/2025

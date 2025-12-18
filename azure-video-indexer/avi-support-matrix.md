@@ -1,8 +1,8 @@
 ---
 title: Azure AI Video Indexer support matrix and service limits
 description: Learn about supported formats, file size and duration limits, languages, optical character recognition, projects, person models, and codecs in Azure AI Video Indexer.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 11/10/2025
 ms.update-cycle: 180-days

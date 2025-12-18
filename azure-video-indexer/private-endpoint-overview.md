@@ -1,8 +1,8 @@
 ---
 title: Private endpoints with Azure AI Video Indexer
 description: This article provides an overview of using private endpoints with Azure AI Video Indexer to ensure secure and private connectivity in your virtual network.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days
