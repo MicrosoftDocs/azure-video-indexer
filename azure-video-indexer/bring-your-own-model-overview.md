@@ -1,8 +1,8 @@
 ---
 title: Azure AI Video Indexer Bring Your Own AI model overview  
 description: This article is an overview of Azure AI Video Indexer enabled by Arc bring your own model.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days

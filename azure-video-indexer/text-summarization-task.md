@@ -1,8 +1,8 @@
 ---
 title: Use textual summarization
 description: This article explains how to use Azure OpenAI textual summarization with Azure AI Video Indexer.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 08/18/2025
 ms.update-cycle: 180-days

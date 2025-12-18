@@ -1,8 +1,8 @@
 ---
 title: Monitor Azure AI Video Indexer
 description: Start here to learn how to monitor Azure AI Video Indexer
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days
