@@ -1,13 +1,15 @@
 ---
 title: Manage access to an Azure AI Video Indexer account
 description: Learn how to manage access to Azure AI Video Indexer accounts using built-in roles, including the Restricted Viewer role.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Manage access to an Azure AI Video Indexer account

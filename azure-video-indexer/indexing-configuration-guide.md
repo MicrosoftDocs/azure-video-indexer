@@ -1,14 +1,16 @@
 ---
 title: Indexing configuration options in Azure AI Video Indexer
 description: This article explains each of the indexing options. The same options apply when using the Azure AI Video Indexer website as for using the API.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article
 # customer intent: As a user of Azure AI Video Indexer, I want to understand the indexing configuration options available so that I can optimize my video indexing process.
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Indexing configuration options

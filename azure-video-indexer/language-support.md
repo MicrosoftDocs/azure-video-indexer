@@ -1,13 +1,16 @@
 ---
 title: Language support in Azure AI Video Indexer
 description: This article provides a comprehensive list of language support by service features in Azure AI Video Indexer, including transcription, translation, language identification, customization, and website settings.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article
+appliesto:
+    - Azure AI Video Indexer enabled by Azure Arc
+    - Cloud-based Azure AI Video Indexer
 # customer intent: As a user of Azure AI Video Indexer, I want to know which languages are supported for transcription, translation, identification, and customization so I can work with media in my preferred language.
 ---
 

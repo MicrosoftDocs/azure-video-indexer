@@ -1,13 +1,15 @@
 ---
 title:  Azure AI Video Indexer accounts
 description: Learn about the different types of Azure AI Video Indexer accounts, including trial accounts, paid ARM-based accounts, and deprecated classic accounts.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 #customer intent: As a user of Azure AI Video Indexer, I want to understand the different types of accounts available, including trial and paid accounts, so that I can choose the right one for my needs.
 ---
 

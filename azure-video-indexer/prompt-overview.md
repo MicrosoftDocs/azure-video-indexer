@@ -1,13 +1,16 @@
 ---
 title:  Azure AI Video Indexer with LLM prompts
 description: Azure AI Video Indexer lets you create prompt-ready video insights for LLMs. Ask questions, generate summaries, and search video content easily. Try it now.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 08/18/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article
+appliesto:
+  - Azure AI Video Indexer enabled by Azure Arc
+  - Cloud-based Azure AI Video Indexer
 #customer intent: As a video content manager, I want to generate prompt-ready insights from my videos so that I can use LLMs to summarize and search video content easily.
 ---
 
