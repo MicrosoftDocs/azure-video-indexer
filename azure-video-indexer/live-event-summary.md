@@ -7,6 +7,8 @@ ms.collection: ce-skilling-ai-copilot
 ms.date: 11/05/2025
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Azure AI Video Indexer enabled by Azure Arc
 # customer intent: As an Azure Video Indexer user, I want to create an event summary for live camera footage to quickly identify key events.
 ---
 

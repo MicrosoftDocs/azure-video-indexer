@@ -7,6 +7,8 @@ ms.collection: ce-skilling-ai-copilot
 ms.date: 12/09/2025
 ms.service: azure-video-indexer
 ms.topic: concept-article
+appliesto:
+  - Azure AI Video Indexer enabled by Azure Arc
 # customer intent: As a user of Azure AI Video Indexer, I want to understand the real-time analysis capabilities, including real-time video indexing and insights, so that I can utilize these features for live events and broadcasts.
 ---
 

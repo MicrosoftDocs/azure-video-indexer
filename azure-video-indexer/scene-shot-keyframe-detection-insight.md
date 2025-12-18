@@ -8,6 +8,9 @@ ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Azure AI Video Indexer enabled by Azure Arc
+  - Cloud-based Azure AI Video Indexer
 #customer intent: As a video content creator, I want to understand how Azure AI Video Indexer detects scenes, shots, and keyframes so that I can better manage and edit my videos.
 ---
 

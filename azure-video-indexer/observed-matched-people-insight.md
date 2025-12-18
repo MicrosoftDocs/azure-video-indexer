@@ -8,6 +8,8 @@ ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 # customer intent: As a video analyst, I want to detect and identify people in videos so that I can quickly find and analyze specific individuals.
 ---
 

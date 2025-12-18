@@ -8,6 +8,9 @@ ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Azure AI Video Indexer enabled by Azure Arc
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Generative AI with Azure AI Video Indexer (VI)

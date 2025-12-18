@@ -8,6 +8,8 @@ ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 # customer intent: As an Azure user, I want to learn how to train a custom speech model for Azure AI Video Indexer so that I can improve transcription accuracy for my content.
 ---
 

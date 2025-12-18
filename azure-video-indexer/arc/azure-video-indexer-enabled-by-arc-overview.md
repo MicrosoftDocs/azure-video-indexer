@@ -8,6 +8,8 @@ ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: overview
+appliesto:
+  - Azure AI Video Indexer enabled by Azure Arc
 #customer intent: As a video content manager, I want to use Azure AI Video Indexer analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
 ---
 

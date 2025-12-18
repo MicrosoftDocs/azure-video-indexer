@@ -9,6 +9,8 @@ ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
 #customer intent: As a video content creator, I want to extract named entities from my videos so that I can identify people, places, and brands automatically.
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Get named entities extraction insights

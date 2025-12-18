@@ -8,6 +8,8 @@ ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 #customer intent: As an Azure user, I want to add the VideoIndexer service tag to my NSG rules so that my resources can communicate with Azure AI Video Indexer.
 ---
 

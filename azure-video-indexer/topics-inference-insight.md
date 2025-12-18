@@ -9,6 +9,8 @@ ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
 #customer intent: As an Azure user, I want to get topics inference insights from Azure AI Video Indexer to enhance personalization, deep search, and monetization.
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Get topics inference insights

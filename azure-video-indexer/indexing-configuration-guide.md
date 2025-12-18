@@ -9,6 +9,8 @@ ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article
 # customer intent: As a user of Azure AI Video Indexer, I want to understand the indexing configuration options available so that I can optimize my video indexing process.
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Indexing configuration options

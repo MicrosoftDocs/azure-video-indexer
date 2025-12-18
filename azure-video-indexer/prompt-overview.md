@@ -8,6 +8,9 @@ ms.date: 08/18/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article
+appliesto:
+  - Azure AI Video Indexer enabled by Azure Arc
+  - Cloud-based Azure AI Video Indexer
 #customer intent: As a video content manager, I want to generate prompt-ready insights from my videos so that I can use LLMs to summarize and search video content easily.
 ---
 

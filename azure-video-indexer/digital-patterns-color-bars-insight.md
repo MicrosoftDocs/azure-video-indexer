@@ -8,6 +8,8 @@ ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 #customer intent: As an Azure AI Video Indexer user, I want to learn how get color bar insights with Azure AI Video Indexer.
 ---
 

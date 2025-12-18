@@ -8,6 +8,8 @@ ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 #customer intent: As an Azure user, I want to use text-based emotion detection in Azure AI Video Indexer so that I can analyze the emotional tone of video transcripts.
 ---
 
