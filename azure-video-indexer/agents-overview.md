@@ -5,7 +5,7 @@ description: Discover how agentic intelligence uses specialized AI agents to ana
 author: cwatson-cat
 ms.author: cwatson
 ms.reviewer: cwatson
-ms.date: 12/15/2025
+ms.date: 12/19/2025
 ms.topic: concept-article
 ms.service: azure-video-indexer
 ms.collection: ce-skilling-ai-copilot
@@ -20,12 +20,12 @@ Azure AI Video Indexer (VI) uses specialized AI agents to deliver targeted, real
 
 ## Agent types and their roles
 
-Live Video Analysis uses a modular, agent-based architecture. Each agent performs a specific task. The agents act like AI analysts that look over the video stream and search for specific events in the video. The available agents are:
+Real-time analysis in VI uses a modular, agent-based architecture. Each agent performs a specific task. The agents act like AI analysts that look over the video stream and search for specific events in the video. The available agents are:
 
 - **RetailOps agent** monitors the physical condition of retail spaces. It identifies messy shelves, missing stock, and safety hazards like spilled liquids. It helps ensure stores remain safe, clean, and well-stocked throughout the day.
 - **Customer service agent** enhances customer experience by detecting forgotten personal items, such as wallets and phones. It measures wait times and flags accessibility problems, such as products placed too high. It supports staff in maintaining a responsive and inclusive environment.
 - **Sales recommendations agent** analyzes customer engagement with products and correlates it with real-time sales data. It identifies items that attract attention but don't convert into purchases. It offers actionable insights on placement, pricing, and visual appeal to boost performance.
-- **Security agent** safeguards individuals by proactively detecting potential hazards and unsafe conditions. This detection includes identifying signs of smoke or fire, detecting falls, and recognizing risky activities, such as employees in construction areas not following safety protocols. 
+- **Security agent** safeguards individuals by proactively detecting potential hazards and unsafe conditions. This detection includes identifying signs of smoke or fire, detecting falls, and recognizing risky activities, such as employees in construction areas not following safety protocols.
 
 The following example image shows the security agent detecting a safety hazard.
 
@@ -35,13 +35,26 @@ The following example image shows the security agent detecting a safety hazard.
 
 To use agents, make sure your VI extension and environment meet the following requirements:
 
-- An additional 2 GPU nodes, from type H100 or A100.
+- On top of the [recommended hardware requirements for VI](live-analysis.md#hardware-requirements), add two GPU NVIDIA A100 or H100 nodes.
 
-- During the extension installation, you should enable agent feature. if you already install the extension, you can update the extension to support agents. **{link to the extension creation guide and update instructions}**
+- During the extension installation, enable agentic capabilities. For more information, see [Manage Azure AI Video Indexer extensions for real-time analysis](live-extension.md).
+
+  If you already installed the extension, update the extension to support agents by using the following command. Replace the placeholder values with information for your Kubernetes cluster and VI extension:
+
+  ```azurecli
+  az k8s-extension update \
+    --cluster-type connectedClusters \
+    --cluster-name <ARC_CLUSTER_NAME> \
+    --resource-group <RESOURCE_GROUP> \
+    --name <EXTENSION_NAME> \
+    --config "videoIndexer.agents.enabled=true"
+  ```
+
+
 
 ## Managing the agents
 
-You can only activate agents by using the API. This section explains how to update, view, and delete agent jobs by using the Azure AI Video Indexer API. It provides the endpoints and methods you need to manage your agents effectively.
+You can activate agents only through the API. This section explains how to update, view, and delete agent jobs by using the Azure AI Video Indexer API. It provides the endpoints and methods you need to manage your agents effectively.
 
 ### API parameter placeholders
 
@@ -55,8 +68,8 @@ The API endpoints use the following placeholders:
 | `{agentJobId}`   | The unique ID of the agent job created for your request.                    |
 | `{chatId}`       | The unique chat session ID for polling agent responses.                     |
 | `{cameraId}`     | The unique ID of the camera source, if applicable.                          |
-|intervallsinSeconds|Defines how often (in seconds) the agent runs and checks for the event you described in the prompt. the min value is 10 sec and max is 60 sec|
-|{callbackUrl}|**optional parameter** - a web address where the agent sends its output|
+|`{intervallsinSeconds}`|Defines how often (in seconds) the agent runs and checks for the event you described in the prompt. The min value is 10 sec and max is 60 sec|
+|`{callbackUrl}`|**Optional parameter** - a web address where the agent sends its output.|
 | `{videoId}`      | The unique ID of the video, if applicable to the endpoint.                 |
 
 Replace these placeholders with your actual values when you make API requests.
@@ -95,9 +108,9 @@ POST {extension base url}/accounts/{accountId}/agentJobs
   }
   ```
   
-From the response of the create agent job, you get the `{chatId}` of this agent job. Keep it to see the agent response.
+From the response of the create agent job, you get the `chatId` of this agent job. Keep it to see the agent response.
 
-Use the `callbackUrl` to get the agent response automatically in your own environment or application. The service calls this URL and posts HTTP calls.
+Use the `callbackUrl` to get the agent response automatically in your own environment or application. The service calls this URL and posts HTTP requests.
 
 ### Receiving the agent response
 
@@ -146,27 +159,29 @@ Use these API calls to update, view, and delete an agent:
 
 ## Best practices
 
-- Be specific and detailed when describing the event you want the agent to detect (instead of  “when there is a mess” use “when there are clothes on the floor or any item lying on the ground”). 
+Follow these best practices to set clear expectations and design agent jobs that perform predictably. They reduce ambiguity, improve consistency, and help you avoid false alerts.
 
-Some events and requests may include a certain level of interpretation to the agent. Words like “near”, “far”, “messy” can be up for interpretation. It helps the agent to have extra emphasis about the appropriate level or resolution of the request. Phrases like “directly on the floor”, “completely empty”, “ignore minor disarrays and alert only for significant mess or disorder”, etc. Using direct framing typically works better than letting the agent determine the degree of interpretation. 
+- Be specific and detailed when describing the event you want the agent to detect. For example, instead of “when there's a mess,” use “when there are clothes on the floor or any item lying on the ground.”   
 
-Treat agent‑job creation as an iterative process; try different terms, phrases, and wording to refine results and level of detail. 
+    Some events and requests include a certain level of interpretation. Words like “near,” “far,” and “messy” can be up for interpretation. It helps the agent to have extra emphasis about the appropriate level or resolution of the request. Phrases like “directly on the floor,” “completely empty,” and “ignore minor disarrays and alert only for significant mess or disorder” work well. Using direct framing typically works better than letting the agent determine the degree of interpretation.  
 
-- If you're unsure which agent type to choose, select the general agent — it will automatically determine which specific agent to use for your prompt as needed. 
+  Treat agent‑job creation as an iterative process. Try different terms, phrases, and wording to refine results and level of detail. 
 
-- Use emphasis or exclusions through wording such as *“ignore,” “minor,” “large,”* to guide how the event should be interpreted. 
+- If you're unsure which agent type to choose, select the general agent. It automatically determines which specific agent to use for your prompt.
+
+- Use emphasis or exclusions through wording such as “ignore,” “minor,” or “large” to guide how the event should be interpreted.  
 
 ## Limitations
 
 While agentic intelligence provides powerful real-time insights, consider these important constraints when using these features. Understanding these limitations can help you set the right expectations and design your workflows for the best results.
 
-- Agents interpret descriptions literally; providing several levels of detail (“mess” vs. “a mess is scattered items on the floor”) can improve results (see Best Practices). 
+- Agents interpret descriptions literally. Providing several levels of detail can improve results. For example, say “a mess is scattered items on the floor” rather than simply “mess.” 
 
-Vague or relative terms such as *“near”* or *“messy”* typically produce inconsistent detection; specify them more clearly to avoid misinterpretation. 
+    Vague or relative terms such as “near” or “messy” typically produce inconsistent detection. Specify them more clearly to avoid misinterpretation.  
 
-- Descriptions that rely on object location, missing items, or relative positioning may lead to unreliable detection. 
+- Descriptions that rely on object location, missing items, or relative positioning can lead to unreliable detection. 
 
-- Quick events may be missed by the agent.  
+- Agents might miss quick events.  
 
 ## Related content
 
