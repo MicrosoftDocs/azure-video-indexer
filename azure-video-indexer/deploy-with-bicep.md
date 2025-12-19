@@ -1,13 +1,15 @@
 ---
 title:  Deploy Azure AI Video Indexer by using Bicep
 description: Learn how to create an Azure AI Video Indexer account by using a Bicep file.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: quickstart
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Quickstart: Deploy Azure AI Video Indexer (VI) by using Bicep

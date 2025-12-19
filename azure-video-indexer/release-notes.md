@@ -9,6 +9,9 @@ ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ai-usage: ai-assisted
 ms.topic: release-notes
+appliesto:
+  - Azure AI Video Indexer enabled by Azure Arc
+  - Cloud-based Azure AI Video Indexer
 #customer intent: As a video content manager, I want to track the latest Azure AI Video Indexer features and updates so that I can use new capabilities and plan my workflows.
 ---
 

@@ -1,13 +1,15 @@
 ---
 title: How to use global face grouping
 description: Learn how to use global face grouping  to organize and label frequently detected but unidentified faces in your video collection.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # How to use global face grouping

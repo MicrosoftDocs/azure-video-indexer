@@ -1,13 +1,15 @@
 ---
 title: Use network security groups with service tags in Azure AI Video Indexer
 description: Learn how to use network security groups with service tags to control access and simplify rule management. Get started now.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 #customer intent: As an Azure user, I want to add the VideoIndexer service tag to my NSG rules so that my resources can communicate with Azure AI Video Indexer.
 ---
 
