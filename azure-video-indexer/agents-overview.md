@@ -25,8 +25,7 @@ Live Video Analysis uses a modular, agent-based architecture. Each agent perform
 - **RetailOps agent** monitors the physical condition of retail spaces. It identifies messy shelves, missing stock, and safety hazards like spilled liquids. It helps ensure stores remain safe, clean, and well-stocked throughout the day.
 - **Customer service agent** enhances customer experience by detecting forgotten personal items, such as wallets and phones. It measures wait times and flags accessibility problems, such as products placed too high. It supports staff in maintaining a responsive and inclusive environment.
 - **Sales recommendations agent** analyzes customer engagement with products and correlates it with real-time sales data. It identifies items that attract attention but don't convert into purchases. It offers actionable insights on placement, pricing, and visual appeal to boost performance.
-- **Security agent** safeguards individuals by proactively detecting potential hazards and unsafe conditions. This detection includes identifying signs of smoke or fire, detecting falls, and recognizing risky activities, such as employees in construction areas not following safety protocols.
-- **Event investigation agent** supports incident analysis by mapping interactions between people and objects over time. It helps reconstruct event sequences and understand causality. For example, operators can ask: *“Show me what happened before this machine stopped working.”*
+- **Security agent** safeguards individuals by proactively detecting potential hazards and unsafe conditions. This detection includes identifying signs of smoke or fire, detecting falls, and recognizing risky activities, such as employees in construction areas not following safety protocols. 
 
 The following example image shows the security agent detecting a safety hazard.
 
@@ -35,6 +34,10 @@ The following example image shows the security agent detecting a safety hazard.
 ## Agent requirements
 
 To use agents, make sure your VI extension and environment meet the following requirements:
+
+- An additional 2 GPU nodes, from type H100 or A100.
+
+- During the extension installation, you should enable agent feature. if you already install the extension, you can update the extension to support agents. **{link to the extension creation guide and update instructions}**
 
 ## Managing the agents
 
@@ -46,12 +49,14 @@ The API endpoints use the following placeholders:
 
 | Placeholder      | Description                                                                 |
 |------------------|-----------------------------------------------------------------------------|
-|`{extension base url}` ||
+|`{extension base url}` |The cluster endpoint, either an IP address or DNS name, to use as the API endpoint.|
 | `{accountId}`    | The unique ID of your Azure AI Video Indexer account.                       |
 | `{agentId}`      | The unique ID of the agent you want to activate.                            |
 | `{agentJobId}`   | The unique ID of the agent job created for your request.                    |
 | `{chatId}`       | The unique chat session ID for polling agent responses.                     |
 | `{cameraId}`     | The unique ID of the camera source, if applicable.                          |
+|intervallsinSeconds|Defines how often (in seconds) the agent runs and checks for the event you described in the prompt. the min value is 10 sec and max is 60 sec|
+|{callbackUrl}|**optional parameter** - a web address where the agent sends its output|
 | `{videoId}`      | The unique ID of the video, if applicable to the endpoint.                 |
 
 Replace these placeholders with your actual values when you make API requests.
@@ -82,14 +87,14 @@ POST {extension base url}/accounts/{accountId}/agentJobs
     "name": "demo",
     "description": "Periodic Agent Job",
     "eventName": "itemonfloor2",
-    "intervalInSeconds": 5,
+    "intervalInSeconds": "{intervalInSeconds}",
     "enabled": true,
     "prompt": "Is there a personal item directly on the FLOOR, in the current video segment? If so, describe the exact place and item and provide recommendations. Answer shortly in a json format: {\\isDetected\\: True if there is a personal item directly on the floor, False if not, \\description\\: item description and its place, \\recommendations\\: recommendations what should be done, \\answer\\: the full answer including recommendations}",
-    "callbackUrl": "https://webhook-test.com/",
+    "callbackUrl": "{callbackUrl}",
     "cameraId":  "{cameraId}"
   }
   ```
-
+  
 From the response of the create agent job, you get the `{chatId}` of this agent job. Keep it to see the agent response.
 
 Use the `callbackUrl` to get the agent response automatically in your own environment or application. The service calls this URL and posts HTTP calls.
@@ -141,25 +146,27 @@ Use these API calls to update, view, and delete an agent:
 
 ## Best practices
 
-The event investigation agent can operate in two modes for each user input:
+- Be specific and detailed when describing the event you want the agent to detect (instead of  “when there is a mess” use “when there are clothes on the floor or any item lying on the ground”). 
 
-- **Current Frame Analysis:** This mode provides fast, single-frame analysis.
-- **Video Analysis:** This mode provides slower, more comprehensive temporal analysis.
+Some events and requests may include a certain level of interpretation to the agent. Words like “near”, “far”, “messy” can be up for interpretation. It helps the agent to have extra emphasis about the appropriate level or resolution of the request. Phrases like “directly on the floor”, “completely empty”, “ignore minor disarrays and alert only for significant mess or disorder”, etc. Using direct framing typically works better than letting the agent determine the degree of interpretation. 
 
-By default, the agent decides which mode to use based on the user’s query. However, you can guide the agent to use a specific mode by including certain keywords in your prompt:
+Treat agent‑job creation as an iterative process; try different terms, phrases, and wording to refine results and level of detail. 
 
-- To focus on the current frame, add phrases like "in the current frame" or "in the current image."
-- To analyze a video segment, use phrases such as "in the video" or "in the clip."
+- If you're unsure which agent type to choose, select the general agent — it will automatically determine which specific agent to use for your prompt as needed. 
 
-Generally, video analysis over recorded footage is faster than video analysis over live-streamed footage.
+- Use emphasis or exclusions through wording such as *“ignore,” “minor,” “large,”* to guide how the event should be interpreted. 
 
 ## Limitations
 
 While agentic intelligence provides powerful real-time insights, consider these important constraints when using these features. Understanding these limitations can help you set the right expectations and design your workflows for the best results.
 
-- The current frame analysis tool examines only the image currently displayed in the player when you send the user input. Because frame extraction can fluctuate in time, this method isn't reliable for rapidly changing scenes and is best suited for static footage.
-- The video analysis tool reviews the last 10 minutes of footage (if available) up to the player’s current timestamp, processing at two frames per second. It can't answer questions about events that occurred more than 10 minutes before the current time marker, nor can it reliably detect rapid changes that require a higher frame rate.
-- To analyze a different time interval, you must manually adjust the player’s timeline, and then submit your query.
+- Agents interpret descriptions literally; providing several levels of detail (“mess” vs. “a mess is scattered items on the floor”) can improve results (see Best Practices). 
+
+Vague or relative terms such as *“near”* or *“messy”* typically produce inconsistent detection; specify them more clearly to avoid misinterpretation. 
+
+- Descriptions that rely on object location, missing items, or relative positioning may lead to unreliable detection. 
+
+- Quick events may be missed by the agent.  
 
 ## Related content
 
