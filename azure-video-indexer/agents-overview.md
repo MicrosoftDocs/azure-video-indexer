@@ -159,7 +159,7 @@ Use these API calls to update, view, and delete an agent:
 
 ## Best practices
 
-Use these best practices to improve clarity and reliability across agent workflows. They emphasize precise requests, iterative refinement, and explicit emphasis or exclusions.
+Use these best practices to help agents interpret your intent consistently and produce dependable insights. Write precise prompts, iterate on wording, and state what to include or ignore.
 
 - Be specific and detailed when describing the event you want the agent to detect. For example, instead of “when there's a mess,” use “when there are clothes on the floor or any item lying on the ground.”   
 
