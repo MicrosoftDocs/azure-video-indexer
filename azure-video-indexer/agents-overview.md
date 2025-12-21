@@ -1,5 +1,5 @@
 ---
-title: "Agents for Real-Time Video Analysis in Azure AI Video Indexer"
+title: "AI Agents for Real-Time Video Analysis in Azure AI Video Indexer"
 description: Discover how agentic intelligence uses specialized AI agents to analyze live video streams, offering insights for retail, customer service, security, and more.
 #customer intent: As a developer, I want to integrate the API for activating agents so that I can automate live video analysis tasks in my application.
 author: cwatson-cat
@@ -14,7 +14,7 @@ appliesto:
 ai-usage: ai-assisted
 ---
 
-# Agents for real-time video analysis in Azure AI Video Indexer
+# AI Agents for real-time video analysis in Azure AI Video Indexer
 
 Azure AI Video Indexer (VI) uses specialized AI agents to deliver targeted, real-time insights from live video streams. These agents are modular, task-focused components that automatically analyze video for specific events, conditions, or behaviors such as safety hazards, customer experience problems, or operational anomalies. This article explains the available agents, activating and managing them by using the API, and best practices for integrating agentic intelligence into your video analysis workflows.  
 
