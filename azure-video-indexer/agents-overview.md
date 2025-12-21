@@ -1,5 +1,5 @@
 ---
-title: "Agents for real-time video analysis in Azure AI Video Indexer"
+title: "Agents for Real-Time Video Analysis in Azure AI Video Indexer"
 description: Discover how agentic intelligence uses specialized AI agents to analyze live video streams, offering insights for retail, customer service, security, and more.
 #customer intent: As a developer, I want to integrate the API for activating agents so that I can automate live video analysis tasks in my application.
 author: cwatson-cat
