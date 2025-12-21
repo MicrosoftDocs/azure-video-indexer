@@ -310,3 +310,4 @@ az k8s-extension delete --cluster-name <cluster-name> --cluster-type connectedcl
 
 - [Add or remove cameras for use with the VI extension for real-time analysis](live-add-remove-camera.md).
 - [Real-time video analysis in Azure AI Video Indexer](live-analysis.md)
+- [AI Agents for real-time video analysis in Azure AI Video Indexer](agents-overview.md)
