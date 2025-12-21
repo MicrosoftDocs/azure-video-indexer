@@ -153,7 +153,7 @@ Use these API calls to update, view, and delete an agent:
 
 ## Best practices
 
-Follow these best practices to set clear expectations and design agent jobs that perform predictably. They reduce ambiguity, improve consistency, and help you avoid false alerts.
+Use these best practices to help agents interpret your intent consistently and produce dependable insights. Write precise prompts, iterate on wording, and state what to include or ignore.
 
 - Be specific and detailed when describing the event you want the agent to detect. For example, instead of “when there's a mess,” use “when there are clothes on the floor or any item lying on the ground.”   
 
