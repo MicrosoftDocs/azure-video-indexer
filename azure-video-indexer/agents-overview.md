@@ -5,7 +5,7 @@ description: Discover how agentic intelligence uses specialized AI agents to ana
 author: cwatson-cat
 ms.author: cwatson
 ms.reviewer: cwatson
-ms.date: 12/19/2025
+ms.date: 12/21/2025
 ms.topic: concept-article
 ms.service: azure-video-indexer
 ms.collection: ce-skilling-ai-copilot
@@ -27,10 +27,6 @@ Real-time analysis in VI uses a modular, agent-based architecture. Each agent pe
 - **Sales recommendations agent** analyzes customer engagement with products and correlates it with real-time sales data. It identifies items that attract attention but don't convert into purchases. It offers actionable insights on placement, pricing, and visual appeal to boost performance.
 - **Security agent** safeguards individuals by proactively detecting potential hazards and unsafe conditions. This detection includes identifying signs of smoke or fire, detecting falls, and recognizing risky activities, such as employees in construction areas not following safety protocols.
 
-The following example image shows the security agent detecting a safety hazard.
-
-:::image type="content" source="media/agents-overview/hazard-detection.png" alt-text="Screenshot of the Video Indexer portal with a live stream from a factory production area. The video displays two workers in safety gear near industrial machinery with smoke or steam present. The right panel lists detected safety hazards and recommendations." lightbox="media/agents-overview/hazard-detection.png" :::
-
 ## Agent requirements
 
 To use agents, make sure your VI extension and environment meet the following requirements:
@@ -49,8 +45,6 @@ To use agents, make sure your VI extension and environment meet the following re
     --name <EXTENSION_NAME> \
     --config "videoIndexer.agents.enabled=true"
   ```
-
-
 
 ## Managing the agents
 
