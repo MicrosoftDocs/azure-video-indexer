@@ -111,3 +111,4 @@ You can see which **Azure regions** Azure AI Video Indexer is available on the [
 ## Related content
 
 - [Manage real-time analysis extensions](live-extension.md)
+- [AI Agents for real-time video analysis in Azure AI Video Indexer](agents-overview.md)
