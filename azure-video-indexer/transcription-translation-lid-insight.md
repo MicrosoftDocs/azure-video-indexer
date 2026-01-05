@@ -98,7 +98,7 @@ The API returns all the languages it detects in the video under `sourceLanguage`
 ```
 
 > [!IMPORTANT]
-> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all Azure AI Video Indexer features. Each insight also has its own transparency note.
+> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for Azure AI Video Indexer features.
 
 ## Sample code
 
