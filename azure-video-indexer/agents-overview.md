@@ -64,7 +64,6 @@ The API endpoints use the following placeholders:
 | `{cameraId}`     | The unique ID of the camera source, if applicable.                          |
 |`{intervallsinSeconds}`|Defines how often (in seconds) the agent runs and checks for the event you described in the prompt. The min value is 10 sec and max is 60 sec|
 |`{callbackUrl}`|**Optional parameter** - a web address where the agent sends its output.|
-| `{videoId}`      | The unique ID of the video, if applicable to the endpoint.                 |
 
 Replace these placeholders with your actual values when you make API requests.
 
