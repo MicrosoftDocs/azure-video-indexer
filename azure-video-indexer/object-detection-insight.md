@@ -183,7 +183,7 @@ No components are defined for object detection.
 ## Transparency notes
 
 > [!IMPORTANT]
-> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
+> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for VI features.
 
 - There are up to 20 detections per frame for standard and advanced processing and 35 tracks per class.
 - Object size shouldn't be greater than 90 percent of the frame. Large objects that consistently span over a large portion of the frame might not be recognized.

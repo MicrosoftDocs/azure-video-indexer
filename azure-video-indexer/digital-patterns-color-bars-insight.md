@@ -80,7 +80,7 @@ No components defined.
 ## Transparency notes
 
 > [!IMPORTANT]
-> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
+> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for VI features.
 
 - There can be a mismatch if the input video is of low quality (for example – old Analog recordings). 
 - The digital patterns are identified over the 10 min of the beginning and 10 min of the ending part of the video.

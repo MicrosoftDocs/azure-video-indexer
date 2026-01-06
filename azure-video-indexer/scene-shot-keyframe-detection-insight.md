@@ -209,7 +209,7 @@ To download each keyframe, use the keyframe IDs with a [Get Thumbnails](https://
 <!-- The warning text is duplicated in faq.yml. Sync any changes  -->
 
 > [!IMPORTANT]
-> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
+> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for VI features.
 
 <!-- 8/8/24 Removed from transparency note because not released due to a bug. -->
 
