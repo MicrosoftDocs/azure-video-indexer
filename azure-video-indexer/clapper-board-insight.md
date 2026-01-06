@@ -1606,9 +1606,7 @@ This response shows all of the data that come from detecting clapper boards. For
 |`instances`|A list of time ranges where this element appeared.|
 
 > [!IMPORTANT]
-> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
-
-[!INCLUDE [transparency-clapper-board-detection](includes/transparency-clapper-board-detection.md)]
+> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for VI features.
 
 ## Sample code
 

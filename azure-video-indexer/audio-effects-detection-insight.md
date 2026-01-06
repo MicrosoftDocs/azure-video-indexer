@@ -98,9 +98,7 @@ Here's an example showing the audio effects detection.
 ```
 
 > [!IMPORTANT]
-> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
-
-[!INCLUDE [transparency-audio-effects-detection](./includes/transparency-audio-effects-detection.md)]
+> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for VI features.
 
 ## Sample code
 

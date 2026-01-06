@@ -97,9 +97,7 @@ After you upload and index a video, download insights in JSON format from the we
 ```
 
 > [!IMPORTANT]
-> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
-
-[!INCLUDE [transparency-observed-people-detection-matched-faces](./includes/transparency-observed-people-detection-matched-faces.md)]
+> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for VI features.
 
 ## Sample code
 
