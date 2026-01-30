@@ -257,6 +257,8 @@ items:
     displayName: Azure AI Video Indexer Arc troubleshooting, Arc issues, troubleshooting guide
 - name: Reference
   items:
+  - name: VI enabled by Arc APIs
+    href: https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoIndexerEnabledByArc/Documentation/VideoIndexerArcApis.md
   - name: Azure AI Video Indexer API
     href: https://api-portal.videoindexer.ai/
   - name: Azure AI Video Indexer ARM REST API
