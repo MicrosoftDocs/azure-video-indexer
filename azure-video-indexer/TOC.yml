@@ -6,234 +6,228 @@ items:
   items:
   - name: What is Azure AI Video Indexer (VI)?
     href: video-indexer-overview.md
-    displayName: Azure AI Video Indexer overview, video indexing, video insights, Azure AI services
-- name: Responsible use of AI
-  items:
-  - name: Limited access features
-    href: limited-access-features.md
-    displayName: Azure AI Video Indexer limited access, feature eligibility, access requirements
-  - name: Transparency note
-    href: /legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context
-- name: Quickstarts
-  items:
-  - name: Try the VI web portal
-    href: try-vi-web-portal-quickstart.md
-    displayName: Azure AI Video Indexer quickstart, web portal, getting started, video analysis
-  - name: Create an account
-    href: create-account.md
-    displayName: Azure AI Video Indexer account creation, setup, register, new account
-  - name: Create an account connected to Azure OpenAI
-    href: connect-azure-open-ai-task.md
-    displayName: Azure AI Video Indexer OpenAI integration, LLM, connect OpenAI, large language model
-  - name: Develop with API
-    href: video-indexer-use-apis.md
-    displayName: Azure AI Video Indexer API, REST API, developer guide, API usage
-  - name: Deploy using Bicep
-    href: deploy-with-bicep.md
-    displayName: Azure AI Video Indexer Bicep deployment, infrastructure as code, Bicep templates
-  - name: Deploy using ARM template
-    href: deploy-with-arm-template.md
-    displayName: Azure AI Video Indexer ARM template, Resource Manager, ARM deployment
-  - name: Try VI enabled by Arc
-    href: arc/azure-video-indexer-enabled-by-arc-quickstart.md
-    displayName: Azure AI Video Indexer Arc quickstart, edge deployment, Arc extension
-- name: Concepts
-  items:
-  - name: Account types
-    href: accounts-overview.md
-    displayName: Azure AI Video Indexer account types, trial vs paid, account overview
-  - name: Private endpoint with VI
-    href: private-endpoint-overview.md
-    displayName: Azure AI Video Indexer private endpoint, secure connectivity, private link
-  - name: Insights
-    displayName: Azure AI Video Indexer insights, video analysis, audio analysis, AI models
-    href: insights-overview.md
-  - name: Indexing configuration options
-    href: indexing-configuration-guide.md
-    displayName: Azure AI Video Indexer indexing configuration, setup guide, language detection
-  - name: Bring Your Own AI model
-    displayName: Azure AI Video Indexer bring your own model, custom AI models, model integration, video analysis customization, BYOM
-    href: bring-your-own-model-overview.md
-  - name: VI enabled by Arc
+  - name: What is Azure VI enabled by Azure Arc?
     href: arc/azure-video-indexer-enabled-by-arc-overview.md
-    displayName: Azure AI Video Indexer Arc, hybrid deployment, Kubernetes, edge AI
-  - name: VI with generative AI
-    href: generative_ai_with_vi.md
-    dispalyName: Azure AI Video Indexer generative AI, LLM, video summarization, AI prompts
+- name: Quickstarts
+  expanded: true
+  items:
+  - name: Start in cloud
     items:
-    - name: VI with LLM prompts
-      href: prompt-overview.md
-      displayName: Azure AI Video Indexer LLM prompts, large language model, prompt engineering
-    - name: Textual summarization
-      href: text-summarization-overview.md
-      displayName: Azure AI Video Indexer text summarization, video summary, transcript summary
+    - name: Try web portal
+      href: try-vi-web-portal-quickstart.md
+    - name: Call APIs
+      href: video-indexer-use-apis.md
+    - name: Deploy with Bicep
+      href: deploy-with-bicep.md
+    - name: Deploy with ARM
+      href: deploy-with-arm-template.md
+  - name: Start on Azure Arc
+    expanded: true
+    items:
+    - name: Deploy on Azure Arc
+      href: arc/azure-video-indexer-enabled-by-arc-quickstart.md
+- name: Deploy service
+  items:
+  - name: Create account
+    href: create-account.md
+  - name: Run on cloud
+    items:
+    - name: Account types
+      href: accounts-overview.md
+    - name: Plan for scale
+      href: considerations-when-use-at-scale.md
+    - name: Configure indexing
+      href: indexing-configuration-guide.md
+    - name: Choose regions
+      href: regions.md
+    - name: Secure network
+      items:
+      - name: Private endpoints
+        items:
+        - name: Overview
+          href: private-endpoint-overview.md
+        - name: Configure private endpoint
+          href: private-endpoint-how-to.md
+      - name: Network security groups
+        href: network-security.md
+      - name: Firewall protected storage
+        href: storage-behind-firewall.md
+  - name: Run on Azure Arc
+    items:
+    - name: Deploy extension
+      href: live-extension.md
+- name: Ingest media (cloud-based)
+  items:
+  - name: Upload and index media (cloud-based)
+    href: upload-index-media.md
+- name: Extract insights and enhance content
+  items:
+    - name: Search your content (cloud-based)
+      href: video-indexer-search.md
+    - name: Insights overview (cloud-based)
+      href: insights-overview.md
+    - name: People (cloud-based)
+      items:
+      - name: Detect faces
+        href: face-detection-insight.md
+      - name: Group faces
+        href: face-grouping-how-to.md
+      - name: Match people
+        href: observed-matched-people-insight.md
+      - name: Identify clothing
+        href: observed-people-featured-clothing.md
+      - name: Redact faces
+        href: face-redaction-with-api.md
+    - name: Text (cloud-based)
+      items:
+      - name: Detect keywords
+        href: keywords-insight.md
+      - name: Infer topics
+        href: topics-inference-insight.md
+      - name: Extract entities
+        href: named-entities-insight.md
+      - name: Detect emotions (text)
+        href: text-based-emotions-detection-insight.md
+      - name: Detect logos (text)
+        href: detect-textual-logo.md
+    - name: Visuals
+      items:
+      - name: Detect objects
+        href: object-detection-insight.md
+      - name: Extract OCR
+        href: ocr-insight.md
+      - name: Detect scenes, shots & keyframes
+        href: scene-shot-keyframe-detection-insight.md
+      - name: Video insights (cloud-based)
+        items:
+        - name: Detect clapperboards
+          href: clapper-board-insight.md
+        - name: Detect color bars
+          href: digital-patterns-color-bars-insight.md
+        - name: Match textless slates
+          href: textless-slate-scene-matching.md
+        - name: Identify labels
+          href: labels-identification-insight.md
+        - name: Create projects
+          href: use-editor-create-project.md
+    - name: Audio (cloud-based)
+      items:
+      - name: Detect audio effects
+        href: audio-effects-detection-insight.md
+      - name: Keywords extraction insights
+        href: keywords-insight.md
+      - name: Named entities insights
+        href: named-entities-insight.md
+      - name: Topics inference insights
+        href: topics-inference-insight.md
+      - name: Text-based emotion detection insights
+        href: text-based-emotions-detection-insight.md
+    - name: Transcripts
+      items:  
+      - name: Edit transcript lines
+        href: edit-transcript-lines-portal.md
+      - name: Edit speakers
+        href: edit-speakers.md
+      - name: View closed captions
+        href: view-closed-captions.md
+      - name: Translate transcripts
+        href: transcription-translation-lid-insight.md
+    - name: Summaries (recorded media)
+      items:
+      - name: Summaries overview
+        href: text-summarization-overview.md
+      - name: Generate summaries
+        href: text-summarization-task.md
+    - name: Live analysis (enabled by Azure Arc)
+      items:
+      - name: Overview
+        href: live-analysis.md
+      - name: Add or remove cameras
+        href: live-add-remove-camera.md
+      - name: Manage cameras
+        href: live-manage-camera.md
+      - name: Define areas of interest
+        href: live-area-interest.md
+      - name: Watch recordings
+        href: live-watch-recordings.md
+      - name: Manage AI insights catalog (live)
+        href: live-ai-insights-catalog.md
+      - name: Summarize events (live)
+        href: live-event-summary.md
+      - name: Manage AI agents
+        href: agents-overview.md
+- name: Customize models and prompts
+  items:
+  - name: Create prompts
+    href: prompt-overview.md
+  - name: Connect to other AI models
+    href: generative_ai_with_vi.md
+  - name: Bring your own model (cloud-based)
+    href: bring-your-own-model-overview.md
+  - name: Speech models (cloud-based)
+    items:
+    - name: Training best practices
+      href: speech-model-training-best-practices.md
+    - name: Customize speech models
+      href: customize-speech-model-how-to.md
+  - name: Language models (cloud-based)
+    href: customize-language-model-how-to.md
+  - name: Person models (cloud-based)
+    href: customize-person-model-how-to.md
+  - name: Brands models (cloud-based)
+    href: customize-brands-model-how-to.md
+- Name: Manage and monitor service
+  items:
+  - name: Monitor service
+    href: monitor-video-indexer.md
+  - name: Restrict viewer role
+    href: restricted-viewer-role.md
+  - name: Manage tenants
+    items:
+    - name: Plan multitenancy
+      href: manage-multiple-tenants.md
+    - name: Switch tenants
+      href: switch-tenants-portal.md
+  - name: Disaster recovery
+    href: video-indexer-disaster-recovery.md
+  - name: Integrate systems
+    items:
+    - name: Connect Azure OpenAI
+      href: connect-azure-open-ai-task.md
+    - name: Connect Logic Apps
+      href: logic-apps-connector-arm-accounts.md
+    - name: Embed widgets
+      href: video-indexer-embed-widgets.md
+- name: Security
+  items:
+  - name: security baseline  (cloud-based)
+    href: security-baseline-video-indexer.md
+- name: Troubleshoot
+  items:
+  - name: Resource health (cloud-based)
+    href: /azure/service-health/resource-health-overview
+  - name: Troubleshooting guide (Azure Arc)
+    href: arc/azure-video-indexer-enabled-by-arc-troubleshooting.md
 - name: Samples
   items:
+  - name: Bring your own model samples
+    href: https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples
   - name: Azure AI Video Indexer samples
     href: https://github.com/Azure-Samples/azure-video-indexer-samples
   - name: Azure AI Video Indexer widgets
     href: https://www.npmjs.com/package/@azure/video-indexer-widgets
-- name: How to guides
+- name: Responsible use of AI
   items:
-  - name: Upload and index media
-    href: upload-index-media.md
-    displayName: Azure AI Video Indexer upload, index media, supported formats, video upload guide
-  - name: Get insights
-    items:
-    - name: Audio insights
-      items:
-      - name: Audio effects detection insights
-        href: audio-effects-detection-insight.md
-        displayName: Azure AI Video Indexer audio effects detection, audio insights, sound analysis, audio event detection, video audio analysis
-      - name: Keywords extraction insights
-        href: keywords-insight.md
-        displayName: Azure AI Video Indexer keywords extraction, keyword insights, audio keywords, video keyword analysis, content tagging
-      - name: Named entities insights
-        href: named-entities-insight.md
-        displayName: Azure AI Video Indexer named entities, entity extraction, named entity recognition, video insights, audio entity detection
-      - name: Topics inference insights
-        href: topics-inference-insight.md
-        displayName: Azure AI Video Indexer topics inference, topic detection, video topics, audio topics, content categorization, topic analysis
-      - name: Text-based emotion detection insights
-        href: text-based-emotions-detection-insight.md
-        displayName: Azure AI Video Indexer text-based emotion detection, emotion analysis, sentiment detection, video emotion insights, audio emotion analysis
-      - name: Transcription, translation, language insights
-        href: transcription-translation-lid-insight.md
-        displayName: Azure AI Video Indexer transcription, translation, language identification, auto language detection, speech-to-text, multilingual video analysis
-    - name: Video insights
-      items:
-      - name: Faces detection insights
-        href: face-detection-insight.md
-        displayName: Azure AI Video Indexer face detection, video insights, face recognition
-      - name: Labels identification insights
-        href: labels-identification-insight.md
-        displayName: Azure AI Video Indexer labels identification, video labels, object detection
-      - name: Observed people detection & matched faces insights
-        href: observed-matched-people-insight.md
-        displayName: Azure AI Video Indexer people detection, matched faces, video insights
-      - name: Object detection insights
-        href: object-detection-insight.md
-        displayName: Azure AI Video Indexer object detection, video objects, AI detection
-      - name: OCR insights
-        href: ocr-insight.md
-        displayName: Azure AI Video Indexer OCR, text recognition, video OCR, optical character recognition
-      - name: Post-production insights
-        items:
-        - name: Clapper board detection insights
-          href: clapper-board-insight.md
-          displayName: Azure AI Video Indexer clapper board detection, post-production, slate detection
-        - name: Color bar detection insights
-          href: digital-patterns-color-bars-insight.md
-          displayName: Azure AI Video Indexer color bar detection, digital patterns, post-production
-      - name: Scene, shots, keyframes detection
-        href: scene-shot-keyframe-detection-insight.md
-        displayName: Azure AI Video Indexer scene detection, shots, keyframes, video segmentation
-  - name: Search videos
-    href: video-indexer-search.md
-    displayName: Azure AI Video Indexer search, video search, transcript search, search API
-  - name: Redact faces
-    href: face-redaction-with-api.md
-    displayName: Azure AI Video Indexer face redaction, privacy, video redaction API
-  - name: Find featured clothing
-    href: observed-people-featured-clothing.md
-    displayName: Azure AI Video Indexer featured clothing, video insights, clothing detection
-  - name: View and update transcriptions
-    href: edit-transcript-lines-portal.md
-    displayName: Azure AI Video Indexer transcript editing, update transcription, edit captions
-  - name: Edit speakers
-    href: edit-speakers.md
-    displayName: Azure AI Video Indexer edit speakers, speaker identification, transcript editing
-  - name: View closed captions
-    href: view-closed-captions.md
-    displayName: Azure AI Video Indexer closed captions, subtitles, captioning, transcript lines, accessibility, video player, transcript export
-  - name: Detect textual logo
-    href: detect-textual-logo.md
-    displayName: AAzure AI Video Indexer textual logo detection, logo recognition, video branding
-  - name: Create a project
-    href: use-editor-create-project.md
-    displayName: Azure AI Video Indexer project editor, video projects, content creation
-  - name: Embed widgets
-    href: video-indexer-embed-widgets.md
-    displayName: Azure AI Video Indexer embed widgets, video player, integration, widgets API
-  - name: Enable and view textless slate with matching scene
-    href: textless-slate-scene-matching.md
-    displayName: Azure AI Video Indexer textless slate, scene matching, video post-production, slate detection, video editing, scene identification
-  - name: Customize content models
-    items:
-    - name: Customize brands model
-      href: customize-brands-model-how-to.md
-      displayName: Azure AI Video Indexer custom brands model, brand detection, model customization
-    - name: Customize language model
-      href: customize-language-model-how-to.md
-      displayName: Azure AI Video Indexer custom language model, language customization, speech model
-    - name: Customize person model
-      href: customize-person-model-how-to.md
-      displayName: Azure AI Video Indexer custom person model, face recognition, person identification
-    - name: Customize speech model
-      href: customize-speech-model-how-to.md
-      displayName: Azure AI Video Indexer custom speech model, speech recognition, model training
-    - name: Speech model training best practices
-      href: speech-model-training-best-practices.md
-      displayName: Azure AI Video Indexer speech model training, best practices, speech accuracy
-    - name: Use global face grouping
-      href: face-grouping-how-to.md
-      displayName: Azure AI Video Indexer face grouping, face clustering, video insights
-  - name: Use LLM and other models
-    items:
-    - name: Summarize videos
-      href: text-summarization-task.md
-      displayName: Azure AI Video Indexer summarize videos, video summary, LLM, transcript summary
-    - name: Create LLM prompt content
-      href: prompt-overview.md
-      displayName: LLM, large language model, LLama2, Phi2, GPT3_5Turbo, or GPT4
-    - name: Bring your own model samples
-      href: https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples
-  - name: Use with Logic Apps
-    href: logic-apps-connector-arm-accounts.md
-    displayName: ARM-based VI accounts
-  - name: Manage Video Indexer
-    items:
-    - name: Manage access to your account
-      href: restricted-viewer-role.md
-      displayName: Azure AI Video Indexer restricted viewer, access control, user roles
-    - name: Use a private endpoint
-      href: private-endpoint-how-to.md
-      displayName: private endpoint, private link
-    - name: Manage multiple tenants
-      href: manage-multiple-tenants.md
-      displayName: Azure AI Video Indexer multiple tenants, tenant management, multi-tenant setup
-    - name: Switch between tenants in portal
-      href: switch-tenants-portal.md
-      displayName: Azure AI Video Indexer switch tenants, portal guide, tenant switching
-    - name: Use at scale
-      href: considerations-when-use-at-scale.md
-      displayName: Azure AI Video Indexer scale, best practices, large scale usage, performance
-  - name: Find and set your Azure region
-    href: regions.md
-    displayName: Azure AI Video Indexer regions, regional availability, supported regions, region codes
-  - name: Configure failover for disaster recovery
-    href: video-indexer-disaster-recovery.md
-    displayName: Azure AI Video Indexer disaster recovery, failover, business continuity
-- name: Monitor Video Indexer
-  href: monitor-video-indexer.md
-  displayName: Azure AI Video Indexer monitoring, monitor setup, performance monitoring
-- name: Security
-  items:
-  - name: Use Network Security Groups
-    href: network-security.md
-    displayName: Azure AI Video Indexer network security, NSG, service tags, secure network
-  - name: Set up firewall-protected storage
-    href: storage-behind-firewall.md
-    displayName: Azure AI Video Indexer storage firewall, secure storage, firewall setup
-- name: Troubleshooting
-  items:
-  - name: Resource health
-    href: /azure/service-health/resource-health-overview
-  - name: VI enabled by Arc troubleshooting
-    href: arc/azure-video-indexer-enabled-by-arc-troubleshooting.md
-    displayName: Azure AI Video Indexer Arc troubleshooting, Arc issues, troubleshooting guide
+  - name: Limited access features
+    href: limited-access-features.md
+  - name: Transparency note
+    href: /legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context
+  - name: Transparency note for real-time analysis
+    href: /legal/azure-video-indexer/transparency-note-real-time-analysis?context=/azure/azure-video-indexer/context/context
 - name: Reference
   items:
+  - name: VI enabled by Arc APIs
+    href: https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoIndexerEnabledByArc/Documentation/VideoIndexerArcApis.md
   - name: Azure AI Video Indexer API
     href: https://api-portal.videoindexer.ai/
   - name: Azure AI Video Indexer ARM REST API
