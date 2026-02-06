@@ -1,12 +1,16 @@
 ---
 title: Get object detection insights
 description: This article shows you how to get the Azure AI Video Indexer object detection insights.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/04/2025
+ms.date: 10/06/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Azure AI Video Indexer enabled by Azure Arc
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Get object detection insights
@@ -179,7 +183,7 @@ No components are defined for object detection.
 ## Transparency notes
 
 > [!IMPORTANT]
-> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
+> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for VI features.
 
 - There are up to 20 detections per frame for standard and advanced processing and 35 tracks per class.
 - Object size shouldn't be greater than 90 percent of the frame. Large objects that consistently span over a large portion of the frame might not be recognized.

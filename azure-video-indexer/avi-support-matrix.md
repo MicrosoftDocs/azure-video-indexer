@@ -1,12 +1,16 @@
 ---
 title: Azure AI Video Indexer support matrix and service limits
 description: Learn about supported formats, file size and duration limits, languages, optical character recognition, projects, person models, and codecs in Azure AI Video Indexer.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/09/2025
+ms.date: 11/10/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article
+appliesto:
+  - Azure AI Video Indexer enabled by Azure Arc
+  - Cloud-based Azure AI Video Indexer
 # customer intent: As a user of Azure AI Video Indexer, I want to understand the supported formats and limitations of the service, so that I can effectively use it for my video indexing needs.
 ---
 
@@ -16,13 +20,13 @@ This article describes the supported formats and limitations of Azure AI Video I
 
 ## Upload file size and video duration
 
-When you upload a video to Azure AI Video Indexer, there are limits on the file size and video duration based on the preset you choose. The following sections explain the limits:
+When you upload a file to Azure AI Video Indexer, there are limits on the file size and video duration based on the preset you choose. The following sections explain the limits:
 
 ### File size limits
 
 If uploading a file from your device, the file size limit is 2 GB.
 
-If the video is uploaded from a URL, the file size limit is 30 GB. The URL must lead to an online media file with a media file extension (for example `myvideo.MP4`) and not a webpage such as `https://www.youtube.com`.
+If the file is uploaded from a URL, the file size limit is 30 GB. The URL must lead to an online media file with a media file extension (for example `myvideo.MP4`) and not a webpage such as `https://www.youtube.com`.
 
 ### File duration limit
 

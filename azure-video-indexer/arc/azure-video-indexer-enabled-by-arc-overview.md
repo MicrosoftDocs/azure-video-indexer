@@ -1,12 +1,15 @@
 ---
 title: What is Azure AI Video Indexer enabled by Arc?
 description: Azure AI Video Indexer enabled by Arc performs video and audio analysis on edge devices, providing a hybrid solution for indexing content.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/23/2025
+ms.date: 10/06/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: overview
+appliesto:
+  - Azure AI Video Indexer enabled by Azure Arc
 #customer intent: As a video content manager, I want to use Azure AI Video Indexer analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
 ---
 
@@ -229,6 +232,7 @@ Azure AI Video Indexer enabled by Arc also supports bringing your own model. For
 ## Limitations
 
 - The supported file size for indexing is up to 2 GB.
+- Azure AI Video Indexer enabled by Arc doesn't support uploading and indexing videos with a resolution of 1920x1080 or greater.
 - Upgrading the extension:
     - Extension support applies to the latest version only.
     - We recommend setting the `auto-upgrade` property to `true`. The setting keeps the extension up to date.
@@ -244,7 +248,7 @@ Azure AI Video Indexer enabled by Arc also supports bringing your own model. For
 We recommend that you use Azure Container Storage enabled by Azure Arc for storage. For more information, see the following articles:
 
 - [What is Azure Container Storage enabled by Azure Arc?](/azure/azure-arc/container-storage/overview)
-- [Prepare Linux for Edge Volumes](/azure/azure-arc/container-storage/prepare-linux-edge-volumes)
+- [Prepare Linux for Edge Volumes](/azure/azure-arc/container-storage/howto-prepare-linux-edge-volumes)
 
 ## Related content
 

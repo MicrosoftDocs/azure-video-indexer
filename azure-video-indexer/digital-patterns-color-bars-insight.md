@@ -1,12 +1,15 @@
 ---
 title: Get digital patterns with color bars insights in Azure AI Video Indexer
 description: Learn how to get digital patterns with color bars insights with Azure AI Video Indexer.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/03/2025
+ms.date: 10/06/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 #customer intent: As an Azure AI Video Indexer user, I want to learn how get color bar insights with Azure AI Video Indexer.
 ---
 
@@ -77,7 +80,7 @@ No components defined.
 ## Transparency notes
 
 > [!IMPORTANT]
-> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
+> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for VI features.
 
 - There can be a mismatch if the input video is of low quality (for example – old Analog recordings). 
 - The digital patterns are identified over the 10 min of the beginning and 10 min of the ending part of the video.

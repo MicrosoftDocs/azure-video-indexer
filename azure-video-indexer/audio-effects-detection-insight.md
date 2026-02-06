@@ -1,19 +1,22 @@
 ---
 title: Get audio effects detection insights 
 description: This article shows you how to get the Azure AI Video Indexer audio effects detection insights.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/04/2025
+ms.date: 10/06/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Get audio effects detection insights
 
 Audio effects detection detects acoustic events and classifies them into categories like laughter, crowd reactions, alarms, or sirens.
 
-### Audio effects use cases
+## Audio effects use cases
 
 - Improve accessibility by offering more context for a hearing- impaired audience by transcription of nonspeech effects. 
 - Improving efficiency when creating raw data for content creators. Important moments in promos and trailers such as laughter, crowd reactions, gunshots, or explosions can be identified, for example, in Media and Entertainment. 
@@ -51,6 +54,10 @@ After you upload and index a video, download insights in JSON format from the we
 1. Select the media you want.
 1. Select **Download**, and then select **Insights (JSON)**. The JSON file opens in a new browser tab.
 1. Find the key pair described in the example response.
+
+Here's an example showing the audio effects detection.
+
+:::image type="content" source="./media/audio-effects-detection-insight/gunshot-audio-effect.png" border="true" alt-text="Screenshot showing gunshot audio effect detection in the Azure AI Video Indexer web portal and downloaded JSON file." lightbox="./media/audio-effects-detection-insight/gunshot-audio-effect.png" :::
 
 ## Use the API
 
@@ -91,9 +98,7 @@ After you upload and index a video, download insights in JSON format from the we
 ```
 
 > [!IMPORTANT]
-> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
-
-[!INCLUDE [transparency-audio-effects-detection](./includes/transparency-audio-effects-detection.md)]
+> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for VI features.
 
 ## Sample code
 
@@ -119,6 +124,8 @@ Audio effects in closed caption files appear as square brackets:
 
 ## Add audio effects to closed caption files
 
+To include audio effects in closed captions files, you can use the API or the web portal.
+
 ### API
 You can add audio effects to closed captions files with the [Get video captions](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Captions) request and by choosing *true* for the `includeAudioEffects` parameter. 
 
@@ -128,3 +135,6 @@ You can add audio effects to closed captions files with the [Get video captions]
 ### Web portal
 You can also use the web portal by selecting **Download** -> **Closed Captions** -> **Include Audio Effects**.
 
+## Related content
+
+- [Get keywords extraction insights](keywords-insight.md)
