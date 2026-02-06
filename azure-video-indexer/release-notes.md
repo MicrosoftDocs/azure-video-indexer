@@ -4,7 +4,7 @@ description: Stay updated on the latest features, bug fixes, and known issues. E
 author: cwatson-cat
 ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 12/11/2025
+ms.date: 02/06/2026
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ai-usage: ai-assisted
@@ -26,6 +26,14 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 
 Revisit this page to view the latest updates.
 
+## January 2026
+
+### Situation custom insight for Azure AI Video Indexer enabled by Azure Arc
+
+The situation custom insight enables users to define scenario‑based detections in natural language in addition to the objects that were supported, empowering teams to recognize complex conditions like hazards, anomalies, or operational states in real time. This delivers highly tailored, actionable insights without requiring coding or ML expertise.
+
+For more information, see [Custom insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-ai-insights-catalog#custom-insights).
+
 ## November 2025
 
 ### Real-time analysis (preview) for Azure AI Video Indexer enabled by Azure Arc
@@ -38,7 +46,7 @@ New capabilities in real-time analysis:
 
 - **Agentic intelligence:** Modular, agent-based architecture with specialized AI agents trained to detect specific events. Prebuilt agents support detections such as safety hazards, customer experience issues, or operational anomalies. Use the API to trigger an agent and provide instructions for the events you want to detect. You don’t need to know which agent is best for the task. Azure AI Video Indexer routes the queries to the appropriate agent.
 
-- **Custom AI insights with natural language:** Define custom detection logic using natural language to monitor specific objects or situations. No technical expertise required. Describe what you want to detect and upload supporting images or negative examples to fine-tune detection. Available through both API and portal.
+- **Custom AI insights with natural language:** Define custom detection logic using natural language to monitor specific objects. No technical expertise required. Describe what you want to detect and upload supporting images or negative examples to fine-tune detection. Available through both API and portal.
 
 - **Event summarization:** Generate end-of-shift summaries with your own focus, to get a textual summary from your video footage. Help teams quickly review key events and operational outcomes.
 
