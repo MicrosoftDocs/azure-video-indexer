@@ -1,12 +1,15 @@
 ---
 title: Get labels identification insights
 description: This article shows you how to get the Azure AI Video Indexer labels identification detection insights.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/04/2025
+ms.date: 10/06/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Get labels identification insights
@@ -84,9 +87,7 @@ After you upload and index a video, download insights in JSON format from the we
 ``` 
 
 > [!IMPORTANT]
-> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for all VI features. Each insight also has its own transparency note.
-
-[!INCLUDE [transparency-labels-identification](./includes/transparency-labels-identification.md)]
+> Read the [transparency note overview](/legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context) for VI features.
 
 ## Sample code
 

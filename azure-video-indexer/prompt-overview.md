@@ -1,12 +1,16 @@
 ---
 title:  Azure AI Video Indexer with LLM prompts
 description: Azure AI Video Indexer lets you create prompt-ready video insights for LLMs. Ask questions, generate summaries, and search video content easily. Try it now.
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/09/2025
+ms.date: 08/18/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: concept-article
+appliesto:
+  - Azure AI Video Indexer enabled by Azure Arc
+  - Cloud-based Azure AI Video Indexer
 #customer intent: As a video content manager, I want to generate prompt-ready insights from my videos so that I can use LLMs to summarize and search video content easily.
 ---
 
@@ -22,7 +26,7 @@ You can use LLM prompts with Azure AI Video Indexer in the cloud, or in your dat
 
 **Searchability:** By converting video content into a text-based, prompt-ready format, you can perform detailed, natural language searches within your video content. It can significantly improve discoverability within large video libraries based on specific queries.
 
-**Content Creation**: You can query your video library for specific moments in your videos associated with certain emotions or events. For example, you can retrieve *funny* or *sad* moments from a video series and use that to create a promo or highlight. Similarly, you can retrieve moments related to specific events of interest such as “past earthquakes during the last decade.”
+**Content Creation**: You can query your video library for specific moments in your videos associated with certain emotions or events. For example, you can retrieve *funny* or *sad* moments from a video series and use that to create a promo or highlight. Similarly, you can retrieve moments related to specific events of interest such as "past earthquakes during the last decade."
 
 **Educational Purposes**: Create summaries from lecture videos to make it easier for students to review and understand the material. Students can also ask specific questions related to the lecture material. You can refer to the exact part of the video where the article is discussed making the learning experience more efficient.
 

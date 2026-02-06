@@ -1,12 +1,15 @@
 ---
 title: Customize a speech model in Azure AI Video Indexer  
 description: This article shows you how to customize a speech model with Azure AI Video Indexer. 
-author: bandersmsft
-ms.author: banders
+author: cwatson-cat
+ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 06/04/2025
+ms.date: 08/18/2025
+ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
+appliesto:
+  - Cloud-based Azure AI Video Indexer
 ---
 
 # Customize a speech model
@@ -273,7 +276,7 @@ The [Get Speech Dataset Files](https://api-portal.videoindexer.ai/api-details#
         "size": 1517 
     } 
 }, { 
-    "datasetId": "00000000-0000-0000-0000-f58ac72” 
+    "datasetId": "00000000-0000-0000-0000-f58ac72" 
     "fileId": "00000000-0000-0000-0000-2369192e", 
     "name": "normalized.txt", 
     "contentUrl": "", 
