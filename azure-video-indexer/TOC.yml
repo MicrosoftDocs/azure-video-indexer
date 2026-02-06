@@ -187,7 +187,7 @@ items:
     href: monitor-video-indexer.md
 - Name: Manage service (cloud-based)
   items:
-  - name: Restrict viewer role
+  - name: Manage account access
     href: restricted-viewer-role.md
   - name: Manage tenants
     items:
@@ -207,7 +207,7 @@ items:
     href: /azure/service-health/resource-health-overview
   - name: Troubleshooting guide (Azure Arc)
     href: arc/azure-video-indexer-enabled-by-arc-troubleshooting.md
-- name: Samples
+- name: Samples (cloud-based)
   items:
   - name: Bring your own model samples
     href: https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples
