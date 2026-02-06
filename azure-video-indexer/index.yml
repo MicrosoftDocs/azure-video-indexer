@@ -47,11 +47,13 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Create an account
-            url: create-account.md 
-          - text: Try VI web portal
-            url: try-vi-web-portal-quickstart.md
-          - text: Indexing configuration guide
-            url: indexing-configuration-guide.md
+            url: create-account.md
+          - text: Upload and index media
+            url: upload-index-media.md
+          - text: Search videos
+            url: video-indexer-search.md
+          - text: Embed widgets
+            url: video-indexer-embed-widgets.md
       - linkListType: sample
         links:
           - text: Code samples
@@ -66,3 +68,5 @@ landingContent:
           url: limited-access-features.md   
         - text: Transparency note
           url: /legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context
+        - text: Transparency note for real-time analysis
+          url: /legal/azure-video-indexer/transparency-note-real-time-analysis?context=/azure/azure-video-indexer/context/context
