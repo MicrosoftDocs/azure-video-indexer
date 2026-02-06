@@ -1,11 +1,11 @@
 ### YamlMime:Landing
  
 title: Learn about Azure AI Video Indexer
-summary: Azure AI Video Indexer is a cloud application, part of Azure AI services, built on Azure AI services (such as the Face, Translator, Azure AI Vision, and Speech). It enables you to extract the insights from your videos using Azure AI Video Indexer video and audio models.
+summary: Azure AI Video Indexer is an AI solution that enables you to extract insights from your videos using video and audio models. It's available as an Azure Arc extension for edge deployment or as a cloud-based application, part of Azure AI services built on services such as Face, Translator, Azure AI Vision, and Speech.
 
 metadata:
   title: Azure AI Video Indexer documentation
-  description: Azure AI Video Indexer is a cloud application, part of Azure AI services, built on Azure AI services (such as the Face, Translator, Azure AI Vision, and Speech). It enables you to extract the insights from your videos using Azure AI Video Indexer video and audio models.
+  description: Azure AI Video Indexer is an AI solution that enables you to extract insights from your videos using video and audio models. It's available as an Azure Arc extension for edge deployment or as a cloud-based application, part of Azure AI services built on services such as Face, Translator, Azure AI Vision, and Speech.
   services: azure-video-indexer
   ms.service: azure-video-indexer
   ms.collection: collection,ce-skilling-ai-copilot,rai-skilling-ai-copilot
@@ -27,7 +27,7 @@ landingContent:
           - text: What is Azure AI Video Indexer?
             url: video-indexer-overview.md
           - text: Azure AI Video Indexer enabled by Arc
-            url: azure-video-indexer-enabled-by-arc-overview.md
+            url: arc/azure-video-indexer-enabled-by-arc-overview.md
           - text: Frequently asked questions
             url: faq.yml
       - linkListType: whats-new
@@ -40,16 +40,20 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links: 
-          - text: Upload and index media
-            url: upload-index-media.md 
+          - text: Try the Azure AI Video Indexer web portal
+            url: try-vi-web-portal-quickstart.md
+          - text: Try Azure AI Video Indexer enabled by Arc
+            url: arc/azure-video-indexer-enabled-by-arc-quickstart.md 
       - linkListType: how-to-guide
         links:
           - text: Create an account
-            url: create-account.md 
-          - text: Try VI web portal
-            url: try-vi-web-portal-quickstart.md
-          - text: Indexing configuration guide
-            url: indexing-configuration-guide.md
+            url: create-account.md
+          - text: Upload and index media
+            url: upload-index-media.md
+          - text: Search videos
+            url: video-indexer-search.md
+          - text: Embed widgets
+            url: video-indexer-embed-widgets.md
       - linkListType: sample
         links:
           - text: Code samples
@@ -64,3 +68,5 @@ landingContent:
           url: limited-access-features.md   
         - text: Transparency note
           url: /legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context
+        - text: Transparency note for real-time analysis
+          url: /legal/azure-video-indexer/transparency-note-real-time-analysis?context=/azure/azure-video-indexer/context/context
