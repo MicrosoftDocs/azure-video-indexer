@@ -28,7 +28,7 @@ Revisit this page to view the latest updates.
 
 ## January 2026
 
-### Situation custom insight
+### Situation custom insight for Azure AI Video Indexer enabled by Azure Arc
 
 The situation custom insight enables users to define scenario‑based detections in natural language in addition to the objects that were supported, empowering teams to recognize complex conditions like hazards, anomalies, or operational states in real time. This delivers highly tailored, actionable insights without requiring coding or ML expertise.
 
