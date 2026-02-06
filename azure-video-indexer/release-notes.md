@@ -30,7 +30,7 @@ Revisit this page to view the latest updates.
 
 ### Situation custom insight
 
-The situation custom insight enables users to define scenario‑based detections in natural language in addition to the objects that was supported, empowering teams to recognize complex conditions like hazards, anomalies, or operational states in real time. This delivers highly tailored, actionable insights without requiring coding or ML expertise.
+The situation custom insight enables users to define scenario‑based detections in natural language in addition to the objects that were supported, empowering teams to recognize complex conditions like hazards, anomalies, or operational states in real time. This delivers highly tailored, actionable insights without requiring coding or ML expertise.
 
 For more information, see [Custom insights](https://learn.microsoft.com/en-us/azure/azure-video-indexer/live-ai-insights-catalog#custom-insights).
 
