@@ -6,7 +6,7 @@ items:
   items:
   - name: What is Azure AI Video Indexer (VI)?
     href: video-indexer-overview.md
-  - name: What is Azure VI enabled by Azure Arc?
+  - name: What is VI enabled by Azure Arc?
     href: arc/azure-video-indexer-enabled-by-arc-overview.md
 - name: Quickstarts
   expanded: true
@@ -159,19 +159,19 @@ items:
     href: prompt-overview.md
   - name: Connect to other AI models
     href: generative_ai_with_vi.md
-  - name: Models (cloud-based)
+  - name: Bring your own model
+    href: bring-your-own-model-overview.md
+  - name: Train built-in model (cloud-based)
     items:
-    - name: Bring your own model
-      href: bring-your-own-model-overview.md
     - name: Speech training best practices
       href: speech-model-training-best-practices.md
-    - name: Speech models
+    - name: Speech model
       href: customize-speech-model-how-to.md
-    - name: Language models
+    - name: Language model
       href: customize-language-model-how-to.md
-    - name: Person models
+    - name: Person model
       href: customize-person-model-how-to.md
-    - name: Brands models
+    - name: Brands model
       href: customize-brands-model-how-to.md
 - name: Integrate systems (cloud-based)
   items:
@@ -183,7 +183,7 @@ items:
     href: video-indexer-embed-widgets.md
 - name: Monitor service
   items:
-  - name: Monitor service
+  - name: View logs
     href: monitor-video-indexer.md
 - Name: Manage service (cloud-based)
   items:
