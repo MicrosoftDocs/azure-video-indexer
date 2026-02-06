@@ -40,7 +40,7 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links: 
-          - text: Upload and index media
+          - text: Try the Azure AI Video Indexer web portal
             url: try-vi-web-portal-quickstart.md
           - text: Try Azure AI Video Indexer enabled by Arc
             url: arc/azure-video-indexer-enabled-by-arc-quickstart.md 
