@@ -48,7 +48,7 @@ To create a new custom AI real-time insight:
    :::image type="content" source="media/live-ai-insights-catalog/choose-custom-ai-insight-type.png" alt-text="Screenshot of create a custom AI insight page with option to select object or situation detection.":::
 1. Enter a name for the insight in the **AI insight name** field. The name isn't part of the training data.
 1. For object detection:
-   - **Detected object**: Describe the object to detect. Use only nouns like `dog` or `shopping cart`. Don’t use adjectives or descriptive words like `big` or `empty`. For more examples, see [Best Practices](#best-practices-to-create-a-custom-insight).
+   - **Detected object**: Describe the object to detect. See [Best Practices](#best-practices-to-create-a-custom-insight).
    - **Object example images**: Upload up to 10 images of the object.
    :::image type="content" source="./media/live-ai-insights-catalog/create-custom-ai-insight.png" border="true" alt-text="Screenshot of the create custom AI insight page for object detection where you add a name, describe the object, and upload images."  :::
    - Select the **Fine-tune (optional)** tab to add negative examples.
@@ -68,22 +68,45 @@ Use the following best practices to help you define custom AI insights that deli
 
 Follow these tips to define object detection insights that help the model accurately identify and track specific items in your video streams:
 
-- Use only nouns like `dog` or `shopping cart`.
-- Don't use adjectives or descriptive words like `big` or `empty`.
-- You can include up to 10 words for a single custom insight. They're added in the **Training data**" section – **Text**. Use these words to represent various terms for the same object to ensure comprehensive detection. For example, to detect computers, use terms such as `computer`, `laptop`, and `PC`. All the terms create one class of detection and tracking. They're called by the value specified in **AI Insight Name**.
-- If using as a training data a high-level category word such as “vehicle”, it is useful to add to the training data more specific words, such as “car”, “automobile”, etc. 
+#### Describing your object
 
-- You can include up to 10 images for a single custom insight in addition or instead of the text section. They’re added to the Training data section – Images. Use these images to represent various visual features of the same object to ensure comprehensive detection. 
+Write a clear, specific description of the object you want to detect.
 
-- Optionally, use negative examples (text and/or images) to improve the detection results or get finer results. For example, if you’d like to detect all vehicles that are not SUVs, use the positive example “vehicle” and the negative example “SUV”. 
-
+- Use detailed, but concise descriptions like `a red classic car`, `person holding a yellow hard hat`, or `person wearing helmet`.
+- Add a viewpoint like `a red car visible from behind`.
+- Use synonyms like `motorbike`, `bike`, or `motorcycle`.
 - The AI Insight Name isn't automatically added to the training data. For example, if you called the insight `computer`, you should also add that word to the training data section – **Text**.
 - Create separate insights for different objects. For example, don't create a single "Animal detection" insight and then attempt to include 10 different animals that you want to detect. Instead, create a different insight for each animal. For example: Cow detection - `cow`, Cat detection - `cat`, Elephant detection - `elephant`, and Giraffe detection - `giraffe`.
+
+#### What to avoid in your descriptions
+
+Avoid these common mistakes in your descriptions.
+
+- Don't use adjectives or descriptive words like `big` or `empty`.
 - Avoid using words that can refer to two different objects like `bat` or `nail`.
 - Avoid using logical words like `and`, `or`, and `not`. Enter each word separately, unless the object itself includes two words. For example, `shopping cart`.
-- Use images that include only the object you would like to detect.
 
+#### Training data - Text
+
+You can include up to 10 words for a single custom insight. They're added in the training data section – **Text**.
+
+- Use these words to represent various terms for the same object to ensure comprehensive detection. For example, to detect computers, use terms such as `computer`, `laptop`, and `PC`. All the terms create one class of detection and tracking. They're called by the value specified in **AI Insight Name**.
+- If using as training data a high-level category word such as "vehicle", it is useful to add to the training data more specific words, such as "car", "automobile", etc.
+
+#### Training data - Images
+
+You can include up to 10 images for a single custom insight in addition or instead of the text section. They're added to the training data section – **Images**.
+
+- Use images to represent various visual features of the same object to ensure comprehensive detection.
+- Use images that include only the object you would like to detect.
 - Use good quality images (i.e., avoid using low quality, pixelated, or blurry images).
+
+#### Negative examples (optional)
+
+Use negative examples (text and/or images) to improve the detection results or get finer results. 
+
+- For example, if you'd like to detect all vehicles that are not SUVs, use the positive example "vehicle" and the negative example "SUV".
+- Use negative examples instead of negation words like `not` or `without`.
 
 ### Situation detection
 
