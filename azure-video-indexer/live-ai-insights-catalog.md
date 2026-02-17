@@ -1,135 +1,87 @@
 ---
-title: Create custom insights in the live AI Insights catalog using Azure AI Video Indexer
-description: Learn how to create custom insights in the live AI Insights catalog using Azure AI Video Indexer.
+title: Live AI insights catalog in Azure AI Video Indexer
+description: Learn how AI insights work for live stream video, how they appear in the AI insights catalog, and when to use built-in and custom insights.
 author: cwatson-cat
 ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 12/08/2025
+ms.date: 02/17/2026
 ai-usage: ai-assisted
 ms.service: azure-video-indexer
-ms.topic: how-to
+ms.topic: concept-article
 appliesto: 
 - Azure AI Video Indexer enabled by Azure Arc
-# customer intent: As an Azure user, I want to create custom insights in the live AI Insights catalog using Azure AI Video Indexer.
+# customer intent: As an Azure user, I want to understand live video AI insights, how they appear in the AI insights catalog, and how to use built-in or custom insights for my cameras.
 ---
 
-# Create custom insights in the live AI Insights catalog - Preview
+# Live AI insights catalog for Azure AI Video Indexer enabled by Azure Arc - Preview
 
-Azure AI Video Indexer enables real-time streaming with first party AI models that can detect vehicles and people as they appear. You can also create your own custom insights using natural language to detect any object that interests you in real time. To benefit from real-time detection, create a preset with the AI models you need and then apply it on the camera. For more information, see [Create a preset](live-manage-camera.md#create-a-preset) and [Apply a preset to a camera](live-manage-camera.md#apply-a-preset-to-a-camera) sections.
+Live AI insights detect people, vehicles, or custom objects and situations in live camera streams. They run in your Azure Arc edge environment so you can act on detections right away. Unlike uploaded file analysis, real-time AI insights process a live stream and return detections continuously, not a completed index after file processing. You manage these insights in the AI insights catalog.
 
-In the [Azure AI Video Indexer](https://www.videoindexer.ai/) website, you can view the AI insights catalog page to see all available insights.
+## The AI insights catalog
+
+The AI insights catalog under **Model customizations** is the central place in the VI portal where you review available insights and build presets. 
+
+Go to [Azure AI Video Indexer](https://www.videoindexer.ai/) to view the AI insights catalog to see all available insights.
 
 :::image type="content" source="./media/live-ai-insights-catalog/ai-insights-catalog.png" border="true" alt-text="Screenshot of the AI insights catalog page." lightbox="./media/live-ai-insights-catalog/ai-insights-catalog.png" :::
 
-## People and vehicle detection
+Use the **Environment** filter to choose the scope you need: 
 
-Azure AI Video Indexer can detect people and vehicles in real-time video streams. It displays a bounding box around the detections and shows a real-time count of people and vehicles in the frame. Also, Azure AI Video Indexer can track objects within the camera and maintain a unique ID for each track. The ID is tracked through visual embeddings and location rather than with any personal biometric information. So, when an object leaves the frame and enters it again, it gets a new ID.
+For Cloud-based Azure AI Video Indexer deployments:
 
-Here's an example of a real-time stream with people and vehicle detection:
+- Cloud 
+
+For Azure AI Video Indexer enabled by Azure Arc: 
+
+- Live video stream - enabled by Arc
+- Media uploads - enabled by Arc
+
+This article focuses on **Live video stream - enabled by Arc**, which shows the real-time insights you can apply to cameras.
+
+## Types of live AI insights
+
+There are two types of real-time AI insights: built-in detection for people and vehicles and custom insights for objects and situations.
+
+### Built-in insights for people and vehicle detection
+
+Built-in live insights detect people and common vehicle types such as cars, vans, and trucks. The detection runs automatically on live streams when you include it in a preset. It draws bounding boxes, shows real-time counts, and assigns a per-camera track ID based on visual features and location, not biometric data. When an object leaves the frame and returns, it receives a new ID.
+
+You don't need to configure or train this insight. Enable it in a preset. Use it for occupancy counts, traffic flow, and general site oversight.
+
+Here's an example of a live stream with people and vehicle detection:
 
 :::image type="content" source="./media/live-ai-insights-catalog/people-vehicle-detection.png" border="true" alt-text="Screenshot of a live stream with people and vehicle detection." lightbox="./media/live-ai-insights-catalog/people-vehicle-detection.png" :::
 
-## Custom insights
+To use these built-in detections:
+
+1. Create a preset and select **People** and **Vehicle**.
+1. Apply the preset to the camera.
+1. Monitor the live stream for counts, boxes, and tracking.
+
+### Custom insights
+
+Custom insights let you detect objects or situations that go beyond built-in people and vehicle detection. Define what you need with text descriptions and optional example images, then refine with negative examples if needed. Choose **object** insights for specific items and **situation** insights for conditions across the frame. Use them for safety checks, operational exceptions, or site-specific monitoring. For more information, see [Custom insights in the live AI Insights catalog](live-custom-insights-overview.md).
+
+To use a custom insight,
+
+1. Create a custom insight in the AI insights catalog.
+1. Add text descriptions and optional example images.
+1. Include the custom insight in a preset.
+1. Apply the preset to the camera.
 
 
-Customize AI insight detection to meet your requirements without coding skills or large datasets. Use open vocabulary (OV) technology to define custom insights for object or situation detection, then apply them to different cameras using presets.
 
-### Create a custom AI insight
 
-You can create a custom AI real-time insight in the VI portal to detect either objects or situations. The steps are mostly the same for both types, with a few differences noted below.
+## High-level workflow: From detection to deployment
 
-To create a new custom AI real-time insight:
+Follow these steps to set up live AI insights for your cameras:
 
-1. Go to your VI extension → **Manage AI insight**.
-1. Move to the **AI insights** tab.
-1. Select **Create custom insight**.
-1. Choose the type of AI insight you want to create: **Object** or **Situation**.
-
-   :::image type="content" source="media/live-ai-insights-catalog/choose-custom-ai-insight-type.png" alt-text="Screenshot of create a custom AI insight page with option to select object or situation detection.":::
-1. Enter a name for the insight in the **AI insight name** field. The name isn't part of the training data.
-1. For object detection:
-   - **Detected object**: Describe the object to detect. See [Best Practices](#best-practices-to-create-a-custom-insight).
-   - **Object example images**: Upload up to 10 images of the object.
-   :::image type="content" source="./media/live-ai-insights-catalog/create-custom-ai-insight.png" border="true" alt-text="Screenshot of the create custom AI insight page for object detection where you add a name, describe the object, and upload images."  :::
-   - Select the **Fine-tune (optional)** tab to add negative examples.
-      - Add words to name objects you don't want to detect. Separate the words by commas.
-      - Upload up to 10 images that represent objects you do not want to detect.
-1. For situation detection:
-   - **Detected situation**: Describe the situation you want to detect, such as `A long queue in a store`.
-      :::image type="content" source="media/live-ai-insights-catalog/create-custom-ai-insight-situation.png" alt-text="Screenshot of the basic settings tab for situation type custom insight where you describe what you want to detect.":::
-   - Select the **Fine-tune (optional)** tab to add negative examples. Describe situations you don’t want to detect. Separate examples with commas.
-1. Review and select **Create insight**.
-
-## Best practices to create a custom insight
-
-Use the following best practices to help you define custom AI insights that deliver accurate, reliable detection results. The tips below cover how to choose effective training data, avoid common mistakes, and get the most from object and situation detection.
-
-### Object detection
-
-Follow these tips to define object detection insights that help the model accurately identify and track specific items in your video streams:
-
-#### Describing your object
-
-Write a clear, specific description of the object you want to detect.
-
-- Use detailed, but concise descriptions like `a red classic car`, `person holding a yellow hard hat`, or `person wearing helmet`.
-- Add a viewpoint like `a red car visible from behind`.
-- Use synonyms like `motorbike`, `bike`, or `motorcycle`.
-- The AI Insight Name isn't automatically added to the training data. For example, if you called the insight `computer`, you should also add that word to the training data section – **Text**.
-- Create separate insights for different objects. For example, don't create a single "Animal detection" insight and then attempt to include 10 different animals that you want to detect. Instead, create a different insight for each animal. For example: Cow detection - `cow`, Cat detection - `cat`, Elephant detection - `elephant`, and Giraffe detection - `giraffe`.
-
-#### What to avoid in your descriptions
-
-Avoid these common mistakes in your descriptions.
-
-- Don't use adjectives or descriptive words like `big` or `empty`.
-- Avoid using words that can refer to two different objects like `bat` or `nail`.
-- Avoid using logical words like `and`, `or`, and `not`. Enter each word separately, unless the object itself includes two words. For example, `shopping cart`.
-
-#### Training data - Text
-
-You can include up to 10 words for a single custom insight. They're added in the training data section – **Text**.
-
-- Use these words to represent various terms for the same object to ensure comprehensive detection. For example, to detect computers, use terms such as `computer`, `laptop`, and `PC`. All the terms create one class of detection and tracking. They're called by the value specified in **AI Insight Name**.
-- If using as training data a high-level category word such as "vehicle", it is useful to add to the training data more specific words, such as "car", "automobile", etc.
-
-#### Training data - Images
-
-You can include up to 10 images for a single custom insight in addition or instead of the text section. They're added to the training data section – **Images**.
-
-- Use images to represent various visual features of the same object to ensure comprehensive detection.
-- Use images that include only the object you would like to detect.
-- Use good quality images (i.e., avoid using low quality, pixelated, or blurry images).
-
-#### Negative examples (optional)
-
-Use negative examples (text and/or images) to improve the detection results or get finer results. 
-
-- For example, if you'd like to detect all vehicles that are not SUVs, use the positive example "vehicle" and the negative example "SUV".
-- Use negative examples instead of negation words like `not` or `without`.
-
-### Situation detection
-
-Use these guidelines to define situation detection insights that help the model recognize specific scenarios or conditions in your video streams:
-
-- Use this type of insight to describe the situation of the frame. For example, “A messy store”, “a fire in the apartment”. 
-
-- Use concise descriptions. 
-
-- Avoid using logical words like and, or, and not. 
-
-- Consider starting the text description with “a photo of a...”, if you don’t get the desired results. 
-
-- Use environmental details to enrich your description. For example, use “a photo of a shop with customers reaching for a product from a high shelf” instead of just “a customer reaching for a product from a shelf”. 
-
-- Optionally, use negative text examples to improve or get finer results. For example, if you’d like to detect a non-empty shop, use the positive example “a photo of a shop with customers”, and the negative example “a photo of an empty shop”. 
-
-### Custom insight limitations
-
-Be aware of these limitations when you create custom insights:
-
-- If you create a custom insights from an image, the detection doesn't identify objects by their color. For example, an image of a yellow vest results in detection for all vests, without specifying the yellow vest.
-- To define a situation insight, you cannot use images. 
+1. **Identify your need** - Decide what to monitor, like occupancy, safety hazards, equipment checks, and whether to use built-in detection for people or vehicles, or create custom insights.
+2. **Access the AI insights catalog** - Go to the VI portal and filter by **Environment** > **Live video stream - enabled by Arc** to view available insights.
+3. **Configure your insight** - For built-in insights, no configuration is needed. For custom insights, define what you want to detect using text descriptions and optional example images.
+4. **Create a preset** - Bundle your selected insights into a preset (for example, people detection + hard hat detection + crowding alert).
+5. **Apply preset to camera** - Link the preset to one or more camera streams.
+6. **Monitor in real-time** - View live detections with bounding boxes, counts, and tracking on the camera stream.
 
 ## Limitations
 
@@ -147,4 +99,9 @@ The following limitations apply to all real-time AI insights (people, vehicle, a
 
 ## Related content
 
-- [Create a custom insight to detect objects](live-ai-insights-catalog.md)
+- [Custom insights in the real-time AI Insights catalog](live-custom-insights-overview.md)
+- [Create custom insights in the live AI Insights catalog](live-custom-insights-create.md)
+- [Create a preset](live-manage-camera.md#create-a-preset)
+- [Apply a preset to a camera](live-manage-camera.md#apply-a-preset-to-a-camera)
+
+
