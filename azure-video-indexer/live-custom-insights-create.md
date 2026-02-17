@@ -22,7 +22,7 @@ Create custom insights to detect objects or situations tailored to your operatio
 Before you begin:
 
 - Review the [Custom Insights overview](live-ai-insights-catalog.md) to understand the best practices and limitations.
-- 
+- Review [limitations for all live AI insight detections](live-ai-insights-catalog.md#limitations).
 
 ## Create a custom AI insight
 
@@ -38,7 +38,7 @@ To create a new custom AI real-time insight:
    :::image type="content" source="media/live-ai-insights-catalog/choose-custom-ai-insight-type.png" alt-text="Screenshot of create a custom AI insight page with option to select object or situation detection.":::
 1. Enter a name for the insight in the **AI insight name** field. The name isn't part of the training data.
 1. For object detection:
-   - **Detected object**: Describe the object to detect. See [Best Practices](#best-practices-to-create-a-custom-insight).
+   - **Detected object**: Describe the object to detect.
    - **Object example images**: Upload up to 10 images of the object.
    :::image type="content" source="./media/live-ai-insights-catalog/create-custom-ai-insight.png" border="true" alt-text="Screenshot of the create custom AI insight page for object detection where you add a name, describe the object, and upload images."  :::
    - Select the **Fine-tune (optional)** tab to add negative examples.
