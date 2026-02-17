@@ -171,8 +171,14 @@ items:
       href: live-add-remove-camera.md
     - name: Manage cameras
       href: live-manage-camera.md
-    - name: Create custom insights
-      href: live-ai-insights-catalog.md
+    - name: Create insights
+      items:
+      - name: Overview
+        href: live-ai-insights-catalog.md
+      - name: Custom insights
+        href: live-custom-insights-overview.md
+      - name: Create custom AI insights
+        href: live-custom-insights-create.md
     - name: Create event summary
       href: live-event-summary.md
     - name: Watch live video recordings
