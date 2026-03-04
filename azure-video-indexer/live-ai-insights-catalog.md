@@ -4,7 +4,7 @@ description: Learn how AI insights work for live stream video, how they appear i
 author: cwatson-cat
 ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 02/17/2026
+ms.date: 03/04/2026
 ai-usage: ai-assisted
 ms.service: azure-video-indexer
 ms.topic: concept-article
@@ -78,7 +78,7 @@ Follow these steps to set up live AI insights for your cameras:
 
 1. **Identify your need** - Decide what to monitor, like occupancy, safety hazards, equipment checks, and whether to use built-in detection for people or vehicles, or create custom insights.
 2. **Access the AI insights catalog** - Go to the VI portal and filter by **Environment** > **Live video stream - enabled by Arc** to view available insights.
-3. **Configure your insight** - For built-in insights, no configuration is needed. For custom insights, define what you want to detect using text descriptions and optional example images.
+3. **Configure your insight** - For built-in insights, no configuration is needed. For custom insights, define what you want to detect using text descriptions and/or example images.
 4. **Create a preset** - Bundle your selected insights into a preset (for example, people detection + hard hat detection + crowding alert).
 5. **Apply preset to camera** - Link the preset to one or more camera streams.
 6. **Monitor in real-time** - View live detections with bounding boxes, counts, and tracking on the camera stream.

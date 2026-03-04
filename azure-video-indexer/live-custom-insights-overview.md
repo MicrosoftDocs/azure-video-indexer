@@ -4,7 +4,7 @@ description: Learn about custom insights in the live AI Insights catalog using A
 author: cwatson-cat
 ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 02/17/2026
+ms.date: 03/04/2026
 ai-usage: ai-assisted
 ms.service: azure-video-indexer
 ms.topic: concept-article
@@ -30,10 +30,10 @@ detection when you need to spot individual things or count occurrences.
 
 For example, use object detection to track specific items in your operations to enforce safety standards, monitor inventory, or verify compliance. Here are some common examples:
 
-- Safety equipment like hard hats, safety vests, goggles
-- Equipment or vehicles like forklifts, pallet jacks, delivery vans
-- Tools or materials like ladders, toolboxes, packages
-- Apparel or accessories like uniforms, badges, reflective gear
+- Safety equipment like hard hats, safety vests with reflectors, high-visibility goggles
+- Equipment or vehicles like forklifts, red pallet jacks, delivery vans with company signage
+- Tools or materials like ladders, yellow toolboxes, packages on pallets
+- Apparel or accessories like uniforms with ID badges, reflective safety gear, harnesses
 
 ### Situation detection
 
@@ -44,32 +44,14 @@ the context matters as much as individual items.
 While object detection monitors individual items, situation detection watches for conditions 
 and patterns. Use it to catch problems like crowding, blockages, or unsafe states. For example:
 
-- Safety conditions like blocked walkway, spill on floor, or fire extinguisher missing
-- Workflow states like crowding near a machine, long queue at checkout, or empty shelf
-- Environmental conditions like lights off in a room, door left open, or water leak
-- Compliance scenarios like area occupied after hours, restricted zone entry, or equipment in wrong location
+- Safety conditions like blocked walkway, spill on floor, or fire extinguisher not visible at designated location
+- Workflow states like crowding near a machine, long queue at checkout, or shelf understocked
+- Environmental conditions like lights off in a room, door left open, or water leak visible on floor
+- Compliance scenarios like area occupied after hours, restricted zone entry, or equipment stored in unauthorized areas
 
 ## Best practices for object detection
 
 Follow these tips to define object detection insights that help the model accurately identify and track specific items in your video streams:
-
-### Describing your object
-
-Write a clear, specific description of the object you want to detect.
-
-- Use detailed, but concise descriptions like `a red classic car`, `person holding a yellow hard hat`, or `person wearing helmet`.
-- Add a viewpoint like `a red car visible from behind`.
-- Use synonyms like `motorbike`, `bike`, or `motorcycle`.
-- The AI Insight Name isn't automatically added to the training data. For example, if you called the insight `computer`, you should also add that word to the training data section – **Text**.
-- Create separate insights for different objects. For example, don't create a single "Animal detection" insight and then attempt to include 10 different animals that you want to detect. Instead, create a different insight for each animal. For example: Cow detection - `cow`, Cat detection - `cat`, Elephant detection - `elephant`, and Giraffe detection - `giraffe`.
-
-### What to avoid in your descriptions
-
-Avoid these common mistakes in your descriptions.
-
-- Don't use adjectives or descriptive words like `big` or `empty`.
-- Avoid using words that can refer to two different objects like `bat` or `nail`.
-- Avoid using logical words like `and`, `or`, and `not`. Enter each word separately, unless the object itself includes two words. For example, `shopping cart`.
 
 ### Training words
 
@@ -85,6 +67,25 @@ You can include up to 10 images for a single custom insight in addition or inste
 - Use images to represent various visual features of the same object to ensure comprehensive detection.
 - Use images that include only the object you would like to detect.
 - Use good quality images (i.e., avoid using low quality, pixelated, or blurry images).
+
+### Describing your object
+
+Write a clear, specific description of the object you want to detect.
+
+- Use detailed, but concise descriptions like `a red classic car`, `person holding a yellow hard hat`, or `person wearing helmet`.
+- Add a viewpoint like `a red car visible from behind`.
+- Use synonyms like `motorbike`, `bike`, or `motorcycle`.
+- The AI Insight Name isn't automatically added to the training data. For example, if you called the insight `computer`, you should also add that word to the training data section – **Text**.
+- Create separate insights for different objects. For example, don't create a single "Animal detection" insight and then attempt to include 10 different animals that you want to detect. Instead, create a different insight for each animal. For example: Cow detection - `cow`, Cat detection - `cat`, Elephant detection - `elephant`, and Giraffe detection - `giraffe`.
+
+### What to avoid in your descriptions
+
+Avoid these common mistakes in your descriptions.
+
+- Don't use vague or subjective adjectives like `big`, `small`, or `empty`. Use specific attributes instead, such as colors (`red`, `yellow`) or concrete characteristics (`reflective`, `high-visibility`).
+- Avoid using words that can refer to two different objects like `bat` or `nail`.
+- Avoid using logical words like `and`, `or`, and `not` in your descriptions.
+- Enter each object as a separate insight rather than combining multiple objects in one description. For example, create separate insights for `forklift` and `pallet jack`. Exception: use multiple words when they form a single object name, such as `shopping cart` or `hard hat`.
 
 ### Negative examples (optional)
 
@@ -113,8 +114,10 @@ Use these guidelines to define situation detection insights that help the model 
 
 In addition to the limitations that apply to all real-time AI insights, described in [Real-time AI Insights catalog](live-ai-insights-catalog.md), be aware of these limitations when you create custom insights:
 
-- If you create a custom insights from an image, the detection doesn't identify objects by their color. For example, an image of a yellow vest results in detection for all vests, without specifying the yellow vest.
-- To define a situation insight, you cannot use images. 
+- If you create a custom insight from an image, the detection identifies objects by their general concept rather than their specific visual attributes. For example, an image of a yellow vest detects all vests regardless of color, and an image of a sports car detects all cars regardless of type or model.
+- You can define only one custom insight per base object type. If multiple insights target the same object, for example, `red car` and `blue car`, the system doesn't reliably distinguish them. When an object matches more than one insight, the selected insight can vary between inferences and cause inconsistent labeling. If you need to detect multiple variants of the same object, define a single insight and include all relevant examples or attributes within that insight. This enables detection of the object but doesn't differentiate between the variants.
+- To define a situation insight, you cannot use images.
+
 ## Related content
 
 - [Live AI Insights catalog](live-ai-insights-catalog.md)
