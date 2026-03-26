@@ -1,6 +1,6 @@
 ### YamlMime:Landing
  
-title: Learn about Azure AI Video Indexer
+title: Learn about cloud-based Azure AI Video Indexer
 summary: Azure AI Video Indexer is an AI solution that enables you to extract insights from your videos using video and audio models. It's available as an Azure Arc extension for edge deployment or as a cloud-based application, part of Azure AI services built on services such as Face, Translator, Azure AI Vision, and Speech.
 
 metadata:

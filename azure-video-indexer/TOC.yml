@@ -1,5 +1,5 @@
 items:
-- name: Azure AI Video Indexer documentation
+- name: Cloud-based Azure AI Video Indexer documentation
   href: index.yml
 - name: Overview
   expanded: true
@@ -220,3 +220,5 @@ items:
     href: https://aka.ms/UserVoiceVI
   - name: Blogs
     href: https://azure.microsoft.com/blog/tag/video-indexer/
+- name: Azure AI Video Indexer enabled by Azure Arc
+  href: arc/index.yml
