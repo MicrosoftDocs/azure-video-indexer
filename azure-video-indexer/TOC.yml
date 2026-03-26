@@ -6,64 +6,52 @@ items:
   items:
   - name: What is Azure AI Video Indexer (VI)?
     href: video-indexer-overview.md
-  - name: What is VI enabled by Azure Arc?
-    href: arc/azure-video-indexer-enabled-by-arc-overview.md
 - name: Quickstarts
   expanded: true
   items:
-  - name: Start in cloud
-    items:
-    - name: Try web portal
-      href: try-vi-web-portal-quickstart.md
-    - name: Call APIs
-      href: video-indexer-use-apis.md
-    - name: Deploy with Bicep
-      href: deploy-with-bicep.md
-    - name: Deploy with ARM
-      href: deploy-with-arm-template.md
-  - name: Start on Azure Arc
-    href: arc/azure-video-indexer-enabled-by-arc-quickstart.md
+  - name: Try web portal
+    href: try-vi-web-portal-quickstart.md
+  - name: Call APIs
+    href: video-indexer-use-apis.md
+  - name: Deploy with Bicep
+    href: deploy-with-bicep.md
+  - name: Deploy with ARM
+    href: deploy-with-arm-template.md
 - name: Deploy service
   items:
   - name: Create account
     href: create-account.md
-  - name: Run on cloud
+  - name: Account types
+    href: accounts-overview.md
+  - name: Plan for scale
+    href: considerations-when-use-at-scale.md
+  - name: Configure indexing
+    href: indexing-configuration-guide.md
+  - name: Choose regions
+    href: regions.md
+  - name: Secure network
     items:
-    - name: Account types
-      href: accounts-overview.md
-    - name: Plan for scale
-      href: considerations-when-use-at-scale.md
-    - name: Configure indexing
-      href: indexing-configuration-guide.md
-    - name: Choose regions
-      href: regions.md
-    - name: Secure network
+    - name: Private endpoints
       items:
-      - name: Private endpoints
-        items:
-        - name: Overview
-          href: private-endpoint-overview.md
-        - name: Configure private endpoint
-          href: private-endpoint-how-to.md
-      - name: Network security groups
-        href: network-security.md
-      - name: Firewall protected storage
-        href: storage-behind-firewall.md
-  - name: Run on Azure Arc
-    items:
-    - name: Deploy extension
-      href: live-extension.md
-- name: Ingest media (cloud-based)
+      - name: Overview
+        href: private-endpoint-overview.md
+      - name: Configure private endpoint
+        href: private-endpoint-how-to.md
+    - name: Network security groups
+      href: network-security.md
+    - name: Firewall protected storage
+      href: storage-behind-firewall.md
+- name: Ingest media
   items:
   - name: Upload and index media
     href: upload-index-media.md
 - name: Extract insights and enhance content
   items:
-    - name: Search your content (cloud-based)
+    - name: Search your content
       href: video-indexer-search.md
-    - name: Insights overview (cloud-based)
+    - name: Insights overview
       href: insights-overview.md
-    - name: People (cloud-based)
+    - name: People
       items:
       - name: Detect faces
         href: face-detection-insight.md
@@ -75,7 +63,7 @@ items:
         href: observed-people-featured-clothing.md
       - name: Redact faces
         href: face-redaction-with-api.md
-    - name: Text (cloud-based)
+    - name: Text
       items:
       - name: Detect keywords
         href: keywords-insight.md
@@ -87,18 +75,10 @@ items:
         href: text-based-emotions-detection-insight.md
       - name: Detect logos (text)
         href: detect-textual-logo.md
-    - name: Audio (cloud-based)
+    - name: Audio
       items:
       - name: Detect audio effects
         href: audio-effects-detection-insight.md
-      - name: Keywords extraction insights
-        href: keywords-insight.md
-      - name: Named entities insights
-        href: named-entities-insight.md
-      - name: Topics inference insights
-        href: topics-inference-insight.md
-      - name: Text-based emotion detection insights
-        href: text-based-emotions-detection-insight.md
     - name: Visuals
       items:
       - name: Detect objects
@@ -107,7 +87,7 @@ items:
         href: ocr-insight.md
       - name: Detect scenes, shots & keyframes
         href: scene-shot-keyframe-detection-insight.md
-      - name: Video insights (cloud-based)
+      - name: Video insights
         items:
         - name: Detect clapperboards
           href: clapper-board-insight.md
@@ -135,24 +115,6 @@ items:
         href: text-summarization-overview.md
       - name: Generate summaries
         href: text-summarization-task.md
-    - name: Live analysis (enabled by Azure Arc)
-      items:
-      - name: Overview
-        href: live-analysis.md
-      - name: Add or remove cameras
-        href: live-add-remove-camera.md
-      - name: Manage cameras
-        href: live-manage-camera.md
-      - name: Define areas of interest
-        href: live-area-interest.md
-      - name: Watch recordings
-        href: live-watch-recordings.md
-      - name: Manage AI insights catalog (live)
-        href: live-ai-insights-catalog.md
-      - name: Summarize events (live)
-        href: live-event-summary.md
-      - name: Manage AI agents
-        href: agents-overview.md
 - name: Customize models and prompts
   items:
   - name: Create prompts
@@ -161,7 +123,7 @@ items:
     href: generative_ai_with_vi.md
   - name: Bring your own model
     href: bring-your-own-model-overview.md
-  - name: Train built-in model (cloud-based)
+  - name: Train built-in model
     items:
     - name: Speech training best practices
       href: speech-model-training-best-practices.md
@@ -173,7 +135,7 @@ items:
       href: customize-person-model-how-to.md
     - name: Brands model
       href: customize-brands-model-how-to.md
-- name: Integrate systems (cloud-based)
+- name: Integrate systems
   items:
   - name: Connect Azure OpenAI
     href: connect-azure-open-ai-task.md
@@ -185,7 +147,7 @@ items:
   items:
   - name: View logs
     href: monitor-video-indexer.md
-- Name: Manage service (cloud-based)
+- name: Manage service
   items:
   - name: Manage account access
     href: restricted-viewer-role.md
@@ -199,15 +161,13 @@ items:
     href: video-indexer-disaster-recovery.md
 - name: Security
   items:
-  - name: security baseline  (cloud-based)
+  - name: Security baseline
     href: security-baseline-video-indexer.md
 - name: Troubleshoot
   items:
-  - name: Resource health (cloud-based)
+  - name: Resource health
     href: /azure/service-health/resource-health-overview
-  - name: Troubleshooting guide (Azure Arc)
-    href: arc/azure-video-indexer-enabled-by-arc-troubleshooting.md
-- name: Samples (cloud-based)
+- name: Samples
   items:
   - name: Bring your own model samples
     href: https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples
@@ -225,8 +185,6 @@ items:
     href: /legal/azure-video-indexer/transparency-note-real-time-analysis?context=/azure/azure-video-indexer/context/context
 - name: Reference
   items:
-  - name: VI enabled by Arc APIs
-    href: https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoIndexerEnabledByArc/Documentation/VideoIndexerArcApis.md
   - name: Azure AI Video Indexer API
     href: https://api-portal.videoindexer.ai/
   - name: Azure AI Video Indexer ARM REST API

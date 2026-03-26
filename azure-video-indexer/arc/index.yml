@@ -1,0 +1,62 @@
+### YamlMime:Landing
+
+title: Learn about Azure AI Video Indexer enabled by Azure Arc
+summary: Azure AI Video Indexer enabled by Azure Arc is an AI solution that enables you to extract insights from your videos at the edge using Azure Arc-enabled infrastructure.
+
+metadata:
+  title: Azure AI Video Indexer enabled by Azure Arc documentation
+  description: Azure AI Video Indexer enabled by Azure Arc is an AI solution that enables you to extract insights from your videos at the edge using Azure Arc-enabled infrastructure.
+  services: azure-video-indexer
+  ms.service: azure-video-indexer
+  ms.collection: collection,ce-skilling-ai-copilot,rai-skilling-ai-copilot
+  ms.topic: landing-page
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.date: 03/26/2026
+  ms.update-cycle: 180-days
+
+landingContent:
+  - title: About Azure AI Video Indexer enabled by Azure Arc
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Azure AI Video Indexer?
+            url: ../video-indexer-overview.md?context=/azure/azure-video-indexer/arc/context/context
+          - text: What is Azure AI Video Indexer enabled by Azure Arc?
+            url: azure-video-indexer-enabled-by-arc-overview.md?context=/azure/azure-video-indexer/arc/context/context
+          - text: Frequently asked questions
+            url: ../faq.yml?context=/azure/azure-video-indexer/arc/context/context
+      - linkListType: whats-new
+        links:
+        - text: What's new in Azure AI Video Indexer?
+          url: ../release-notes.md?context=/azure/azure-video-indexer/arc/context/context
+
+  - title: Get started
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Try Azure AI Video Indexer enabled by Azure Arc
+            url: azure-video-indexer-enabled-by-arc-quickstart.md?context=/azure/azure-video-indexer/arc/context/context
+      - linkListType: how-to-guide
+        links:
+          - text: Create an account
+            url: ../create-account.md?context=/azure/azure-video-indexer/arc/context/context
+          - text: Deploy extension
+            url: ../live-extension.md?context=/azure/azure-video-indexer/arc/context/context
+          - text: View logs
+            url: ../monitor-video-indexer.md?context=/azure/azure-video-indexer/arc/context/context
+      - linkListType: reference
+        links:
+          - text: VI enabled by Arc APIs
+            url: https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoIndexerEnabledByArc/Documentation/VideoIndexerArcApis.md
+
+  - title: Responsible use of AI
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: Limited access features
+          url: ../limited-access-features.md?context=/azure/azure-video-indexer/arc/context/context
+        - text: Transparency note
+          url: /legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/arc/context/context
+        - text: Transparency note for real-time analysis
+          url: /legal/azure-video-indexer/transparency-note-real-time-analysis?context=/azure/azure-video-indexer/arc/context/context
