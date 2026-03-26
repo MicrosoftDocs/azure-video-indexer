@@ -118,4 +118,4 @@ items:
   - name: Blogs
     href: https://azure.microsoft.com/blog/tag/video-indexer/
 - name: Cloud-based Azure AI Video Indexer documentation
-  href: ../index.yml
+  href: ../cloud/index.yml?context=/azure/azure-video-indexer/context/context

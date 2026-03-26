@@ -1,13 +1,18 @@
+items:
 - name: Azure
   tocHref: /azure/
   topicHref: /azure/index
   items:
-  - name: Cloud-based Azure AI Video Indexer
+  - name: Azure AI Video Indexer
     tocHref: /azure/azure-video-indexer/
     topicHref: /azure/azure-video-indexer/index
-  - name: Azure AI Video Indexer enabled by Azure Arc
-    tocHref: /azure/azure-video-indexer/arc/
-    topicHref: /azure/azure-video-indexer/arc/index
+    items:
+    - name: Cloud-based Azure AI Video Indexer
+      tocHref: /azure/azure-video-indexer/
+      topicHref: /azure/azure-video-indexer/cloud/index
+    - name: Azure AI Video Indexer enabled by Azure Arc
+      tocHref: /azure/azure-video-indexer/arc/
+      topicHref: /azure/azure-video-indexer/arc/index
 - name: Azure
   tocHref: /legal/
   topicHref: /azure/index

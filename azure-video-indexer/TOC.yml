@@ -1,6 +1,6 @@
 items:
 - name: Cloud-based Azure AI Video Indexer documentation
-  href: index.yml
+  href: cloud/index.yml
 - name: Overview
   expanded: true
   items:

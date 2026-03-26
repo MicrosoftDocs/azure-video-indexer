@@ -1,0 +1,62 @@
+### YamlMime:Landing
+
+title: Learn about cloud-based Azure AI Video Indexer
+summary: Azure AI Video Indexer is an AI solution that enables you to extract insights from your videos using video and audio models as a cloud-based application.
+
+metadata:
+  title: Cloud-based Azure AI Video Indexer documentation
+  description: Azure AI Video Indexer is an AI solution that enables you to extract insights from your videos using video and audio models as a cloud-based application.
+  services: azure-video-indexer
+  ms.service: azure-video-indexer
+  ms.collection: collection,ce-skilling-ai-copilot,rai-skilling-ai-copilot
+  ms.topic: landing-page
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.date: 03/26/2026
+  ms.update-cycle: 180-days
+
+landingContent:
+  - title: About Azure AI Video Indexer
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Azure AI Video Indexer?
+            url: ../video-indexer-overview.md
+          - text: Frequently asked questions
+            url: ../faq.yml
+      - linkListType: whats-new
+        links:
+        - text: What's new in Azure AI Video Indexer?
+          url: ../release-notes.md
+
+  - title: Get started
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Try the Azure AI Video Indexer web portal
+            url: ../try-vi-web-portal-quickstart.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create an account
+            url: ../create-account.md
+          - text: Upload and index media
+            url: ../upload-index-media.md
+          - text: Search videos
+            url: ../video-indexer-search.md
+          - text: Embed widgets
+            url: ../video-indexer-embed-widgets.md
+      - linkListType: sample
+        links:
+          - text: Code samples
+            url: https://github.com/Azure-Samples/azure-video-indexer-samples
+
+  - title: Responsible use of AI
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: Limited access features
+          url: ../limited-access-features.md
+        - text: Transparency note
+          url: /legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context
+        - text: Transparency note for real-time analysis
+          url: /legal/azure-video-indexer/transparency-note-real-time-analysis?context=/azure/azure-video-indexer/context/context

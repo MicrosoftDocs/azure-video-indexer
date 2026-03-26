@@ -1,68 +1,77 @@
-### YamlMime:Landing
- 
-title: Learn about cloud-based Azure AI Video Indexer
-summary: Azure AI Video Indexer is an AI solution that enables you to extract insights from your videos using video and audio models. It's available as an Azure Arc extension for edge deployment or as a cloud-based application, part of Azure AI services built on services such as Face, Translator, Azure AI Vision, and Speech.
+### YamlMime:Hub
+
+title: Azure AI Video Indexer documentation
+summary: Extract insights from video and audio across cloud and edge environments.
+brand: azure
 
 metadata:
   title: Azure AI Video Indexer documentation
-  description: Azure AI Video Indexer is an AI solution that enables you to extract insights from your videos using video and audio models. It's available as an Azure Arc extension for edge deployment or as a cloud-based application, part of Azure AI services built on services such as Face, Translator, Azure AI Vision, and Speech.
-  services: azure-video-indexer
+  description: Extract insights from video and audio across cloud and edge environments.
   ms.service: azure-video-indexer
-  ms.collection: collection,ce-skilling-ai-copilot,rai-skilling-ai-copilot
-  ms.topic: landing-page
+  ms.topic: hub-page
   author: cwatson-cat
   ms.author: cwatson
-  ms.date: 10/06/2025 
-  ms.update-cycle: 180-days
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
- 
-landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: About Azure AI Video Indexer
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Azure AI Video Indexer?
-            url: video-indexer-overview.md
-          - text: Frequently asked questions
-            url: faq.yml
-      - linkListType: whats-new
-        links:         
-        - text: What's new in Azure AI Video Indexer?
-          url: release-notes.md
-            
-  # Card (optional)
-  - title: Get started
-    linkLists:
-      - linkListType: quickstart
-        links: 
-          - text: Try the Azure AI Video Indexer web portal
-            url: try-vi-web-portal-quickstart.md
-      - linkListType: how-to-guide
-        links:
-          - text: Create an account
-            url: create-account.md
-          - text: Upload and index media
-            url: upload-index-media.md
-          - text: Search videos
-            url: video-indexer-search.md
-          - text: Embed widgets
-            url: video-indexer-embed-widgets.md
-      - linkListType: sample
-        links:
-          - text: Code samples
-            url: https://github.com/Azure-Samples/azure-video-indexer-samples  
-  
-# Card
-  - title: Responsible use of AI
-    linkLists:        
-      - linkListType: concept
-        links:
-        - text: Limited access features
-          url: limited-access-features.md   
-        - text: Transparency note
-          url: /legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context
-        - text: Transparency note for real-time analysis
-          url: /legal/azure-video-indexer/transparency-note-real-time-analysis?context=/azure/azure-video-indexer/context/context
+  ms.date: 03/26/2026
+
+highlightedContent:
+  items:
+  - title: Cloud-based Azure AI Video Indexer documentation
+    itemType: overview
+    url: ./cloud/index.yml
+  - title: Azure AI Video Indexer enabled by Azure Arc documentation
+    itemType: overview
+    url: ./arc/index.yml
+  - title: What's new in Azure AI Video Indexer?
+    itemType: whats-new
+    url: ./release-notes.md
+
+conceptualContent:
+  sections:
+  - title: Get started by deployment option
+    items:
+    - title: Cloud-based Azure AI Video Indexer
+      links:
+      - url: ./video-indexer-overview.md
+        itemType: overview
+        text: Overview
+      - url: ./try-vi-web-portal-quickstart.md
+        itemType: quickstart
+        text: Try the web portal
+      - url: ./video-indexer-use-apis.md
+        itemType: quickstart
+        text: Call APIs
+      footerLink:
+        url: ./TOC.yml
+        text: See more
+    - title: Azure AI Video Indexer enabled by Azure Arc
+      links:
+      - url: ./arc/azure-video-indexer-enabled-by-arc-overview.md
+        itemType: overview
+        text: Overview
+      - url: ./arc/azure-video-indexer-enabled-by-arc-quickstart.md
+        itemType: quickstart
+        text: Start on Azure Arc
+      footerLink:
+        url: ./arc/TOC.yml
+        text: See more
+
+additionalContent:
+  sections:
+  - title: Responsible use and support resources
+    items:
+    - title: Responsible use of AI
+      links:
+      - text: Limited access features
+        url: ./limited-access-features.md
+      - text: Transparency note
+        url: /legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/context/context
+      - text: Transparency note for real-time analysis
+        url: /legal/azure-video-indexer/transparency-note-real-time-analysis?context=/azure/azure-video-indexer/context/context
+    - title: Community and support
+      links:
+      - text: Microsoft Q&A
+        url: /answers/topics/azure-video-indexer.html
+      - text: Frequently asked questions
+        url: ./faq.yml
+      - text: Azure AI Video Indexer samples
+        url: https://github.com/Azure-Samples/azure-video-indexer-samples
