@@ -4,7 +4,7 @@ description: Learn how to create custom insights in the live AI Insights catalog
 author: cwatson-cat
 ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 02/17/2026
+ms.date: 03/31/2026
 ai-usage: ai-assisted
 ms.service: azure-video-indexer
 ms.topic: how-to
