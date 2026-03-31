@@ -62,7 +62,7 @@ To use these built-in detections:
 
 Custom insights let you detect objects or situations that go beyond built-in people and vehicle detection. Define what you need with text descriptions and optional example images, then refine with negative examples if needed. Choose **object** insights for specific items and **situation** insights for conditions across the frame. Use them for safety checks, operational exceptions, or site-specific monitoring. For more information, see [Custom insights in the live AI Insights catalog](live-custom-insights-overview.md).
 
-To use a custom insight,
+To use a custom insight:
 
 1. Create a custom insight in the AI insights catalog.
 1. Add text descriptions and optional example images.
