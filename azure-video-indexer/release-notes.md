@@ -4,7 +4,7 @@ description: Stay updated on the latest features, bug fixes, and known issues. E
 author: cwatson-cat
 ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 02/06/2026
+ms.date: 03/31/2026
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ai-usage: ai-assisted
@@ -25,6 +25,14 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Deprecated functionality
 
 Revisit this page to view the latest updates.
+
+## March 2026
+
+### Custom AI insights for objects with attributes
+
+Create object insights that match your specific operational needs. Describe objects with attributes in natural language-specify colors, types, conditions, or combinations like "a red classic car" or "person wearing a hard hat." Add example images and negative examples to refine detections and improve accuracy.
+
+For more information, see [Custom insights](live-custom-insights-overview.md).
 
 ## January 2026
 
