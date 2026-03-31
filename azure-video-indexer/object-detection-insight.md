@@ -15,7 +15,7 @@ appliesto:
 
 # Get object detection insights
 
-This article shows you how to get the Azure AI Video Indexer object detection insights. Object detection is a feature that detects and tracks objects in videos. It can be used to find objects like cars, handbags, backpacks, and laptops.
+This article shows you how to get the Azure AI Video Indexer object detection insights for uploaded files. This article doesn't apply to insights on live video streams. Object detection is a feature that detects and tracks objects in videos. It can be used to find objects like cars, handbags, backpacks, and laptops.
 
 ## Supported objects
 
