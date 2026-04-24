@@ -102,7 +102,7 @@ If your Azure AI Video Indexer account uses a [private endpoint](private-endpoin
 
 **Prerequisites:**
 
-- Your network environment must be configured so that the browser or client hosting the parent page can reach the Video Indexer private endpoint. This includes proper [DNS resolution](private-endpoint-overview.md#dns-changes-for-private-endpoints) and network connectivity from within the virtual network or a connected network (via VPN or ExpressRoute).
+- Configure your network environment so that the browser or client hosting the parent page can reach the Video Indexer private endpoint. This configuration includes proper [DNS resolution](private-endpoint-overview.md#dns-changes-for-private-endpoints) and network connectivity from within the virtual network or a connected network (via VPN or ExpressRoute).
 
 **Required changes:**
 
@@ -110,7 +110,7 @@ If your Azure AI Video Indexer account uses a [private endpoint](private-endpoin
 
    `https://www.videoindexer.ai/embed/player/<accountId>/<videoId>/?accessToken=<accessToken>&location=<location>&locale=<locale>&accountName=<accountName>`
 
-1. **Add the `allow="local-network-access"` attribute to the iframe element.** This enables the embedded player to access the Private Link endpoint from within the iframe through [Private Network Access](https://developer.chrome.com/blog/private-network-access-preflight). For example:
+1. **Add the `allow="local-network-access"` attribute to the iframe element.** This attribute enables the embedded player to access the Private Link endpoint from within the iframe through [Private Network Access](https://developer.chrome.com/blog/private-network-access-preflight). For example:
 
    ```html
    <iframe src="https://www.videoindexer.ai/embed/player/<accountId>/<videoId>/?accessToken=<accessToken>&location=<location>&accountName=<accountName>"
