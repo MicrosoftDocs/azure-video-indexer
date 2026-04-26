@@ -27,15 +27,21 @@ items:
     href: ../live-add-remove-camera.md?context=/azure/azure-video-indexer/arc/context/context
   - name: Manage cameras
     href: ../live-manage-camera.md?context=/azure/azure-video-indexer/arc/context/context
-  - name: Define areas of interest
-    href: ../live-area-interest.md?context=/azure/azure-video-indexer/arc/context/context
+  - name: Create AI insights
+    items:
+    - name: Overview
+      href: ../live-ai-insights-catalog.md?context=/azure/azure-video-indexer/arc/context/context
+    - name: Custom insights overview
+      href: ../live-custom-insights-overview.md?context=/azure/azure-video-indexer/arc/context/context
+    - name: Create custom insights
+      href: ../live-custom-insights-create.md?context=/azure/azure-video-indexer/arc/context/context
+  - name: Create event summary
+    href: ../live-event-summary.md?context=/azure/azure-video-indexer/arc/context/context
   - name: Watch recordings
     href: ../live-watch-recordings.md?context=/azure/azure-video-indexer/arc/context/context
-  - name: Manage AI insights
-    href: ../live-ai-insights-catalog.md?context=/azure/azure-video-indexer/arc/context/context
-  - name: Summarize events
-    href: ../live-event-summary.md?context=/azure/azure-video-indexer/arc/context/context
-  - name: Manage AI agents
+  - name: Mark areas of interest
+    href: ../live-area-interest.md?context=/azure/azure-video-indexer/arc/context/context
+  - name: AI agents for detection
     href: ../agents-overview.md?context=/azure/azure-video-indexer/arc/context/context
 - name: Customize models and prompts
   items:

@@ -11,7 +11,7 @@ metadata:
   ms.topic: hub-page
   author: cwatson-cat
   ms.author: cwatson
-  ms.date: 03/26/2026
+  ms.date: 04/26/2026
 
 highlightedContent:
   items:
@@ -29,6 +29,26 @@ conceptualContent:
   sections:
   - title: Get started by deployment option
     items:
+    - title: Azure AI Video Indexer enabled by Azure Arc
+      links:
+      - url: ./arc/azure-video-indexer-enabled-by-arc-overview.md
+        itemType: overview
+        text: Overview
+      - url: ./arc/azure-video-indexer-enabled-by-arc-quickstart.md
+        itemType: quickstart
+        text: Start on Azure Arc
+      - url: ./arc/../live-analysis.md?context=/azure/azure-video-indexer/arc/context/context
+        itemType: concept
+        text: Live analysis overview
+      - url: ./arc/../live-ai-insights-catalog.md?context=/azure/azure-video-indexer/arc/context/context
+        itemType: concept
+        text: Live AI insights
+      - url: ./arc/../agents-overview.md?context=/azure/azure-video-indexer/arc/context/context
+        itemType: concept
+        text: AI agents for detection
+      footerLink:
+        url: ./arc/TOC.yml
+        text: See more
     - title: Cloud-based Azure AI Video Indexer
       links:
       - url: ./video-indexer-overview.md
@@ -42,17 +62,6 @@ conceptualContent:
         text: Call APIs
       footerLink:
         url: ./TOC.yml
-        text: See more
-    - title: Azure AI Video Indexer enabled by Azure Arc
-      links:
-      - url: ./arc/azure-video-indexer-enabled-by-arc-overview.md
-        itemType: overview
-        text: Overview
-      - url: ./arc/azure-video-indexer-enabled-by-arc-quickstart.md
-        itemType: quickstart
-        text: Start on Azure Arc
-      footerLink:
-        url: ./arc/TOC.yml
         text: See more
 
 additionalContent:

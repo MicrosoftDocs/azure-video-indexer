@@ -12,7 +12,7 @@ metadata:
   ms.topic: landing-page
   author: cwatson-cat
   ms.author: cwatson
-  ms.date: 03/26/2026
+  ms.date: 04/26/2026
   ms.update-cycle: 180-days
 
 landingContent:
@@ -49,6 +49,27 @@ landingContent:
         links:
           - text: VI enabled by Arc APIs
             url: https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoIndexerEnabledByArc/Documentation/VideoIndexerArcApis.md
+
+  - title: Analyze live video
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Live analysis overview
+            url: ../live-analysis.md?context=/azure/azure-video-indexer/arc/context/context
+          - text: Live AI insights
+            url: ../live-ai-insights-catalog.md?context=/azure/azure-video-indexer/arc/context/context
+          - text: Custom insights overview
+            url: ../live-custom-insights-overview.md?context=/azure/azure-video-indexer/arc/context/context
+          - text: AI agents for detection
+            url: ../agents-overview.md?context=/azure/azure-video-indexer/arc/context/context
+      - linkListType: how-to-guide
+        links:
+          - text: Watch live recordings
+            url: ../live-watch-recordings.md?context=/azure/azure-video-indexer/arc/context/context
+          - text: Create custom insights
+            url: ../live-custom-insights-create.md?context=/azure/azure-video-indexer/arc/context/context
+          - text: Create summary events
+            url: ../live-event-summary.md?context=/azure/azure-video-indexer/arc/context/context
 
   - title: Responsible use of AI
     linkLists:
