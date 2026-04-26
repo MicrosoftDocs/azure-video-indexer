@@ -66,22 +66,6 @@ conceptualContent:
 
 additionalContent:
   sections:
-  - title: Related services
-    items:
-    - title: Edge and hybrid platform
-      links:
-      - text: Azure Arc
-        url: /azure/azure-arc/overview
-      - text: Azure Local
-        url: /azure/azure-local/overview
-    - title: AI at the edge
-      links:
-      - text: Edge RAG enabled by Azure Arc- 
-        url: /azure/azure-arc/edge-rag/overview
-      - text: Foundry Local on Azure Local
-        url: /azure/azure-sovereign-clouds/private/foundry-local/what-is-foundry-local-on-azure-local
-      - text: Azure AI Video Indexer enabled by Azure Arc
-        url: ./arc/azure-video-indexer-enabled-by-arc-overview.md
   - title: Responsible use and support resources
     items:
     - title: Responsible use of AI
@@ -100,3 +84,21 @@ additionalContent:
         url: ./faq.yml
       - text: Azure AI Video Indexer samples
         url: https://github.com/Azure-Samples/azure-video-indexer-samples
+  - title: Related services
+    items:
+    - title: Edge and hybrid platform
+      links:
+      - text: Azure Arc
+        url: /azure/azure-arc/overview
+      - text: Azure Arc-enabled Kubernetes
+        url: /azure/azure-arc/kubernetes/overview
+      - text: Azure Local
+        url: /azure/azure-local/overview
+    - title: AI at the edge
+      links:
+      - text: Edge RAG enabled by Azure Arc- 
+        url: /azure/azure-arc/edge-rag/overview
+      - text: Foundry Local on Azure Local
+        url: /azure/azure-sovereign-clouds/private/foundry-local/what-is-foundry-local-on-azure-local
+      - text: Azure AI Video Indexer enabled by Azure Arc
+        url: ./arc/azure-video-indexer-enabled-by-arc-overview.md
