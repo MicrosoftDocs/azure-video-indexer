@@ -55,22 +55,22 @@ To use a custom insight:
 Follow these steps to set up live AI insights for your cameras:
 
 1. **Identify your need** - Decide what to monitor, like occupancy, safety hazards, equipment checks, and whether to use built-in detection for people or vehicles, or create custom insights.
-2. **Access the AI insights catalog** - Go to the VI portal and filter by **Environment** > **Live video stream - enabled by Arc** to view available insights.
-3. **Configure your insight** - For built-in insights, no configuration is needed. For custom insights, define what you want to detect using text descriptions and/or example images.
-4. **Create a preset** - Bundle your selected insights into a preset (for example, people detection + hard hat detection + crowding alert).
-5. **Apply preset to camera** - Link the preset to one or more camera streams.
-6. **Monitor in real-time** - View live detections with bounding boxes, counts, and tracking on the camera stream.
+1. **Access the AI insights catalog** - Go to the VI portal and filter by **Environment** > **Live video stream - enabled by Arc** to view available insights.
+1. **Configure your insight** - For built-in insights, no configuration is needed. For custom insights, define what you want to detect using text descriptions and/or example images.
+1. **Create a preset** - Bundle your selected insights into a preset (for example, people detection + hard hat detection + crowding alert).
+1. **Apply preset to camera** - Link the preset to one or more camera streams.
+1. **Monitor in real-time** - View live detections with bounding boxes, counts, and tracking on the camera stream.
 
 ## Limitations
 
 The following limitations apply to all real-time AI insights (people, vehicle, and custom):
 
-- The object tracker is limited to 150 concurrent tracks per stream.
-- The confidence of the track as shown in the UI reflects the first occurrence of the track.
-- Small objects might not get detected (smaller than 35 x 35 pixels).
+- The object tracker supports up to 150 concurrent tracks per stream.
+- The confidence score shown in the UI reflects the first occurrence of the track.
+- Small objects might not be detected (smaller than 35 x 35 pixels).
 - The detector might miss objects in darker areas and severe weather conditions.
 - To best detect and track objects, they should be fully visible (no occlusions), with good lighting.
-- Large crowds can get underestimated by the model and might not detect all persons.
+- Large crowds can be underestimated by the model and might not detect all persons.
 - The tracker assigns a different ID to the same object after it exits and reenters the camera's view.
 - Occlusions might reduce results quality and cause fragmentation in object tracking.
 - The detector might misclassify objects observed from steep angles.
