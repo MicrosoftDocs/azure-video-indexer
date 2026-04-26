@@ -19,6 +19,30 @@ items:
     href: ../create-account.md?context=/azure/azure-video-indexer/arc/context/context
   - name: Deploy extension
     href: ../live-extension.md?context=/azure/azure-video-indexer/arc/context/context
+- name: Analyze live video
+  items:
+  - name: Overview
+    href: ../live-analysis.md?context=/azure/azure-video-indexer/arc/context/context
+  - name: Add or remove cameras
+    href: ../live-add-remove-camera.md?context=/azure/azure-video-indexer/arc/context/context
+  - name: Manage cameras
+    href: ../live-manage-camera.md?context=/azure/azure-video-indexer/arc/context/context
+  - name: Define areas of interest
+    href: ../live-area-interest.md?context=/azure/azure-video-indexer/arc/context/context
+  - name: Watch recordings
+    href: ../live-watch-recordings.md?context=/azure/azure-video-indexer/arc/context/context
+  - name: Manage AI insights
+    href: ../live-ai-insights-catalog.md?context=/azure/azure-video-indexer/arc/context/context
+  - name: Summarize events
+    href: ../live-event-summary.md?context=/azure/azure-video-indexer/arc/context/context
+  - name: Manage AI agents
+    href: ../agents-overview.md?context=/azure/azure-video-indexer/arc/context/context
+- name: Customize models and prompts
+  items:
+  - name: Create prompts
+    href: ../prompt-overview.md?context=/azure/azure-video-indexer/arc/context/context
+  - name: Connect to other AI models
+    href: ../generative_ai_with_vi.md?context=/azure/azure-video-indexer/arc/context/context
 - name: Extract insights and enhance content
   items:
   - name: Visuals
@@ -45,30 +69,6 @@ items:
       href: ../text-summarization-overview.md?context=/azure/azure-video-indexer/arc/context/context
     - name: Generate summaries
       href: ../text-summarization-task.md?context=/azure/azure-video-indexer/arc/context/context
-  - name: Live analysis
-    items:
-    - name: Overview
-      href: ../live-analysis.md?context=/azure/azure-video-indexer/arc/context/context
-    - name: Add or remove cameras
-      href: ../live-add-remove-camera.md?context=/azure/azure-video-indexer/arc/context/context
-    - name: Manage cameras
-      href: ../live-manage-camera.md?context=/azure/azure-video-indexer/arc/context/context
-    - name: Define areas of interest
-      href: ../live-area-interest.md?context=/azure/azure-video-indexer/arc/context/context
-    - name: Watch recordings
-      href: ../live-watch-recordings.md?context=/azure/azure-video-indexer/arc/context/context
-    - name: Manage AI insights catalog
-      href: ../live-ai-insights-catalog.md?context=/azure/azure-video-indexer/arc/context/context
-    - name: Summarize events
-      href: ../live-event-summary.md?context=/azure/azure-video-indexer/arc/context/context
-    - name: Manage AI agents
-      href: ../agents-overview.md?context=/azure/azure-video-indexer/arc/context/context
-- name: Customize models and prompts
-  items:
-  - name: Create prompts
-    href: ../prompt-overview.md?context=/azure/azure-video-indexer/arc/context/context
-  - name: Connect to other AI models
-    href: ../generative_ai_with_vi.md?context=/azure/azure-video-indexer/arc/context/context
 - name: Monitor service
   items:
   - name: View logs
