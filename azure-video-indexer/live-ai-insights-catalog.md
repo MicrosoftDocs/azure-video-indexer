@@ -1,40 +1,21 @@
 ---
-title: Live AI insights catalog in Azure AI Video Indexer
-description: Learn how AI insights work for live stream video, how they appear in the AI insights catalog, and when to use built-in and custom insights.
+title: Live AI insights  in Azure AI Video Indexer
+description: Learn how AI insights work for live stream video, how they appear in the AI insights, and when to use built-in and custom insights.
 author: cwatson-cat
 ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 03/31/2026
+ms.date: 04/26/2026
 ai-usage: ai-assisted
 ms.service: azure-video-indexer
 ms.topic: concept-article
 appliesto: 
 - Azure AI Video Indexer enabled by Azure Arc
-# customer intent: As an Azure user, I want to understand live video AI insights, how they appear in the AI insights catalog, and how to use built-in or custom insights for my cameras.
+# customer intent: As an Azure user, I want to understand the types of live AI insights available in Azure AI Video Indexer enabled by Azure Arc and what limitations apply to real-time AI detections.
 ---
 
-# Live AI insights catalog for Azure AI Video Indexer enabled by Azure Arc - Preview
+# Live AI insights for Azure AI Video Indexer enabled by Azure Arc - Preview
 
-Live AI insights detect people, vehicles, or custom objects and situations in live camera streams. They run in your Azure Arc edge environment so you can act on detections right away. Unlike uploaded file analysis, real-time AI insights process a live stream and return detections continuously, not a completed index after file processing. You manage these insights in the AI insights catalog.
-
-## The AI insights catalog
-
-The AI insights catalog under **Model customizations** is the central place in the VI portal where you review available insights and build presets. 
-
-Go to [Azure AI Video Indexer](https://www.videoindexer.ai/) to view the AI insights catalog to see all available insights.
-
-:::image type="content" source="./media/live-ai-insights-catalog/ai-insights-catalog.png" border="true" alt-text="Screenshot of the AI insights catalog page." lightbox="./media/live-ai-insights-catalog/ai-insights-catalog.png" :::
-
-Use the **Environment** filter to choose the scope you need: 
-
-For Cloud-based Azure AI Video Indexer deployments:
-
-- Cloud 
-
-For Azure AI Video Indexer enabled by Azure Arc: 
-
-- Live video stream - enabled by Arc
-- Media uploads - enabled by Arc
+Live AI insights detect people, vehicles, or custom objects and situations in live camera streams. They run in your Azure Arc edge environment so you can act on detections right away. Unlike uploaded file analysis, real-time AI insights process a live stream and return detections continuously, not a completed index after file processing.
 
 This article focuses on **Live video stream - enabled by Arc**, which shows the real-time insights you can apply to cameras.
 
@@ -68,9 +49,6 @@ To use a custom insight:
 1. Add text descriptions and optional example images.
 1. Include the custom insight in a preset.
 1. Apply the preset to the camera.
-
-
-
 
 ## High-level workflow: From detection to deployment
 
