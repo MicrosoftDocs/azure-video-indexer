@@ -434,6 +434,61 @@
             "source_path_from_root": "/azure-video-indexer/transparency-note-review-build-only.md",
             "redirect_url": "/legal/azure-video-indexer/transparency-note",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/agents-overview.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/agents-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/live-add-remove-camera.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/live-add-remove-camera",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/live-ai-insights-catalog.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/live-ai-insights-catalog",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/live-analysis.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/live-analysis",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/live-area-interest.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/live-area-interest",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/live-custom-insights-create.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/live-custom-insights-create",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/live-custom-insights-overview.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/live-custom-insights-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/live-event-summary.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/live-event-summary",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/live-extension.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/live-extension",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/live-manage-camera.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/live-manage-camera",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/azure-video-indexer/live-watch-recordings.md",
+            "redirect_url": "/azure/azure-video-indexer/arc/live-watch-recordings",
+            "redirect_document_id": true
         }
     ]
 }

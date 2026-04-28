@@ -32,7 +32,7 @@ Revisit this page to view the latest updates.
 
 Create object insights that match your specific operational needs. Describe objects with attributes in natural language-specify colors, types, conditions, or combinations like "a red classic car" or "person wearing a hard hat." Add example images and negative examples to refine detections and improve accuracy.
 
-For more information, see [Custom insights](live-custom-insights-overview.md).
+For more information, see [Custom insights](arc/live-custom-insights-overview.md).
 
 ## January 2026
 
@@ -40,7 +40,7 @@ For more information, see [Custom insights](live-custom-insights-overview.md).
 
 The situation custom insight enables users to define scenario‑based detections in natural language in addition to the objects that were supported. This capability empowers teams to recognize complex conditions like hazards, anomalies, or operational states in real time. Situation custom insights deliver highly tailored, actionable insights without requiring coding or ML expertise.
 
-For more information, see [Custom insights](live-ai-insights-catalog.md#custom-insights).
+For more information, see [Custom insights](arc/live-ai-insights-catalog.md#custom-insights).
 
 ## November 2025
 
@@ -48,7 +48,7 @@ For more information, see [Custom insights](live-ai-insights-catalog.md#custom-i
 
 Azure AI Video Indexer enabled by Azure Arc introduces real-time analysis, enabling real-time video intelligence at the edge. Extract actionable insights from live video streams with ultra-low latency and complete data privacy, keeping all video data on-premises. Azure Arc provides centralized management and scalability.
 
-For more information, see [Live video analysis overview](live-analysis.md).
+For more information, see [Live video analysis overview](arc/live-analysis.md).
 
 New capabilities in real-time analysis:
 
@@ -62,11 +62,11 @@ New capabilities in real-time analysis:
 
 For more information, see the following articles:
 
-- [Real-time video analysis overview](live-analysis.md)
-- [Manage real-time analysis extensions](live-extension.md)
-- [Create custom insights](live-ai-insights-catalog.md)
-- [Create an event summary for camera footage](live-event-summary.md)
-- [Mark an area of interest](live-area-interest.md)
+- [Real-time video analysis overview](arc/live-analysis.md)
+- [Manage real-time analysis extensions](arc/live-extension.md)
+- [Create custom insights](arc/live-ai-insights-catalog.md)
+- [Create an event summary for camera footage](arc/live-event-summary.md)
+- [Mark an area of interest](arc/live-area-interest.md)
 
 ## May 2025
 
