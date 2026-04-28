@@ -69,9 +69,9 @@ items:
     href: text-summarization-overview.md
     displayName: Azure AI Video Indexer text summarization, video summary, transcript summary
   - name: Real-time analysis
-    href: live-analysis.md
+    href: arc/live-analysis.md
   - name: AI Agents for detection
-    href: agents-overview.md
+    href: arc/agents-overview.md
 - name: Samples
   items:
   - name: Azure AI Video Indexer samples
@@ -166,25 +166,25 @@ items:
   - name: Real-time analysis
     items:
     - name: Manage real-time analysis extensions
-      href: live-extension.md
+      href: arc/live-extension.md
     - name: Add or remove cameras
-      href: live-add-remove-camera.md
+      href: arc/live-add-remove-camera.md
     - name: Manage cameras
-      href: live-manage-camera.md
+      href: arc/live-manage-camera.md
     - name: Create insights
       items:
       - name: Overview
-        href: live-ai-insights-catalog.md
+        href: arc/live-ai-insights-catalog.md
       - name: Custom insights
-        href: live-custom-insights-overview.md
+        href: arc/live-custom-insights-overview.md
       - name: Create custom AI insights
-        href: live-custom-insights-create.md
+        href: arc/live-custom-insights-create.md
     - name: Create event summary
-      href: live-event-summary.md
+      href: arc/live-event-summary.md
     - name: Watch live video recordings
-      href: live-watch-recordings.md
+      href: arc/live-watch-recordings.md
     - name: Mark an area of interest
-      href: live-area-interest.md
+      href: arc/live-area-interest.md
   - name: Customize content models
     items:
     - name: Customize brands model

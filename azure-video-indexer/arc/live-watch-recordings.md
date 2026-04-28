@@ -46,16 +46,16 @@ In the **Media files** tab, you can select **Upload** to upload an external vide
 
 | **Model** | **Basic video** | **Basic audio** | **Basic video and audio** |
 |-----------|-----------------|-----------------|---------------------------|
-| [Transcription](transcription-translation-lid-insight.md) | | ✔ | ✔ |
-| [Translation](transcription-translation-lid-insight.md) | | ✔ | ✔ |
-| [Captioning](view-closed-captions.md) | | ✔ | ✔ |
-| [Key frame detection](scene-shot-keyframe-detection-insight.md) | ✔ | | ✔ |
-| [Object detection](object-detection-insight.md) | ✔ | | ✔ |
-| [Scene detection](scene-shot-keyframe-detection-insight.md) | ✔ | | ✔ |
-| [Shot detection](scene-shot-keyframe-detection-insight.md) | ✔ | | ✔ |
-| [Summarization](text-summarization-overview.md) | ✔ | ✔ | ✔ |
+| [Transcription](../transcription-translation-lid-insight.md) | | ✔ | ✔ |
+| [Translation](../transcription-translation-lid-insight.md) | | ✔ | ✔ |
+| [Captioning](../view-closed-captions.md) | | ✔ | ✔ |
+| [Key frame detection](../scene-shot-keyframe-detection-insight.md) | ✔ | | ✔ |
+| [Object detection](../object-detection-insight.md) | ✔ | | ✔ |
+| [Scene detection](../scene-shot-keyframe-detection-insight.md) | ✔ | | ✔ |
+| [Shot detection](../scene-shot-keyframe-detection-insight.md) | ✔ | | ✔ |
+| [Summarization](../text-summarization-overview.md) | ✔ | ✔ | ✔ |
 
-For more information about the presets available for uploaded videos, see [Supported AI presets](arc/azure-video-indexer-enabled-by-arc-overview.md#supported-ai-presets).
+For more information about the presets available for uploaded videos, see [Supported AI presets](azure-video-indexer-enabled-by-arc-overview.md#supported-ai-presets).
 
 ## Related content
 
