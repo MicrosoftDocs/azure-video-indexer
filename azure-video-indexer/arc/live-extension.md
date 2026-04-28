@@ -23,7 +23,7 @@ After you create the extension by using the information in this article, connect
 
 Before you begin, review the following prerequisites to ensure that you meet them.
 
-- You must have an **Azure AI Video Indexer** account. For more information, see the [Create Video Indexer account](create-account.md) tutorial.
+- You must have an **Azure AI Video Indexer** account. For more information, see the [Create Video Indexer account](../create-account.md) tutorial.
 - You must have a running **Kubernetes (K8s) cluster connected to Azure Arc**. For more information, see [Connect an existing Kubernetes cluster](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli#connect-an-existing-kubernetes-cluster). Real-time analysis was validated on Azure Local but is compatible with any Kubernetes infrastructure that supports the following requirements.
   - Read-write-many (RWX) storage class.
   - The ingress controller must allow outside clients to connect to the application.
