@@ -4,8 +4,6 @@ items:
 - name: Overview
   expanded: true
   items:
-  - name: What is Azure AI Video Indexer (VI)?
-    href: ../video-indexer-overview.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
   - name: What is VI enabled by Azure Arc?
     href: azure-video-indexer-enabled-by-arc-overview.md?context=/azure/azure-video-indexer/arc/context/context
 - name: Quickstarts
@@ -23,6 +21,8 @@ items:
   items:
   - name: Overview
     href: live-analysis.md?context=/azure/azure-video-indexer/arc/context/context
+  - name: AI agents for detection
+    href: agents-overview.md?context=/azure/azure-video-indexer/arc/context/context
   - name: Add or remove cameras
     href: live-add-remove-camera.md?context=/azure/azure-video-indexer/arc/context/context
   - name: Manage cameras
@@ -41,8 +41,6 @@ items:
     href: live-watch-recordings.md?context=/azure/azure-video-indexer/arc/context/context
   - name: Mark areas of interest
     href: live-area-interest.md?context=/azure/azure-video-indexer/arc/context/context
-  - name: AI agents for detection
-    href: agents-overview.md?context=/azure/azure-video-indexer/arc/context/context
 - name: Customize models and prompts
   items:
   - name: Create prompts

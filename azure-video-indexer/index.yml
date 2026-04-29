@@ -15,12 +15,12 @@ metadata:
 
 highlightedContent:
   items:
+  - title: Azure AI Video Indexer documentation
+    itemType: overview
+    url: ./cloud/index.yml
   - title: Azure AI Video Indexer enabled by Azure Arc documentation
     itemType: overview
     url: ./arc/index.yml
-  - title: Cloud-based Azure AI Video Indexer documentation
-    itemType: overview
-    url: ./cloud/index.yml
   - title: What's new in Azure AI Video Indexer?
     itemType: whats-new
     url: ./release-notes.md
@@ -29,6 +29,20 @@ conceptualContent:
   sections:
   - title: Get started by deployment option
     items:
+    - title: Azure AI Video Indexer
+      links:
+      - url: ./video-indexer-overview.md
+        itemType: overview
+        text: Overview
+      - url: ./try-vi-web-portal-quickstart.md
+        itemType: quickstart
+        text: Try the web portal
+      - url: ./video-indexer-use-apis.md
+        itemType: quickstart
+        text: Call APIs
+      footerLink:
+        url: ./TOC.yml
+        text: See more
     - title: Azure AI Video Indexer enabled by Azure Arc
       links:
       - url: ./arc/azure-video-indexer-enabled-by-arc-overview.md
@@ -49,20 +63,7 @@ conceptualContent:
       footerLink:
         url: ./arc/TOC.yml
         text: See more
-    - title: Cloud-based Azure AI Video Indexer
-      links:
-      - url: ./video-indexer-overview.md
-        itemType: overview
-        text: Overview
-      - url: ./try-vi-web-portal-quickstart.md
-        itemType: quickstart
-        text: Try the web portal
-      - url: ./video-indexer-use-apis.md
-        itemType: quickstart
-        text: Call APIs
-      footerLink:
-        url: ./TOC.yml
-        text: See more
+
 
 additionalContent:
   sections:

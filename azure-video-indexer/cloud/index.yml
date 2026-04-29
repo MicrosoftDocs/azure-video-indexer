@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Learn about cloud-based Azure AI Video Indexer
+title: Learn about Azure AI Video Indexer
 summary: Azure AI Video Indexer is an AI solution that enables you to extract insights from your videos using video and audio models as a cloud-based application.
 
 metadata:
-  title: Cloud-based Azure AI Video Indexer documentation
+  title: Azure AI Video Indexer documentation
   description: Azure AI Video Indexer is an AI solution that enables you to extract insights from your videos using video and audio models as a cloud-based application.
   services: azure-video-indexer
   ms.service: azure-video-indexer
@@ -12,7 +12,7 @@ metadata:
   ms.topic: landing-page
   author: cwatson-cat
   ms.author: cwatson
-  ms.date: 03/26/2026
+  ms.date: 04/29/2026
   ms.update-cycle: 180-days
 
 landingContent:
