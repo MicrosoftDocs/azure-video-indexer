@@ -4,7 +4,7 @@ description: Embed Azure AI Video Indexer widgets in your apps. Azure AI Video I
 author: cwatson-cat
 ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 10/06/2025
+ms.date: 04/24/2026
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
@@ -47,6 +47,7 @@ You can use the Player widget to stream video by using adaptive bit rate. The Pl
 |`language`/`locale` | A language code | Controls the player language. The default value is `en-US`.<br/>Example: `language=de-DE`.|
 |`location` ||The `location` parameter must be included in the embedded links; see [how to get the name of your region](regions.md). If your account is in preview, the `trial` should be used for the location value. `trial` is the default value for the `location` parameter.| 
 |`boundingBoxes`|Array of bounding boxes. Options: people (faces), observed people and detected objects. <br/>Separate values with a comma (*,*).|Controls the option to set bounding boxes on/off when embedding the player.<br/>All mentioned options are turned on.<br/><br/>Example: `boundingBoxes=observedPeople,people,detectedObjects`<br/>Default value is `boundingBoxes=observedPeople,detectedObjects` (only observed people and detected objects bounding box are turned on).|
+|`accountName`| String | Required when using [private endpoints](private-endpoint-overview.md). Specifies the Video Indexer account name so the embedded player can reach the Private Link endpoint. <br/> Example: `accountName=myAccount`.|
 
 ### Editor widget
 
@@ -94,7 +95,31 @@ You can embed public videos assembling the URL as follows:
 To embed a private video, you must pass an access token (use [Get Video Access Token](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Access-Token) in the `src` attribute of the iframe:
 
 `https://www.videoindexer.ai/embed/[insights | player]/<accountId>/<videoId>/?accessToken=<accessToken>`
-  
+
+### Embed the Player widget with private endpoints
+
+If your Azure AI Video Indexer account uses a [private endpoint](private-endpoint-overview.md), you can embed the Player widget so that it connects through the Private Link endpoint. To do so, you must meet these requirements:
+
+**Prerequisites:**
+
+- Configure your network environment so that the browser or client hosting the parent page can reach the Video Indexer private endpoint. This configuration includes proper [DNS resolution](private-endpoint-overview.md#dns-changes-for-private-endpoints) and network connectivity from within the virtual network or a connected network (via VPN or ExpressRoute).
+
+**Required changes:**
+
+1. **Add the `accountName` query parameter to the embed URL.** Include the `accountName` parameter in the player embed URL so the player can resolve the Private Link endpoint. For example:
+
+   `https://www.videoindexer.ai/embed/player/<accountId>/<videoId>/?accessToken=<accessToken>&location=<location>&locale=<locale>&accountName=<accountName>`
+
+1. **Add the `allow="local-network-access"` attribute to the iframe element.** This attribute enables the embedded player to access the Private Link endpoint from within the iframe through [Private Network Access](https://developer.chrome.com/blog/private-network-access-preflight). For example:
+
+   ```html
+   <iframe src="https://www.videoindexer.ai/embed/player/<accountId>/<videoId>/?accessToken=<accessToken>&location=<location>&accountName=<accountName>"
+       width="580" height="780" allow="local-network-access" frameborder="0" allowfullscreen>
+   </iframe>
+   ```
+
+Private endpoint embedding is currently supported for the **Player** widget only. If you copy embed code from the [Azure AI Video Indexer website](https://www.videoindexer.ai/), you might need to manually add the `accountName` parameter and the `allow` attribute.
+
 ### Provide editing insights capabilities
 
 To provide editing insights capabilities in your embedded widget, you must pass an access token that includes editing permissions. Use a [Get Video Access Token](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Video-Access-Token) API request with `&allowEdit=true`.
