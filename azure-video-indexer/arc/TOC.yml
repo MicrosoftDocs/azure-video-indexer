@@ -86,9 +86,9 @@ items:
   - name: Limited access features
     href: ../limited-access-features.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
   - name: Transparency note
-    href: /legal/azure-video-indexer/transparency-note?context=/azure/azure-video-indexer/arc/context/context
+    href: /legal/azure-video-indexer/transparency-note?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
   - name: Transparency note for real-time analysis
-    href: /legal/azure-video-indexer/transparency-note-real-time-analysis?context=/azure/azure-video-indexer/arc/context/context
+    href: /legal/azure-video-indexer/transparency-note-real-time-analysis?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
 - name: Reference
   items:
   - name: VI enabled by Arc APIs
