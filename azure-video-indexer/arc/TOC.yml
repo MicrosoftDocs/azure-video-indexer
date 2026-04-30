@@ -1,0 +1,125 @@
+items:
+- name: Azure AI Video Indexer enabled by Azure Arc documentation
+  href: index.yml
+- name: Overview
+  expanded: true
+  items:
+  - name: What is VI enabled by Azure Arc?
+    href: azure-video-indexer-enabled-by-arc-overview.md
+- name: Quickstarts
+  expanded: true
+  items:
+  - name: Start on Azure Arc
+    href: azure-video-indexer-enabled-by-arc-quickstart.md
+- name: Deploy service
+  items:
+  - name: Create account
+    href: ../create-account.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+  - name: Deploy extension
+    href: live-extension.md
+- name: Analyze live video
+  items:
+  - name: Overview
+    href: live-analysis.md
+  - name: AI agents for detection
+    href: agents-overview.md
+  - name: Add or remove cameras
+    href: live-add-remove-camera.md
+  - name: Manage cameras
+    href: live-manage-camera.md
+  - name: Create AI insights
+    items:
+    - name: Overview
+      href: live-ai-insights-catalog.md
+    - name: Custom insights overview
+      href: live-custom-insights-overview.md
+    - name: Create custom insights
+      href: live-custom-insights-create.md
+  - name: Create event summary
+    href: live-event-summary.md
+  - name: Watch recordings
+    href: live-watch-recordings.md
+  - name: Mark areas of interest
+    href: live-area-interest.md
+- name: Customize models and prompts
+  items:
+  - name: Create prompts
+    href: ../prompt-overview.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+  - name: Connect to other AI models
+    href: ../generative_ai_with_vi.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+- name: Extract insights and enhance content
+  items:
+  - name: Visuals
+    items:
+    - name: Detect objects
+      href: ../object-detection-insight.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+    - name: Extract OCR
+      href: ../ocr-insight.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+    - name: Detect scenes, shots & keyframes
+      href: ../scene-shot-keyframe-detection-insight.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+  - name: Transcripts
+    items:
+    - name: Edit transcript lines
+      href: ../edit-transcript-lines-portal.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+    - name: Edit speakers
+      href: ../edit-speakers.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+    - name: View closed captions
+      href: ../view-closed-captions.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+    - name: Translate transcripts
+      href: ../transcription-translation-lid-insight.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+  - name: Summaries
+    items:
+    - name: Summaries overview
+      href: ../text-summarization-overview.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+    - name: Generate summaries
+      href: ../text-summarization-task.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+- name: Monitor service
+  items:
+  - name: View logs
+    href: ../monitor-video-indexer.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+- name: Troubleshoot
+  items:
+  - name: Troubleshooting guide
+    href: azure-video-indexer-enabled-by-arc-troubleshooting.md
+- name: Responsible use of AI
+  items:
+  - name: Limited access features
+    href: ../limited-access-features.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+  - name: Transparency note
+    href: /legal/azure-video-indexer/transparency-note?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+  - name: Transparency note for real-time analysis
+    href: /legal/azure-video-indexer/transparency-note-real-time-analysis?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+- name: Reference
+  items:
+  - name: VI enabled by Arc APIs
+    href: https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoIndexerEnabledByArc/Documentation/VideoIndexerArcApis.md
+  - name: Support matrix and limitations
+    href: ../avi-support-matrix.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+    displayName: Azure AI Video Indexer support matrix, limitations, quotas, supported formats
+  - name: Language support
+    href: ../language-support.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+    displayName: Azure AI Video Indexer language support, supported languages, language detection
+- name: Resources
+  items:
+  - name: Azure Roadmap
+    href: https://azure.microsoft.com/updates/?searchterms=web-mobile
+  - name: Pricing
+    href: https://azure.microsoft.com/pricing/details/video-indexer/
+  - name: Regional availability
+    href: https://azure.microsoft.com/global-infrastructure/services/
+  - name: Microsoft Q&A
+    href: /answers/topics/azure-video-indexer.html
+  - name: FAQ
+    href: ../faq.yml?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+    displayName: Azure AI Video Indexer FAQ, frequently asked questions, help, support
+  - name: Release notes
+    href: ../release-notes.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+    displayName: Azure AI Video Indexer release notes, product updates, new features, changelog
+  - name: Stack Overflow
+    href: https://stackoverflow.com/search?q=video-indexer
+  - name: Azure ideas
+    href: https://aka.ms/UserVoiceVI
+  - name: Blogs
+    href: https://azure.microsoft.com/blog/tag/video-indexer/
+- name: Cloud-based Azure AI Video Indexer documentation
+  href: ../cloud/index.yml
