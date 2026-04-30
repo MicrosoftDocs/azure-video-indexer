@@ -1,46 +1,46 @@
 items:
 - name: Azure AI Video Indexer enabled by Azure Arc documentation
-  href: index.yml?context=/azure/azure-video-indexer/arc/context/context
+  href: index.yml
 - name: Overview
   expanded: true
   items:
   - name: What is VI enabled by Azure Arc?
-    href: azure-video-indexer-enabled-by-arc-overview.md?context=/azure/azure-video-indexer/arc/context/context
+    href: azure-video-indexer-enabled-by-arc-overview.md
 - name: Quickstarts
   expanded: true
   items:
   - name: Start on Azure Arc
-    href: azure-video-indexer-enabled-by-arc-quickstart.md?context=/azure/azure-video-indexer/arc/context/context
+    href: azure-video-indexer-enabled-by-arc-quickstart.md
 - name: Deploy service
   items:
   - name: Create account
     href: ../create-account.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
   - name: Deploy extension
-    href: live-extension.md?context=/azure/azure-video-indexer/arc/context/context
+    href: live-extension.md
 - name: Analyze live video
   items:
   - name: Overview
-    href: live-analysis.md?context=/azure/azure-video-indexer/arc/context/context
+    href: live-analysis.md
   - name: AI agents for detection
-    href: agents-overview.md?context=/azure/azure-video-indexer/arc/context/context
+    href: agents-overview.md
   - name: Add or remove cameras
-    href: live-add-remove-camera.md?context=/azure/azure-video-indexer/arc/context/context
+    href: live-add-remove-camera.md
   - name: Manage cameras
-    href: live-manage-camera.md?context=/azure/azure-video-indexer/arc/context/context
+    href: live-manage-camera.md
   - name: Create AI insights
     items:
     - name: Overview
-      href: live-ai-insights-catalog.md?context=/azure/azure-video-indexer/arc/context/context
+      href: live-ai-insights-catalog.md
     - name: Custom insights overview
-      href: live-custom-insights-overview.md?context=/azure/azure-video-indexer/arc/context/context
+      href: live-custom-insights-overview.md
     - name: Create custom insights
-      href: live-custom-insights-create.md?context=/azure/azure-video-indexer/arc/context/context
+      href: live-custom-insights-create.md
   - name: Create event summary
-    href: live-event-summary.md?context=/azure/azure-video-indexer/arc/context/context
+    href: live-event-summary.md
   - name: Watch recordings
-    href: live-watch-recordings.md?context=/azure/azure-video-indexer/arc/context/context
+    href: live-watch-recordings.md
   - name: Mark areas of interest
-    href: live-area-interest.md?context=/azure/azure-video-indexer/arc/context/context
+    href: live-area-interest.md
 - name: Customize models and prompts
   items:
   - name: Create prompts
@@ -80,7 +80,7 @@ items:
 - name: Troubleshoot
   items:
   - name: Troubleshooting guide
-    href: azure-video-indexer-enabled-by-arc-troubleshooting.md?context=/azure/azure-video-indexer/arc/context/context
+    href: azure-video-indexer-enabled-by-arc-troubleshooting.md
 - name: Responsible use of AI
   items:
   - name: Limited access features
@@ -122,4 +122,4 @@ items:
   - name: Blogs
     href: https://azure.microsoft.com/blog/tag/video-indexer/
 - name: Cloud-based Azure AI Video Indexer documentation
-  href: ../cloud/index.yml?context=/azure/azure-video-indexer/context/context
+  href: ../cloud/index.yml
