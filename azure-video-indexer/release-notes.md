@@ -16,7 +16,7 @@ appliesto:
 
 # Azure AI Video Indexer release notes
 
-To stay up-to-date with the most recent cloud-based Azure AI Video Indexer developments, this article provides you with information about:
+To stay up-to-date with the most recent cloud-based Azure AI Video Indexer developments, this article provides information about:
 
 * The latest releases
 * Known issues

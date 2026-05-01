@@ -21,7 +21,7 @@ This article lists release notes for Azure AI Video Indexer enabled by Azure Arc
 
 ### Custom AI insights for objects with attributes
 
-Create object insights that match your specific operational needs. Describe objects with attributes in natural language-specify colors, types, conditions, or combinations like "a red classic car" or "person wearing a hard hat." Add example images and negative examples to refine detections and improve accuracy.
+Create object insights that match your specific operational needs. Describe objects with attributes in natural language - specify colors, types, conditions, or combinations like "a red classic car" or "person wearing a hard hat." Add example images and negative examples to refine detections and improve accuracy.
 
 For more information, see [Custom insights](live-custom-insights-overview.md).
 
