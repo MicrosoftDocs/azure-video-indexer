@@ -113,7 +113,7 @@ items:
     href: ../faq.yml?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
     displayName: Azure AI Video Indexer FAQ, frequently asked questions, help, support
   - name: Release notes
-    href: ../release-notes.md?toc=/azure/azure-video-indexer/arc/TOC.json&bc=/azure/azure-video-indexer/arc/breadcrumb/toc.json
+    href: release-notes.md
     displayName: Azure AI Video Indexer release notes, product updates, new features, changelog
   - name: Stack Overflow
     href: https://stackoverflow.com/search?q=video-indexer
