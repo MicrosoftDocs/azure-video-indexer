@@ -63,7 +63,7 @@ If you encounter any issues while uploading media files, try the following solut
 - Try to refresh the page.
 - If you're using a trial account, check the account quota for daily count, daily duration, or total duration. To view your quota and usage, select **Account settings**.
 - If the upload from URL failed, check that:
-    - the URL is valid and public. You should be able to view or hear the file by placing the URL in the browser location field.
+    - the URL is valid and public. You should be able to view or hear the file by placing the URL in the browser location field. If the source storage account is behind a firewall, you must use the [Upload Video API](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) with the `useManagedIdentityToDownloadVideo=true` parameter. For setup details, see [Upload videos from a firewall-protected storage account](storage-behind-firewall.md#upload-videos-from-a-firewall-protected-storage-account).
     - the media file isn't encrypted, protected by digital rights management (DRM), corrupted, or damaged.
     - it's a [supported media file](/azure/media-services/latest/encode-media-encoder-standard-formats-reference).
     - the file size isn't larger than 2 GB. 
