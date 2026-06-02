@@ -23,7 +23,7 @@ This article lists release notes for Azure AI Video Indexer enabled by Azure Arc
 
 Video Agents Foundry Solution is an end-to-end platform that enables businesses to automate complex video analysis using AI agents. It combines Azure AI Video Indexer, Azure Arc, and intelligent agents to deliver real-time insights, automated decision-making, and scalable edge-based video analytics.
 
-The solution is available in the [Azure AI Foundry solution templates catalog](https://azure.github.io/ai-app-templates/repo/azure-samples/video-agents-foundry-solution/) and as an open-source sample on [GitHub](https://github.com/Azure-Samples/Video-Agents-Foundry-Solution).
+The solution is available in the [Microsoft Foundry solution templates catalog](https://azure.github.io/ai-app-templates/repo/azure-samples/video-agents-foundry-solution/) and as an open-source sample on [GitHub](https://github.com/Azure-Samples/Video-Agents-Foundry-Solution).
 
 ## March 2026
 
