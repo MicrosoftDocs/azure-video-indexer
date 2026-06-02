@@ -10,19 +10,20 @@ ms.service: azure-video-indexer
 ai-usage: ai-assisted
 ms.topic: release-notes
 appliesto:
-  - Azure AI Video Indexer enabled by Azure Arc
   - Cloud-based Azure AI Video Indexer
 #customer intent: As a video content manager, I want to track the latest Azure AI Video Indexer features and updates so that I can use new capabilities and plan my workflows.
 ---
 
 # Azure AI Video Indexer release notes
 
-To stay up-to-date with the most recent Azure AI Video Indexer developments, this article provides you with information about:
+To stay up-to-date with the most recent cloud-based Azure AI Video Indexer developments, this article provides information about:
 
 * The latest releases
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+For release notes about Azure AI Video Indexer enabled by Azure Arc, see [Azure AI Video Indexer enabled by Azure Arc release notes](arc/release-notes.md).
 
 Revisit this page to view the latest updates.
 
@@ -75,10 +76,6 @@ For more information, see [Customize a textual video summary](text-summarization
 When you try to index an unsupported file type, the response returns an `UnsupportedFileType` error. For more information about supported file types, see [Supported file formats](avi-support-matrix.md#supported-file-formats).
 
 ## March 2025
-
-### General availability of Azure AI Video Indexer enabled by Arc
-
-Azure AI Video Indexer enabled by Arc is now generally available. Now, you can run Video Indexer in your edge environment to generate audio and video insights and textual summaries on videos in more than 30 source languages. For more information, see [Azure AI Video Indexer enabled by Arc](arc/azure-video-indexer-enabled-by-arc-overview.md).
 
 ### Azure AI Video Indexer support for private endpoints
 
