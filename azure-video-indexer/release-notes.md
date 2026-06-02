@@ -4,7 +4,7 @@ description: Stay updated on the latest features, bug fixes, and known issues. E
 author: cwatson-cat
 ms.author: cwatson
 ms.collection: ce-skilling-ai-copilot
-ms.date: 12/11/2025
+ms.date: 06/02/2026
 ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ai-usage: ai-assisted
@@ -25,6 +25,14 @@ To stay up-to-date with the most recent Azure AI Video Indexer developments, thi
 * Deprecated functionality
 
 Revisit this page to view the latest updates.
+
+## June 2026
+
+### Video Agents Foundry Solution
+
+Video Agents Foundry Solution is an end-to-end platform that enables businesses to automate complex video analysis using AI agents. It combines Azure Video Indexer, Azure Arc, and intelligent agents to deliver real-time insights, automated decision-making, and scalable edge-based video analytics.
+
+The solution is available in the [Azure AI Foundry solution templates catalog](https://azure.github.io/ai-app-templates/repo/azure-samples/video-agents-foundry-solution/) and as an open-source sample on [GitHub](https://github.com/Azure-Samples/Video-Agents-Foundry-Solution).
 
 ## November 2025
 
