@@ -3,7 +3,6 @@ title: Azure AI Video Indexer real-time analysis overview - Preview
 description: Overview of real-time analysis capabilities in Azure AI Video Indexer, including real-time video indexing and insights.
 author: cwatson-cat
 ms.author: cwatson
-ms.collection: ce-skilling-ai-copilot
 ms.date: 12/09/2025
 ms.service: azure-video-indexer
 ms.topic: concept-article

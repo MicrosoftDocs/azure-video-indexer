@@ -3,9 +3,7 @@ title: Troubleshoot Azure AI Video Indexer enabled by Arc
 description: Troubleshoot common issues with Azure AI Video Indexer enabled by Arc, including connectivity, streaming, and encoding problems.
 author: cwatson-cat
 ms.author: cwatson
-ms.collection: ce-skilling-ai-copilot
 ms.date: 11/05/2025
-ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: troubleshooting-general
 appliesto:

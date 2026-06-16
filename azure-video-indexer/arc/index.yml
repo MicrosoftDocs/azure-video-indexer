@@ -8,12 +8,11 @@ metadata:
   description: Azure AI Video Indexer enabled by Azure Arc is an AI solution that enables you to extract insights from your videos at the edge using Azure Arc-enabled infrastructure.
   services: azure-video-indexer
   ms.service: azure-video-indexer
-  ms.collection: collection,ce-skilling-ai-copilot,rai-skilling-ai-copilot
+  ms.collection: collection,rai-skilling-ai-copilot
   ms.topic: landing-page
   author: cwatson-cat
   ms.author: cwatson
   ms.date: 04/26/2026
-  ms.update-cycle: 180-days
 
 landingContent:
   - title: About Azure AI Video Indexer enabled by Azure Arc

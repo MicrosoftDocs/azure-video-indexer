@@ -3,7 +3,6 @@ title: Live AI insights  in Azure AI Video Indexer
 description: Learn how AI insights work for live stream video, how they appear in the AI insights, and when to use built-in and custom insights.
 author: cwatson-cat
 ms.author: cwatson
-ms.collection: ce-skilling-ai-copilot
 ms.date: 04/26/2026
 ai-usage: ai-assisted
 ms.service: azure-video-indexer

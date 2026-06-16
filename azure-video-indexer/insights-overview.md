@@ -4,9 +4,7 @@ description: This article gives a brief overview of Azure AI Video Indexer insig
 ms.topic: concept-article
 author: cwatson-cat
 ms.author: cwatson
-ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
-ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 appliesto:
   - Cloud-based Azure AI Video Indexer

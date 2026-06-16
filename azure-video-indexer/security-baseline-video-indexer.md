@@ -5,7 +5,6 @@ author: cwatson-cat
 ms.author: cwatson
 ms.service: azure-video-indexer
 ms.topic: concept-article
-ms.collection: ce-skilling-ai-copilot
 ms.custom: horz-security
 ms.date: 10/24/2025
 appliesto:

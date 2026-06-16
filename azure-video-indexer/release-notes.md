@@ -3,9 +3,7 @@ title: Azure AI Video Indexer release notes and updates
 description: Stay updated on the latest features, bug fixes, and known issues. Explore new capabilities and enhancements now.
 author: cwatson-cat
 ms.author: cwatson
-ms.collection: ce-skilling-ai-copilot
 ms.date: 05/01/2026
-ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ai-usage: ai-assisted
 ms.topic: release-notes

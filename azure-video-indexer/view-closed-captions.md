@@ -3,9 +3,7 @@ title: View closed captions
 description: Learn how to view captions using the Azure AI Video Indexer website.
 author: cwatson-cat
 ms.author: cwatson
-ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
-ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
 appliesto:

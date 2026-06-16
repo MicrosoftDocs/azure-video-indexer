@@ -3,7 +3,6 @@ title: Create custom insights in the live AI Insights catalog using Azure AI Vid
 description: Learn how to create custom insights in the live AI Insights catalog using Azure AI Video Indexer.
 author: cwatson-cat
 ms.author: cwatson
-ms.collection: ce-skilling-ai-copilot
 ms.date: 03/31/2026
 ai-usage: ai-assisted
 ms.service: azure-video-indexer
