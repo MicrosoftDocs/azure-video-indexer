@@ -3,7 +3,6 @@ title: Add or Remove Cameras for Use with the Azure AI Video Indexer Extension f
 description: Learn how to create, update, or delete cameras for use with the VI extension for real-time analysis.
 author: cwatson-cat
 ms.author: cwatson
-ms.collection: ce-skilling-ai-copilot
 ms.date: 12/11/2025
 ms.service: azure-video-indexer
 ms.topic: how-to

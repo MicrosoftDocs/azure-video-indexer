@@ -3,7 +3,6 @@ title: Manage Azure AI Video Indexer extensions for real-time analysis
 description: Learn how to create, update, or delete an Azure AI Video Indexer extension that supports real-time analysis.
 author: cwatson-cat
 ms.author: cwatson
-ms.collection: ce-skilling-ai-copilot
 ms.date: 12/16/2025
 ms.service: azure-video-indexer
 ms.topic: how-to

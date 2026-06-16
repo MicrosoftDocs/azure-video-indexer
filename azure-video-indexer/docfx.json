@@ -48,7 +48,16 @@
       "permissioned-type": "public",
       "uhfHeaderId": "Azure"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "ms.collection": {
+        "**/*.md": "ce-skilling-ai-copilot",
+        "**/*.yml": "ce-skilling-ai-copilot"
+      },
+      "ms.update-cycle": {
+        "**/*.md": "180-days",
+        "**/*.yml": "180-days"
+      }
+    },
     "template": [],
     "dest": "azure-video-indexer"
   }

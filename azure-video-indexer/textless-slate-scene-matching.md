@@ -3,9 +3,7 @@ title: Enable and view a textless slate with matching scene in Azure AI Video In
 description: Learn how to enable and view a textless slate with matching scene for post-production using Azure AI Video Indexer. Start now.
 author: cwatson-cat
 ms.author: cwatson
-ms.collection: ce-skilling-ai-copilot
 ms.date: 10/06/2025
-ms.update-cycle: 180-days
 ms.service: azure-video-indexer
 ms.topic: how-to
 appliesto:

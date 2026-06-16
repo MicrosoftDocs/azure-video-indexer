@@ -3,7 +3,6 @@ title: Mark an area of interest in live camera footage using Azure AI Video Inde
 description: Learn how to mark an area of interest in live camera footage using Azure AI Video Indexer.
 author: cwatson-cat
 ms.author: cwatson
-ms.collection: ce-skilling-ai-copilot
 ms.date: 11/05/2025
 ms.service: azure-video-indexer
 ms.topic: how-to

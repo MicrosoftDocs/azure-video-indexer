@@ -8,12 +8,11 @@ metadata:
   description: Azure AI Video Indexer is an AI solution that enables you to extract insights from your videos using video and audio models as a cloud-based application.
   services: azure-video-indexer
   ms.service: azure-video-indexer
-  ms.collection: collection,ce-skilling-ai-copilot,rai-skilling-ai-copilot
+  ms.collection: collection,rai-skilling-ai-copilot
   ms.topic: landing-page
   author: cwatson-cat
   ms.author: cwatson
   ms.date: 04/29/2026
-  ms.update-cycle: 180-days
 
 landingContent:
   - title: About Azure AI Video Indexer
