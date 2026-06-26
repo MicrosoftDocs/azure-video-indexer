@@ -25,7 +25,7 @@ Users with owner or administrator Microsoft Entra ID permissions can assign role
 Azure AI Video Indexer provides three built-in roles. You can learn more about [Azure built-in roles](/azure/role-based-access-control/built-in-roles). Azure AI Video Indexer doesn't support the creation of custom roles. 
 
 **Owner** - This role grants full access to manage all resources, including the ability to assign roles to determine who has access to resources.  
-**Contributor** - This role has permissions to everything an owner does except it can't control who has access to resources.  
+**Video Indexer Account Contributor** - This role has permissions to everything an owner does except it can't control who has access to resources.  
 **Video Indexer Restricted Viewer** - This role is unique to Azure AI Video Indexer and has permissions to view videos and their insights but can't perform edits or changes or user management operations. This role enables collaboration and user access to insights through the Video Indexer website while limiting their ability to make changes to the environment.  
 
 Users with this role can perform the following tasks: 
