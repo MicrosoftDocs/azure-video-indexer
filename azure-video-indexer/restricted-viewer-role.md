@@ -69,10 +69,10 @@ User management of trial accounts, including the creation of new users, is perfo
 ### Share the account
 
 1. In the **Account setting** section, select **Manage Roles** to view all the account users and people with pending invites. 
-1. To add users, select **Invite more people to this account**. Users can receive an invitation but you also copy the invite link to share it directly. Once the invitation is accepted, you can define their role as either **Owner** or **Contributor**. See the [ARM Account user management](#user-management-for-azure-resource-manager-accounts) section for a description of the **Owner** and **Contributor** roles.
+1. To add users, select **Invite more people to this account**. Users can receive an invitation but you also copy the invite link to share it directly. Once the invitation is accepted, you can define their role as either **Owner** or **Video Indexer Account Contributor**. See the [ARM Account user management](#user-management-for-azure-resource-manager-accounts) section for a description of the **Owner** and **Video Indexer Account Contributor** roles.
 
 ## Troubleshooting
 
-If you see the following error message when you sign in to the Azure portal, you must ask for a **Contributor** or **Restricted Viewer** role from the account owner to get access.
+If you see the following error message when you sign in to the Azure portal, you must ask for a **Video Indexer Account Contributor** or **Restricted Viewer** role from the account owner to get access.
 
 :::image type="content" source="media/common/you-need-permission-to-view-content.png" alt-text="Screenshot showing an error message that states that you don't have permission to access the account."::: 
