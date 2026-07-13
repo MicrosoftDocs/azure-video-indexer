@@ -6,7 +6,7 @@ appliesto:
 - Cloud-based Azure AI Video Indexer
 author: cwatson-cat
 ms.author: cwatson
-ms.date: 11/06/2025
+ms.date: 07/13/2026
 ms.service: azure-video-indexer
 ms.topic: overview
 ---
@@ -41,7 +41,7 @@ Enables you to analyze video and audio content and extract meaningful insights. 
 
 Azure AI Video Indexer is a cloud application that's part of Azure AI services. It's built on Azure AI services such as Face, Translator, Azure AI Vision, and Speech. With Azure AI Video Indexer, you can extract insights from your videos by using its video and audio models.
 
-Azure AI Video Indexer analyzes the video and audio content by running more than 30 AI models. It generates rich insights. The following illustration shows the audio and video analysis that Azure AI Video Indexer performs in the background:
+Azure AI Video Indexer analyzes video and audio content by running multiple AI models. It generates rich insights. The following illustration shows the audio and video analysis that Azure AI Video Indexer performs in the background:
 
 :::image type="content" source="./media/video-indexer-overview/model-chart.png" border="false" alt-text="Diagram of Azure AI Video Indexer flow." lightbox="./media/video-indexer-overview/model-chart.png" :::
 
@@ -103,7 +103,7 @@ Azure AI Video Indexer enabled by Arc supports the following indexing presets fo
 For live video streams, you can create your own presets that include:
 
 - First-party detections (people, vehicles)
-- Custom AI insights – create a new object detection using natural language or an image. For more information, see (link to the new page).
+- Custom AI insights - create a new object detection using natural language or an image. For more information, see [Create custom insights in the live AI Insights catalog using Azure AI Video Indexer](arc/live-custom-insights-create.md).
 
 ### Cloud-based Video Indexer
 
@@ -118,7 +118,7 @@ Unless specified otherwise, a model is generally available.
 
 * **Face detection**: Detects and groups faces appearing in the video.
 * **Celebrity identification**: Identifies over 1 million celebrities, such as world leaders, actors, artists, athletes, researchers, business, and tech leaders across the globe. You can find data about these celebrities on various websites like IMDB and Wikipedia.
-* **Account-based face identification**: Trains a model for a specific account. It then recognizes faces in the video based on the trained model. For more information, see [Customize a Person model from the Azure AI Video Indexer website](customize-person-model-with-website.md) and [Customize a Person model with the Azure AI Video Indexer API](customize-person-model-with-api.md).
+* **Account-based face identification**: Trains a model for a specific account. It then recognizes faces in the video based on the trained model. For more information, see [Customize a Person model in Azure AI Video Indexer](customize-person-model-how-to.md).
 * **Thumbnail extraction for faces**: Identifies the best captured face in each group of faces based on quality, size, and frontal position, and extracts it as an image asset.
 * **Optical character recognition (OCR)**: Extracts text from images like pictures, street signs, and products in media files to create insights.
 * **Visual content moderation**: Detects adult and racy visuals.
@@ -133,14 +133,14 @@ Unless specified otherwise, a model is generally available.
     * **Matched person**: Matches people that were observed in the video with the corresponding faces detected. The matching between the observed people and the faces contain a confidence level.
     * **Detected clothing**: Detects the clothing types of people appearing in the video and provides information such as long or short sleeves, long or short pants, and skirt or dress. The detected clothing is associated with the people wearing it and the exact timestamp with start, end, and a confidence level for the detection.
     * **Featured clothing**: Captures featured clothing images appearing in a video. You can improve your targeted ads by using the featured clothing insight. For information on how the featured clothing images are ranked and how to get the insights, see [featured clothing](observed-people-featured-clothing.md).
-* **Object detection**: Detects unique objects that are also tracked so that if they return to the frame they're recognized. See [Azure AI Video Indexer object detection](object-detection.md).
+* **Object detection**: Detects unique objects that are also tracked so that if they return to the frame they're recognized. For more information, see [Get object detection insights](object-detection-insight.md).
 * **Slate detection**: Identifies the following movie post-production insights when indexing a video using the advanced indexing option:
     
     * Clapperboard detection with metadata extraction.
     * Digital patterns detection, including color bars.
     * Textless slate detection, including scene matching.
 
-    For details, see [Slate detection](slate-detection-insight.md).
+    For details, see [Get clapper board detection insights](clapper-board-insight.md), [Get digital patterns with color bars insights](digital-patterns-color-bars-insight.md), and [Enable and view a textless slate with matching scene](textless-slate-scene-matching.md).
 * **Textual logo detection**: Matches a specific predefined text using Azure AI Video Indexer OCR. For example, if a user created a textual logo: `Microsoft`, different appearances of the word `Microsoft` are detected as the `Microsoft` logo. For more information, see [Detect textual logo](detect-textual-logo.md).
 
 ### Audio models
@@ -178,20 +178,20 @@ When you index by one channel, you get partial results for those models.
 
 Learn how to get started with [Azure AI Video Indexer enabled by Azure Arc](arc/azure-video-indexer-enabled-by-arc-quickstart.md).
 
-Learn how to [get started with Azure AI Video Indexer](video-indexer-get-started.md).
+Learn how to get started with Azure AI Video Indexer in the [Quickstart - Try the Azure AI Video Indexer web portal](try-vi-web-portal-quickstart.md).
 
 After you set up the service, start using insights and check out other **How to guides**.
 
 ## Compliance, privacy, and security
 
-> [!NOTE]
-> On June 11, 2020, Microsoft announced that it won't sell facial recognition technology to police departments in the United States until strong regulation, grounded in human rights, is enacted. As such, customers can't use facial recognition features or functionality included in Azure AI services, such as Face or Video Indexer, if a customer is, or is allowing use of such services by or for, a police department in the United States.
-
-> [!NOTE]
-> To support our Responsible AI principles, access to face identification, customization, and celebrity recognition features is limited based on eligibility and usage criteria. These features are only available to Microsoft managed customers and partners. Use the [Face Recognition intake form](https://aka.ms/facerecognition) to apply for access.
-
 You must comply with all applicable laws in your use of Azure AI Video Indexer. You can't use Azure AI Video Indexer or any Azure service in a manner that violates the rights of others or that could be harmful to others.
 
 Before uploading any video or image to Azure AI Video Indexer, you must have all the appropriate and legal rights to use the video or image. Where required by law, you must have all the necessary consents from individuals (if any) in the video or image for the use, processing, and storage of their data in Azure AI Video Indexer and Azure. Some jurisdictions might impose special legal requirements for the collection, online processing, and storage of certain categories of data, such as biometric data. Before using Azure AI Video Indexer and Azure for the processing and storage of any data subject to special legal requirements, you must ensure your use complies with all such legal requirements that might apply to you and your intended use.
 
-To learn about compliance, privacy, and security in Azure AI Video Indexer, visit the Microsoft [Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Azure/default.aspx). For Microsoft's privacy obligations, data handling and retention practices, including how to delete your data, review Microsoft's [Privacy Statement](https://privacy.microsoft.com/PrivacyStatement), the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) ("OST"), and [Data Processing Addendum](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67) ("DPA"). By using Azure AI Video Indexer, you agree to be bound by the OST, DPA, and the Privacy Statement.
+> [!NOTE]
+> - On June 11, 2020, Microsoft announced that it won't sell facial recognition technology to police departments in the United States until strong regulation, grounded in human rights, is enacted. As such, customers can't use facial recognition features or functionality included in Azure AI services, such as Face or Video Indexer, if a customer is, or is allowing use of such services by or for, a police department in the United States.
+>
+> - To support our Responsible AI principles, access to face identification, customization, and celebrity recognition features is limited based on eligibility and usage criteria. These features are only available to Microsoft managed customers and partners. Use the [Face Recognition intake form](https://aka.ms/facerecognition) to apply for access.
+
+
+To learn about compliance, privacy, and security in Azure AI Video Indexer, visit the Microsoft [Trust Center](https://www.microsoft.com/trust-center). For Microsoft's privacy obligations, data handling and retention practices, including how to delete your data, review Microsoft's [Privacy Statement](https://privacy.microsoft.com/PrivacyStatement), the [Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms), and [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?lang=1). By using Azure AI Video Indexer, you agree to be bound by the applicable Product Terms, DPA, and Privacy Statement.

@@ -3,7 +3,7 @@ title: Azure AI Video Indexer support matrix and service limits
 description: Learn about supported formats, file size and duration limits, languages, optical character recognition, projects, person models, and codecs in Azure AI Video Indexer.
 author: cwatson-cat
 ms.author: cwatson
-ms.date: 11/10/2025
+ms.date: 07/13/2026
 ms.service: azure-video-indexer
 ms.topic: concept-article
 appliesto:
@@ -15,6 +15,9 @@ appliesto:
 # Azure AI Video Indexer support matrix and service limits
 
 This article describes the supported formats and limitations of Azure AI Video Indexer.
+
+> [!NOTE]
+> Limits and quotas can change. Check the current enforced limits in the upload experience, API responses, and release notes before finalizing production assumptions.
 
 ## Upload file size and video duration
 
@@ -28,10 +31,9 @@ If the file is uploaded from a URL, the file size limit is 30 GB. The URL must l
 
 ### File duration limit
 
-The file duration limit is 6 hours for all presets with the exclusion of the Basic Audio preset which has a file duration limit of 12 hours. 
+The file duration limit is 6 hours for all presets except the Basic Audio preset, which has a file duration limit of 12 hours.
 
-> [!NOTE]
-> Recordings that are less than 2 seconds in duration could fail to index.
+Recordings that are less than 2 seconds in duration might fail to index.
 
 ## Index request limit
 
@@ -87,7 +89,7 @@ Azure AI Video Indexer supports the following file formats:
 | DVCPro/DVCProHD (in MXF container)                                       |
 | Digital video (DV) (in AVI files)                                        |
 | JPEG 2000                                                                |
-| MPEG-2 (up to 422 Profile and High Level; including variants such as Sony XDCAM, Sony XDCAM HD, Sony XDCAM IMX, CableLabs®, and D10), up to 420 profiles                                   |
+| MPEG-2 (up to 422 Profile and High Level; including variants such as Sony XDCAM, Sony XDCAM HD, Sony XDCAM IMX, CableLabs(R), and D10), up to 422 profile |
 | MPEG-1                                                                   |
 | VC-1/WMV9                                                                |
 | MPEG-4 Part 2                                                            |
@@ -111,7 +113,7 @@ Azure AI Video Indexer supports the following file formats:
 
 ## Output format
 
-Videos are transcoded to a single format and resolution (720p), mp4 H254 for video and AAC for audio.
+Videos are transcoded to a single format and resolution (720p): MP4 with H.264 for video and AAC for audio.
 
 ## Related content
 
