@@ -184,14 +184,14 @@ After you set up the service, start using insights and check out other **How to 
 
 ## Compliance, privacy, and security
 
-> [!NOTE]
-> On June 11, 2020, Microsoft announced that it won't sell facial recognition technology to police departments in the United States until strong regulation, grounded in human rights, is enacted. As such, customers can't use facial recognition features or functionality included in Azure AI services, such as Face or Video Indexer, if a customer is, or is allowing use of such services by or for, a police department in the United States.
-
-> [!NOTE]
-> To support our Responsible AI principles, access to face identification, customization, and celebrity recognition features is limited based on eligibility and usage criteria. These features are only available to Microsoft managed customers and partners. Use the [Face Recognition intake form](https://aka.ms/facerecognition) to apply for access.
-
 You must comply with all applicable laws in your use of Azure AI Video Indexer. You can't use Azure AI Video Indexer or any Azure service in a manner that violates the rights of others or that could be harmful to others.
 
 Before uploading any video or image to Azure AI Video Indexer, you must have all the appropriate and legal rights to use the video or image. Where required by law, you must have all the necessary consents from individuals (if any) in the video or image for the use, processing, and storage of their data in Azure AI Video Indexer and Azure. Some jurisdictions might impose special legal requirements for the collection, online processing, and storage of certain categories of data, such as biometric data. Before using Azure AI Video Indexer and Azure for the processing and storage of any data subject to special legal requirements, you must ensure your use complies with all such legal requirements that might apply to you and your intended use.
+
+> [!NOTE]
+> - On June 11, 2020, Microsoft announced that it won't sell facial recognition technology to police departments in the United States until strong regulation, grounded in human rights, is enacted. As such, customers can't use facial recognition features or functionality included in Azure AI services, such as Face or Video Indexer, if a customer is, or is allowing use of such services by or for, a police department in the United States.
+>
+> - To support our Responsible AI principles, access to face identification, customization, and celebrity recognition features is limited based on eligibility and usage criteria. These features are only available to Microsoft managed customers and partners. Use the [Face Recognition intake form](https://aka.ms/facerecognition) to apply for access.
+
 
 To learn about compliance, privacy, and security in Azure AI Video Indexer, visit the Microsoft [Trust Center](https://www.microsoft.com/trust-center). For Microsoft's privacy obligations, data handling and retention practices, including how to delete your data, review Microsoft's [Privacy Statement](https://privacy.microsoft.com/PrivacyStatement), the [Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms), and [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?lang=1). By using Azure AI Video Indexer, you agree to be bound by the applicable Product Terms, DPA, and Privacy Statement.
