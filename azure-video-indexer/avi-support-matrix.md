@@ -17,7 +17,7 @@ appliesto:
 This article describes the supported formats and limitations of Azure AI Video Indexer.
 
 > [!NOTE]
-> Limits and quotas can change. Validate current enforced limits in the upload experience, API responses, and release notes before finalizing production assumptions.
+> Limits and quotas can change. Check the current enforced limits in the upload experience, API responses, and release notes before finalizing production assumptions.
 
 ## Upload file size and video duration
 
@@ -31,9 +31,9 @@ If the file is uploaded from a URL, the file size limit is 30 GB. The URL must l
 
 ### File duration limit
 
-The file duration limit is 6 hours for all presets with the exclusion of the Basic Audio preset, which has a file duration limit of 12 hours.
+The file duration limit is 6 hours for all presets except the Basic Audio preset, which has a file duration limit of 12 hours.
 
-Recordings that are less than 2 seconds in duration could fail to index.
+Recordings that are less than 2 seconds in duration might fail to index.
 
 ## Index request limit
 
