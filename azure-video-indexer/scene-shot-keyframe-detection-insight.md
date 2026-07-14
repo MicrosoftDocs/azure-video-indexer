@@ -3,7 +3,7 @@ title: Get scene, shot, and keyframe detection insights in Azure AI Video Indexe
 description: Get scene, shot, and keyframe detection insights with Azure AI Video Indexer. Improve your video editing and management with automated visual analysis.
 author: cwatson-cat
 ms.author: cwatson
-ms.date: 10/06/2025
+ms.date: 07/14/2026
 ms.service: azure-video-indexer
 ms.topic: how-to
 appliesto:
@@ -14,7 +14,7 @@ appliesto:
 
 # Get scene, shot, and keyframe detection insights
 
-Scene detection finds when a scene changes in a video based on visual cues. A **scene** shows a single event and has a series of related shots. **Shots** are a series of frames that differ by visual cues, like abrupt or gradual changes in the color scheme of adjacent frames. Shot metadata includes the start time, end time, and a list of keyframes in the shot. A **keyframe** is a frame from a shot that best represents the shot.
+As a video editor or content creator, understanding where scene, shot, and keyframe boundaries occur in your video helps you organize, browse, and edit your content more efficiently. Azure AI Video Indexer automatically detects these visual boundaries and provides metadata you can use to find key moments, create clips, and manage your media library. In this article, you learn how to view and use scene, shot, and keyframe detection insights.
 
 ## Scene, shot, and keyframe detection use cases
 
