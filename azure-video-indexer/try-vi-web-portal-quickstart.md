@@ -13,7 +13,7 @@ appliesto:
 
 # Quickstart: Try the Azure AI Video Indexer (VI) web portal
 
-In this quickstart, you'll upload and index a sample video using the Azure AI Video Indexer web portal, and then explore the insights the service generates. This will show you how Video Indexer automatically extracts key information from video content—such as people, text, and topics—without writing any code. After completing this quickstart, you'll understand what Video Indexer can do before deciding whether to use the API for automation.
+In this quickstart, you upload and index a sample video by using the Azure AI Video Indexer web portal. Then you explore the insights the service generates. This process shows how Video Indexer automatically extracts key information from video content - such as people, text, and topics - without writing any code. After completing this quickstart, you understand what Video Indexer can do before deciding whether to use the API for automation.
 
 ## Prerequisites
 

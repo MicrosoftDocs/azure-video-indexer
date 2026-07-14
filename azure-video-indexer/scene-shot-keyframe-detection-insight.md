@@ -14,7 +14,7 @@ appliesto:
 
 # Get scene, shot, and keyframe detection insights
 
-As a video editor or content creator, understanding where scene, shot, and keyframe boundaries occur in your video helps you organize, browse, and edit your content more efficiently. Azure AI Video Indexer automatically detects these visual boundaries and provides metadata you can use to find key moments, create clips, and manage your media library. In this article, you'll learn how to view and use scene, shot, and keyframe detection insights.
+As a video editor or content creator, understanding where scene, shot, and keyframe boundaries occur in your video helps you organize, browse, and edit your content more efficiently. Azure AI Video Indexer automatically detects these visual boundaries and provides metadata you can use to find key moments, create clips, and manage your media library. In this article, you learn how to view and use scene, shot, and keyframe detection insights.
 
 ## Scene, shot, and keyframe detection use cases
 

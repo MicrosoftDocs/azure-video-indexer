@@ -14,7 +14,7 @@ appliesto:
 
 # Use textual summarization
 
-Azure AI Video Indexer can generate concise text summaries of your videos, helping you quickly understand long video content without watching it in full. This how-to article shows you how to configure and use textual summarization with Azure AI Video Indexer by connecting an Azure OpenAI deployment. After completing these steps, you'll be able to generate summaries customized by language tone and length.
+Azure AI Video Indexer can generate concise text summaries of your videos, helping you quickly understand long video content without watching it in full. This how-to article shows you how to configure and use textual summarization with Azure AI Video Indexer by connecting an Azure OpenAI deployment. After completing these steps, you can generate summaries customized by language tone and length.
 
 > [!NOTE]
 > This feature only works with a paid account. Create a [paid account](create-account.md).
@@ -26,7 +26,7 @@ Review the [overview of textual summarization](text-summarization-overview.md) a
 ### Cloud
 
 - An [Azure AI Video Indexer paid account](connect-azure-open-ai-task.md) connected to an Azure OpenAI account.
-- Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service gets granted by application. For more information about how to apply for access to Azure OpenAI, see [Limited access for Azure OpenAI Service](/azure/ai-services/openai/overview#how-do-i-get-access-to-azure-openai).
+- Access granted to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted by application. For more information about how to apply for access to Azure OpenAI, see [Limited access for Azure OpenAI Service](/azure/ai-services/openai/overview#how-do-i-get-access-to-azure-openai).
 - An Azure OpenAI [GPT-35-Turbo, GPT-4, GPT-4o, or GPT-4O-mini](/azure/ai-services/openai/how-to/working-with-models?tabs=powershell) deployment. To benefit from keyframes based summaries, you must select an Azure OpenAI model that accepts visual input. For more information, see [Azure OpenAI Service models](/azure/ai-services/openai/concepts/models?tabs=python-secure%2Cglobal-standard%2Cstandard-chat-completions). 
 - The Prompt Shields for direct attacks (jailbreak) filter should be added to the deployment. Read more here: [Use content filters (preview) with Azure OpenAI Service](/azure/ai-services/openai/how-to/content-filters#understand-other-filters).
 - We recommended that you configure harmful content filters for categories such as "Violence," "Hate," "Sexual," and "Self-harm." While these filters aren't mandatory, you should set them to either "Medium" or "Low" to filter out content of at least the Medium level of harmfulness. This setting ensures that content with a harmfulness rating of medium or higher is blocked. For increased safety, you can opt for a stricter setting. Once configured, save the content filter settings.  
@@ -68,7 +68,7 @@ It's easier to follow these instructions if you already have the needed web page
 
 You can use the Azure AI Video Indexer web portal to summarize text.
 
-1. If you don't have the web portal open already, open the [Azure AI Video Indexer web portal](https://www.videoindexer.ai).
+1. If you don't already have the web portal open, open the [Azure AI Video Indexer web portal](https://www.videoindexer.ai).
 1. Upload a file and wait for it to index.
 1. Select the video to navigate to the media page.
 1. If you want to use keyframes to produce the summary, select the **Include visual keyframe insights to get better quality summary** option.
