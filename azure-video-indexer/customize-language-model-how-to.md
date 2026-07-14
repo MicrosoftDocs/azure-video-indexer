@@ -1,47 +1,48 @@
 ---
-title: Customize a Language model in Azure AI Video Indexer
+title: Customize a language model in Azure AI Video Indexer
 description: This article shows you how to customize a language model in Azure AI Video Indexer.
 author: cwatson-cat
 ms.author: cwatson
-ms.date: 10/06/2025
+ms.date: 07/13/2026
 ms.service: azure-video-indexer
 ms.topic: how-to
+#customer intent: As a media workflow owner, I want to customize a language model so that transcriptions better match my domain vocabulary.
 appliesto:
   - Cloud-based Azure AI Video Indexer
 ---
 
 # Customize a language model with Azure AI Video Indexer
 
-Azure AI Video Indexer supports automatic speech recognition through integration with the Microsoft [Custom Speech Service](https://azure.microsoft.com/services/cognitive-services/custom-speech-service/). You can customize the language model by uploading adaptation text. This text comes from the domain whose vocabulary you'd like the engine to use to adapt. Once you train your model, the engine recognizes new words appearing in the adaptation text, assuming default pronunciation, and the language model learns new probable sequences of words. See the list of languages supported by Azure AI Video Indexer in [supported languages](language-support.md). 
+Azure AI Video Indexer supports automatic speech recognition through integration with Microsoft [Custom Speech Service](https://azure.microsoft.com/services/cognitive-services/custom-speech-service/). You can customize a language model by uploading adaptation text from your domain. After you train your model, the engine recognizes new words that appear in the adaptation text by assuming default pronunciation, and the language model learns more probable word sequences. For the list of supported languages, see [Supported languages](language-support.md).
 
-For example, *Kubernetes* (in the context of Azure Kubernetes service), is a word that's highly specific. Since the word is new to Azure AI Video Indexer, it gets recognized as *communities*. Train the model to recognize it as *Kubernetes*. In other cases, the words exist, but the language model isn't expecting them to appear in a certain context. For example, *container service* isn't a two-word sequence that a nonspecialized language model would recognize as a specific set of words.
+For example, *Kubernetes* (in the context of Azure Kubernetes Service) is a domain-specific word. If the word is new to Azure AI Video Indexer, it might be recognized as *communities*. Train the model to recognize it as *Kubernetes*. In other cases, the words exist, but the language model doesn't expect them to appear in a specific context. For example, *container service* isn't a two-word sequence that a non-specialized language model would recognize as a specific phrase.
 
 There are two ways to customize a language model:
 
 - **Option 1**: Edit the transcript that Azure AI Video Indexer generated. By editing and correcting the transcript, you train a language model to provide improved results in the future.
-- **Option 2**: Upload text files to train the language model. The file can contain a list of words as you want them to appear in the Azure AI Video Indexer transcript. Or, it can contain the relevant words included naturally in sentences and paragraphs. As better results are achieved with the latter approach, include full sentences or paragraphs related to your content in the upload file.
+- **Option 2**: Upload text files to train the language model. The file can contain a list of words as you want them to appear in the Azure AI Video Indexer transcript. Or, it can include the relevant words naturally in sentences and paragraphs. Because this approach usually gives better results, include full sentences or paragraphs related to your content in the upload file.
  
 > [!IMPORTANT]
-> Don't include the words or sentences as currently incorrectly transcribed (for example, *communities*) in the upload file as this inclusion negates the intended impact. 
+> Don't include words or sentences as they're currently transcribed incorrectly (for example, *communities*) in the upload file. Doing so negates the intended effect.
 > Only include the words as you want them to appear (for example, *Kubernetes*).
-
-## Optimize your custom language model
-
-Azure AI Video Indexer learns based on probabilities of word combinations, so to learn best:
-
-* Give enough real examples of sentences as they would be spoken.
-* Put only one sentence per line, not more. Otherwise the system  learns probabilities across sentences.
-* It's okay to put one word as a sentence to boost the word against others, but the system learns best from full sentences.
-* When introducing new words or acronyms, if possible, give as many examples of usage in a full sentence to give as much context as possible to the system.
-* Try to put several adaptation options, and see how they work for you.
-* Avoid repetition of the exact same sentence multiple times. It might create bias against the rest of the input.
-* Avoid including uncommon symbols (~, # @ % &) because they get discarded. The sentences in which they appear also get discarded.
-* Avoid putting too large inputs, such as hundreds of thousands of sentences, because doing so dilutes the effect of boosting.
 
 ## Prerequisites
 
 - An Azure account
 - An Azure AI Video Indexer account
+
+## Optimize your custom language model
+
+Azure AI Video Indexer learns based on probabilities of word combinations, so to learn best:
+
+- Provide enough real examples of sentences as they would be spoken.
+- Put only one sentence per line. Otherwise, the system learns probabilities across sentence boundaries.
+- Use a single-word sentence to boost that word against others, but the system learns best from full sentences.
+- When introducing new words or acronyms, provide as many examples as possible in full sentences to give the system more context.
+- Try several adaptation options and evaluate which works best.
+- Avoid repetition of the exact same sentence multiple times. It might create bias against the rest of the input.
+- Avoid including uncommon symbols (~, # @ % &) because the system discards them. The sentences in which they appear also get discarded.
+- Avoid very large inputs, such as hundreds of thousands of sentences, because doing so dilutes the boosting effect.
 
 ## [Web portal](#tab/customizewebportal)
 
@@ -51,10 +52,10 @@ Azure AI Video Indexer learns based on probabilities of word combinations, so to
 1. To customize a model in your account, select the **Content model customization** button on the left of the page.
 1. Select the **Language** tab. You see a list of supported languages.
 1. Under the language that you want, select **Add model**.
-1. Type in the name for the language model and press Enter. This step creates the model and gives the option to upload text files to the model.
-1. To add a text file, select **Add file**. Your file explorer opens.
+1. Enter a name for the language model, and then press Enter. This step creates the model and gives you the option to upload text files.
+1. To add a text file, select **Add file**. Your File Explorer opens.
 1. Navigate to and select the text file. You can add multiple text files to a language model. You can also add a text file by selecting the **...** button on the right side of the language model and selecting **Add file**.
-1. When you're done uploading the text files, select the green **Train** option.
+1. When you're done uploading the text files, select **Train**.
 
 The training process can take a few minutes. When the training is done, **Trained** appears next to the model. You can preview, download, and delete the file from the model.
 
@@ -67,16 +68,16 @@ To use your language model on a new video, complete one of the following actions
 1. Select a language model you created from the **Video source language** list.
 1. Select the **Upload** option at the bottom of the page. Your new video gets indexed by using your language model.
 
-### Using a language model to reindex
+### Use a language model to reindex
 
 1. Sign in to the [Azure AI Video Indexer](https://www.videoindexer.ai/) home page.
 1. Select the ellipsis (**...**) on the video and then select **Re-index**.
-1. Select the **Video source language** list and select a language model that you created from the list.
-1. Select **Re-index** and your video gets reindexed using your language model.
+1. From the **Video source language** list, select a language model that you created.
+1. Select **Re-index**. Your video is reindexed by using your language model.
 
 ## Edit a language model
 
-You can edit a language model by changing its name, adding files to it, and deleting files from it. If you add or delete files from the language model, you need to train the model again by selecting the green **Train** option.
+You can edit a language model by changing its name, adding files to it, and deleting files from it. If you add or delete files from the language model, you need to train the model again by selecting **Train**.
 
 ### Rename the language model
 
@@ -94,15 +95,15 @@ You can also add a text file by selecting the ellipsis (**...**) button on the r
 This action removes the file completely from the language model.
 
 1. Select the ellipsis (**...**) button on the right side of the text file.
-1. Select **Delete**. A new window pops up telling you that the deletion can't be undone. 
+1. Select **Delete**. A new window appears, telling you that the deletion can't be undone.
 1. Select the **Delete** option in the new window.
 
 ## Delete a language model
 
 This action removes the language model from your account. Any video that uses the deleted language model keeps the same index until you reindex the video. If you reindex the video, you can assign a new language model to the video. Otherwise, Azure AI Video Indexer uses its default model to reindex the video.
 
-1. Select the ellipsis (**...**) button on the right side of the Language model.
-1. Select **Delete**. A new window pops up telling you that the deletion can't be undone. 
+1. Select the ellipsis (**...**) button on the right side of the language model.
+1. Select **Delete**. A new window appears, telling you that the deletion can't be undone.
 1. Select the **Delete** option in the new window. 
 
 ## Customize language models by correcting transcripts
@@ -120,8 +121,8 @@ If you make multiple edits to the same line, Azure AI Video Indexer uses only th
 
 1. Select the video that you want to edit from your library. 
 1. Select the **Timeline** tab.
-1. Select the pencil icon to edit the transcript of your transcription.
-1. You see transcript corrections appear in the **Language** tab of the Content model customization page. To look at the "From transcript edits" file for each of your Language models, select it to open it.
+1. Select the pencil icon to edit the transcript.
+1. Transcript corrections appear in the **Language** tab of the **Content model customization** page. To view the "From transcript edits" file for each of your language models, select the model to open it.
 
 ## [API](#tab/customizeapi)
 
@@ -129,33 +130,33 @@ If you make multiple edits to the same line, Azure AI Video Indexer uses only th
 
 Make a [Create Language Model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Create-Language-Model) API request to create a new custom language model for the specified account. You can upload files for the language model with this request. Alternatively, you can create the language model here and upload files for the model later by updating the language model.
 
-You must upload files in the body by using FormData in addition to providing values for the required parameters. You can define the key pair for this task in two ways:
+You must upload files in the request body by using FormData and provide values for the required parameters. You can define the key-value pair for this task in two ways:
 
-1. Key is the file name and value is the txt file.
-1. Key is the file name and value is a URL to txt file.
+1. The key is the file name, and the value is the .txt file.
+1. The key is the file name, and the value is a URL to a .txt file.
 
 > [!NOTE]
-> You must still train the model with its enabled files for the model to learn the contents of its files.
+> You must still train the model with its enabled files so that the model learns each file's contents.
 
 ### Example response
 
 ```json
 {
-    "id": "dfae5745-6f1d-4edd-b224-42e1ab57a891",
+    "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
     "name": "TestModel",
     "language": "En-US",
     "state": "None",
     "languageModelId": "00000000-0000-0000-0000-000000000000",
     "files": [
     {
-        "id": "25be7c0e-b6a6-4f48-b981-497e920a0bc9",
+        "id": "cccccccc-3333-4444-5555-dddddddddddd",
         "name": "hellofile",
         "enable": true,
         "creator": "John Doe",
         "creationTime": "2018-04-28T11:55:34.6733333"
     },
     {
-        "id": "33025f5b-2354-485e-a50c-4e6b76345ca7",
+        "id": "eeeeeeee-6666-7777-8888-ffffffffffff",
         "name": "worldfile",
         "enable": true,
         "creator": "John Doe",
@@ -177,21 +178,21 @@ The [Train Language Model](https://api-portal.videoindexer.ai/api-details#api=Op
 
 ```json
 {
-    "id": "41464adf-e432-42b1-8e09-f52905d7e29d",
+    "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
     "name": "TestModel",
     "language": "En-US",
     "state": "Waiting",
-    "languageModelId": "531e5745-681d-4e1d-b124-12e5ab57a891",
+    "languageModelId": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
     "files": [
     {
-        "id": "84fcf1ac-1952-48f3-b372-18f768eedf83",
+        "id": "cccccccc-3333-4444-5555-dddddddddddd",
         "name": "RenamedFile",
         "enable": false,
         "creator": "John Doe",
         "creationTime": "2018-04-27T20:10:10.5233333"
     },
     {
-        "id": "9ac35b4b-1381-49c4-9fe4-8234bfdd0f50",
+        "id": "eeeeeeee-6666-7777-8888-ffffffffffff",
         "name": "hellofile",
         "enable": true,
         "creator": "John Doe",
@@ -201,7 +202,7 @@ The [Train Language Model](https://api-portal.videoindexer.ai/api-details#api=Op
 }
 ```
 
-The `id` is a unique ID used to distinguish between language models. However, `languageModelId` is used for [uploading a video to index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) and [reindexing a video](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Re-Index-Video) requests. Azure AI Video Indexer upload and reindex requests also refer to it as `linguisticModelId`.
+The `id` is a unique identifier used to distinguish language models. However, `languageModelId` is used for [uploading a video to index](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Upload-Video) and [reindexing a video](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Re-Index-Video) requests. Azure AI Video Indexer upload and reindex requests also refer to it as `linguisticModelId`.
 
 ## Delete a language model
 
@@ -213,35 +214,35 @@ There's no returned content when the language model is deleted successfully.
 
 ## Update a language model
 
-The [Update Language Model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Language-Model) request updates a custom language person model in the specified account.
+The [Update Language Model](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Update-Language-Model) request updates a custom language model in the specified account.
 
 > [!NOTE]
 > Make sure you created the language model. Use this call to: enable or disable all files under the model, update the name of the language model, and upload files to add to the language model.
 
-To upload files to add to the language model, you must upload files in the body using FormData. You must also provide values for the required parameters mentioned previously. To accomplish the task, there are two ways:
+To upload files to add to the language model, upload files in the request body by using FormData. You must also provide values for the required parameters mentioned earlier. There are two ways to do this:
 
-* Key is the file name and value is the txt file.
-* Key is the file name and value is a URL to txt file.
+- The key is the file name, and the value is the .txt file.
+- The key is the file name, and the value is a URL to a .txt file.
 
 ### Example response
 
 ```json
 {
-    "id": "41464adf-e432-42b1-8e09-f52905d7e29d",
+    "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
     "name": "TestModel",
     "language": "En-US",
     "state": "Waiting",
-    "languageModelId": "531e5745-681d-4e1d-b124-12e5ab57a891",
+    "languageModelId": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
     "files": [
     {
-        "id": "84fcf1ac-1952-48f3-b372-18f768eedf83",
+        "id": "cccccccc-3333-4444-5555-dddddddddddd",
         "name": "RenamedFile",
         "enable": true,
         "creator": "John Doe",
         "creationTime": "2018-04-27T20:10:10.5233333"
     },
     {
-        "id": "9ac35b4b-1381-49c4-9fe4-8234bfdd0f50",
+        "id": "eeeeeeee-6666-7777-8888-ffffffffffff",
         "name": "hellofile",
         "enable": true,
         "creator": "John Doe",
@@ -261,7 +262,7 @@ The [Update Language Model File](https://api-portal.videoindexer.ai/api-details#
 
 ```json
 {
-  "id": "84fcf1ac-1952-48f3-b372-18f768eedf83",
+    "id": "cccccccc-3333-4444-5555-dddddddddddd",
   "name": "RenamedFile",
   "enable": false,
   "creator": "John Doe",
@@ -279,21 +280,21 @@ Make a [Get Language Model](https://api-portal.videoindexer.ai/api-details#api=O
 
 ```json
 {
-    "id": "dfae5745-6f1d-4edd-b224-42e1ab57a891",
+    "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
     "name": "TestModel",
     "language": "En-US",
     "state": "None",
     "languageModelId": "00000000-0000-0000-0000-000000000000",
     "files": [
     {
-        "id": "25be7c0e-b6a6-4f48-b981-497e920a0bc9",
+        "id": "cccccccc-3333-4444-5555-dddddddddddd",
         "name": "hellofile",
         "enable": true,
         "creator": "John Doe",
         "creationTime": "2018-04-28T11:55:34.6733333"
     },
     {
-        "id": "33025f5b-2354-485e-a50c-4e6b76345ca7",
+        "id": "eeeeeeee-6666-7777-8888-ffffffffffff",
         "name": "worldfile",
         "enable": true,
         "creator": "John Doe",
@@ -305,30 +306,30 @@ Make a [Get Language Model](https://api-portal.videoindexer.ai/api-details#api=O
 
 To download the contents of the file, use the `id` of the file returned in the response.
 
-## Get all the language models
+## Get all language models
 
-Use a [Get Language Models](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Language-Models) API request to return all of the custom Azure AI Language models in the specified account in a list.
+Use a [Get Language Models](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Language-Models) API request to return a list of all custom Azure AI language models in the specified account.
 
 ### Example response
 
 ```json
 [
     {
-        "id": "dfae5745-6f1d-4edd-b224-42e1ab57a891",
+        "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
         "name": "TestModel",
         "language": "En-US",
         "state": "None",
         "languageModelId": "00000000-0000-0000-0000-000000000000",
         "files": [
         {
-            "id": "25be7c0e-b6a6-4f48-b981-497e920a0bc9",
+            "id": "cccccccc-3333-4444-5555-dddddddddddd",
             "name": "hellofile",
             "enable": true,
             "creator": "John Doe",
             "creationTime": "2018-04-28T11:55:34.6733333"
         },
         {
-            "id": "33025f5b-2354-485e-a50c-4e6b76345ca7",
+            "id": "eeeeeeee-6666-7777-8888-ffffffffffff",
             "name": "worldfile",
             "enable": true,
             "creator": "John Doe",
@@ -337,11 +338,11 @@ Use a [Get Language Models](https://api-portal.videoindexer.ai/api-details#api=O
         ]
     },
     {
-        "id": "dfae5745-6f1d-4edd-b224-42e1ab57a892",
+        "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
         "name": "AnotherTestModel",
         "language": "En-US",
         "state": "None",
-        "languageModelId": "00000000-0000-0000-0000-000000000001",
+        "languageModelId": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
         "files": []
     }
 ]
@@ -349,22 +350,22 @@ Use a [Get Language Models](https://api-portal.videoindexer.ai/api-details#api=O
 
 ## Delete a file from a language model
 
-The [Delete Language Model File](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Language-Model-File) request deletes the specified file from the specified Azure AI Language model in the specified account.
+The [Delete Language Model File](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Delete-Language-Model-File) request deletes the specified file from the specified Azure AI language model in the specified account.
 
 ### Example response
 
 There's no returned content when the file is deleted from the language model successfully.
 
-## Get metadata on a file from a Azure AI Language model
+## Get metadata on a file from an Azure AI language model
 
-The [Get Azure AI Language Model File Data](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Language-Model-File-Data) request returns the contents of and metadata on the specified file from the chosen Azure AI Language model in your account.
+The [Get Azure AI Language Model File Data](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Get-Language-Model-File-Data) request returns the contents and metadata of the specified file from the chosen Azure AI language model in your account.
 
 ### Example response
 
 ```json
 {
     "content": "hello\r\nworld",
-    "id": "84fcf1ac-1952-48f3-b372-18f768eedf83",
+    "id": "cccccccc-3333-4444-5555-dddddddddddd",
     "name": "Hello",
     "enable": true,
     "creator": "John Doe",
@@ -375,9 +376,9 @@ The [Get Azure AI Language Model File Data](https://api-portal.videoindexer.ai/a
 > [!NOTE]
 > The contents of this example file are the words "hello" and "world" in two separate lines.
 
-## Download a file from a Azure AI Language model
+## Download a file from an Azure AI language model
 
-The [Download Azure AI Language Model File Content](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Download-Language-Model-File-Content) request downloads a text file containing the contents of the specified file from the specified Azure AI Language model in the specified account. This text file matches the contents of the text file that you originally uploaded.
+The [Download Azure AI Language Model File Content](https://api-portal.videoindexer.ai/api-details#api=Operations&operation=Download-Language-Model-File-Content) request downloads a text file that contains the contents of the specified file from the specified Azure AI language model in the specified account. This text file matches the contents of the file that you originally uploaded.
 
 ### Example response
 

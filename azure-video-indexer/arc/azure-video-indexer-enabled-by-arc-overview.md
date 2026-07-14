@@ -3,26 +3,24 @@ title: What is Azure AI Video Indexer enabled by Arc?
 description: Azure AI Video Indexer enabled by Arc performs video and audio analysis on edge devices, providing a hybrid solution for indexing content.
 author: cwatson-cat
 ms.author: cwatson
-ms.date: 10/06/2025
+ms.date: 07/13/2026
 ms.service: azure-video-indexer
 ms.topic: overview
 appliesto:
   - Azure AI Video Indexer enabled by Azure Arc
-#customer intent: As a video content manager, I want to use Azure AI Video Indexer analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
+ai-usage: ai-assisted
+#customer intent: As a video content manager, I want to use Azure AI Video Indexer to analyze and index video content on edge devices, ensuring compliance with data governance policies and reducing latency in on-premises workflows.
 ---
 
-# Azure AI Video Indexer enabled by Arc
+# What is Azure AI Video Indexer enabled by Arc?
 
-[Azure AI Video Indexer enabled by Arc](../azure-video-indexer-enabled-by-arc-overview.md) is an Azure Arc extension enabled service that runs video and audio analysis and [generative AI](../generative_ai_with_vi.md) on edge devices. The solution runs on [Azure Arc enabled Kubernetes](/azure/azure-arc/kubernetes/), supports many video formats, and assumes that one Video Indexer resource maps to one extension. It transcribes spoken content in more than 35 source languages and translates them to English. For a full list of supported languages, see [Supported languages per scenario](../language-support.md#supported-languages-per-scenario).
+Azure AI Video Indexer enabled by Arc is an Azure Arc extension-enabled service that runs video and audio analysis and generative AI on edge devices. The solution runs on Azure Arc-enabled Kubernetes, supports many video formats, and assumes that one Video Indexer resource maps to one extension. It transcribes spoken content in more than 35 source languages and translates it into English.
 
-<!-- Para above is duplicated in azure-video-indexer-enabled-by-arc-quickstart.md so sync any changes-->
+For a full list of supported languages, see [Supported languages per scenario](../language-support.md#supported-languages-per-scenario). If you're new to [Azure AI Video Indexer](/azure/azure-video-indexer/), familiarize yourself with the cloud service first. Before you start working with Azure AI Video Indexer enabled by Arc, review the [transparency note](/legal/azure-video-indexer/transparency-note) to understand usage restrictions.
 
-If you aren't already familiar with [Azure AI Video Indexer](/azure/azure-video-indexer/), we recommend that you familiarize yourself with the cloud service first.
-
-Additionally, before you start working with Azure AI Video Indexer enabled by Arc, review the [transparency note](/legal/azure-video-indexer/transparency-note) to understand usage restrictions.
 
 > [!IMPORTANT]
-> To successfully deploy the Azure AI Video Indexer extension, it's **mandatory** that your Azure subscription ID is approved in advance. You must first sign up using the form at [Application for gated services](https://aka.ms/vi-register).
+> To successfully deploy the Azure AI Video Indexer extension, your Azure subscription ID must be approved in advance. You must first sign up using the form at [Application for gated services](https://aka.ms/vi-register).
 
 ## What is Azure Arc and Azure Arc-enabled Kubernetes?
 
@@ -30,52 +28,52 @@ Azure Arc simplifies governance and management of complex environments that exte
 
 Azure Arc-enabled Kubernetes allows you to attach Kubernetes clusters running anywhere so that you can manage and configure them in Azure. By managing all of your Kubernetes resources in a single control plane, you can enable a more consistent development and operations experience to run cloud-native apps anywhere and on any Kubernetes platform.
 
-When the Azure Arc agents get deployed to the cluster, an outbound connection to Azure is initiated, using industry-standard SSL to secure data in transit.
+When Azure Arc agents are deployed to the cluster, they initiate an outbound connection to Azure by using industry-standard SSL to secure data in transit.
 
 Once clusters are connected to Azure, they're represented as their own resources in Azure Resource Manager (ARM), and they can be organized using resource groups and tagging.
 
-For more information about Azure Arc and Arc-enabled Kubernetes, see [Azure Arc overview](/azure/azure-arc/overview) and [What is Azure Arc-enabled Kubernetes?](/azure/azure-arc/kubernetes/overview)
+For more information about Azure Arc and Arc-enabled Kubernetes, see [Azure Arc overview](/azure/azure-arc/overview) and [What is Azure Arc-enabled Kubernetes?](/azure/azure-arc/kubernetes/overview).
 
 ## What is an Azure Arc extension?
 
-Virtual machine (VM) extensions are small applications that provide post-deployment configuration and automation tasks on Azure VMs. For example, if a virtual machine requires software installation, anti-virus protection, or to run a script in it, a VM extension can be used. For more information about extensions, see [Virtual machine extension management with Azure Arc-enabled servers](/azure/azure-arc/servers/manage-vm-extensions).
+Virtual machine (VM) extensions are small applications that provide post-deployment configuration and automation tasks on Azure VMs. For example, if a virtual machine requires software installation, antivirus protection, or script execution, use a VM extension. For more information about extensions, see [Virtual machine extension management with Azure Arc-enabled servers](/azure/azure-arc/servers/manage-vm-extensions).
 
-The Azure AI Video Indexer extension installs and deploys Azure AI Video indexer to the Kubernetes cluster.
+The Azure AI Video Indexer extension installs and deploys Azure AI Video Indexer to the Kubernetes cluster.
 
-Azure AI Video Indexer enabled by Arc only supports Azure Resource Manager accounts. Resource Manager operations are decoupled from video insight operations. This design allows you to perform analysis on your edge devices without the need to upload your media assets to Azure.
+Azure AI Video Indexer enabled by Arc supports only Azure Resource Manager accounts. Resource Manager operations are decoupled from video insight operations. This design allows you to perform analysis on your edge devices without uploading media assets to Azure.
 
-The extension is supported in [direct connection mode](/azure/azure-arc/data/connectivity) scenarios only. While all processing is performed in the edge environment, control plane information is sent to the cloud for billing and monitoring purposes. New extension versions are downloaded from the cloud. No customer data, such as what videos were indexed or indexed insights, are sent from the edge location to the cloud.
+The extension supports [direct connection mode](/azure/azure-arc/data/connectivity) scenarios only. While all processing is performed in the edge environment, control plane information is sent to the cloud for billing and monitoring purposes. New extension versions are downloaded from the cloud. No customer data, such as indexed videos or insights, is sent from the edge location to the cloud.
 
 ## Language models
 
-The Phi language model is included and automatically connected with your VI extension. You can start using it immediately. For more information about using language models with VI, see:
+The Phi language model is included and automatically connected with your Video Indexer extension. You can start using it immediately. For more information about using language models with Azure AI Video Indexer enabled by Arc, see:
 
 - [Use textual summarization](../text-summarization-task.md)
 - [Use Azure AI Video Indexer to create prompt content](../prompt-overview.md)
 - [Azure AI Video Indexer Bring Your Own (BYO) AI model overview](../bring-your-own-model-overview.md)
 
-See also the [transparency note for textual summarization with VI enabled by Arc](/legal/azure-video-indexer/transparency-note?context=%2Fazure%2Fazure-video-indexer%2Fcontext%2Fcontext#textual-summarization-on-an-edge-device) for hardware requirements, limitations, and known issues.
+See also the [transparency note for textual summarization with Azure AI Video Indexer enabled by Arc](/legal/azure-video-indexer/transparency-note?context=%2Fazure%2Fazure-video-indexer%2Fcontext%2Fcontext#textual-summarization-on-an-edge-device) for hardware requirements, limitations, and known issues.
 
 ## Use cases
 
-- **Data governance** – You can bring the AI to the content instead of vice versa. Use Azure AI Video Indexer enabled by Arc when you can’t move indexed content from on-premises to the cloud due to:
+- **Data governance** – Bring AI to your content instead of moving content to AI. Use Azure AI Video Indexer enabled by Arc when you can't move indexed content from on-premises to the cloud because of:
     - Regulations.
     - Architecture decisions.
     - Data store being too large, making lift and shift a significant effort.
-- **On-premises workflow** – Your indexing process is part of an on-premises workflow, and you want to lower the indexing duration latency affecting the flow.
+- **On-premises workflow** – Your indexing process is part of an on-premises workflow, and you want to reduce indexing latency that affects the flow.
 - **Pre-indexing** – You want to index before uploading the content to the cloud. To create clarity, you can presort your on-premises video or audio archive, and then only upload it for standard or advanced indexing in the cloud.
 
 ## Example deployment
 
-The following diagram shows the Azure AI Video Indexer extension running on Azure Arc. There are three types:
+The following diagram shows the Azure AI Video Indexer extension running on Azure Arc. There are three store types:
 
 1. Store type A uses both vision and audio presets.
 1. Store type B uses only vision presets. It also has a custom model. For more information about using a custom model with Azure AI Video Indexer enabled by Arc, see [Bring Your Own AI model](/azure/azure-video-indexer/azure-video-indexer-enabled-by-arc-bring-your-own-model-overview).
-1. Store C uses only audio presets.
+1. Store type C uses only audio presets.
 
 The extension is stored on each edge device and each device is associated with a single Azure AI Video Indexer account that interfaces with Azure Arc and the cloud.
 
-:::image type="content" source="../media/common/vi-arc-diagram-v2.svg" lightbox="../media/common/vi-arc-diagram-v2.svg" alt-text="Diagram showing the VI Arc extension running on Azure arc." border="false":::
+:::image type="content" source="../media/common/vi-arc-diagram-v2.svg" lightbox="../media/common/vi-arc-diagram-v2.svg" alt-text="Diagram showing the Video Indexer enabled by Arc extension running on Azure Arc." border="false":::
 
 ## Supported AI presets
 
@@ -98,12 +96,12 @@ Azure AI Video Indexer enabled by Arc supports the following indexing presets:
 
 ## Minimum hardware requirements
 
-Video Indexer enabled by Arc is designed to run on any Arc enabled Kubernetes environment.
+Video Indexer enabled by Arc is designed to run on any Arc-enabled Kubernetes environment.
 
->[!NOTE]
-> The following table covers minimum requirements for a *production* environment. We recommend at least a two-node cluster for high availability and scalability. The recommended settings refer to cluster-wide settings. So for example, if you have two nodes, each node should have 16 cores and 32 GB of RAM. We recommend creating a dedicated node-pool or autoscaling groups to host the VI solution.
+> [!NOTE]
+> The following table covers minimum requirements for a *production* environment. Use at least a two-node cluster for high availability and scalability. The recommended settings refer to cluster-wide settings. For example, if you have two nodes, each node should have 16 cores and 32 GB of RAM. Create a dedicated node pool or autoscaling group to host the Video Indexer solution.
 
-| Configuration | Virtual machine count | Node CPU cores count  | Node RAM | Node storage | Remarks
+| Configuration | Virtual machine count | Node CPU cores count  | Node RAM | Node storage | Remarks |
 | --- | --- | --- | --- | --- | --- |
 | Minimum | One | 32 Cores | 64 GB | 50 GB | Storage needs to support `ReadWriteMany` Storage Class |
 | Recommended | Two | 48-64 Cores | 256 GB | 100 GB | Storage needs to support `ReadWriteMany` Storage Class |
@@ -112,7 +110,7 @@ Video Indexer enabled by Arc is designed to run on any Arc enabled Kubernetes en
 
 | Component |  Minimum requirements |
 | --- | --- |
-| Operating system | Ubuntu 22.04 LTS or any Linux Compatible OS |
+| Operating system | Ubuntu 22.04 LTS or any Linux-compatible OS |
 | Kubernetes | 1.29 |
 | Azure CLI | 2.64.0 |
 
@@ -126,7 +124,7 @@ Use the following information to configure firewall settings.
 
 Follow the instructions at [Azure Arc-enabled Kubernetes network requirements](/azure/azure-arc/kubernetes/network-requirements).
 
-In addition, add *.azureedge.net and *.data.microsoft.com.
+In addition, add `*.azureedge.net` and `*.data.microsoft.com`.
 
 For the Video Indexer enabled by Arc extension, add these endpoints:
 
@@ -181,7 +179,7 @@ Enable the following endpoints and ports.
 - *.azureedge.net:443
 - *.data.microsoft.com:443
 
-#### VideoIndexer (HTTPS)
+#### Video Indexer (HTTPS)
 
 - api.videoindexer.ai:443
 
@@ -230,16 +228,16 @@ Azure AI Video Indexer enabled by Arc also supports bringing your own model. For
 ## Limitations
 
 - The supported file size for indexing is up to 2 GB.
-- Azure AI Video Indexer enabled by Arc doesn't support uploading and indexing videos with a resolution of 1920x1080 or greater.
+- Azure AI Video Indexer enabled by Arc doesn't support uploading and indexing videos with a resolution of 1920 x 1080 or greater.
 - Upgrading the extension:
     - Extension support applies to the latest version only.
-    - We recommend setting the `auto-upgrade` property to `true`. The setting keeps the extension up to date.
-    - If the auto upgrade setting is set to false, you should upgrade the version incrementally. Jumping between versions can cause indexing processes to fail.
-- After extension installation or upgrade, expect the *first* index\translation process duration to be longer than normal. The longer duration is due to AI model image download. The duration varies depending on network speed.
-- Only one Video Indexer extension can be deployed per Arc enabled Kubernetes cluster.
-- The cluster's volume performance (based on storage class) has significant influence on the turnover duration of the indexing job especially since the frame extraction is writing all frames into the volume.
-- Only extension access tokens are supported. You can obtain extension access tokens from API/CLI. For samples to get-access-token, see [How to access the extension](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks#how-to-acccess-the-extension-).
--   Video error messages aren't stored due to memory limitations.
+    - Set the `auto-upgrade` property to `true` to keep the extension up to date.
+    - If you set the auto-upgrade property to `false`, upgrade versions incrementally. Jumping between versions can cause indexing processes to fail.
+- After extension installation or upgrade, the *first* indexing or translation process takes longer than normal. This delay occurs because the process downloads AI model images. The duration varies based on network speed.
+- You can deploy only one Video Indexer extension per Arc-enabled Kubernetes cluster.
+- The cluster's volume performance (based on storage class) has a significant effect on indexing job turnaround time, especially because frame extraction writes all frames to the volume.
+- Only extension access tokens are supported. You can obtain extension access tokens from API or CLI. For `get-access-token` samples, see [How to access the extension](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/VideoIndexerEnabledByArc/aks#how-to-access-the-extension).
+- Memory limitations prevent storing video error messages.
 
 ## Azure Container Storage enabled by Arc
 
@@ -250,6 +248,6 @@ We recommend that you use Azure Container Storage enabled by Azure Arc for stora
 
 ## Related content
 
-- Try the [Azure AI Video Indexer enabled by Arc sample on GitHub ](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoIndexerEnabledByArc/aks/readme.md)
-- Try the [Azure AI Video Indexer enable by Arc Jumpstart](https://arcjumpstart.com/azure_arc_jumpstart/azure_edge_iot_ops/aks_edge_essentials_single_vi)
+- Try the [Azure AI Video Indexer enabled by Arc sample on GitHub](https://github.com/Azure-Samples/azure-video-indexer-samples/blob/master/VideoIndexerEnabledByArc/aks/readme.md).
+- Try the [Azure AI Video Indexer enabled by Arc Jumpstart](https://arcjumpstart.com/azure_arc_jumpstart/azure_edge_iot_ops/aks_edge_essentials_single_vi).
 - Try deploying in the Azure portal using the [Azure AI Video Indexer enabled by Arc quickstart](/azure/azure-video-indexer/azure-video-indexer-enabled-by-arc-quickstart)
