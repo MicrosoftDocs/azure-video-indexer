@@ -3,23 +3,23 @@ title: Create an Azure AI Video Indexer account with an Azure OpenAI connection
 description: This article explains how to create an Azure AI Video Indexer account with an Azure OpenAI connection.
 author: cwatson-cat
 ms.author: cwatson
-ms.date: 10/06/2025
+ms.date: 07/14/2026
 ms.service: azure-video-indexer
 ms.topic: how-to
 appliesto:
   - Cloud-based Azure AI Video Indexer
+ai-usage: ai-assisted
+#customer intent: As a developer or administrator, I want to connect Azure AI Video Indexer to Azure OpenAI so that I can use OpenAI models within Video Indexer for summarization and advanced analysis.
 ---
 
 # Create or update an Azure AI Video Indexer account with an Azure OpenAI connection
 
-You can use Azure AI Video Indexer with Azure OpenAI deployments by creating or updating an Azure AI Video Indexer account to connect with an Azure OpenAI in the Azure portal. This article explains how to connect Azure OpenAI to Azure AI Video Indexer, but doesn't cover use cases for Azure OpenAI or combining the two services. For more information about Azure OpenAI deployments, see the [Azure OpenAI Service documentation](/azure/ai-services/openai/).
+You can use Azure AI Video Indexer with Azure OpenAI deployments by creating or updating an Azure AI Video Indexer account in the Azure portal. This article explains how to connect Azure OpenAI to Azure AI Video Indexer, but it doesn't cover use cases for Azure OpenAI or combining the two services. For more information about Azure OpenAI deployments, see the [Azure OpenAI Service documentation](/azure/ai-services/openai/).
 
 ## Prerequisites
 
 - An Azure subscription
-
-> [!NOTE]
-> We recommended that you create resources in the same region to avoid performance issues.
+- Azure resources created in the same region (recommended to avoid performance issues)
 
 ## Create an Azure OpenAI account
 
@@ -36,25 +36,26 @@ You can use Azure AI Video Indexer with Azure OpenAI deployments by creating or 
 1. Select **Create**.
 1. Wait for the deployment to finish.
 
-## Create an Azure AI Video Indexer account with a connection to Azure OpenAI
+## Create a Video Indexer account with Azure OpenAI
 
 1. Navigate to the resource group you're currently working with. 
 1. Select **Create**.
-1. Search for and select *Azure AI Video Indexer.* The Create a Video Indexer resource page appears.
+1. Search for and select **Azure AI Video Indexer**. The **Create a Video Indexer resource** page appears.
 1. Create a resource group and select a region.
 1. Give the account a name in the **Resource name** field.
-1. Connect the account to storage. Either…
-    1. Select an existing storage account from the **Storage account** dropdown or
-    1. Create a new storage account. For more information about creating a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). *Storage accounts for VI must be a Standard general-purpose v2 storage account*.
+1. Connect the account to storage by selecting one of the following options:
+    1. Select an existing storage account from the **Storage account** dropdown, or
+    1. Create a new storage account. For more information, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). Azure AI Video Indexer storage accounts must be a Standard general-purpose v2 storage account.
 1. Select the Azure OpenAI account you want to work with from the **Azure OpenAI Resource** dropdown list.
 1. Select **system assigned managed identity**.
 1. Select the **I have all the rights to use the content/file, and agree that it will be handled per the Online Services Terms  and the Microsoft Privacy Statement** checkbox.
-1. Select **Review + create**. Validation of the configuration starts.
+1. Select **Review + create**. The system validates your configuration.
 1. When validation is complete, select **Create**.
-1. When the deployment is complete, select **Go to resource**. The Azure AI Video Indexer overview page opens.  
-1. Notifications on the page appear that say you must select a managed identity role assignment. Select the **Assign role** buttons. The Azure AI Video Indexer and Azure OpenAI accounts are now connected.
+1. When the deployment is complete, select **Go to resource**.
+1. The Azure AI Video Indexer overview page opens.
+1. Review the notification on the page and select **Assign role** to complete the managed identity role assignment. The Azure AI Video Indexer and Azure OpenAI accounts are now connected.
 
-## Update an existing Azure AI Video Indexer account to connect to Azure OpenAI
+## Update a Video Indexer account to connect to Azure OpenAI
 
 1. In the Azure portal, navigate to the existing Azure AI Video Indexer account and select **Overview**.
 1. Select the **connect** or **change** link next to the Azure OpenAI item.
