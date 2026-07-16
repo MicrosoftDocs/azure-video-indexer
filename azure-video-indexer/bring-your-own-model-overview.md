@@ -1,24 +1,22 @@
 ---
-title: Azure AI Video Indexer Bring Your Own AI model overview  
+title: Azure AI Video Indexer Bring Your Own AI model overview
 description: This article is an overview of Azure AI Video Indexer enabled by Arc bring your own model.
 author: cwatson-cat
 ms.author: cwatson
-ms.date: 10/06/2025
+ms.date: 07/14/2026
 ms.service: azure-video-indexer
 ms.topic: overview
 appliesto:
   - Cloud-based Azure AI Video Indexer
+ai-usage: ai-assisted
+#customer intent: As a developer, I want to understand how to extend Azure AI Video Indexer with custom AI models so that I can add specialized insights to my video analysis.
 ---
 
 # Azure AI Video Indexer Bring Your Own (BYO) AI Model overview
 
-This article is an overview of Azure AI Video Indexer bring your own AI model.
+Combine insights from other sources, including third-party, classification, and detection models, to produce a detailed analysis of your media data. You can use one or more of any models offered by Microsoft, an external custom model, or a customized Person, Brand, Speech, or Language model offered by Azure Video Indexer.
 
-## Introduction
-
-You can combine insights from other sources, including third-party, classification, and detection models, to produce a detailed analysis of your media data. You can use one or more of any models offered by Microsoft, an external custom model, or a customized Person, Brand, Speech, or Language model offered by Azure Video Indexer.
-
-The feature is also available for [VI enabled by Arc](./arc/azure-video-indexer-enabled-by-arc-overview.md).
+The feature is also available with [Azure AI Video Indexer enabled by Arc](./arc/azure-video-indexer-enabled-by-arc-overview.md).
 
 > [!NOTE]
 > DISCLAIMER: Microsoft's [Code of conduct for Azure OpenAI Service](/legal/cognitive-services/openai/code-of-conduct?context=%2Fazure%2Fai-services%2Fopenai%2Fcontext%2Fcontext) applies to your use of the Bring Your Own Model feature, which includes Microsoft's right to discontinue your access and use of this feature for noncompliance.
@@ -32,21 +30,24 @@ With the Video Indexer BYO model, you can add custom insights to video insight o
 1. Video is uploaded and indexed with Azure AI Video Indexer.  
 1. When the indexing process is completed, an event is created.  
 1. Your custom code listens to the event and starts the video post-processing process.
-    1. Get insights extracted by Video Indexer.
-    1. Get keyframe for a video section.
+    1. Retrieve insights extracted by Azure AI Video Indexer.
+    1. Get keyframes for a video section.
     1. Send the keyframe to the custom AI model. 
-    1. Patch the custom insights back to Video Indexer.  
-        :::image type="content" source="./media/common/general-byo-workflow.svg" border="true" alt-text="Diagram of the general bring your own workflow process." lightbox="./media/common/general-byo-workflow.svg" :::
+    1. Patch the custom insights back to Video Indexer.
+
+:::image type="complex" source="./media/common/general-byo-workflow.svg" border="true" alt-text="Diagram showing the general bring your own model workflow process." lightbox="./media/common/general-byo-workflow.svg":::
+Diagram of the bring your own model workflow showing the following process: A video is uploaded and indexed with Azure AI Video Indexer. When indexing completes, an event is created. Custom code listens to this event and starts post-processing. The custom code retrieves Video Indexer insights and keyframes by calling APIs. The keyframes are sent to the custom AI model for processing. The custom model returns insights, which the custom code patches back into Video Indexer by using the Patch Update Video Index API.
+:::image-end:::
 
 ## Prerequisites
 
 Before you can start using the BYO model feature with Azure AI Video Indexer, you must: 
 
-1. Train or bring an external AI model that receives video assets and return an insight.   
+1. Train or bring an external AI model that receives video assets and returns insights.   
 1. Create custom code that:
     1. Listens for Event Hubs events. 
     1. Extracts the `video id` from the events. 
-    1. Retrieves the relevant assets by calling VI APIs. In this scenario, request *Get Video Index* and *Get frames SAS URLs*.
+    1. Retrieves the relevant assets by calling Azure AI Video Indexer APIs. In this scenario, request *Get Video Index* and *Get frames SAS URLs*.
     1. Sends the assets to the external AI model. 
     1. Creates a JSON object based on the insights retrieved from the custom AI model.  
     1. Requests *Patch Update Video Index*.
@@ -62,26 +63,26 @@ The values for populating the custom data are as follows:
 | **displayType** | Defines the type of UI representation for this specific insight group. **Default value**: Capsules<br/>**Possible types**:<br/>*Capsule* – One level text only <br/>*CapsuleAndTags* -Two levels text only more will be added in the future. | false |
 | **results** | Array of objects that represent the insights detected by the external AI model | true |
 | **results.id** | User provided ID of the result object, should be unique within the results scope | true |
-| **results.type** | This field represents the type of insight that was categorized by the external AI model. It's used to represent a general insight category, which means that there could be multiple insights of this type identified in a specific frame. Examples of insight types include: `basketball`, `crowd clapping`, `white shirt`. | true |
-| **results.subType** | This field represents the type of insight that was categorized by the external AI model. It's used to represent a specific insight category, which means that there could be only a single insight of this type identified in a specific frame. Examples of insight types include: `basketball #23`, `John clapping`, `Dana’s white shirt`. | false |
+| **results.type** | Type of insight that the external AI model categorized. Use this field to represent a general insight category, which means there can be multiple insights of this type identified in a specific frame. Examples of insight types include: `basketball`, `crowd clapping`, `white shirt`. | true |
+| **results.subType** | Specific insight type that the external AI model categorized. Use this field to represent a specific insight category, which means there can be only a single insight of this type identified in a specific frame. Examples of insight types include: `basketball #23`, `John clapping`, `Dana's white shirt`. | false |
 | **results.metaData** | More data on the insight | false |
-| **results.instances** | Array that represents the time windows the insight was detected in. | true |
+| **results.instances** | An array that represents the time windows where the insight appears. | true |
 | **results.instances.confidence** | Set with the confidence score returned from the external model | false |
 | **results.instances.start** | Start time of the instance in the video. Format: `hh.mm.ss.ff` | false |
 | **results.instances.end** | End time of the instance in the video. Format: `hh.mm.ss.ff`  | false |
-| **results.instances.adjustedStart** | Used when displayed in the UI, set with the value from Start | false |
-| **results.instances.adjustedEnd** | Used when displayed in the UI, set with the value from End | false |
+| **results.instances.adjustedStart** | Displayed in the UI, set with the value from Start. | false |
+| **results.instances.adjustedEnd** | Displayed in the UI, set with the value from End. | false |
  
 ## Framerate
 
 Azure AI Video Indexer supports one FPS for the Basic/Standard video level and four FPS for the advanced level. Higher frame rates aren't supported. You can optimize indexing by:
 
-- Processing only specific segments that are of interest such as frames that include a detected sound, object or person, or 
-- sample a lower FPS, for example,  every 5 seconds. 
+- Process only specific segments that interest you, such as frames that include a detected sound, object, or person.
+- Sample a lower FPS, for example, every 5 seconds.
 
 ## Frame selection
 
-You can use the skip frames and page size parameters for time selection. The formula is the skip frames value multiplied by the FPS plus the page size value multiplied by the FPS can be used to determine the time range.
+Use the skip frames and page size parameters for time selection. Multiply the skip frames value by the FPS, then add the page size value multiplied by the FPS to determine the time range.
 
 **URL:** `https://api.videoindexer.ai/{location}/Accounts/{accountId}/Videos/{videoId}/FramesFilePaths[?urlsLifetimeSeconds][&pageSize][&skip][&accessToken]`
 
@@ -142,7 +143,7 @@ You can use the skip frames and page size parameters for time selection. The for
 
 ## Bring Your Own model samples
 
-- [BYO samples](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples)
+- [Bring your own model samples](https://github.com/Azure-Samples/azure-video-indexer-samples/tree/master/BringYourOwn-Samples)
 
 ## Related content
 

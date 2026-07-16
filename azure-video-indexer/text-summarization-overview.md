@@ -1,54 +1,56 @@
 ---
-title: Textual Video Summary with Azure OpenAI
+title: Textual Summarization with Azure AI Video Indexer
 description: Learn how Azure AI Video Indexer generates concise, customizable summaries of video content to save time and boost productivity.
 author: cwatson-cat
 ms.author: cwatson
-ms.date: 10/06/2025
+ms.date: 07/14/2026
 ms.service: azure-video-indexer
 ms.topic: concept-article
 appliesto:
   - Azure AI Video Indexer enabled by Azure Arc
   - Cloud-based Azure AI Video Indexer
+ai-usage: ai-assisted
 #customer intent: As a video content manager, I want to quickly summarize long videos so that I can efficiently review content without watching the entire video.
 ---
 
 # Textual summarization with Azure AI Video Indexer
 
-This article is an overview of textual summarization with Azure AI Video Indexer.
+Textual summarization is a feature that automatically generates concise, customizable summaries of video content. You can quickly understand key information without watching the entire video. By turning long videos into digestible insights, it saves you time and enhances your ability to review content efficiently. Whether you're an educator, corporate professional, or content creator, this feature helps you.
+
+In this article, you learn how textual summarization works, explore practical applications across different industries, and discover how to customize summaries to match your specific needs.
 
 ## What is textual video summarization?
 
-Azure AI Video Indexer provides a brief summary of what a video is about without having to watch the entire video. It saves you time by digesting long videos and giving you the gist of a video in a short format. It’s like having a friend who watches all the episodes of a show and then catches you up on the plot in just a few minutes.
+Think of textual summarization like having a friend watch all the episodes of a show and then catch you up on the plot in just a few minutes. Behind the scenes, Azure AI Video Indexer uses summarization algorithms to identify the most relevant insights for the video and scores them based on their importance and relevance to the overall theme.
 
-The system is intended to be a supportive tool that enhances productivity and learning by distilling lengthy videos into concise, digestible summaries.
-
-It uses summarization algorithms to identify the most relevant insights for the video, and scores insights based on their importance and relevance to the overall theme. A user-friendly interface allows you to input videos and customize the type of summary you need.
-
-The system provides options for feedback, enabling it to learn and improve over time based on user interactions.
+A user-friendly interface lets you input videos and customize the type of summary you need. The system also provides options for feedback, enabling it to learn and improve over time based on user interactions.
 
 > [!IMPORTANT]
 > The system isn't intended to replace complete viewing, especially for content where details and nuances are **critical for making responsible decisions**. Also, it isn't designed to summarize highly sensitive or confidential videos where context and privacy are paramount.
 
 ## Textual summarization with keyframes
 
-Textual video summarization with keyframes uses keyframes from the video to generate a more comprehensive summary. This feature is useful when there's limited audio content, such as transcription, or when a more holistic summary is desired.
+Textual summarization can work with two inputs: audio/transcription or visual keyframes (key moments captured from the video). When summarizing videos with limited audio content or transcription, keyframes provide visual context that ensures the summary captures essential visual information. This approach generates a more holistic summary by combining both visual and textual signals. Use keyframes-based summarization when the visual narrative is as important as the audio narrative.
 
 ## Use cases
 
-The intended uses of the AI-based video summarization system are to provide users with a quick and efficient way to understand the content of longer videos without having to watch them in their entirety. Here are some specific intended uses:
+Here are some specific ways you can use Azure AI Video Indexer textual summarization:
 
-- **Education** - Students and educators can use the system to summarize lectures, seminars, or educational content, making study materials more accessible and easier to review and to focus on key learning points or definitions.
-- **Corporate** - Professionals can generate summaries of meetings, presentations, or training sessions that highlight decisions, action items, or key points from meetings. It provides quick recaps and ensures important information isn't missed.
-- **Media** - Journalists and the general public can use the system to get the essence of news reports, documentaries, or interviews, saving time while staying informed. It condenses news or documentaries into bite-sized pieces without losing the narrative. 
-- **Output formats** - You can set summaries to use different styles of language: neutral, casual, or formal. You can also set the length of a summary to short or long.
+- **Education** - Summarize lectures, seminars, and educational content to make study materials more accessible and easier to review. Students can focus on key learning points and definitions, or ask specific questions about the material.
+- **Corporate** - Generate summaries of meetings, presentations, and training sessions that highlight decisions, action items, and key points. Get quick recaps and ensure important information isn't missed.
+- **Media** - Get the essence of news reports, documentaries, and interviews quickly. Condense content into bite-sized pieces while preserving the narrative for journalists and general audiences.
+- **Output formats** - Customize summaries with different language styles (neutral, casual, or formal) and lengths (short or long).
 
 ## Textual summarization on VI enabled by Arc
 
-If you're using the VI enabled by Arc extension, you can generate a summary from the video page in the web portal and use the same functionality such as customizations. However, you can't change the model deployment. Instead, every new extension created includes a local [Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model developed by Microsoft. There's no charge for requests to the model.
+If you're using the Azure AI Video Indexer enabled by Arc extension, you can generate a summary from the video page in the web portal and use the same functionality such as customizations. However, you can't change the model deployment. Instead, every new extension created includes a local [Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct/tree/main) model developed by Microsoft. There's no charge for requests to the model.
 
 ## Transparency notes
 
 For more information about specifications and limitations, see the [Textual summarization section of the transparency notes](/legal/azure-video-indexer/transparency-note#text-summarization).
 
-## Try textual video summarization
-[Try using textual video summarization](text-summarization-task.md).
+## Related content
+
+- [Try using text summarization task](text-summarization-task.md)
+- [Upload and index media](upload-index-media.md)
+- [Azure AI Video Indexer overview](video-indexer-overview.md)
