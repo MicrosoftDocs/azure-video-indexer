@@ -6,6 +6,8 @@ items:
   items:
   - name: What is VI enabled by Azure Arc?
     href: azure-video-indexer-enabled-by-arc-overview.md
+  - name: Cost management
+    href: cost-management.md
 - name: Quickstarts
   expanded: true
   items:
